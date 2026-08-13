@@ -222,16 +222,27 @@
     '<a href="hinweise.html">Hinweise &amp; Quellen</a>');
 
   // ---- Basiskarten -------------------------------------------------------
-  const osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    className: 'basemap-muted',   // entsättigt: POI-Symbole treten zurück, Daten-Marker dominieren
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-  }).addTo(map);
-
-  const sat = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-    maxZoom: 19,
-    attribution: 'Bilddaten &copy; Esri, Maxar, Earthstar Geographics'
-  });
+  // Kartentypen (Auswahl bleibt gespeichert; Standard: dezent, damit die
+  // Daten-Marker gegenüber den POI-Symbolen des OSM-Stils dominieren)
+  const osmAttrib = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>';
+  const baseLayers = {
+    'Karte (dezent)': L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19, className: 'basemap-muted', attribution: osmAttrib }),
+    'Karte (bunt)': L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19, attribution: osmAttrib }),
+    'Hellgrau (Esri)': L.layerGroup([
+      L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+        maxZoom: 16, attribution: 'Kartenbild &copy; Esri' }),
+      L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}', {
+        maxZoom: 16 })
+    ]),
+    'Satellit (Esri)': L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+      maxZoom: 19, attribution: 'Bilddaten &copy; Esri, Maxar, Earthstar Geographics' })
+  };
+  let baseChoice = localStorage.getItem('firemap.base') || 'Karte (dezent)';
+  if (!baseLayers[baseChoice]) baseChoice = 'Karte (dezent)';
+  baseLayers[baseChoice].addTo(map);
+  map.on('baselayerchange', e => localStorage.setItem('firemap.base', e.name));
 
   // ---- Offizielle EFFIS-Layer (Copernicus, WMS) --------------------------
   const effisWms = 'https://maps.effis.emergency.copernicus.eu/effis?';
@@ -550,7 +561,7 @@
   }
 
   L.control.layers(
-    { 'Karte (OSM)': osm, 'Satellit (Esri)': sat },
+    baseLayers,
     {
       'Satelliten-Detektionen (NASA FIRMS)': firesLayer,
       'Geschätzte betroffene Flächen (Satellit)': areaLayer,

@@ -614,45 +614,77 @@ try {
 }
 
 # ============================================================================
-# Quelle 5: Heuboden Umkirch (Discothek — Wochenend-Partys)
+# Quelle 5: Heuboden Umkirch (Discothek — freie Events + Ticket-Shop)
 # ============================================================================
-# Kleine, feste Quelle: die Event-Liste verlinkt Detailseiten, deren Slug das
-# Datum enthält (…-dd-mm-yyyy.html). Kein JSON-LD -> Titel aus <h1>/<title>.
+# Zwei Seiten desselben EventBooking-CMS:
+#   events.html = Kalender mit freien Events; verlässlich ist NUR das
+#     Tooltip-HTML je Eintrag ("Beginn der Veranstaltung: Fr, dd.MM.yyyy"),
+#     die Slugs enthalten bei Serienterminen Fantasie-Jahre.
+#   shop.html = Ticket-Events; Datum steht im Titel oder Slug, sonst
+#     (Halloween/Silvester) auf der Detailseite.
 try {
     Write-Host 'Heuboden: Events abrufen ...'
     $hbHeaders = @{ 'User-Agent' = 'Mozilla/5.0' }
-    $html = (Invoke-WebRequest -Uri 'https://www.heuboden.de/events.html' -Headers $hbHeaders -UseBasicParsing -TimeoutSec 40).Content
-    $links = [regex]::Matches($html, 'href="(/aktuell/heuboden-events/[^"]+-(\d{2})-(\d{2})-(\d{4})\.html)"') |
-        ForEach-Object { ,@($_.Groups[1].Value, $_.Groups[2].Value, $_.Groups[3].Value, $_.Groups[4].Value) }
     $hbHit = Resolve-Address 'Am Gansacker 6, 79224 Umkirch'
+    if (-not $hbHit) { throw 'Venue nicht geokodierbar' }
     $hbCount = 0
-    $seenHb = [System.Collections.Generic.HashSet[string]]::new()
-    foreach ($l in $links) {
-        if (-not $seenHb.Add($l[0])) { continue }
-        $day = [DateTime]::MinValue
-        if (-not [DateTime]::TryParseExact(('{0}.{1}.{2}' -f $l[1], $l[2], $l[3]), 'dd.MM.yyyy', $inv,
-                [System.Globalization.DateTimeStyles]::None, [ref]$day)) { continue }
-        if ($day -lt $today -or $day -gt $until) { continue }
-        if (-not $hbHit) { continue }
+    $seenHb = [System.Collections.Generic.HashSet[string]]::new()   # Titel|Datum
 
-        $url2 = 'https://www.heuboden.de' + $l[0]
-        $title = $null
-        try {
-            $det = (Invoke-WebRequest -Uri $url2 -Headers $hbHeaders -UseBasicParsing -TimeoutSec 40).Content
-            $tm = [regex]::Match($det, '<h1[^>]*>([\s\S]*?)</h1>')
-            if ($tm.Success) { $title = (Remove-Html $tm.Groups[1].Value) }
-            Start-Sleep -Milliseconds 300
-        } catch { }
-        if (-not $title) {
-            $title = ([System.IO.Path]::GetFileNameWithoutExtension($l[0]) -replace '-\d{2}-\d{2}-\d{4}$', '') -replace '-', ' '
-            $title = $title.ToUpperInvariant()
-        }
-
+    function Add-HeubodenEvent([string]$title, [datetime]$day, [string]$url2) {
+        $title = ($title -replace '\s+', ' ').Trim() -replace '\s*\d{2}\.\d{2}\.\d{4}\s*$', ''
+        if (-not $title) { return $false }
+        if ($day -lt $today -or $day -gt $until) { return $false }
+        if (-not $script:seenHb.Add($title.ToLowerInvariant() + '|' + $day.ToString('yyyyMMdd'))) { return $false }
         Add-Event -title $title -cat 'party' -start $day.ToString('yyyy-MM-dd', $inv) -end $null `
             -lat ([double]$hbHit.lat) -lon ([double]$hbHit.lon) -place 'Heuboden, Umkirch' -url $url2 `
             -source 'Heuboden' -desc $null -precise $true
-        $hbCount++
+        return $true
     }
+
+    # --- events.html: Kalender-Tooltips ("Beginn der Veranstaltung") --------
+    $html = (Invoke-WebRequest -Uri 'https://www.heuboden.de/events.html' -Headers $hbHeaders -UseBasicParsing -TimeoutSec 40).Content
+    foreach ($m in [regex]::Matches($html, 'class="eb_event_link[^"]*"\s+href="([^"]+)"\s+title="([^"]+)"')) {
+        $tip = [System.Net.WebUtility]::HtmlDecode($m.Groups[2].Value)
+        $tTitle = [regex]::Match($tip, 'Veranstaltungen\s*</strong>\s*</td>\s*<td>\s*([^<]+?)\s*</td>')
+        $tDate  = [regex]::Match($tip, 'Beginn[^<]*</strong>\s*</td>\s*<td>\s*\w+,\s*(\d{2})\.(\d{2})\.(\d{4})')
+        if (-not ($tTitle.Success -and $tDate.Success)) { continue }
+        $day = [DateTime]::MinValue
+        if (-not [DateTime]::TryParseExact(('{0}.{1}.{2}' -f $tDate.Groups[1].Value, $tDate.Groups[2].Value, $tDate.Groups[3].Value),
+                'dd.MM.yyyy', $inv, [System.Globalization.DateTimeStyles]::None, [ref]$day)) { continue }
+        $u = $m.Groups[1].Value; if ($u -notmatch '^https?:') { $u = 'https://www.heuboden.de' + $u }
+        if (Add-HeubodenEvent $tTitle.Groups[1].Value $day $u) { $hbCount++ }
+    }
+
+    # --- shop.html: Ticket-Events -------------------------------------------
+    $shop = (Invoke-WebRequest -Uri 'https://www.heuboden.de/shop.html' -Headers $hbHeaders -UseBasicParsing -TimeoutSec 40).Content
+    foreach ($m in [regex]::Matches($shop, 'class="eb-event-title"\s+href="([^"]+)"\s*>([^<]+)<')) {
+        $href = $m.Groups[1].Value
+        $rawTitle = [System.Net.WebUtility]::HtmlDecode($m.Groups[2].Value)
+        $day = [DateTime]::MinValue; $found = $false
+        $dm = [regex]::Match($rawTitle, '(\d{2})\.(\d{2})\.(\d{4})')                       # Datum im Titel
+        if (-not $dm.Success) { $dm = [regex]::Match($href, '-(\d{2})-(\d{2})-(\d{4})\.html$') }  # ... im Slug
+        if ($dm.Success) {
+            $found = [DateTime]::TryParseExact(('{0}.{1}.{2}' -f $dm.Groups[1].Value, $dm.Groups[2].Value, $dm.Groups[3].Value),
+                'dd.MM.yyyy', $inv, [System.Globalization.DateTimeStyles]::None, [ref]$day)
+        }
+        $u = $href; if ($u -notmatch '^https?:') { $u = 'https://www.heuboden.de' + $u }
+        if (-not $found) {
+            # Halloween/Silvester u. ä.: "Beginn der Veranstaltung" aus der
+            # Eigenschaften-Tabelle der Detailseite (NICHT das erste Datum der
+            # Seite — die Sidebar listet fremde Termine!)
+            try {
+                $det = (Invoke-WebRequest -Uri $u -Headers $hbHeaders -UseBasicParsing -TimeoutSec 40).Content
+                Start-Sleep -Milliseconds 300
+                $bm = [regex]::Match($det, 'Beginn der Veranstaltung[\s\S]{0,200}?(\d{2})\.(\d{2})\.(\d{4})')
+                if ($bm.Success) {
+                    $found = [DateTime]::TryParseExact(('{0}.{1}.{2}' -f $bm.Groups[1].Value, $bm.Groups[2].Value, $bm.Groups[3].Value),
+                        'dd.MM.yyyy', $inv, [System.Globalization.DateTimeStyles]::None, [ref]$day)
+                }
+            } catch { }
+        }
+        if ($found -and (Add-HeubodenEvent $rawTitle $day $u)) { $hbCount++ }
+    }
+
     $stats['heuboden'] = $hbCount
     Write-Host "Heuboden: $hbCount Termine übernommen."
 } catch {

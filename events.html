@@ -255,17 +255,33 @@
   // Freiburg +50 km
   map.fitBounds(L.latLngBounds([47.45, 7.1], [48.55, 8.6]).pad(0.02));
 
-  const osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    className: 'basemap-muted',
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · ' +
+  // ---- Kartentypen (Auswahl bleibt gespeichert) --------------------------
+  const eventAttrib = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · ' +
       'Events: <a href="https://www.tourismus-bw.de/">toubiz/Open Data BW</a>, ' +
       '<a href="https://veranstaltungen.freiburg.de/">FWTM</a>, ' +
       '<a href="https://rausgegangen.de/freiburg/">Rausgegangen</a>, ' +
       '<a href="https://freiburg.szene-radar.de/">szene-Radar</a>, ' +
       '<a href="https://www.alemannische-seiten.de/">Alemannische Seiten</a>, ' +
-      '<a href="https://www.heuboden.de/">Heuboden</a>'
-  }).addTo(map);
+      '<a href="https://www.heuboden.de/">Heuboden</a>';
+  const baseLayers = {
+    'Karte (bunt)': L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19, attribution: eventAttrib }),
+    'Karte (dezent)': L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19, className: 'basemap-muted', attribution: eventAttrib }),
+    'Hellgrau (Esri)': L.layerGroup([
+      L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+        maxZoom: 16, attribution: 'Kartenbild &copy; Esri &middot; ' + eventAttrib }),
+      L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}', {
+        maxZoom: 16 })
+    ]),
+    'Satellit (Esri)': L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+      maxZoom: 19, attribution: 'Bilddaten &copy; Esri, Maxar, Earthstar Geographics &middot; ' + eventAttrib })
+  };
+  let baseChoice = localStorage.getItem('eventmap.base') || 'Karte (bunt)';
+  if (!baseLayers[baseChoice]) baseChoice = 'Karte (bunt)';
+  baseLayers[baseChoice].addTo(map);
+  L.control.layers(baseLayers, null, { position: 'topright', collapsed: true }).addTo(map);
+  map.on('baselayerchange', e => localStorage.setItem('eventmap.base', e.name));
 
   map.attributionControl.setPrefix('<a href="https://leafletjs.com">Leaflet</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a> · <a href="hinweise.html">Hinweise</a>');
 
