@@ -1,3 +1,9 @@
 # FIRMS-Rohdaten (werden bei jedem Lauf neu geladen, ~5 MB)
 data/*.csv
 data/*.rss
+
+# Node-Abhängigkeiten (Playwright für den Headless-Scraper)
+node_modules/
+
+# Wrangler-Deploy-Ausgabe (wird im CI zusammengestellt)
+dist/

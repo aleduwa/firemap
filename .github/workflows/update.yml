@@ -6,6 +6,7 @@ on:
     - cron: '7 * * * *'      # Satellitendaten (NASA FIRMS)
     - cron: '25 5 * * *'     # Waldbrandindex (DWD, nach dem 04:15-UTC-Lauf)
     - cron: '40 4 * * *'     # Eventkarte (täglich)
+    - cron: '10 6 * * *'     # Sentinel-2-Brandnarben (täglich, nach WBI)
   push:
     branches: [main]         # Code-Änderungen -> nur Deploy (Update-Schritte werden übersprungen)
   workflow_dispatch:
@@ -51,6 +52,14 @@ jobs:
         if: github.event_name == 'workflow_dispatch' || github.event.schedule == '40 4 * * *'
         shell: pwsh
         run: ./update-events.ps1
+
+      - name: Sentinel-2-Brandnarben berechnen
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '10 6 * * *'
+        shell: pwsh
+        env:
+          CDSE_CLIENT_ID: ${{ secrets.CDSE_CLIENT_ID }}
+          CDSE_CLIENT_SECRET: ${{ secrets.CDSE_CLIENT_SECRET }}
+        run: ./update-burnscars.ps1
 
       - name: Kreis-Landingpages generieren
         if: github.event_name == 'workflow_dispatch' || github.event.schedule == '*/15 * * * *'
