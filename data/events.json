@@ -6,6 +6,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110975/6332998",
     "first": "2026-08-13T13:56:32Z",
     "last": "2026-08-13T13:56:32Z",
+    "veg": false,
+    "source": "Polizeipräsidium Offenburg",
+    "updates": 0,
     "places": [
       {
         "name": "Friesenheim",
@@ -13,10 +16,7 @@
         "lon": 7.882329,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Offenburg|willstätt - feuerwerkskörper für vegetationsbrand verantwortlich",
