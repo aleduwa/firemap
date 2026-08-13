@@ -1,0 +1,3 @@
+# FIRMS-Rohdaten (werden bei jedem Lauf neu geladen, ~5 MB)
+data/*.csv
+data/*.rss

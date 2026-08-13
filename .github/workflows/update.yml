@@ -1,0 +1,49 @@
+name: Daten aktualisieren
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'   # Einsatzmeldungen (RSS + NINA)
+    - cron: '7 * * * *'      # Satellitendaten (NASA FIRMS)
+    - cron: '25 5 * * *'     # Waldbrandindex (DWD, nach dem 04:15-UTC-Lauf)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Nur ein Update-Lauf gleichzeitig, damit sich die Commits nicht in die Quere kommen
+concurrency:
+  group: data-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Einsatzmeldungen aktualisieren
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '*/15 * * * *'
+        shell: pwsh
+        run: ./update-reports.ps1
+
+      - name: Satellitendaten aktualisieren
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '7 * * * *'
+        shell: pwsh
+        run: ./update-data.ps1
+
+      - name: Waldbrandindex aktualisieren
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '25 5 * * *'
+        shell: pwsh
+        run: ./update-wbi.ps1
+
+      - name: Änderungen committen
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if ! git diff --cached --quiet; then
+            git commit -m "Daten-Update $(date -u +'%Y-%m-%d %H:%M') UTC"
+            git pull --rebase
+            git push
+          fi
