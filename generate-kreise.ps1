@@ -333,6 +333,7 @@ anhand der Ortskoordinaten und kann in Grenzfällen abweichen.<br>
 <a href="../hinweise.html">Nutzungshinweise &amp; Quellen</a> ·
 <a href="../impressum.html">Impressum</a> ·
 <a href="../datenschutz.html">Datenschutz</a></p>
+<!-- Cloudflare Web Analytics (cookieless) --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "5cb68acc703440769eac995278f0b0c1"}'></script>
 </body>
 </html>
 "@

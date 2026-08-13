@@ -13,10 +13,9 @@
   → danach: Event-Pipeline von den gescrapten Widget-Tokens auf den eigenen
   toubiz-Zugang umstellen (stabilste Stelle der Pipeline), **CC-Lizenz je
   Event im Tooltip/Popup ausweisen** (CC BY = Namensnennung).
-- [ ] **Cloudflare Web Analytics Site-Token** (2 Min im Dashboard:
-  Analytics & Logs → Web Analytics → Add a site → *manuelle* Einbindung)
-  → danach: Beacon-Snippet in alle 6 Seiten + Kreis-Template einbauen
-  (Anleitung: `ANALYTICS.md`).
+- [x] ~~Cloudflare Web Analytics~~ **aktiv seit 13.08.**: Beacon (cookieless)
+  in allen 6 Seiten + 44 Kreisseiten; Auswertung im CF-Dashboard unter
+  Analytics & Logs → Web Analytics.
 
 ## 2. In Arbeit / direkt als Nächstes
 
