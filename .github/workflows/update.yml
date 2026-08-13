@@ -27,7 +27,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
 
@@ -47,6 +47,17 @@ jobs:
         if: github.event_name == 'workflow_dispatch' || github.event.schedule == '25 5 * * *'
         shell: pwsh
         run: ./update-wbi.ps1
+
+      # Headless-Browser-Quellen (RegioTrends/tPortal) — Ausfall bricht nichts:
+      # update-events.ps1 überspringt die Quelle, wenn die JSON fehlt/alt ist
+      - name: Headless-Quellen scrapen (Playwright)
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '40 4 * * *'
+        continue-on-error: true
+        timeout-minutes: 15
+        run: |
+          npm ci --no-audit --no-fund || npm install --no-audit --no-fund
+          npx playwright install --with-deps chromium
+          node scripts/events-headless.mjs
 
       - name: Eventkarte aktualisieren
         if: github.event_name == 'workflow_dispatch' || github.event.schedule == '40 4 * * *'

@@ -132,17 +132,32 @@ hängen, extrem langsame Server. Dafür gibt es einen separaten Node-Schritt:
    der Gebietsfilter (Kreis Emmendingen/Stadtkreis Freiburg/
    Breisgau-Hochschwarzwald) ist ein POST-Formular mit Session, das für
    Nicht-Browser-Clients hängt; der Server ist generell sehr langsam und
-   sperrt bei zu schnellen Zugriffen zeitweise die IP (TCP-Timeouts —
-   deshalb die konservative Taktung). Der Treiber setzt den Filter,
-   paginiert über „Weiter“, parst Datum aus den deutschen Titeln
-   („Samstag, 22. August, …“, „3. bis 7. August“, Jahr oft implizit →
-   nächstliegendes Vorkommen) und lädt für Einträge ohne Uhrzeit begrenzt
-   Detailseiten nach („Beginn: Ab 20 Uhr“, Region „Kreis X - Ort“).
+   fällt unter Last minutenlang komplett aus (TCP-Timeouts/ECONNREFUSED,
+   auch von fremden IPs beobachtet — deshalb konservative Taktung und
+   Navigation mit Retries/Backoff). Der Treiber kennt drei Zugänge:
+   - **Gebietsfilter-Listen** (Kreis Emmendingen/Freiburg/…): Filter
+     setzen, über „Weiter“ paginieren, Datum aus den deutschen Titeln
+     parsen („Samstag, 22. August, …“, „3. bis 7. August“; Jahr oft
+     implizit → nächstliegendes Vorkommen); für Einträge ohne Uhrzeit
+     werden begrenzt Detailseiten nachgeladen („Beginn: Ab 20 Uhr“,
+     Region „Kreis X - Ort“).
+   - **Orts-Feeds** (`cities`, verstecktes `#placesearch`-POST-Formular
+     „Alles aus Ihrem Ort“) — liefern nur die jüngsten Meldungen eines
+     Orts, keine älteren Kalendereinträge.
+   - **Seed-URLs** (`seedUrls`): kuratierte Einzelmeldungen. Der
+     RegioKalender hält Detailseiten dauerhaft vorrätig, listet aber nur
+     ein kleines rollierendes Fenster — jährlich wiederkehrende Meldungen
+     (gleiche News-ID, Datum ohne Jahr) fallen heraus und sind nur noch
+     per Direktlink/Suchmaschine auffindbar. Seeds werden je Lauf frisch
+     geparst (Jahr = nächstliegendes Vorkommen); liegt der Termin
+     außerhalb des 90-Tage-Fensters, passiert schlicht nichts.
    Ort → Nominatim (Ortsmitte). **Testfall Seenachtsfest der Landjugend
-   Oberprechtal (22.08.2026):** existiert ausschließlich hier
-   (regiotermine-Meldung 280435) — weder in toubiz (Datensatz veraltet,
+   Oberprechtal (22.08.2026, „Ab 20 Uhr“, Elzach-Oberprechtal):** existiert
+   ausschließlich als solche verwaiste regiotermine-Meldung (News-ID
+   280435, als Seed eingetragen) — weder in toubiz (Datensatz veraltet,
    letzter Termin 30.08.2025) noch FWTM, Alemannische Seiten oder dem
-   ZTL-tPortal (Detailseite dort ohne Datum, s. o.).
+   ZTL-tPortal (Detailseite dort ohne Datum, s. o.); auch regiotrends-
+   Listen, Volltext- und Orts-Suche führen sie nicht mehr.
 
 **Wartungshinweise / Fragilität:**
 

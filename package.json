@@ -1,0 +1,8 @@
+{
+  "name": "firemap",
+  "private": true,
+  "description": "Node-Abhängigkeiten nur für scripts/events-headless.mjs (Headless-Browser-Schritt der Event-Pipeline).",
+  "dependencies": {
+    "playwright": "^1.62.1"
+  }
+}

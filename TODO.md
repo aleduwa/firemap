@@ -20,10 +20,12 @@
 
 ## 2. In Arbeit / direkt als Nächstes
 
-- [ ] **Headless-Paket committen** (ZweiTälerLand als 8. Quelle, Playwright):
-  nach Fertig-Meldung des Agenten prüfen (Pflicht-Testfall: Seenachtsfest
-  Oberprechtal 22.08.), dann Workflow um Playwright-Install + Headless-Schritt
-  im täglichen Event-Cron ergänzen.
+- [x] ~~Headless-Paket~~ **erledigt 13.08.**: RegioTrends via Playwright als
+  Quelle integriert (7 Events im Endbestand), Workflow-Schritt täglich vor dem
+  Event-Cron. Seenachtsfest Oberprechtal: als Seed hinterlegt — kommt beim
+  nächsten Lauf automatisch, sobald regiotrends.de wieder erreichbar ist
+  (Serverausfall am 13.08. abends; ZTL-tPortal führt das Datum nachweislich
+  nicht mehr).
 - [x] ~~Brandnarben-Erstlauf~~ **erledigt 13.08.**: Erstlauf erfolgreich
   (7 Narben, u. a. Weil am Rhein 2,16 ha), Layer/Legende/Quellen eingebaut,
   läuft täglich 06:10 UTC.
