@@ -116,6 +116,42 @@ function Save-GeoCache {
     $persist | ConvertTo-Json -Depth 3 | Set-Content $geoCachePath -Encoding UTF8
 }
 
+# Strukturierte Nominatim-Suche (street/postalcode/city) — deutlich präziser
+# als Freitext. Fallback: gleiche Abfrage ohne Straße (Ortsmitte).
+function Resolve-AddressParts([string]$street, [string]$postal, [string]$city) {
+    $street = "$street".Trim()
+    $postal = "$postal".Trim()
+    if ($postal -notmatch '^\d{5}$') { $postal = '' }
+    $city = "$city".Trim() -replace '\s*\(.*\)$', ''
+    if (-not $city -and -not $postal) { return $null }
+
+    foreach ($useStreet in @($true, $false)) {
+        if ($useStreet -and -not $street) { continue }
+        $s = if ($useStreet) { $street } else { '' }
+        $key = ('s|' + $s + '|' + $postal + '|' + $city).ToLowerInvariant()
+        if ($geoCache.ContainsKey($key)) {
+            if ($null -ne $geoCache[$key]) { return $geoCache[$key] }
+            continue   # bekannter Miss dieses Laufs -> nächste Stufe
+        }
+        $url = 'https://nominatim.openstreetmap.org/search?format=json&limit=1&bounded=1' +
+               '&countrycodes=de&accept-language=de&viewbox=' + $viewbox
+        if ($s)      { $url += '&street=' + [uri]::EscapeDataString($s) }
+        if ($postal) { $url += '&postalcode=' + [uri]::EscapeDataString($postal) }
+        if ($city)   { $url += '&city=' + [uri]::EscapeDataString($city) }
+        try {
+            $res = Invoke-RestMethod -Uri $url -Headers @{ 'User-Agent' = $ua } -TimeoutSec 30
+            Start-Sleep -Seconds 1
+        } catch { $res = @() }
+        if ($res.Count -eq 0) { $geoCache[$key] = $null; continue }
+        $hit = @{ lat = [double]::Parse([string]$res[0].lat, $inv); lon = [double]::Parse([string]$res[0].lon, $inv) }
+        $geoCache[$key] = $hit
+        $script:geoDirty = ($script:geoDirty ?? 0) + 1
+        if ($script:geoDirty -ge 25) { Save-GeoCache; $script:geoDirty = 0 }
+        return $hit
+    }
+    return $null
+}
+
 # --- Sammel-Liste + Dedup ---------------------------------------------------
 $events = [System.Collections.Generic.List[object]]::new()
 $eventIndex = @{}   # normTitel|Datum -> Liste von Indizes in $events
@@ -124,7 +160,7 @@ function Add-Event {
     param(
         [string]$title, [string]$cat, [string]$start, [string]$end,
         [double]$lat, [double]$lon, [string]$place, [string]$url,
-        [string]$source, [string]$desc
+        [string]$source, [string]$desc, [bool]$precise = $false
     )
     if (-not $title) { return }
     if ($lat -lt $latMin -or $lat -gt $latMax -or $lon -lt $lonMin -or $lon -gt $lonMax) { return }
@@ -142,6 +178,11 @@ function Add-Event {
                 if (-not $e.desc -and $desc) { $e.desc = $desc }
                 if (-not $e.end -and $end) { $e.end = $end }
                 if ($e.start.Length -eq 10 -and $start.Length -gt 10) { $e.start = $start }  # Uhrzeit ergänzen
+                # Quell-Koordinaten (API) schlagen Nominatim-Schätzungen
+                if ($precise -and -not $e.gp) {
+                    $e.lat = [math]::Round($lat, 5); $e.lon = [math]::Round($lon, 5); $e.gp = $true
+                }
+                if ($precise -and $place -and -not $e.place) { $e.place = $place }
                 return
             }
         }
@@ -158,6 +199,7 @@ function Add-Event {
         url    = $url
         source = $source
         desc   = $desc
+        gp     = $precise
     }
     if (-not $end)  { $entry.Remove('end') }
     if (-not $desc) { $entry.Remove('desc') }
@@ -264,7 +306,7 @@ try {
                 if ($d.endAt -and $d.endAt -match '^(\d{2}:\d{2})') { $endStr = $day.ToString('yyyy-MM-dd', $inv) + 'T' + $Matches[1] }
 
                 Add-Event -title $ev.name -cat $cat -start $startStr -end $endStr -lat $lat -lon $lon `
-                    -place $place -url $url2 -source $ch.key -desc $desc
+                    -place $place -url $url2 -source $ch.key -desc $desc -precise $true
                 $tbCount++
                 $occ++
                 if ($occ -ge $maxOccurrencesPerEvent) { break }
@@ -277,7 +319,7 @@ try {
                         [System.Globalization.DateTimeStyles]::None, [ref]$day) -and
                     $day -ge $today -and $day -le $until) {
                     Add-Event -title $ev.name -cat $cat -start $day.ToString('yyyy-MM-dd', $inv) -end $null `
-                        -lat $lat -lon $lon -place $place -url $url2 -source $ch.key -desc $desc
+                        -lat $lat -lon $lon -place $place -url $url2 -source $ch.key -desc $desc -precise $true
                     $tbCount++
                 }
             }
@@ -369,7 +411,7 @@ try {
                 }
 
                 Add-Event -title $ev.title -cat $cat -start $startStr -end $endStr -lat $lat -lon $lon `
-                    -place $place -url $url2 -source 'FWTM Freiburg' -desc (Limit-Text (Remove-Html $ev.shortDescription))
+                    -place $place -url $url2 -source 'FWTM Freiburg' -desc (Limit-Text (Remove-Html $ev.shortDescription)) -precise $true
                 $fwCount++
                 $occ++
                 if ($occ -ge $maxOccurrencesPerEvent) { break }
@@ -453,22 +495,19 @@ try {
             $endStr = $endDto.DateTime.ToString('yyyy-MM-ddTHH:mm', $inv)
         }
 
-        # Adresse -> Koordinaten (Nominatim, gecacht)
-        $lat = $null; $lon = $null
+        # Adresse -> Koordinaten (Quell-Geo bevorzugt, sonst strukturiertes Nominatim)
+        $lat = $null; $lon = $null; $isPrecise = $false
         $placeName = if ($ld.location -and $ld.location.name) { [string]$ld.location.name } else { $null }
         if ($ld.location -and $ld.location.geo -and $ld.location.geo.latitude) {
             $lat = [double]$ld.location.geo.latitude; $lon = [double]$ld.location.geo.longitude
+            $isPrecise = $true
         } else {
-            $addr = $ld.location.address
-            $parts = @()
+            $addr = if ($ld.location) { $ld.location.address } else { $null }
+            $hit = $null
             if ($addr) {
-                if ($addr.streetAddress) { $parts += [string]$addr.streetAddress }
-                $cityPart = ((@([string]$addr.postalCode, [string]$addr.addressLocality) | Where-Object { $_ }) -join ' ')
-                if ($cityPart) { $parts += $cityPart }
+                $hit = Resolve-AddressParts ([string]$addr.streetAddress) ([string]$addr.postalCode) ([string]$addr.addressLocality)
             }
-            $q = ($parts -join ', ')
-            if (-not $q -and $placeName) { $q = "$placeName, Freiburg im Breisgau" }
-            $hit = Resolve-Address $q
+            if (-not $hit -and $placeName) { $hit = Resolve-Address "$placeName, Freiburg im Breisgau" }
             if ($hit) { $lat = [double]$hit.lat; $lon = [double]$hit.lon }
         }
         if ($null -eq $lat) { continue }
@@ -480,7 +519,7 @@ try {
         $desc = Limit-Text (Remove-Html ([string]$ld.description))
 
         Add-Event -title $title -cat $cat -start $startLocal.ToString('yyyy-MM-ddTHH:mm', $inv) -end $endStr `
-            -lat $lat -lon $lon -place $placeName -url $u -source 'Rausgegangen' -desc $desc
+            -lat $lat -lon $lon -place $placeName -url $u -source 'Rausgegangen' -desc $desc -precise $isPrecise
         $rgCount++
     }
     $stats['rausgegangen'] = $rgCount
@@ -537,18 +576,12 @@ try {
                     $endStr = $endDto.DateTime.ToString('yyyy-MM-ddTHH:mm', $inv)
                 }
 
-                # Adresse -> Koordinaten (Nominatim, gecacht; Venue-Adressen wiederholen sich)
+                # Adresse -> Koordinaten (strukturiertes Nominatim, gecacht;
+                # Venue-Adressen wiederholen sich)
                 $placeName = if ($ld.location -and $ld.location.name) { [string]$ld.location.name } else { $null }
                 $addr = if ($ld.location) { $ld.location.address } else { $null }
-                $parts = @()
-                if ($addr) {
-                    if ($addr.streetAddress) { $parts += [string]$addr.streetAddress }
-                    $cityPart = ((@([string]$addr.postalCode, [string]$addr.addressLocality) | Where-Object { $_ }) -join ' ')
-                    if ($cityPart) { $parts += $cityPart }
-                }
-                $q = ($parts -join ', ')
-                if (-not $q) { continue }
-                $hit = Resolve-Address $q
+                if (-not $addr) { continue }
+                $hit = Resolve-AddressParts ([string]$addr.streetAddress) ([string]$addr.postalCode) ([string]$addr.addressLocality)
                 if (-not $hit) { continue }
 
                 $title = [System.Net.WebUtility]::HtmlDecode([string]$ld.name)
@@ -612,7 +645,7 @@ try {
 
         Add-Event -title $title -cat 'party' -start $day.ToString('yyyy-MM-dd', $inv) -end $null `
             -lat ([double]$hbHit.lat) -lon ([double]$hbHit.lon) -place 'Heuboden, Umkirch' -url $url2 `
-            -source 'Heuboden' -desc $null
+            -source 'Heuboden' -desc $null -precise $true
         $hbCount++
     }
     $stats['heuboden'] = $hbCount
@@ -697,9 +730,9 @@ try {
         if (-not $q) { continue }
         $hit = Resolve-Address $q
         if (-not $hit -and $addr) {
-            # Fallback: nur PLZ + Ort (Place-Namen kennt Nominatim oft nicht)
-            $q2 = ((@([string]$addr.postalCode, [string]$addr.addressLocality) | Where-Object { $_ }) -join ' ')
-            if ($q2) { $hit = Resolve-Address $q2 }
+            # Fallback: strukturiert nur mit PLZ + Ort (Place-Namen kennt
+            # Nominatim oft nicht -> wenigstens korrekte Ortsmitte)
+            $hit = Resolve-AddressParts '' ([string]$addr.postalCode) ([string]$addr.addressLocality)
         }
         if (-not $hit) { continue }
 
@@ -725,6 +758,9 @@ if ($events.Count -eq 0) {
     Write-Warning 'Keine Events gesammelt — data/veranstaltungen.js wird NICHT überschrieben.'
     exit 1
 }
+
+# internes Präzisions-Flag nicht mit ausgeben
+foreach ($e in $events) { $e.Remove('gp') }
 
 $sorted = @($events | Sort-Object start, title)
 

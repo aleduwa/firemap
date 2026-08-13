@@ -449,25 +449,38 @@
       groups.get(key).push(e);
     });
 
-    // Marker mit identischen Koordinaten spiralig entstapeln (wie index.html)
-    const stackCount = new Map();
-    function unstack(lat, lon) {
-      const key = lat.toFixed(3) + '/' + lon.toFixed(3);
-      const n = stackCount.get(key) || 0;
-      stackCount.set(key, n + 1);
-      if (n === 0) return [lat, lon];
-      const ang = n * 2.4, r = 0.002 + 0.0006 * n;   // Spirale, ~200 m Schritte
-      return [lat + r * Math.cos(ang), lon + r * Math.sin(ang) * 1.5];
-    }
-
+    // Sichtbare Veranstaltungen einsammeln (Zähler = Gesamtzahl im Zeitraum)
+    const visible = [];
     groups.forEach(list => {
       list.sort((a, b) => a.start < b.start ? -1 : 1);
-      const e = list[0];
-      const cat = catOf(e);
-      counts[cat]++;                       // Zähler = Gesamtzahl im Zeitraum
+      const cat = catOf(list[0]);
+      counts[cat]++;
       if (!activeCats[cat]) return;        // ausgeblendete Kategorie
       shownGroups++;
+      visible.push(list);
+    });
 
+    // Veranstaltungen am SELBEN Ort (~11 m) zu einem Venue-Marker bündeln —
+    // Marker bleiben exakt auf der Event-Position (keine künstliche Spirale)
+    const venues = new Map();
+    visible.forEach(list => {
+      const e = list[0];
+      const key = e.lat.toFixed(4) + '/' + e.lon.toFixed(4);
+      if (!venues.has(key)) venues.set(key, []);
+      venues.get(key).push(list);
+    });
+
+    venues.forEach(lists => {
+      if (lists.length === 1) {
+        addSingleMarker(lists[0]);
+      } else {
+        addVenueMarker(lists);
+      }
+    });
+
+    function addSingleMarker(list) {
+      const e = list[0];
+      const cat = catOf(e);
       const more = list.length - 1;
       const tip = '<div class="tip-head">' + esc(e.title) + '</div>' +
         (e.place ? '<div class="tip-sub">' + esc(e.place) + '</div>' : '') +
@@ -488,11 +501,57 @@
         '<br>' + dateList +
         '<br><a href="' + esc(e.url) + '" target="_blank" rel="noopener">Zur Veranstaltungsseite (' + esc(e.source) + ')</a>';
 
-      L.marker(unstack(e.lat, e.lon), { icon: evtIcon(cat) })
+      L.marker([e.lat, e.lon], { icon: evtIcon(cat) })
         .bindTooltip(tip, { className: 'evt-tip', sticky: true, direction: 'top', offset: [0, -12] })
         .bindPopup(popup)
         .addTo(eventsLayer);
-    });
+    }
+
+    function addVenueMarker(lists) {
+      lists.sort((a, b) => a[0].start < b[0].start ? -1 : 1);
+      const first = lists[0][0];
+      // dominante Kategorie bestimmt die Randfarbe
+      const catCount = {};
+      lists.forEach(l => { const c = catOf(l[0]); catCount[c] = (catCount[c] || 0) + 1; });
+      const domCat = Object.keys(catCount).sort((a, b) => catCount[b] - catCount[a])[0];
+      // häufigster Ortsname als Titel
+      const placeCount = {};
+      lists.forEach(l => { const p = l[0].place; if (p) placeCount[p] = (placeCount[p] || 0) + 1; });
+      const placeLabel = Object.keys(placeCount).sort((a, b) => placeCount[b] - placeCount[a])[0] || 'Veranstaltungsort';
+
+      const icon = L.divIcon({
+        className: '', iconSize: [30, 30], iconAnchor: [15, 15],
+        html: '<div style="width:30px;height:30px;border-radius:50%;background:#fcfcfb;' +
+              'border:2px solid ' + CATS[domCat].color + ';' +
+              'box-shadow:0 1px 4px rgba(11,11,11,.25);display:flex;align-items:center;justify-content:center;' +
+              'font-size:12.5px;font-weight:700;color:#0b0b0b;line-height:1">' + lists.length + '</div>'
+      });
+
+      const tipRows = lists.slice(0, 6).map(l => {
+        const e = l[0];
+        return '<tr><td>' + fmtDate(e.start) + '</td><td>' + CATS[catOf(e)].emoji + ' ' +
+               esc(e.title.length > 44 ? e.title.slice(0, 43) + '…' : e.title) + '</td></tr>';
+      }).join('');
+      const tip = '<div class="tip-head">' + esc(placeLabel) + '</div>' +
+        '<div class="tip-sub">' + lists.length + ' Veranstaltungen an diesem Ort</div>' +
+        '<table>' + tipRows +
+        (lists.length > 6 ? '<tr><td></td><td><i>+ ' + (lists.length - 6) + ' weitere</i></td></tr>' : '') +
+        '</table>' +
+        '<div class="tip-flag">Klicken f&uuml;r Liste mit Links</div>';
+
+      const popup = '<b>' + esc(placeLabel) + '</b><br>' +
+        lists.slice(0, 12).map(l => {
+          const e = l[0];
+          return fmtDate(e.start) + ' — <a href="' + esc(e.url) + '" target="_blank" rel="noopener">' +
+                 esc(e.title.length > 60 ? e.title.slice(0, 59) + '…' : e.title) + '</a>';
+        }).join('<br>') +
+        (lists.length > 12 ? '<br><i>+ ' + (lists.length - 12) + ' weitere — Listenansicht nutzen</i>' : '');
+
+      L.marker([first.lat, first.lon], { icon: icon })
+        .bindTooltip(tip, { className: 'evt-tip', sticky: true, direction: 'top', offset: [0, -14] })
+        .bindPopup(popup, { maxWidth: 320 })
+        .addTo(eventsLayer);
+    }
 
     renderScope();
     renderLegend();
@@ -509,7 +568,7 @@
         '<span class="label">' + CATS[c].emoji + ' ' + CATS[c].label + ' (' + counts[c] + ')</span></div>'
       ).join('') +
       '<div class="size-hint">Klick auf eine Kategorie blendet sie ein/aus.<br>' +
-      'Ein Marker = eine Veranstaltung,<br>mehrere Termine werden zusammengefasst.</div>';
+      'Marker mit Zahl = mehrere Veranstaltungen<br>am selben Ort (Klick zeigt die Liste).</div>';
   }
 
   function toggleCat(c) {
