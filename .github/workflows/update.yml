@@ -6,6 +6,8 @@ on:
     - cron: '7 * * * *'      # Satellitendaten (NASA FIRMS)
     - cron: '25 5 * * *'     # Waldbrandindex (DWD, nach dem 04:15-UTC-Lauf)
     - cron: '40 4 * * *'     # Eventkarte (täglich)
+  push:
+    branches: [main]         # Code-Änderungen -> nur Deploy (Update-Schritte werden übersprungen)
   workflow_dispatch:
     inputs:
       backfill:
@@ -56,6 +58,8 @@ jobs:
         run: ./generate-kreise.ps1
 
       - name: Änderungen committen
+        id: commit
+        if: github.event_name != 'push'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -64,4 +68,22 @@ jobs:
             git commit -m "Daten-Update $(date -u +'%Y-%m-%d %H:%M') UTC"
             git pull --rebase
             git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
           fi
+
+      # Direct-Upload zu Cloudflare (statt Git-Builds -> kein Build-Kontingent).
+      # Deployt bei Code-Pushes immer, bei Cron-Läufen nur wenn Daten geändert.
+      - name: Deploy zu Cloudflare (Wrangler)
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch' || steps.commit.outputs.changed == 'true'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          mkdir -p dist/data
+          cp index.html events.html faq.html impressum.html datenschutz.html hinweise.html \
+             robots.txt sitemap.xml llms.txt favicon.svg og-image.png dist/
+          cp -r kreise dist/kreise
+          cp data/*.js dist/data/
+          npx --yes wrangler@4 deploy
