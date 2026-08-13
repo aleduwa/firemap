@@ -67,8 +67,20 @@ Ein lokaler Server ist nötig, da die Karte Daten aus `data/` nachlädt.
 9. **Status-Parsing** aus dem Volltext: „gelöscht" / „unter Kontrolle" /
    „aktiv/unklar" — gelöschte Brände werden ausgegraut dargestellt.
 10. **Ereignishistorie**: `data/events.json` schreibt Ereignisse über das
-    ~30-Item-RSS-Fenster hinaus fort (21 Tage), damit Brände nicht von der
-    Karte verschwinden, sobald sie aus dem Feed rotieren.
+    ~30-Item-RSS-Fenster hinaus fort (30 Tage), damit Brände nicht von der
+    Karte verschwinden, sobald sie aus dem Feed rotieren. Die Karte trennt
+    „letzte 7 Tage" (an) und „7–30 Tage" (zuschaltbar).
+11. **Archiv-Backfill**: `.\update-reports.ps1 -Backfill` (oder der
+    Workflow-Schalter „Backfill") liest zusätzlich die paginierten
+    Presseportal-Archivseiten jeder Dienststelle (Standard: 8 Seiten ≈ 240
+    Meldungen pro Stelle) — schließt die Lücke vor dem ersten Abruf und nach
+    Ausfällen. Nur Brand-verdächtige Titel kosten einen Artikel-Abruf; das
+    Datum kommt aus dem JSON-LD `datePublished` der Artikelseite.
+12. **Robustheit**: ein toter Feed oder eine fehlgeschlagene FIRMS-Quelle
+    bricht den Lauf nicht mehr ab; Filter-Feinheiten: `feuer(?!wehr)`,
+    `brand(?!enburg|schutz)`, `br[eä]nn(?!holz)`, Komposita wie
+    „Zimmerbrand"/„Heuballenbrand" werden erkannt, Fehlalarm- und
+    BMA-Fehlalarm-Meldungen aussortiert.
 
 ## Flächendarstellung (Satellit)
 

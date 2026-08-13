@@ -23,7 +23,13 @@ $points = [System.Collections.Generic.List[object]]::new()
 foreach ($src in $sources) {
     $path = Join-Path $dataDir $src.file
     Write-Host "Downloading $($src.id) ..."
-    Invoke-WebRequest -Uri $src.url -OutFile $path -UseBasicParsing
+    try {
+        Invoke-WebRequest -Uri $src.url -OutFile $path -UseBasicParsing
+    } catch {
+        # Quelle nicht erreichbar -> letzte erfolgreich geladene Datei weiterverwenden
+        Write-Warning "$($src.id) nicht abrufbar: $_"
+        if (-not (Test-Path $path)) { continue }
+    }
 
     foreach ($row in Import-Csv $path) {
         $lat = [double]$row.latitude

@@ -1,12 +1,22 @@
-# Holt lokale Einsatzmeldungen (Polizei-Pressemeldungen via Presseportal-RSS
-# und amtliche Warnungen via NINA-API), filtert Brand-Meldungen, geokodiert
-# die Orte (Nominatim, mit Cache) und schreibt data/reports.js.
+# Holt lokale Einsatzmeldungen (Polizei-/Feuerwehr-Pressemeldungen via
+# Presseportal und amtliche Warnungen via NINA-API), filtert Brand-Meldungen,
+# geokodiert die Orte (Nominatim, mit Cache) und schreibt data/reports.js.
+#
+# -Backfill (oder FIREMAP_BACKFILL=1) liest zusätzlich die paginierten
+# Archivseiten jeder Dienststelle (~30 Meldungen je Seite), um über das
+# kurze RSS-Fenster hinaus historische Brände zu erfassen.
 #
 # Dedup-Strategie:
-#  1. "Nachtragsmeldung"/"Update"-Suffixe entfernen -> Folge-Meldungen mit
-#     gleichem Basistitel werden zur Ursprungsmeldung gruppiert.
-#  2. Vegetationsbrände (Waldbrand/Flächenbrand) mit überlappenden Orten
-#     innerhalb von 72 h werden zu einem Ereignis zusammengefasst.
+#  1. "Nachtragsmeldung"/"Folgemeldung"/"Update" -> Gruppierung über den
+#     Basistitel je Dienststelle.
+#  2. Vegetationsbrände mit überlappenden Orten binnen 72 h werden zu einem
+#     Ereignis zusammengefasst (auch quellenübergreifend).
+
+param(
+    [switch]$Backfill,
+    [int]$BackfillPages = 8
+)
+if ($env:FIREMAP_BACKFILL -eq '1' -or $env:FIREMAP_BACKFILL -eq 'true') { $Backfill = $true }
 
 $ErrorActionPreference = 'Stop'
 
@@ -67,10 +77,15 @@ $ninaKreise = @{
 $ninaRegions = $ninaKreise.GetEnumerator() | ForEach-Object {
     @{ name = $_.Value; ags = $_.Key + '0000000' }
 }
-# "feuer(?!wehr)": das Wort "Feuerwehr" allein ist KEIN Brand-Indiz —
-# in Feuerwehr-Feeds steht es in jedem Artikel (auch Übungen, VU, THL).
-$fireRegex  = '(?i)\b(brand|braende|brände|feuer(?!wehr)|brennt|waldbrand|flaechenbrand|flächenbrand|vegetationsbrand|rauchentwicklung)'
-$vegRegex   = '(?i)((wald|flaechen|flächen|vegetations)br[aä]nd|wiesenbrand|b[oö]schungsbrand)'
+
+# Brand-Erkennung. Bewusste Ausnahmen:
+#   feuer(?!wehr)   "Feuerwehr" steht in FW-Feeds in jedem Artikel
+#   brand(?!enburg|schutz)  Ortsname Brandenburg / PR-Artikel zum Brandschutz
+#   br[eä]nn(?!holz)        Brennholz(-diebstahl) ist kein Feuer
+# Komposita wie "Zimmerbrand"/"Dachstuhlbrand" werden über den Substring
+# "brand" (ohne Wortgrenze davor) erfasst.
+$fireRegex = '(?i)(brand(?!enburg|schutz)|br[eä]nn(?!holz)|brannt|feuer(?!wehr)|flammen|rauchentwicklung)'
+$vegRegex  = '(?i)((wald|flaechen|flächen|vegetations|wiesen|gras|feld|acker|hecken|b[oö]schungs)br[aä]nd|(heu|stroh)ballen|unterholz)'
 # Bounding Box wie in update-data.ps1 (für Nominatim-Eingrenzung)
 $viewbox = '6.8,49.85,10.55,47.3'
 $placeAlias = @{
@@ -93,6 +108,7 @@ function Resolve-Place([string]$name) {
     if ($geocache.ContainsKey($q)) { return $geocache[$q] }
 
     $url = 'https://nominatim.openstreetmap.org/search?format=json&limit=1&bounded=1' +
+           '&countrycodes=de&accept-language=de' +
            '&viewbox=' + $viewbox +
            '&q=' + [uri]::EscapeDataString("$q, Baden-Württemberg")
     try {
@@ -107,20 +123,25 @@ function Resolve-Place([string]$name) {
     return $hit
 }
 
-# --- Artikel-Volltext mit Cache ---------------------------------------------
+# --- Artikel-Volltext + Veröffentlichungsdatum mit Cache --------------------
 # Das RSS-Snippet ist gekürzt; die Presseportal-Detailseite enthält den vollen
-# Text (mehr Ortsangaben, Status wie "Brand gelöscht", Hektarangaben).
+# Text (mehr Ortsangaben, Status wie "Brand gelöscht") und das Datum (JSON-LD
+# "datePublished") — Letzteres brauchen die Archiv-Items des Backfills.
 $articleCachePath = Join-Path $dataDir 'articlecache.json'
 $articleCache = @{}
 if (Test-Path $articleCachePath) {
-    (Get-Content $articleCachePath -Raw | ConvertFrom-Json).PSObject.Properties |
-        ForEach-Object { $articleCache[$_.Name] = $_.Value }
+    (Get-Content $articleCachePath -Raw | ConvertFrom-Json).PSObject.Properties | ForEach-Object {
+        # Altes Cache-Format (nur Text als String) -> neues Format {t, d}
+        $articleCache[$_.Name] = if ($_.Value -is [string]) { @{ t = $_.Value; d = $null } }
+                                 else { @{ t = [string]$_.Value.t; d = [string]$_.Value.d } }
+    }
 }
 
-function Get-ArticleText([string]$url) {
-    if (-not $url) { return '' }
-    if ($articleCache.ContainsKey($url)) { return $articleCache[$url] }
-    $text = ''
+function Get-Article([string]$url) {
+    if (-not $url) { return @{ t = ''; d = $null } }
+    if ($articleCache.ContainsKey($url) -and $articleCache[$url].d) { return $articleCache[$url] }
+    if ($articleCache.ContainsKey($url) -and -not $Backfill) { return $articleCache[$url] }
+    $entry = @{ t = ''; d = $null }
     try {
         $html = (Invoke-WebRequest -Uri $url -UseBasicParsing -Headers @{ 'User-Agent' = 'Mozilla/5.0' }).Content
         # Nur der Hauptartikel — die Seite enthält auch Teaser ANDERER Meldungen,
@@ -131,97 +152,139 @@ function Get-ArticleText([string]$url) {
         $text = ($paras -join ' ') -replace '<[^>]+>', ' '
         $text = [System.Net.WebUtility]::HtmlDecode($text) -replace '\s+', ' '
         if ($text.Length -gt 6000) { $text = $text.Substring(0, 6000) }
+        $entry.t = $text
+        $dm = [regex]::Match($html, '"datePublished":\s*"([^"]+)"')
+        if ($dm.Success) { $entry.d = $dm.Groups[1].Value }
         Start-Sleep -Milliseconds 500
     } catch { Write-Warning "Volltext nicht abrufbar: $url" }
-    $articleCache[$url] = $text
-    return $text
+    $articleCache[$url] = $entry
+    return $entry
 }
 
 # Status aus Meldungstext ("light"-Variante per Regex)
 function Get-FireStatus([string]$text) {
-    if ($text -match '(?i)(gelöscht|abgelöscht|feuer\s+(ist\s+|war\s+)?aus\b|entwarnung)') { return 'out' }
-    if ($text -match '(?i)(unter kontrolle|eingedämmt|eindämmung|keine?\s+ausbreitung)') { return 'contained' }
+    if ($text -match '(?i)(gelöscht|abgelöscht|erloschen|feuer\s+(ist\s+|war\s+)?aus\b|brand\s+aus\b|entwarnung|einsatz\s+beendet|abschlussmeldung)') { return 'out' }
+    if ($text -match '(?i)(unter kontrolle|eingedämmt|eindämmung|keine?\s+ausbreitung|im griff)') { return 'contained' }
     return 'active'
 }
 
-# --- RSS einlesen -----------------------------------------------------------
-$rawReports = [System.Collections.Generic.List[object]]::new()
+function Get-PlaceTokens([string]$part) {
+    $toks = @()
+    foreach ($tok in ($part -replace ' - ', '/') -split '[,/]|\s+und\s+') {
+        $tok = ($tok -replace '^\s*\([^)]{1,20}\)\s*', '').Trim().TrimEnd('.')
+        if (-not $tok) { continue }
+        if ($tok -match '^[ABL]\s?\d+$') { continue }                      # Straßen (A5, B33, L94)
+        if ($tok -match '^(Landkreis|Stadtkreis|Polizeipräsidium|PP|Feuerwehr|Freiwillige)\b') { continue }
+        if ($tok -match '\s\S+\s\S+\s\S+') { continue }                    # >3 Wörter: kein Ortsname
+        if ($toks -notcontains $tok) { $toks += $tok }
+    }
+    return $toks
+}
 
+# --- Verarbeitung eines Items (aus RSS ODER Archiv-Backfill) ----------------
+$rawReports = [System.Collections.Generic.List[object]]::new()
+$seenLinks = [System.Collections.Generic.HashSet[string]]::new()
+
+function Invoke-ReportItem($feed, [string]$title, [string]$desc, [string]$link, $pubDate) {
+    if ($link -and -not $seenLinks.Add($link)) { return }
+    if (($title + ' ' + $desc) -notmatch $fireRegex) { return }
+
+    # Titelmuster (variiert je Dienststelle):
+    #   PP Offenburg: "POL-OG: Ort1, Ort2 / Ort3 - Betreff [- N. Nachtragsmeldung]"
+    #   PP Freiburg:  "POL-FR: [Landkreis X - ]Ort1/ Ort2: Betreff [- Folgemeldung]"
+    #   Feuerwehren:  "FW-OG: Betreff ohne Ort"
+    $t = $title -replace '^(\s*(?:POL|FW|FFW|BPOLI?|HZA|THW|KFV)[- ][A-Za-z0-9ÄÖÜäöüß .-]{1,25}:\s*)+', ''
+    if ($t -match '(?i)(falscher?\s+brandalarm|fehlalarm)') { return }
+    $isUpdate = $t -match '(?i)(nachtragsmeldung|folgemeldung|update)'
+    $base = ($t -replace '(?i)\s*[-/]\s*\d*\.?\s*(nachtragsmeldung|folgemeldung|abschlussmeldung|erstmeldung)\s*$', '' `
+                -replace '(?i)^update:\s*', '').Trim().ToLower() -replace '\s+', ' '
+
+    # Ortsteil = Text vor " - " bzw. vor ":" — der kürzere Kandidat gewinnt,
+    # bei leerem Ergebnis der jeweils andere.
+    $candA = ($t -split ' - ', 2)[0]; if ($candA -eq $t) { $candA = $null }
+    $candB = ($t -split ':', 2)[0];   if ($candB -eq $t) { $candB = $null }
+    $ordered = @($candA, $candB) | Where-Object { $_ } | Sort-Object Length
+    $places = @()
+    foreach ($cand in $ordered) {
+        $places = Get-PlaceTokens $cand
+        if ($places) { break }
+    }
+    # Feuerwehr-Titel tragen keinen Ort -> Standard-Ort der Dienststelle
+    if (-not $places -and $feed.place) { $places = @($feed.place) }
+    if (-not $places) { return }
+
+    # Volltext der Detailseite für Positions-, Status- und Datums-Extraktion
+    $article = Get-Article $link
+    $fullText = "$t. $desc $($article.t)"
+
+    # Brandmeldeanlagen-Einsätze, die sich als Fehlalarm herausstellen -> raus
+    if ($t -match '(?i)(brandmeldeanlage|brandmeldealarm|\bbma\b)' -and
+        $fullText -match '(?i)(fehlalarm|angebranntes? essen|kein(e|erlei)?\s+(feuer|brand|rauch)|ohne\s+(brand|feuer))') { return }
+
+    # Datum: RSS-pubDate, sonst datePublished der Artikelseite (Backfill)
+    $date = $null
+    if ($pubDate) { $date = ([datetime]$pubDate).ToUniversalTime() }
+    elseif ($article.d) { $date = ([datetime]$article.d).ToUniversalTime() }
+    if (-not $date) { return }
+
+    # Ungefähre Positionen aus dem Meldungstext: "[B 33] zwischen X und Y"
+    $placePat = '(?:Bad\s+|St\.\s?)?[A-ZÄÖÜ][A-Za-zäöüß-]+(?:\s+(?:am|im)\s+[A-ZÄÖÜ][A-Za-zäöüß-]+|\s+a\.\s?H\.?)?'
+    $zwPat = "(?:(?<road>[ABL]\s?\d+)[^,.;]{0,30}?)?zwischen\s+(?<a>$placePat)\s+und\s+(?<b>$placePat)"
+    $textLocs = @()
+    foreach ($m in [regex]::Matches($fullText, $zwPat)) {
+        $road = $m.Groups['road'].Value
+        $label = ($(if ($road) { "$road " }) + 'zwischen ' + $m.Groups['a'].Value + ' und ' + $m.Groups['b'].Value).Trim()
+        if (($textLocs | ForEach-Object { $_.label }) -notcontains $label) {
+            $textLocs += @{ a = $m.Groups['a'].Value; b = $m.Groups['b'].Value; label = $label }
+        }
+    }
+
+    $rawReports.Add(@{
+        title  = $t
+        # Basis-Schlüssel je Dienststelle: generische FW-Titel ("Brandeinsatz",
+        # "Abschlussmeldung") dürfen nicht feed-übergreifend kollidieren.
+        base   = "$($feed.name)|$base"
+        link   = $link
+        date   = $date
+        places = $places
+        fallback = $feed.place
+        textLocs = $textLocs
+        veg    = ($fullText -match $vegRegex)
+        status = Get-FireStatus $fullText
+        source = $feed.name
+        isUpdate = $isUpdate
+    })
+}
+
+# --- RSS einlesen (+ optional Archiv-Backfill) ------------------------------
 foreach ($feed in $rssFeeds) {
     Write-Host "RSS: $($feed.name) ..."
-    $xml = [xml](Invoke-WebRequest -Uri $feed.url -UseBasicParsing -Headers @{ 'User-Agent' = 'Mozilla/5.0' }).Content
+    try {
+        $xml = [xml](Invoke-WebRequest -Uri $feed.url -UseBasicParsing -Headers @{ 'User-Agent' = 'Mozilla/5.0' }).Content
+        foreach ($item in $xml.rss.channel.item) {
+            Invoke-ReportItem $feed ([string]$item.title) ([string]$item.description) ([string]$item.link) ([string]$item.pubDate)
+        }
+    } catch {
+        Write-Warning "Feed $($feed.name) nicht abrufbar: $_"   # ein toter Feed stoppt nicht den Lauf
+    }
 
-    foreach ($item in $xml.rss.channel.item) {
-        $title = [string]$item.title
-        $desc  = [string]$item.description
-        if (($title + ' ' + $desc) -notmatch $fireRegex) { continue }
-
-        # Titelmuster (variiert je Präsidium):
-        #   PP Offenburg: "POL-OG: Ort1, Ort2 / Ort3 - Betreff [- N. Nachtragsmeldung]"
-        #   PP Freiburg:  "POL-FR: [Landkreis X - ]Ort1/ Ort2: Betreff [- Folgemeldung]"
-        $t = $title -replace '^(\s*(?:POL|FW|FFW|BPOLI?|HZA|THW|KFV)[- ][A-Za-z0-9ÄÖÜäöüß .-]{1,25}:\s*)+', ''
-        if ($t -match '(?i)(falscher?\s+brandalarm|fehlalarm)') { continue }
-        $isUpdate = $t -match '(?i)(nachtragsmeldung|folgemeldung|update)'
-        $base = ($t -replace '(?i)\s*[-/]\s*\d*\.?\s*(nachtragsmeldung|folgemeldung)\s*$', '' `
-                    -replace '(?i)^update:\s*', '').Trim().ToLower() -replace '\s+', ' '
-
-        function Get-PlaceTokens([string]$part) {
-            $toks = @()
-            foreach ($tok in ($part -replace ' - ', '/') -split '[,/]|\s+und\s+') {
-                $tok = ($tok -replace '^\s*\([^)]{1,20}\)\s*', '').Trim().TrimEnd('.')
-                if (-not $tok) { continue }
-                if ($tok -match '^[ABL]\s?\d+$') { continue }                      # Straßen (A5, B33, L94)
-                if ($tok -match '^(Landkreis|Stadtkreis|Polizeipräsidium|PP|Feuerwehr|Freiwillige)\b') { continue }
-                if ($tok -match '\s\S+\s\S+\s\S+') { continue }                    # >3 Wörter: kein Ortsname
-                if ($toks -notcontains $tok) { $toks += $tok }
+    if ($Backfill -and $feed.url -match 'dienststelle_(\d+)') {
+        $id = $Matches[1]
+        Write-Host "  Backfill: $BackfillPages Archivseiten ..."
+        for ($off = 0; $off -lt $BackfillPages * 30; $off += 30) {
+            try {
+                $html = (Invoke-WebRequest -Uri "https://www.presseportal.de/blaulicht/nr/$id/$off" -UseBasicParsing -Headers @{ 'User-Agent' = 'Mozilla/5.0' }).Content
+            } catch { break }
+            $items = [regex]::Matches($html, '<h3 class="news-headline-clamp"><a href="(?<href>[^"]+)" title="(?<title>[^"]+)"')
+            if ($items.Count -eq 0) { break }
+            foreach ($m in $items) {
+                $aTitle = [System.Net.WebUtility]::HtmlDecode($m.Groups['title'].Value)
+                # Nur Brand-verdächtige Titel kosten einen Artikel-Abruf
+                if ($aTitle -notmatch $fireRegex) { continue }
+                Invoke-ReportItem $feed $aTitle '' $m.Groups['href'].Value $null
             }
-            return $toks
+            Start-Sleep -Milliseconds 300
         }
-        # Ortsteil = Text vor " - " bzw. vor ":" — der kürzere Kandidat gewinnt,
-        # bei leerem Ergebnis der jeweils andere.
-        $candA = ($t -split ' - ', 2)[0]; if ($candA -eq $t) { $candA = $null }
-        $candB = ($t -split ':', 2)[0];   if ($candB -eq $t) { $candB = $null }
-        $ordered = @($candA, $candB) | Where-Object { $_ } | Sort-Object Length
-        $places = @()
-        foreach ($cand in $ordered) {
-            $places = Get-PlaceTokens $cand
-            if ($places) { break }
-        }
-        # Feuerwehr-Titel tragen keinen Ort -> Standard-Ort der Dienststelle
-        if (-not $places -and $feed.place) { $places = @($feed.place) }
-        if (-not $places) { continue }
-
-        # Volltext der Detailseite für Positions- und Status-Extraktion
-        $full = Get-ArticleText ([string]$item.link)
-        $fullText = "$t. $desc $full"
-
-        # Ungefähre Positionen aus dem Meldungstext: "[B 33] zwischen X und Y"
-        $placePat = '(?:Bad\s+|St\.\s?)?[A-ZÄÖÜ][A-Za-zäöüß-]+(?:\s+(?:am|im)\s+[A-ZÄÖÜ][A-Za-zäöüß-]+|\s+a\.\s?H\.?)?'
-        $zwPat = "(?:(?<road>[ABL]\s?\d+)[^,.;]{0,30}?)?zwischen\s+(?<a>$placePat)\s+und\s+(?<b>$placePat)"
-        $textLocs = @()
-        foreach ($m in [regex]::Matches($fullText, $zwPat)) {
-            $road = $m.Groups['road'].Value
-            $label = ($(if ($road) { "$road " }) + 'zwischen ' + $m.Groups['a'].Value + ' und ' + $m.Groups['b'].Value).Trim()
-            if (($textLocs | ForEach-Object { $_.label }) -notcontains $label) {
-                $textLocs += @{ a = $m.Groups['a'].Value; b = $m.Groups['b'].Value; label = $label }
-            }
-        }
-
-        $rawReports.Add(@{
-            title  = $t
-            # Basis-Schlüssel je Dienststelle: generische FW-Titel ("Brandeinsatz",
-            # "Abschlussmeldung") dürfen nicht feed-übergreifend kollidieren.
-            base   = "$($feed.name)|$base"
-            link   = [string]$item.link
-            date   = ([datetime]$item.pubDate).ToUniversalTime()
-            places = $places
-            fallback = $feed.place
-            textLocs = $textLocs
-            veg    = ($fullText -match $vegRegex)
-            status = Get-FireStatus $fullText
-            source = $feed.name
-            isUpdate = $isUpdate
-        })
     }
 }
 
@@ -248,6 +311,7 @@ foreach ($r in $rawReports) {
     if (-not $groups.ContainsKey($r.base)) { $groups[$r.base] = [System.Collections.Generic.List[object]]::new() }
     $groups[$r.base].Add($r)
 }
+$statusRank = @{ active = 0; contained = 1; out = 2 }
 $events = [System.Collections.Generic.List[object]]::new()
 foreach ($kv in $groups.GetEnumerator()) {
     $g = $kv.Value
@@ -255,7 +319,6 @@ foreach ($kv in $groups.GetEnumerator()) {
     $first = $sorted[0]; $last = $sorted[-1]
     $tl = @{}
     foreach ($r in $sorted) { foreach ($x in $r.textLocs) { $tl[$x.label] = $x } }
-    $statusRank = @{ active = 0; contained = 1; out = 2 }
     $status = @($sorted | ForEach-Object { $_.status } | Sort-Object { $statusRank[$_] })[-1]
     $events.Add(@{
         base    = $kv.Key
@@ -290,7 +353,6 @@ foreach ($e in ($events | Sort-Object { $_.first })) {
             if (($target.textLocs | ForEach-Object { $_.label }) -notcontains $x.label) { $target.textLocs += $x }
         }
         $target.updates += 1 + $e.updates
-        $statusRank = @{ active = 0; contained = 1; out = 2 }
         if ($statusRank[$e.status] -gt $statusRank[$target.status]) { $target.status = $e.status }
         if ($e.last -gt $target.last) { $target.last = $e.last; $target.link = $e.link }
     } else {
@@ -340,7 +402,7 @@ foreach ($e in $merged) {
     })
 }
 
-# --- Persistente Ereignishistorie -------------------------------------------
+# --- Persistente Ereignishistorie (30 Tage) ---------------------------------
 # Das RSS zeigt nur ~30 Items; events.json schreibt Ereignisse fort, damit
 # Brände nicht von der Karte verschwinden, sobald sie aus dem Feed rotieren.
 $storePath = Join-Path $dataDir 'events.json'
@@ -358,7 +420,6 @@ if (Test-Path $storePath) {
     }
 }
 
-$statusRank = @{ active = 0; contained = 1; out = 2 }
 foreach ($n in $out) {
     $match = $store | Where-Object { $_.base -eq $n.base } | Select-Object -First 1
     if (-not $match -and $n.veg) {
@@ -380,12 +441,12 @@ foreach ($n in $out) {
     }
 }
 $store = @($store |
-    Where-Object { ([datetime]::UtcNow - ([datetime]$_.last).ToUniversalTime()).TotalDays -le 21 } |
+    Where-Object { ([datetime]::UtcNow - ([datetime]$_.last).ToUniversalTime()).TotalDays -le 30 } |
     Sort-Object { [datetime]$_.first } -Descending)
 
 # Caches und Ausgabe schreiben
 $geocache | ConvertTo-Json -Depth 3 | Set-Content $cachePath -Encoding UTF8
-$articleCache | ConvertTo-Json -Depth 2 | Set-Content $articleCachePath -Encoding UTF8
+$articleCache | ConvertTo-Json -Depth 3 | Set-Content $articleCachePath -Encoding UTF8
 ConvertTo-Json $store -Depth 6 | Set-Content $storePath -Encoding UTF8
 
 $result = [ordered]@{
@@ -396,4 +457,4 @@ $result = [ordered]@{
 'window.REPORT_DATA = ' + ($result | ConvertTo-Json -Depth 6 -Compress) + ';' |
     Set-Content (Join-Path $dataDir 'reports.js') -Encoding UTF8
 
-Write-Host "Wrote data/reports.js: $($store.Count) Ereignisse ($($out.Count) aus aktuellem Feed, $($rawReports.Count) Roh-Meldungen), $($ninaWarnings.Count) NINA-Warnungen."
+Write-Host "Wrote data/reports.js: $($store.Count) Ereignisse ($($out.Count) aus aktuellem Lauf, $($rawReports.Count) Roh-Meldungen), $($ninaWarnings.Count) NINA-Warnungen."

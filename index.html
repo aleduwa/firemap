@@ -14,7 +14,7 @@
     --hairline:   rgba(11,11,11,0.10);
     --age-0:      #8f1d1d;   /* < 24 h  */
     --age-1:      #d03b3b;   /* 24–48 h */
-    --age-2:      #f0956e;   /* 3–7 Tage */
+    --age-2:      #f0956e;   /* älter   */
     --persistent: #898781;   /* dauerhafte Wärmequelle (Industrie) */
   }
   html, body { height: 100%; margin: 0; }
@@ -34,6 +34,16 @@
   .panel h1 { font-size: 14px; margin: 0 0 4px; font-weight: 650; }
   .panel .meta { color: var(--ink-2); font-size: 12px; }
   .panel .meta b { color: var(--ink); font-weight: 600; }
+
+  .range-ctl { display: flex; gap: 4px; padding: 6px; }
+  .range-ctl .lbl { font-size: 11.5px; color: var(--ink-2); align-self: center; padding: 0 4px 0 2px; }
+  .range-btn {
+    border: 1px solid var(--hairline); background: var(--surface); color: var(--ink-2);
+    border-radius: 6px; padding: 3px 8px; font-size: 12px; cursor: pointer;
+    font-family: inherit;
+  }
+  .range-btn:hover { background: #f1f0ec; }
+  .range-btn.active { background: #8f1d1d; border-color: #8f1d1d; color: #fff; font-weight: 600; }
 
   .legend .row { display: flex; align-items: center; gap: 8px; margin-top: 6px; }
   .legend .dot { width: 14px; height: 14px; border-radius: 50%; border: 2px solid #fff; box-shadow: 0 0 0 1px var(--hairline); flex: none; }
@@ -97,26 +107,29 @@
     attribution: 'Brandfl&auml;chen &copy; EFFIS/Copernicus'
   });
 
-  // ---- FIRMS-Detektionen -------------------------------------------------
+  // ---- Daten & Hilfsfunktionen -------------------------------------------
   const AGE = [
     { max: 24,       color: '#8f1d1d', label: 'letzte 24 Stunden' },
     { max: 48,       color: '#d03b3b', label: '24–48 Stunden' },
-    { max: Infinity, color: '#f0956e', label: '3–7 Tage' }
+    { max: Infinity, color: '#f0956e', label: 'älter' }
   ];
   const CONF_LABEL = { l: 'niedrig', n: 'nominal', h: 'hoch', low: 'niedrig', nominal: 'nominal', high: 'hoch' };
 
   const data = window.FIRE_DATA || { points: [], generated: '–' };
+  const reportData = window.REPORT_DATA || { reports: [] };
+  const wbiData = window.WBI_DATA || { stations: [] };
   const now = Date.now();
 
   // Dauerhafte Wärmequellen (Raffinerien, Stahlwerke …) erkennen:
-  // gleiche ~1-km-Zelle an >= 4 verschiedenen Tagen detektiert.
+  // gleiche ~1-km-Zelle an >= 5 verschiedenen Tagen detektiert. (5 statt 4,
+  // damit ein mehrtägiger echter Waldbrand nicht als Industrie durchgeht.)
   const cellDays = new Map();
   for (const p of data.points) {
     const cell = p.lat.toFixed(2) + '/' + p.lon.toFixed(2);
     if (!cellDays.has(cell)) cellDays.set(cell, new Set());
     cellDays.get(cell).add(p.date);
   }
-  const isPersistent = p => cellDays.get(p.lat.toFixed(2) + '/' + p.lon.toFixed(2)).size >= 4;
+  const isPersistent = p => cellDays.get(p.lat.toFixed(2) + '/' + p.lon.toFixed(2)).size >= 5;
 
   function acqDate(p) {
     return new Date(p.date + 'T' + p.time.slice(0, 2) + ':' + p.time.slice(2) + ':00Z');
@@ -148,30 +161,6 @@
       (persistent ? '<div class="tip-flag">Wahrscheinlich dauerhafte W&auml;rmequelle (Industrie)</div>' : '');
   }
 
-  const firesLayer = L.layerGroup().addTo(map);
-  const counts = [0, 0, 0]; let persistentCount = 0;
-
-  data.points
-    .slice()
-    .sort((a, b) => acqDate(a) - acqDate(b))       // frisch zuletzt = oben
-    .forEach(p => {
-      const persistent = isPersistent(p);
-      const cls = ageClass(p);
-      counts[cls]++; if (persistent) persistentCount++;
-      const r = Math.max(5, Math.min(18, 4 + 2.2 * Math.sqrt(Math.max(p.frp, 0))));
-      L.circleMarker([p.lat, p.lon], {
-        radius: r,
-        fillColor: persistent ? '#898781' : AGE[cls].color,
-        fillOpacity: 0.85,
-        color: '#ffffff',
-        weight: 2,
-        dashArray: persistent ? '3 3' : null
-      })
-      .bindTooltip(tooltipHtml(p, persistent), { className: 'fire-tip', sticky: true, direction: 'top', offset: [0, -6] })
-      .addTo(firesLayer);
-    });
-
-  // ---- Detektions-Footprints & geschätzte Flächen ------------------------
   // scan/track = Pixelgröße des Sensors in km. Der Footprint zeigt ehrlich,
   // wie grob eine Detektion ist; die Vereinigung überlappender Footprints
   // benachbarter Detektionen ergibt eine grobe Schätzung der betroffenen Fläche.
@@ -187,84 +176,6 @@
     return turf.polygon([ring]);
   }
 
-  const footprintLayer = L.layerGroup();
-  const nonPersistent = data.points.filter(p => !isPersistent(p));
-  nonPersistent.forEach(p => {
-    const cls = ageClass(p);
-    L.geoJSON(footprintPolygon(p), {
-      style: { color: AGE[cls].color, weight: 1, fillColor: AGE[cls].color, fillOpacity: 0.12, interactive: false }
-    }).addTo(footprintLayer);
-  });
-
-  // Cluster: Detektionen mit Abstand <= 1 km verbinden (Union-Find)
-  const parent = nonPersistent.map((_, i) => i);
-  const find = i => parent[i] === i ? i : (parent[i] = find(parent[i]));
-  for (let i = 0; i < nonPersistent.length; i++)
-    for (let j = i + 1; j < nonPersistent.length; j++) {
-      const a = nonPersistent[i], b = nonPersistent[j];
-      const dKm = Math.hypot((a.lat - b.lat) * 111, (a.lon - b.lon) * 74);
-      if (dKm <= 1) parent[find(i)] = find(j);
-    }
-  const clusters = new Map();
-  nonPersistent.forEach((p, i) => {
-    const r = find(i);
-    if (!clusters.has(r)) clusters.set(r, []);
-    clusters.get(r).push(p);
-  });
-
-  const areaLayer = L.layerGroup().addTo(map);
-  clusters.forEach(pts => {
-    if (pts.length < 2) return;
-    let union = footprintPolygon(pts[0]);
-    for (let k = 1; k < pts.length; k++) {
-      try { union = turf.union(union, footprintPolygon(pts[k])); } catch (e) { /* topologie-fehler ignorieren */ }
-    }
-    const ha = Math.round(turf.area(union) / 10000);
-    const dates = pts.map(p => acqDate(p).getTime());
-    const newest = new Date(Math.max.apply(null, dates));
-    const oldest = new Date(Math.min.apply(null, dates));
-    const cls = AGE.findIndex(a => (Date.now() - newest.getTime()) / 3.6e6 <= a.max);
-    const maxFrp = Math.max.apply(null, pts.map(p => p.frp));
-    L.geoJSON(union, {
-      style: { color: AGE[cls].color, weight: 2, dashArray: '4 4', fillColor: AGE[cls].color, fillOpacity: 0.25 }
-    }).bindTooltip(
-      '<div class="tip-head">Gesch&auml;tzte betroffene Fl&auml;che</div>' +
-      '<div class="tip-sub">aus ' + pts.length + ' Satelliten-Detektionen (Pixel-Union, ~375 m Aufl&ouml;sung)</div>' +
-      '<table>' +
-      '<tr><td>Fl&auml;che (grob)</td><td>ca. ' + ha + ' ha</td></tr>' +
-      '<tr><td>Zeitraum</td><td>' + fmtLocal(oldest) + ' – ' + fmtLocal(newest) + '</td></tr>' +
-      '<tr><td>Max. Feuerleistung</td><td>' + maxFrp.toFixed(1) + ' MW</td></tr>' +
-      '</table>',
-      { className: 'fire-tip', sticky: true }
-    ).addTo(areaLayer);
-  });
-
-  // ---- DWD-Waldbrandgefahrenindex (optional) ------------------------------
-  const WBI_COLOR = { 1: '#6a994e', 2: '#f2cc45', 3: '#f1a13a', 4: '#d03b3b', 5: '#7a1717' };
-  const WBI_LABEL = { 1: 'sehr gering', 2: 'gering', 3: 'mittel', 4: 'hoch', 5: 'sehr hoch' };
-  const wbiData = window.WBI_DATA || { stations: [] };
-  const wbiLayer = L.layerGroup();
-  wbiData.stations.forEach(s => {
-    const icon = L.divIcon({
-      className: '', iconSize: [22, 22], iconAnchor: [11, 11],
-      html: '<div style="width:22px;height:22px;border-radius:4px;background:' + WBI_COLOR[s.today] + ';' +
-            'border:2px solid #fff;box-shadow:0 0 0 1px rgba(11,11,11,.15);display:flex;align-items:center;' +
-            'justify-content:center;font-size:12px;font-weight:700;color:' + (s.today >= 4 || s.today === 1 ? '#fff' : '#0b0b0b') + '">' +
-            s.today + '</div>'
-    });
-    L.marker([s.lat, s.lon], { icon: icon })
-      .bindTooltip(
-        '<div class="tip-head">Waldbrandgefahr (DWD): Stufe ' + s.today + ' — ' + WBI_LABEL[s.today] + '</div>' +
-        '<div class="tip-sub">Station ' + s.name + '</div>' +
-        '<table><tr><td>Morgen</td><td>Stufe ' + s.tomorrow + ' — ' + WBI_LABEL[s.tomorrow] + '</td></tr>' +
-        '<tr><td>Stand</td><td>' + s.issued + ' UTC</td></tr></table>',
-        { className: 'fire-tip', sticky: true, direction: 'top', offset: [0, -10] })
-      .addTo(wbiLayer);
-  });
-
-  // ---- Lokale Einsatzmeldungen (Polizei/Feuerwehr via Presseportal) ------
-  const reportData = window.REPORT_DATA || { reports: [] };
-  const reportsLayer = L.layerGroup().addTo(map);
   const STATUS_LABEL = { active: 'aktiv / unklar', contained: 'unter Kontrolle', out: 'gelöscht' };
   const fireIcon = (approx, status) => L.divIcon({
     className: '', iconSize: [26, 26], iconAnchor: [13, 13],
@@ -285,29 +196,190 @@
     }).length;
   }
 
-  reportData.reports.forEach(rep => {
-    rep.places.forEach(pl => {
-      const sat = nearbySatCount(pl.lat, pl.lon, rep.first, rep.last);
-      const tip = '<div class="tip-head">' + (rep.veg ? 'Vegetationsbrand' : 'Brand') + ' — Einsatzmeldung</div>' +
-        '<div class="tip-sub">' + rep.title + '</div>' +
-        '<table>' +
-        '<tr><td>Ort</td><td>' + pl.name +
-          (pl.approx ? ' <i>(ungef&auml;hr, aus Meldungstext)</i>'
-                     : (/kreis$/i.test(pl.name) ? ' <i>(nur Kreis-Ebene bekannt)</i>' : '')) + '</td></tr>' +
-        '<tr><td>Status</td><td>' + (STATUS_LABEL[rep.status] || rep.status) + '</td></tr>' +
-        '<tr><td>Gemeldet</td><td>' + fmtLocal(new Date(rep.first)) + '</td></tr>' +
-        (rep.updates ? '<tr><td>Folgemeldungen</td><td>' + rep.updates + '</td></tr>' : '') +
-        '<tr><td>Quelle</td><td>' + rep.source + '</td></tr>' +
-        '<tr><td>Satellit</td><td>' + (sat ? sat + ' Detektion(en) in der N&auml;he'
-                                           : 'keine — nur lokal gemeldet') + '</td></tr>' +
-        '</table>' +
-        '<div class="tip-flag">Klicken f&uuml;r Original-Pressemeldung</div>';
-      L.marker([pl.lat, pl.lon], { icon: fireIcon(pl.approx || /kreis$/i.test(pl.name), rep.status) })
-        .bindTooltip(tip, { className: 'fire-tip', sticky: true, direction: 'top', offset: [0, -12] })
-        .bindPopup('<b>' + rep.title + '</b><br><a href="' + rep.link + '" target="_blank" rel="noopener">Pressemeldung lesen</a>')
-        .addTo(reportsLayer);
+  // ---- Layer (Inhalte werden je Zeitraum-Filter neu befüllt) --------------
+  const firesLayer = L.layerGroup().addTo(map);
+  const areaLayer = L.layerGroup().addTo(map);
+  const footprintLayer = L.layerGroup();
+  const reportsLayer = L.layerGroup().addTo(map);
+
+  // ---- DWD-Waldbrandgefahrenindex (optional, unabhängig vom Filter) -------
+  const WBI_COLOR = { 1: '#6a994e', 2: '#f2cc45', 3: '#f1a13a', 4: '#d03b3b', 5: '#7a1717' };
+  const WBI_LABEL = { 1: 'sehr gering', 2: 'gering', 3: 'mittel', 4: 'hoch', 5: 'sehr hoch' };
+  const wbiLayer = L.layerGroup();
+  wbiData.stations.forEach(s => {
+    const icon = L.divIcon({
+      className: '', iconSize: [22, 22], iconAnchor: [11, 11],
+      html: '<div style="width:22px;height:22px;border-radius:4px;background:' + WBI_COLOR[s.today] + ';' +
+            'border:2px solid #fff;box-shadow:0 0 0 1px rgba(11,11,11,.15);display:flex;align-items:center;' +
+            'justify-content:center;font-size:12px;font-weight:700;color:' + (s.today >= 4 || s.today === 1 ? '#fff' : '#0b0b0b') + '">' +
+            s.today + '</div>'
     });
+    L.marker([s.lat, s.lon], { icon: icon })
+      .bindTooltip(
+        '<div class="tip-head">Waldbrandgefahr (DWD): Stufe ' + s.today + ' — ' + WBI_LABEL[s.today] + '</div>' +
+        '<div class="tip-sub">Station ' + s.name + '</div>' +
+        '<table><tr><td>Morgen</td><td>Stufe ' + s.tomorrow + ' — ' + WBI_LABEL[s.tomorrow] + '</td></tr>' +
+        '<tr><td>Stand</td><td>' + s.issued + ' UTC</td></tr></table>',
+        { className: 'fire-tip', sticky: true, direction: 'top', offset: [0, -10] })
+      .addTo(wbiLayer);
   });
+
+  // ---- Zeitraum-Filter ----------------------------------------------------
+  const RANGES = [
+    { days: 1,  label: 'Heute' },
+    { days: 3,  label: '3 T' },
+    { days: 7,  label: '7 T' },
+    { days: 14, label: '14 T' },
+    { days: 30, label: '30 T' }
+  ];
+  let rangeDays = +(localStorage.getItem('firemap.range') || 14);
+  if (!RANGES.some(r => r.days === rangeDays)) rangeDays = 14;
+
+  let legendDiv = null;
+  const counts = [0, 0, 0];
+  let persistentCount = 0, shownReports = 0;
+
+  function rebuild() {
+    const cutoff = now - rangeDays * 864e5;
+    firesLayer.clearLayers(); areaLayer.clearLayers();
+    footprintLayer.clearLayers(); reportsLayer.clearLayers();
+    counts[0] = counts[1] = counts[2] = 0;
+    persistentCount = 0; shownReports = 0;
+
+    // Satelliten-Detektionen (FIRMS liefert max. 7 Tage)
+    const pts = data.points.filter(p => acqDate(p).getTime() >= cutoff);
+    pts.slice()
+      .sort((a, b) => acqDate(a) - acqDate(b))       // frisch zuletzt = oben
+      .forEach(p => {
+        const persistent = isPersistent(p);
+        const cls = ageClass(p);
+        counts[cls]++; if (persistent) persistentCount++;
+        const r = Math.max(5, Math.min(18, 4 + 2.2 * Math.sqrt(Math.max(p.frp, 0))));
+        L.circleMarker([p.lat, p.lon], {
+          radius: r,
+          fillColor: persistent ? '#898781' : AGE[cls].color,
+          fillOpacity: 0.85,
+          color: '#ffffff',
+          weight: 2,
+          dashArray: persistent ? '3 3' : null
+        })
+        .bindTooltip(tooltipHtml(p, persistent), { className: 'fire-tip', sticky: true, direction: 'top', offset: [0, -6] })
+        .addTo(firesLayer);
+      });
+
+    // Footprints + geschätzte Flächen aus den gefilterten Punkten
+    const nonPersistent = pts.filter(p => !isPersistent(p));
+    nonPersistent.forEach(p => {
+      const cls = ageClass(p);
+      L.geoJSON(footprintPolygon(p), {
+        style: { color: AGE[cls].color, weight: 1, fillColor: AGE[cls].color, fillOpacity: 0.12, interactive: false }
+      }).addTo(footprintLayer);
+    });
+
+    // Cluster benachbarter Detektionen (Union-Find)
+    const parent = nonPersistent.map((_, i) => i);
+    const find = i => parent[i] === i ? i : (parent[i] = find(parent[i]));
+    for (let i = 0; i < nonPersistent.length; i++)
+      for (let j = i + 1; j < nonPersistent.length; j++) {
+        const a = nonPersistent[i], b = nonPersistent[j];
+        const dKm = Math.hypot((a.lat - b.lat) * 111, (a.lon - b.lon) * 74);
+        // Verknüpfungsdistanz wächst mit der Pixelgröße (am Swath-Rand > 1 km)
+        const link = Math.max(1, ((a.scan || 0.375) + (b.scan || 0.375)) / 2);
+        if (dKm <= link) parent[find(i)] = find(j);
+      }
+    const clusters = new Map();
+    nonPersistent.forEach((p, i) => {
+      const r = find(i);
+      if (!clusters.has(r)) clusters.set(r, []);
+      clusters.get(r).push(p);
+    });
+
+    clusters.forEach(cpts => {
+      if (cpts.length < 2) return;
+      let union = footprintPolygon(cpts[0]);
+      for (let k = 1; k < cpts.length; k++) {
+        try { union = turf.union(union, footprintPolygon(cpts[k])); } catch (e) { /* topologie-fehler ignorieren */ }
+      }
+      const ha = Math.round(turf.area(union) / 10000);
+      const dates = cpts.map(p => acqDate(p).getTime());
+      const newest = new Date(Math.max.apply(null, dates));
+      const oldest = new Date(Math.min.apply(null, dates));
+      const cls = AGE.findIndex(a => (now - newest.getTime()) / 3.6e6 <= a.max);
+      const maxFrp = Math.max.apply(null, cpts.map(p => p.frp));
+      L.geoJSON(union, {
+        style: { color: AGE[cls].color, weight: 2, dashArray: '4 4', fillColor: AGE[cls].color, fillOpacity: 0.25 }
+      }).bindTooltip(
+        '<div class="tip-head">Gesch&auml;tzte betroffene Fl&auml;che</div>' +
+        '<div class="tip-sub">aus ' + cpts.length + ' Satelliten-Detektionen (Pixel-Union, ~375 m Aufl&ouml;sung)</div>' +
+        '<table>' +
+        '<tr><td>Fl&auml;che (grob)</td><td>ca. ' + ha + ' ha</td></tr>' +
+        '<tr><td>Zeitraum</td><td>' + fmtLocal(oldest) + ' – ' + fmtLocal(newest) + '</td></tr>' +
+        '<tr><td>Max. Feuerleistung</td><td>' + maxFrp.toFixed(1) + ' MW</td></tr>' +
+        '</table>',
+        { className: 'fire-tip', sticky: true }
+      ).addTo(areaLayer);
+    });
+
+    // Einsatzmeldungen (Filter auf letzte Aktivität)
+    // Marker mit identischen Koordinaten leicht spiralig versetzen,
+    // damit keiner unsichtbar unter einem anderen liegt
+    const stackCount = new Map();
+    function unstack(lat, lon) {
+      const key = lat.toFixed(3) + '/' + lon.toFixed(3);
+      const n = stackCount.get(key) || 0;
+      stackCount.set(key, n + 1);
+      if (n === 0) return [lat, lon];
+      const ang = n * 2.4, r = 0.004 + 0.001 * n;   // Spirale, ~400 m Schritte
+      return [lat + r * Math.cos(ang), lon + r * Math.sin(ang) * 1.5];
+    }
+
+    reportData.reports
+      .filter(rep => new Date(rep.last).getTime() >= cutoff)
+      .forEach(rep => {
+        shownReports++;
+        rep.places.forEach(pl => {
+          const satN = nearbySatCount(pl.lat, pl.lon, rep.first, rep.last);
+          const tip = '<div class="tip-head">' + (rep.veg ? 'Vegetationsbrand' : 'Brand') + ' — Einsatzmeldung</div>' +
+            '<div class="tip-sub">' + rep.title + '</div>' +
+            '<table>' +
+            '<tr><td>Ort</td><td>' + pl.name +
+              (pl.approx ? ' <i>(ungef&auml;hr)</i>'
+                         : (/kreis$/i.test(pl.name) ? ' <i>(nur Kreis-Ebene bekannt)</i>' : '')) + '</td></tr>' +
+            '<tr><td>Status</td><td>' + (STATUS_LABEL[rep.status] || rep.status) + '</td></tr>' +
+            '<tr><td>Gemeldet</td><td>' + fmtLocal(new Date(rep.first)) + '</td></tr>' +
+            (rep.updates ? '<tr><td>Folgemeldungen</td><td>' + rep.updates + '</td></tr>' : '') +
+            '<tr><td>Quelle</td><td>' + rep.source + '</td></tr>' +
+            '<tr><td>Satellit</td><td>' + (satN ? satN + ' Detektion(en) in der N&auml;he'
+                                                : 'keine — nur lokal gemeldet') + '</td></tr>' +
+            '</table>' +
+            '<div class="tip-flag">Klicken f&uuml;r Original-Pressemeldung</div>';
+          L.marker(unstack(pl.lat, pl.lon), { icon: fireIcon(pl.approx || /kreis$/i.test(pl.name), rep.status) })
+            .bindTooltip(tip, { className: 'fire-tip', sticky: true, direction: 'top', offset: [0, -12] })
+            .bindPopup('<b>' + rep.title + '</b><br><a href="' + rep.link + '" target="_blank" rel="noopener">Pressemeldung lesen</a>')
+            .addTo(reportsLayer);
+        });
+      });
+
+    renderLegend();
+  }
+
+  function renderLegend() {
+    if (!legendDiv) return;
+    legendDiv.innerHTML = '<h1>Zeitraum: ' + rangeDays + ' Tag' + (rangeDays > 1 ? 'e' : '') + '</h1>' +
+      AGE.map((a, i) =>
+        '<div class="row"><span class="dot" style="background:' + a.color + '"></span>' +
+        '<span class="label">Detektion ' + a.label + ' (' + counts[i] + ')</span></div>'
+      ).join('') +
+      '<div class="row"><span class="dot dashed" style="background:#898781"></span>' +
+      '<span class="label">dauerhafte Wärmequelle / Industrie (' + persistentCount + ')</span></div>' +
+      '<div class="row"><span style="font-size:14px;flex:none">🔥</span>' +
+      '<span class="label">Einsatzmeldung Polizei/Feuerwehr (' + shownReports + ')</span></div>' +
+      '<div class="row"><span class="dot" style="background:rgba(143,29,29,.25);border:2px dashed #8f1d1d;border-radius:4px"></span>' +
+      '<span class="label">geschätzte betroffene Fläche</span></div>' +
+      '<div class="size-hint">Kreisgröße = Feuerleistung (FRP in MW).<br>' +
+      'Satellitendaten reichen max. 7 Tage zurück.<br>' +
+      'Graues 🔥 = gemeldet als gelöscht.</div>';
+  }
 
   // ---- Bedienelemente ----------------------------------------------------
   L.control.layers(
@@ -316,7 +388,7 @@
       'Satelliten-Detektionen (NASA FIRMS)': firesLayer,
       'Geschätzte betroffene Flächen (Satellit)': areaLayer,
       'Detektions-Footprints (Pixelgröße)': footprintLayer,
-      'Lokale Einsatzmeldungen (Polizei)': reportsLayer,
+      'Einsatzmeldungen (Polizei/Feuerwehr)': reportsLayer,
       'Waldbrandgefahr heute (DWD-WBI)': wbiLayer,
       'Vergleich: offizielle Hotspots (EFFIS, ohne Details)': effisHotspots,
       'Vergleich: offizielle Brandflächen (EFFIS)': effisBurnt
@@ -329,11 +401,11 @@
     const div = L.DomUtil.create('div', 'panel');
     div.innerHTML =
       '<h1>Feuer &amp; Wärmesignaturen — Baden-Württemberg</h1>' +
-      '<div class="meta">Satelliten-Detektionen der letzten 7 Tage (NASA FIRMS: VIIRS + MODIS), ' +
-      'Einsatzmeldungen aller 13 Polizeipräsidien (Presseportal) und offizielle EFFIS-Layer zum Vergleich.</div>' +
-      '<div class="meta" style="margin-top:6px"><b>' + data.points.length + '</b> Detektionen im Ausschnitt' +
-      (persistentCount ? ' &middot; davon <b>' + persistentCount + '</b> als Industrie eingestuft' : '') +
-      '<br>Satellit: <b>' + data.generated + '</b> &middot; Meldungen: <b>' + (reportData.generated || '–') + '</b></div>' +
+      '<div class="meta">Satelliten-Detektionen (NASA FIRMS: VIIRS + MODIS), Einsatzmeldungen der 13 ' +
+      'Polizeipräsidien und 14 Feuerwehren (Presseportal) sowie offizielle EFFIS-Layer zum Vergleich.</div>' +
+      '<div class="meta" style="margin-top:6px">' +
+      '<b>' + reportData.reports.filter(r => r.status === 'active').length + '</b> gemeldete Br&auml;nde ohne L&ouml;sch-Best&auml;tigung (30 Tage)' +
+      '<br>Satellit: <b>' + data.generated + '</b><br>Meldungen: <b>' + (reportData.generated || '–') + '</b></div>' +
       ((reportData.nina && reportData.nina.length)
         ? '<div style="margin-top:8px;padding:6px 8px;border-radius:6px;background:#fbe9e7;border:1px solid #d03b3b;font-size:12px">' +
           '<b>Amtliche Warnungen (NINA):</b><br>' +
@@ -343,29 +415,38 @@
   };
   info.addTo(map);
 
+  // Zeitraum-Auswahl (Presets, Standard: 14 Tage)
+  const rangeCtl = L.control({ position: 'topleft' });
+  rangeCtl.onAdd = function () {
+    const div = L.DomUtil.create('div', 'panel range-ctl');
+    L.DomEvent.disableClickPropagation(div);
+    div.innerHTML = '<span class="lbl">Zeitraum</span>' + RANGES.map(r =>
+      '<button class="range-btn' + (r.days === rangeDays ? ' active' : '') + '" data-days="' + r.days + '">' + r.label + '</button>'
+    ).join('');
+    div.addEventListener('click', e => {
+      const btn = e.target.closest('.range-btn');
+      if (!btn) return;
+      rangeDays = +btn.dataset.days;
+      localStorage.setItem('firemap.range', rangeDays);
+      div.querySelectorAll('.range-btn').forEach(b => b.classList.toggle('active', +b.dataset.days === rangeDays));
+      rebuild();
+    });
+    return div;
+  };
+  rangeCtl.addTo(map);
+
   const legend = L.control({ position: 'bottomright' });
   legend.onAdd = function () {
-    const div = L.DomUtil.create('div', 'panel legend');
-    div.innerHTML = '<h1>Alter der Detektion</h1>' +
-      AGE.map((a, i) =>
-        '<div class="row"><span class="dot" style="background:' + a.color + '"></span>' +
-        '<span class="label">' + a.label + ' (' + counts[i] + ')</span></div>'
-      ).join('') +
-      '<div class="row"><span class="dot dashed" style="background:#898781"></span>' +
-      '<span class="label">dauerhafte Wärmequelle / Industrie</span></div>' +
-      '<div class="row"><span style="font-size:14px;flex:none">🔥</span>' +
-      '<span class="label">Einsatzmeldung Polizei/Feuerwehr (' + reportData.reports.length + ')</span></div>' +
-      '<div class="row"><span class="dot" style="background:rgba(143,29,29,.25);border:2px dashed #8f1d1d;border-radius:4px"></span>' +
-      '<span class="label">geschätzte betroffene Fläche</span></div>' +
-      '<div class="size-hint">Kreisgröße = Feuerleistung (FRP in MW).<br>' +
-      'Für Details mit der Maus auf einen Punkt zeigen.<br>' +
-      'Graues 🔥 = gemeldet als gelöscht.</div>';
-    return div;
+    legendDiv = L.DomUtil.create('div', 'panel legend');
+    renderLegend();
+    return legendDiv;
   };
   legend.addTo(map);
 
-  // Seite alle 15 Minuten neu laden (greift, sobald ein Scheduler die
-  // Datendateien regelmäßig aktualisiert)
+  rebuild();
+
+  // Seite alle 15 Minuten neu laden (der Cloud-Scheduler aktualisiert die
+  // Datendateien; der gewählte Zeitraum bleibt via localStorage erhalten)
   setTimeout(function () { location.reload(); }, 15 * 60 * 1000);
 })();
 </script>

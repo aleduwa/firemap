@@ -6,6 +6,11 @@ on:
     - cron: '7 * * * *'      # Satellitendaten (NASA FIRMS)
     - cron: '25 5 * * *'     # Waldbrandindex (DWD, nach dem 04:15-UTC-Lauf)
   workflow_dispatch:
+    inputs:
+      backfill:
+        description: 'Presseportal-Archivseiten einlesen (Backfill)'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -25,6 +30,8 @@ jobs:
       - name: Einsatzmeldungen aktualisieren
         if: github.event_name == 'workflow_dispatch' || github.event.schedule == '*/15 * * * *'
         shell: pwsh
+        env:
+          FIREMAP_BACKFILL: ${{ inputs.backfill }}
         run: ./update-reports.ps1
 
       - name: Satellitendaten aktualisieren
