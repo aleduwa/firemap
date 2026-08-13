@@ -94,6 +94,33 @@
   .mode-switch a { padding: 6px 14px; font-size: 13px; text-decoration: none; color: #52514e; }
   .mode-switch a.active { background: #8f1d1d; color: #fff; font-weight: 600; }
   .mode-switch a:not(.active):hover { background: #f1f0ec; }
+
+  /* Einklapp-Buttons der Karten-Panels: nur auf Mobile sichtbar */
+  .mob-toggle { display: none; }
+
+  /* Mobile: Panels als Icons einklappbar, damit die Karte Platz hat;
+     Desktop-Darstellung bleibt unverändert (alles in der Media Query) */
+  @media (max-width: 640px) {
+    body { height: 100dvh; }
+    .mode-switch a { padding: 9px 12px; }
+    .leaflet-control-zoom { display: none; }
+    .leaflet-top.leaflet-left { top: 44px; }
+    .leaflet-top.leaflet-right { top: 44px; }
+    .leaflet-left .leaflet-control { margin-left: 8px; margin-top: 8px; }
+    .leaflet-right .leaflet-control { margin-right: 8px; margin-top: 8px; }
+    .panel { max-width: min(230px, calc(100vw - 60px)); padding: 8px 10px; }
+    .range-btn { padding: 8px 10px; font-size: 13px; min-height: 36px; }
+    .range-ctl { flex-wrap: wrap; }
+    .legend { max-width: 200px; max-height: 38vh; overflow-y: auto; overscroll-behavior: contain; }
+    .legend .size-hint { display: none; }
+
+    .mob-toggle { display: flex; align-items: center; justify-content: center;
+      width: 36px; height: 36px; border: 0; background: transparent; padding: 0;
+      font-size: 18px; line-height: 1; cursor: pointer; flex: none; font-family: inherit; }
+    .mob-collapsible.collapsed { width: 42px; height: 42px; padding: 3px; overflow: hidden;
+      max-width: 42px; max-height: 42px; }
+    .mob-collapsible.collapsed > *:not(.mob-toggle) { display: none !important; }
+  }
 </style>
 <script type="application/ld+json">
 {
@@ -465,7 +492,8 @@
 
   function renderLegend() {
     if (!legendDiv) return;
-    legendDiv.innerHTML = '<h1>Zeitraum: ' + rangeDays + ' Tag' + (rangeDays > 1 ? 'e' : '') + '</h1>' +
+    legendDiv.innerHTML = '<button class="mob-toggle" aria-label="Legende ein-/ausblenden" title="Legende">☰</button>' +
+      '<h1>Zeitraum: ' + rangeDays + ' Tag' + (rangeDays > 1 ? 'e' : '') + '</h1>' +
       AGE.map((a, i) =>
         '<div class="row"><span class="dot" style="background:' + a.color + '"></span>' +
         '<span class="label">Detektion ' + a.label + ' (' + counts[i] + ')</span></div>'
@@ -482,6 +510,16 @@
   }
 
   // ---- Bedienelemente ----------------------------------------------------
+  // Auf Mobile: Panels per Icon ein-/ausklappen; beim Öffnen die anderen
+  // schließen, damit die Karte frei bleibt
+  const isMobile = () => window.matchMedia && window.matchMedia('(max-width: 640px)').matches;
+  function toggleCollapse(div) {
+    const wasOpen = !div.classList.contains('collapsed');
+    if (wasOpen) { div.classList.add('collapsed'); return; }
+    document.querySelectorAll('.mob-collapsible').forEach(p => p.classList.add('collapsed'));
+    div.classList.remove('collapsed');
+  }
+
   L.control.layers(
     { 'Karte (OSM)': osm, 'Satellit (Esri)': sat },
     {
@@ -493,13 +531,20 @@
       'Vergleich: offizielle Hotspots (EFFIS, ohne Details)': effisHotspots,
       'Vergleich: offizielle Brandflächen (EFFIS)': effisBurnt
     },
-    { collapsed: false, position: 'topright' }
+    // Auf Mobile eingeklappt (Standard-Leaflet-Icon), auf Desktop offen
+    { collapsed: isMobile(), position: 'topright' }
   ).addTo(map);
 
   const info = L.control({ position: 'topleft' });
   info.onAdd = function () {
-    const div = L.DomUtil.create('div', 'panel');
+    const div = L.DomUtil.create('div', 'panel mob-collapsible');
+    L.DomEvent.disableClickPropagation(div);
+    if (isMobile()) div.classList.add('collapsed');
+    div.addEventListener('click', function (e) {
+      if (e.target.closest('.mob-toggle')) toggleCollapse(div);
+    });
     div.innerHTML =
+      '<button class="mob-toggle" aria-label="Info ein-/ausblenden" title="Info">ℹ️</button>' +
       '<h1>Feuer &amp; Wärmesignaturen — Baden-Württemberg</h1>' +
       '<div class="meta">Satelliten-Detektionen (NASA FIRMS: VIIRS + MODIS), Einsatzmeldungen der 13 ' +
       'Polizeipräsidien und 14 Feuerwehren (Presseportal) sowie offizielle EFFIS-Layer zum Vergleich.</div>' +
@@ -520,12 +565,15 @@
   // Zeitraum-Auswahl (Presets, Standard: 14 Tage)
   const rangeCtl = L.control({ position: 'topleft' });
   rangeCtl.onAdd = function () {
-    const div = L.DomUtil.create('div', 'panel range-ctl');
+    const div = L.DomUtil.create('div', 'panel range-ctl mob-collapsible');
     L.DomEvent.disableClickPropagation(div);
-    div.innerHTML = '<span class="lbl">Zeitraum</span>' + RANGES.map(r =>
+    if (isMobile()) div.classList.add('collapsed');
+    div.innerHTML = '<button class="mob-toggle" aria-label="Zeitraum-Filter ein-/ausblenden" title="Zeitraum">🕒</button>' +
+      '<span class="lbl">Zeitraum</span>' + RANGES.map(r =>
       '<button class="range-btn' + (r.days === rangeDays ? ' active' : '') + '" data-days="' + r.days + '">' + r.label + '</button>'
     ).join('');
     div.addEventListener('click', e => {
+      if (e.target.closest('.mob-toggle')) { toggleCollapse(div); return; }
       const btn = e.target.closest('.range-btn');
       if (!btn) return;
       rangeDays = +btn.dataset.days;
@@ -539,7 +587,12 @@
 
   const legend = L.control({ position: 'bottomright' });
   legend.onAdd = function () {
-    legendDiv = L.DomUtil.create('div', 'panel legend');
+    legendDiv = L.DomUtil.create('div', 'panel legend mob-collapsible');
+    L.DomEvent.disableClickPropagation(legendDiv);
+    if (isMobile()) legendDiv.classList.add('collapsed');
+    legendDiv.addEventListener('click', function (e) {
+      if (e.target.closest('.mob-toggle')) toggleCollapse(legendDiv);
+    });
     renderLegend();
     return legendDiv;
   };
