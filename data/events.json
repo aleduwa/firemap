@@ -1,11 +1,33 @@
 [
   {
+    "base": "Polizeipräsidium Pforzheim|(enzkreis) eisingen - gemeinsame pressemeldung der staatsanwaltschaft karlsruhe -zweigstelle pforzheim und des polizeipräsidiums pforzheim - zeugen zum brand in eisingen gesucht",
+    "status": "out",
+    "title": "(Enzkreis) Eisingen - Gemeinsame Pressemeldung der Staatsanwaltschaft Karlsruhe -Zweigstelle Pforzheim und des Polizeipräsidiums Pforzheim - Zeugen zum Brand in Eisingen gesucht",
+    "link": "https://www.presseportal.de/blaulicht/pm/137462/6332815",
+    "first": "2026-08-13T11:17:59Z",
+    "last": "2026-08-13T11:17:59Z",
+    "places": [
+      {
+        "name": "Eisingen",
+        "lat": 48.9478916,
+        "lon": 8.668972,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Pforzheim",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Weinheim|kleiner brand, starke rauchentwicklung",
     "status": "out",
     "title": "Kleiner Brand, starke Rauchentwicklung",
     "link": "https://www.presseportal.de/blaulicht/pm/179375/6332699",
     "first": "2026-08-13T09:47:25Z",
     "last": "2026-08-13T09:47:25Z",
+    "veg": false,
+    "source": "Feuerwehr Weinheim",
+    "updates": 0,
     "places": [
       {
         "name": "Weinheim",
@@ -13,10 +35,7 @@
         "lon": 8.6717458,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Weinheim",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ludwigsburg|böblingen: küchenbrand in der königsberger straße",
@@ -25,6 +44,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110974/6332669",
     "first": "2026-08-13T09:27:39Z",
     "last": "2026-08-13T09:27:39Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ludwigsburg",
+    "updates": 0,
     "places": [
       {
         "name": "Böblingen",
@@ -32,10 +54,7 @@
         "lon": 9.0113444,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Heilbronn|main-tauber-kreis: tätlicher angriff, unfall, brand",
@@ -4392,25 +4411,6 @@
         "name": "Wiernsheim",
         "lat": 48.8854377,
         "lon": 8.898631,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Heilbronn|main-tauber-kreis: flächenbrand",
-    "status": "active",
-    "title": "Main-Tauber-Kreis: Flächenbrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110971/6314370",
-    "first": "2026-07-14T10:59:41Z",
-    "last": "2026-07-14T10:59:41Z",
-    "veg": true,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0,
-    "places": [
-      {
-        "name": "Main-Tauber-Kreis",
-        "lat": 49.5713631,
-        "lon": 9.6999301,
         "approx": false
       }
     ]
