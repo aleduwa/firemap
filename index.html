@@ -522,12 +522,17 @@
             '<tr><td>Quelle</td><td>' + rep.source + '</td></tr>' +
             '<tr><td>Satellit</td><td>' + (satN ? satN + ' Detektion(en) in der N&auml;he'
                                                 : 'keine — nur lokal gemeldet') + '</td></tr>' +
-            '</table>' +
-            '<div class="tip-flag">Klicken f&uuml;r Original-Pressemeldung</div>';
-          L.marker(unstack(pl.lat, pl.lon), { icon: fireIcon(pl.approx || /kreis$/i.test(pl.name), rep.status, rep.veg) })
-            .bindTooltip(tip, { className: 'fire-tip', sticky: true, direction: 'top', offset: [0, -12] })
-            .bindPopup('<b>' + rep.title + '</b><br><a href="' + rep.link + '" target="_blank" rel="noopener">Pressemeldung lesen</a>')
-            .addTo(rep.veg ? reportsVegLayer : reportsOtherLayer);
+            '</table>';
+          const linkHtml = '<a href="' + rep.link + '" target="_blank" rel="noopener">Pressemeldung lesen</a>';
+          const m = L.marker(unstack(pl.lat, pl.lon), { icon: fireIcon(pl.approx || /kreis$/i.test(pl.name), rep.status, rep.veg) });
+          if (IS_TOUCH) {
+            m.bindPopup('<div class="fire-tip">' + tip + '<div style="margin-top:6px"><b>' + linkHtml + '</b></div></div>');
+          } else {
+            m.bindTooltip(tip + '<div class="tip-flag">Klicken f&uuml;r Original-Pressemeldung</div>',
+                { className: 'fire-tip', sticky: true, direction: 'top', offset: [0, -12] })
+             .bindPopup('<b>' + rep.title + '</b><br>' + linkHtml);
+          }
+          m.addTo(rep.veg ? reportsVegLayer : reportsOtherLayer);
         });
       });
 
@@ -561,6 +566,8 @@
   // Auf Mobile: Panels per Icon ein-/ausklappen; beim Öffnen die anderen
   // schließen, damit die Karte frei bleibt
   const isMobile = () => window.matchMedia && window.matchMedia('(max-width: 640px)').matches;
+  // Touch: Tap löst Hover UND Klick aus -> Tooltip weglassen, Details ins Popup
+  const IS_TOUCH = window.matchMedia && window.matchMedia('(hover: none)').matches;
   function toggleCollapse(div) {
     const wasOpen = !div.classList.contains('collapsed');
     if (wasOpen) { div.classList.add('collapsed'); return; }

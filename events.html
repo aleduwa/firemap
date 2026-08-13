@@ -539,10 +539,12 @@
         '<br>' + dateList +
         '<br><a href="' + esc(e.url) + '" target="_blank" rel="noopener">Zur Veranstaltungsseite (' + esc(e.source) + ')</a>';
 
-      L.marker([e.lat, e.lon], { icon: evtIcon(cat) })
-        .bindTooltip(tip, { className: 'evt-tip', sticky: true, direction: 'top', offset: [0, -12] })
-        .bindPopup(popup)
-        .addTo(eventsLayer);
+      const mk = L.marker([e.lat, e.lon], { icon: evtIcon(cat) }).bindPopup(popup);
+      // Touch: Tap löst Hover UND Klick aus -> nur Popup binden
+      if (!window.matchMedia('(hover: none)').matches) {
+        mk.bindTooltip(tip, { className: 'evt-tip', sticky: true, direction: 'top', offset: [0, -12] });
+      }
+      mk.addTo(eventsLayer);
     }
 
     function addVenueMarker(lists) {
@@ -585,10 +587,11 @@
         }).join('<br>') +
         (lists.length > 12 ? '<br><i>+ ' + (lists.length - 12) + ' weitere — Listenansicht nutzen</i>' : '');
 
-      L.marker([first.lat, first.lon], { icon: icon })
-        .bindTooltip(tip, { className: 'evt-tip', sticky: true, direction: 'top', offset: [0, -14] })
-        .bindPopup(popup, { maxWidth: 320 })
-        .addTo(eventsLayer);
+      const mk = L.marker([first.lat, first.lon], { icon: icon }).bindPopup(popup, { maxWidth: 320 });
+      if (!window.matchMedia('(hover: none)').matches) {
+        mk.bindTooltip(tip, { className: 'evt-tip', sticky: true, direction: 'top', offset: [0, -14] });
+      }
+      mk.addTo(eventsLayer);
     }
 
     renderScope();
