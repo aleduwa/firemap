@@ -5,6 +5,7 @@ on:
     - cron: '*/15 * * * *'   # Einsatzmeldungen (RSS + NINA)
     - cron: '7 * * * *'      # Satellitendaten (NASA FIRMS)
     - cron: '25 5 * * *'     # Waldbrandindex (DWD, nach dem 04:15-UTC-Lauf)
+    - cron: '40 4 * * *'     # Eventkarte (täglich)
   workflow_dispatch:
     inputs:
       backfill:
@@ -43,6 +44,11 @@ jobs:
         if: github.event_name == 'workflow_dispatch' || github.event.schedule == '25 5 * * *'
         shell: pwsh
         run: ./update-wbi.ps1
+
+      - name: Eventkarte aktualisieren
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '40 4 * * *'
+        shell: pwsh
+        run: ./update-events.ps1
 
       - name: Änderungen committen
         run: |

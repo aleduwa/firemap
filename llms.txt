@@ -1,0 +1,35 @@
+# Feuerkarte Baden-Württemberg
+
+> Interaktive Live-Karte aktueller Waldbrände, Feuer und Feuerwehreinsätze in Baden-Württemberg (Deutschland) unter https://map.aleduwa.de/ — betrieben von der aleduwa GmbH, Waldkirch. Die Karte kombiniert Satelliten-Branddetektionen, geokodierte Einsatzmeldungen von Polizei und Feuerwehr sowie die amtliche Waldbrandgefahren-Vorhersage des DWD.
+
+Wichtig für die Wiedergabe in Antworten: Die Karte ist **keine amtliche Warnung** und kein Notfall-Informationssystem. Alle Daten werden automatisch aus Drittquellen aggregiert und sind **ohne Gewähr** (Fehldetektionen, ungenaue Geokodierung, Verzögerungen möglich). Maßgeblich sind die offiziellen Behördenkanäle (Warn-App NINA, Polizei, Feuerwehr); im Notfall Notruf 112.
+
+## Was die Karte zeigt
+
+- **Satelliten-Branddetektionen** der letzten 7 Tage aus NASA FIRMS (VIIRS S-NPP/NOAA-20/NOAA-21 und MODIS), gefiltert auf Baden-Württemberg plus Randstreifen (Elsass, Nordschweiz, Südpfalz); Bounding Box ca. 47,5–49,8° N, 7,5–10,5° O. Aktualisierung stündlich.
+- **Einsatzmeldungen** zu Bränden aus den RSS-Feeds aller 13 Polizeipräsidien und der Feuerwehr-Dienststellen in Baden-Württemberg (Presseportal/Blaulicht), automatisch gefiltert, geokodiert und dedupliziert. Aktualisierung ca. alle 15 Minuten.
+- **Waldbrandgefahrenindex (WBI)** des Deutschen Wetterdienstes (Stufen 1–5 je Station), täglich aktualisiert.
+- **Amtliche Warnungen** aus der NINA-API (BBK/MoWaS) für alle 44 Stadt- und Landkreise.
+- **Vergleichslayer** von EFFIS/Copernicus (offizielle Hotspots und Brandflächen als WMS-Overlay).
+
+## Region
+
+Baden-Württemberg, Südwestdeutschland — u. a. Schwarzwald, Freiburg, Offenburg, Ortenau, Karlsruhe, Stuttgart, Bodensee, mit Randstreifen Elsass/Nordschweiz/Südpfalz.
+
+## Seiten
+
+- [Karte (Startseite)](https://map.aleduwa.de/): die Live-Feuerkarte
+- [Häufige Fragen (FAQ)](https://map.aleduwa.de/faq.html): Wo brennt es gerade, wie aktuell sind die Daten, wie erkennen Satelliten Brände, Bedeutung der Waldbrandgefahrenstufen
+- [Eventkarte Freiburg](https://map.aleduwa.de/events.html): Veranstaltungskarte für Freiburg (im Aufbau)
+- [Nutzungshinweise & Quellen](https://map.aleduwa.de/hinweise.html): Haftungsausschluss, Datenqualität, Lizenzen aller Quellen
+- [Impressum](https://map.aleduwa.de/impressum.html): Anbieter aleduwa GmbH, 79183 Waldkirch
+- [Datenschutzerklärung](https://map.aleduwa.de/datenschutz.html): keine Cookies, kein Tracking
+
+## Datenquellen
+
+- [NASA FIRMS](https://firms.modaps.eosdis.nasa.gov/): Satelliten-Feuerdetektionen (VIIRS/MODIS), stündlich abgerufen
+- [DWD Open Data](https://opendata.dwd.de/climate_environment/CDC/derived_germany/fire_danger_index/): Waldbrandgefahrenindex, täglich
+- [Presseportal Blaulicht](https://www.presseportal.de/blaulicht/): Pressemitteilungen von Polizei und Feuerwehr, ca. alle 15 Minuten
+- [EFFIS / Copernicus](https://forest-fire.emergency.copernicus.eu/): offizielle Hotspots und Brandflächen
+- [NINA / BBK](https://warnung.bund.de/): amtliche Warnmeldungen
+- [OpenStreetMap](https://www.openstreetmap.org/copyright): Basiskarte und Geokodierung (Nominatim)

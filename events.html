@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eventkarte Freiburg &amp; Umgebung</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+  :root {
+    --ink:        #0b0b0b;
+    --ink-2:      #52514e;
+    --muted:      #898781;
+    --surface:    #fcfcfb;
+    --hairline:   rgba(11,11,11,0.10);
+    --cat-fest:   #c2410c;
+    --cat-musik:  #7c3aed;
+    --cat-markt:  #b45309;
+    --cat-kultur: #0e7490;
+    --cat-sport:  #15803d;
+    --cat-sonst:  #898781;
+  }
+  html, body { height: 100%; margin: 0; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--ink); background: var(--surface); }
+  #map { height: 100%; }
+
+  .panel {
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(11,11,11,0.12);
+    padding: 10px 12px;
+    font-size: 13px;
+    line-height: 1.45;
+    max-width: 280px;
+  }
+  .panel h1 { font-size: 14px; margin: 0 0 4px; font-weight: 650; }
+  .panel .meta { color: var(--ink-2); font-size: 12px; }
+  .panel .meta b { color: var(--ink); font-weight: 600; }
+
+  .range-ctl { display: flex; gap: 4px; padding: 6px; }
+  .range-ctl .lbl { font-size: 11.5px; color: var(--ink-2); align-self: center; padding: 0 4px 0 2px; }
+  .range-btn {
+    border: 1px solid var(--hairline); background: var(--surface); color: var(--ink-2);
+    border-radius: 6px; padding: 3px 8px; font-size: 12px; cursor: pointer;
+    font-family: inherit;
+  }
+  .range-btn:hover { background: #f1f0ec; }
+  .range-btn.active { background: #8f1d1d; border-color: #8f1d1d; color: #fff; font-weight: 600; }
+
+  .legend .row { display: flex; align-items: center; gap: 8px; margin-top: 6px; }
+  .legend .dot { width: 14px; height: 14px; border-radius: 50%; border: 2px solid #fff; box-shadow: 0 0 0 1px var(--hairline); flex: none; }
+  .legend .label { color: var(--ink-2); font-size: 12px; }
+  .legend .size-hint { margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--hairline); color: var(--muted); font-size: 11.5px; }
+
+  .leaflet-tooltip.evt-tip {
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(11,11,11,0.18);
+    padding: 8px 10px;
+    font-size: 12.5px;
+    line-height: 1.5;
+    color: var(--ink);
+    max-width: 280px; white-space: normal;
+  }
+  .evt-tip .tip-head { font-weight: 650; margin-bottom: 2px; }
+  .evt-tip .tip-sub { color: var(--ink-2); }
+  .evt-tip .tip-flag { color: var(--muted); font-style: italic; margin-top: 3px; }
+  .evt-tip table { border-collapse: collapse; margin-top: 4px; }
+  .evt-tip td { padding: 0 0 1px; color: var(--ink); vertical-align: top; }
+  .evt-tip td:first-child { color: var(--ink-2); padding-right: 10px; white-space: nowrap; }
+
+  .leaflet-control-attribution { font-size: 10px; }
+
+  .mode-switch { position:absolute; top:10px; left:50%; transform:translateX(-50%); z-index:1001; display:flex; background:#fcfcfb; border:1px solid rgba(11,11,11,.1); border-radius:8px; box-shadow:0 1px 4px rgba(11,11,11,.12); overflow:hidden; }
+  .mode-switch a { padding:6px 14px; font-size:13px; text-decoration:none; color:#52514e; }
+  .mode-switch a.active { background:#8f1d1d; color:#fff; font-weight:600; }
+  .mode-switch a:not(.active):hover { background:#f1f0ec; }
+</style>
+</head>
+<body>
+<div id="map"></div>
+<div class="mode-switch"><a href="index.html">🔥 Feuerkarte</a><a href="events.html" class="active">🎉 Eventkarte</a></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="data/veranstaltungen.js"></script>
+<script>
+(function () {
+  const map = L.map('map', { zoomControl: true });
+  // Freiburg +50 km
+  map.fitBounds(L.latLngBounds([47.45, 7.1], [48.55, 8.6]).pad(0.02));
+
+  const osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · ' +
+      'Events: <a href="https://www.tourismus-bw.de/">toubiz/Open Data BW</a>, ' +
+      '<a href="https://veranstaltungen.freiburg.de/">FWTM Freiburg</a>, ' +
+      '<a href="https://rausgegangen.de/freiburg/">Rausgegangen</a>'
+  }).addTo(map);
+
+  map.attributionControl.setPrefix('<a href="https://leafletjs.com">Leaflet</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a> · <a href="hinweise.html">Hinweise</a>');
+
+  // ---- Daten & Kategorien -------------------------------------------------
+  const data = window.EVENT_DATA || { events: [], generated: '–' };
+
+  const CATS = {
+    fest:      { emoji: '🎪', label: 'Fest',      color: '#c2410c' },
+    musik:     { emoji: '🎵', label: 'Musik',     color: '#7c3aed' },
+    markt:     { emoji: '🛍️', label: 'Markt',     color: '#b45309' },
+    kultur:    { emoji: '🎭', label: 'Kultur',    color: '#0e7490' },
+    sport:     { emoji: '⚽', label: 'Sport',     color: '#15803d' },
+    sonstiges: { emoji: '📌', label: 'Sonstiges', color: '#898781' }
+  };
+  const catOf = e => CATS[e.cat] ? e.cat : 'sonstiges';
+
+  // start/end kommen als "yyyy-MM-dd" oder "yyyy-MM-ddTHH:mm" (Lokalzeit
+  // Europe/Berlin). Wir bauen daraus lokale Date-Objekte aus Komponenten —
+  // damit stimmen Wochentag und Vergleich unabhängig von UTC-Offsets.
+  function parseLocal(s) {
+    if (!s) return null;
+    const d = new Date(+s.slice(0, 4), +s.slice(5, 7) - 1, +s.slice(8, 10),
+                       s.length > 10 ? +s.slice(11, 13) : 0,
+                       s.length > 10 ? +s.slice(14, 16) : 0);
+    return isNaN(d) ? null : d;
+  }
+  const hasTime = s => !!s && s.length > 10;
+
+  function fmtDate(s) {
+    const d = parseLocal(s);
+    if (!d) return '–';
+    let out = d.toLocaleDateString('de-DE', { weekday: 'short', day: '2-digit', month: '2-digit' });
+    if (hasTime(s)) {
+      out += ', ' + d.toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit' }) + ' Uhr';
+    }
+    return out;
+  }
+
+  // ---- Zeitraum-Filter (Zukunft) -----------------------------------------
+  const RANGES = [
+    { key: 'today',   label: 'Heute' },
+    { key: 'weekend', label: 'Wochenende' },
+    { key: '7',       label: '7 T' },
+    { key: '30',      label: '30 T' },
+    { key: '90',      label: '90 T' }
+  ];
+  let rangeKey = localStorage.getItem('eventmap.range') || 'weekend';
+  if (!RANGES.some(r => r.key === rangeKey)) rangeKey = 'weekend';
+
+  function rangeBounds(key) {
+    const now = new Date();
+    const start = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    if (key === 'today') return [start, addDays(start, 1)];
+    if (key === 'weekend') {
+      // kommendes Sa+So; läuft das Wochenende schon, dann heute bis So
+      const dow = start.getDay();                 // 0 = So, 6 = Sa
+      const from = (dow === 6 || dow === 0) ? start : addDays(start, 6 - dow);
+      const sunday = (dow === 0) ? start : addDays(from, (from.getDay() === 6) ? 1 : 0);
+      return [from, addDays(sunday, 1)];
+    }
+    return [start, addDays(start, +key)];
+  }
+  function addDays(d, n) { return new Date(d.getFullYear(), d.getMonth(), d.getDate() + n); }
+
+  function rangeLabel(key) {
+    const [from, to] = rangeBounds(key);
+    const f = d => d.toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit' });
+    const last = addDays(to, -1);
+    return f(from) === f(last) ? f(from) : f(from) + ' – ' + f(last);
+  }
+
+  // ---- Marker -------------------------------------------------------------
+  const eventsLayer = L.layerGroup().addTo(map);
+  let legendDiv = null, infoDiv = null;
+  let counts = {}, shownGroups = 0, shownDates = 0;
+
+  const evtIcon = cat => L.divIcon({
+    className: '', iconSize: [28, 28], iconAnchor: [14, 14],
+    html: '<div style="width:28px;height:28px;border-radius:50%;background:#fcfcfb;' +
+          'border:2px solid ' + CATS[cat].color + ';' +
+          'box-shadow:0 1px 4px rgba(11,11,11,.25);display:flex;align-items:center;justify-content:center;' +
+          'font-size:14px;line-height:1">' + CATS[cat].emoji + '</div>'
+  });
+
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+
+  function rebuild() {
+    const [from, to] = rangeBounds(rangeKey);
+    eventsLayer.clearLayers();
+    counts = {}; Object.keys(CATS).forEach(c => counts[c] = 0);
+    shownGroups = 0; shownDates = 0;
+
+    // Termine im Zeitraum: Zeitraum des Termins schneidet [from, to)
+    const inRange = data.events.filter(e => {
+      const s = parseLocal(e.start);
+      if (!s) return false;
+      const en = parseLocal(e.end) || s;
+      return s < to && en >= from;
+    });
+    shownDates = inRange.length;
+
+    // Gleiches Event (Titel + Ort) mit mehreren Terminen -> EIN Marker
+    const groups = new Map();
+    inRange.forEach(e => {
+      const key = e.title.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ' ').trim() +
+                  '|' + e.lat.toFixed(4) + '|' + e.lon.toFixed(4);
+      if (!groups.has(key)) groups.set(key, []);
+      groups.get(key).push(e);
+    });
+
+    // Marker mit identischen Koordinaten spiralig entstapeln (wie index.html)
+    const stackCount = new Map();
+    function unstack(lat, lon) {
+      const key = lat.toFixed(3) + '/' + lon.toFixed(3);
+      const n = stackCount.get(key) || 0;
+      stackCount.set(key, n + 1);
+      if (n === 0) return [lat, lon];
+      const ang = n * 2.4, r = 0.002 + 0.0006 * n;   // Spirale, ~200 m Schritte
+      return [lat + r * Math.cos(ang), lon + r * Math.sin(ang) * 1.5];
+    }
+
+    groups.forEach(list => {
+      list.sort((a, b) => a.start < b.start ? -1 : 1);
+      const e = list[0];
+      const cat = catOf(e);
+      counts[cat]++; shownGroups++;
+
+      const more = list.length - 1;
+      const tip = '<div class="tip-head">' + esc(e.title) + '</div>' +
+        (e.place ? '<div class="tip-sub">' + esc(e.place) + '</div>' : '') +
+        '<table>' +
+        '<tr><td>Wann</td><td>' + fmtDate(e.start) +
+          (e.end && e.end.slice(0, 10) !== e.start.slice(0, 10) ? ' – ' + fmtDate(e.end) : '') +
+          (more > 0 ? '<br><i>+ ' + more + ' weitere' + (more > 1 ? ' Termine' : 'r Termin') + '</i>' : '') + '</td></tr>' +
+        '<tr><td>Kategorie</td><td>' + CATS[cat].emoji + ' ' + CATS[cat].label + '</td></tr>' +
+        '<tr><td>Quelle</td><td>' + esc(e.source) + '</td></tr>' +
+        '</table>' +
+        (e.desc ? '<div class="tip-flag">' + esc(e.desc) + '</div>' : '') +
+        '<div class="tip-flag">Klicken f&uuml;r Details &amp; Link</div>';
+
+      const dateList = list.slice(0, 6).map(x => fmtDate(x.start)).join('<br>') +
+        (list.length > 6 ? '<br>…' : '');
+      const popup = '<b>' + esc(e.title) + '</b>' +
+        (e.place ? '<br>' + esc(e.place) : '') +
+        '<br>' + dateList +
+        '<br><a href="' + esc(e.url) + '" target="_blank" rel="noopener">Zur Veranstaltungsseite (' + esc(e.source) + ')</a>';
+
+      L.marker(unstack(e.lat, e.lon), { icon: evtIcon(cat) })
+        .bindTooltip(tip, { className: 'evt-tip', sticky: true, direction: 'top', offset: [0, -12] })
+        .bindPopup(popup)
+        .addTo(eventsLayer);
+    });
+
+    renderLegend();
+    renderInfo();
+  }
+
+  function renderLegend() {
+    if (!legendDiv) return;
+    legendDiv.innerHTML = '<h1>Kategorien (' + rangeLabel(rangeKey) + ')</h1>' +
+      Object.keys(CATS).map(c =>
+        '<div class="row"><span class="dot" style="background:' + CATS[c].color + '"></span>' +
+        '<span class="label">' + CATS[c].emoji + ' ' + CATS[c].label + ' (' + counts[c] + ')</span></div>'
+      ).join('') +
+      '<div class="size-hint">Ein Marker = eine Veranstaltung.<br>' +
+      'Mehrere Termine werden zusammengefasst.</div>';
+  }
+
+  function renderInfo() {
+    if (!infoDiv) return;
+    infoDiv.innerHTML =
+      '<h1>Events — Freiburg &amp; Umgebung</h1>' +
+      '<div class="meta">Stadtfeste, Weinfeste, Konzerte, M&auml;rkte &amp; mehr im Umkreis von ca. 50 km — ' +
+      'aus offenen Quellen (toubiz/Open Data BW, FWTM Freiburg, Rausgegangen).</div>' +
+      '<div class="meta" style="margin-top:6px">' +
+      '<b>' + shownGroups + '</b> Veranstaltungen (' + shownDates + ' Termine) im Zeitraum ' + rangeLabel(rangeKey) +
+      '<br>Datenstand: <b>' + esc(data.generated) + '</b></div>';
+  }
+
+  // ---- Bedienelemente ----------------------------------------------------
+  const info = L.control({ position: 'topleft' });
+  info.onAdd = function () {
+    infoDiv = L.DomUtil.create('div', 'panel');
+    renderInfo();
+    return infoDiv;
+  };
+  info.addTo(map);
+
+  const rangeCtl = L.control({ position: 'topleft' });
+  rangeCtl.onAdd = function () {
+    const div = L.DomUtil.create('div', 'panel range-ctl');
+    L.DomEvent.disableClickPropagation(div);
+    div.innerHTML = '<span class="lbl">Zeitraum</span>' + RANGES.map(r =>
+      '<button class="range-btn' + (r.key === rangeKey ? ' active' : '') + '" data-key="' + r.key + '">' + r.label + '</button>'
+    ).join('');
+    div.addEventListener('click', e => {
+      const btn = e.target.closest('.range-btn');
+      if (!btn) return;
+      rangeKey = btn.dataset.key;
+      localStorage.setItem('eventmap.range', rangeKey);
+      div.querySelectorAll('.range-btn').forEach(b => b.classList.toggle('active', b.dataset.key === rangeKey));
+      rebuild();
+    });
+    return div;
+  };
+  rangeCtl.addTo(map);
+
+  const legend = L.control({ position: 'bottomright' });
+  legend.onAdd = function () {
+    legendDiv = L.DomUtil.create('div', 'panel legend');
+    renderLegend();
+    return legendDiv;
+  };
+  legend.addTo(map);
+
+  rebuild();
+
+  // Seite stündlich neu laden (der Scheduler aktualisiert die Datendatei;
+  // der gewählte Zeitraum bleibt via localStorage erhalten)
+  setTimeout(function () { location.reload(); }, 60 * 60 * 1000);
+})();
+</script>
+</body>
+</html>

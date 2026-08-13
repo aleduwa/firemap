@@ -3,7 +3,25 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Feuerkarte Baden-Württemberg</title>
+<title>Feuerkarte Baden-Württemberg – aktuelle Waldbrände &amp; Feuerwehreinsätze</title>
+<meta name="description" content="Aktuelle Waldbrände &amp; Feuerwehreinsätze in Baden-Württemberg – Freiburg, Offenburg, Schwarzwald. Satelliten-Branddetektionen (NASA FIRMS), Einsatzmeldungen, DWD-Waldbrandgefahr.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="canonical" href="https://map.aleduwa.de/">
+<meta name="theme-color" content="#8f1d1d">
+<meta name="geo.region" content="DE-BW">
+<meta name="geo.placename" content="Baden-Württemberg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Feuerkarte Baden-Württemberg">
+<meta property="og:title" content="Feuerkarte Baden-Württemberg – aktuelle Waldbrände &amp; Feuerwehreinsätze">
+<meta property="og:description" content="Live-Karte: Satelliten-Branddetektionen, Polizei- und Feuerwehrmeldungen sowie DWD-Waldbrandgefahr für Baden-Württemberg – von Freiburg über Offenburg bis in den Schwarzwald.">
+<meta property="og:url" content="https://map.aleduwa.de/">
+<meta property="og:locale" content="de_DE">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Feuerkarte Baden-Württemberg – aktuelle Waldbrände &amp; Feuerwehreinsätze">
+<meta name="twitter:description" content="Satelliten-Branddetektionen, Einsatzmeldungen und DWD-Waldbrandgefahr für Baden-Württemberg auf einer Karte.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://unpkg.com">
+<link rel="preconnect" href="https://tile.openstreetmap.org">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <style>
   :root {
@@ -77,6 +95,74 @@
   .mode-switch a.active { background: #8f1d1d; color: #fff; font-weight: 600; }
   .mode-switch a:not(.active):hover { background: #f1f0ec; }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://map.aleduwa.de/#organization",
+      "name": "aleduwa GmbH",
+      "url": "https://map.aleduwa.de/impressum.html",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Lange Str. 120",
+        "postalCode": "79183",
+        "addressLocality": "Waldkirch",
+        "addressRegion": "Baden-Württemberg",
+        "addressCountry": "DE"
+      }
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://map.aleduwa.de/#webapp",
+      "name": "Feuerkarte Baden-Württemberg",
+      "url": "https://map.aleduwa.de/",
+      "description": "Interaktive Live-Karte aktueller Waldbrände und Feuerwehreinsätze in Baden-Württemberg: Satelliten-Branddetektionen (NASA FIRMS, VIIRS/MODIS), automatisch geokodierte Polizei- und Feuerwehr-Einsatzmeldungen sowie der Waldbrandgefahrenindex des DWD. Keine amtliche Warnung, alle Angaben ohne Gewähr.",
+      "applicationCategory": "Map",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires JavaScript",
+      "inLanguage": "de",
+      "isAccessibleForFree": true,
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+      "publisher": { "@id": "https://map.aleduwa.de/#organization" },
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Baden-Württemberg",
+        "geo": { "@type": "GeoShape", "box": "47.5 7.5 49.8 10.5" }
+      },
+      "keywords": "Waldbrand, Waldbrände, Feuerwehreinsatz, Brandkarte, Baden-Württemberg, Schwarzwald, Freiburg, Offenburg, Waldbrandgefahr, FIRMS, Satellitendaten"
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://map.aleduwa.de/#dataset",
+      "name": "Branddetektionen, Einsatzmeldungen und Waldbrandgefahr Baden-Württemberg",
+      "description": "Fortlaufend aktualisierter Datensatz für Baden-Württemberg: Satelliten-Feuerdetektionen der letzten 7 Tage (NASA FIRMS, VIIRS/MODIS), brandbezogene Einsatzmeldungen der Polizeipräsidien und Feuerwehren (geokodiert, dedupliziert) sowie der tägliche Waldbrandgefahrenindex (WBI) des Deutschen Wetterdienstes. Automatisch aggregiert, ohne Gewähr, keine amtliche Warnung.",
+      "url": "https://map.aleduwa.de/",
+      "inLanguage": "de",
+      "isAccessibleForFree": true,
+      "creator": { "@id": "https://map.aleduwa.de/#organization" },
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Baden-Württemberg, Deutschland",
+        "geo": { "@type": "GeoShape", "box": "47.5 7.5 49.8 10.5" }
+      },
+      "isBasedOn": [
+        "https://firms.modaps.eosdis.nasa.gov/",
+        "https://opendata.dwd.de/climate_environment/CDC/derived_germany/fire_danger_index/",
+        "https://www.presseportal.de/blaulicht/",
+        "https://forest-fire.emergency.copernicus.eu/"
+      ],
+      "citation": [
+        "NASA FIRMS (LANCE), Satelliten-Feuerdetektionen VIIRS/MODIS",
+        "Deutscher Wetterdienst (DWD), Waldbrandgefahrenindex, Open Data",
+        "Presseportal / news aktuell, Pressemitteilungen der Polizeipräsidien und Feuerwehren",
+        "EFFIS / Copernicus Emergency Management Service"
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <div id="map"></div>
@@ -94,6 +180,7 @@
   map.fitBounds(L.latLngBounds([47.53, 7.5], [49.8, 10.5]).pad(0.03));
   map.attributionControl.setPrefix(
     '<a href="https://leafletjs.com" rel="noopener">Leaflet</a> &middot; ' +
+    '<a href="faq.html">FAQ</a> &middot; ' +
     '<a href="impressum.html">Impressum</a> &middot; ' +
     '<a href="datenschutz.html">Datenschutz</a> &middot; ' +
     '<a href="hinweise.html">Hinweise &amp; Quellen</a>');
