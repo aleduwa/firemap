@@ -1,5 +1,5 @@
 # Holt zukünftige Veranstaltungen (heute bis +90 Tage) im Raum Freiburg +50 km
-# aus drei offenen Quellen und schreibt data/veranstaltungen.js:
+# aus mehreren offenen Quellen und schreibt data/veranstaltungen.js:
 #
 #   1. toubiz Open-Data-API (mein.toubiz.de) — Landesdatenbank Tourismus BW,
 #      abgefragt mit dem öffentlich im Frontend von schwarzwaldregion-freiburg.de
@@ -11,6 +11,11 @@
 #   3. Rausgegangen Freiburg — Kategorieseiten (schema.org ItemList) plus
 #      JSON-LD der Detailseiten. Keine Koordinaten -> Nominatim mit Cache
 #      in data/eventgeocache.json (max. 1 Anfrage/s).
+#   … 4-6: szene-Radar, Heuboden, Alemannische Seiten (siehe unten).
+#   7. Headless-Browser-Import: data/events-headless.json, erzeugt von
+#      scripts/events-headless.mjs (Playwright/Chromium) für Portale, die
+#      nur per Browser nutzbar sind (ZweiTälerLand-tPortal, RegioTrends).
+#      Fehlt die Datei oder ist sie >7 Tage alt, wird sie still übersprungen.
 #
 # Dedup: gleicher normalisierter Titel + gleiches Datum + Ort <= 2 km
 # -> ein Event, Quellen werden zusammengeführt.
@@ -751,6 +756,75 @@ try {
 } catch {
     Write-Warning "Quelle Alemannische Seiten fehlgeschlagen: $_"
     $stats['alemannische-seiten'] = 0
+}
+
+# ============================================================================
+# Quelle 7: Headless-Browser-Import (scripts/events-headless.mjs)
+# ============================================================================
+# data/events-headless.json wird separat von `node scripts/events-headless.mjs`
+# erzeugt (Playwright + Chromium) und erschließt Portale, die ohne Browser
+# nicht abrufbar sind (JS-/Session-Listen wie das ZweiTälerLand-tPortal,
+# hängende POST-Filter wie RegioTrends). Fehlt die Datei (z. B. CI ohne
+# Playwright) oder ist sie älter als 7 Tage, wird die Quelle still
+# übersprungen — der restliche Lauf ist davon unabhängig.
+try {
+    $hlPath = Join-Path $dataDir 'events-headless.json'
+    if (-not (Test-Path $hlPath)) {
+        Write-Host 'Headless-Import: keine events-headless.json — übersprungen.'
+    } elseif (((Get-Date) - (Get-Item $hlPath).LastWriteTime).TotalDays -gt 7) {
+        Write-Host 'Headless-Import: events-headless.json älter als 7 Tage — übersprungen.'
+    } else {
+        Write-Host 'Headless-Import: data/events-headless.json einlesen ...'
+        $hl = Get-Content $hlPath -Raw -Encoding UTF8 | ConvertFrom-Json
+        $hlCount = 0
+        foreach ($ev in $hl.events) {
+            if (-not $ev.title -or -not $ev.start) { continue }
+
+            $startStr = [string]$ev.start
+            $fmtS = if ($startStr.Length -gt 10) { 'yyyy-MM-ddTHH:mm' } else { 'yyyy-MM-dd' }
+            $day = [DateTime]::MinValue
+            if (-not [DateTime]::TryParseExact($startStr, $fmtS, $inv,
+                    [System.Globalization.DateTimeStyles]::None, [ref]$day)) { continue }
+            $endStr = $null
+            $endDay = $day
+            if ($ev.PSObject.Properties['end'] -and $ev.end) {
+                $endStr = [string]$ev.end
+                $fmtE = if ($endStr.Length -gt 10) { 'yyyy-MM-ddTHH:mm' } else { 'yyyy-MM-dd' }
+                $tmp = [DateTime]::MinValue
+                if ([DateTime]::TryParseExact($endStr, $fmtE, $inv,
+                        [System.Globalization.DateTimeStyles]::None, [ref]$tmp)) { $endDay = $tmp }
+                else { $endStr = $null }
+            }
+            # Zeitfenster: Event schneidet [heute, +90 T]
+            if ($endDay.Date -lt $today -or $day.Date -gt $until) { continue }
+
+            # Koordinaten: vom Portal geliefert (präzise) oder Nominatim (Cache)
+            $lat = $null; $lon = $null; $precise = $false
+            if ($ev.PSObject.Properties['lat'] -and $ev.lat -and $ev.PSObject.Properties['lon'] -and $ev.lon) {
+                $lat = [double]$ev.lat; $lon = [double]$ev.lon; $precise = $true
+            } else {
+                $q = if ($ev.address) { [string]$ev.address } elseif ($ev.place) { [string]$ev.place } else { $null }
+                if (-not $q) { continue }
+                $hit = Resolve-Address $q
+                if (-not $hit) { continue }
+                $lat = [double]$hit.lat; $lon = [double]$hit.lon
+            }
+
+            $title = [string]$ev.title
+            $srcName = if ($ev.source) { [string]$ev.source } else { 'Headless' }
+            $place = if ($ev.place) { [string]$ev.place } else { $null }
+
+            Add-Event -title $title -cat (Get-Category $title '') -start $startStr -end $endStr `
+                -lat $lat -lon $lon -place $place -url ([string]$ev.url) `
+                -source $srcName -desc $null -precise $precise
+            $hlCount++
+        }
+        $stats['headless'] = $hlCount
+        Write-Host "Headless-Import: $hlCount Termine übernommen."
+    }
+} catch {
+    Write-Warning "Quelle Headless-Import fehlgeschlagen: $_"
+    $stats['headless'] = 0
 }
 
 # --- Ausgabe ----------------------------------------------------------------

@@ -24,10 +24,9 @@
   nach Fertig-Meldung des Agenten prüfen (Pflicht-Testfall: Seenachtsfest
   Oberprechtal 22.08.), dann Workflow um Playwright-Install + Headless-Schritt
   im täglichen Event-Cron ergänzen.
-- [ ] **Brandnarben-Erstlauf verifizieren** (Cloud-Dispatch läuft): wenn
-  `data/brandnarben.js` entsteht → **Layer in index.html einbauen**
-  (fertiger Schnipsel in `SENTINEL.md`), Legende + Hinweise-Seite ergänzen.
-  Ab dann täglich 06:10 UTC automatisch.
+- [x] ~~Brandnarben-Erstlauf~~ **erledigt 13.08.**: Erstlauf erfolgreich
+  (7 Narben, u. a. Weil am Rhein 2,16 ha), Layer/Legende/Quellen eingebaut,
+  läuft täglich 06:10 UTC.
 
 ## 3. Nächstes großes Upgrade: MapLibre-Globe
 

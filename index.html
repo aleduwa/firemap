@@ -204,6 +204,7 @@
 <script src="data/fires.js"></script>
 <script src="data/reports.js"></script>
 <script src="data/wbi.js"></script>
+<script src="data/brandnarben.js"></script>
 <script>
 (function () {
   const map = L.map('map', { zoomControl: true });
@@ -353,6 +354,23 @@
         '<tr><td>Stand</td><td>' + s.issued + ' UTC</td></tr></table>',
         { className: 'fire-tip', sticky: true, direction: 'top', offset: [0, -10] })
       .addTo(wbiLayer);
+  });
+
+  // ---- Echte Brandnarben (Sentinel-2 dNBR, täglich berechnet) -------------
+  const scarData = window.BURNSCAR_DATA || { scars: [] };
+  const scarLayer = L.layerGroup().addTo(map);
+  scarData.scars.forEach(s => {
+    const poly = L.geoJSON(s.geojson, {
+      style: { color: '#7b1fa2', weight: 2, fillColor: '#7b1fa2', fillOpacity: 0.35 }
+    });
+    poly.bindTooltip(
+      '<div class="tip-head">Brandnarbe (Sentinel-2, dNBR)</div>' +
+      '<table><tr><td>Fl&auml;che</td><td>ca. ' + s.ha.toLocaleString('de-DE') + ' ha</td></tr>' +
+      '<tr><td>Vorher-Bild</td><td>' + s.preDate + '</td></tr>' +
+      '<tr><td>Nachher-Bild</td><td>' + s.postDate + '</td></tr></table>' +
+      (s.eventBase ? '<div class="tip-flag">Ereignis: ' + s.eventBase.split('|')[1] + '</div>' : ''),
+      { className: 'fire-tip', sticky: true });
+    poly.addTo(scarLayer);
   });
 
   // ---- Zeitraum-Filter ----------------------------------------------------
@@ -508,6 +526,8 @@
       '<span class="label">Einsatzmeldung Polizei/Feuerwehr (' + shownReports + ')</span></div>' +
       '<div class="row"><span class="dot" style="background:rgba(143,29,29,.25);border:2px dashed #8f1d1d;border-radius:4px"></span>' +
       '<span class="label">geschätzte betroffene Fläche</span></div>' +
+      '<div class="row"><span class="dot" style="background:rgba(123,31,162,.35);border:2px solid #7b1fa2;border-radius:4px"></span>' +
+      '<span class="label">Brandnarbe Sentinel-2 (' + scarData.scars.length + ')</span></div>' +
       '<div class="size-hint">Kreisgröße = Feuerleistung (FRP in MW).<br>' +
       'Satellitendaten reichen max. 7 Tage zurück.<br>' +
       'Graues 🔥 = gemeldet als gelöscht.</div>';
@@ -529,6 +549,7 @@
     {
       'Satelliten-Detektionen (NASA FIRMS)': firesLayer,
       'Geschätzte betroffene Flächen (Satellit)': areaLayer,
+      'Brandnarben (Sentinel-2, dNBR)': scarLayer,
       'Detektions-Footprints (Pixelgröße)': footprintLayer,
       'Einsatzmeldungen (Polizei/Feuerwehr)': reportsLayer,
       'Waldbrandgefahr heute (DWD-WBI)': wbiLayer,

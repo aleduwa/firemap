@@ -91,6 +91,77 @@ und als filterbare Liste. Die Daten erzeugt `update-events.ps1` nach
 - Füllt genau die Dorffest-Lücke (Oktoberfest Sexau, Herbstfest FFW Reute, …),
   die toubiz/FWTM/Rausgegangen nicht abdecken.
 
+### 7. Headless-Browser-Import (`scripts/events-headless.mjs`) — NEU
+
+Manche Portale sind ohne echten Browser nicht nutzbar: JS-/Session-gerenderte
+Listen (TOMAS-tPortale), POST-Filterformulare, die für curl/`Invoke-WebRequest`
+hängen, extrem langsame Server. Dafür gibt es einen separaten Node-Schritt:
+
+- **Aufruf:** `node scripts/events-headless.mjs` (benötigt `npm install` und
+  `npx playwright install chromium`; Abhängigkeit in `package.json`).
+- **Output:** `data/events-headless.json` mit
+  `{generated, window, warnings, events:[{title, start, end?, place, address?,
+  url, source, lat?, lon?}]}` (Zeitfenster heute…+90 Tage).
+- **Import:** `update-events.ps1` liest die Datei als eigene Quelle ein, wenn
+  sie existiert **und jünger als 7 Tage** ist; sonst wird sie still
+  übersprungen (CI ohne Playwright läuft unverändert). Kategorisierung,
+  Nominatim-Geokodierung (über `address`/`place`) und Dedup laufen wie bei
+  allen anderen Quellen; vom Portal gelieferte Koordinaten gelten als präzise.
+- **Architektur:** Portale sind Konfig-Einträge im Array `PORTALS`
+  (Start-URLs, Selektoren, Limits) und referenzieren einen Treiber —
+  aktuell `tomasTportal` und `regiotrends`. Neue JS-Portale = neuer
+  Konfig-Eintrag, ggf. neuer Treiber. Höfliches Tempo (~1 Seite/s, ein
+  Browser-Kontext), try/catch je Seite, Exit 0 auch bei Teilfehlern
+  (Warnungen landen im JSON und auf stderr).
+- **Laufzeit:** wenige Minuten (dominiert von RegioTrends-Antwortzeiten und
+  den 1-s-Pausen).
+
+**Eingebaute Portal-Treiber:**
+
+1. **ZweiTälerLand tPortal (TOMAS, `zweitaelerland.de/zweitaelerland/event`)** —
+   Listen-URL mit Datumsfenster, sammelt `…/event/detail/…`-Links, extrahiert
+   je Detailseite JSON-LD bzw. h1/Karte (`data-lat`/`data-lng`)/Adressblock.
+   **Befund 08/2026:** Die tPortal-Suche liefert serverseitig 0 Treffer —
+   für jede Parameterkombination, auch im echten Browser und für den
+   portaleigenen Link „Alle Veranstaltungen anzeigen“; der Suchindex/
+   Datenbestand ist offenbar tot (Detailseiten existieren, tragen aber nur
+   „Termin liegt in der Vergangenheit“ ohne Datumsangabe). Der Treiber
+   bleibt aktiv und meldet das als Warnung — lebt der Bestand wieder auf,
+   werden die Events automatisch mitgenommen.
+2. **RegioTrends RegioKalender (`regiotrends.de/de/regiotermine`)** —
+   der Gebietsfilter (Kreis Emmendingen/Stadtkreis Freiburg/
+   Breisgau-Hochschwarzwald) ist ein POST-Formular mit Session, das für
+   Nicht-Browser-Clients hängt; der Server ist generell sehr langsam und
+   sperrt bei zu schnellen Zugriffen zeitweise die IP (TCP-Timeouts —
+   deshalb die konservative Taktung). Der Treiber setzt den Filter,
+   paginiert über „Weiter“, parst Datum aus den deutschen Titeln
+   („Samstag, 22. August, …“, „3. bis 7. August“, Jahr oft implizit →
+   nächstliegendes Vorkommen) und lädt für Einträge ohne Uhrzeit begrenzt
+   Detailseiten nach („Beginn: Ab 20 Uhr“, Region „Kreis X - Ort“).
+   Ort → Nominatim (Ortsmitte). **Testfall Seenachtsfest der Landjugend
+   Oberprechtal (22.08.2026):** existiert ausschließlich hier
+   (regiotermine-Meldung 280435) — weder in toubiz (Datensatz veraltet,
+   letzter Termin 30.08.2025) noch FWTM, Alemannische Seiten oder dem
+   ZTL-tPortal (Detailseite dort ohne Datum, s. o.).
+
+**Wartungshinweise / Fragilität:**
+
+- Beide Treiber hängen an konkretem Markup (`.tp-results-list`, `#newslist`,
+  `h4`/`h3`/`blockquote`, `div.navi a`) — Redesigns brechen sie leise
+  (Ergebnis: 0 Termine + Warnung, nie ein Pipeline-Abbruch). Nach jedem
+  Lauf `warnings` im JSON prüfen.
+- Jahresableitung bei RegioTrends ist heuristisch (Titel meist ohne Jahr);
+  ein Eintrag, der > 90 Tage in der Zukunft liegt, fällt aus dem Fenster
+  und taucht erst später auf.
+- regiotrends-IP-Sperren: bei TCP-Timeouts einfach später erneut laufen
+  lassen; Taktung nicht erhöhen.
+- Hochschwarzwald Tourismus (403-Bot-Schutz) wurde als weiteres Kandidat-
+  Portal geprüft: Playwright käme zwar durch, der Raum ist aber inzwischen
+  über den toubiz-STG-Kanal abgedeckt — kein Mehrwert, nicht aktiviert.
+- `node_modules/` und `package-lock.json` entstehen lokal durch
+  `npm install`; falls unerwünscht, in `.gitignore` aufnehmen (nicht Teil
+  dieses Schritts).
+
 ## Geprüfte, nicht eingebaute Quellen
 
 | Quelle | Befund |
@@ -98,8 +169,8 @@ und als filterbare Liste. Die Daten erzeugt `update-events.ps1` nach
 | **Open-Data-Pool BW (eigener toubiz-Token)** | API identisch zu Quelle 1; Token nur per Antragsformular. Mittelfristig empfohlen. |
 | **hans-bunte.de** | Eigene Event-Liste wäre parsebar (`<li data-day data-month>`), aber die Location ist bereits vollständig über szene-Radar (Quelle 4) abgedeckt → kein eigener Scraper. |
 | **jazzhaus.de** | Monatsseiten (`/programm/<jahr>/<monat>.html`) wären gut parsebar (Uhrzeit/Titel/Genre-Hashtag, Datum im Slug; kein JSON-LD). Abgleich: Das Jazzhaus ist bereits mit 70+ Terminen über FWTM/szene-Radar/Rausgegangen abgedeckt (Stichproben „I Love 80s“, „Colour Haze“, „Y2K“, Jazzfestival-Minigipfel alle vorhanden) → kein eigener Scraper, Aggregatoren bevorzugt. |
-| **ZweiTälerLand tPortal** (`zweitaelerland.de/zweitaelerland/event/…`, TOMAS) | Detail- und Listenseiten laden Inhalte ausschließlich per JS/Session (leeres JSON-LD, `json/resultmap` liefert ohne Browser-Session `[]`, keine Sitemap). **Nicht curl-bar.** Betroffener Testfall: „Seenachtsfest der Landjugend Oberprechtal“ (22.08.2026) existiert NUR dort aktuell — der toubiz-Datensatz desselben Events ist veraltet (letzter Termin 30.08.2025), auch im ZTL- und STG-Kanal. |
-| **regiotrends.de (regiotermine)** | Detailseiten sind erreichbar, aber ohne JSON-LD/Meta-Datum (Datum nur im Fließtext/Titel); die Index-Listen zeigen nur einen kleinen rollierenden Ausschnitt (Seenachtsfest trotz vorhandener Detailseite nicht gelistet auf S. 1–3) und der Server ist sehr langsam (>30 s/Seite). Nicht zuverlässig automatisierbar. |
+| **ZweiTälerLand tPortal** (`zweitaelerland.de/zweitaelerland/event/…`, TOMAS) | → **jetzt Treiber in Quelle 7.** Aktualisierter Befund 08/2026: Detailseiten sind (mit Browser-UA) durchaus curl-bar, tragen aber keine Datumsangaben mehr („Termin liegt in der Vergangenheit“); die Suche liefert serverseitig für jede Parameterkombination 0 Treffer — der Event-Datenbestand des tPortals ist faktisch tot. Das Seenachtsfest-Datum (22.08.2026) steht dort NICHT, sondern nur bei RegioTrends (s. Quelle 7). |
+| **regiotrends.de (regiotermine)** | → **jetzt Treiber in Quelle 7** (Headless-Browser). Ohne Browser: Gebietsfilter-POST hängt, Server sehr langsam, zeitweise IP-Sperren. Datum nur im deutschen Fließtext/Titel → eigener Parser im Headless-Schritt. |
 | **Resident Advisor (de.ra.co)** | HTTP 403 (DataDome-Bot-Schutz). |
 | **regioactive.de** | HTTP 403 für Nicht-Browser-Clients. |
 | **visit.freiburg.de / infomax-Widget** | Funktioniert (SSR, `geo.position`-Meta), aber gleiche Datenbasis wie Quelle 2 bei mehr Requests. |
@@ -172,8 +243,30 @@ und als filterbare Liste. Die Daten erzeugt `update-events.ps1` nach
 
 ## Vorschlag GitHub-Workflow (nicht eingebaut)
 
-**1× täglich** eigener Job (z. B. `30 5 * * *` UTC): `pwsh ./update-events.ps1`
-+ Commit von `data/veranstaltungen.js` und `data/eventgeocache.json`.
-Stündlich lohnt inhaltlich nicht und belastet die fremden APIs unnötig;
-getrennt vom Feuer-Cron halten, damit ein Fehlschlag den Feuer-Datenfluss
-nicht berührt.
+Eigener Job, getrennt vom Feuer-Cron, damit ein Fehlschlag den
+Feuer-Datenfluss nicht berührt. Taktung: **Pipeline alle 6 h** ist
+vertretbar (z. B. `15 3,9,15,21 * * *` UTC — toubiz/FWTM sind APIs,
+Nominatim läuft fast vollständig aus dem Cache). Den **Headless-Schritt
+aber nur im ersten Lauf des Tages** ausführen (z. B. Bedingung auf die
+03:15-UTC-Instanz oder separater täglicher Job): regiotrends ist extrem
+lastempfindlich (Beobachtung 08/2026: zeitweise komplett down bzw.
+TCP-Drops nach wenigen zu schnellen Zugriffen) und die Eventdaten dort
+ändern sich nicht stündlich. Die 7-Tage-Frische-Prüfung in
+`update-events.ps1` erlaubt diese Entkopplung ausdrücklich — die übrigen
+6-h-Läufe verwenden einfach die zuletzt erzeugte
+`data/events-headless.json`. Reihenfolge mit Headless-Schritt:
+
+```yaml
+- uses: actions/setup-node@v4
+  with: { node-version: 22 }
+- run: npm ci || npm install
+- run: npx playwright install --with-deps chromium
+- run: node scripts/events-headless.mjs        # schreibt data/events-headless.json
+  continue-on-error: true                       # Teilausfall blockt nichts
+- run: pwsh ./update-events.ps1                 # liest die JSON als Quelle 7
+```
+
+Commit von `data/veranstaltungen.js`, `data/eventgeocache.json` und
+`data/events-headless.json`. Schlägt der Playwright-Schritt fehl oder ist
+die JSON älter als 7 Tage, überspringt `update-events.ps1` die Quelle still.
+Stündlich lohnt inhaltlich nicht und belastet die fremden Server unnötig.
