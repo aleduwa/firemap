@@ -97,6 +97,7 @@ und als filterbare Liste. Die Daten erzeugt `update-events.ps1` nach
 |---|---|
 | **Open-Data-Pool BW (eigener toubiz-Token)** | API identisch zu Quelle 1; Token nur per Antragsformular. Mittelfristig empfohlen. |
 | **hans-bunte.de** | Eigene Event-Liste wäre parsebar (`<li data-day data-month>`), aber die Location ist bereits vollständig über szene-Radar (Quelle 4) abgedeckt → kein eigener Scraper. |
+| **jazzhaus.de** | Monatsseiten (`/programm/<jahr>/<monat>.html`) wären gut parsebar (Uhrzeit/Titel/Genre-Hashtag, Datum im Slug; kein JSON-LD). Abgleich: Das Jazzhaus ist bereits mit 70+ Terminen über FWTM/szene-Radar/Rausgegangen abgedeckt (Stichproben „I Love 80s“, „Colour Haze“, „Y2K“, Jazzfestival-Minigipfel alle vorhanden) → kein eigener Scraper, Aggregatoren bevorzugt. |
 | **ZweiTälerLand tPortal** (`zweitaelerland.de/zweitaelerland/event/…`, TOMAS) | Detail- und Listenseiten laden Inhalte ausschließlich per JS/Session (leeres JSON-LD, `json/resultmap` liefert ohne Browser-Session `[]`, keine Sitemap). **Nicht curl-bar.** Betroffener Testfall: „Seenachtsfest der Landjugend Oberprechtal“ (22.08.2026) existiert NUR dort aktuell — der toubiz-Datensatz desselben Events ist veraltet (letzter Termin 30.08.2025), auch im ZTL- und STG-Kanal. |
 | **regiotrends.de (regiotermine)** | Detailseiten sind erreichbar, aber ohne JSON-LD/Meta-Datum (Datum nur im Fließtext/Titel); die Index-Listen zeigen nur einen kleinen rollierenden Ausschnitt (Seenachtsfest trotz vorhandener Detailseite nicht gelistet auf S. 1–3) und der Server ist sehr langsam (>30 s/Seite). Nicht zuverlässig automatisierbar. |
 | **Resident Advisor (de.ra.co)** | HTTP 403 (DataDome-Bot-Schutz). |
@@ -139,6 +140,12 @@ und als filterbare Liste. Die Daten erzeugt `update-events.ps1` nach
   durchgestrichen), persistiert in `localStorage['eventmap.cats']`;
   Zähler zeigen weiterhin die Gesamtzahl im Zeitraum. **`kultur` ist beim
   ersten Besuch ausgeblendet**, `party` an.
+- **Umkreis-Filter** (wirkt auf Karte UND Liste): Radius-Presets 10/25/50 km
+  oder „Alle“, Standard **25 km um Waldkirch**; Zentrum per **PLZ-Eingabe**
+  verschiebbar (Nominatim-Lookup nur auf Nutzeraktion, mit Gebiets-Check)
+  und per ↺ auf Waldkirch zurücksetzbar. Zentrum als 📍 mit gestricheltem
+  Radius-Kreis auf der Karte; km-Spalte der Liste rechnet ab dem gewählten
+  Zentrum. Persistiert in `localStorage['eventmap.center'/'eventmap.radius']`.
 - **Listenansicht** (Umschalter oben rechts): sortierbare Tabelle
   (Datum/Uhrzeit, Titel mit Original-Link, Ort, Kategorie, Quelle, Entfernung
   von Freiburg in km) mit kombinierbaren Filtern: Zeitraum (synchron zur Karte),

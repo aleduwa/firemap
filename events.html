@@ -14,8 +14,13 @@
     --hairline:   rgba(11,11,11,0.10);
   }
   html, body { height: 100%; margin: 0; }
-  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--ink); background: var(--surface); }
+  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--ink); background: var(--surface);
+    height: 100dvh; overflow: hidden; }
   #map { height: 100%; }
+
+  /* Touch: kein Tap-Blitzen, kein Doppeltipp-Zoom auf Bedienelementen */
+  .mode-switch a, .view-switch button, .range-btn, .chip, .legend .row,
+  .lv-table th, .lv-filters select { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
 
   .panel {
     background: var(--surface);
@@ -31,8 +36,15 @@
   .panel .meta { color: var(--ink-2); font-size: 12px; }
   .panel .meta b { color: var(--ink); font-weight: 600; }
 
-  .range-ctl { display: flex; gap: 4px; padding: 6px; }
+  .range-ctl { display: flex; gap: 4px; padding: 6px; flex-wrap: wrap; }
   .range-ctl .lbl { font-size: 11.5px; color: var(--ink-2); align-self: center; padding: 0 4px 0 2px; }
+  .scope-ctl input {
+    border: 1px solid var(--hairline); border-radius: 6px; padding: 3px 6px; font-size: 12px;
+    font-family: inherit; background: var(--surface); color: var(--ink); width: 52px;
+  }
+  .scope-ctl .center-lbl { font-size: 11.5px; color: var(--ink-2); align-self: center; padding: 0 2px; max-width: 130px;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .scope-ctl .hint { flex-basis: 100%; font-size: 11px; color: #d03b3b; padding: 2px 2px 0; }
   .range-btn {
     border: 1px solid var(--hairline); background: var(--surface); color: var(--ink-2);
     border-radius: 6px; padding: 3px 8px; font-size: 12px; cursor: pointer;
@@ -126,24 +138,75 @@
   .lv-table tr:hover td { background: #f7f6f3; }
   .lv-more { padding: 10px 12px; color: var(--muted); font-size: 12px; text-align: center; }
 
+  /* Info-Panel: auf Desktop immer offen; Einklapp-Verhalten nur mobil (s. Media Query) */
+  .info-panel h1 { cursor: default; }
+
   @media (max-width: 640px) {
-    #listview { inset: 52px 4px 4px 4px; }
-    .lv-filters input[type="search"] { width: 120px; }
-    .panel { max-width: 220px; }
+    /* Obere Umschalter: kompakter, aber Touch-Ziele >= 36px */
+    .mode-switch a, .view-switch button { padding: 9px 10px; font-size: 12.5px; }
+
+    /* Zoom-Control ausblenden (Pinch-Zoom reicht), topleft-Controls unter die Umschalter schieben */
+    .leaflet-control-zoom { display: none; }
+    .leaflet-top.leaflet-left { top: 44px; }
+    .leaflet-left .leaflet-control { margin-left: 8px; margin-top: 8px; }
+    .leaflet-bottom .leaflet-control { margin-bottom: 8px; margin-right: 8px; }
+
+    /* Panels kompakter */
+    .panel { max-width: 230px; padding: 8px 10px; }
+    .panel.range-ctl { max-width: calc(100vw - 20px); padding: 5px 6px; }
+    .range-btn { padding: 8px 10px; font-size: 13px; min-height: 36px; }
+    .scope-ctl input { font-size: 16px; padding: 4px 8px; width: 64px; } /* 16px: verhindert iOS-Zoom */
+    .scope-ctl .center-lbl { max-width: 105px; }
+
+    /* Info-Panel einklappbar (initial eingeklappt, s. JS) */
+    .info-panel h1 { cursor: pointer; }
+    .info-panel h1::after { content: " ▾"; color: var(--muted); font-size: 11px; }
+    .info-panel.collapsed h1 { margin-bottom: 0; }
+    .info-panel.collapsed h1::after { content: " ▸"; }
+    .info-panel.collapsed .meta { display: none; }
+
+    /* Legende: kompakt, scrollbar statt riesig */
+    .legend { max-width: 190px; max-height: 36vh; overflow-y: auto; overscroll-behavior: contain; }
+    .legend .row { margin-top: 2px; padding: 4px 0; }
+    .legend .size-hint { display: none; }
+
+    /* Listenansicht: volle Fläche, Filter als horizontale Scroll-Leiste */
+    #listview { inset: 48px 0 0 0; border-radius: 0; border: 0; border-top: 1px solid var(--hairline); }
+    .lv-filters { flex-wrap: nowrap; overflow-x: auto; gap: 6px 10px; padding: 8px 10px;
+      -webkit-overflow-scrolling: touch; overscroll-behavior-x: contain; }
+    .lv-filters .group { flex-wrap: nowrap; flex: none; }
+    .lv-filters .glbl { white-space: nowrap; }
+    .chip { padding: 8px 10px; font-size: 13px; min-height: 36px; white-space: nowrap; }
+    .lv-filters input[type="search"] { font-size: 16px; width: 150px; padding: 5px 8px; } /* 16px: verhindert iOS-Zoom */
+    .lv-filters select { font-size: 14px; padding: 6px; min-height: 36px; }
+    .lv-count { padding-right: 4px; }
+    .lv-tablewrap { -webkit-overflow-scrolling: touch; overscroll-behavior: contain; }
+    .lv-table th, .lv-table td { padding: 9px 10px; }
+    .lv-table td.t-title { min-width: 160px; }
+  }
+
+  /* Sehr schmal: Umschalter nur mit Emoji, damit Mitte und rechts nicht kollidieren */
+  @media (max-width: 560px) {
+    .mode-switch .sw-txt { display: none; }
+    .mode-switch a { padding: 9px 12px; }
+  }
+  @media (max-width: 400px) {
+    .view-switch .sw-txt { display: none; }
+    .view-switch button { padding: 9px 12px; }
   }
 </style>
 </head>
 <body>
 <div id="map"></div>
-<div class="mode-switch"><a href="index.html">🔥 Feuerkarte</a><a href="events.html" class="active">🎉 Eventkarte</a></div>
-<div class="view-switch"><button id="btn-map" class="active">🗺️ Karte</button><button id="btn-list">📋 Liste</button></div>
+<div class="mode-switch"><a href="index.html" aria-label="Feuerkarte">🔥<span class="sw-txt"> Feuerkarte</span></a><a href="events.html" class="active" aria-label="Eventkarte">🎉<span class="sw-txt"> Eventkarte</span></a></div>
+<div class="view-switch"><button id="btn-map" class="active" aria-label="Karte">🗺️<span class="sw-txt"> Karte</span></button><button id="btn-list" aria-label="Liste">📋<span class="sw-txt"> Liste</span></button></div>
 
 <div id="listview">
   <div class="lv-filters">
     <span class="group" id="lv-range"><span class="glbl">Zeitraum</span></span>
     <span class="group" id="lv-cats"><span class="glbl">Kategorie</span></span>
     <span class="group"><span class="glbl">Suche</span><input type="search" id="lv-search" placeholder="Titel oder Ort …"></span>
-    <span class="group"><span class="glbl">Umkreis</span><input type="range" id="lv-radius" min="5" max="60" step="5" value="60"><span id="lv-radius-val" class="glbl" style="min-width:46px">alle</span></span>
+    <span class="group" id="lv-radius-group"><span class="glbl" id="lv-radius-lbl">Umkreis</span></span>
     <span class="group" id="lv-days"><span class="glbl">Tag</span></span>
     <span class="group"><span class="glbl">Quelle</span><select id="lv-source"><option value="">alle</option></select></span>
     <span class="lv-count" id="lv-count"></span>
@@ -223,12 +286,65 @@
     return out;
   }
 
-  // Entfernung von Freiburg (Münster) in km
-  const FR = [47.9959, 7.8522];
+  // ---- Umkreis: Zentrum (Standard Waldkirch) + Radius ---------------------
+  const DEFAULT_CENTER = { lat: 48.0938, lon: 7.9607, label: 'Waldkirch' };
+  const RADII = [10, 25, 50, 0];   // 0 = alle
+  let center = null;
+  try { center = JSON.parse(localStorage.getItem('eventmap.center')); } catch (e) { }
+  if (!center || typeof center.lat !== 'number' || typeof center.lon !== 'number' || !center.label) center = DEFAULT_CENTER;
+  let radiusKm = +(localStorage.getItem('eventmap.radius') || 25);
+  if (!RADII.includes(radiusKm)) radiusKm = 25;
+
+  // Entfernung vom gewählten Zentrum in km
   function distKm(lat, lon) {
-    const dLat = (lat - FR[0]) * 111;
-    const dLon = (lon - FR[1]) * 111 * Math.cos(FR[0] * Math.PI / 180);
+    const dLat = (lat - center.lat) * 111;
+    const dLon = (lon - center.lon) * 111 * Math.cos(center.lat * Math.PI / 180);
     return Math.sqrt(dLat * dLat + dLon * dLon);
+  }
+
+  function radiusLabel() { return radiusKm ? '≤ ' + radiusKm + ' km' : 'alle'; }
+
+  function setRadius(km) {
+    radiusKm = km;
+    localStorage.setItem('eventmap.radius', String(km));
+    updateScopeUIs();
+    fitToScope();
+    rebuild();
+  }
+
+  function setCenter(c) {
+    center = c;
+    localStorage.setItem('eventmap.center', JSON.stringify(c));
+    updateScopeUIs();
+    fitToScope();
+    rebuild();
+  }
+
+  function fitToScope() {
+    if (radiusKm) {
+      map.fitBounds(L.latLng(center.lat, center.lon).toBounds(radiusKm * 2000).pad(0.05));
+    } else {
+      map.fitBounds(L.latLngBounds([47.45, 7.1], [48.55, 8.6]).pad(0.02));
+    }
+  }
+
+  // PLZ -> Koordinaten (Nominatim, nur auf Nutzeraktion; OSM-Attribution vorhanden)
+  function setCenterFromPlz(plz, hintEl) {
+    if (!/^\d{5}$/.test(plz)) { if (hintEl) hintEl.textContent = 'Bitte 5-stellige PLZ eingeben.'; return; }
+    if (hintEl) hintEl.textContent = 'Suche PLZ ' + plz + ' …';
+    fetch('https://nominatim.openstreetmap.org/search?format=json&limit=1&countrycodes=de&postalcode=' + encodeURIComponent(plz))
+      .then(r => r.json())
+      .then(res => {
+        if (!res.length) { if (hintEl) hintEl.textContent = 'PLZ nicht gefunden.'; return; }
+        const lat = +res[0].lat, lon = +res[0].lon;
+        if (lat < 47.2 || lat > 48.8 || lon < 6.8 || lon > 8.9) {
+          if (hintEl) hintEl.textContent = 'PLZ liegt außerhalb des Kartengebiets.';
+          return;
+        }
+        if (hintEl) hintEl.textContent = '';
+        setCenter({ lat: lat, lon: lon, label: 'PLZ ' + plz });
+      })
+      .catch(() => { if (hintEl) hintEl.textContent = 'PLZ-Suche derzeit nicht erreichbar.'; });
   }
 
   // ---- Zeitraum-Filter (Zukunft) -----------------------------------------
@@ -271,7 +387,9 @@
       const s = parseLocal(e.start);
       if (!s) return false;
       const en = parseLocal(e.end) || s;
-      return s < to && en >= from;
+      if (!(s < to && en >= from)) return false;
+      if (radiusKm && distKm(e.lat, e.lon) > radiusKm) return false;
+      return true;
     });
   }
 
@@ -281,6 +399,22 @@
 
   // ---- Karte: Marker ------------------------------------------------------
   const eventsLayer = L.layerGroup().addTo(map);
+  const scopeLayer = L.layerGroup().addTo(map);
+
+  function renderScope() {
+    scopeLayer.clearLayers();
+    L.marker([center.lat, center.lon], {
+      icon: L.divIcon({ className: '', iconSize: [22, 22], iconAnchor: [11, 20],
+        html: '<div style="font-size:20px;line-height:1;text-shadow:0 1px 2px rgba(11,11,11,.3)">📍</div>' }),
+      interactive: false, keyboard: false
+    }).addTo(scopeLayer);
+    if (radiusKm) {
+      L.circle([center.lat, center.lon], {
+        radius: radiusKm * 1000, color: '#8f1d1d', weight: 1.5, dashArray: '6 6',
+        fill: false, opacity: 0.55, interactive: false
+      }).addTo(scopeLayer);
+    }
+  }
   let legendDiv = null, infoDiv = null;
   let counts = {}, shownGroups = 0, shownDates = 0;
 
@@ -354,6 +488,7 @@
         .addTo(eventsLayer);
     });
 
+    renderScope();
     renderLegend();
     renderInfo();
     if (listOpen) renderList();
@@ -385,13 +520,20 @@
       'aus offenen Quellen (toubiz/Open Data BW, FWTM, Rausgegangen, szene-Radar, Alemannische Seiten, Heuboden).</div>' +
       '<div class="meta" style="margin-top:6px">' +
       '<b>' + shownGroups + '</b> Veranstaltungen sichtbar (' + shownDates + ' Termine im Zeitraum ' + rangeLabel(rangeKey) + ')' +
+      '<br>Umkreis: <b>' + radiusLabel() + '</b> um <b>' + esc(center.label) + '</b>' +
       '<br>Datenstand: <b>' + esc(data.generated) + '</b></div>';
   }
 
   // ---- Bedienelemente Karte ----------------------------------------------
   const info = L.control({ position: 'topleft' });
   info.onAdd = function () {
-    infoDiv = L.DomUtil.create('div', 'panel');
+    infoDiv = L.DomUtil.create('div', 'panel info-panel');
+    L.DomEvent.disableClickPropagation(infoDiv);
+    // Mobil: initial eingeklappt; Tipp auf die Überschrift klappt auf/zu (Wirkung nur < 640px, s. CSS)
+    if (window.matchMedia && window.matchMedia('(max-width: 640px)').matches) infoDiv.classList.add('collapsed');
+    infoDiv.addEventListener('click', function (e) {
+      if (e.target.closest('h1')) infoDiv.classList.toggle('collapsed');
+    });
     renderInfo();
     return infoDiv;
   };
@@ -416,9 +558,51 @@
   function setRange(key) {
     rangeKey = key;
     localStorage.setItem('eventmap.range', rangeKey);
-    document.querySelectorAll('.range-btn').forEach(b => b.classList.toggle('active', b.dataset.key === rangeKey));
+    document.querySelectorAll('.range-btn[data-key]').forEach(b => b.classList.toggle('active', b.dataset.key === rangeKey));
     document.querySelectorAll('#lv-range .chip').forEach(b => b.classList.toggle('active', b.dataset.key === rangeKey));
     rebuild();
+  }
+
+  // Umkreis-Steuerung: Radius-Presets + Zentrum per PLZ (Standard: Waldkirch)
+  const scopeCtl = L.control({ position: 'topleft' });
+  scopeCtl.onAdd = function () {
+    const div = L.DomUtil.create('div', 'panel range-ctl scope-ctl');
+    L.DomEvent.disableClickPropagation(div);
+    L.DomEvent.disableScrollPropagation(div);
+    div.innerHTML = '<span class="lbl">Umkreis</span>' +
+      RADII.map(r =>
+        '<button class="range-btn scope-r' + (r === radiusKm ? ' active' : '') + '" data-km="' + r + '">' +
+        (r ? r + ' km' : 'Alle') + '</button>'
+      ).join('') +
+      '<span class="center-lbl" id="center-lbl">📍 ' + esc(center.label) + '</span>' +
+      '<input id="plz-in" inputmode="numeric" maxlength="5" placeholder="PLZ">' +
+      '<button class="range-btn" id="plz-go">Setzen</button>' +
+      '<button class="range-btn" id="plz-reset" title="Zur&uuml;ck zu Waldkirch">&#8634;</button>' +
+      '<span class="hint" id="plz-hint"></span>';
+    div.addEventListener('click', e => {
+      const btn = e.target.closest('.scope-r');
+      if (btn) { setRadius(+btn.dataset.km); return; }
+      if (e.target.id === 'plz-go') setCenterFromPlz(div.querySelector('#plz-in').value.trim(), div.querySelector('#plz-hint'));
+      if (e.target.id === 'plz-reset') {
+        div.querySelector('#plz-in').value = '';
+        div.querySelector('#plz-hint').textContent = '';
+        setCenter(DEFAULT_CENTER);
+      }
+    });
+    div.querySelector('#plz-in').addEventListener('keydown', e => {
+      if (e.key === 'Enter') setCenterFromPlz(e.target.value.trim(), div.querySelector('#plz-hint'));
+    });
+    return div;
+  };
+  scopeCtl.addTo(map);
+
+  function updateScopeUIs() {
+    document.querySelectorAll('.scope-r').forEach(b => b.classList.toggle('active', +b.dataset.km === radiusKm));
+    document.querySelectorAll('#lv-radius-group .chip').forEach(b => b.classList.toggle('active', +b.dataset.km === radiusKm));
+    const cl = document.getElementById('center-lbl');
+    if (cl) cl.textContent = '📍 ' + center.label;
+    const ll = document.getElementById('lv-radius-lbl');
+    if (ll) ll.textContent = 'Umkreis um ' + center.label;
   }
 
   const legend = L.control({ position: 'bottomright' });
@@ -436,7 +620,7 @@
 
   // ---- Listenansicht ------------------------------------------------------
   let listOpen = false;
-  let lvSearch = '', lvRadius = 60, lvDays = new Set(), lvSource = '';
+  let lvSearch = '', lvDays = new Set(), lvSource = '';
   let lvSort = { col: 'start', dir: 1 };
   const LV_MAX = 500;
 
@@ -456,7 +640,6 @@
       const cat = catOf(e);
       if (!activeCats[cat]) return false;
       if (q && !((e.title || '').toLowerCase().includes(q) || (e.place || '').toLowerCase().includes(q))) return false;
-      if (lvRadius < 60 && distKm(e.lat, e.lon) > lvRadius) return false;
       if (lvDays.size) {
         const d = parseLocal(e.start);
         if (!d || !lvDays.has(d.getDay())) return false;
@@ -549,12 +732,15 @@
     document.getElementById('lv-search').addEventListener('input', e => {
       lvSearch = e.target.value; renderList();
     });
-    // Umkreis
-    const radiusIn = document.getElementById('lv-radius');
-    radiusIn.addEventListener('input', e => {
-      lvRadius = +e.target.value;
-      document.getElementById('lv-radius-val').textContent = lvRadius >= 60 ? 'alle' : '≤ ' + lvRadius + ' km';
-      renderList();
+    // Umkreis-Chips (synchron zur Karten-Steuerung)
+    const radSpan = document.getElementById('lv-radius-group');
+    RADII.forEach(r => {
+      const b = document.createElement('button');
+      b.className = 'chip' + (r === radiusKm ? ' active' : '');
+      b.dataset.km = r;
+      b.textContent = r ? r + ' km' : 'alle';
+      b.addEventListener('click', () => setRadius(r));
+      radSpan.appendChild(b);
     });
     // Quelle
     const srcSel = document.getElementById('lv-source');
@@ -589,6 +775,8 @@
   btnList.addEventListener('click', () => setView(true));
 
   initListControls();
+  updateScopeUIs();
+  fitToScope();
   rebuild();
 
   // Seite stündlich neu laden (der Scheduler aktualisiert die Datendatei;
