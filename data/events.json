@@ -1,11 +1,33 @@
 [
   {
+    "base": "Polizeipräsidium Offenburg|friesenheim - gebäudebrand - polizei bittet um zeugen",
+    "status": "contained",
+    "title": "Friesenheim - Gebäudebrand - Polizei bittet um Zeugen",
+    "link": "https://www.presseportal.de/blaulicht/pm/110975/6332998",
+    "first": "2026-08-13T13:56:32Z",
+    "last": "2026-08-13T13:56:32Z",
+    "places": [
+      {
+        "name": "Friesenheim",
+        "lat": 48.3734866,
+        "lon": 7.882329,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Offenburg",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Offenburg|willstätt - feuerwerkskörper für vegetationsbrand verantwortlich",
     "status": "contained",
     "title": "Willstätt - Feuerwerkskörper für Vegetationsbrand verantwortlich",
     "link": "https://www.presseportal.de/blaulicht/pm/110975/6332873",
     "first": "2026-08-13T12:06:53Z",
     "last": "2026-08-13T12:06:53Z",
+    "veg": true,
+    "source": "Polizeipräsidium Offenburg",
+    "updates": 0,
     "places": [
       {
         "name": "Willstätt",
@@ -13,10 +35,7 @@
         "lon": 7.8934991,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Offenburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Pforzheim|(enzkreis) eisingen - gemeinsame pressemeldung der staatsanwaltschaft karlsruhe -zweigstelle pforzheim und des polizeipräsidiums pforzheim - zeugen zum brand in eisingen gesucht",
