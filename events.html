@@ -93,6 +93,9 @@
 
   .leaflet-control-attribution { font-size: 10px; }
 
+  /* OSM-Basiskarte beruhigen: fast monochrom — Event-Marker dominieren */
+  .basemap-muted { filter: saturate(0.15) brightness(1.06) contrast(0.9); }
+
   /* Einklapp-Buttons der Karten-Panels: nur auf Mobile sichtbar */
   .mob-toggle { display: none; }
 
@@ -254,6 +257,7 @@
 
   const osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
+    className: 'basemap-muted',
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · ' +
       'Events: <a href="https://www.tourismus-bw.de/">toubiz/Open Data BW</a>, ' +
       '<a href="https://veranstaltungen.freiburg.de/">FWTM</a>, ' +
