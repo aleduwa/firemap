@@ -23,13 +23,18 @@ $points = [System.Collections.Generic.List[object]]::new()
 foreach ($src in $sources) {
     $path = Join-Path $dataDir $src.file
     Write-Host "Downloading $($src.id) ..."
-    try {
-        Invoke-WebRequest -Uri $src.url -OutFile $path -UseBasicParsing
-    } catch {
-        # Quelle nicht erreichbar -> letzte erfolgreich geladene Datei weiterverwenden
-        Write-Warning "$($src.id) nicht abrufbar: $_"
-        if (-not (Test-Path $path)) { continue }
+    $ok = $false
+    foreach ($attempt in 1..3) {
+        try {
+            Invoke-WebRequest -Uri $src.url -OutFile $path -UseBasicParsing -TimeoutSec 90
+            $ok = $true; break
+        } catch {
+            Write-Warning "$($src.id) Versuch $attempt/3 fehlgeschlagen: $_"
+            Start-Sleep -Seconds (5 * $attempt)
+        }
     }
+    # Im CI existiert keine alte CSV (gitignored) -> Quelle diesen Lauf auslassen
+    if (-not $ok -and -not (Test-Path $path)) { continue }
 
     foreach ($row in Import-Csv $path) {
         $lat = [double]$row.latitude
@@ -54,6 +59,13 @@ foreach ($src in $sources) {
             track  = [double]$row.track               # Pixelgröße längs (km)
         })
     }
+}
+
+# Leer-Guard: lieber den alten (deployten) Stand behalten, als eine leere
+# Karte zu veröffentlichen — Abbruch OHNE fires.js zu überschreiben.
+if ($points.Count -eq 0) {
+    Write-Error 'Keine Detektionen geladen (alle FIRMS-Quellen fehlgeschlagen?) — fires.js bleibt unangetastet.'
+    exit 1
 }
 
 $out = [ordered]@{

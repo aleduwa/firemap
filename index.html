@@ -325,10 +325,12 @@
   }
 
   const STATUS_LABEL = { active: 'aktiv / unklar', contained: 'unter Kontrolle', out: 'gelöscht' };
-  const fireIcon = (approx, status) => L.divIcon({
+  // veg=true: kräftiger roter Ring (Vegetationsbrand); sonst neutraler Ring
+  const fireIcon = (approx, status, veg) => L.divIcon({
     className: '', iconSize: [26, 26], iconAnchor: [13, 13],
     html: '<div style="width:26px;height:26px;border-radius:50%;background:#fcfcfb;' +
-          'border:2px ' + (approx ? 'dashed' : 'solid') + ' ' + (status === 'out' ? '#898781' : '#8f1d1d') + ';' +
+          'border:2px ' + (approx ? 'dashed' : 'solid') + ' ' +
+          (status === 'out' ? '#898781' : (veg ? '#8f1d1d' : '#52514e')) + ';' +
           'box-shadow:0 1px 4px rgba(11,11,11,.25);display:flex;align-items:center;justify-content:center;' +
           'font-size:14px;' + (status === 'out' ? 'filter:grayscale(1);opacity:.7' : '') + '">🔥</div>'
   });
@@ -348,7 +350,11 @@
   const firesLayer = L.layerGroup().addTo(map);
   const areaLayer = L.layerGroup().addTo(map);
   const footprintLayer = L.layerGroup();
-  const reportsLayer = L.layerGroup().addTo(map);
+  // Waldfokus: Vegetationsbrände standardmäßig an, sonstige Brände
+  // (Gebäude, Fahrzeuge, Küchen …) zuschaltbar; Wahl bleibt gespeichert
+  const reportsVegLayer = L.layerGroup().addTo(map);
+  const reportsOtherLayer = L.layerGroup();
+  if (localStorage.getItem('firemap.showOther') === '1') reportsOtherLayer.addTo(map);
 
   // ---- DWD-Waldbrandgefahrenindex (optional, unabhängig vom Filter) -------
   const WBI_COLOR = { 1: '#6a994e', 2: '#f2cc45', 3: '#f1a13a', 4: '#d03b3b', 5: '#7a1717' };
@@ -402,14 +408,14 @@
 
   let legendDiv = null;
   const counts = [0, 0, 0];
-  let persistentCount = 0, shownReports = 0;
+  let persistentCount = 0, vegReports = 0, otherReports = 0;
 
   function rebuild() {
     const cutoff = now - rangeDays * 864e5;
     firesLayer.clearLayers(); areaLayer.clearLayers();
-    footprintLayer.clearLayers(); reportsLayer.clearLayers();
+    footprintLayer.clearLayers(); reportsVegLayer.clearLayers(); reportsOtherLayer.clearLayers();
     counts[0] = counts[1] = counts[2] = 0;
-    persistentCount = 0; shownReports = 0;
+    persistentCount = 0; vegReports = 0; otherReports = 0;
 
     // Satelliten-Detektionen (FIRMS liefert max. 7 Tage)
     const pts = data.points.filter(p => acqDate(p).getTime() >= cutoff);
@@ -501,7 +507,7 @@
     reportData.reports
       .filter(rep => new Date(rep.last).getTime() >= cutoff)
       .forEach(rep => {
-        shownReports++;
+        if (rep.veg) { vegReports++; } else { otherReports++; }
         rep.places.forEach(pl => {
           const satN = nearbySatCount(pl.lat, pl.lon, rep.first, rep.last);
           const tip = '<div class="tip-head">' + (rep.veg ? 'Vegetationsbrand' : 'Brand') + ' — Einsatzmeldung</div>' +
@@ -518,10 +524,10 @@
                                                 : 'keine — nur lokal gemeldet') + '</td></tr>' +
             '</table>' +
             '<div class="tip-flag">Klicken f&uuml;r Original-Pressemeldung</div>';
-          L.marker(unstack(pl.lat, pl.lon), { icon: fireIcon(pl.approx || /kreis$/i.test(pl.name), rep.status) })
+          L.marker(unstack(pl.lat, pl.lon), { icon: fireIcon(pl.approx || /kreis$/i.test(pl.name), rep.status, rep.veg) })
             .bindTooltip(tip, { className: 'fire-tip', sticky: true, direction: 'top', offset: [0, -12] })
             .bindPopup('<b>' + rep.title + '</b><br><a href="' + rep.link + '" target="_blank" rel="noopener">Pressemeldung lesen</a>')
-            .addTo(reportsLayer);
+            .addTo(rep.veg ? reportsVegLayer : reportsOtherLayer);
         });
       });
 
@@ -538,8 +544,10 @@
       ).join('') +
       '<div class="row"><span class="dot dashed" style="background:#898781"></span>' +
       '<span class="label">dauerhafte Wärmequelle / Industrie (' + persistentCount + ')</span></div>' +
-      '<div class="row"><span style="font-size:14px;flex:none">🔥</span>' +
-      '<span class="label">Einsatzmeldung Polizei/Feuerwehr (' + shownReports + ')</span></div>' +
+      '<div class="row"><span style="font-size:14px;flex:none;filter:drop-shadow(0 0 1px #8f1d1d)">🔥</span>' +
+      '<span class="label">Vegetationsbrand-Meldung (' + vegReports + ')</span></div>' +
+      '<div class="row"><span style="font-size:14px;flex:none;filter:grayscale(.6)">🔥</span>' +
+      '<span class="label">sonstiger Brand — Geb&auml;ude/Kfz (' + otherReports + ', zuschaltbar)</span></div>' +
       '<div class="row"><span class="dot" style="background:rgba(143,29,29,.25);border:2px dashed #8f1d1d;border-radius:4px"></span>' +
       '<span class="label">geschätzte betroffene Fläche</span></div>' +
       '<div class="row"><span class="dot" style="background:rgba(123,31,162,.35);border:2px solid #7b1fa2;border-radius:4px"></span>' +
@@ -567,14 +575,18 @@
       'Geschätzte betroffene Flächen (Satellit)': areaLayer,
       'Brandnarben (Sentinel-2, dNBR)': scarLayer,
       'Detektions-Footprints (Pixelgröße)': footprintLayer,
-      'Einsatzmeldungen (Polizei/Feuerwehr)': reportsLayer,
+      'Vegetationsbrände (Meldungen)': reportsVegLayer,
+      'Sonstige Brände (Gebäude/Kfz …)': reportsOtherLayer,
       'Waldbrandgefahr heute (DWD-WBI)': wbiLayer,
       'Vergleich: offizielle Hotspots (EFFIS, ohne Details)': effisHotspots,
       'Vergleich: offizielle Brandflächen (EFFIS)': effisBurnt
     },
-    // Auf Mobile eingeklappt (Standard-Leaflet-Icon), auf Desktop offen
-    { collapsed: isMobile(), position: 'topright' }
+    // Überall eingeklapptes Icon-Menü, unten links (konsistent mit Eventkarte)
+    { collapsed: true, position: 'bottomleft' }
   ).addTo(map);
+  // Wahl "sonstige Brände anzeigen" merken
+  map.on('overlayadd',    e => { if (e.layer === reportsOtherLayer) localStorage.setItem('firemap.showOther', '1'); });
+  map.on('overlayremove', e => { if (e.layer === reportsOtherLayer) localStorage.setItem('firemap.showOther', '0'); });
 
   const info = L.control({ position: 'topleft' });
   info.onAdd = function () {
@@ -586,14 +598,12 @@
     });
     div.innerHTML =
       '<button class="mob-toggle" aria-label="Info ein-/ausblenden" title="Info">ℹ️</button>' +
-      '<h1>Feuer &amp; Wärmesignaturen — Baden-Württemberg</h1>' +
-      '<div class="meta">Satelliten-Detektionen (NASA FIRMS: VIIRS + MODIS), Einsatzmeldungen der 13 ' +
-      'Polizeipräsidien und 14 Feuerwehren (Presseportal) sowie offizielle EFFIS-Layer zum Vergleich.</div>' +
-      '<div class="meta" style="margin-top:6px">' +
-      '<b>' + reportData.reports.filter(r => r.status === 'active').length + '</b> gemeldete Br&auml;nde ohne L&ouml;sch-Best&auml;tigung (30 Tage)' +
-      '<br>Satellit: <b>' + data.generated + '</b><br>Meldungen: <b>' + (reportData.generated || '–') + '</b></div>' +
-      '<div class="meta" style="margin-top:6px;color:#898781">Keine amtliche Warnung — alle Angaben ' +
-      'ohne Gew&auml;hr (<a href="hinweise.html" style="color:#8f1d1d">Hinweise &amp; Quellen</a>). Im Notfall: 112.</div>' +
+      '<h1 style="font-size:13px">Feuerkarte Baden-Württemberg</h1>' +
+      '<div class="meta"><b>' + reportData.reports.filter(r => r.status === 'active').length +
+      '</b> gemeldete Br&auml;nde ohne L&ouml;sch-Best&auml;tigung (30 Tage)' +
+      '<br>Satellit: <b>' + data.generated + '</b> &middot; Meldungen: <b>' + (reportData.generated || '–') + '</b></div>' +
+      '<div class="meta" style="margin-top:5px;color:#898781">Keine amtliche Warnung, Angaben ohne Gew&auml;hr ' +
+      '(<a href="hinweise.html" style="color:#8f1d1d">Quellen</a>). Notfall: 112.</div>' +
       ((reportData.nina && reportData.nina.length)
         ? '<div style="margin-top:8px;padding:6px 8px;border-radius:6px;background:#fbe9e7;border:1px solid #d03b3b;font-size:12px">' +
           '<b>Amtliche Warnungen (NINA):</b><br>' +

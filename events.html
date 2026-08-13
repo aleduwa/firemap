@@ -280,7 +280,7 @@
   let baseChoice = localStorage.getItem('eventmap.base') || 'Karte (bunt)';
   if (!baseLayers[baseChoice]) baseChoice = 'Karte (bunt)';
   baseLayers[baseChoice].addTo(map);
-  L.control.layers(baseLayers, null, { position: 'topright', collapsed: true }).addTo(map);
+  L.control.layers(baseLayers, null, { position: 'bottomleft', collapsed: true }).addTo(map);
   map.on('baselayerchange', e => localStorage.setItem('eventmap.base', e.name));
 
   map.attributionControl.setPrefix('<a href="https://leafletjs.com">Leaflet</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a> · <a href="hinweise.html">Hinweise</a>');
