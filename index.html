@@ -69,10 +69,18 @@
   .fire-tip td:first-child { color: var(--ink-2); padding-right: 10px; }
 
   .leaflet-control-attribution { font-size: 10px; }
+
+  .mode-switch { position: absolute; top: 10px; left: 50%; transform: translateX(-50%); z-index: 1001;
+    display: flex; background: #fcfcfb; border: 1px solid rgba(11,11,11,.1); border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(11,11,11,.12); overflow: hidden; }
+  .mode-switch a { padding: 6px 14px; font-size: 13px; text-decoration: none; color: #52514e; }
+  .mode-switch a.active { background: #8f1d1d; color: #fff; font-weight: 600; }
+  .mode-switch a:not(.active):hover { background: #f1f0ec; }
 </style>
 </head>
 <body>
 <div id="map"></div>
+<div class="mode-switch"><a href="index.html" class="active">🔥 Feuerkarte</a><a href="events.html">🎉 Eventkarte</a></div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://unpkg.com/@turf/turf@6.5.0/turf.min.js"></script>
@@ -84,6 +92,11 @@
   const map = L.map('map', { zoomControl: true });
   // Ganz Baden-Württemberg
   map.fitBounds(L.latLngBounds([47.53, 7.5], [49.8, 10.5]).pad(0.03));
+  map.attributionControl.setPrefix(
+    '<a href="https://leafletjs.com" rel="noopener">Leaflet</a> &middot; ' +
+    '<a href="impressum.html">Impressum</a> &middot; ' +
+    '<a href="datenschutz.html">Datenschutz</a> &middot; ' +
+    '<a href="hinweise.html">Hinweise &amp; Quellen</a>');
 
   // ---- Basiskarten -------------------------------------------------------
   const osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -406,6 +419,8 @@
       '<div class="meta" style="margin-top:6px">' +
       '<b>' + reportData.reports.filter(r => r.status === 'active').length + '</b> gemeldete Br&auml;nde ohne L&ouml;sch-Best&auml;tigung (30 Tage)' +
       '<br>Satellit: <b>' + data.generated + '</b><br>Meldungen: <b>' + (reportData.generated || '–') + '</b></div>' +
+      '<div class="meta" style="margin-top:6px;color:#898781">Keine amtliche Warnung — alle Angaben ' +
+      'ohne Gew&auml;hr (<a href="hinweise.html" style="color:#8f1d1d">Hinweise &amp; Quellen</a>). Im Notfall: 112.</div>' +
       ((reportData.nina && reportData.nina.length)
         ? '<div style="margin-top:8px;padding:6px 8px;border-radius:6px;background:#fbe9e7;border:1px solid #d03b3b;font-size:12px">' +
           '<b>Amtliche Warnungen (NINA):</b><br>' +
