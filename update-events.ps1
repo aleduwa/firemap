@@ -24,7 +24,7 @@ $ErrorActionPreference = 'Stop'
 $latMin = 47.45; $latMax = 48.55
 $lonMin = 7.10;  $lonMax = 8.60
 $windowDays = 90
-$maxOccurrencesPerEvent = 20
+$maxOccurrencesPerEvent = 10
 
 $inv = [System.Globalization.CultureInfo]::InvariantCulture
 $tz = $null
@@ -42,12 +42,13 @@ New-Item -ItemType Directory -Force $dataDir | Out-Null
 $ua = 'firemap-eventmap/0.1 (nicht-kommerzielle Veranstaltungskarte; Kontakt siehe Impressum der Website)'
 
 # --- Kategorie-Heuristik ----------------------------------------------------
-# fest | musik | markt | kultur | sport | sonstiges
+# fest | party | musik | markt | kultur | sport | sonstiges
 function Get-Category([string]$title, [string]$srcCat) {
     $t = "$title $srcCat"
     if ($t -match '(?i)(flohmarkt|wochenmarkt|jahrmarkt|markt\b|m[äa]rkte|b[öo]rse\b)') { return 'markt' }
-    if ($t -match '(?i)(konzert|festival|party|rave|\bdj\b|sundowner|clubnacht|live.?musik|open.?air.?musik|jazz|rock\b|chor\b|band\b|singer|orchester|philharmoni|musikverein|schlagernacht)') { return 'musik' }
-    if ($t -match '(?i)(stadtfest|weinfest|dorffest|hoffest|hocketse|sommerfest|herbstfest|brunnenfest|winzerfest|kirchweih|kilwi|kilbig|kirmes|hock\b|fest\b|festle|jubil[äa]um|umzug|fasnet|fasnacht|weindorf|weinprobe|weinwanderung|genussmeile)') { return 'fest' }
+    if ($t -match '(?i)(party|parties|disco\b|disko\b|discothek|diskothek|\bclub(bing|nacht|abend)?\b|\bklub\b|\bdj\b|tanznacht|tanzparty|tanzbar\b|[üu]\s?30|[üu]\s?40|\brave\b|techno|house\b|electro\b|nachtleben|afterwork|after.?work|karaoke|schaumparty|bad taste|single.?b[öo]rse|salsa.?nacht|sundowner)') { return 'party' }
+    if ($t -match '(?i)(konzert|festival|live.?musik|open.?air.?musik|jazz|rock\b|chor\b|band\b|singer|orchester|philharmoni|musikverein|schlagernacht|musiknacht)') { return 'musik' }
+    if ($t -match '(?i)(stadtfest|weinfest|dorffest|hoffest|hocketse|sommerfest|herbstfest|brunnenfest|winzerfest|seenachtsfest|kirchweih|kilwi|kilbig|kirmes|hock\b|fest\b|festle|jubil[äa]um|umzug|fasnet|fasnacht|weindorf|weinprobe|weinwanderung|genussmeile)') { return 'fest' }
     if ($t -match '(?i)(theater|ausstellung|museum|f[üu]hrung|vernissage|lesung|vortrag|kino|film\b|oper\b|ballett|kabarett|comedy|poetry|galerie|kunst\b|literatur|b[üu]hne|schauspiel|puppenspiel|orgel)') { return 'kultur' }
     if ($t -match '(?i)(sport|lauf\b|marathon|triathlon|turnier|regatta|radrennen|wanderung|yoga|schwimmen|klettern|fu[ßs]ball|handball|volleyball)') { return 'sport' }
     if ($t -match '(?i)(markt)') { return 'markt' }
@@ -86,15 +87,33 @@ function Resolve-Address([string]$query) {
            '&viewbox=' + $viewbox +
            '&q=' + [uri]::EscapeDataString($query)
     try {
-        $res = Invoke-RestMethod -Uri $url -Headers @{ 'User-Agent' = $ua }
+        $res = Invoke-RestMethod -Uri $url -Headers @{ 'User-Agent' = $ua } -TimeoutSec 30
         Start-Sleep -Seconds 1   # Nominatim-Richtlinie: max. 1 Anfrage/s
     } catch { $res = @() }
 
-    $hit = if ($res.Count -gt 0) {
-        @{ lat = [double]::Parse([string]$res[0].lat, $inv); lon = [double]::Parse([string]$res[0].lon, $inv) }
-    } else { $null }
+    if ($res.Count -eq 0) {
+        # Fehlversuche NICHT persistent cachen (können transient sein, z. B.
+        # Rate-Limit); nur für diesen Lauf im Speicher merken.
+        $geoCache[$key] = $null
+        return $null
+    }
+    $hit = @{ lat = [double]::Parse([string]$res[0].lat, $inv); lon = [double]::Parse([string]$res[0].lon, $inv) }
     $geoCache[$key] = $hit
+    # Cache regelmäßig zwischenspeichern, damit ein Abbruch (Timeout) nicht
+    # die komplette Nominatim-Arbeit verwirft
+    $script:geoDirty = ($script:geoDirty ?? 0) + 1
+    if ($script:geoDirty -ge 25) {
+        Save-GeoCache
+        $script:geoDirty = 0
+    }
     return $hit
+}
+
+# Nur Treffer persistieren — Misses bleiben lauf-lokal
+function Save-GeoCache {
+    $persist = @{}
+    foreach ($k in $geoCache.Keys) { if ($null -ne $geoCache[$k]) { $persist[$k] = $geoCache[$k] } }
+    $persist | ConvertTo-Json -Depth 3 | Set-Content $geoCachePath -Encoding UTF8
 }
 
 # --- Sammel-Liste + Dedup ---------------------------------------------------
@@ -150,22 +169,44 @@ function Add-Event {
 $stats = [ordered]@{}
 
 # ============================================================================
-# Quelle 1: toubiz Open-Data-API (mein.toubiz.de)
+# Quelle 1: toubiz Open-Data-API (mein.toubiz.de) — drei Kanäle
 # ============================================================================
-# Der API-Token ist der öffentlich sichtbare Widget-Token der Website
-# schwarzwaldregion-freiburg.de (toubiz-Widget, Open-Data-Pool BW; Events dort
-# tragen CC-Lizenzen). Er wird bei jedem Lauf frisch von der Seite gelesen,
-# damit eine Token-Rotation den Lauf nicht bricht.
-$toubizFallbackToken = '$2y$12$vymNIH6hItdvzfg7yPLnteeYlbU2YTFKcBjV7zKAUff08aJup9/ga'
+# Die API-Tokens sind die öffentlich sichtbaren Widget-Tokens der jeweiligen
+# Destinations-Websites (toubiz-Widget, Open-Data-Pool BW; Events tragen
+# CC-Lizenzen). Sie werden bei jedem Lauf frisch von den Seiten gelesen,
+# damit eine Token-Rotation den Lauf nicht bricht. Jeder Kanal sieht einen
+# anderen Client-Ausschnitt der Landesdatenbank; identische Events werden
+# über die toubiz-UUID dedupliziert.
+$toubizChannels = @(
+    @{ key = 'toubiz/STG'; name = 'Schwarzwald Tourismus'
+       scrapeUrl = 'https://www.schwarzwald-tourismus.info/erleben/veranstaltungen'
+       pattern = 'api-token="([^"]+)"'
+       fallback = '$2y$10$Ab3swtelxg0yN2u2xX3az.sDnnH.mgEK6l1cqvRbkaRaJP4jgPiIq'
+       linkBase = 'https://www.schwarzwald-tourismus.info/veranstaltungen/' }
+    @{ key = 'toubiz/SWR-FR'; name = 'Schwarzwaldregion Freiburg'
+       scrapeUrl = 'https://www.schwarzwaldregion-freiburg.de/erleben/veranstaltungen'
+       pattern = 'api-token="([^"]+)"'
+       fallback = '$2y$12$vymNIH6hItdvzfg7yPLnteeYlbU2YTFKcBjV7zKAUff08aJup9/ga'
+       linkBase = 'https://www.schwarzwaldregion-freiburg.de/veranstaltung/' }
+    @{ key = 'toubiz/ZTL'; name = 'ZweiTälerLand'
+       scrapeUrl = 'https://www.zweitaelerland.de/aktivitaeten/veranstaltungskalender/'
+       pattern = "ApiToken = '([^']+)'"
+       fallback = '$2y$10$eOE6oINF2yVxwHXmPb5tnuBBIa8RcHoLgelBxv6oPPwmoWMsv.3Km'
+       linkBase = $null }   # kein öffentliches Slug-Muster -> Link auf Kalenderseite
+)
+$seenToubizIds = [System.Collections.Generic.HashSet[string]]::new()
+
+foreach ($ch in $toubizChannels) {
 try {
-    Write-Host 'toubiz: Events abrufen ...'
-    $tbToken = $toubizFallbackToken
+    Write-Host "toubiz ($($ch.name)): Events abrufen ..."
+    $tbToken = $ch.fallback
     try {
-        $html = (Invoke-WebRequest -Uri 'https://www.schwarzwaldregion-freiburg.de/erleben/veranstaltungen' `
-                    -Headers @{ 'User-Agent' = 'Mozilla/5.0' } -UseBasicParsing).Content
-        $m = [regex]::Match($html, 'api-token="([^"]+)"')
+        $html = (Invoke-WebRequest -Uri $ch.scrapeUrl `
+                    -Headers @{ 'User-Agent' = 'Mozilla/5.0' } -UseBasicParsing -TimeoutSec 30).Content
+        $m = [regex]::Match($html, $ch.pattern)
         if ($m.Success) { $tbToken = $m.Groups[1].Value }
-    } catch { Write-Warning "toubiz: Token-Scrape fehlgeschlagen, verwende Fallback ($_)" }
+        $html = $null
+    } catch { Write-Warning "toubiz ($($ch.name)): Token-Scrape fehlgeschlagen, verwende Fallback ($_)" }
 
     $tbHeaders = @{ 'Authorization' = "Bearer $tbToken"; 'Accept' = 'application/json'; 'User-Agent' = $ua }
     $tbCount = 0
@@ -179,11 +220,12 @@ try {
             '&filter%5BrectangleArea%5D%5B1%5D%5Blng%5D=' + $lonMin.ToString($inv) +
             '&filter%5Bdate%5D%5Bafter%5D=' + $today.ToString('yyyy-MM-dd', $inv) +
             '&filter%5Bdate%5D%5Bbefore%5D=' + $until.ToString('yyyy-MM-dd', $inv)
-        $res = Invoke-RestMethod -Uri $url -Headers $tbHeaders
+        $res = Invoke-RestMethod -Uri $url -Headers $tbHeaders -TimeoutSec 90
         $lastPage = [int]$res._attributes.pagination.lastPage
 
         foreach ($ev in $res.payload) {
             if ($ev.canceled -or $ev.invisible -or $ev.trashed) { continue }
+            if ($ev.id -and -not $seenToubizIds.Add([string]$ev.id)) { continue }  # kanalübergreifendes Duplikat
             if (-not $ev.geocoordinates -or $null -eq $ev.geocoordinates.latitude) { continue }
             $lat = [double]$ev.geocoordinates.latitude
             $lon = [double]$ev.geocoordinates.longitude
@@ -194,12 +236,16 @@ try {
                      elseif ($ev.client) { [string]$ev.client.name } else { $null }
             $desc = Limit-Text (Remove-Html $ev.intro)
 
-            # Öffentlicher Deep-Link auf das Event im Portal der Schwarzwaldregion
-            $slug = $ev.name.ToLowerInvariant().
-                Replace('ä', 'ae').Replace('ö', 'oe').Replace('ü', 'ue').Replace('ß', 'ss')
-            $slug = ($slug -replace '[^a-z0-9.]+', '-').Trim('-')
-            $id10 = ($ev.id -replace '-', '').Substring(0, 10)
-            $url2 = "https://www.schwarzwaldregion-freiburg.de/veranstaltung/$slug-$id10"
+            # Öffentlicher Deep-Link auf das Event im Portal des Kanals
+            if ($ch.linkBase) {
+                $slug = $ev.name.ToLowerInvariant().
+                    Replace('ä', 'ae').Replace('ö', 'oe').Replace('ü', 'ue').Replace('ß', 'ss')
+                $slug = ($slug -replace '[^a-z0-9.]+', '-').Trim('-')
+                $id10 = ($ev.id -replace '-', '').Substring(0, 10)
+                $url2 = $ch.linkBase + $slug + '-' + $id10
+            } else {
+                $url2 = $ch.scrapeUrl
+            }
 
             # Termine: datesCache = bereits aufgelöste Einzeltermine
             $occ = 0
@@ -218,7 +264,7 @@ try {
                 if ($d.endAt -and $d.endAt -match '^(\d{2}:\d{2})') { $endStr = $day.ToString('yyyy-MM-dd', $inv) + 'T' + $Matches[1] }
 
                 Add-Event -title $ev.name -cat $cat -start $startStr -end $endStr -lat $lat -lon $lon `
-                    -place $place -url $url2 -source 'toubiz/Schwarzwaldregion' -desc $desc
+                    -place $place -url $url2 -source $ch.key -desc $desc
                 $tbCount++
                 $occ++
                 if ($occ -ge $maxOccurrencesPerEvent) { break }
@@ -231,18 +277,21 @@ try {
                         [System.Globalization.DateTimeStyles]::None, [ref]$day) -and
                     $day -ge $today -and $day -le $until) {
                     Add-Event -title $ev.name -cat $cat -start $day.ToString('yyyy-MM-dd', $inv) -end $null `
-                        -lat $lat -lon $lon -place $place -url $url2 -source 'toubiz/Schwarzwaldregion' -desc $desc
+                        -lat $lat -lon $lon -place $place -url $url2 -source $ch.key -desc $desc
                     $tbCount++
                 }
             }
         }
+        $res = $null
         $page++
-    } while ($page -le $lastPage -and $page -le 30)
-    $stats['toubiz'] = $tbCount
-    Write-Host "toubiz: $tbCount Termine übernommen."
+    } while ($page -le $lastPage -and $page -le 40)
+    [GC]::Collect()
+    $stats[$ch.key] = $tbCount
+    Write-Host "toubiz ($($ch.name)): $tbCount Termine übernommen."
 } catch {
-    Write-Warning "Quelle toubiz fehlgeschlagen: $_"
-    $stats['toubiz'] = 0
+    Write-Warning "Quelle toubiz ($($ch.name)) fehlgeschlagen: $_"
+    $stats[$ch.key] = 0
+}
 }
 
 # ============================================================================
@@ -283,7 +332,7 @@ try {
                  'eventDates { date startTime duration cancelled } } } }'
         $body = @{ query = $query } | ConvertTo-Json -Compress
         $res = Invoke-RestMethod -Uri 'https://content-delivery.imxplatform.de/fwtm/imxplatform' `
-                    -Method Post -Headers $gqlHeaders -Body $body
+                    -Method Post -Headers $gqlHeaders -Body $body -TimeoutSec 90
         if ($res.errors) { throw ("GraphQL-Fehler: " + ($res.errors | ConvertTo-Json -Compress -Depth 4)) }
         $totalPages = [int]$res.data.events.pagination.totalPages
 
@@ -326,8 +375,10 @@ try {
                 if ($occ -ge $maxOccurrencesPerEvent) { break }
             }
         }
+        $res = $null
         $page++
     } while ($page -le $totalPages -and $page -le 15)
+    [GC]::Collect()
     $stats['fwtm'] = $fwCount
     Write-Host "FWTM: $fwCount Termine übernommen."
 } catch {
@@ -355,13 +406,16 @@ try {
     foreach ($c in $rgCategories) {
         try {
             $html = (Invoke-WebRequest -Uri ("https://rausgegangen.de/freiburg/kategorie/$($c.slug)/") `
-                        -Headers $rgHeaders -UseBasicParsing).Content
-            foreach ($m in [regex]::Matches($html, '<script type="application/ld\+json">\s*(\{[^<]*"ItemList"[^<]*\})\s*</script>')) {
-                $list = $m.Groups[1].Value | ConvertFrom-Json
+                        -Headers $rgHeaders -UseBasicParsing -TimeoutSec 40).Content
+            foreach ($m in [regex]::Matches($html, '(?s)<script type="application/ld\+json">\s*(\{.*?)\s*</script>')) {
+                if (-not $m.Groups[1].Value.Contains('"ItemList"')) { continue }
+                $list = $null
+                try { $list = $m.Groups[1].Value | ConvertFrom-Json } catch { continue }
                 foreach ($item in $list.itemListElement) {
                     if ($item.url -and -not $rgUrls.Contains([string]$item.url)) { $rgUrls[[string]$item.url] = $c.cat }
                 }
             }
+            $html = $null
             Start-Sleep -Milliseconds 300
         } catch { Write-Warning "Rausgegangen-Kategorie $($c.slug) nicht abrufbar: $_" }
     }
@@ -371,8 +425,9 @@ try {
     foreach ($u in @($rgUrls.Keys)) {
         if ($fetched -ge 150) { break }   # Mengenbegrenzung pro Lauf
         $fetched++
+        if ($fetched % 50 -eq 0) { Write-Host "  Rausgegangen: $fetched Seiten ..." }
         try {
-            $html = (Invoke-WebRequest -Uri $u -Headers $rgHeaders -UseBasicParsing).Content
+            $html = (Invoke-WebRequest -Uri $u -Headers $rgHeaders -UseBasicParsing -TimeoutSec 40).Content
             Start-Sleep -Milliseconds 300
         } catch { continue }
 
@@ -435,6 +490,236 @@ try {
     $stats['rausgegangen'] = 0
 }
 
+# ============================================================================
+# Quelle 4: szene-Radar Freiburg (Nachtleben-Aggregator, schema.org JSON-LD)
+# ============================================================================
+# Jede Location-Seite (AGAR, Crash, Drifters, E-WERK, Jazzhaus, Waldsee,
+# Hans-Bunte-Areal, Schlosskeller Emmendingen …) enthält ein ItemList-JSON-LD
+# mit VOLLSTÄNDIGEN Event-Objekten (Titel, Start/Ende mit Uhrzeit, Adresse,
+# Ticket-Link) — keine Detail-Abrufe nötig.
+try {
+    Write-Host 'szene-Radar: Locations abrufen ...'
+    $szHeaders = @{ 'User-Agent' = 'Mozilla/5.0' }
+    $locHtml = (Invoke-WebRequest -Uri 'https://freiburg.szene-radar.de/locations' -Headers $szHeaders -UseBasicParsing -TimeoutSec 40).Content
+    $locUrls = [regex]::Matches($locHtml, 'href="(https://freiburg\.szene-radar\.de/location/[^"]+)"') |
+        ForEach-Object { $_.Groups[1].Value } | Sort-Object -Unique
+    Write-Host "szene-Radar: $($locUrls.Count) Locations gefunden."
+
+    $szCount = 0
+    $locDone = 0
+    foreach ($lu in $locUrls) {
+        $locDone++
+        if ($locDone % 20 -eq 0) { Write-Host "  szene-Radar: $locDone/$($locUrls.Count) Locations ..." }
+        try {
+            $html = (Invoke-WebRequest -Uri $lu -Headers $szHeaders -UseBasicParsing -TimeoutSec 40).Content
+            Start-Sleep -Milliseconds 250
+        } catch { continue }
+
+        foreach ($m in [regex]::Matches($html, '(?s)<script type="application/ld\+json"[^>]*>\s*(\{.*?)\s*</script>')) {
+            $list = $null
+            try { $list = $m.Groups[1].Value | ConvertFrom-Json } catch { continue }
+            if (-not $list -or $list.'@type' -ne 'ItemList') { continue }
+
+            foreach ($item in $list.itemListElement) {
+                $ld = $item.item
+                if (-not $ld -or $ld.'@type' -ne 'Event' -or -not $ld.startDate) { continue }
+                if ($ld.eventStatus -and $ld.eventStatus -match 'Cancelled') { continue }
+
+                $startDto = [DateTimeOffset]::MinValue
+                if (-not [DateTimeOffset]::TryParse([string]$ld.startDate, $inv,
+                        [System.Globalization.DateTimeStyles]::None, [ref]$startDto)) { continue }
+                $startLocal = $startDto.DateTime
+                if ($startLocal.Date -lt $today -or $startLocal.Date -gt $until) { continue }
+                $endStr = $null
+                $endDto = [DateTimeOffset]::MinValue
+                if ($ld.endDate -and [DateTimeOffset]::TryParse([string]$ld.endDate, $inv,
+                        [System.Globalization.DateTimeStyles]::None, [ref]$endDto)) {
+                    $endStr = $endDto.DateTime.ToString('yyyy-MM-ddTHH:mm', $inv)
+                }
+
+                # Adresse -> Koordinaten (Nominatim, gecacht; Venue-Adressen wiederholen sich)
+                $placeName = if ($ld.location -and $ld.location.name) { [string]$ld.location.name } else { $null }
+                $addr = if ($ld.location) { $ld.location.address } else { $null }
+                $parts = @()
+                if ($addr) {
+                    if ($addr.streetAddress) { $parts += [string]$addr.streetAddress }
+                    $cityPart = ((@([string]$addr.postalCode, [string]$addr.addressLocality) | Where-Object { $_ }) -join ' ')
+                    if ($cityPart) { $parts += $cityPart }
+                }
+                $q = ($parts -join ', ')
+                if (-not $q) { continue }
+                $hit = Resolve-Address $q
+                if (-not $hit) { continue }
+
+                $title = [System.Net.WebUtility]::HtmlDecode([string]$ld.name)
+                $cat = Get-Category $title ''
+                if ($cat -eq 'sonstiges' -or $cat -eq 'musik') {
+                    # Nachtleben-Portal: Musik hier ist fast immer Club-Kontext,
+                    # außer die Heuristik erkennt explizit Konzert/Jazz/Chor
+                    if ($cat -eq 'sonstiges') { $cat = 'party' }
+                }
+                $desc = Limit-Text (Remove-Html ([string]$ld.description)) 140
+                $url2 = if ($ld.url) { [string]$ld.url } else { $lu }
+
+                Add-Event -title $title -cat $cat -start $startLocal.ToString('yyyy-MM-ddTHH:mm', $inv) -end $endStr `
+                    -lat ([double]$hit.lat) -lon ([double]$hit.lon) -place $placeName -url $url2 `
+                    -source 'szene-Radar' -desc $desc
+                $szCount++
+            }
+        }
+    }
+    $stats['szene-radar'] = $szCount
+    Write-Host "szene-Radar: $szCount Termine übernommen."
+} catch {
+    Write-Warning "Quelle szene-Radar fehlgeschlagen: $_"
+    $stats['szene-radar'] = 0
+}
+
+# ============================================================================
+# Quelle 5: Heuboden Umkirch (Discothek — Wochenend-Partys)
+# ============================================================================
+# Kleine, feste Quelle: die Event-Liste verlinkt Detailseiten, deren Slug das
+# Datum enthält (…-dd-mm-yyyy.html). Kein JSON-LD -> Titel aus <h1>/<title>.
+try {
+    Write-Host 'Heuboden: Events abrufen ...'
+    $hbHeaders = @{ 'User-Agent' = 'Mozilla/5.0' }
+    $html = (Invoke-WebRequest -Uri 'https://www.heuboden.de/events.html' -Headers $hbHeaders -UseBasicParsing -TimeoutSec 40).Content
+    $links = [regex]::Matches($html, 'href="(/aktuell/heuboden-events/[^"]+-(\d{2})-(\d{2})-(\d{4})\.html)"') |
+        ForEach-Object { ,@($_.Groups[1].Value, $_.Groups[2].Value, $_.Groups[3].Value, $_.Groups[4].Value) }
+    $hbHit = Resolve-Address 'Am Gansacker 6, 79224 Umkirch'
+    $hbCount = 0
+    $seenHb = [System.Collections.Generic.HashSet[string]]::new()
+    foreach ($l in $links) {
+        if (-not $seenHb.Add($l[0])) { continue }
+        $day = [DateTime]::MinValue
+        if (-not [DateTime]::TryParseExact(('{0}.{1}.{2}' -f $l[1], $l[2], $l[3]), 'dd.MM.yyyy', $inv,
+                [System.Globalization.DateTimeStyles]::None, [ref]$day)) { continue }
+        if ($day -lt $today -or $day -gt $until) { continue }
+        if (-not $hbHit) { continue }
+
+        $url2 = 'https://www.heuboden.de' + $l[0]
+        $title = $null
+        try {
+            $det = (Invoke-WebRequest -Uri $url2 -Headers $hbHeaders -UseBasicParsing -TimeoutSec 40).Content
+            $tm = [regex]::Match($det, '<h1[^>]*>([\s\S]*?)</h1>')
+            if ($tm.Success) { $title = (Remove-Html $tm.Groups[1].Value) }
+            Start-Sleep -Milliseconds 300
+        } catch { }
+        if (-not $title) {
+            $title = ([System.IO.Path]::GetFileNameWithoutExtension($l[0]) -replace '-\d{2}-\d{2}-\d{4}$', '') -replace '-', ' '
+            $title = $title.ToUpperInvariant()
+        }
+
+        Add-Event -title $title -cat 'party' -start $day.ToString('yyyy-MM-dd', $inv) -end $null `
+            -lat ([double]$hbHit.lat) -lon ([double]$hbHit.lon) -place 'Heuboden, Umkirch' -url $url2 `
+            -source 'Heuboden' -desc $null
+        $hbCount++
+    }
+    $stats['heuboden'] = $hbCount
+    Write-Host "Heuboden: $hbCount Termine übernommen."
+} catch {
+    Write-Warning "Quelle Heuboden fehlgeschlagen: $_"
+    $stats['heuboden'] = 0
+}
+
+# ============================================================================
+# Quelle 6: Alemannische Seiten (Dorffeste, Hocks, Vereinsfeste der Region)
+# ============================================================================
+# Orts-Hubs (<ort>_suche.php?id=veranstaltungen) listen kommende Termine mit
+# Datum; die Detailseiten (aktuell.php?t=<id>) tragen vollständiges
+# schema.org-Event-JSON-LD inkl. Ort/PLZ -> Nominatim mit Cache.
+try {
+    Write-Host 'Alemannische Seiten: Orts-Hubs abrufen ...'
+    $alHubs = @('freiburg', 'emmendingen', 'waldkirch', 'elzach', 'denzlingen', 'breisach',
+                'bad-krozingen', 'kirchzarten', 'muellheim', 'titisee-neustadt', 'lahr', 'offenburg')
+    $alHeaders = @{ 'User-Agent' = 'Mozilla/5.0' }
+    $alIds = [System.Collections.Generic.List[string]]::new()
+    $seenAl = [System.Collections.Generic.HashSet[string]]::new()
+    foreach ($hub in $alHubs) {
+        try {
+            $html = (Invoke-WebRequest -Uri "https://www.alemannische-seiten.de/deutschland/${hub}_suche.php?id=veranstaltungen" `
+                        -Headers $alHeaders -UseBasicParsing -TimeoutSec 40).Content
+            foreach ($m in [regex]::Matches($html, 'aktuell\.php\?t=(\d+)')) {
+                if ($seenAl.Add($m.Groups[1].Value)) { $alIds.Add($m.Groups[1].Value) }
+            }
+            Start-Sleep -Milliseconds 300
+        } catch { Write-Warning "Alemannische Seiten: Hub $hub nicht abrufbar: $_" }
+    }
+    Write-Host "Alemannische Seiten: $($alIds.Count) Termin-IDs gefunden."
+
+    $alCount = 0; $fetched = 0
+    foreach ($id in $alIds) {
+        if ($fetched -ge 250) { break }   # Mengenbegrenzung pro Lauf
+        $fetched++
+        if ($fetched % 50 -eq 0) { Write-Host "  Alemannische Seiten: $fetched Details ..." }
+        try {
+            $html = (Invoke-WebRequest -Uri "https://www.alemannische-seiten.de/veranstaltung/aktuell.php?t=$id" `
+                        -Headers $alHeaders -UseBasicParsing -TimeoutSec 40).Content
+            Start-Sleep -Milliseconds 350
+        } catch { continue }
+
+        $ld = $null
+        foreach ($m in [regex]::Matches($html, '(?s)<script type="application/ld\+json"[^>]*>\s*(\{.*?)\s*</script>')) {
+            try {
+                $cand = $m.Groups[1].Value | ConvertFrom-Json
+                if ($cand.'@type' -eq 'Event') { $ld = $cand; break }
+            } catch { }
+        }
+        if (-not $ld -or -not $ld.startDate) { continue }
+        if ($ld.eventStatus -and $ld.eventStatus -match 'Cancelled') { continue }
+
+        $startDto = [DateTimeOffset]::MinValue
+        if (-not [DateTimeOffset]::TryParse([string]$ld.startDate, $inv,
+                [System.Globalization.DateTimeStyles]::None, [ref]$startDto)) { continue }
+        $startLocal = $startDto.DateTime
+        $endStr = $null
+        $endLocal = $startLocal
+        $endDto = [DateTimeOffset]::MinValue
+        if ($ld.endDate -and [DateTimeOffset]::TryParse([string]$ld.endDate, $inv,
+                [System.Globalization.DateTimeStyles]::None, [ref]$endDto)) {
+            $endLocal = $endDto.DateTime
+            $fmt = if ("$($ld.endDate)".Length -gt 10) { 'yyyy-MM-ddTHH:mm' } else { 'yyyy-MM-dd' }
+            $endStr = $endLocal.ToString($fmt, $inv)
+        }
+        # Zeitfenster: Event schneidet [heute, +90 T]
+        if ($endLocal.Date -lt $today -or $startLocal.Date -gt $until) { continue }
+
+        # Ort: Place-Name + PLZ/Ort aus dem JSON-LD
+        $placeName = if ($ld.location -and $ld.location.name) { [string]$ld.location.name } else { $null }
+        $addr = if ($ld.location) { $ld.location.address } else { $null }
+        $parts = @()
+        if ($placeName) { $parts += $placeName }
+        if ($addr) {
+            $cityPart = ((@([string]$addr.postalCode, [string]$addr.addressLocality) | Where-Object { $_ }) -join ' ')
+            if ($cityPart) { $parts += $cityPart }
+        }
+        $q = ($parts -join ', ')
+        if (-not $q) { continue }
+        $hit = Resolve-Address $q
+        if (-not $hit -and $addr) {
+            # Fallback: nur PLZ + Ort (Place-Namen kennt Nominatim oft nicht)
+            $q2 = ((@([string]$addr.postalCode, [string]$addr.addressLocality) | Where-Object { $_ }) -join ' ')
+            if ($q2) { $hit = Resolve-Address $q2 }
+        }
+        if (-not $hit) { continue }
+
+        $title = [System.Net.WebUtility]::HtmlDecode([string]$ld.name)
+        $cat = Get-Category $title ''
+        $fmtS = if ("$($ld.startDate)".Length -gt 10) { 'yyyy-MM-ddTHH:mm' } else { 'yyyy-MM-dd' }
+        $url2 = "https://www.alemannische-seiten.de/veranstaltung/aktuell.php?t=$id"
+
+        Add-Event -title $title -cat $cat -start $startLocal.ToString($fmtS, $inv) -end $endStr `
+            -lat ([double]$hit.lat) -lon ([double]$hit.lon) -place $placeName -url $url2 `
+            -source 'Alemannische Seiten' -desc $null
+        $alCount++
+    }
+    $stats['alemannische-seiten'] = $alCount
+    Write-Host "Alemannische Seiten: $alCount Termine übernommen."
+} catch {
+    Write-Warning "Quelle Alemannische Seiten fehlgeschlagen: $_"
+    $stats['alemannische-seiten'] = 0
+}
+
 # --- Ausgabe ----------------------------------------------------------------
 if ($events.Count -eq 0) {
     Write-Warning 'Keine Events gesammelt — data/veranstaltungen.js wird NICHT überschrieben.'
@@ -454,7 +739,7 @@ $out = [ordered]@{
 $js = 'window.EVENT_DATA = ' + ($out | ConvertTo-Json -Depth 6 -Compress) + ';'
 Set-Content -Path (Join-Path $dataDir 'veranstaltungen.js') -Value $js -Encoding UTF8
 
-$geoCache | ConvertTo-Json -Depth 3 | Set-Content $geoCachePath -Encoding UTF8
+Save-GeoCache
 
 Write-Host ("Fertig: {0} Termine ({1}) -> data/veranstaltungen.js" -f $sorted.Count,
     (($stats.GetEnumerator() | ForEach-Object { "$($_.Key): $($_.Value)" }) -join ', '))

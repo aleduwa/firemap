@@ -1,150 +1,172 @@
 # Eventkarte — Quellen-Recherche & Architektur
 
 Die Eventkarte (`events.html`) zeigt zukünftige Veranstaltungen (heute bis +90 Tage)
-im Raum Freiburg +50 km (Bounding Box ca. lat 47.45–48.55, lon 7.1–8.6).
-Die Daten werden von `update-events.ps1` erzeugt und nach `data/veranstaltungen.js`
-geschrieben (`window.EVENT_DATA`). Geokodierungs-Cache: `data/eventgeocache.json`.
+im Raum Freiburg +50 km (Bounding Box ca. lat 47.45–48.55, lon 7.1–8.6) als Karte
+und als filterbare Liste. Die Daten erzeugt `update-events.ps1` nach
+`data/veranstaltungen.js` (`window.EVENT_DATA`). Geokodierungs-Cache:
+`data/eventgeocache.json`.
 
 ## Eingebaute Quellen
 
-### 1. toubiz Open-Data-API (mein.toubiz.de) — eingebaut
+### 1. toubiz Open-Data-API (mein.toubiz.de) — drei Kanäle
 
 - **Endpoint:** `GET https://mein.toubiz.de/api/v1/event` mit
   `filter[rectangleArea][0|1][lat|lng]` (Bounding Box),
   `filter[date][after|before]` (Zeitfenster) und
   `pagination[pageSize]/[page]`. Dokumentation: <https://mein.toubiz.de/api/v1/docs>.
-- **Auth:** `Authorization: Bearer <Token>`. Verwendet wird der **öffentlich im
-  HTML von schwarzwaldregion-freiburg.de eingebettete Widget-Token**
-  (Attribut `api-token="…"` des `<toubiz-widget>`-Elements auf
-  <https://www.schwarzwaldregion-freiburg.de/erleben/veranstaltungen>).
-  Der Token wird bei jedem Lauf frisch von der Seite gelesen; ein zuletzt
-  bekannter Wert dient als Fallback.
-- **Format:** JSON. Liefert **Koordinaten direkt** (`geocoordinates`), Kategorie,
-  Ort (`location.name`), Terminliste (`datesCache` mit Datum/Start/Ende),
-  Intro-Text und **je Datensatz eine Lizenzangabe** (`license`: `cc-zero`,
-  `cc-by-sa`, `cc-by-nc-sa`, `community`, …).
-- **Abdeckung:** sehr gut regional — Kaiserstuhl, ZweiTälerLand/Waldkirch,
-  Breisach, Markgräflerland, Endingen usw. (~500+ Events im Fenster).
-  Das ist die Landes-Datenbank „mein.toubiz“ hinter dem
-  Open-Data-Pool Baden-Württemberg.
-- **Lizenz-Einschätzung:** Die Events tragen überwiegend CC-Lizenzen aus dem
-  Open-Data-Pool BW (Land fördert offene Lizenzen); der Zugriff erfolgt jedoch
-  über einen fremden Widget-Token, nicht über einen eigenen (kostenlosen)
-  Open-Data-Pool-Token. **Empfehlung:** eigenen Token über das Formular
-  „Anfrage Open Data-Pool Baden-Württemberg“
-  (<https://bw.tourismusnetzwerk.info/digitalisierung-mein-toubiz/datenmanagement/open-data-pool-baden-wuerttemberg/>)
-  beantragen und im Skript hinterlegen — dann ist die Nutzung eindeutig sauber.
-- **Deep-Link:** `https://www.schwarzwaldregion-freiburg.de/veranstaltung/<slug>-<erste 10 Hexzeichen der UUID>`
-  (Muster von Google-indexierten Seiten abgeleitet; nicht für jedes Event garantiert).
+- **Auth:** `Authorization: Bearer <Token>`. Verwendet werden die **öffentlich in
+  den Frontends der Destinations-Websites eingebetteten Widget-Tokens**, die bei
+  jedem Lauf frisch von den Seiten gelesen werden (Fallback: letzter bekannter Wert):
+  - **Schwarzwald Tourismus GmbH** (`schwarzwald-tourismus.info/erleben/veranstaltungen`,
+    Attribut `api-token="…"`) — größter Sichtbarkeitsausschnitt: ~3.100 Events
+    im Fenster/Box (inkl. Hochschwarzwald, Schluchsee, Kaiserstuhl).
+    Deep-Links: `schwarzwald-tourismus.info/veranstaltungen/<slug>-<hex10>`.
+  - **Schwarzwaldregion Freiburg** (`schwarzwaldregion-freiburg.de/erleben/veranstaltungen`,
+    `api-token="…"`) — ~530 Events, Deep-Links `…/veranstaltung/<slug>-<hex10>`.
+  - **ZweiTälerLand** (`zweitaelerland.de/aktivitaeten/veranstaltungskalender/`,
+    Inline-Vue: `ApiToken = '…'`) — Elztal/Simonswäldertal; kein öffentliches
+    Slug-Muster, Link fällt auf die Kalenderseite zurück.
+- Identische Events über mehrere Kanäle werden per **toubiz-UUID dedupliziert**
+  (Kanal-Reihenfolge: STG → SWR-FR → ZTL). Im Praxislauf liefert der ZTL-Kanal
+  0 zusätzliche Events (vollständig in STG/SWR enthalten) — er bleibt als
+  Absicherung gegen Sichtbarkeits-Änderungen drin.
+- **Format:** JSON mit **Koordinaten direkt** (`geocoordinates`), Kategorie,
+  Ort, Terminliste (`datesCache`), Intro-Text und **CC-Lizenz je Datensatz**
+  (`cc-zero`, `cc-by-sa`, `cc-by-nc-sa`, `community`, …; Open-Data-Pool BW).
+- **Lizenz-Einschätzung:** Events tragen überwiegend CC-Lizenzen; der Zugriff
+  läuft aber über fremde Widget-Tokens. **Empfehlung:** eigenen (kostenlosen)
+  Token über „Anfrage Open Data-Pool Baden-Württemberg“ beantragen
+  (<https://bw.tourismusnetzwerk.info/digitalisierung-mein-toubiz/datenmanagement/open-data-pool-baden-wuerttemberg/>).
 
-### 2. FWTM / veranstaltungen.freiburg.de (imx.Platform GraphQL) — eingebaut
+### 2. FWTM / veranstaltungen.freiburg.de (imx.Platform GraphQL)
 
 - **Endpoint:** `POST https://content-delivery.imxplatform.de/fwtm/imxplatform`
-  (GraphQL, Operation `events(language, pagination: {pageSize, page})`).
-- **Auth:** `Authorization: Bearer <JWT>`. Das JWT ist im öffentlichen
-  JS-Bundle von <https://veranstaltungen.freiburg.de/freiburg/events/list>
-  eingebettet (Whitelabel-Widget-Benutzer `ws.whitelabel-widgets`) und wird bei
-  jedem Lauf frisch aus dem Bundle extrahiert (Entry-Script → 
-  `graphqlBearerToken:"…"` vor dem fwtm-Endpoint); Fallback: letzter bekannter Token.
-- **Format:** JSON/GraphQL. Liefert **Koordinaten direkt** (`geoInfo.coordinates`),
-  Termine (`eventDates` mit `date`, `startTime`, `duration`), Kategorien,
-  Veranstaltungsort (`location.title`), Kurzbeschreibung, Permalink
-  (`https://veranstaltungen.freiburg.de/freiburg/events/detail/<permaLink>`).
-- **Abdeckung:** offizieller Veranstaltungskalender der Stadt Freiburg (FWTM),
-  ~1.500 Events gesamt, Schwerpunkt Stadtgebiet.
-- **Lizenz-Einschätzung:** öffentliche Daten des städtischen Kalenders, Abruf
-  über dieselbe Schnittstelle, die auch die öffentliche Website nutzt.
-  Kein expliziter Open-Data-Vermerk → Attribution auf der Karte (FWTM) gesetzt.
-  Alternative wäre das ältere infomax-Widget-Portal
-  (`freiburgwhl.infomax.online/visit-freiburg/?widgetToken=PqNY4FANBSc.`),
-  das serverseitig gerendert wird (noscript-Links + `geo.position`-Meta auf
-  Detailseiten) — geprüft, funktioniert, aber deutlich mehr Requests nötig.
+  (GraphQL, `events(language, pagination: {pageSize, page})`), Feldnamen per
+  Introspection verifiziert (`location` ist der Veranstaltungsort-POI).
+- **Auth:** Bearer-JWT aus dem öffentlichen Nuxt-Bundle von
+  <https://veranstaltungen.freiburg.de/freiburg/events/list>, je Lauf frisch
+  extrahiert (Entry-Script → `graphqlBearerToken:"…"` vor dem fwtm-Endpoint).
+- **Format:** Koordinaten direkt, `eventDates` (Datum/`startTime`/`duration`),
+  Kategorien, Kurzbeschreibung, Permalink
+  (`…/freiburg/events/detail/<permaLink>`). ~1.500 Events, Schwerpunkt Stadtgebiet.
 
-### 3. Rausgegangen Freiburg — eingebaut
+### 3. Rausgegangen Freiburg (schema.org JSON-LD)
 
-- **Endpoint:** Kategorieseiten `https://rausgegangen.de/freiburg/kategorie/<slug>/`
-  (feste-und-festival, konzerte-und-musik, party, markt, ausstellung, theater,
-  sport, food-und-drinks). Jede Seite enthält ein maschinenlesbares
-  `schema.org/ItemList`-JSON-LD mit Event-URLs; jede Detailseite ein
-  vollständiges `schema.org/Event`-JSON-LD (Titel, Start/Ende mit Uhrzeit,
-  Beschreibung, Adresse).
-- **Format:** JSON-LD (für Suchmaschinen gedacht, d. h. explizit maschinenlesbar).
-  **Keine Koordinaten** → Nominatim-Geokodierung der Adresse mit Cache in
-  `data/eventgeocache.json` (User-Agent gesetzt, max. 1 Anfrage/s,
-  `viewbox` auf die Bounding Box begrenzt, `countrycodes=de`, `bounded=1`).
-- **Abdeckung:** Stadt Freiburg, stark bei Partys/Konzerten/Festivals —
-  ergänzt gut die eher touristischen Quellen 1+2.
-- **Lizenz-Einschätzung:** proprietäres Portal; genutzt werden nur die für
-  Suchmaschinen bereitgestellten strukturierten Daten in moderatem Umfang
-  (~150 Seiten/Lauf, 300 ms Pause) mit Quellen-Link auf jede Originalseite.
-  Attribution in der Karten-Fußzeile.
+- Kategorieseiten `rausgegangen.de/freiburg/kategorie/<slug>/` (ItemList-JSON-LD)
+  → Detailseiten mit vollem `schema.org/Event` (Start/Ende mit Uhrzeit, Adresse).
+  Keine Koordinaten → Nominatim mit Cache. Stark bei Partys/Konzerten der Stadt.
+  ~150 Seiten/Lauf, 300 ms Pause, Attribution + Link je Event.
+
+### 4. szene-Radar Freiburg (Nachtleben-Aggregator) — NEU
+
+- **Endpoint:** `freiburg.szene-radar.de/locations` → 69 Location-Seiten
+  (AGAR, ArTik, Crash, Drifters, E-WERK, Elpi, Jazzhaus, Waldsee,
+  **Hans-Bunte-Areal**, Schlosskeller Emmendingen, JuZe Denzlingen …).
+- Jede Location-Seite enthält **ItemList-JSON-LD mit vollständigen
+  Event-Objekten** (Titel, `startDate`/`endDate` mit Uhrzeit, Venue-Adresse,
+  Ticket-Link, Beschreibung) — keine Detail-Abrufe nötig, 1 Request/Location.
+- Genau der gewünschte Party-Aggregator: deckt fast alle Freiburger Clubs ab,
+  ein Scraper statt vieler Einzelquellen. Venue-Adressen wiederholen sich →
+  Nominatim-Cache greift nach dem ersten Lauf fast vollständig.
+- Kategorie-Zuordnung: Heuristik; unklassifizierte Einträge dieses Portals → `party`.
+
+### 5. Heuboden Umkirch (Discothek) — NEU
+
+- `heuboden.de/events.html` verlinkt Detailseiten, deren **Slug das Datum
+  enthält** (`…-dd-mm-yyyy.html`); Titel aus `<h1>` der Detailseite.
+  Kein JSON-LD/iCal. Wenige, aber vom Nutzer explizit gewünschte Einträge
+  (Friday Beats, Heu Nights — wöchentlich neu eingestellt).
+  Venue fest geokodiert (Am Gansacker 6, 79224 Umkirch, via Cache).
+
+### 6. Alemannische Seiten (Dorffeste/Hocks/Vereinsfeste) — NEU
+
+- **Orts-Hubs:** `alemannische-seiten.de/deutschland/<ort>_suche.php?id=veranstaltungen`
+  für freiburg, emmendingen, waldkirch, elzach, denzlingen, breisach,
+  bad-krozingen, kirchzarten, muellheim, titisee-neustadt, lahr, offenburg
+  (je ~40–60 kommende Termine, IDs `aktuell.php?t=<id>` werden dedupliziert).
+- **Detailseiten** tragen vollständiges **`schema.org/Event`-JSON-LD**
+  (Name, `startDate`/`endDate` — auch mehrtägig wie das Breisgauer Weinfest
+  Emmendingen 14.–17.08., Place mit PLZ/Ort). Geokodierung per Nominatim
+  (Place+PLZ/Ort, Fallback nur PLZ/Ort), max. 250 Details/Lauf, 350 ms Pause.
+- Füllt genau die Dorffest-Lücke (Oktoberfest Sexau, Herbstfest FFW Reute, …),
+  die toubiz/FWTM/Rausgegangen nicht abdecken.
 
 ## Geprüfte, nicht eingebaute Quellen
 
 | Quelle | Befund |
 |---|---|
-| **Open-Data-Pool BW (toubiz) mit eigenem Token** | API identisch zu Quelle 1; Token gibt es nur per Antragsformular (Antwort „innerhalb einiger Tage“). Sollte mittelfristig den Widget-Token ersetzen. |
-| **freiburg.de/pb (städtischer Kalender „Kultur und Freizeit“)** | Kein RSS/iCal/JSON-Export auffindbar; Kalender-Seiten (321600.html u. a.) sind klassisches CMS-HTML ohne strukturierte Daten. Inhaltlich weitgehend durch FWTM (Quelle 2) abgedeckt. |
-| **visit.freiburg.de** | Nutzt intern das infomax-Widget `freiburgwhl.infomax.online` (Token `PqNY4FANBSc.` in der Seite). Serverseitig gerendert, Datumsfilter `form=search&dateFrom/dateTo` (ISO) funktioniert, Detailseiten haben `geo.position`-Meta mit Koordinaten. Funktionsfähig, aber 1 Request pro Event nötig → zugunsten der GraphQL-API (Quelle 2, gleiche Datenbasis FWTM) verworfen. |
-| **Eventfrog** (eventfrog.de) | Listenseiten sind eine SPA ohne server-gerendertes JSON-LD; die offizielle API (api.eventfrog.net) verlangt einen (kostenlosen) API-Key nach Registrierung. Ohne Key nicht automatisierbar → dokumentiert als möglicher späterer Zusatz. |
-| **Hochschwarzwald Tourismus (hochschwarzwald.de)** | Liefert konsequent HTTP 403 an Nicht-Browser-Clients (Bot-Schutz), auch mit Browser-User-Agent. Nicht zuverlässig automatisierbar. Hochschwarzwald-Orte (Titisee usw.) liegen ohnehin größtenteils am Rand/außerhalb der 50-km-Box. |
-| **Rausgegangen-API** | Die Website nutzt interne `api/v1/…`-Endpunkte (Django), aber ohne dokumentierte öffentliche Event-Suche; JSON-LD der Seiten ist der stabilere Weg. |
-| **fudder.de / chilli / Regio-Portale** | Redaktionelle Terminseiten ohne strukturierte Daten/Feeds (fudder leitet auf badische-zeitung.de um, Paywall-Umfeld). |
-| **Gemeinde-Websites (Emmendingen, Waldkirch)** | Kalender-URLs nicht stabil auffindbar bzw. CMS ohne iCal-Export; Waldkirch/ZweiTälerLand speist ohnehin toubiz (Quelle 1, `client: Waldkirch` in den Daten sichtbar). |
-| **OpenAgenda, Eventim, Meinestadt** | OpenAgenda: kaum Agenden im Raum Freiburg; Eventim: kommerziell, API-Key + Vertrag; Meinestadt: Aggregator ohne offene Schnittstelle. |
-| **Wikipedia/Wikidata (wiederkehrende Feste)** | Nur Jahres-Granularität, keine konkreten Termine → als Quelle für eine „bekannte Feste“-Ebene denkbar, nicht für den Kalender. |
+| **Open-Data-Pool BW (eigener toubiz-Token)** | API identisch zu Quelle 1; Token nur per Antragsformular. Mittelfristig empfohlen. |
+| **hans-bunte.de** | Eigene Event-Liste wäre parsebar (`<li data-day data-month>`), aber die Location ist bereits vollständig über szene-Radar (Quelle 4) abgedeckt → kein eigener Scraper. |
+| **ZweiTälerLand tPortal** (`zweitaelerland.de/zweitaelerland/event/…`, TOMAS) | Detail- und Listenseiten laden Inhalte ausschließlich per JS/Session (leeres JSON-LD, `json/resultmap` liefert ohne Browser-Session `[]`, keine Sitemap). **Nicht curl-bar.** Betroffener Testfall: „Seenachtsfest der Landjugend Oberprechtal“ (22.08.2026) existiert NUR dort aktuell — der toubiz-Datensatz desselben Events ist veraltet (letzter Termin 30.08.2025), auch im ZTL- und STG-Kanal. |
+| **regiotrends.de (regiotermine)** | Detailseiten sind erreichbar, aber ohne JSON-LD/Meta-Datum (Datum nur im Fließtext/Titel); die Index-Listen zeigen nur einen kleinen rollierenden Ausschnitt (Seenachtsfest trotz vorhandener Detailseite nicht gelistet auf S. 1–3) und der Server ist sehr langsam (>30 s/Seite). Nicht zuverlässig automatisierbar. |
+| **Resident Advisor (de.ra.co)** | HTTP 403 (DataDome-Bot-Schutz). |
+| **regioactive.de** | HTTP 403 für Nicht-Browser-Clients. |
+| **visit.freiburg.de / infomax-Widget** | Funktioniert (SSR, `geo.position`-Meta), aber gleiche Datenbasis wie Quelle 2 bei mehr Requests. |
+| **Eventfrog** | SPA ohne SSR-Daten; offizielle API nur mit registriertem Key. |
+| **Hochschwarzwald Tourismus** | HTTP 403 (Bot-Schutz). Der Raum ist inzwischen über den STG-Kanal (Quelle 1) weitgehend abgedeckt. |
+| **fudder/chilli, Gemeinde-iCal, OpenAgenda, Eventim, Meinestadt, Wikidata** | Keine strukturierten Daten / kein offener Zugang / keine Termin-Granularität (Details siehe Git-Historie dieses Dokuments). |
 
 ## Pipeline (`update-events.ps1`)
 
-1. **Abruf** der drei Quellen, jede in eigenem `try/catch` — eine tote Quelle
-   bricht den Lauf nicht ab (`$ErrorActionPreference='Stop'` nur innerhalb).
-2. **Filter**: Bounding Box + Zeitfenster heute…+90 Tage (Zeitzone Europe/Berlin,
-   Fallback UTC; alle Datums-Parses kulturinvariant).
-3. **Kategorien** heuristisch: `fest` (Stadtfest/Weinfest/Hock/…), `musik`
-   (Konzert/Festival/Party/Sundowner), `markt`, `kultur`
-   (Theater/Ausstellung/Führung), `sport`, `sonstiges` — aus Quell-Kategorie
-   und Titel-Regex.
+1. **Abruf** der Quellen, jede in eigenem `try/catch` — eine tote Quelle bricht
+   den Lauf nicht ab.
+2. **Filter**: Bounding Box + Zeitfenster heute…+90 Tage (Europe/Berlin,
+   Fallback UTC; Datums-Parses kulturinvariant).
+3. **Kategorien** heuristisch: `fest` (Stadtfest/Weinfest/Hock/Seenachtsfest),
+   **`party` (Disco/Club/DJ/Tanznacht/Ü30/Rave/Techno — eigene Kategorie)**,
+   `musik` (Konzert/Festival), `markt`, `kultur`, `sport`, `sonstiges`.
 4. **Geokodierung**: Quellkoordinaten bevorzugt; sonst Nominatim mit
-   persistentem Cache (`data/eventgeocache.json`).
-5. **Termin-Expansion**: wiederkehrende Events werden in Einzeltermine
-   aufgelöst (max. 20 pro Event); das Frontend gruppiert Termine desselben
-   Events wieder zu einem Marker.
+   persistentem Cache (`data/eventgeocache.json`, 1 req/s, viewbox=Box,
+   `countrycodes=de`, `bounded=1`). **Nur Treffer werden persistiert** —
+   Fehlversuche können transient sein (Rate-Limit) und werden beim nächsten
+   Lauf erneut versucht; der Cache wird während des Laufs inkrementell
+   gespeichert, damit ein Abbruch die Nominatim-Arbeit nicht verwirft.
+5. **Termin-Expansion**: wiederkehrende Events → Einzeltermine (max. 10/Event).
 6. **Dedup**: normalisierter Titel + Datum + Distanz ≤ 2 km → ein Eintrag,
-   `source`-Feld wird zusammengeführt („A + B“).
-7. **Ausgabe**: `data/veranstaltungen.js` als
-   `window.EVENT_DATA = {generated, bbox, window, stats, events:[{title, cat,
-   start, end?, lat, lon, place, url, source, desc?}]}` (kompaktes JSON;
-   `start`/`end` als `yyyy-MM-dd` oder `yyyy-MM-ddTHH:mm`, Lokalzeit).
-
-Läuft unter `pwsh` auf Windows und Linux (keine `$env:TEMP`-Nutzung,
-`Invoke-RestMethod`/`Invoke-WebRequest` mit gesetztem User-Agent).
+   `source` wird zusammengeführt; toubiz-Kanäle zusätzlich per UUID.
+7. **Ausgabe**: `data/veranstaltungen.js` als `window.EVENT_DATA = {generated,
+   bbox, window, stats, events:[{title, cat, start, end?, lat, lon, place, url,
+   source, desc?}]}` (`start`/`end`: `yyyy-MM-dd` oder `yyyy-MM-ddTHH:mm`, Lokalzeit).
 
 ## Frontend (`events.html`)
 
-Gleiche Designsprache wie `index.html` (CSS-Variablen, Panels, Tooltips,
-Leaflet 1.9.4, OSM). Zeitraum-Filter „Heute | Wochenende | 7 T | 30 T | 90 T“
-(Default: kommendes Wochenende, gespeichert in `localStorage['eventmap.range']`),
-Kategorie-Legende mit Zählungen, Marker-Entstapelung per Spirale,
-Umschalter Feuerkarte ↔ Eventkarte, Auto-Reload stündlich.
+- Designsprache von `index.html` (CSS-Variablen, Panels, Tooltips, Leaflet 1.9.4/OSM).
+- **Karte:** Kategorie-Marker (🎪 fest, 🎉 party, 🎵 musik, 🛍️ markt, 🎭 kultur,
+  ⚽ sport, 📌 sonstiges), Termin-Gruppierung pro Veranstaltung, Spiral-Entstapelung,
+  Zeitraum-Filter „Heute | Wochenende | 7 T | 30 T | 90 T“ (Default Wochenende,
+  `localStorage['eventmap.range']`).
+- **Legende ist klickbar:** Klick blendet Kategorien ein/aus (ausgegraut +
+  durchgestrichen), persistiert in `localStorage['eventmap.cats']`;
+  Zähler zeigen weiterhin die Gesamtzahl im Zeitraum. **`kultur` ist beim
+  ersten Besuch ausgeblendet**, `party` an.
+- **Listenansicht** (Umschalter oben rechts): sortierbare Tabelle
+  (Datum/Uhrzeit, Titel mit Original-Link, Ort, Kategorie, Quelle, Entfernung
+  von Freiburg in km) mit kombinierbaren Filtern: Zeitraum (synchron zur Karte),
+  Kategorie-Mehrfachauswahl (synchron zur Legende), Volltextsuche Titel+Ort,
+  Umkreis-Slider (5–60 km), Wochentags-Chips Mo–So, Quellen-Dropdown;
+  Trefferzähler; Rendering auf 500 Zeilen begrenzt mit Hinweis.
+  („nur kostenlos“-Filter entfällt: die Quellen liefern keine belastbaren Preisdaten.)
+- Auto-Reload stündlich; Attribution mit Impressum/Datenschutz/Hinweise und
+  allen Event-Quellen.
 
 ## Bekannte Schwächen
 
-- Die beiden Tokens (toubiz-Widget, FWTM-JWT) sind fremde Frontend-Tokens;
-  Rotation wird durch Laufzeit-Scraping abgefangen, aber ein eigener
-  Open-Data-Pool-Token wäre die saubere Dauerlösung.
-- toubiz-Deep-Links sind aus Name+UUID rekonstruiert und nicht garantiert gültig.
-- Rausgegangen ohne Koordinaten → Nominatim kann Adressen verfehlen
-  (Events ohne Treffer werden verworfen).
-- Kategorie-Heuristik ist regex-basiert und nicht perfekt.
-- FWTM-Daten sind stadtlastig, toubiz eher touristisch — reine „Szene“-Events
-  außerhalb Freiburgs (z. B. Clubpartys in Emmendingen) fehlen ggf.
+- Fremde Frontend-Tokens (toubiz ×3, FWTM-JWT); Rotation wird per
+  Laufzeit-Scraping abgefangen, eigener Open-Data-Pool-Token wäre sauberer.
+- toubiz-Deep-Links aus Name+UUID rekonstruiert, nicht garantiert gültig;
+  ZTL-Kanal verlinkt nur auf die Kalenderseite.
+- Nominatim kann Adressen/Plätze verfehlen (Events ohne Treffer entfallen);
+  Dorffest-Marker der Alemannischen Seiten liegen teils nur auf Ortsebene.
+- Kategorie-Heuristik regex-basiert; Grenzfälle Party↔Musik↔Fest.
+- Einzelne Events existieren nur in nicht-scrapebaren Systemen (TOMAS-tPortale,
+  s. o. Seenachtsfest Oberprechtal) — solche Lücken bleiben.
+- Erster Lauf langsam (~10 min) wegen Nominatim-Erstbefüllung; danach schnell
+  dank Cache.
 
 ## Vorschlag GitHub-Workflow (nicht eingebaut)
 
-Eigener Workflow oder Erweiterung des bestehenden Crons:
-`update-events.ps1` täglich einmal voll (z. B. 05:30 UTC) reicht inhaltlich;
-stündlich zusätzlich wäre nur für kurzfristige Absagen nützlich und erhöht die
-Last auf die fremden APIs unnötig. Empfehlung: **1× täglich** eigener Job
-(`pwsh ./update-events.ps1` + Commit von `data/veranstaltungen.js` und
-`data/eventgeocache.json`), getrennt vom Feuer-Cron, damit ein Fehlschlag den
-Feuer-Datenfluss nicht berührt.
+**1× täglich** eigener Job (z. B. `30 5 * * *` UTC): `pwsh ./update-events.ps1`
++ Commit von `data/veranstaltungen.js` und `data/eventgeocache.json`.
+Stündlich lohnt inhaltlich nicht und belastet die fremden APIs unnötig;
+getrennt vom Feuer-Cron halten, damit ein Fehlschlag den Feuer-Datenfluss
+nicht berührt.

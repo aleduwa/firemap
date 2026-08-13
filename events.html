@@ -12,12 +12,6 @@
     --muted:      #898781;
     --surface:    #fcfcfb;
     --hairline:   rgba(11,11,11,0.10);
-    --cat-fest:   #c2410c;
-    --cat-musik:  #7c3aed;
-    --cat-markt:  #b45309;
-    --cat-kultur: #0e7490;
-    --cat-sport:  #15803d;
-    --cat-sonst:  #898781;
   }
   html, body { height: 100%; margin: 0; }
   body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--ink); background: var(--surface); }
@@ -47,9 +41,13 @@
   .range-btn:hover { background: #f1f0ec; }
   .range-btn.active { background: #8f1d1d; border-color: #8f1d1d; color: #fff; font-weight: 600; }
 
-  .legend .row { display: flex; align-items: center; gap: 8px; margin-top: 6px; }
+  .legend .row { display: flex; align-items: center; gap: 8px; margin-top: 6px; cursor: pointer; user-select: none; }
+  .legend .row:hover .label { color: var(--ink); }
   .legend .dot { width: 14px; height: 14px; border-radius: 50%; border: 2px solid #fff; box-shadow: 0 0 0 1px var(--hairline); flex: none; }
   .legend .label { color: var(--ink-2); font-size: 12px; }
+  .legend .row.off { opacity: 0.45; }
+  .legend .row.off .label { text-decoration: line-through; }
+  .legend .row.off .dot { background: transparent !important; box-shadow: inset 0 0 0 2px var(--muted); border-color: transparent; }
   .legend .size-hint { margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--hairline); color: var(--muted); font-size: 11.5px; }
 
   .leaflet-tooltip.evt-tip {
@@ -76,11 +74,88 @@
   .mode-switch a { padding:6px 14px; font-size:13px; text-decoration:none; color:#52514e; }
   .mode-switch a.active { background:#8f1d1d; color:#fff; font-weight:600; }
   .mode-switch a:not(.active):hover { background:#f1f0ec; }
+
+  /* Umschalter Karte/Liste */
+  .view-switch { position: absolute; top: 10px; right: 10px; z-index: 1101; display: flex;
+    background: var(--surface); border: 1px solid var(--hairline); border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(11,11,11,.12); overflow: hidden; }
+  .view-switch button { border: 0; background: transparent; color: var(--ink-2); padding: 6px 14px;
+    font-size: 13px; cursor: pointer; font-family: inherit; }
+  .view-switch button.active { background: #8f1d1d; color: #fff; font-weight: 600; }
+  .view-switch button:not(.active):hover { background: #f1f0ec; }
+
+  /* Listenansicht */
+  #listview { position: absolute; inset: 52px 10px 10px 10px; z-index: 1100; display: none;
+    background: var(--surface); border: 1px solid var(--hairline); border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(11,11,11,0.15); overflow: hidden; flex-direction: column; }
+  #listview.open { display: flex; }
+  .lv-filters { padding: 10px 12px; border-bottom: 1px solid var(--hairline);
+    display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; font-size: 12.5px; }
+  .lv-filters .group { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; }
+  .lv-filters .glbl { color: var(--ink-2); font-size: 11.5px; margin-right: 2px; }
+  .chip {
+    border: 1px solid var(--hairline); background: var(--surface); color: var(--ink-2);
+    border-radius: 6px; padding: 2px 8px; font-size: 12px; cursor: pointer; font-family: inherit;
+  }
+  .chip:hover { background: #f1f0ec; }
+  .chip.active { background: #8f1d1d; border-color: #8f1d1d; color: #fff; font-weight: 600; }
+  .lv-filters input[type="search"] {
+    border: 1px solid var(--hairline); border-radius: 6px; padding: 3px 8px; font-size: 12.5px;
+    font-family: inherit; background: var(--surface); color: var(--ink); width: 170px;
+  }
+  .lv-filters select {
+    border: 1px solid var(--hairline); border-radius: 6px; padding: 3px 6px; font-size: 12.5px;
+    font-family: inherit; background: var(--surface); color: var(--ink-2);
+  }
+  .lv-filters input[type="range"] { width: 110px; accent-color: #8f1d1d; vertical-align: middle; }
+  .lv-count { color: var(--ink-2); font-size: 12px; margin-left: auto; white-space: nowrap; }
+  .lv-count b { color: var(--ink); }
+
+  .lv-tablewrap { overflow: auto; flex: 1; }
+  .lv-table { border-collapse: collapse; width: 100%; font-size: 12.5px; }
+  .lv-table th, .lv-table td { text-align: left; padding: 6px 12px; border-bottom: 1px solid var(--hairline); white-space: nowrap; }
+  .lv-table td.t-title { white-space: normal; min-width: 180px; max-width: 420px; }
+  .lv-table td.t-place { white-space: normal; max-width: 220px; color: var(--ink-2); }
+  .lv-table th { position: sticky; top: 0; background: var(--surface); color: var(--ink-2);
+    font-weight: 600; font-size: 11.5px; cursor: pointer; user-select: none; z-index: 1;
+    border-bottom: 2px solid var(--hairline); }
+  .lv-table th:hover { color: var(--ink); }
+  .lv-table th .arr { font-size: 9px; }
+  .lv-table a { color: #8f1d1d; text-decoration: none; }
+  .lv-table a:hover { text-decoration: underline; }
+  .lv-table tr:hover td { background: #f7f6f3; }
+  .lv-more { padding: 10px 12px; color: var(--muted); font-size: 12px; text-align: center; }
+
+  @media (max-width: 640px) {
+    #listview { inset: 52px 4px 4px 4px; }
+    .lv-filters input[type="search"] { width: 120px; }
+    .panel { max-width: 220px; }
+  }
 </style>
 </head>
 <body>
 <div id="map"></div>
 <div class="mode-switch"><a href="index.html">🔥 Feuerkarte</a><a href="events.html" class="active">🎉 Eventkarte</a></div>
+<div class="view-switch"><button id="btn-map" class="active">🗺️ Karte</button><button id="btn-list">📋 Liste</button></div>
+
+<div id="listview">
+  <div class="lv-filters">
+    <span class="group" id="lv-range"><span class="glbl">Zeitraum</span></span>
+    <span class="group" id="lv-cats"><span class="glbl">Kategorie</span></span>
+    <span class="group"><span class="glbl">Suche</span><input type="search" id="lv-search" placeholder="Titel oder Ort …"></span>
+    <span class="group"><span class="glbl">Umkreis</span><input type="range" id="lv-radius" min="5" max="60" step="5" value="60"><span id="lv-radius-val" class="glbl" style="min-width:46px">alle</span></span>
+    <span class="group" id="lv-days"><span class="glbl">Tag</span></span>
+    <span class="group"><span class="glbl">Quelle</span><select id="lv-source"><option value="">alle</option></select></span>
+    <span class="lv-count" id="lv-count"></span>
+  </div>
+  <div class="lv-tablewrap">
+    <table class="lv-table">
+      <thead><tr id="lv-head"></tr></thead>
+      <tbody id="lv-body"></tbody>
+    </table>
+    <div class="lv-more" id="lv-more" style="display:none"></div>
+  </div>
+</div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="data/veranstaltungen.js"></script>
@@ -94,8 +169,11 @@
     maxZoom: 19,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · ' +
       'Events: <a href="https://www.tourismus-bw.de/">toubiz/Open Data BW</a>, ' +
-      '<a href="https://veranstaltungen.freiburg.de/">FWTM Freiburg</a>, ' +
-      '<a href="https://rausgegangen.de/freiburg/">Rausgegangen</a>'
+      '<a href="https://veranstaltungen.freiburg.de/">FWTM</a>, ' +
+      '<a href="https://rausgegangen.de/freiburg/">Rausgegangen</a>, ' +
+      '<a href="https://freiburg.szene-radar.de/">szene-Radar</a>, ' +
+      '<a href="https://www.alemannische-seiten.de/">Alemannische Seiten</a>, ' +
+      '<a href="https://www.heuboden.de/">Heuboden</a>'
   }).addTo(map);
 
   map.attributionControl.setPrefix('<a href="https://leafletjs.com">Leaflet</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a> · <a href="hinweise.html">Hinweise</a>');
@@ -105,6 +183,7 @@
 
   const CATS = {
     fest:      { emoji: '🎪', label: 'Fest',      color: '#c2410c' },
+    party:     { emoji: '🎉', label: 'Party',     color: '#db2777' },
     musik:     { emoji: '🎵', label: 'Musik',     color: '#7c3aed' },
     markt:     { emoji: '🛍️', label: 'Markt',     color: '#b45309' },
     kultur:    { emoji: '🎭', label: 'Kultur',    color: '#0e7490' },
@@ -113,9 +192,18 @@
   };
   const catOf = e => CATS[e.cat] ? e.cat : 'sonstiges';
 
+  // Kategorie-Sichtbarkeit (Legende klickbar); Kultur ist standardmäßig aus
+  let activeCats = null;
+  try { activeCats = JSON.parse(localStorage.getItem('eventmap.cats')); } catch (e) { }
+  if (!activeCats || typeof activeCats !== 'object') activeCats = null;
+  if (!activeCats) {
+    activeCats = {};
+    Object.keys(CATS).forEach(c => activeCats[c] = (c !== 'kultur'));
+  }
+  Object.keys(CATS).forEach(c => { if (typeof activeCats[c] !== 'boolean') activeCats[c] = (c !== 'kultur'); });
+
   // start/end kommen als "yyyy-MM-dd" oder "yyyy-MM-ddTHH:mm" (Lokalzeit
-  // Europe/Berlin). Wir bauen daraus lokale Date-Objekte aus Komponenten —
-  // damit stimmen Wochentag und Vergleich unabhängig von UTC-Offsets.
+  // Europe/Berlin). Wir bauen daraus lokale Date-Objekte aus Komponenten.
   function parseLocal(s) {
     if (!s) return null;
     const d = new Date(+s.slice(0, 4), +s.slice(5, 7) - 1, +s.slice(8, 10),
@@ -135,6 +223,14 @@
     return out;
   }
 
+  // Entfernung von Freiburg (Münster) in km
+  const FR = [47.9959, 7.8522];
+  function distKm(lat, lon) {
+    const dLat = (lat - FR[0]) * 111;
+    const dLon = (lon - FR[1]) * 111 * Math.cos(FR[0] * Math.PI / 180);
+    return Math.sqrt(dLat * dLat + dLon * dLon);
+  }
+
   // ---- Zeitraum-Filter (Zukunft) -----------------------------------------
   const RANGES = [
     { key: 'today',   label: 'Heute' },
@@ -145,6 +241,8 @@
   ];
   let rangeKey = localStorage.getItem('eventmap.range') || 'weekend';
   if (!RANGES.some(r => r.key === rangeKey)) rangeKey = 'weekend';
+
+  function addDays(d, n) { return new Date(d.getFullYear(), d.getMonth(), d.getDate() + n); }
 
   function rangeBounds(key) {
     const now = new Date();
@@ -159,7 +257,6 @@
     }
     return [start, addDays(start, +key)];
   }
-  function addDays(d, n) { return new Date(d.getFullYear(), d.getMonth(), d.getDate() + n); }
 
   function rangeLabel(key) {
     const [from, to] = rangeBounds(key);
@@ -168,7 +265,21 @@
     return f(from) === f(last) ? f(from) : f(from) + ' – ' + f(last);
   }
 
-  // ---- Marker -------------------------------------------------------------
+  function inRangeEvents() {
+    const [from, to] = rangeBounds(rangeKey);
+    return data.events.filter(e => {
+      const s = parseLocal(e.start);
+      if (!s) return false;
+      const en = parseLocal(e.end) || s;
+      return s < to && en >= from;
+    });
+  }
+
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+
+  // ---- Karte: Marker ------------------------------------------------------
   const eventsLayer = L.layerGroup().addTo(map);
   let legendDiv = null, infoDiv = null;
   let counts = {}, shownGroups = 0, shownDates = 0;
@@ -181,23 +292,12 @@
           'font-size:14px;line-height:1">' + CATS[cat].emoji + '</div>'
   });
 
-  function esc(s) {
-    return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-  }
-
   function rebuild() {
-    const [from, to] = rangeBounds(rangeKey);
     eventsLayer.clearLayers();
     counts = {}; Object.keys(CATS).forEach(c => counts[c] = 0);
     shownGroups = 0; shownDates = 0;
 
-    // Termine im Zeitraum: Zeitraum des Termins schneidet [from, to)
-    const inRange = data.events.filter(e => {
-      const s = parseLocal(e.start);
-      if (!s) return false;
-      const en = parseLocal(e.end) || s;
-      return s < to && en >= from;
-    });
+    const inRange = inRangeEvents();
     shownDates = inRange.length;
 
     // Gleiches Event (Titel + Ort) mit mehreren Terminen -> EIN Marker
@@ -224,7 +324,9 @@
       list.sort((a, b) => a.start < b.start ? -1 : 1);
       const e = list[0];
       const cat = catOf(e);
-      counts[cat]++; shownGroups++;
+      counts[cat]++;                       // Zähler = Gesamtzahl im Zeitraum
+      if (!activeCats[cat]) return;        // ausgeblendete Kategorie
+      shownGroups++;
 
       const more = list.length - 1;
       const tip = '<div class="tip-head">' + esc(e.title) + '</div>' +
@@ -254,31 +356,39 @@
 
     renderLegend();
     renderInfo();
+    if (listOpen) renderList();
   }
 
   function renderLegend() {
     if (!legendDiv) return;
     legendDiv.innerHTML = '<h1>Kategorien (' + rangeLabel(rangeKey) + ')</h1>' +
       Object.keys(CATS).map(c =>
-        '<div class="row"><span class="dot" style="background:' + CATS[c].color + '"></span>' +
+        '<div class="row' + (activeCats[c] ? '' : ' off') + '" data-cat="' + c + '">' +
+        '<span class="dot" style="background:' + CATS[c].color + '"></span>' +
         '<span class="label">' + CATS[c].emoji + ' ' + CATS[c].label + ' (' + counts[c] + ')</span></div>'
       ).join('') +
-      '<div class="size-hint">Ein Marker = eine Veranstaltung.<br>' +
-      'Mehrere Termine werden zusammengefasst.</div>';
+      '<div class="size-hint">Klick auf eine Kategorie blendet sie ein/aus.<br>' +
+      'Ein Marker = eine Veranstaltung,<br>mehrere Termine werden zusammengefasst.</div>';
+  }
+
+  function toggleCat(c) {
+    activeCats[c] = !activeCats[c];
+    localStorage.setItem('eventmap.cats', JSON.stringify(activeCats));
+    rebuild();
   }
 
   function renderInfo() {
     if (!infoDiv) return;
     infoDiv.innerHTML =
       '<h1>Events — Freiburg &amp; Umgebung</h1>' +
-      '<div class="meta">Stadtfeste, Weinfeste, Konzerte, M&auml;rkte &amp; mehr im Umkreis von ca. 50 km — ' +
-      'aus offenen Quellen (toubiz/Open Data BW, FWTM Freiburg, Rausgegangen).</div>' +
+      '<div class="meta">Stadtfeste, Partys, Konzerte, M&auml;rkte &amp; mehr im Umkreis von ca. 50 km — ' +
+      'aus offenen Quellen (toubiz/Open Data BW, FWTM, Rausgegangen, szene-Radar, Alemannische Seiten, Heuboden).</div>' +
       '<div class="meta" style="margin-top:6px">' +
-      '<b>' + shownGroups + '</b> Veranstaltungen (' + shownDates + ' Termine) im Zeitraum ' + rangeLabel(rangeKey) +
+      '<b>' + shownGroups + '</b> Veranstaltungen sichtbar (' + shownDates + ' Termine im Zeitraum ' + rangeLabel(rangeKey) + ')' +
       '<br>Datenstand: <b>' + esc(data.generated) + '</b></div>';
   }
 
-  // ---- Bedienelemente ----------------------------------------------------
+  // ---- Bedienelemente Karte ----------------------------------------------
   const info = L.control({ position: 'topleft' });
   info.onAdd = function () {
     infoDiv = L.DomUtil.create('div', 'panel');
@@ -297,27 +407,192 @@
     div.addEventListener('click', e => {
       const btn = e.target.closest('.range-btn');
       if (!btn) return;
-      rangeKey = btn.dataset.key;
-      localStorage.setItem('eventmap.range', rangeKey);
-      div.querySelectorAll('.range-btn').forEach(b => b.classList.toggle('active', b.dataset.key === rangeKey));
-      rebuild();
+      setRange(btn.dataset.key);
     });
     return div;
   };
   rangeCtl.addTo(map);
 
+  function setRange(key) {
+    rangeKey = key;
+    localStorage.setItem('eventmap.range', rangeKey);
+    document.querySelectorAll('.range-btn').forEach(b => b.classList.toggle('active', b.dataset.key === rangeKey));
+    document.querySelectorAll('#lv-range .chip').forEach(b => b.classList.toggle('active', b.dataset.key === rangeKey));
+    rebuild();
+  }
+
   const legend = L.control({ position: 'bottomright' });
   legend.onAdd = function () {
     legendDiv = L.DomUtil.create('div', 'panel legend');
+    L.DomEvent.disableClickPropagation(legendDiv);
+    legendDiv.addEventListener('click', e => {
+      const row = e.target.closest('.row[data-cat]');
+      if (row) toggleCat(row.dataset.cat);
+    });
     renderLegend();
     return legendDiv;
   };
   legend.addTo(map);
 
+  // ---- Listenansicht ------------------------------------------------------
+  let listOpen = false;
+  let lvSearch = '', lvRadius = 60, lvDays = new Set(), lvSource = '';
+  let lvSort = { col: 'start', dir: 1 };
+  const LV_MAX = 500;
+
+  const COLS = [
+    { key: 'start',  label: 'Datum' },
+    { key: 'title',  label: 'Titel' },
+    { key: 'place',  label: 'Ort' },
+    { key: 'cat',    label: 'Kategorie' },
+    { key: 'source', label: 'Quelle' },
+    { key: 'dist',   label: 'km' }
+  ];
+  const DAY_LABELS = ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'];
+
+  function lvFiltered() {
+    const q = lvSearch.trim().toLowerCase();
+    return inRangeEvents().filter(e => {
+      const cat = catOf(e);
+      if (!activeCats[cat]) return false;
+      if (q && !((e.title || '').toLowerCase().includes(q) || (e.place || '').toLowerCase().includes(q))) return false;
+      if (lvRadius < 60 && distKm(e.lat, e.lon) > lvRadius) return false;
+      if (lvDays.size) {
+        const d = parseLocal(e.start);
+        if (!d || !lvDays.has(d.getDay())) return false;
+      }
+      if (lvSource && e.source !== lvSource) return false;
+      return true;
+    });
+  }
+
+  function renderList() {
+    // Kopfzeile
+    document.getElementById('lv-head').innerHTML = COLS.map(c =>
+      '<th data-col="' + c.key + '">' + c.label +
+      (lvSort.col === c.key ? ' <span class="arr">' + (lvSort.dir > 0 ? '▲' : '▼') + '</span>' : '') + '</th>'
+    ).join('');
+
+    const rows = lvFiltered();
+    const val = (e, col) =>
+      col === 'dist' ? distKm(e.lat, e.lon) :
+      col === 'cat' ? catOf(e) :
+      (e[col] || '');
+    rows.sort((a, b) => {
+      const x = val(a, lvSort.col), y = val(b, lvSort.col);
+      if (x < y) return -lvSort.dir;
+      if (x > y) return lvSort.dir;
+      return a.start < b.start ? -1 : 1;
+    });
+
+    const shown = rows.slice(0, LV_MAX);
+    document.getElementById('lv-body').innerHTML = shown.map(e => {
+      const cat = catOf(e);
+      return '<tr>' +
+        '<td>' + fmtDate(e.start) + (e.end && e.end.slice(0, 10) !== e.start.slice(0, 10) ? '<br>– ' + fmtDate(e.end) : '') + '</td>' +
+        '<td class="t-title"><a href="' + esc(e.url) + '" target="_blank" rel="noopener">' + esc(e.title) + '</a></td>' +
+        '<td class="t-place">' + esc(e.place || '–') + '</td>' +
+        '<td>' + CATS[cat].emoji + ' ' + CATS[cat].label + '</td>' +
+        '<td>' + esc(e.source) + '</td>' +
+        '<td>' + distKm(e.lat, e.lon).toFixed(0) + '</td>' +
+        '</tr>';
+    }).join('');
+
+    const more = document.getElementById('lv-more');
+    if (rows.length > LV_MAX) {
+      more.style.display = '';
+      more.textContent = 'Weitere ' + (rows.length - LV_MAX) + ' Termine — Filter verfeinern, um sie zu sehen.';
+    } else {
+      more.style.display = 'none';
+    }
+
+    document.getElementById('lv-count').innerHTML = '<b>' + rows.length + '</b> Termine';
+    // Kategorie-Chips synchron zur Legende
+    document.querySelectorAll('#lv-cats .chip').forEach(b => b.classList.toggle('active', !!activeCats[b.dataset.cat]));
+  }
+
+  function initListControls() {
+    // Zeitraum-Chips
+    const rangeSpan = document.getElementById('lv-range');
+    RANGES.forEach(r => {
+      const b = document.createElement('button');
+      b.className = 'chip' + (r.key === rangeKey ? ' active' : '');
+      b.dataset.key = r.key;
+      b.textContent = r.label;
+      b.addEventListener('click', () => setRange(r.key));
+      rangeSpan.appendChild(b);
+    });
+    // Kategorie-Chips
+    const catSpan = document.getElementById('lv-cats');
+    Object.keys(CATS).forEach(c => {
+      const b = document.createElement('button');
+      b.className = 'chip' + (activeCats[c] ? ' active' : '');
+      b.dataset.cat = c;
+      b.textContent = CATS[c].emoji + ' ' + CATS[c].label;
+      b.addEventListener('click', () => toggleCat(c));
+      catSpan.appendChild(b);
+    });
+    // Wochentag-Chips (Mo–So)
+    const daySpan = document.getElementById('lv-days');
+    [1, 2, 3, 4, 5, 6, 0].forEach(d => {
+      const b = document.createElement('button');
+      b.className = 'chip';
+      b.textContent = DAY_LABELS[d];
+      b.addEventListener('click', () => {
+        if (lvDays.has(d)) { lvDays.delete(d); b.classList.remove('active'); }
+        else { lvDays.add(d); b.classList.add('active'); }
+        renderList();
+      });
+      daySpan.appendChild(b);
+    });
+    // Suche
+    document.getElementById('lv-search').addEventListener('input', e => {
+      lvSearch = e.target.value; renderList();
+    });
+    // Umkreis
+    const radiusIn = document.getElementById('lv-radius');
+    radiusIn.addEventListener('input', e => {
+      lvRadius = +e.target.value;
+      document.getElementById('lv-radius-val').textContent = lvRadius >= 60 ? 'alle' : '≤ ' + lvRadius + ' km';
+      renderList();
+    });
+    // Quelle
+    const srcSel = document.getElementById('lv-source');
+    [...new Set(data.events.map(e => e.source))].sort().forEach(s => {
+      const o = document.createElement('option');
+      o.value = s; o.textContent = s;
+      srcSel.appendChild(o);
+    });
+    srcSel.addEventListener('change', e => { lvSource = e.target.value; renderList(); });
+    // Sortierung
+    document.getElementById('lv-head').addEventListener('click', e => {
+      const th = e.target.closest('th[data-col]');
+      if (!th) return;
+      const col = th.dataset.col;
+      if (lvSort.col === col) lvSort.dir = -lvSort.dir;
+      else lvSort = { col: col, dir: 1 };
+      renderList();
+    });
+  }
+
+  // Umschalter Karte/Liste
+  const btnMap = document.getElementById('btn-map');
+  const btnList = document.getElementById('btn-list');
+  function setView(list) {
+    listOpen = list;
+    document.getElementById('listview').classList.toggle('open', list);
+    btnMap.classList.toggle('active', !list);
+    btnList.classList.toggle('active', list);
+    if (list) renderList();
+  }
+  btnMap.addEventListener('click', () => setView(false));
+  btnList.addEventListener('click', () => setView(true));
+
+  initListControls();
   rebuild();
 
   // Seite stündlich neu laden (der Scheduler aktualisiert die Datendatei;
-  // der gewählte Zeitraum bleibt via localStorage erhalten)
+  // Zeitraum & Kategorien bleiben via localStorage erhalten)
   setTimeout(function () { location.reload(); }, 60 * 60 * 1000);
 })();
 </script>
