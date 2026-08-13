@@ -120,31 +120,6 @@
     ]
   },
   {
-    "base": "Polizeipräsidium Pforzheim|(pf) karlsbad/pforzheim - fahrzeugbrand auf der autobahn 8",
-    "status": "active",
-    "title": "(PF) Karlsbad/Pforzheim - Fahrzeugbrand auf der Autobahn 8",
-    "link": "https://www.presseportal.de/blaulicht/pm/137462/6332099",
-    "first": "2026-08-12T11:51:33Z",
-    "last": "2026-08-12T11:51:33Z",
-    "places": [
-      {
-        "name": "Karlsbad",
-        "lat": 48.9038411,
-        "lon": 8.5088293,
-        "approx": false
-      },
-      {
-        "name": "Pforzheim",
-        "lat": 48.890934,
-        "lon": 8.7025509,
-        "approx": false
-      }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Pforzheim",
-    "updates": 0
-  },
-  {
     "base": "Polizeipräsidium Aalen|rems-murr-kreis: pkw und flächenbrand, arbeitsunfall",
     "status": "active",
     "title": "Rems-Murr-Kreis: Pkw und Flächenbrand, Arbeitsunfall",
@@ -164,23 +139,29 @@
     ]
   },
   {
-    "base": "Polizeipräsidium Freiburg|schopfheim: angebranntes essen auf dem herd ruft feuerwehr auf den plan",
+    "base": "Polizeipräsidium Pforzheim|(pf) karlsbad/pforzheim - fahrzeugbrand auf der autobahn 8",
     "status": "active",
-    "title": "Schopfheim: Angebranntes Essen auf dem Herd ruft Feuerwehr auf den Plan",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6332012",
-    "first": "2026-08-12T10:35:40Z",
-    "last": "2026-08-12T10:35:40Z",
+    "title": "(PF) Karlsbad/Pforzheim - Fahrzeugbrand auf der Autobahn 8",
+    "link": "https://www.presseportal.de/blaulicht/pm/137462/6332099",
+    "first": "2026-08-12T11:51:33Z",
+    "last": "2026-08-12T11:51:33Z",
+    "veg": true,
+    "source": "Polizeipräsidium Pforzheim",
+    "updates": 0,
     "places": [
       {
-        "name": "Schopfheim",
-        "lat": 47.6500525,
-        "lon": 7.8216997,
+        "name": "Karlsbad",
+        "lat": 48.9038411,
+        "lon": 8.5088293,
+        "approx": false
+      },
+      {
+        "name": "Pforzheim",
+        "lat": 48.890934,
+        "lon": 8.7025509,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|lauchringen: brand auf betriebsgelände",
@@ -273,6 +254,25 @@
         "name": "Stockach",
         "lat": 47.8530941,
         "lon": 9.0134524,
+        "approx": false
+      }
+    ]
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|schopfheim: angebranntes essen auf dem herd ruft feuerwehr auf den plan",
+    "status": "active",
+    "title": "Schopfheim: Angebranntes Essen auf dem Herd ruft Feuerwehr auf den Plan",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6332012",
+    "first": "2026-08-12T10:35:40Z",
+    "last": "2026-08-12T10:35:40Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "places": [
+      {
+        "name": "Schopfheim",
+        "lat": 47.6500525,
+        "lon": 7.8216997,
         "approx": false
       }
     ]
@@ -423,75 +423,6 @@
     ]
   },
   {
-    "base": "Polizeipräsidium Freiburg|küssaberg/ettikon: verlassene feuerstelle durch feuerwehr abgelöscht",
-    "status": "out",
-    "title": "Küssaberg/Ettikon: Verlassene Feuerstelle durch Feuerwehr abgelöscht",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6331439",
-    "first": "2026-08-11T12:28:43Z",
-    "last": "2026-08-11T12:28:43Z",
-    "places": [
-      {
-        "name": "Küssaberg",
-        "lat": 47.601678,
-        "lon": 8.3212852,
-        "approx": false
-      },
-      {
-        "name": "Ettikon",
-        "lat": 47.6158593,
-        "lon": 8.267909,
-        "approx": false
-      }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|ühlingen-birkendorf / berau: flächenbrand",
-    "status": "contained",
-    "title": "Ühlingen-Birkendorf / Berau: Flächenbrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6331437",
-    "first": "2026-08-11T12:27:29Z",
-    "last": "2026-08-11T12:27:29Z",
-    "places": [
-      {
-        "name": "Ühlingen-Birkendorf",
-        "lat": 47.7252375,
-        "lon": 8.301544,
-        "approx": false
-      },
-      {
-        "name": "Berau",
-        "lat": 47.695685,
-        "lon": 8.2587575,
-        "approx": false
-      }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|heidelberg: brandgeschehen im garten eines wohnhauses",
-    "status": "out",
-    "title": "Heidelberg: Brandgeschehen im Garten eines Wohnhauses",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6331425",
-    "first": "2026-08-11T12:16:41Z",
-    "last": "2026-08-11T12:16:41Z",
-    "places": [
-      {
-        "name": "Heidelberg",
-        "lat": 49.4093582,
-        "lon": 8.694724,
-        "approx": false
-      }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0
-  },
-  {
     "base": "Polizeipräsidium Mannheim|wiesloch/rhein-neckar-kreis: feuerwehr kann flächenbrand schnell löschen",
     "status": "active",
     "title": "Wiesloch/Rhein-Neckar-Kreis: Feuerwehr kann Flächenbrand schnell löschen",
@@ -512,6 +443,75 @@
         "name": "Rhein-Neckar-Kreis",
         "lat": 49.3684797,
         "lon": 8.7352403,
+        "approx": false
+      }
+    ]
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|küssaberg/ettikon: verlassene feuerstelle durch feuerwehr abgelöscht",
+    "status": "out",
+    "title": "Küssaberg/Ettikon: Verlassene Feuerstelle durch Feuerwehr abgelöscht",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6331439",
+    "first": "2026-08-11T12:28:43Z",
+    "last": "2026-08-11T12:28:43Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "places": [
+      {
+        "name": "Küssaberg",
+        "lat": 47.601678,
+        "lon": 8.3212852,
+        "approx": false
+      },
+      {
+        "name": "Ettikon",
+        "lat": 47.6158593,
+        "lon": 8.267909,
+        "approx": false
+      }
+    ]
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|ühlingen-birkendorf / berau: flächenbrand",
+    "status": "contained",
+    "title": "Ühlingen-Birkendorf / Berau: Flächenbrand",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6331437",
+    "first": "2026-08-11T12:27:29Z",
+    "last": "2026-08-11T12:27:29Z",
+    "veg": true,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "places": [
+      {
+        "name": "Ühlingen-Birkendorf",
+        "lat": 47.7252375,
+        "lon": 8.301544,
+        "approx": false
+      },
+      {
+        "name": "Berau",
+        "lat": 47.695685,
+        "lon": 8.2587575,
+        "approx": false
+      }
+    ]
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|heidelberg: brandgeschehen im garten eines wohnhauses",
+    "status": "out",
+    "title": "Heidelberg: Brandgeschehen im Garten eines Wohnhauses",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6331425",
+    "first": "2026-08-11T12:16:41Z",
+    "last": "2026-08-11T12:16:41Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "places": [
+      {
+        "name": "Heidelberg",
+        "lat": 49.4093582,
+        "lon": 8.694724,
         "approx": false
       }
     ]
@@ -593,25 +593,6 @@
     ]
   },
   {
-    "base": "Polizeipräsidium Ulm|(gp) ebersbach - fritteuse in flammen / am montag sorgte ein küchenbrand für einen feuerwehr- und polizeieinsatz in ebersbach.",
-    "status": "active",
-    "title": "(GP) Ebersbach - Fritteuse in Flammen / Am Montag sorgte ein Küchenbrand für einen Feuerwehr- und Polizeieinsatz in Ebersbach.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6331100",
-    "first": "2026-08-11T08:04:28Z",
-    "last": "2026-08-11T08:04:28Z",
-    "places": [
-      {
-        "name": "Ebersbach",
-        "lat": 47.9554246,
-        "lon": 9.5791447,
-        "approx": false
-      }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0
-  },
-  {
     "base": "Polizeipräsidium Ludwigsburg|b295 / ditzingen: mehrere verletzte nach unfall an der anschlussstelle stuttgart-feuerbach - zeugen gesucht",
     "status": "active",
     "title": "B295 / Ditzingen: mehrere Verletzte nach Unfall an der Anschlussstelle Stuttgart-Feuerbach - Zeugen gesucht",
@@ -631,12 +612,34 @@
     ]
   },
   {
+    "base": "Polizeipräsidium Ulm|(gp) ebersbach - fritteuse in flammen / am montag sorgte ein küchenbrand für einen feuerwehr- und polizeieinsatz in ebersbach.",
+    "status": "active",
+    "title": "(GP) Ebersbach - Fritteuse in Flammen / Am Montag sorgte ein Küchenbrand für einen Feuerwehr- und Polizeieinsatz in Ebersbach.",
+    "link": "https://www.presseportal.de/blaulicht/pm/110979/6331100",
+    "first": "2026-08-11T08:04:28Z",
+    "last": "2026-08-11T08:04:28Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
+    "places": [
+      {
+        "name": "Ebersbach",
+        "lat": 47.9554246,
+        "lon": 9.5791447,
+        "approx": false
+      }
+    ]
+  },
+  {
     "base": "Polizeipräsidium Freiburg|rheinfelden: brand an einem holzlagerunterstand in nordschwaben",
     "status": "active",
     "title": "Rheinfelden: Brand an einem Holzlagerunterstand in Nordschwaben",
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6330736",
     "first": "2026-08-10T13:48:58Z",
     "last": "2026-08-10T13:48:58Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
     "places": [
       {
         "name": "Rheinfelden",
@@ -644,10 +647,7 @@
         "lon": 7.7861959,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|weil am rhein: brand auf dach einer fahrradgarage einer schule",
@@ -656,6 +656,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6330727",
     "first": "2026-08-10T13:40:41Z",
     "last": "2026-08-10T13:40:41Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
     "places": [
       {
         "name": "Weil am Rhein",
@@ -663,10 +666,7 @@
         "lon": 7.6120793,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|weil am rhein: brand eines pkw in der schutzackerstraße - polizei sucht zeugen",
@@ -675,6 +675,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6330725",
     "first": "2026-08-10T13:39:16Z",
     "last": "2026-08-10T13:39:16Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
     "places": [
       {
         "name": "Weil am Rhein",
@@ -682,10 +685,7 @@
         "lon": 7.6120793,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|weil am rhein: brand auf balkon",
@@ -694,6 +694,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6330722",
     "first": "2026-08-10T13:37:01Z",
     "last": "2026-08-10T13:37:01Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
     "places": [
       {
         "name": "Weil am Rhein",
@@ -701,10 +704,7 @@
         "lon": 7.6120793,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Offenburg|achern - fahrzeugbrand - polizei sucht zeugen",
@@ -713,6 +713,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110975/6330651",
     "first": "2026-08-10T12:51:02Z",
     "last": "2026-08-10T12:51:02Z",
+    "veg": false,
+    "source": "Polizeipräsidium Offenburg",
+    "updates": 0,
     "places": [
       {
         "name": "Achern",
@@ -720,10 +723,7 @@
         "lon": 8.0735581,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|zell im wiesental: unbekannte entfachen feuer im garten - polizei sucht zeugen",
@@ -732,6 +732,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6330410",
     "first": "2026-08-10T10:48:37Z",
     "last": "2026-08-10T10:48:37Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
     "places": [
       {
         "name": "Zell im Wiesental",
@@ -739,67 +742,7 @@
         "lon": 7.8522798,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|heidelberg: brand in kompostwerk - pm 2",
-    "status": "out",
-    "title": "Heidelberg: Brand in Kompostwerk - PM 2",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6330291",
-    "first": "2026-08-10T09:40:26Z",
-    "last": "2026-08-10T09:40:26Z",
-    "places": [
-      {
-        "name": "Heidelberg",
-        "lat": 49.4093582,
-        "lon": 8.694724,
-        "approx": false
-      }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|heidelberg: brand in kompostwerk - pm 1",
-    "status": "active",
-    "title": "Heidelberg: Brand in Kompostwerk - PM 1",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6330246",
-    "first": "2026-08-10T09:17:41Z",
-    "last": "2026-08-10T09:17:41Z",
-    "places": [
-      {
-        "name": "Heidelberg",
-        "lat": 49.4093582,
-        "lon": 8.694724,
-        "approx": false
-      }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(bc) b30/laupheim - böschungsbrand an der b30 / am sonntag musste die b30 für etwa 45 minuten gesperrt werden.",
-    "status": "active",
-    "title": "(BC) B30/Laupheim - Böschungsbrand an der B30 / Am Sonntag musste die B30 für etwa 45 Minuten gesperrt werden.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6330129",
-    "first": "2026-08-10T08:19:40Z",
-    "last": "2026-08-10T08:19:40Z",
-    "places": [
-      {
-        "name": "Laupheim",
-        "lat": 48.2300738,
-        "lon": 9.8837005,
-        "approx": false
-      }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Heilbronn|neckar-odenwald-kreis: unfallflucht, unfälle mit verletzten, brand und sachbeschädigung",
@@ -821,12 +764,72 @@
     ]
   },
   {
+    "base": "Polizeipräsidium Mannheim|heidelberg: brand in kompostwerk - pm 2",
+    "status": "out",
+    "title": "Heidelberg: Brand in Kompostwerk - PM 2",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6330291",
+    "first": "2026-08-10T09:40:26Z",
+    "last": "2026-08-10T09:40:26Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "places": [
+      {
+        "name": "Heidelberg",
+        "lat": 49.4093582,
+        "lon": 8.694724,
+        "approx": false
+      }
+    ]
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|heidelberg: brand in kompostwerk - pm 1",
+    "status": "active",
+    "title": "Heidelberg: Brand in Kompostwerk - PM 1",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6330246",
+    "first": "2026-08-10T09:17:41Z",
+    "last": "2026-08-10T09:17:41Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "places": [
+      {
+        "name": "Heidelberg",
+        "lat": 49.4093582,
+        "lon": 8.694724,
+        "approx": false
+      }
+    ]
+  },
+  {
+    "base": "Polizeipräsidium Ulm|(bc) b30/laupheim - böschungsbrand an der b30 / am sonntag musste die b30 für etwa 45 minuten gesperrt werden.",
+    "status": "active",
+    "title": "(BC) B30/Laupheim - Böschungsbrand an der B30 / Am Sonntag musste die B30 für etwa 45 Minuten gesperrt werden.",
+    "link": "https://www.presseportal.de/blaulicht/pm/110979/6330129",
+    "first": "2026-08-10T08:19:40Z",
+    "last": "2026-08-10T08:19:40Z",
+    "veg": true,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
+    "places": [
+      {
+        "name": "Laupheim",
+        "lat": 48.2300738,
+        "lon": 9.8837005,
+        "approx": false
+      }
+    ]
+  },
+  {
     "base": "Polizeipräsidium Karlsruhe|(ka) pfinztal - hoher sachschaden nach brand einer gaststätte",
     "status": "contained",
     "title": "(KA) Pfinztal - Hoher Sachschaden nach Brand einer Gaststätte",
     "link": "https://www.presseportal.de/blaulicht/pm/110972/6329999",
     "first": "2026-08-10T06:15:28Z",
     "last": "2026-08-10T06:15:28Z",
+    "veg": false,
+    "source": "Polizeipräsidium Karlsruhe",
+    "updates": 0,
     "places": [
       {
         "name": "Pfinztal",
@@ -834,10 +837,7 @@
         "lon": 8.5553158,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Karlsruhe",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Konstanz|(konstanz, lkrs. konstanz) bootsbrand bodensee insel mainau - 78465 litzelstetten",
@@ -846,6 +846,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110973/6329870",
     "first": "2026-08-09T13:10:01Z",
     "last": "2026-08-09T13:10:01Z",
+    "veg": false,
+    "source": "Polizeipräsidium Konstanz",
+    "updates": 0,
     "places": [
       {
         "name": "(Konstanz",
@@ -853,10 +856,7 @@
         "lon": 9.1750718,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Konstanz",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Konstanz|bootsbrand bei der insel mainau",
@@ -865,6 +865,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/139089/6329844",
     "first": "2026-08-09T11:32:30Z",
     "last": "2026-08-09T11:32:30Z",
+    "veg": false,
+    "source": "Feuerwehr Konstanz",
+    "updates": 0,
     "places": [
       {
         "name": "Konstanz",
@@ -872,10 +875,7 @@
         "lon": 9.1750718,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Konstanz",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ludwigsburg|ludwigsburg: hoher sachschaden bei tiefgaragenbrand",
@@ -903,6 +903,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6329638",
     "first": "2026-08-09T02:08:51Z",
     "last": "2026-08-09T02:08:51Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
     "places": [
       {
         "name": "Ostalbkreis",
@@ -910,10 +913,7 @@
         "lon": 10.0337317,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|bab6/mannheim: brand eines sattelaufliegers - vollsperrung bab - pm3",
@@ -922,6 +922,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6329465",
     "first": "2026-08-08T04:35:24Z",
     "last": "2026-08-08T04:35:24Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
     "places": [
       {
         "name": "Mannheim",
@@ -929,10 +932,7 @@
         "lon": 8.4673098,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ludwigsburg|böblingen-dagersheim: brand in einer wohnanlage mit einer leicht verletzten person",
@@ -979,6 +979,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6329433",
     "first": "2026-08-07T22:05:35Z",
     "last": "2026-08-07T22:05:35Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
     "places": [
       {
         "name": "Schwetzingen",
@@ -992,10 +995,7 @@
         "lon": 8.7352403,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|schwetzingen/rhein-neckar-kreis: brand einer gartenhütte, pm 1",
@@ -1004,6 +1004,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6329425",
     "first": "2026-08-07T20:48:21Z",
     "last": "2026-08-07T20:48:21Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
     "places": [
       {
         "name": "Schwetzingen",
@@ -1017,29 +1020,7 @@
         "lon": 8.7352403,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|bab6/mannheim: brand eines sattelaufliegers - vollsperrung bab - pm2",
-    "status": "out",
-    "title": "BAB6/Mannheim: Brand eines Sattelaufliegers - Vollsperrung BAB - PM2",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6329407",
-    "first": "2026-08-07T16:14:28Z",
-    "last": "2026-08-07T16:14:28Z",
-    "places": [
-      {
-        "name": "Mannheim",
-        "lat": 49.4892913,
-        "lon": 8.4673098,
-        "approx": false
-      }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Böblingen|wohnungsbrand im schützenweg in böblingen",
@@ -1061,12 +1042,15 @@
     ]
   },
   {
-    "base": "Polizeipräsidium Mannheim|bab6/mannheim: brand eines sattelaufliegers - vollsperrung bab - pm1",
-    "status": "active",
-    "title": "BAB6/Mannheim: Brand eines Sattelaufliegers - Vollsperrung BAB - PM1",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6329393",
-    "first": "2026-08-07T14:23:11Z",
-    "last": "2026-08-07T14:23:11Z",
+    "base": "Polizeipräsidium Mannheim|bab6/mannheim: brand eines sattelaufliegers - vollsperrung bab - pm2",
+    "status": "out",
+    "title": "BAB6/Mannheim: Brand eines Sattelaufliegers - Vollsperrung BAB - PM2",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6329407",
+    "first": "2026-08-07T16:14:28Z",
+    "last": "2026-08-07T16:14:28Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
     "places": [
       {
         "name": "Mannheim",
@@ -1074,29 +1058,26 @@
         "lon": 8.4673098,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0
+    ]
   },
   {
-    "base": "Polizeipräsidium Mannheim|heidelberg: brennender blumentopf löst feuerwehreinsatz aus",
-    "status": "out",
-    "title": "Heidelberg: Brennender Blumentopf löst Feuerwehreinsatz aus",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6329371",
-    "first": "2026-08-07T13:15:59Z",
-    "last": "2026-08-07T13:15:59Z",
-    "places": [
-      {
-        "name": "Heidelberg",
-        "lat": 49.4093582,
-        "lon": 8.694724,
-        "approx": false
-      }
-    ],
+    "base": "Polizeipräsidium Mannheim|bab6/mannheim: brand eines sattelaufliegers - vollsperrung bab - pm1",
+    "status": "active",
+    "title": "BAB6/Mannheim: Brand eines Sattelaufliegers - Vollsperrung BAB - PM1",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6329393",
+    "first": "2026-08-07T14:23:11Z",
+    "last": "2026-08-07T14:23:11Z",
     "veg": false,
     "source": "Polizeipräsidium Mannheim",
-    "updates": 0
+    "updates": 0,
+    "places": [
+      {
+        "name": "Mannheim",
+        "lat": 49.4892913,
+        "lon": 8.4673098,
+        "approx": false
+      }
+    ]
   },
   {
     "base": "Feuerwehr Offenburg|böschungsbrand vor dem offenburger messekreisel",
@@ -1118,12 +1099,34 @@
     ]
   },
   {
+    "base": "Polizeipräsidium Mannheim|heidelberg: brennender blumentopf löst feuerwehreinsatz aus",
+    "status": "out",
+    "title": "Heidelberg: Brennender Blumentopf löst Feuerwehreinsatz aus",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6329371",
+    "first": "2026-08-07T13:15:59Z",
+    "last": "2026-08-07T13:15:59Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "places": [
+      {
+        "name": "Heidelberg",
+        "lat": 49.4093582,
+        "lon": 8.694724,
+        "approx": false
+      }
+    ]
+  },
+  {
     "base": "Polizeipräsidium Mannheim|mannheim-schönau: wohnungsbrand mit einer verletzten person - zeugenaufruf, pm nr. 2",
     "status": "active",
     "title": "Mannheim-Schönau: Wohnungsbrand mit einer verletzten Person - Zeugenaufruf, PM Nr. 2",
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6329249",
     "first": "2026-08-07T11:27:19Z",
     "last": "2026-08-07T11:27:19Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
     "places": [
       {
         "name": "Mannheim-Schönau",
@@ -1131,35 +1134,7 @@
         "lon": 8.4707614,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0
-  },
-  {
-    "base": "Polizeipräsidium Offenburg|schwanau, nonnenweier - gefahr eines vegetationsbrandes verhindert -mit guten nachrichten ins wochenende-",
-    "status": "active",
-    "title": "Schwanau, Nonnenweier - Gefahr eines Vegetationsbrandes verhindert -Mit guten Nachrichten ins Wochenende-",
-    "link": "https://www.presseportal.de/blaulicht/pm/110975/6329161",
-    "first": "2026-08-07T10:11:22Z",
-    "last": "2026-08-07T10:11:22Z",
-    "places": [
-      {
-        "name": "Schwanau",
-        "lat": 48.3629138,
-        "lon": 7.7636557,
-        "approx": false
-      },
-      {
-        "name": "Nonnenweier",
-        "lat": 48.3476599,
-        "lon": 7.7608934,
-        "approx": false
-      }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Offenburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Pforzheim|(enzkreis) neulingen - brand von altreifen in getreidelagerstätte / polizei sucht zeugen",
@@ -1181,12 +1156,40 @@
     ]
   },
   {
+    "base": "Polizeipräsidium Offenburg|schwanau, nonnenweier - gefahr eines vegetationsbrandes verhindert -mit guten nachrichten ins wochenende-",
+    "status": "active",
+    "title": "Schwanau, Nonnenweier - Gefahr eines Vegetationsbrandes verhindert -Mit guten Nachrichten ins Wochenende-",
+    "link": "https://www.presseportal.de/blaulicht/pm/110975/6329161",
+    "first": "2026-08-07T10:11:22Z",
+    "last": "2026-08-07T10:11:22Z",
+    "veg": true,
+    "source": "Polizeipräsidium Offenburg",
+    "updates": 0,
+    "places": [
+      {
+        "name": "Schwanau",
+        "lat": 48.3629138,
+        "lon": 7.7636557,
+        "approx": false
+      },
+      {
+        "name": "Nonnenweier",
+        "lat": 48.3476599,
+        "lon": 7.7608934,
+        "approx": false
+      }
+    ]
+  },
+  {
     "base": "Polizeipräsidium Ludwigsburg|herrenberg-gültstein: starke rauchentwicklung in und gültstein nach fahrzeugbrand",
     "status": "active",
     "title": "Herrenberg-Gültstein: starke Rauchentwicklung in und Gültstein nach Fahrzeugbrand",
     "link": "https://www.presseportal.de/blaulicht/pm/110974/6329005",
     "first": "2026-08-07T08:29:55Z",
     "last": "2026-08-07T08:29:55Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ludwigsburg",
+    "updates": 0,
     "places": [
       {
         "name": "Herrenberg-Gültstein",
@@ -1194,10 +1197,7 @@
         "lon": 8.8794268,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ludwigsburg|marbach am neckar-rielingshausen: garagenbrand führt zu sechsstelligem sachschaden",
@@ -1206,6 +1206,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110974/6328978",
     "first": "2026-08-07T08:10:33Z",
     "last": "2026-08-07T08:10:33Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ludwigsburg",
+    "updates": 0,
     "places": [
       {
         "name": "Marbach am Neckar-Rielingshausen",
@@ -1213,10 +1216,7 @@
         "lon": 9.3220868,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0
+    ]
   },
   {
     "base": "FF Stockach|brennender wohnwagen auf der autobahn.",
@@ -1250,6 +1250,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6328722",
     "first": "2026-08-06T13:42:31Z",
     "last": "2026-08-06T13:42:31Z",
+    "veg": true,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
     "places": [
       {
         "name": "Lörrach",
@@ -1257,10 +1260,7 @@
         "lon": 7.6607218,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|lörrach: balkonbrand",
@@ -1269,6 +1269,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6328721",
     "first": "2026-08-06T13:42:04Z",
     "last": "2026-08-06T13:42:04Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
     "places": [
       {
         "name": "Lörrach",
@@ -1276,10 +1279,7 @@
         "lon": 7.6607218,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|küssaberg/ ettikon: schwelbrand an maschine - feuerwehreinsatz",
@@ -1288,6 +1288,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6328720",
     "first": "2026-08-06T13:41:35Z",
     "last": "2026-08-06T13:41:35Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
     "places": [
       {
         "name": "Küssaberg",
@@ -1301,10 +1304,7 @@
         "lon": 8.267909,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Aalen|ostalbkreis: einbruch - brand - unfall - unfallflucht",
@@ -1313,6 +1313,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6328696",
     "first": "2026-08-06T13:24:33Z",
     "last": "2026-08-06T13:24:33Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
     "places": [
       {
         "name": "Ostalbkreis",
@@ -1320,10 +1323,7 @@
         "lon": 10.0337317,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Heilbronn|neckar-odenwald-kreis: unfallflucht und brand",
@@ -1332,6 +1332,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110971/6328491",
     "first": "2026-08-06T10:33:56Z",
     "last": "2026-08-06T10:33:56Z",
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "updates": 0,
     "places": [
       {
         "name": "Neckar-Odenwald-Kreis",
@@ -1339,10 +1342,7 @@
         "lon": 9.2709386,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(gp) eschenbach - essen auf herd vergessen / verbranntes essen führte am mittwoch zu einem einsatz in eschenbach.",
@@ -1351,6 +1351,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6328446",
     "first": "2026-08-06T09:55:42Z",
     "last": "2026-08-06T09:55:42Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
     "places": [
       {
         "name": "Eschenbach",
@@ -1358,10 +1361,7 @@
         "lon": 9.676742,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Aalen|ostalbkreis: unfallfluchten - küchenbrand - pkw-lenker bedroht fußgänger - sonstiges",
@@ -1370,6 +1370,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6328197",
     "first": "2026-08-06T06:54:42Z",
     "last": "2026-08-06T06:54:42Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
     "places": [
       {
         "name": "Ostalbkreis",
@@ -1377,10 +1380,7 @@
         "lon": 10.0337317,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|mannheim-schönau: wohnungsbrand mit einer verletzten person",
@@ -1389,6 +1389,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6328096",
     "first": "2026-08-06T01:16:44Z",
     "last": "2026-08-06T01:16:44Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
     "places": [
       {
         "name": "Mannheim-Schönau",
@@ -1396,10 +1399,7 @@
         "lon": 8.4707614,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|mannheim: flächenbrand an der bab 6 bei feudenheim - pm nr. 1",
@@ -1408,6 +1408,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6328063",
     "first": "2026-08-05T14:51:49Z",
     "last": "2026-08-05T16:05:32Z",
+    "veg": true,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 1,
     "places": [
       {
         "name": "Mannheim",
@@ -1415,10 +1418,7 @@
         "lon": 8.4673098,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 1
+    ]
   },
   {
     "base": "Polizeipräsidium Karlsruhe|(ka) stutensee - zeugenaufruf nach mutmaßlicher brandstiftung",
@@ -1427,6 +1427,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110972/6328012",
     "first": "2026-08-05T14:02:24Z",
     "last": "2026-08-05T14:02:24Z",
+    "veg": true,
+    "source": "Polizeipräsidium Karlsruhe",
+    "updates": 0,
     "places": [
       {
         "name": "Stutensee",
@@ -1434,10 +1437,7 @@
         "lon": 8.4856806,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Karlsruhe",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|bad säckingen: feuerwehr löscht feuerstelle am waldrand",
@@ -1446,6 +1446,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6327991",
     "first": "2026-08-05T13:34:57Z",
     "last": "2026-08-05T13:34:57Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
     "places": [
       {
         "name": "Bad Säckingen",
@@ -1453,10 +1456,7 @@
         "lon": 7.9410556,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Karlsruhe|(ka) karlsruhe - flächenbrand in neureut - polizei bittet um zeugenhinweise",
@@ -1465,6 +1465,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110972/6327944",
     "first": "2026-08-05T12:52:21Z",
     "last": "2026-08-05T12:52:21Z",
+    "veg": true,
+    "source": "Polizeipräsidium Karlsruhe",
+    "updates": 0,
     "places": [
       {
         "name": "Karlsruhe",
@@ -1472,10 +1475,7 @@
         "lon": 8.4034195,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Karlsruhe",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|heidelberg: trafobrand an stromkabel",
@@ -1484,6 +1484,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6327869",
     "first": "2026-08-05T11:41:07Z",
     "last": "2026-08-05T11:41:07Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
     "places": [
       {
         "name": "Heidelberg",
@@ -1491,10 +1494,7 @@
         "lon": 8.694724,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(gp) birenbach - laster brennt / am dienstag geriet ein geparkter lkw in birenbach in brand.",
@@ -1503,6 +1503,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6327703",
     "first": "2026-08-05T09:10:01Z",
     "last": "2026-08-05T09:10:01Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
     "places": [
       {
         "name": "Birenbach",
@@ -1510,10 +1513,7 @@
         "lon": 9.6609218,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Aalen|fellbach: brand auf balkon",
@@ -1522,6 +1522,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6327386",
     "first": "2026-08-04T14:52:37Z",
     "last": "2026-08-04T14:52:37Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
     "places": [
       {
         "name": "Fellbach",
@@ -1529,29 +1532,7 @@
         "lon": 9.2745228,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(gp) göppingen - feuer in reihenhauskomplex / hoher sachschaden entstand am dienstag bei einem brand in göppingen.",
-    "status": "active",
-    "title": "(GP) Göppingen - Feuer in Reihenhauskomplex / Hoher Sachschaden entstand am Dienstag bei einem Brand in Göppingen.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6327306",
-    "first": "2026-08-04T12:48:30Z",
-    "last": "2026-08-04T12:48:30Z",
-    "places": [
-      {
-        "name": "Göppingen",
-        "lat": 48.7031377,
-        "lon": 9.6541116,
-        "approx": false
-      }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Weinheim|defekte hydraulikleitung und brandmeldeanlage lösen feuerwehreinsätze aus",
@@ -1573,12 +1554,34 @@
     ]
   },
   {
+    "base": "Polizeipräsidium Ulm|(gp) göppingen - feuer in reihenhauskomplex / hoher sachschaden entstand am dienstag bei einem brand in göppingen.",
+    "status": "active",
+    "title": "(GP) Göppingen - Feuer in Reihenhauskomplex / Hoher Sachschaden entstand am Dienstag bei einem Brand in Göppingen.",
+    "link": "https://www.presseportal.de/blaulicht/pm/110979/6327306",
+    "first": "2026-08-04T12:48:30Z",
+    "last": "2026-08-04T12:48:30Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
+    "places": [
+      {
+        "name": "Göppingen",
+        "lat": 48.7031377,
+        "lon": 9.6541116,
+        "approx": false
+      }
+    ]
+  },
+  {
     "base": "Polizeipräsidium Ulm|(bc) seekirch - kleiner flächenbrand löst feuerwehreinsatz aus / am montagmorgen rückte die feuerwehr in seekirch aus.",
     "status": "out",
     "title": "(BC) Seekirch - Kleiner Flächenbrand löst Feuerwehreinsatz aus / Am Montagmorgen rückte die Feuerwehr in Seekirch aus.",
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6327128",
     "first": "2026-08-04T09:44:52Z",
     "last": "2026-08-04T09:44:52Z",
+    "veg": true,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
     "places": [
       {
         "name": "Seekirch",
@@ -1586,29 +1589,7 @@
         "lon": 9.6423439,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0
-  },
-  {
-    "base": "Polizeipräsidium Aalen|ostalbkreis: widerstand - unfall - fahrzeugbrand",
-    "status": "active",
-    "title": "Ostalbkreis: Widerstand - Unfall - Fahrzeugbrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110969/6326770",
-    "first": "2026-08-04T05:54:02Z",
-    "last": "2026-08-04T05:54:02Z",
-    "places": [
-      {
-        "name": "Ostalbkreis",
-        "lat": 48.8777738,
-        "lon": 10.0337317,
-        "approx": false
-      }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Weil am Rhein|feuerwehr weil: verkehrsunfall & flächenbrand in weil am rhein",
@@ -1630,12 +1611,34 @@
     ]
   },
   {
+    "base": "Polizeipräsidium Aalen|ostalbkreis: widerstand - unfall - fahrzeugbrand",
+    "status": "active",
+    "title": "Ostalbkreis: Widerstand - Unfall - Fahrzeugbrand",
+    "link": "https://www.presseportal.de/blaulicht/pm/110969/6326770",
+    "first": "2026-08-04T05:54:02Z",
+    "last": "2026-08-04T05:54:02Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
+    "places": [
+      {
+        "name": "Ostalbkreis",
+        "lat": 48.8777738,
+        "lon": 10.0337317,
+        "approx": false
+      }
+    ]
+  },
+  {
     "base": "Polizeipräsidium Mannheim|mannheim: brand vor gaststätte - zeugenaufruf",
     "status": "active",
     "title": "Mannheim: Brand vor Gaststätte - Zeugenaufruf",
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6326623",
     "first": "2026-08-03T13:37:19Z",
     "last": "2026-08-03T13:37:19Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
     "places": [
       {
         "name": "Mannheim",
@@ -1643,10 +1646,7 @@
         "lon": 8.4673098,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Heilbronn|main-tauber-kreis: brände und pkw-brand",
@@ -1655,6 +1655,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110971/6326500",
     "first": "2026-08-03T12:38:14Z",
     "last": "2026-08-03T12:38:14Z",
+    "veg": true,
+    "source": "Polizeipräsidium Heilbronn",
+    "updates": 0,
     "places": [
       {
         "name": "Main-Tauber-Kreis",
@@ -1674,10 +1677,7 @@
         "lon": 9.7237,
         "approx": true
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|dossenheim/rhein-neckar-kreis: feldbrand hat ermittlungen wegen fahrlässiger brandstiftung zur folge - zeugenaufruf",
@@ -1686,6 +1686,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6327339",
     "first": "2026-08-03T12:25:52Z",
     "last": "2026-08-04T13:22:41Z",
+    "veg": true,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 3,
     "places": [
       {
         "name": "Dossenheim",
@@ -1711,10 +1714,7 @@
         "lon": 8.6829484,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 3
+    ]
   },
   {
     "base": "Feuerwehr Weinheim|trockenheit sorgt für lose äste am dürreplatz",
@@ -1723,6 +1723,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/179375/6326460",
     "first": "2026-08-03T12:15:31Z",
     "last": "2026-08-03T12:15:31Z",
+    "veg": false,
+    "source": "Feuerwehr Weinheim",
+    "updates": 0,
     "places": [
       {
         "name": "Weinheim",
@@ -1730,10 +1733,7 @@
         "lon": 8.6717458,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Weinheim",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Heilbronn|neckar-odenwald-kreis: brand und sachbeschädigung in kirche",
@@ -1742,6 +1742,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110971/6326403",
     "first": "2026-08-03T11:36:38Z",
     "last": "2026-08-03T11:36:38Z",
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "updates": 0,
     "places": [
       {
         "name": "Neckar-Odenwald-Kreis",
@@ -1749,10 +1752,7 @@
         "lon": 9.2709386,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Karlsruhe|(ka) sulzfeld - hoher sachschaden nach brand eines einfamilienhauses",
@@ -1761,6 +1761,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110972/6326385",
     "first": "2026-08-03T11:22:47Z",
     "last": "2026-08-03T11:22:47Z",
+    "veg": false,
+    "source": "Polizeipräsidium Karlsruhe",
+    "updates": 0,
     "places": [
       {
         "name": "Sulzfeld",
@@ -1768,10 +1771,7 @@
         "lon": 8.8596844,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Karlsruhe",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ludwigsburg|freiberg am neckar-beihingen: container mit büchern in brand gesteckt",
@@ -1780,6 +1780,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110974/6326190",
     "first": "2026-08-03T09:45:48Z",
     "last": "2026-08-03T09:45:48Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ludwigsburg",
+    "updates": 0,
     "places": [
       {
         "name": "Freiberg am Neckar-Beihingen",
@@ -1787,10 +1790,7 @@
         "lon": 9.1908965,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Heilbronn|hohenlohekreis: garagenbrand, beschädigung eines pkws",
@@ -1799,6 +1799,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110971/6326092",
     "first": "2026-08-03T09:08:17Z",
     "last": "2026-08-03T09:08:17Z",
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "updates": 0,
     "places": [
       {
         "name": "Hohenlohekreis",
@@ -1806,10 +1809,7 @@
         "lon": 9.6057331,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|emmendingen: mutmaßlich defektes kabel führt zu brand auf balkon.",
@@ -1818,6 +1818,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6326041",
     "first": "2026-08-03T08:46:46Z",
     "last": "2026-08-03T08:46:46Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
     "places": [
       {
         "name": "Emmendingen",
@@ -1825,10 +1828,7 @@
         "lon": 7.850993,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|heidelberg: brandgeschehen auf balkon, polizei- und feuerwehreinsatz, pm 2",
@@ -1837,6 +1837,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6325822",
     "first": "2026-08-02T23:28:56Z",
     "last": "2026-08-02T23:28:56Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
     "places": [
       {
         "name": "Heidelberg",
@@ -1844,10 +1847,7 @@
         "lon": 8.694724,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|heidelberg: brandgeschehen auf balkon, polizei- und feuerwehreinsatz, pm 1",
@@ -1856,6 +1856,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6325818",
     "first": "2026-08-02T22:48:14Z",
     "last": "2026-08-02T22:48:14Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
     "places": [
       {
         "name": "Heidelberg",
@@ -1863,10 +1866,7 @@
         "lon": 8.694724,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|heidelberg: brand in der emmertsgrundpassage - pm 2",
@@ -1875,6 +1875,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6325804",
     "first": "2026-08-02T18:33:32Z",
     "last": "2026-08-02T18:33:32Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
     "places": [
       {
         "name": "Heidelberg",
@@ -1882,10 +1885,7 @@
         "lon": 8.694724,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|heidelberg: brand in der emmertsgrundpassage - pm 1",
@@ -1894,6 +1894,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6325753",
     "first": "2026-08-02T12:38:35Z",
     "last": "2026-08-02T12:38:35Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
     "places": [
       {
         "name": "Heidelberg",
@@ -1901,10 +1904,7 @@
         "lon": 8.694724,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Pforzheim|(pf) pforzheim - küchenbrand",
@@ -1913,6 +1913,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/137462/6325528",
     "first": "2026-08-01T23:34:44Z",
     "last": "2026-08-01T23:34:44Z",
+    "veg": false,
+    "source": "Polizeipräsidium Pforzheim",
+    "updates": 0,
     "places": [
       {
         "name": "Pforzheim",
@@ -1920,10 +1923,7 @@
         "lon": 8.7025509,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Pforzheim",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Bad Säckingen|großbrand in wäscherei - feuerwehr verhindert ausbreitung auf nachbargebäude",
@@ -1951,6 +1951,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6325289",
     "first": "2026-07-31T13:02:07Z",
     "last": "2026-07-31T13:02:07Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
     "places": [
       {
         "name": "Heidelberg",
@@ -1958,10 +1961,7 @@
         "lon": 8.694724,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(bc) mittelbiberach - brand auf recyclinghof / in der nacht auf freitag rückten einsatzkräfte zu einem feuer in mittelbiberach aus.",
@@ -1970,6 +1970,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6325278",
     "first": "2026-07-31T12:33:48Z",
     "last": "2026-07-31T12:33:48Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
     "places": [
       {
         "name": "Mittelbiberach",
@@ -1977,10 +1980,7 @@
         "lon": 9.7479621,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|eberbach/rhein-neckar-kreis: kellerbrand pm nr. 2",
@@ -1989,6 +1989,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6325255",
     "first": "2026-07-31T12:23:57Z",
     "last": "2026-07-31T12:23:57Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
     "places": [
       {
         "name": "Eberbach",
@@ -2002,10 +2005,7 @@
         "lon": 8.7352403,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|mühlhausen/rhein-neckar-kreis: flächenbrand um aussichtspunkt heiligenstein",
@@ -2014,6 +2014,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6325253",
     "first": "2026-07-31T12:20:39Z",
     "last": "2026-07-31T12:20:39Z",
+    "veg": true,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
     "places": [
       {
         "name": "Mühlhausen",
@@ -2027,10 +2030,7 @@
         "lon": 8.7352403,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|görwihl/ strittmatt: flächenbrand am waldrand - feuerwehreinsatz",
@@ -2039,6 +2039,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6325232",
     "first": "2026-07-31T12:01:08Z",
     "last": "2026-07-31T12:01:08Z",
+    "veg": true,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
     "places": [
       {
         "name": "Görwihl",
@@ -2058,10 +2061,7 @@
         "lon": 8.05663,
         "approx": true
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|eggingen: lkw mit heu gerät in brand",
@@ -2070,6 +2070,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6325226",
     "first": "2026-07-31T11:59:31Z",
     "last": "2026-07-31T11:59:31Z",
+    "veg": true,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
     "places": [
       {
         "name": "Eggingen",
@@ -2083,10 +2086,7 @@
         "lon": 8.41109,
         "approx": true
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Heilbronn|neckar-odenwald-kreis: diebstahl aus kerzenkassen, mutmaßliche brandstifter vorläufig festgenommen, frau angegriffen",
@@ -2095,6 +2095,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110971/6325167",
     "first": "2026-07-31T11:15:06Z",
     "last": "2026-07-31T11:15:06Z",
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "updates": 0,
     "places": [
       {
         "name": "Neckar-Odenwald-Kreis",
@@ -2102,10 +2105,7 @@
         "lon": 9.2709386,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|eberbach/rhein-neckar-kreis: kellerbrand pm nr. 1",
@@ -2114,6 +2114,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6325165",
     "first": "2026-07-31T11:12:37Z",
     "last": "2026-07-31T11:12:37Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
     "places": [
       {
         "name": "Eberbach",
@@ -2127,10 +2130,7 @@
         "lon": 8.7352403,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Heilbronn|main-tauber-kreis: brand, versuchter einbruch und betrunken vor polizei geflüchtet",
@@ -2139,6 +2139,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110971/6325134",
     "first": "2026-07-31T10:33:26Z",
     "last": "2026-07-31T10:33:26Z",
+    "veg": true,
+    "source": "Polizeipräsidium Heilbronn",
+    "updates": 0,
     "places": [
       {
         "name": "Main-Tauber-Kreis",
@@ -2146,10 +2149,7 @@
         "lon": 9.6999301,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Karlsruhe|(ka) karlsruhe - unbekannter setzt wiese in brand - kriminalpolizei sucht nach zeugen",
@@ -2158,6 +2158,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110972/6324952",
     "first": "2026-07-31T08:29:04Z",
     "last": "2026-07-31T08:29:04Z",
+    "veg": false,
+    "source": "Polizeipräsidium Karlsruhe",
+    "updates": 0,
     "places": [
       {
         "name": "Karlsruhe",
@@ -2165,10 +2168,7 @@
         "lon": 8.4034195,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Karlsruhe",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(ul) blaustein - ballenpresse brennt / am donnerstag geriet das landwirtschaftliche gerät bei wippingen in flammen.",
@@ -2177,6 +2177,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6324943",
     "first": "2026-07-31T08:21:52Z",
     "last": "2026-07-31T08:21:52Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
     "places": [
       {
         "name": "Blaustein",
@@ -2190,10 +2193,7 @@
         "lon": 9.84137,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Pforzheim|(enzkreis) mühlacker-enzberg - brand auf häckselplatz - verdacht der brandstiftung",
@@ -2202,6 +2202,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/137462/6324839",
     "first": "2026-07-31T07:15:03Z",
     "last": "2026-07-31T07:15:03Z",
+    "veg": false,
+    "source": "Polizeipräsidium Pforzheim",
+    "updates": 0,
     "places": [
       {
         "name": "Mühlacker-Enzberg",
@@ -2209,10 +2212,7 @@
         "lon": 8.8007522,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Pforzheim",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Weinheim|entschlossener feuerwehr-einsatz verhinderte großbrand im wohngebiet",
@@ -2221,6 +2221,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/179375/6324676",
     "first": "2026-07-30T21:19:12Z",
     "last": "2026-07-30T21:19:12Z",
+    "veg": false,
+    "source": "Feuerwehr Weinheim",
+    "updates": 0,
     "places": [
       {
         "name": "Weinheim",
@@ -2228,10 +2231,7 @@
         "lon": 8.6717458,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Weinheim",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Aalen|ostalbkreis: kripo sucht zeugen - vollendeter schockanruf - brennender lkw - unfälle",
@@ -2240,6 +2240,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6324552",
     "first": "2026-07-30T13:02:51Z",
     "last": "2026-07-30T13:02:51Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
     "places": [
       {
         "name": "Ostalbkreis",
@@ -2247,10 +2250,7 @@
         "lon": 10.0337317,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|schluchsee-blasiwald: waldarbeitsmaschine brennt vollständig aus",
@@ -2259,6 +2259,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6324496",
     "first": "2026-07-30T12:10:19Z",
     "last": "2026-07-30T12:10:19Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
     "places": [
       {
         "name": "Schluchsee-Blasiwald",
@@ -2266,10 +2269,7 @@
         "lon": 8.1515136,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|löffingen-unadingen: brand eines wohnhauses",
@@ -2278,6 +2278,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6324491",
     "first": "2026-07-30T12:05:36Z",
     "last": "2026-07-30T12:05:36Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
     "places": [
       {
         "name": "Löffingen-Unadingen",
@@ -2285,10 +2288,7 @@
         "lon": 8.4070082,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Heilbronn|stadt- und landkreis heilbronn: diebstahl, brand, unfall und einbrüche",
@@ -2297,6 +2297,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110971/6324447",
     "first": "2026-07-30T11:26:02Z",
     "last": "2026-07-30T11:26:02Z",
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "updates": 0,
     "places": [
       {
         "name": "Stadt-",
@@ -2304,10 +2307,7 @@
         "lon": 8.694724,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|weinheim/rhein-neckar-kreis: garagenbrand - pm 2",
@@ -2316,6 +2316,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6324437",
     "first": "2026-07-30T11:20:30Z",
     "last": "2026-07-30T11:20:30Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
     "places": [
       {
         "name": "Weinheim",
@@ -2329,10 +2332,7 @@
         "lon": 8.7352403,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|bad säckingen: mehrere brandstellen im wald - zeugensuche",
@@ -2341,6 +2341,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6324407",
     "first": "2026-07-30T11:02:26Z",
     "last": "2026-07-30T11:02:26Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
     "places": [
       {
         "name": "Bad Säckingen",
@@ -2348,10 +2351,7 @@
         "lon": 7.9410556,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|weinheim/rhein-neckar-kreis: garagenbrand - pm 1",
@@ -2360,6 +2360,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6324345",
     "first": "2026-07-30T10:20:14Z",
     "last": "2026-07-30T10:20:14Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
     "places": [
       {
         "name": "Weinheim",
@@ -2373,10 +2376,7 @@
         "lon": 8.7352403,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(ul) oberdischingen - auto gerät in flammen / am mittwoch kam es in oberdischingen zu einem fahrzeugbrand.",
@@ -2385,6 +2385,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6324302",
     "first": "2026-07-30T09:57:50Z",
     "last": "2026-07-30T09:57:50Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
     "places": [
       {
         "name": "Oberdischingen",
@@ -2392,10 +2395,7 @@
         "lon": 9.8329152,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Pforzheim|(pf) pforzheim - nachtragsmeldung zum brand im ehemaligen emma-jäger-bad: polizei ermittelt wegen möglicher brandstiftung",
@@ -2404,6 +2404,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/137462/6324287",
     "first": "2026-07-30T09:45:54Z",
     "last": "2026-07-30T09:45:54Z",
+    "veg": false,
+    "source": "Polizeipräsidium Pforzheim",
+    "updates": 0,
     "places": [
       {
         "name": "Pforzheim",
@@ -2411,10 +2414,7 @@
         "lon": 8.7025509,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Pforzheim",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|riegel am kaiserstuhl: lagerhallenkomplex durch großbrand zerstört - schaden in millionenhöhe",
@@ -2423,6 +2423,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6324125",
     "first": "2026-07-30T07:58:14Z",
     "last": "2026-07-30T07:58:14Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
     "places": [
       {
         "name": "Riegel am Kaiserstuhl",
@@ -2430,10 +2433,7 @@
         "lon": 7.7504953,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Heilbronn|main-tauber-kreis: brand, straßenverkehrsgefährdung und unfall",
@@ -2442,6 +2442,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110971/6324110",
     "first": "2026-07-30T07:41:05Z",
     "last": "2026-07-30T07:41:05Z",
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "updates": 0,
     "places": [
       {
         "name": "Main-Tauber-Kreis",
@@ -2449,10 +2452,7 @@
         "lon": 9.6999301,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(bc) riedlingen - feuer auf neubau / am mittwoch rückten einsatzkräfte in neufra aus.",
@@ -2461,6 +2461,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6324050",
     "first": "2026-07-30T07:00:13Z",
     "last": "2026-07-30T07:00:13Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
     "places": [
       {
         "name": "Riedlingen",
@@ -2468,10 +2471,7 @@
         "lon": 9.4748796,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Heilbronn|landkreis heilbronn/erlenbach: flächenbrand mit autobahnsperrung",
@@ -2480,6 +2480,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110971/6323916",
     "first": "2026-07-30T00:40:26Z",
     "last": "2026-07-30T00:40:26Z",
+    "veg": true,
+    "source": "Polizeipräsidium Heilbronn",
+    "updates": 0,
     "places": [
       {
         "name": "Erlenbach",
@@ -2487,10 +2490,7 @@
         "lon": 9.2692171,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Stuttgart|fahrzeugbrand greift auf wohngebäude über",
@@ -2537,6 +2537,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110975/6323766",
     "first": "2026-07-29T12:56:22Z",
     "last": "2026-07-29T12:56:22Z",
+    "veg": true,
+    "source": "Polizeipräsidium Offenburg",
+    "updates": 0,
     "places": [
       {
         "name": "Kehl",
@@ -2550,10 +2553,7 @@
         "lon": 7.8253778,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Offenburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(bc) laupheim/schwendi - waldarbeiter löscht glimmende feuerstelle / am dienstag konnte ein waldarbeiter noch rechtzeitig einen größeren brandausbruch in einem waldstück bei laupheim verhindern.",
@@ -2562,6 +2562,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6323756",
     "first": "2026-07-29T12:47:08Z",
     "last": "2026-07-29T12:47:08Z",
+    "veg": true,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
     "places": [
       {
         "name": "Laupheim",
@@ -2575,10 +2578,7 @@
         "lon": 9.9784952,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|löffingen: e-scooter-akku löst brand aus",
@@ -2587,6 +2587,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6323729",
     "first": "2026-07-29T12:19:28Z",
     "last": "2026-07-29T12:19:28Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
     "places": [
       {
         "name": "Löffingen",
@@ -2594,10 +2597,7 @@
         "lon": 8.3446627,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ludwigsburg|steinheim an der murr/marbach am neckar: zeugen nach flächenbrand gesucht",
@@ -2606,6 +2606,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110974/6323545",
     "first": "2026-07-29T09:51:43Z",
     "last": "2026-07-29T09:51:43Z",
+    "veg": true,
+    "source": "Polizeipräsidium Ludwigsburg",
+    "updates": 0,
     "places": [
       {
         "name": "Marbach am Neckar",
@@ -2613,10 +2616,7 @@
         "lon": 9.256396,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(ul) ulm - gartenhütte brennt / am dienstag rückte die feuerwehr in ulm zu einem brand einer gartenhütte aus.",
@@ -2625,6 +2625,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6323442",
     "first": "2026-07-29T08:44:37Z",
     "last": "2026-07-29T08:44:37Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
     "places": [
       {
         "name": "Ulm",
@@ -2632,10 +2635,7 @@
         "lon": 9.9912458,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|sinsheim/reihen/rhein-neckar-kreis: gebäudebrand - feuerwehr und polizei im einsatz, pressemitteilung nr. 2",
@@ -2644,6 +2644,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6323160",
     "first": "2026-07-29T01:54:47Z",
     "last": "2026-07-29T01:54:47Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
     "places": [
       {
         "name": "Sinsheim",
@@ -2663,10 +2666,7 @@
         "lon": 8.7352403,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|sinsheim/reihen/rhein-neckar-kreis: gebäudebrand - feuerwehr und polizei im einsatz, pressemitteilung nr. 1",
@@ -2675,6 +2675,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6323153",
     "first": "2026-07-28T20:22:25Z",
     "last": "2026-07-28T20:22:25Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
     "places": [
       {
         "name": "Sinsheim",
@@ -2694,10 +2697,7 @@
         "lon": 8.7352403,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Offenburg|böschungsbrand neben der autobahn bei offenburg",
@@ -2725,6 +2725,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110975/6323487",
     "first": "2026-07-28T15:09:39Z",
     "last": "2026-07-29T09:18:30Z",
+    "veg": false,
+    "source": "Polizeipräsidium Offenburg",
+    "updates": 1,
     "places": [
       {
         "name": "Renchen",
@@ -2732,10 +2735,7 @@
         "lon": 8.0143673,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "updates": 1
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|st.leon-rot/rhein-neckar-kreis: mehrere heuballen in brand geraten, pm nr. 3 - zeugenaufruf",
@@ -2744,6 +2744,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6324481",
     "first": "2026-07-28T12:11:28Z",
     "last": "2026-07-30T11:53:44Z",
+    "veg": true,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 1,
     "places": [
       {
         "name": "St.Leon-Rot",
@@ -2769,10 +2772,7 @@
         "lon": 8.65136,
         "approx": true
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 1
+    ]
   },
   {
     "base": "Polizeipräsidium Konstanz|(geisingen / lkr. tuttlingen) brand einer ballenpresse löst flächenbrand aus: etwa 6.000 euro schaden (27.07.2026)",
@@ -2781,6 +2781,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110973/6322953",
     "first": "2026-07-28T11:47:58Z",
     "last": "2026-07-28T11:47:58Z",
+    "veg": true,
+    "source": "Polizeipräsidium Konstanz",
+    "updates": 0,
     "places": [
       {
         "name": "(Geisingen",
@@ -2788,10 +2791,7 @@
         "lon": 8.6491814,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Konstanz",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|wutöschingen / degernau: brennender baum bei der kirche - zeugensuche",
@@ -2800,6 +2800,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6322933",
     "first": "2026-07-28T11:36:49Z",
     "last": "2026-07-28T11:36:49Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
     "places": [
       {
         "name": "Wutöschingen",
@@ -2813,10 +2816,7 @@
         "lon": 8.3825555,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Offenburg|iffezheim - brand einer ehemaligen gaststätte, zeugen gesucht",
@@ -2825,6 +2825,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110975/6322894",
     "first": "2026-07-28T10:59:07Z",
     "last": "2026-07-28T10:59:07Z",
+    "veg": false,
+    "source": "Polizeipräsidium Offenburg",
+    "updates": 0,
     "places": [
       {
         "name": "Iffezheim",
@@ -2832,10 +2835,7 @@
         "lon": 8.1421337,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Heilbronn|neckar-odenwald-kreis: diebstahl, brand und unfall",
@@ -2844,6 +2844,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110971/6322891",
     "first": "2026-07-28T10:56:33Z",
     "last": "2026-07-28T10:56:33Z",
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "updates": 0,
     "places": [
       {
         "name": "Neckar-Odenwald-Kreis",
@@ -2857,10 +2860,7 @@
         "lon": 9.2351,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|freiburg-betzenhausen: feuer in mehrfamilienhaus",
@@ -2869,6 +2869,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6322821",
     "first": "2026-07-28T09:34:03Z",
     "last": "2026-07-28T09:34:03Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
     "places": [
       {
         "name": "Freiburg-Betzenhausen",
@@ -2876,10 +2879,7 @@
         "lon": 7.8040107,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Heilbronn|stadt- und landkreis heilbronn: kupferkabel gestohlen, sachbeschädigung, unfall und brand",
@@ -2888,6 +2888,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110971/6322792",
     "first": "2026-07-28T09:19:42Z",
     "last": "2026-07-28T09:19:42Z",
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "updates": 0,
     "places": [
       {
         "name": "Stadt-",
@@ -2895,10 +2898,7 @@
         "lon": 8.694724,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Offenburg|steinach - brand in einem heizungsraum",
@@ -2907,6 +2907,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110975/6322690",
     "first": "2026-07-28T08:18:10Z",
     "last": "2026-07-28T08:18:10Z",
+    "veg": false,
+    "source": "Polizeipräsidium Offenburg",
+    "updates": 0,
     "places": [
       {
         "name": "Steinach",
@@ -2914,10 +2917,7 @@
         "lon": 8.057394,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(ul) erbach - vergessener topf führt zu feuerwehreinsatz / nach einem küchenbrand am montag in erbach entstand rund 50.000 euro sachschaden.",
@@ -2926,6 +2926,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6322509",
     "first": "2026-07-28T06:33:14Z",
     "last": "2026-07-28T06:33:14Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
     "places": [
       {
         "name": "Erbach",
@@ -2933,10 +2936,7 @@
         "lon": 9.8913803,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|malsch/rhein-neckar-kreis: aktueller garagenbrand - pressemeldung nr. 1",
@@ -2945,6 +2945,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6322435",
     "first": "2026-07-28T04:56:47Z",
     "last": "2026-07-28T04:56:47Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
     "places": [
       {
         "name": "Malsch",
@@ -2958,10 +2961,7 @@
         "lon": 8.7352403,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Aalen|rems-murr-kreis: einbrüche, verkehrsunfall & flächenbrand",
@@ -2970,6 +2970,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6323241",
     "first": "2026-07-27T14:15:34Z",
     "last": "2026-07-29T06:32:21Z",
+    "veg": true,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 1,
     "places": [
       {
         "name": "Rems-Murr-Kreis",
@@ -2977,10 +2980,7 @@
         "lon": 9.5037124,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 1
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|rheinfelden: brand von grill auf balkon geht glimpflich aus",
@@ -2989,6 +2989,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6322344",
     "first": "2026-07-27T13:56:16Z",
     "last": "2026-07-27T13:56:16Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
     "places": [
       {
         "name": "Rheinfelden",
@@ -2996,10 +2999,7 @@
         "lon": 7.7861959,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|stühlingen- schwaningen: illegales feuer",
@@ -3008,6 +3008,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6322239",
     "first": "2026-07-27T12:52:41Z",
     "last": "2026-07-27T12:52:41Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
     "places": [
       {
         "name": "Stühlingen- Schwaningen",
@@ -3015,10 +3018,7 @@
         "lon": 8.4288701,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|waldshut-tiengen/ waldshut: brand in geschäftsraum in der kaiserstraße",
@@ -3027,6 +3027,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6322238",
     "first": "2026-07-27T12:52:12Z",
     "last": "2026-07-27T12:52:12Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
     "places": [
       {
         "name": "Waldshut-Tiengen",
@@ -3040,10 +3043,7 @@
         "lon": 8.2120605,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|schluchsee: motorradfahrer stürzt, krad fängt feuer",
@@ -3052,6 +3052,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6322211",
     "first": "2026-07-27T12:27:52Z",
     "last": "2026-07-27T12:27:52Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
     "places": [
       {
         "name": "Schluchsee",
@@ -3059,10 +3062,7 @@
         "lon": 8.177035,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ludwigsburg|sindelfingen-maichingen: mehrere fahrzeuge auf feldweg in brand geraten - knapp 50.000 euro sachschaden",
@@ -3071,6 +3071,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110974/6322026",
     "first": "2026-07-27T10:39:37Z",
     "last": "2026-07-27T10:39:37Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ludwigsburg",
+    "updates": 0,
     "places": [
       {
         "name": "Sindelfingen-Maichingen",
@@ -3078,10 +3081,7 @@
         "lon": 8.9653797,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Konstanz|(aichhalden / lkr. rottweil) brand einer ballenpresse löst flächenbrand aus: etwa 15.000 euro schaden (25.07.2026)",
@@ -3090,6 +3090,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110973/6321983",
     "first": "2026-07-27T10:15:14Z",
     "last": "2026-07-27T10:15:14Z",
+    "veg": true,
+    "source": "Polizeipräsidium Konstanz",
+    "updates": 0,
     "places": [
       {
         "name": "(Aichhalden",
@@ -3103,10 +3106,7 @@
         "lon": 8.41123,
         "approx": true
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Konstanz",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ludwigsburg|waldenbuch: korrektur - kleidercontainer niedergebrannt",
@@ -3115,6 +3115,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110974/6321943",
     "first": "2026-07-27T09:55:15Z",
     "last": "2026-07-27T09:55:15Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ludwigsburg",
+    "updates": 0,
     "places": [
       {
         "name": "Waldenbuch",
@@ -3122,10 +3125,7 @@
         "lon": 9.1312415,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Offenburg|neuried - ohne führerschein und unter alkoholeinfluss verunfallt, fahrzeug brennt aus",
@@ -3134,6 +3134,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110975/6321919",
     "first": "2026-07-27T09:45:38Z",
     "last": "2026-07-27T09:45:38Z",
+    "veg": false,
+    "source": "Polizeipräsidium Offenburg",
+    "updates": 0,
     "places": [
       {
         "name": "Neuried",
@@ -3147,10 +3150,7 @@
         "lon": 7.86037,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(gp) ebersbach - feuer in wohnung / bei einem brand am samstag konnten alle bewohner das gebäude in ebersbach rechtzeitig verlassen.",
@@ -3159,6 +3159,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6321887",
     "first": "2026-07-27T09:32:51Z",
     "last": "2026-07-27T09:32:51Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
     "places": [
       {
         "name": "Ebersbach",
@@ -3166,10 +3169,7 @@
         "lon": 9.5791447,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(bc) schwendi - mähdrescher brennt gleich zweimal / am samstag und sonntag musste die feuerwehr bei schwendi zu ein und demselben mähdrescher ausrücken. der geriet bei erntearbeiten in brand.",
@@ -3178,6 +3178,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6321874",
     "first": "2026-07-27T09:23:22Z",
     "last": "2026-07-27T09:23:22Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
     "places": [
       {
         "name": "Schwendi",
@@ -3191,10 +3194,7 @@
         "lon": 9.96748,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(bc) langenenslingen - flächenbrand löst feuerwehreinsatz aus / am samstag kam es bei langenenslingen zu einem flächenbrand. rund sieben hektar stoppelfeld brannten nieder.",
@@ -3203,6 +3203,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6321865",
     "first": "2026-07-27T09:17:53Z",
     "last": "2026-07-27T09:17:53Z",
+    "veg": true,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
     "places": [
       {
         "name": "Langenenslingen",
@@ -3210,10 +3213,7 @@
         "lon": 9.3770185,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ludwigsburg|ludwigsburg-eglosheim: mehrere pkw im hof eines sportwagenhandels abgebrannt",
@@ -3222,6 +3222,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110974/6321863",
     "first": "2026-07-27T09:16:49Z",
     "last": "2026-07-27T09:16:49Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ludwigsburg",
+    "updates": 0,
     "places": [
       {
         "name": "Ludwigsburg-Eglosheim",
@@ -3229,10 +3232,7 @@
         "lon": 9.1711704,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ludwigsburg|böblingen: kleidercontainer niedergebrannt",
@@ -3241,6 +3241,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110974/6321775",
     "first": "2026-07-27T08:12:41Z",
     "last": "2026-07-27T08:12:41Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ludwigsburg",
+    "updates": 0,
     "places": [
       {
         "name": "Böblingen",
@@ -3248,10 +3251,7 @@
         "lon": 9.0113444,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Aalen|ostalbkreis: widerstand - einbruch - exhibitionist - unfallflucht - unfälle - sachbeschädigung - brand - diebstahl",
@@ -3260,6 +3260,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6321688",
     "first": "2026-07-27T07:11:40Z",
     "last": "2026-07-27T07:11:40Z",
+    "veg": true,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
     "places": [
       {
         "name": "Ostalbkreis",
@@ -3267,10 +3270,7 @@
         "lon": 10.0337317,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Karlsruhe|(ka) dettenheim - kriminalpolizei sucht zeugen nach mutmaßlicher brandstiftung",
@@ -3279,6 +3279,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110972/6321613",
     "first": "2026-07-27T05:59:20Z",
     "last": "2026-07-27T05:59:20Z",
+    "veg": false,
+    "source": "Polizeipräsidium Karlsruhe",
+    "updates": 0,
     "places": [
       {
         "name": "Dettenheim",
@@ -3286,54 +3289,7 @@
         "lon": 8.4190139,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Karlsruhe",
-    "updates": 0
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|plankstadt/rhein-neckar-kreis: rauchentwicklung in mehrfamilienhaus, pm 2",
-    "status": "out",
-    "title": "Plankstadt/Rhein-Neckar-Kreis: Rauchentwicklung in Mehrfamilienhaus, PM 2",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6321516",
-    "first": "2026-07-26T14:16:59Z",
-    "last": "2026-07-26T14:16:59Z",
-    "places": [
-      {
-        "name": "Plankstadt",
-        "lat": 49.3927294,
-        "lon": 8.5930329,
-        "approx": false
-      },
-      {
-        "name": "Rhein-Neckar-Kreis",
-        "lat": 49.3684797,
-        "lon": 8.7352403,
-        "approx": false
-      }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|mannheim-neckarstadt: flächenbrand an der max-plank straße",
-    "status": "active",
-    "title": "Mannheim-Neckarstadt: Flächenbrand an der Max-Plank Straße",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6321537",
-    "first": "2026-07-26T13:00:47Z",
-    "last": "2026-07-26T16:56:34Z",
-    "places": [
-      {
-        "name": "Mannheim-Neckarstadt",
-        "lat": 49.5046094,
-        "lon": 8.4606257,
-        "approx": false
-      }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 1
+    ]
   },
   {
     "base": "Feuerwehr Weinheim|pkw brand in der mannheimer straße. feuerwehr rettet bewohner aus verrauchter wohnung",
@@ -3350,6 +3306,31 @@
         "name": "Weinheim",
         "lat": 49.5462349,
         "lon": 8.6717458,
+        "approx": false
+      }
+    ]
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|plankstadt/rhein-neckar-kreis: rauchentwicklung in mehrfamilienhaus, pm 2",
+    "status": "out",
+    "title": "Plankstadt/Rhein-Neckar-Kreis: Rauchentwicklung in Mehrfamilienhaus, PM 2",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6321516",
+    "first": "2026-07-26T14:16:59Z",
+    "last": "2026-07-26T14:16:59Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "places": [
+      {
+        "name": "Plankstadt",
+        "lat": 49.3927294,
+        "lon": 8.5930329,
+        "approx": false
+      },
+      {
+        "name": "Rhein-Neckar-Kreis",
+        "lat": 49.3684797,
+        "lon": 8.7352403,
         "approx": false
       }
     ]
@@ -3374,12 +3355,34 @@
     ]
   },
   {
+    "base": "Polizeipräsidium Mannheim|mannheim-neckarstadt: flächenbrand an der max-plank straße",
+    "status": "active",
+    "title": "Mannheim-Neckarstadt: Flächenbrand an der Max-Plank Straße",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6321537",
+    "first": "2026-07-26T13:00:47Z",
+    "last": "2026-07-26T16:56:34Z",
+    "veg": true,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 1,
+    "places": [
+      {
+        "name": "Mannheim-Neckarstadt",
+        "lat": 49.5046094,
+        "lon": 8.4606257,
+        "approx": false
+      }
+    ]
+  },
+  {
     "base": "Polizeipräsidium Mannheim|weinheim/rhein-neckar-kreis: pkw-batterie auslöser für fahrzeugbrand, eine person leicht verletzt",
     "status": "active",
     "title": "Weinheim/Rhein-Neckar-Kreis: Pkw-Batterie Auslöser für Fahrzeugbrand, eine Person leicht verletzt",
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6321360",
     "first": "2026-07-26T06:26:02Z",
     "last": "2026-07-26T06:26:02Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
     "places": [
       {
         "name": "Weinheim",
@@ -3393,10 +3396,7 @@
         "lon": 8.7352403,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Offenburg|oppenau - ermittlungen nach waldbrand eingeleitet",
@@ -3405,6 +3405,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110975/6321286",
     "first": "2026-07-25T22:39:34Z",
     "last": "2026-07-25T22:39:34Z",
+    "veg": true,
+    "source": "Polizeipräsidium Offenburg",
+    "updates": 0,
     "places": [
       {
         "name": "Oppenau",
@@ -3412,10 +3415,7 @@
         "lon": 8.1646682,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Offenburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|mannheim: brand in mehrfamilienhaus - feuerwehr im einsatz - pressemeldung nr. 2",
@@ -3424,6 +3424,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6321113",
     "first": "2026-07-25T01:21:16Z",
     "last": "2026-07-25T01:21:16Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
     "places": [
       {
         "name": "Mannheim",
@@ -3431,10 +3434,7 @@
         "lon": 8.4673098,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|mannheim: brand in mehrfamilienhaus - feuerwehr im einsatz - pressemeldung nr. 1",
@@ -3443,6 +3443,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6321109",
     "first": "2026-07-24T23:59:12Z",
     "last": "2026-07-24T23:59:12Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
     "places": [
       {
         "name": "Mannheim",
@@ -3450,10 +3453,7 @@
         "lon": 8.4673098,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|st. blasien: kleinbrand greift auf waldstück über",
@@ -3462,6 +3462,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6321036",
     "first": "2026-07-24T13:26:32Z",
     "last": "2026-07-24T13:26:32Z",
+    "veg": true,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
     "places": [
       {
         "name": "St. Blasien",
@@ -3469,10 +3472,7 @@
         "lon": 8.131426,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Konstanz|(tuttlingen / lkr. tuttlingen) weizenfeld gerät aus unbekannter ursache in brand: polizei bittet um hinweise (23.07.2026)",
@@ -3481,6 +3481,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110973/6320962",
     "first": "2026-07-24T12:06:17Z",
     "last": "2026-07-24T12:06:17Z",
+    "veg": false,
+    "source": "Polizeipräsidium Konstanz",
+    "updates": 0,
     "places": [
       {
         "name": "(Tuttlingen",
@@ -3494,10 +3497,7 @@
         "lon": 9.22748,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Konstanz",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Heilbronn|main-tauber-kreis: brand",
@@ -3506,6 +3506,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110971/6320927",
     "first": "2026-07-24T11:26:16Z",
     "last": "2026-07-24T11:26:16Z",
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "updates": 0,
     "places": [
       {
         "name": "Main-Tauber-Kreis",
@@ -3513,10 +3516,7 @@
         "lon": 9.6999301,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|vogtsburg: schuppenbrand - feuerwehr verhindert übergreifen der flammen auf wohngebäude",
@@ -3525,6 +3525,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6320539",
     "first": "2026-07-24T07:00:28Z",
     "last": "2026-07-24T07:00:28Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
     "places": [
       {
         "name": "Vogtsburg",
@@ -3532,10 +3535,7 @@
         "lon": 7.6236716,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Heilbronn|stadt- und landkreis heilbronn: lkw-anhänger in brand, bienenvölker beschädigt, einbruch",
@@ -3544,6 +3544,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110971/6320503",
     "first": "2026-07-24T06:32:48Z",
     "last": "2026-07-24T06:32:48Z",
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "updates": 0,
     "places": [
       {
         "name": "Stadt-",
@@ -3557,10 +3560,7 @@
         "lon": 9.24206,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|mannheim: brand in mehrfamilienhaus",
@@ -3569,6 +3569,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6320497",
     "first": "2026-07-24T06:26:10Z",
     "last": "2026-07-24T06:26:10Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
     "places": [
       {
         "name": "Mannheim",
@@ -3576,10 +3579,7 @@
         "lon": 8.4673098,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Stuttgart|brand eins gewerbegebäudes in stuttgart - bad cannstatt - vollbrand des restaurants - mehrere gasflaschen brennen - starke rauchentwicklung",
@@ -3607,6 +3607,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6320232",
     "first": "2026-07-23T11:56:29Z",
     "last": "2026-07-23T11:56:29Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
     "places": [
       {
         "name": "Emmendingen",
@@ -3614,10 +3617,7 @@
         "lon": 7.850993,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|rheinfelden: flächenbrand in der goethestraße",
@@ -3626,6 +3626,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6320175",
     "first": "2026-07-23T11:24:30Z",
     "last": "2026-07-23T11:24:30Z",
+    "veg": true,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
     "places": [
       {
         "name": "Rheinfelden",
@@ -3633,10 +3636,7 @@
         "lon": 7.7861959,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|wehr: brand in wohnung durch defekten drucker",
@@ -3645,6 +3645,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6320139",
     "first": "2026-07-23T10:57:14Z",
     "last": "2026-07-23T10:57:14Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
     "places": [
       {
         "name": "Wehr",
@@ -3652,10 +3655,7 @@
         "lon": 7.9046417,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Heilbronn|neckar-odenwald-kreis: sachbeschädigung und schwelbrand",
@@ -3664,6 +3664,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110971/6320025",
     "first": "2026-07-23T09:20:59Z",
     "last": "2026-07-23T09:20:59Z",
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "updates": 0,
     "places": [
       {
         "name": "Neckar-Odenwald-Kreis",
@@ -3671,10 +3674,7 @@
         "lon": 9.2709386,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ludwigsburg|freiberg am neckar-beihingen: kellerbrand in der nacht zum donnerstag",
@@ -3683,6 +3683,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110974/6319974",
     "first": "2026-07-23T08:56:01Z",
     "last": "2026-07-23T08:56:01Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ludwigsburg",
+    "updates": 0,
     "places": [
       {
         "name": "Freiberg am Neckar-Beihingen",
@@ -3690,10 +3693,7 @@
         "lon": 9.1908965,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ludwigsburg|renningen: brand nach unkrautarbeiten in der lindenstraße",
@@ -3702,6 +3702,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110974/6319973",
     "first": "2026-07-23T08:55:36Z",
     "last": "2026-07-23T08:55:36Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ludwigsburg",
+    "updates": 0,
     "places": [
       {
         "name": "Renningen",
@@ -3709,10 +3712,7 @@
         "lon": 8.9347008,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Stuttgart|staatsanwaltschaft stuttgart und polizei ludwigsburg und stuttgart geben bekannt: mit feuerlöschern besprüht und geschlagen - durchsuchungen bei fünf tatverdächtigen",
@@ -3721,6 +3721,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110977/6319945",
     "first": "2026-07-23T08:34:02Z",
     "last": "2026-07-23T08:34:02Z",
+    "veg": false,
+    "source": "Polizeipräsidium Stuttgart",
+    "updates": 0,
     "places": [
       {
         "name": "Staatsanwaltschaft Stuttgart",
@@ -3734,10 +3737,7 @@
         "lon": 9.1765659,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Stuttgart",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Pforzheim|(enzkreis) niefern-öschelbronn - fahrzeugbrand auf der autobahn 8 führt zu stundenlanger vollsperrung",
@@ -3746,6 +3746,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/137462/6319904",
     "first": "2026-07-23T08:02:58Z",
     "last": "2026-07-23T08:02:58Z",
+    "veg": false,
+    "source": "Polizeipräsidium Pforzheim",
+    "updates": 0,
     "places": [
       {
         "name": "Niefern-Öschelbronn",
@@ -3753,10 +3756,7 @@
         "lon": 8.7980729,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Pforzheim",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Aalen|rems-murr-kreis: mehrere verletzte nach akkubrand",
@@ -3765,6 +3765,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6319713",
     "first": "2026-07-22T18:39:15Z",
     "last": "2026-07-22T18:39:15Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
     "places": [
       {
         "name": "Rems-Murr-Kreis",
@@ -3772,10 +3775,7 @@
         "lon": 9.5037124,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|jestetten: skoda-fahrer flüchtet vor zoll-kontrolle - auto geht in flammen auf",
@@ -3784,6 +3784,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6319635",
     "first": "2026-07-22T13:41:58Z",
     "last": "2026-07-22T13:41:58Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
     "places": [
       {
         "name": "Jestetten",
@@ -3803,10 +3806,7 @@
         "lon": 8.87662,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ludwigsburg|mötzingen: brand in der hohenzollernstraße",
@@ -3815,6 +3815,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110974/6319506",
     "first": "2026-07-22T11:26:25Z",
     "last": "2026-07-22T11:26:25Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ludwigsburg",
+    "updates": 0,
     "places": [
       {
         "name": "Mötzingen",
@@ -3822,10 +3825,7 @@
         "lon": 8.7747087,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(ul) langenau - ballenpresse und stoppelfeld brennen / rund 3.000 euro sachschaden entstanden am dienstag bei einem brand bei langenau.",
@@ -3834,6 +3834,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6319262",
     "first": "2026-07-22T08:27:18Z",
     "last": "2026-07-22T08:27:18Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
     "places": [
       {
         "name": "Langenau",
@@ -3841,10 +3844,7 @@
         "lon": 10.1210951,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Offenburg|achern - brand bei bauarbeiten",
@@ -3853,6 +3853,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110975/6319226",
     "first": "2026-07-22T08:03:14Z",
     "last": "2026-07-22T08:03:14Z",
+    "veg": false,
+    "source": "Polizeipräsidium Offenburg",
+    "updates": 0,
     "places": [
       {
         "name": "Achern",
@@ -3860,10 +3863,7 @@
         "lon": 8.0735581,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Allensbach|bma2 personenschutz",
@@ -3872,6 +3872,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/175384/6318974",
     "first": "2026-07-21T18:14:31Z",
     "last": "2026-07-21T18:14:31Z",
+    "veg": false,
+    "source": "Feuerwehr Allensbach",
+    "updates": 0,
     "places": [
       {
         "name": "Allensbach",
@@ -3879,10 +3882,7 @@
         "lon": 9.0687005,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Allensbach",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Heilbronn|neckar-odenwald-kreis: feld in brand geraten und unfallflucht",
@@ -3891,6 +3891,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110971/6318774",
     "first": "2026-07-21T11:43:48Z",
     "last": "2026-07-21T11:43:48Z",
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "updates": 0,
     "places": [
       {
         "name": "Neckar-Odenwald-Kreis",
@@ -3898,10 +3901,7 @@
         "lon": 9.2709386,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ludwigsburg|holzgerlingen: feuerwerksrakete landet auf sportplatz - zeugen gesucht",
@@ -3910,6 +3910,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110974/6318560",
     "first": "2026-07-21T08:47:51Z",
     "last": "2026-07-21T08:47:51Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ludwigsburg",
+    "updates": 0,
     "places": [
       {
         "name": "Holzgerlingen",
@@ -3917,10 +3920,7 @@
         "lon": 9.0115732,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Stuttgart|staatsanwaltschaft und polizei stuttgart geben bekannt: wohnung in brand gesetzt - tatverdächtige festgenommen",
@@ -3929,6 +3929,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110977/6318008",
     "first": "2026-07-20T12:16:44Z",
     "last": "2026-07-20T12:16:44Z",
+    "veg": false,
+    "source": "Polizeipräsidium Stuttgart",
+    "updates": 0,
     "places": [
       {
         "name": "Staatsanwaltschaft",
@@ -3936,10 +3939,7 @@
         "lon": 9.1719411,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Stuttgart",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Heilbronn|stadt- und landkreis heilbronn: mit messer verletzt, unfälle, bauwagen in brand geraten, widerstand gegen vollstreckungsbeamte, unfallfluchten und einbruch",
@@ -3948,6 +3948,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110971/6317992",
     "first": "2026-07-20T12:09:30Z",
     "last": "2026-07-20T12:09:30Z",
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "updates": 0,
     "places": [
       {
         "name": "Stadt-",
@@ -3955,10 +3958,7 @@
         "lon": 8.694724,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Heilbronn|hohenlohekreis: brand, verkehrsunfall",
@@ -3967,6 +3967,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110971/6317979",
     "first": "2026-07-20T12:03:09Z",
     "last": "2026-07-20T12:03:09Z",
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "updates": 0,
     "places": [
       {
         "name": "Hohenlohekreis",
@@ -3974,10 +3977,7 @@
         "lon": 9.6057331,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Heilbronn|main-tauber-kreis: einbruch, diebstahl, brand, unfall",
@@ -3986,6 +3986,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110971/6317852",
     "first": "2026-07-20T10:49:07Z",
     "last": "2026-07-20T10:49:07Z",
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "updates": 0,
     "places": [
       {
         "name": "Main-Tauber-Kreis",
@@ -3993,10 +3996,7 @@
         "lon": 9.6999301,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ludwigsburg|hessigheim: brand zweier toilettenhäuser - zeugen gesucht",
@@ -4005,6 +4005,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110974/6317708",
     "first": "2026-07-20T09:38:40Z",
     "last": "2026-07-20T09:38:40Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ludwigsburg",
+    "updates": 0,
     "places": [
       {
         "name": "Hessigheim",
@@ -4012,10 +4015,7 @@
         "lon": 9.1883111,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Aalen|ostalbkreis: unfallfluchten - einbruch - vom dach gestürzt - tätlicher angriff - sachbeschädigung - unfälle - brandstiftung",
@@ -4024,6 +4024,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6317550",
     "first": "2026-07-20T08:03:17Z",
     "last": "2026-07-20T08:03:17Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
     "places": [
       {
         "name": "Ostalbkreis",
@@ -4031,10 +4034,7 @@
         "lon": 10.0337317,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(bc) eberhardzell - korrektur ort millionenschaden bei brand eines holzbaubetriebs",
@@ -4043,6 +4043,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6317402",
     "first": "2026-07-20T05:10:12Z",
     "last": "2026-07-20T05:10:12Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
     "places": [
       {
         "name": "Eberhardzell",
@@ -4050,10 +4053,7 @@
         "lon": 9.8233669,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Stuttgart|wohnungsbrand in einem mehrfamilienhaus - stuttgart vaihingen - wohnung in vollbrand - eine verletzte person - raucheintrag in mehrere bereiche des mehrfamilienhauses",
@@ -4062,6 +4062,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/161590/6317385",
     "first": "2026-07-20T00:11:43Z",
     "last": "2026-07-20T00:11:43Z",
+    "veg": false,
+    "source": "Feuerwehr Stuttgart",
+    "updates": 0,
     "places": [
       {
         "name": "Stuttgart",
@@ -4069,10 +4072,7 @@
         "lon": 9.1800132,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Stuttgart",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Aalen|ostalbkreis: pkw nach verkehrsunfall ausgebrannt; rücknahme vermisstenfahndung",
@@ -4081,6 +4081,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6317078",
     "first": "2026-07-18T19:42:17Z",
     "last": "2026-07-18T19:42:17Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
     "places": [
       {
         "name": "Ostalbkreis",
@@ -4088,10 +4091,7 @@
         "lon": 10.0337317,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ludwigsburg|ludwigsburg, korntaler straße: dachstuhlbrand nach blitzeinschlag",
@@ -4100,6 +4100,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110974/6316934",
     "first": "2026-07-18T05:10:44Z",
     "last": "2026-07-18T05:10:44Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ludwigsburg",
+    "updates": 0,
     "places": [
       {
         "name": "Ludwigsburg",
@@ -4113,10 +4116,7 @@
         "lon": 9.1534188,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ludwigsburg|besigheim: blitzeinschlag verursacht dachstuhlbrand",
@@ -4125,6 +4125,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110974/6316586",
     "first": "2026-07-17T10:13:47Z",
     "last": "2026-07-17T10:13:47Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ludwigsburg",
+    "updates": 0,
     "places": [
       {
         "name": "Besigheim",
@@ -4132,10 +4135,7 @@
         "lon": 9.1417523,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(ul) schelklingen - feuer in nebenraum einer garage / am donnerstag kam es wohl durch einen technischen defekt zum brand in einem gebäude bei schelklingen.",
@@ -4144,6 +4144,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6316401",
     "first": "2026-07-17T08:11:07Z",
     "last": "2026-07-17T08:11:07Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
     "places": [
       {
         "name": "Schelklingen",
@@ -4151,10 +4154,7 @@
         "lon": 9.7341832,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(hdh) heidenheim - gasflasche sorgt für fahrzeugbrand / hoher sachschaden entstand am donnerstag bei einem feuer.",
@@ -4163,6 +4163,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6316356",
     "first": "2026-07-17T07:47:16Z",
     "last": "2026-07-17T07:47:16Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
     "places": [
       {
         "name": "Heidenheim",
@@ -4170,10 +4173,7 @@
         "lon": 10.152923,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Weinheim|fettbrand in wohncontainer. eine person leicht verletzt.",
@@ -4182,6 +4182,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/179375/6316189",
     "first": "2026-07-16T20:09:24Z",
     "last": "2026-07-16T20:09:24Z",
+    "veg": false,
+    "source": "Feuerwehr Weinheim",
+    "updates": 0,
     "places": [
       {
         "name": "Weinheim",
@@ -4189,10 +4192,7 @@
         "lon": 8.6717458,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Weinheim",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Heilbronn|stadt- und landkreis heilbronn: einbrüche, brand, unfall, angriff auf polizeibeamte, messer bei kontrolle aufgefunden und verdacht auf sexuellen missbrauch von kindern",
@@ -4201,6 +4201,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110971/6315980",
     "first": "2026-07-16T12:04:18Z",
     "last": "2026-07-16T12:04:18Z",
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "updates": 0,
     "places": [
       {
         "name": "Stadt-",
@@ -4208,10 +4211,7 @@
         "lon": 8.694724,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Offenburg|kippenheim/schmieheim - gebäudebrand",
@@ -4220,6 +4220,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110975/6316102",
     "first": "2026-07-15T13:36:06Z",
     "last": "2026-07-16T13:49:48Z",
+    "veg": false,
+    "source": "Polizeipräsidium Offenburg",
+    "updates": 1,
     "places": [
       {
         "name": "Kippenheim",
@@ -4233,10 +4236,7 @@
         "lon": 7.8578952,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "updates": 1
+    ]
   },
   {
     "base": "Polizeipräsidium Aalen|ostalbkreis: unfallflucht - brennender traktor - arbeiter verletzt sich",
@@ -4245,6 +4245,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6315305",
     "first": "2026-07-15T13:21:55Z",
     "last": "2026-07-15T13:21:55Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
     "places": [
       {
         "name": "Ostalbkreis",
@@ -4252,10 +4255,7 @@
         "lon": 10.0337317,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Heilbronn|stadt- und landkreis heilbronn: kupferkabel gestohlen, widerstand gegen vollstreckungsbeamte, falsche bankmitarbeiter und mähdrescher in brand",
@@ -4264,6 +4264,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110971/6314898",
     "first": "2026-07-15T08:31:35Z",
     "last": "2026-07-15T08:31:35Z",
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "updates": 0,
     "places": [
       {
         "name": "Stadt-",
@@ -4277,10 +4280,7 @@
         "lon": 9.02494,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Aalen|rems-murr-kreis: flächenbrände, motorbrand",
@@ -4289,6 +4289,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6314712",
     "first": "2026-07-15T06:01:49Z",
     "last": "2026-07-15T06:01:49Z",
+    "veg": true,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
     "places": [
       {
         "name": "Rems-Murr-Kreis",
@@ -4296,10 +4299,7 @@
         "lon": 9.5037124,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Pforzheim|(enzkreis) wiernsheim - nachtrag zur pressemitteilung vom 14.07.2026, 14:25 uhr gebäudebrand in wiernsheim-pinache",
@@ -4308,6 +4308,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/137462/6314696",
     "first": "2026-07-15T05:49:29Z",
     "last": "2026-07-15T05:49:29Z",
+    "veg": false,
+    "source": "Polizeipräsidium Pforzheim",
+    "updates": 0,
     "places": [
       {
         "name": "Wiernsheim",
@@ -4315,10 +4318,7 @@
         "lon": 8.898631,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Pforzheim",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Allensbach|b3 gebäude",
@@ -4327,6 +4327,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/175384/6314670",
     "first": "2026-07-15T01:38:36Z",
     "last": "2026-07-15T01:38:36Z",
+    "veg": false,
+    "source": "Feuerwehr Allensbach",
+    "updates": 0,
     "places": [
       {
         "name": "Allensbach",
@@ -4334,10 +4337,7 @@
         "lon": 9.0687005,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Allensbach",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Pforzheim|(enzkreis) wiernsheim - gebäudebrand in wiernsheim-pinache",
@@ -4346,6 +4346,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/137462/6314488",
     "first": "2026-07-14T12:25:00Z",
     "last": "2026-07-14T12:25:00Z",
+    "veg": false,
+    "source": "Polizeipräsidium Pforzheim",
+    "updates": 0,
     "places": [
       {
         "name": "Wiernsheim",
@@ -4353,10 +4356,7 @@
         "lon": 8.898631,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Pforzheim",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Heilbronn|main-tauber-kreis: flächenbrand",
@@ -4365,6 +4365,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110971/6314370",
     "first": "2026-07-14T10:59:41Z",
     "last": "2026-07-14T10:59:41Z",
+    "veg": true,
+    "source": "Polizeipräsidium Heilbronn",
+    "updates": 0,
     "places": [
       {
         "name": "Main-Tauber-Kreis",
@@ -4372,10 +4375,7 @@
         "lon": 9.6999301,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Stuttgart|küchenbrand in mehrfamilienhaus",
@@ -4384,6 +4384,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/161590/6330872",
     "first": "2025-12-19T05:54:14Z",
     "last": "2026-08-11T04:46:08Z",
+    "veg": false,
+    "source": "Feuerwehr Stuttgart",
+    "updates": 1,
     "places": [
       {
         "name": "Stuttgart",
@@ -4391,9 +4394,6 @@
         "lon": 9.1800132,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Stuttgart",
-    "updates": 1
+    ]
   }
 ]
