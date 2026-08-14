@@ -6,6 +6,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/137462/6333189",
     "first": "2026-08-14T06:47:27Z",
     "last": "2026-08-14T06:47:27Z",
+    "veg": false,
+    "source": "Polizeipräsidium Pforzheim",
+    "updates": 0,
     "places": [
       {
         "name": "Pforzheim",
@@ -13,10 +16,7 @@
         "lon": 8.7025509,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Pforzheim",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|mannheim: brand in der güterhallenstraße - pressemeldung nr. 2",
@@ -4406,31 +4406,6 @@
         "lat": 48.8777738,
         "lon": 10.0337317,
         "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Heilbronn|stadt- und landkreis heilbronn: kupferkabel gestohlen, widerstand gegen vollstreckungsbeamte, falsche bankmitarbeiter und mähdrescher in brand",
-    "status": "out",
-    "title": "Stadt- und Landkreis Heilbronn: Kupferkabel gestohlen, Widerstand gegen Vollstreckungsbeamte, falsche Bankmitarbeiter und Mähdrescher in Brand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110971/6314898",
-    "first": "2026-07-15T08:31:35Z",
-    "last": "2026-07-15T08:31:35Z",
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0,
-    "places": [
-      {
-        "name": "Stadt-",
-        "lat": 49.4093582,
-        "lon": 8.694724,
-        "approx": false
-      },
-      {
-        "name": "zwischen Fürfeld und Kirchardt",
-        "lat": 49.20748,
-        "lon": 9.02494,
-        "approx": true
       }
     ]
   },
