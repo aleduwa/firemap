@@ -172,9 +172,12 @@ function Get-PlaceTokens([string]$part) {
     $toks = @()
     foreach ($tok in ($part -replace ' - ', '/') -split '[,/]|\s+und\s+') {
         $tok = ($tok -replace '^\s*\([^)]{1,20}\)\s*', '').Trim().TrimEnd('.')
+        # Halbe Klammern, die beim Split an "/" übrig bleiben:
+        # "(Oberndorf am Neckar / Lkr. Rottweil) ..." -> "(Oberndorf am Neckar"
+        $tok = $tok.Trim([char[]]@('(', ')', ' '))
         if (-not $tok) { continue }
         if ($tok -match '^[ABL]\s?\d+$') { continue }                      # Straßen (A5, B33, L94)
-        if ($tok -match '^(Landkreis|Stadtkreis|Polizeipräsidium|PP|Feuerwehr|Freiwillige)\b') { continue }
+        if ($tok -match '^(Landkreis|Stadtkreis|Kreis|Lkr\.?|Polizeipräsidium|PP|Feuerwehr|Freiwillige)\b') { continue }
         if ($tok -match '\s\S+\s\S+\s\S+') { continue }                    # >3 Wörter: kein Ortsname
         if ($toks -notcontains $tok) { $toks += $tok }
     }

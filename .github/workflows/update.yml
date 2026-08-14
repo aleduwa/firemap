@@ -103,7 +103,7 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: |
           mkdir -p dist/data
-          cp index.html events.html faq.html impressum.html datenschutz.html hinweise.html \
+          cp index.html events.html globe.html faq.html impressum.html datenschutz.html hinweise.html \
              robots.txt sitemap.xml llms.txt favicon.svg og-image.png dist/
           cp -r kreise dist/kreise
           cp data/*.js dist/data/

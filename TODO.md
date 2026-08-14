@@ -30,6 +30,8 @@
 
 ## 3. Nächstes großes Upgrade: MapLibre-Globe
 
+*Prototyp seit 14.08. in Arbeit (`globe.html`, Hintergrund-Agent).*
+
 - [ ] **Leaflet → MapLibre GL JS v5** mit Globe-Projektion (der
   firemap.live-Look: Erde als Kugel beim Rauszoomen, stufenloser
   Vektor-Zoom, dunkle Styles möglich) — kostenlos/ohne Token, im Gegensatz
