@@ -6,6 +6,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110973/6333519",
     "first": "2026-08-14T10:38:44Z",
     "last": "2026-08-14T10:38:44Z",
+    "veg": true,
+    "source": "Polizeipräsidium Konstanz",
+    "updates": 0,
     "places": [
       {
         "name": "(Oberndorf am Neckar",
@@ -13,10 +16,7 @@
         "lon": 8.5711222,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Konstanz",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|march: mehrere flächenbrände durch mutmaßliche brandstiftung",
@@ -357,9 +357,9 @@
     "base": "Polizeipräsidium Aalen|rems-murr-kreis: pkw und flächenbrand, arbeitsunfall",
     "status": "active",
     "title": "Rems-Murr-Kreis: Pkw und Flächenbrand, Arbeitsunfall",
-    "link": "https://www.presseportal.de/blaulicht/pm/110969/6332206",
+    "link": "https://www.presseportal.de/blaulicht/pm/110969/6333531",
     "first": "2026-08-12T13:41:14Z",
-    "last": "2026-08-12T13:41:14Z",
+    "last": "2026-08-14T10:51:25Z",
     "veg": true,
     "source": "Polizeipräsidium Aalen",
     "updates": 0,
@@ -369,6 +369,12 @@
         "lat": 48.8966799,
         "lon": 9.5037124,
         "approx": false
+      },
+      {
+        "name": "B29 zwischen Remshalden und Winterbach",
+        "lat": 48.80572,
+        "lon": 9.4562,
+        "approx": true
       }
     ]
   },
