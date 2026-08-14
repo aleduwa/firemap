@@ -1,11 +1,33 @@
 [
   {
+    "base": "Polizeipräsidium Konstanz|(oberndorf am neckar / lkr. rottweil) unbekannte lösen vermutlich beim grillen waldbrand aus: polizei bittet um hinweise (13.08.2026)",
+    "status": "out",
+    "title": "(Oberndorf am Neckar / Lkr. Rottweil) Unbekannte lösen vermutlich beim Grillen Waldbrand aus: Polizei bittet um Hinweise (13.08.2026)",
+    "link": "https://www.presseportal.de/blaulicht/pm/110973/6333519",
+    "first": "2026-08-14T10:38:44Z",
+    "last": "2026-08-14T10:38:44Z",
+    "places": [
+      {
+        "name": "(Oberndorf am Neckar",
+        "lat": 48.2908613,
+        "lon": 8.5711222,
+        "approx": false
+      }
+    ],
+    "veg": true,
+    "source": "Polizeipräsidium Konstanz",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Freiburg|march: mehrere flächenbrände durch mutmaßliche brandstiftung",
     "status": "active",
     "title": "March: Mehrere Flächenbrände durch mutmaßliche Brandstiftung",
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6333444",
     "first": "2026-08-14T09:47:56Z",
     "last": "2026-08-14T09:47:56Z",
+    "veg": true,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
     "places": [
       {
         "name": "March",
@@ -19,10 +41,7 @@
         "lon": 7.79424,
         "approx": true
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(gp) göppingen - brennende zigarette löst brand aus / einsatzkräfte rückten am donnerstag zu einem brand bei göppingen-faurndau aus.",
@@ -31,6 +50,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6333391",
     "first": "2026-08-14T09:12:39Z",
     "last": "2026-08-14T09:12:39Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
     "places": [
       {
         "name": "Göppingen",
@@ -38,10 +60,7 @@
         "lon": 9.6541116,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Pforzheim|(cw) nagold - brand in einem bewaldeten bereich fordert die einsatzkräfte",
@@ -790,11 +809,11 @@
   },
   {
     "base": "Polizeipräsidium Heilbronn|stadt- und landkreis heilbronn: flächenbrand, fahrzeugbrand und automatenaufbruch",
-    "status": "active",
+    "status": "out",
     "title": "Stadt- und Landkreis Heilbronn: Flächenbrand, Fahrzeugbrand und Automatenaufbruch",
-    "link": "https://www.presseportal.de/blaulicht/pm/110971/6331339",
+    "link": "https://www.presseportal.de/blaulicht/pm/110971/6333518",
     "first": "2026-08-11T10:57:41Z",
-    "last": "2026-08-11T10:57:41Z",
+    "last": "2026-08-14T10:38:16Z",
     "veg": true,
     "source": "Polizeipräsidium Heilbronn",
     "updates": 0,
