@@ -1,5 +1,43 @@
 [
   {
+    "base": "Polizeipräsidium Mannheim|mannheim: brand in der güterhallenstraße - pressemeldung nr. 2",
+    "status": "out",
+    "title": "Mannheim: Brand in der Güterhallenstraße - Pressemeldung Nr. 2",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6333091",
+    "first": "2026-08-14T01:06:47Z",
+    "last": "2026-08-14T01:06:47Z",
+    "places": [
+      {
+        "name": "Mannheim",
+        "lat": 49.4892913,
+        "lon": 8.4673098,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|mannheim: brand in der güterhallenstraße - feuerwehr im einsatz - pressemeldung nr. 1",
+    "status": "active",
+    "title": "Mannheim: Brand in der Güterhallenstraße - Feuerwehr im Einsatz - Pressemeldung Nr. 1",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6333088",
+    "first": "2026-08-13T23:42:28Z",
+    "last": "2026-08-13T23:42:28Z",
+    "places": [
+      {
+        "name": "Mannheim",
+        "lat": 49.4892913,
+        "lon": 8.4673098,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Offenburg|friesenheim - gebäudebrand - polizei bittet um zeugen",
     "status": "contained",
     "title": "Friesenheim - Gebäudebrand - Polizei bittet um Zeugen",
@@ -4411,25 +4449,6 @@
         "name": "Wiernsheim",
         "lat": 48.8854377,
         "lon": 8.898631,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Allensbach|b3 gebäude",
-    "status": "out",
-    "title": "B3 Gebäude",
-    "link": "https://www.presseportal.de/blaulicht/pm/175384/6314670",
-    "first": "2026-07-15T01:38:36Z",
-    "last": "2026-07-15T01:38:36Z",
-    "veg": false,
-    "source": "Feuerwehr Allensbach",
-    "updates": 0,
-    "places": [
-      {
-        "name": "Allensbach",
-        "lat": 47.7168668,
-        "lon": 9.0687005,
         "approx": false
       }
     ]
