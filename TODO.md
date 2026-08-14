@@ -57,7 +57,9 @@
   LLM-Klassifikation im Cron)
 - [ ] Weitere Feuerwehr-Quellen: Gemeinde-Wehren ohne Presseportal (z. B.
   Waldkirch) per Site-Scraper, wenn gewünscht
-- [ ] og-image gelegentlich aktualisieren (statischer Screenshot vom 13.08.)
+- [x] ~~og-image aktualisieren~~ **erledigt 14.08.**: `node scripts/og-image.mjs`
+  schießt das Bild reproduzierbar aus der echten Karte (1200×630, kein
+  Zuschneiden von Hand) — nach jedem Redesign einfach neu laufen lassen.
 
 ## Architektur-Merkzettel
 
