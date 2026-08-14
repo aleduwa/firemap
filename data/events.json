@@ -6,6 +6,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6333091",
     "first": "2026-08-14T01:06:47Z",
     "last": "2026-08-14T01:06:47Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
     "places": [
       {
         "name": "Mannheim",
@@ -13,10 +16,7 @@
         "lon": 8.4673098,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|mannheim: brand in der güterhallenstraße - feuerwehr im einsatz - pressemeldung nr. 1",
@@ -25,6 +25,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6333088",
     "first": "2026-08-13T23:42:28Z",
     "last": "2026-08-13T23:42:28Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
     "places": [
       {
         "name": "Mannheim",
@@ -32,10 +35,7 @@
         "lon": 8.4673098,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Offenburg|friesenheim - gebäudebrand - polizei bittet um zeugen",
