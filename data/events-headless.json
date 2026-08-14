@@ -1,94 +1,21 @@
 {
- "generated": "2026-08-13T15:49:01.505Z",
+ "generated": "2026-08-14T06:24:43.450Z",
  "window": [
-  "2026-08-13",
-  "2026-11-10"
+  "2026-08-14",
+  "2026-11-12"
  ],
  "warnings": [
   "ZweiTälerLand tPortal (TOMAS): Ergebnisliste leer (Suche liefert serverseitig aktuell keine Treffer).",
+  "RegioTrends RegioKalender/Seed https://www.regiotrends.de/de/regiotermine/index.news.280435.samstag,-22.-august…: page.goto: net::ERR_CONNECTION_REFUSED at https://www.regiotrends.de/de/regiotermine/index.news.280435.samstag,-22.-august,-seenachtsfest-der-landjugend-oberprechtal.html",
+  "RegioTrends RegioKalender/Kreis Emmendingen: page.goto: net::ERR_CONNECTION_REFUSED at https://www.regiotrends.de/de/regiotermine/index.html",
+  "RegioTrends RegioKalender/Stadtkreis Freiburg: page.goto: net::ERR_CONNECTION_REFUSED at https://www.regiotrends.de/de/regiotermine/index.html",
+  "RegioTrends RegioKalender/Breisgau-Hochschwarzwald: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.html",
+  "RegioTrends RegioKalender/Ort Elzach: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.html",
+  "RegioTrends RegioKalender/Ort Waldkirch: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.html",
+  "RegioTrends RegioKalender/Ort Emmendingen: page.goto: Timeout 60000ms exceeded.",
+  "RegioTrends RegioKalender/Ort Denzlingen: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.html",
   "RegioTrends RegioKalender/Ort Kirchzarten: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.html",
-  "RegioTrends RegioKalender/Ort Breisach: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.html",
-  "RegioTrends RegioKalender/Seed https://www.regiotrends.de/de/regiotermine/index.news.280435.samstag,-22.-august…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.280435.samstag,-22.-august,-seenachtsfest-der-landjugend-oberprechtal.html",
-  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.567410.15.-august-2026-org…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.567410.15.-august-2026-orgelfuehrung-mit-achim-schneider-in-waldkirch---staunen%2C-entdecken%2C-lauschen.html",
-  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.567409.29.-august-2026-gem…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.567409.29.-august-2026-gemeinsam-kochen-im-roten-haus-in-waldkirch---die-kuechenbande-verbindet-generationen-.html",
-  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.567297.feuerwehrhock-an-de…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.567297.feuerwehrhock-an-der-elzhalle-in-wasser---am-samstag%2C-den-05.-und-sonntag%2C-den-06.-september-2026-veranstaltung-der-freiwilligen-feuerwehr-em-abteilung-wasser-.html",
-  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.566945.19.20.-september-20…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.566945.19.20.-september-2026-61.-emmendinger-kuenstlermarkt---17.-rhythmus-unter-freiem-himmel.html",
-  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.566610.26.-september-2026-…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.566610.26.-september-2026-kindersachenflohmarkt-und-offene-buecherei-im-kurhaus-freiamt---anmeldungen-fuer-flohmarkt-sind-ab-sofort-moeglich-.html",
-  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.567360.27.-august-2026--be…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.567360.27.-august-2026--beruflich-am-ball-bleiben--in-freiburg---offene-sprechstunde-der-berufsberatung-im-erwerbsleben---veranstaltung-in-der-agentur-fuer-arbeit-.html"
+  "RegioTrends RegioKalender/Ort Breisach: page.goto: Timeout 60000ms exceeded."
  ],
- "events": [
-  {
-   "title": "Thomas Erle stellt neuen Schwarzwaldkrimi „Tod am Belchen“ in Emmendingen vor - Veranstaltung bietet Einblick in neuen Roman, der rätselhaften Todesfall mit Geschichte des Autors Johann Peter Hebel verbindet",
-   "start": "2026-08-13T19:00",
-   "place": "Emmendingen",
-   "address": "Emmendingen, Deutschland",
-   "url": "https://www.regiotrends.de/de/regiotermine/index.news.566310.13.-august-2026-thomas-erle-stellt-neuen-schwarzwaldkrimi-tod-am-belchen-in-emmendingen-vor---veranstaltung-bietet-einblick-in-neuen-roman%2C-der-raetselhaften-todesfall-mit-geschichte-des-autors-johann-peter-hebel-verbindet-.html",
-   "source": "RegioTrends"
-  },
-  {
-   "title": "Orgelführung mit Achim Schneider in Waldkirch - Staunen, Entdecken, Lauschen",
-   "start": "2026-08-15",
-   "place": "Waldkirch",
-   "address": "Waldkirch, Deutschland",
-   "url": "https://www.regiotrends.de/de/regiotermine/index.news.567410.15.-august-2026-orgelfuehrung-mit-achim-schneider-in-waldkirch---staunen%2C-entdecken%2C-lauschen.html",
-   "source": "RegioTrends"
-  },
-  {
-   "title": "Gemeinsam kochen im Roten Haus in Waldkirch - „Die Küchenbande“ verbindet Generationen",
-   "start": "2026-08-29",
-   "place": "Waldkirch",
-   "address": "Waldkirch, Deutschland",
-   "url": "https://www.regiotrends.de/de/regiotermine/index.news.567409.29.-august-2026-gemeinsam-kochen-im-roten-haus-in-waldkirch---die-kuechenbande-verbindet-generationen-.html",
-   "source": "RegioTrends"
-  },
-  {
-   "title": "Feuerwehrhock an der Elzhalle in Wasser - Am Samstag, den 05. und Sonntag, den 06. September 2026 Veranstaltung der Freiwilligen Feuerwehr EM Abteilung Wasser",
-   "start": "2026-09-06",
-   "place": "Emmendingen-Wasser",
-   "address": "Emmendingen-Wasser, Deutschland",
-   "url": "https://www.regiotrends.de/de/regiotermine/index.news.567297.feuerwehrhock-an-der-elzhalle-in-wasser---am-samstag%2C-den-05.-und-sonntag%2C-den-06.-september-2026-veranstaltung-der-freiwilligen-feuerwehr-em-abteilung-wasser-.html",
-   "source": "RegioTrends"
-  },
-  {
-   "title": "Sichelhängi am 13.9.2026 im Heimathaus in Windereute des Heimatvereins WIndenreute",
-   "start": "2026-09-13T10:30",
-   "place": "Windenreute",
-   "address": "Windenreute, Deutschland",
-   "url": "https://www.regiotrends.de/de/regiotermine/index.news.567059.sichelhaengi-am-13.9.2026-im-heimathaus-in-windereute-des-heimatvereins-windenreute.html",
-   "source": "RegioTrends"
-  },
-  {
-   "title": "61. Emmendinger Künstlermarkt - 17. Rhythmus unter freiem Himmel",
-   "start": "2026-09-19",
-   "place": "Emmendingen",
-   "address": "Emmendingen, Deutschland",
-   "url": "https://www.regiotrends.de/de/regiotermine/index.news.566945.19.20.-september-2026-61.-emmendinger-kuenstlermarkt---17.-rhythmus-unter-freiem-himmel.html",
-   "source": "RegioTrends",
-   "end": "2026-09-20"
-  },
-  {
-   "title": "Kindersachenflohmarkt und offene Bücherei im Kurhaus Freiamt - Anmeldungen für Flohmarkt sind ab sofort möglich",
-   "start": "2026-09-26",
-   "place": "Freiamt",
-   "address": "Freiamt, Deutschland",
-   "url": "https://www.regiotrends.de/de/regiotermine/index.news.566610.26.-september-2026-kindersachenflohmarkt-und-offene-buecherei-im-kurhaus-freiamt---anmeldungen-fuer-flohmarkt-sind-ab-sofort-moeglich-.html",
-   "source": "RegioTrends"
-  },
-  {
-   "title": "\"Beruflich am Ball bleiben\" in Freiburg - Offene Sprechstunde der Berufsberatung im Erwerbsleben - Veranstaltung in der Agentur für Arbeit",
-   "start": "2026-08-27",
-   "place": "Freiburg",
-   "address": "Freiburg, Deutschland",
-   "url": "https://www.regiotrends.de/de/regiotermine/index.news.567360.27.-august-2026--beruflich-am-ball-bleiben--in-freiburg---offene-sprechstunde-der-berufsberatung-im-erwerbsleben---veranstaltung-in-der-agentur-fuer-arbeit-.html",
-   "source": "RegioTrends"
-  },
-  {
-   "title": "„Frühe Industrialisierung im Südlichen Markgräflerland - eine Spurensuche“ in Badenweiler - Ortskuratorium Müllheim/Markgräflerland und Deutsche Stiftung Denkmalschutz laden zu Vortrag ein",
-   "start": "2026-09-03T19:00",
-   "place": "Hochschwarzwald - Badenweiler",
-   "address": "Hochschwarzwald - Badenweiler, Deutschland",
-   "url": "https://www.regiotrends.de/de/regiotermine/index.news.567222.3.-september-2026-fruehe-industrialisierung-im-suedlichen-markgraeflerland---eine-spurensuche-in-badenweiler---ortskuratorium-muellheimmarkgraeflerland-und-deutsche-stiftung-denkmalschutz-laden-zu-vortrag-ein--.html",
-   "source": "RegioTrends"
-  }
- ]
+ "events": []
 }
