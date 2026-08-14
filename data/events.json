@@ -1,5 +1,24 @@
 [
   {
+    "base": "Polizeipräsidium Pforzheim|(cw) nagold - brand in einem bewaldeten bereich fordert die einsatzkräfte",
+    "status": "active",
+    "title": "(CW) Nagold - Brand in einem bewaldeten Bereich fordert die Einsatzkräfte",
+    "link": "https://www.presseportal.de/blaulicht/pm/137462/6333362",
+    "first": "2026-08-14T08:46:49Z",
+    "last": "2026-08-14T08:46:49Z",
+    "places": [
+      {
+        "name": "Nagold",
+        "lat": 48.5512399,
+        "lon": 8.7234942,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Pforzheim",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Pforzheim|(pf) pforzheim - brand an blitzeranhänger - polizei sucht zeugen!",
     "status": "active",
     "title": "(PF) Pforzheim - Brand an Blitzeranhänger - Polizei sucht Zeugen!",
