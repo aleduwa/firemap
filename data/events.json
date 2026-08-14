@@ -6,6 +6,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/161590/6333818",
     "first": "2026-08-14T22:11:22Z",
     "last": "2026-08-14T22:11:22Z",
+    "veg": false,
+    "source": "Feuerwehr Stuttgart",
+    "updates": 0,
     "places": [
       {
         "name": "Stuttgart",
@@ -13,10 +16,7 @@
         "lon": 9.1800132,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Stuttgart",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|wehr: dachstuhlbrand in der storchenstraße",
