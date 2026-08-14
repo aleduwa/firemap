@@ -185,7 +185,7 @@ function Get-PlaceTokens([string]$part) {
 $rawReports = [System.Collections.Generic.List[object]]::new()
 $seenLinks = [System.Collections.Generic.HashSet[string]]::new()
 
-function Invoke-ReportItem($feed, [string]$title, [string]$desc, [string]$link, $pubDate) {
+function Invoke-ReportItem($feed, [string]$title, [string]$desc, [string]$link, $pubDate, [string]$fullBody) {
     if ($link -and -not $seenLinks.Add($link)) { return }
     if (($title + ' ' + $desc) -notmatch $fireRegex) { return }
 
@@ -213,8 +213,8 @@ function Invoke-ReportItem($feed, [string]$title, [string]$desc, [string]$link, 
     if (-not $places -and $feed.place) { $places = @($feed.place) }
     if (-not $places) { return }
 
-    # Volltext der Detailseite für Positions-, Status- und Datums-Extraktion
-    $article = Get-Article $link
+    # Volltext: API liefert ihn direkt (body); sonst Detailseite mit Cache
+    $article = if ($fullBody) { @{ t = $fullBody; d = $null } } else { Get-Article $link }
     $fullText = "$t. $desc $($article.t)"
 
     # Brandmeldeanlagen-Einsätze, die sich als Fehlalarm herausstellen -> raus
@@ -257,18 +257,50 @@ function Invoke-ReportItem($feed, [string]$title, [string]$desc, [string]$link, 
 }
 
 # --- RSS einlesen (+ optional Archiv-Backfill) ------------------------------
+# Offizieller API-Zugang (news aktuell, "ots"): liefert Volltext + ISO-Datum
+# direkt — RSS + Artikel-Scraping dienen nur noch als Fallback ohne Key.
+$ppApiKey = $env:PRESSEPORTAL_API_KEY
+
 foreach ($feed in $rssFeeds) {
-    Write-Host "RSS: $($feed.name) ..."
-    try {
-        $xml = [xml](Invoke-WebRequest -Uri $feed.url -UseBasicParsing -Headers @{ 'User-Agent' = 'Mozilla/5.0' }).Content
-        foreach ($item in $xml.rss.channel.item) {
-            Invoke-ReportItem $feed ([string]$item.title) ([string]$item.description) ([string]$item.link) ([string]$item.pubDate)
+    $officeId = if ($feed.url -match 'dienststelle_(\d+)') { $Matches[1] } else { $null }
+    $usedApi = $false
+
+    if ($ppApiKey -and $officeId) {
+        try {
+            Write-Host "API: $($feed.name) ..."
+            $pages = if ($Backfill) { 0..7 } else { @(0) }   # Backfill: bis 400 Stories je Stelle
+            foreach ($p in $pages) {
+                $uri = 'https://api.presseportal.de/api/v2/stories/office/{0}?api_key={1}&format=json&limit=50&start={2}' -f `
+                    $officeId, $ppApiKey, ($p * 50)
+                $resp = Invoke-RestMethod -Uri $uri -TimeoutSec 40
+                if (-not $resp.success) { throw [string]$resp.error.msg }
+                $stories = @($resp.content.story)
+                if ($stories.Count -eq 0) { break }
+                foreach ($st in $stories) {
+                    Invoke-ReportItem $feed ([string]$st.title) '' ([string]$st.url) ([string]$st.published) ([string]$st.body)
+                }
+                if ($stories.Count -lt 50) { break }
+                Start-Sleep -Milliseconds 300
+            }
+            $usedApi = $true
+        } catch {
+            Write-Warning "API $($feed.name) fehlgeschlagen ($_) — RSS-Fallback."
         }
-    } catch {
-        Write-Warning "Feed $($feed.name) nicht abrufbar: $_"   # ein toter Feed stoppt nicht den Lauf
     }
 
-    if ($Backfill -and $feed.url -match 'dienststelle_(\d+)') {
+    if (-not $usedApi) {
+        Write-Host "RSS: $($feed.name) ..."
+        try {
+            $xml = [xml](Invoke-WebRequest -Uri $feed.url -UseBasicParsing -Headers @{ 'User-Agent' = 'Mozilla/5.0' }).Content
+            foreach ($item in $xml.rss.channel.item) {
+                Invoke-ReportItem $feed ([string]$item.title) ([string]$item.description) ([string]$item.link) ([string]$item.pubDate) $null
+            }
+        } catch {
+            Write-Warning "Feed $($feed.name) nicht abrufbar: $_"   # ein toter Feed stoppt nicht den Lauf
+        }
+    }
+
+    if ((-not $usedApi) -and $Backfill -and $feed.url -match 'dienststelle_(\d+)') {
         $id = $Matches[1]
         Write-Host "  Backfill: $BackfillPages Archivseiten ..."
         for ($off = 0; $off -lt $BackfillPages * 30; $off += 30) {
@@ -281,7 +313,7 @@ foreach ($feed in $rssFeeds) {
                 $aTitle = [System.Net.WebUtility]::HtmlDecode($m.Groups['title'].Value)
                 # Nur Brand-verdächtige Titel kosten einen Artikel-Abruf
                 if ($aTitle -notmatch $fireRegex) { continue }
-                Invoke-ReportItem $feed $aTitle '' $m.Groups['href'].Value $null
+                Invoke-ReportItem $feed $aTitle '' $m.Groups['href'].Value $null $null
             }
             Start-Sleep -Milliseconds 300
         }

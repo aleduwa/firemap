@@ -4,11 +4,10 @@
 
 ## 1. Wartet auf Schlüssel/Antworten (Anträge sind raus)
 
-- [ ] **Presseportal-API-Key** (Antwort per E-Mail ausstehend)
-  → danach: `update-reports.ps1` von RSS/Archiv-Scraping auf die offizielle API
-  umstellen, **„ots"-Kennzeichnung** je Meldung ergänzen (Pflicht laut
-  Provisions), tieferes Archiv laden, 2-Jahre-Löschfrist als hartes Limit in
-  den Ereignisspeicher.
+- [x] ~~Presseportal-API~~ **umgestellt 14.08.**: alle 27 Dienststellen via
+  offizieller API (Volltext + ISO-Datum direkt, 50 Stories/Stelle statt ~30
+  RSS-Items, Backfill via Paging), „ots"-Kennzeichnung im Tooltip, RSS als
+  Fallback ohne Key; 2-Jahre-Frist durch 30-Tage-Store ohnehin eingehalten.
 - [ ] **Open-Data-Pool BW Token** (TMBW, Antwort per E-Mail ausstehend)
   → danach: Event-Pipeline von den gescrapten Widget-Tokens auf den eigenen
   toubiz-Zugang umstellen (stabilste Stelle der Pipeline), **CC-Lizenz je

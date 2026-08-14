@@ -1,11 +1,33 @@
 [
   {
+    "base": "Polizeipräsidium Freiburg|wehr: dachstuhlbrand in der storchenstraße",
+    "status": "out",
+    "title": "Wehr: Dachstuhlbrand in der Storchenstraße",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6333741",
+    "first": "2026-08-14T13:46:24Z",
+    "last": "2026-08-14T13:46:24Z",
+    "places": [
+      {
+        "name": "Wehr",
+        "lat": 47.6286078,
+        "lon": 7.9046417,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Stuttgart|häckselmaschine und häckselhaufen in vollbrand - rauchsäule weithin sichtbar - häckselmaschine und angrenzender häckselhaufen bei eintreffen der feuerwehr in vollbrand - vier löschrohre im einsatz",
     "status": "out",
     "title": "Häckselmaschine und Häckselhaufen in Vollbrand - Rauchsäule weithin sichtbar - Häckselmaschine und angrenzender Häckselhaufen bei Eintreffen der Feuerwehr in Vollbrand - Vier Löschrohre im Einsatz",
     "link": "https://www.presseportal.de/blaulicht/pm/161590/6333704",
     "first": "2026-08-14T12:51:13Z",
     "last": "2026-08-14T12:51:13Z",
+    "veg": false,
+    "source": "Feuerwehr Stuttgart",
+    "updates": 0,
     "places": [
       {
         "name": "Stuttgart",
@@ -13,10 +35,7 @@
         "lon": 9.1800132,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Stuttgart",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|grenzach-wyhlen: grillen im garten endet mit feuerwehreinsatz",
@@ -25,6 +44,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6333697",
     "first": "2026-08-14T12:47:21Z",
     "last": "2026-08-14T12:47:21Z",
+    "veg": true,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
     "places": [
       {
         "name": "Grenzach-Wyhlen",
@@ -32,10 +54,7 @@
         "lon": 7.6737981,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|weilheim/ remetschwiel: flächenbrand mit zwei leichtverletzten und rund 10.000 euro sachschaden",
@@ -44,6 +63,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6333659",
     "first": "2026-08-14T12:10:42Z",
     "last": "2026-08-14T12:10:42Z",
+    "veg": true,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
     "places": [
       {
         "name": "Weilheim",
@@ -57,10 +79,7 @@
         "lon": 8.1506958,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|dachsberg/ urberg: flächenbrand löst großeinsatz von feuerwehr aus",
@@ -69,6 +88,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6333657",
     "first": "2026-08-14T12:09:44Z",
     "last": "2026-08-14T12:09:44Z",
+    "veg": true,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
     "places": [
       {
         "name": "Dachsberg",
@@ -82,10 +104,7 @@
         "lon": 8.1241619,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Konstanz|(oberndorf am neckar / lkr. rottweil) unbekannte lösen vermutlich beim grillen waldbrand aus: polizei bittet um hinweise (13.08.2026)",
@@ -450,7 +469,7 @@
     "last": "2026-08-14T10:51:25Z",
     "veg": true,
     "source": "Polizeipräsidium Aalen",
-    "updates": 0,
+    "updates": 1,
     "places": [
       {
         "name": "Rems-Murr-Kreis",
@@ -910,7 +929,7 @@
     "last": "2026-08-14T10:38:16Z",
     "veg": true,
     "source": "Polizeipräsidium Heilbronn",
-    "updates": 0,
+    "updates": 1,
     "places": [
       {
         "name": "Stadt-",

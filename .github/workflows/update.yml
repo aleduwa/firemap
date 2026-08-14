@@ -36,6 +36,7 @@ jobs:
         shell: pwsh
         env:
           FIREMAP_BACKFILL: ${{ inputs.backfill }}
+          PRESSEPORTAL_API_KEY: ${{ secrets.PRESSEPORTAL_API_KEY }}
         run: ./update-reports.ps1
 
       - name: Satellitendaten aktualisieren
