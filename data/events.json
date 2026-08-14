@@ -1,11 +1,58 @@
 [
   {
+    "base": "Polizeipräsidium Freiburg|march: mehrere flächenbrände durch mutmaßliche brandstiftung",
+    "status": "active",
+    "title": "March: Mehrere Flächenbrände durch mutmaßliche Brandstiftung",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6333444",
+    "first": "2026-08-14T09:47:56Z",
+    "last": "2026-08-14T09:47:56Z",
+    "places": [
+      {
+        "name": "March",
+        "lat": 48.0578573,
+        "lon": 7.7790038,
+        "approx": false
+      },
+      {
+        "name": "zwischen March und Freiburg-Hochdorf",
+        "lat": 48.04742,
+        "lon": 7.79424,
+        "approx": true
+      }
+    ],
+    "veg": true,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Ulm|(gp) göppingen - brennende zigarette löst brand aus / einsatzkräfte rückten am donnerstag zu einem brand bei göppingen-faurndau aus.",
+    "status": "out",
+    "title": "(GP) Göppingen - Brennende Zigarette löst Brand aus / Einsatzkräfte rückten am Donnerstag zu einem Brand bei Göppingen-Faurndau aus.",
+    "link": "https://www.presseportal.de/blaulicht/pm/110979/6333391",
+    "first": "2026-08-14T09:12:39Z",
+    "last": "2026-08-14T09:12:39Z",
+    "places": [
+      {
+        "name": "Göppingen",
+        "lat": 48.7031377,
+        "lon": 9.6541116,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Pforzheim|(cw) nagold - brand in einem bewaldeten bereich fordert die einsatzkräfte",
     "status": "active",
     "title": "(CW) Nagold - Brand in einem bewaldeten Bereich fordert die Einsatzkräfte",
     "link": "https://www.presseportal.de/blaulicht/pm/137462/6333362",
     "first": "2026-08-14T08:46:49Z",
     "last": "2026-08-14T08:46:49Z",
+    "veg": false,
+    "source": "Polizeipräsidium Pforzheim",
+    "updates": 0,
     "places": [
       {
         "name": "Nagold",
@@ -13,10 +60,7 @@
         "lon": 8.7234942,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Pforzheim",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Pforzheim|(pf) pforzheim - brand an blitzeranhänger - polizei sucht zeugen!",
