@@ -1,6 +1,6 @@
-// Selbstverifikation für globe.html (MapLibre-Globus-Prototyp).
+// Selbstverifikation für index.html (MapLibre-Feuerkarte mit Globus-Projektion).
 //
-// Startet einen minimalen Static-Server auf dem Repo-Root, lädt globe.html mit
+// Startet einen minimalen Static-Server auf dem Repo-Root, lädt index.html mit
 // Playwright/Chromium in Desktop- und Mobil-Viewport, sammelt Console-Errors und
 // fehlgeschlagene Netzwerk-Requests und legt Screenshots ab.
 //
@@ -91,7 +91,7 @@ async function run(browser, name, viewport, opts = {}) {
     }
   });
 
-  await page.goto(`${BASE}/globe.html`, { waitUntil: 'load', timeout: 60000 });
+  await page.goto(`${BASE}/index.html`, { waitUntil: 'load', timeout: 60000 });
 
   // Warten, bis MapLibre den Stil samt Tiles fertig geladen hat
   await page.waitForFunction(() => window.__globeMap && window.__globeMap.loaded(), null,

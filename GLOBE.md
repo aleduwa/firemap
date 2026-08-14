@@ -1,14 +1,19 @@
-# globe.html — Globus-Prototyp auf MapLibre GL JS
+# Die Feuerkarte auf MapLibre GL JS (Globus)
 
-Prototyp der Feuerkarte auf **MapLibre GL JS 5.24.0** mit **Globe-Projektion**:
+Die Feuerkarte (`index.html`) läuft auf **MapLibre GL JS 5.24.0** mit **Globe-Projektion**:
 Vektorkarte mit stufenlosem Zoom, beim Rauszoomen wird die Erde zur Kugel.
 Ziel ist der Look von firemap.live — aber **ohne Account, ohne API-Key, ohne
 Kosten**.
 
-Die Produktivkarte `index.html` (Leaflet) bleibt unverändert. `globe.html` läuft
-daneben zum Vergleich und ist per `<meta name="robots" content="noindex, nofollow">`
-von der Indexierung ausgenommen. Erreichbar unter
-<https://map.aleduwa.de/globe.html>.
+Seit dem 14.08.2026 ist das die reguläre Feuerkarte unter <https://map.aleduwa.de/>.
+Die frühere Leaflet-Karte lebt als `klassisch.html` weiter (noindex): Sie nutzt
+reine Rasterkacheln und dient als Auffangnetz für Browser ohne WebGL — `index.html`
+leitet dorthin um, wenn kein WebGL-Kontext zustande kommt. `globe.html` ist nur
+noch eine Weiterleitung auf `/`, damit alte Links des Prototyps nicht ins Leere
+laufen.
+
+Die **Eventkarte** (`events.html`) ist bewusst noch auf Leaflet — siehe Abschnitt
+"Grenzen": für ihre Venue-Cluster gibt es in MapLibre kein direktes Gegenstück.
 
 ---
 

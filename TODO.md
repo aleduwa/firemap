@@ -28,19 +28,23 @@
   (7 Narben, u. a. Weil am Rhein 2,16 ha), Layer/Legende/Quellen eingebaut,
   läuft täglich 06:10 UTC.
 
-## 3. Nächstes großes Upgrade: MapLibre-Globe
+## 3. MapLibre-Globe
 
-*Prototyp seit 14.08. in Arbeit (`globe.html`, Hintergrund-Agent).*
-
-- [ ] **Leaflet → MapLibre GL JS v5** mit Globe-Projektion (der
-  firemap.live-Look: Erde als Kugel beim Rauszoomen, stufenloser
-  Vektor-Zoom, dunkle Styles möglich) — kostenlos/ohne Token, im Gegensatz
-  zu deren Mapbox-Stack.
-  - [ ] Tiles: **Protomaps/PMTiles auf Cloudflare R2** (Cent-Kosten) —
-    löst gleichzeitig OSM-Tile-Policy-Risiko und entfernt die letzte
-    Drittanbieter-IP-Übertragung (Datenschutzerklärung vereinfachen!)
-  - [ ] Erst **Prototyp der Feuerkarte** zum Vergleichen, dann beide Karten
-    portieren (Marker/Cluster/Tooltips/Layer-Toggles auf MapLibre-API)
+- [x] ~~Prototyp~~ **erledigt 14.08.**: MapLibre GL 5.24 mit Globus-Projektion,
+  eigener POI-freier Vektorstil auf OpenFreeMap-Kacheln.
+- [x] ~~**Feuerkarte portiert**~~ **erledigt 14.08.**: `index.html` ist jetzt
+  die MapLibre-Karte; die Leaflet-Version lebt als `klassisch.html` weiter
+  (noindex) und fängt Browser ohne WebGL ab. `globe.html` leitet auf `/`.
+- [ ] **Eventkarte portieren** — größere Baustelle als die Feuerkarte:
+  MapLibre hat **kein Äquivalent zu Leaflet.markercluster**; Clustering geht
+  nur quellenseitig und nicht für DOM-Marker. Die Venue-Cluster-Badges wären
+  also ein Umbau, keine Portierung. Erst angehen, wenn die Feuerkarte sich
+  im Alltag bewährt hat.
+- [ ] Tiles: **Protomaps/PMTiles auf Cloudflare R2** (Anleitung mit geprüften
+  Zahlen steht in `GLOBE.md`) — entfernt die letzte Drittanbieter-IP-
+  Übertragung der Feuerkarte und macht uns unabhängig von OpenFreeMap.
+- [ ] Nach ein paar Wochen ohne Beschwerden: `klassisch.html` überdenken
+  (Wartung von zwei Karten kostet).
 
 ## 4. Backlog / Gelegenheiten
 

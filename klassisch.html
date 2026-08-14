@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Feuerkarte Baden-Württemberg – klassische Karte (ohne WebGL)</title>
+<meta name="description" content="Aktuelle Waldbrände &amp; Feuerwehreinsätze in Baden-Württemberg – Freiburg, Offenburg, Schwarzwald. Satelliten-Branddetektionen (NASA FIRMS), Einsatzmeldungen, DWD-Waldbrandgefahr.">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://map.aleduwa.de/">
+<meta name="theme-color" content="#8f1d1d">
+<meta name="geo.region" content="DE-BW">
+<meta name="geo.placename" content="Baden-Württemberg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Feuerkarte Baden-Württemberg">
+<meta property="og:title" content="Feuerkarte Baden-Württemberg – aktuelle Waldbrände &amp; Feuerwehreinsätze">
+<meta property="og:description" content="Live-Karte: Satelliten-Branddetektionen, Polizei- und Feuerwehrmeldungen sowie DWD-Waldbrandgefahr für Baden-Württemberg – von Freiburg über Offenburg bis in den Schwarzwald.">
+<meta property="og:url" content="https://map.aleduwa.de/">
+<meta property="og:locale" content="de_DE">
+<meta property="og:image" content="https://map.aleduwa.de/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Feuerkarte Baden-Württemberg – aktuelle Waldbrände &amp; Feuerwehreinsätze">
+<meta name="twitter:description" content="Satelliten-Branddetektionen, Einsatzmeldungen und DWD-Waldbrandgefahr für Baden-Württemberg auf einer Karte.">
+<meta name="twitter:image" content="https://map.aleduwa.de/og-image.png">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://unpkg.com">
+<link rel="preconnect" href="https://tile.openstreetmap.org">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+  :root {
+    --ink:        #0b0b0b;
+    --ink-2:      #52514e;
+    --muted:      #898781;
+    --surface:    #fcfcfb;
+    --hairline:   rgba(11,11,11,0.10);
+    --age-0:      #8f1d1d;   /* < 24 h  */
+    --age-1:      #d03b3b;   /* 24–48 h */
+    --age-2:      #f0956e;   /* älter   */
+    --persistent: #898781;   /* dauerhafte Wärmequelle (Industrie) */
+  }
+  html, body { height: 100%; margin: 0; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--ink); background: var(--surface); }
+  #map { height: 100%; }
+
+  .panel {
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(11,11,11,0.12);
+    padding: 10px 12px;
+    font-size: 13px;
+    line-height: 1.45;
+    max-width: 280px;
+  }
+  .panel h1 { font-size: 14px; margin: 0 0 4px; font-weight: 650; }
+  .panel .meta { color: var(--ink-2); font-size: 12px; }
+  .panel .meta b { color: var(--ink); font-weight: 600; }
+
+  .range-ctl { display: flex; gap: 4px; padding: 6px; }
+  .range-ctl .lbl { font-size: 11.5px; color: var(--ink-2); align-self: center; padding: 0 4px 0 2px; }
+  .range-btn {
+    border: 1px solid var(--hairline); background: var(--surface); color: var(--ink-2);
+    border-radius: 6px; padding: 3px 8px; font-size: 12px; cursor: pointer;
+    font-family: inherit;
+  }
+  .range-btn:hover { background: #f1f0ec; }
+  .range-btn.active { background: #8f1d1d; border-color: #8f1d1d; color: #fff; font-weight: 600; }
+
+  .legend .row { display: flex; align-items: center; gap: 8px; margin-top: 6px; }
+  .legend .dot { width: 14px; height: 14px; border-radius: 50%; border: 2px solid #fff; box-shadow: 0 0 0 1px var(--hairline); flex: none; }
+  .legend .dot.dashed { border: 2px dashed #fff; }
+  .legend .label { color: var(--ink-2); font-size: 12px; }
+  .legend .size-hint { margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--hairline); color: var(--muted); font-size: 11.5px; }
+
+  .leaflet-tooltip.fire-tip {
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(11,11,11,0.18);
+    padding: 8px 10px;
+    font-size: 12.5px;
+    line-height: 1.5;
+    color: var(--ink);
+  }
+  .fire-tip .tip-head { font-weight: 650; margin-bottom: 2px; }
+  .fire-tip .tip-sub { color: var(--ink-2); }
+  .fire-tip .tip-flag { color: var(--muted); font-style: italic; margin-top: 3px; }
+  .fire-tip table { border-collapse: collapse; margin-top: 4px; }
+  .fire-tip td { padding: 0 0 1px; color: var(--ink); }
+  .fire-tip td:first-child { color: var(--ink-2); padding-right: 10px; }
+
+  .leaflet-control-attribution { font-size: 10px; }
+
+  /* OSM-Basiskarte beruhigen: fast monochrom, leicht aufgehellt —
+     POI-Symbole (Gipfel, Kliniken …) verblassen, Daten-Layer stechen hervor */
+  .basemap-muted { filter: saturate(0.15) brightness(1.06) contrast(0.9); }
+
+  .mode-switch { position: absolute; top: 10px; left: 50%; transform: translateX(-50%); z-index: 1001;
+    display: flex; background: #fcfcfb; border: 1px solid rgba(11,11,11,.1); border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(11,11,11,.12); overflow: hidden; }
+  .mode-switch a { padding: 6px 14px; font-size: 13px; text-decoration: none; color: #52514e; }
+  .mode-switch a.active { background: #8f1d1d; color: #fff; font-weight: 600; }
+  .mode-switch a:not(.active):hover { background: #f1f0ec; }
+
+  /* Einklapp-Buttons der Karten-Panels: nur auf Mobile sichtbar */
+  .mob-toggle { display: none; }
+
+  /* Mobile: Panels als Icons einklappbar, damit die Karte Platz hat;
+     Desktop-Darstellung bleibt unverändert (alles in der Media Query) */
+  @media (max-width: 640px) {
+    body { height: 100dvh; }
+    .mode-switch a { padding: 9px 12px; }
+    .leaflet-control-zoom { display: none; }
+    .leaflet-top.leaflet-left { top: 44px; }
+    .leaflet-top.leaflet-right { top: 44px; }
+    .leaflet-left .leaflet-control { margin-left: 8px; margin-top: 8px; }
+    .leaflet-right .leaflet-control { margin-right: 8px; margin-top: 8px; }
+    .panel { max-width: min(230px, calc(100vw - 60px)); padding: 8px 10px; }
+    .range-btn { padding: 8px 10px; font-size: 13px; min-height: 36px; }
+    .range-ctl { flex-wrap: wrap; }
+    .legend { max-width: 200px; max-height: 38vh; overflow-y: auto; overscroll-behavior: contain; }
+    .legend .size-hint { display: none; }
+
+    .mob-toggle { display: flex; align-items: center; justify-content: center;
+      width: 36px; height: 36px; border: 0; background: transparent; padding: 0;
+      font-size: 18px; line-height: 1; cursor: pointer; flex: none; font-family: inherit; }
+    .mob-collapsible.collapsed { width: 42px; height: 42px; padding: 3px; overflow: hidden;
+      max-width: 42px; max-height: 42px; }
+    .mob-collapsible.collapsed > *:not(.mob-toggle) { display: none !important; }
+  }
+</style>
+</head>
+<body>
+<div id="map"></div>
+<div class="mode-switch"><a href="index.html">🔥 Feuerkarte</a><a href="events.html">🎉 Eventkarte</a><a href="klassisch.html" class="active">🗺️ Klassisch</a></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/@turf/turf@6.5.0/turf.min.js"></script>
+<script src="data/fires.js"></script>
+<script src="data/reports.js"></script>
+<script src="data/wbi.js"></script>
+<script src="data/brandnarben.js"></script>
+<script>
+(function () {
+  const map = L.map('map', { zoomControl: true });
+  // Ganz Baden-Württemberg
+  map.fitBounds(L.latLngBounds([47.53, 7.5], [49.8, 10.5]).pad(0.03));
+  map.attributionControl.setPrefix(
+    '<a href="https://leafletjs.com" rel="noopener">Leaflet</a> &middot; ' +
+    '<a href="faq.html">FAQ</a> &middot; ' +
+    '<a href="impressum.html">Impressum</a> &middot; ' +
+    '<a href="datenschutz.html">Datenschutz</a> &middot; ' +
+    '<a href="hinweise.html">Hinweise &amp; Quellen</a>');
+
+  // ---- Basiskarten -------------------------------------------------------
+  // Kartentypen (Auswahl bleibt gespeichert; Standard: dezent, damit die
+  // Daten-Marker gegenüber den POI-Symbolen des OSM-Stils dominieren)
+  const osmAttrib = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>';
+  const baseLayers = {
+    'Karte (dezent)': L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19, className: 'basemap-muted', attribution: osmAttrib }),
+    'Karte (bunt)': L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19, attribution: osmAttrib }),
+    'Hellgrau (Esri)': L.layerGroup([
+      L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+        maxZoom: 16, attribution: 'Kartenbild &copy; Esri' }),
+      L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}', {
+        maxZoom: 16 })
+    ]),
+    'Satellit (Esri)': L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+      maxZoom: 19, attribution: 'Bilddaten &copy; Esri, Maxar, Earthstar Geographics' })
+  };
+  let baseChoice = localStorage.getItem('firemap.base') || 'Karte (dezent)';
+  if (!baseLayers[baseChoice]) baseChoice = 'Karte (dezent)';
+  baseLayers[baseChoice].addTo(map);
+  map.on('baselayerchange', e => localStorage.setItem('firemap.base', e.name));
+
+  // ---- Offizielle EFFIS-Layer (Copernicus, WMS) --------------------------
+  const effisWms = 'https://maps.effis.emergency.copernicus.eu/effis?';
+  const effisHotspots = L.tileLayer.wms(effisWms, {
+    layers: 'all.hs', format: 'image/png', transparent: true, opacity: 0.85,
+    attribution: 'Hotspots &copy; <a href="https://forest-fire.emergency.copernicus.eu/">EFFIS/Copernicus</a>'
+  });
+  const effisBurnt = L.tileLayer.wms(effisWms, {
+    layers: 'effis.nrt.ba,modis.ba.poly', format: 'image/png', transparent: true, opacity: 0.75,
+    attribution: 'Brandfl&auml;chen &copy; EFFIS/Copernicus'
+  });
+
+  // ---- Daten & Hilfsfunktionen -------------------------------------------
+  const AGE = [
+    { max: 24,       color: '#8f1d1d', label: 'letzte 24 Stunden' },
+    { max: 48,       color: '#d03b3b', label: '24–48 Stunden' },
+    { max: Infinity, color: '#f0956e', label: 'älter' }
+  ];
+  const CONF_LABEL = { l: 'niedrig', n: 'nominal', h: 'hoch', low: 'niedrig', nominal: 'nominal', high: 'hoch' };
+
+  const data = window.FIRE_DATA || { points: [], generated: '–' };
+  const reportData = window.REPORT_DATA || { reports: [] };
+  const wbiData = window.WBI_DATA || { stations: [] };
+  const now = Date.now();
+
+  // Dauerhafte Wärmequellen (Raffinerien, Stahlwerke …) erkennen:
+  // gleiche ~1-km-Zelle an >= 5 verschiedenen Tagen detektiert. (5 statt 4,
+  // damit ein mehrtägiger echter Waldbrand nicht als Industrie durchgeht.)
+  const cellDays = new Map();
+  for (const p of data.points) {
+    const cell = p.lat.toFixed(2) + '/' + p.lon.toFixed(2);
+    if (!cellDays.has(cell)) cellDays.set(cell, new Set());
+    cellDays.get(cell).add(p.date);
+  }
+  const isPersistent = p => cellDays.get(p.lat.toFixed(2) + '/' + p.lon.toFixed(2)).size >= 5;
+
+  function acqDate(p) {
+    return new Date(p.date + 'T' + p.time.slice(0, 2) + ':' + p.time.slice(2) + ':00Z');
+  }
+  function ageClass(p) {
+    const h = (now - acqDate(p).getTime()) / 3.6e6;
+    return AGE.findIndex(a => h <= a.max);
+  }
+  function fmtLocal(d) {
+    return d.toLocaleString('de-DE', {
+      timeZone: 'Europe/Berlin', weekday: 'short', day: '2-digit', month: '2-digit',
+      hour: '2-digit', minute: '2-digit'
+    }) + ' Uhr';
+  }
+
+  function tooltipHtml(p, persistent) {
+    const d = acqDate(p);
+    const conf = CONF_LABEL[String(p.conf).toLowerCase()] || (p.conf + ' %');
+    return '<div class="tip-head">Satelliten-Detektion</div>' +
+      '<div class="tip-sub">' + fmtLocal(d) + ' (lokal)</div>' +
+      '<table>' +
+      '<tr><td>Satellit</td><td>' + p.source + '</td></tr>' +
+      '<tr><td>Feuerleistung</td><td>' + p.frp.toFixed(1) + ' MW (FRP)</td></tr>' +
+      '<tr><td>Helligkeit</td><td>' + Math.round(p.bright) + ' K</td></tr>' +
+      '<tr><td>Konfidenz</td><td>' + conf + '</td></tr>' +
+      '<tr><td>Tag/Nacht</td><td>' + (p.dn === 'D' ? 'Tag' : 'Nacht') + '</td></tr>' +
+      '<tr><td>Position</td><td>' + p.lat.toFixed(4) + ', ' + p.lon.toFixed(4) + '</td></tr>' +
+      '</table>' +
+      (persistent ? '<div class="tip-flag">Wahrscheinlich dauerhafte W&auml;rmequelle (Industrie)</div>' : '');
+  }
+
+  // scan/track = Pixelgröße des Sensors in km. Der Footprint zeigt ehrlich,
+  // wie grob eine Detektion ist; die Vereinigung überlappender Footprints
+  // benachbarter Detektionen ergibt eine grobe Schätzung der betroffenen Fläche.
+  function footprintPolygon(p) {
+    const rLat = (p.track || 0.375) / 2 / 111;
+    const rLon = (p.scan || 0.375) / 2 / (111 * Math.cos(p.lat * Math.PI / 180));
+    const ring = [];
+    for (let a = 0; a < 360; a += 30) {
+      const rad = a * Math.PI / 180;
+      ring.push([p.lon + rLon * Math.cos(rad), p.lat + rLat * Math.sin(rad)]);
+    }
+    ring.push(ring[0]);
+    return turf.polygon([ring]);
+  }
+
+  const STATUS_LABEL = { active: 'aktiv / unklar', contained: 'unter Kontrolle', out: 'gelöscht' };
+  // veg=true: kräftiger roter Ring (Vegetationsbrand); sonst neutraler Ring
+  const fireIcon = (approx, status, veg) => L.divIcon({
+    className: '', iconSize: [26, 26], iconAnchor: [13, 13],
+    html: '<div style="width:26px;height:26px;border-radius:50%;background:#fcfcfb;' +
+          'border:2px ' + (approx ? 'dashed' : 'solid') + ' ' +
+          (status === 'out' ? '#898781' : (veg ? '#8f1d1d' : '#52514e')) + ';' +
+          'box-shadow:0 1px 4px rgba(11,11,11,.25);display:flex;align-items:center;justify-content:center;' +
+          'font-size:14px;' + (status === 'out' ? 'filter:grayscale(1);opacity:.7' : '') + '">🔥</div>'
+  });
+
+  function nearbySatCount(lat, lon, tFirst, tLast) {
+    const from = new Date(tFirst).getTime() - 48 * 3.6e6;
+    const to = new Date(tLast).getTime() + 24 * 3.6e6;
+    return data.points.filter(p => {
+      const t = acqDate(p).getTime();
+      if (t < from || t > to) return false;
+      const dLat = (p.lat - lat) * 111, dLon = (p.lon - lon) * 74;   // km
+      return Math.hypot(dLat, dLon) <= 5;
+    }).length;
+  }
+
+  // ---- Layer (Inhalte werden je Zeitraum-Filter neu befüllt) --------------
+  const firesLayer = L.layerGroup().addTo(map);
+  const areaLayer = L.layerGroup().addTo(map);
+  const footprintLayer = L.layerGroup();
+  // Waldfokus: Vegetationsbrände standardmäßig an, sonstige Brände
+  // (Gebäude, Fahrzeuge, Küchen …) zuschaltbar; Wahl bleibt gespeichert
+  const reportsVegLayer = L.layerGroup().addTo(map);
+  const reportsOtherLayer = L.layerGroup();
+  if (localStorage.getItem('firemap.showOther') === '1') reportsOtherLayer.addTo(map);
+
+  // ---- DWD-Waldbrandgefahrenindex (optional, unabhängig vom Filter) -------
+  const WBI_COLOR = { 1: '#6a994e', 2: '#f2cc45', 3: '#f1a13a', 4: '#d03b3b', 5: '#7a1717' };
+  const WBI_LABEL = { 1: 'sehr gering', 2: 'gering', 3: 'mittel', 4: 'hoch', 5: 'sehr hoch' };
+  const wbiLayer = L.layerGroup();
+  wbiData.stations.forEach(s => {
+    const icon = L.divIcon({
+      className: '', iconSize: [22, 22], iconAnchor: [11, 11],
+      html: '<div style="width:22px;height:22px;border-radius:4px;background:' + WBI_COLOR[s.today] + ';' +
+            'border:2px solid #fff;box-shadow:0 0 0 1px rgba(11,11,11,.15);display:flex;align-items:center;' +
+            'justify-content:center;font-size:12px;font-weight:700;color:' + (s.today >= 4 || s.today === 1 ? '#fff' : '#0b0b0b') + '">' +
+            s.today + '</div>'
+    });
+    L.marker([s.lat, s.lon], { icon: icon })
+      .bindTooltip(
+        '<div class="tip-head">Waldbrandgefahr (DWD): Stufe ' + s.today + ' — ' + WBI_LABEL[s.today] + '</div>' +
+        '<div class="tip-sub">Station ' + s.name + '</div>' +
+        '<table><tr><td>Morgen</td><td>Stufe ' + s.tomorrow + ' — ' + WBI_LABEL[s.tomorrow] + '</td></tr>' +
+        '<tr><td>Stand</td><td>' + s.issued + ' UTC</td></tr></table>',
+        { className: 'fire-tip', sticky: true, direction: 'top', offset: [0, -10] })
+      .addTo(wbiLayer);
+  });
+
+  // ---- Echte Brandnarben (Sentinel-2 dNBR, täglich berechnet) -------------
+  const scarData = window.BURNSCAR_DATA || { scars: [] };
+  const scarLayer = L.layerGroup().addTo(map);
+  scarData.scars.forEach(s => {
+    const poly = L.geoJSON(s.geojson, {
+      style: { color: '#7b1fa2', weight: 2, fillColor: '#7b1fa2', fillOpacity: 0.35 }
+    });
+    poly.bindTooltip(
+      '<div class="tip-head">Brandnarbe (Sentinel-2, dNBR)</div>' +
+      '<table><tr><td>Fl&auml;che</td><td>ca. ' + s.ha.toLocaleString('de-DE') + ' ha</td></tr>' +
+      '<tr><td>Vorher-Bild</td><td>' + s.preDate + '</td></tr>' +
+      '<tr><td>Nachher-Bild</td><td>' + s.postDate + '</td></tr></table>' +
+      (s.eventBase ? '<div class="tip-flag">Ereignis: ' + s.eventBase.split('|')[1] + '</div>' : ''),
+      { className: 'fire-tip', sticky: true });
+    poly.addTo(scarLayer);
+  });
+
+  // ---- Zeitraum-Filter ----------------------------------------------------
+  const RANGES = [
+    { days: 1,  label: 'Heute' },
+    { days: 3,  label: '3 T' },
+    { days: 7,  label: '7 T' },
+    { days: 14, label: '14 T' },
+    { days: 30, label: '30 T' }
+  ];
+  let rangeDays = +(localStorage.getItem('firemap.range') || 14);
+  if (!RANGES.some(r => r.days === rangeDays)) rangeDays = 14;
+
+  let legendDiv = null;
+  const counts = [0, 0, 0];
+  let persistentCount = 0, vegReports = 0, otherReports = 0;
+
+  function rebuild() {
+    const cutoff = now - rangeDays * 864e5;
+    firesLayer.clearLayers(); areaLayer.clearLayers();
+    footprintLayer.clearLayers(); reportsVegLayer.clearLayers(); reportsOtherLayer.clearLayers();
+    counts[0] = counts[1] = counts[2] = 0;
+    persistentCount = 0; vegReports = 0; otherReports = 0;
+
+    // Satelliten-Detektionen (FIRMS liefert max. 7 Tage)
+    const pts = data.points.filter(p => acqDate(p).getTime() >= cutoff);
+    pts.slice()
+      .sort((a, b) => acqDate(a) - acqDate(b))       // frisch zuletzt = oben
+      .forEach(p => {
+        const persistent = isPersistent(p);
+        const cls = ageClass(p);
+        counts[cls]++; if (persistent) persistentCount++;
+        const r = Math.max(5, Math.min(18, 4 + 2.2 * Math.sqrt(Math.max(p.frp, 0))));
+        L.circleMarker([p.lat, p.lon], {
+          radius: r,
+          fillColor: persistent ? '#898781' : AGE[cls].color,
+          fillOpacity: 0.85,
+          color: '#ffffff',
+          weight: 2,
+          dashArray: persistent ? '3 3' : null
+        })
+        .bindTooltip(tooltipHtml(p, persistent), { className: 'fire-tip', sticky: true, direction: 'top', offset: [0, -6] })
+        .addTo(firesLayer);
+      });
+
+    // Footprints + geschätzte Flächen aus den gefilterten Punkten
+    const nonPersistent = pts.filter(p => !isPersistent(p));
+    nonPersistent.forEach(p => {
+      const cls = ageClass(p);
+      L.geoJSON(footprintPolygon(p), {
+        style: { color: AGE[cls].color, weight: 1, fillColor: AGE[cls].color, fillOpacity: 0.12, interactive: false }
+      }).addTo(footprintLayer);
+    });
+
+    // Cluster benachbarter Detektionen (Union-Find)
+    const parent = nonPersistent.map((_, i) => i);
+    const find = i => parent[i] === i ? i : (parent[i] = find(parent[i]));
+    for (let i = 0; i < nonPersistent.length; i++)
+      for (let j = i + 1; j < nonPersistent.length; j++) {
+        const a = nonPersistent[i], b = nonPersistent[j];
+        const dKm = Math.hypot((a.lat - b.lat) * 111, (a.lon - b.lon) * 74);
+        // Verknüpfungsdistanz wächst mit der Pixelgröße (am Swath-Rand > 1 km)
+        const link = Math.max(1, ((a.scan || 0.375) + (b.scan || 0.375)) / 2);
+        if (dKm <= link) parent[find(i)] = find(j);
+      }
+    const clusters = new Map();
+    nonPersistent.forEach((p, i) => {
+      const r = find(i);
+      if (!clusters.has(r)) clusters.set(r, []);
+      clusters.get(r).push(p);
+    });
+
+    clusters.forEach(cpts => {
+      if (cpts.length < 2) return;
+      let union = footprintPolygon(cpts[0]);
+      for (let k = 1; k < cpts.length; k++) {
+        try { union = turf.union(union, footprintPolygon(cpts[k])); } catch (e) { /* topologie-fehler ignorieren */ }
+      }
+      const ha = Math.round(turf.area(union) / 10000);
+      const dates = cpts.map(p => acqDate(p).getTime());
+      const newest = new Date(Math.max.apply(null, dates));
+      const oldest = new Date(Math.min.apply(null, dates));
+      const cls = AGE.findIndex(a => (now - newest.getTime()) / 3.6e6 <= a.max);
+      const maxFrp = Math.max.apply(null, cpts.map(p => p.frp));
+      L.geoJSON(union, {
+        style: { color: AGE[cls].color, weight: 2, dashArray: '4 4', fillColor: AGE[cls].color, fillOpacity: 0.25 }
+      }).bindTooltip(
+        '<div class="tip-head">Gesch&auml;tzte betroffene Fl&auml;che</div>' +
+        '<div class="tip-sub">aus ' + cpts.length + ' Satelliten-Detektionen (Pixel-Union, ~375 m Aufl&ouml;sung)</div>' +
+        '<table>' +
+        '<tr><td>Fl&auml;che (grob)</td><td>ca. ' + ha + ' ha</td></tr>' +
+        '<tr><td>Zeitraum</td><td>' + fmtLocal(oldest) + ' – ' + fmtLocal(newest) + '</td></tr>' +
+        '<tr><td>Max. Feuerleistung</td><td>' + maxFrp.toFixed(1) + ' MW</td></tr>' +
+        '</table>',
+        { className: 'fire-tip', sticky: true }
+      ).addTo(areaLayer);
+    });
+
+    // Einsatzmeldungen (Filter auf letzte Aktivität)
+    // Marker mit identischen Koordinaten leicht spiralig versetzen,
+    // damit keiner unsichtbar unter einem anderen liegt
+    const stackCount = new Map();
+    function unstack(lat, lon) {
+      const key = lat.toFixed(3) + '/' + lon.toFixed(3);
+      const n = stackCount.get(key) || 0;
+      stackCount.set(key, n + 1);
+      if (n === 0) return [lat, lon];
+      const ang = n * 2.4, r = 0.004 + 0.001 * n;   // Spirale, ~400 m Schritte
+      return [lat + r * Math.cos(ang), lon + r * Math.sin(ang) * 1.5];
+    }
+
+    reportData.reports
+      .filter(rep => new Date(rep.last).getTime() >= cutoff)
+      .forEach(rep => {
+        if (rep.veg) { vegReports++; } else { otherReports++; }
+        rep.places.forEach(pl => {
+          const satN = nearbySatCount(pl.lat, pl.lon, rep.first, rep.last);
+          const tip = '<div class="tip-head">' + (rep.veg ? 'Vegetationsbrand' : 'Brand') + ' — Einsatzmeldung</div>' +
+            '<div class="tip-sub">' + rep.title + '</div>' +
+            '<table>' +
+            '<tr><td>Ort</td><td>' + pl.name +
+              (pl.approx ? ' <i>(ungef&auml;hr)</i>'
+                         : (/kreis$/i.test(pl.name) ? ' <i>(nur Kreis-Ebene bekannt)</i>' : '')) + '</td></tr>' +
+            '<tr><td>Status</td><td>' + (STATUS_LABEL[rep.status] || rep.status) + '</td></tr>' +
+            '<tr><td>Gemeldet</td><td>' + fmtLocal(new Date(rep.first)) + '</td></tr>' +
+            (rep.updates ? '<tr><td>Folgemeldungen</td><td>' + rep.updates + '</td></tr>' : '') +
+            '<tr><td>Quelle</td><td>' + rep.source + ' (ots)</td></tr>' +
+            '<tr><td>Satellit</td><td>' + (satN ? satN + ' Detektion(en) in der N&auml;he'
+                                                : 'keine — nur lokal gemeldet') + '</td></tr>' +
+            '</table>';
+          const linkHtml = '<a href="' + rep.link + '" target="_blank" rel="noopener">Pressemeldung lesen</a>';
+          const m = L.marker(unstack(pl.lat, pl.lon), { icon: fireIcon(pl.approx || /kreis$/i.test(pl.name), rep.status, rep.veg) });
+          if (IS_TOUCH) {
+            m.bindPopup('<div class="fire-tip">' + tip + '<div style="margin-top:6px"><b>' + linkHtml + '</b></div></div>');
+          } else {
+            m.bindTooltip(tip + '<div class="tip-flag">Klicken f&uuml;r Original-Pressemeldung</div>',
+                { className: 'fire-tip', sticky: true, direction: 'top', offset: [0, -12] })
+             .bindPopup('<b>' + rep.title + '</b><br>' + linkHtml);
+          }
+          m.addTo(rep.veg ? reportsVegLayer : reportsOtherLayer);
+        });
+      });
+
+    renderLegend();
+  }
+
+  function renderLegend() {
+    if (!legendDiv) return;
+    legendDiv.innerHTML = '<button class="mob-toggle" aria-label="Legende ein-/ausblenden" title="Legende">☰</button>' +
+      '<h1>Zeitraum: ' + rangeDays + ' Tag' + (rangeDays > 1 ? 'e' : '') + '</h1>' +
+      AGE.map((a, i) =>
+        '<div class="row"><span class="dot" style="background:' + a.color + '"></span>' +
+        '<span class="label">Detektion ' + a.label + ' (' + counts[i] + ')</span></div>'
+      ).join('') +
+      '<div class="row"><span class="dot dashed" style="background:#898781"></span>' +
+      '<span class="label">dauerhafte Wärmequelle / Industrie (' + persistentCount + ')</span></div>' +
+      '<div class="row"><span style="font-size:14px;flex:none;filter:drop-shadow(0 0 1px #8f1d1d)">🔥</span>' +
+      '<span class="label">Vegetationsbrand-Meldung (' + vegReports + ')</span></div>' +
+      '<div class="row"><span style="font-size:14px;flex:none;filter:grayscale(.6)">🔥</span>' +
+      '<span class="label">sonstiger Brand — Geb&auml;ude/Kfz (' + otherReports + ', zuschaltbar)</span></div>' +
+      '<div class="row"><span class="dot" style="background:rgba(143,29,29,.25);border:2px dashed #8f1d1d;border-radius:4px"></span>' +
+      '<span class="label">geschätzte betroffene Fläche</span></div>' +
+      '<div class="row"><span class="dot" style="background:rgba(123,31,162,.35);border:2px solid #7b1fa2;border-radius:4px"></span>' +
+      '<span class="label">Brandnarbe Sentinel-2 (' + scarData.scars.length + ')</span></div>' +
+      '<div class="size-hint">Kreisgröße = Feuerleistung (FRP in MW).<br>' +
+      'Satellitendaten reichen max. 7 Tage zurück.<br>' +
+      'Graues 🔥 = gemeldet als gelöscht.</div>';
+  }
+
+  // ---- Bedienelemente ----------------------------------------------------
+  // Auf Mobile: Panels per Icon ein-/ausklappen; beim Öffnen die anderen
+  // schließen, damit die Karte frei bleibt
+  const isMobile = () => window.matchMedia && window.matchMedia('(max-width: 640px)').matches;
+  // Touch: Tap löst Hover UND Klick aus -> Tooltip weglassen, Details ins Popup
+  const IS_TOUCH = window.matchMedia && window.matchMedia('(hover: none)').matches;
+  function toggleCollapse(div) {
+    const wasOpen = !div.classList.contains('collapsed');
+    if (wasOpen) { div.classList.add('collapsed'); return; }
+    document.querySelectorAll('.mob-collapsible').forEach(p => p.classList.add('collapsed'));
+    div.classList.remove('collapsed');
+  }
+
+  L.control.layers(
+    baseLayers,
+    {
+      'Satelliten-Detektionen (NASA FIRMS)': firesLayer,
+      'Geschätzte betroffene Flächen (Satellit)': areaLayer,
+      'Brandnarben (Sentinel-2, dNBR)': scarLayer,
+      'Detektions-Footprints (Pixelgröße)': footprintLayer,
+      'Vegetationsbrände (Meldungen)': reportsVegLayer,
+      'Sonstige Brände (Gebäude/Kfz …)': reportsOtherLayer,
+      'Waldbrandgefahr heute (DWD-WBI)': wbiLayer,
+      'Vergleich: offizielle Hotspots (EFFIS, ohne Details)': effisHotspots,
+      'Vergleich: offizielle Brandflächen (EFFIS)': effisBurnt
+    },
+    // Überall eingeklapptes Icon-Menü, unten links (konsistent mit Eventkarte)
+    { collapsed: true, position: 'bottomleft' }
+  ).addTo(map);
+  // Wahl "sonstige Brände anzeigen" merken
+  map.on('overlayadd',    e => { if (e.layer === reportsOtherLayer) localStorage.setItem('firemap.showOther', '1'); });
+  map.on('overlayremove', e => { if (e.layer === reportsOtherLayer) localStorage.setItem('firemap.showOther', '0'); });
+
+  const info = L.control({ position: 'topleft' });
+  info.onAdd = function () {
+    const div = L.DomUtil.create('div', 'panel mob-collapsible');
+    L.DomEvent.disableClickPropagation(div);
+    if (isMobile()) div.classList.add('collapsed');
+    div.addEventListener('click', function (e) {
+      if (e.target.closest('.mob-toggle')) toggleCollapse(div);
+    });
+    div.innerHTML =
+      '<button class="mob-toggle" aria-label="Info ein-/ausblenden" title="Info">ℹ️</button>' +
+      '<h1 style="font-size:13px">Feuerkarte Baden-Württemberg</h1>' +
+      '<div class="meta"><b>' + reportData.reports.filter(r => r.status === 'active').length +
+      '</b> gemeldete Br&auml;nde ohne L&ouml;sch-Best&auml;tigung (30 Tage)' +
+      '<br>Satellit: <b>' + data.generated + '</b> &middot; Meldungen: <b>' + (reportData.generated || '–') + '</b>' +
+      (function () {   // Stale-Hinweis, falls die Satelliten-Pipeline länger hängt
+        const t = Date.parse((data.generated || '').replace(' UTC', 'Z').replace(' ', 'T'));
+        return (t && (Date.now() - t) > 6 * 3.6e6)
+          ? '<br><span style="color:#b45309">⚠ Satellitendaten derzeit &auml;lter als 6 h</span>' : '';
+      })() + '</div>' +
+      '<div class="meta" style="margin-top:5px;color:#898781">Keine amtliche Warnung, Angaben ohne Gew&auml;hr ' +
+      '(<a href="hinweise.html" style="color:#8f1d1d">Quellen</a>). Notfall: 112.</div>' +
+      ((reportData.nina && reportData.nina.length)
+        ? '<div style="margin-top:8px;padding:6px 8px;border-radius:6px;background:#fbe9e7;border:1px solid #d03b3b;font-size:12px">' +
+          '<b>Amtliche Warnungen (NINA):</b><br>' +
+          reportData.nina.map(w => w.region + ': ' + w.headline).join('<br>') + '</div>'
+        : '');
+    return div;
+  };
+  info.addTo(map);
+
+  // Zeitraum-Auswahl (Presets, Standard: 14 Tage)
+  const rangeCtl = L.control({ position: 'topleft' });
+  rangeCtl.onAdd = function () {
+    const div = L.DomUtil.create('div', 'panel range-ctl mob-collapsible');
+    L.DomEvent.disableClickPropagation(div);
+    if (isMobile()) div.classList.add('collapsed');
+    div.innerHTML = '<button class="mob-toggle" aria-label="Zeitraum-Filter ein-/ausblenden" title="Zeitraum">🕒</button>' +
+      '<span class="lbl">Zeitraum</span>' + RANGES.map(r =>
+      '<button class="range-btn' + (r.days === rangeDays ? ' active' : '') + '" data-days="' + r.days + '">' + r.label + '</button>'
+    ).join('');
+    div.addEventListener('click', e => {
+      if (e.target.closest('.mob-toggle')) { toggleCollapse(div); return; }
+      const btn = e.target.closest('.range-btn');
+      if (!btn) return;
+      rangeDays = +btn.dataset.days;
+      localStorage.setItem('firemap.range', rangeDays);
+      div.querySelectorAll('.range-btn').forEach(b => b.classList.toggle('active', +b.dataset.days === rangeDays));
+      rebuild();
+    });
+    return div;
+  };
+  rangeCtl.addTo(map);
+
+  const legend = L.control({ position: 'bottomright' });
+  legend.onAdd = function () {
+    legendDiv = L.DomUtil.create('div', 'panel legend mob-collapsible');
+    L.DomEvent.disableClickPropagation(legendDiv);
+    if (isMobile()) legendDiv.classList.add('collapsed');
+    legendDiv.addEventListener('click', function (e) {
+      if (e.target.closest('.mob-toggle')) toggleCollapse(legendDiv);
+    });
+    renderLegend();
+    return legendDiv;
+  };
+  legend.addTo(map);
+
+  rebuild();
+
+  // Seite alle 15 Minuten neu laden (der Cloud-Scheduler aktualisiert die
+  // Datendateien; der gewählte Zeitraum bleibt via localStorage erhalten)
+  setTimeout(function () { location.reload(); }, 15 * 60 * 1000);
+})();
+</script>
+<!-- Cloudflare Web Analytics (cookieless) --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "5cb68acc703440769eac995278f0b0c1"}'></script>
+</body>
+</html>
