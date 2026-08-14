@@ -19,7 +19,7 @@
 // ein einziger Browser-Kontext.
 
 import { chromium } from 'playwright';
-import { writeFileSync, mkdirSync } from 'node:fs';
+import { writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
@@ -526,6 +526,14 @@ const unique = allEvents.filter((e) => {
   seenKeys.add(k);
   return true;
 });
+
+// Leer-Guard: Wenn NICHTS gescrapt wurde (Portal down/Timeouts), die
+// bestehende Datei behalten — sonst wirft der Import den letzten guten
+// Bestand weg (im CI liegt der Repo-Stand im Checkout).
+if (unique.length === 0 && existsSync(OUT_PATH)) {
+  log('0 Termine gescrapt — bestehende events-headless.json bleibt unangetastet.');
+  process.exit(0);
+}
 
 mkdirSync(dirname(OUT_PATH), { recursive: true });
 writeFileSync(OUT_PATH, JSON.stringify({
