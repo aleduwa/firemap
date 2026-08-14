@@ -608,7 +608,12 @@
       '<h1 style="font-size:13px">Feuerkarte Baden-Württemberg</h1>' +
       '<div class="meta"><b>' + reportData.reports.filter(r => r.status === 'active').length +
       '</b> gemeldete Br&auml;nde ohne L&ouml;sch-Best&auml;tigung (30 Tage)' +
-      '<br>Satellit: <b>' + data.generated + '</b> &middot; Meldungen: <b>' + (reportData.generated || '–') + '</b></div>' +
+      '<br>Satellit: <b>' + data.generated + '</b> &middot; Meldungen: <b>' + (reportData.generated || '–') + '</b>' +
+      (function () {   // Stale-Hinweis, falls die Satelliten-Pipeline länger hängt
+        const t = Date.parse((data.generated || '').replace(' UTC', 'Z').replace(' ', 'T'));
+        return (t && (Date.now() - t) > 6 * 3.6e6)
+          ? '<br><span style="color:#b45309">⚠ Satellitendaten derzeit &auml;lter als 6 h</span>' : '';
+      })() + '</div>' +
       '<div class="meta" style="margin-top:5px;color:#898781">Keine amtliche Warnung, Angaben ohne Gew&auml;hr ' +
       '(<a href="hinweise.html" style="color:#8f1d1d">Quellen</a>). Notfall: 112.</div>' +
       ((reportData.nina && reportData.nina.length)

@@ -62,10 +62,11 @@ foreach ($src in $sources) {
 }
 
 # Leer-Guard: lieber den alten (deployten) Stand behalten, als eine leere
-# Karte zu veröffentlichen — Abbruch OHNE fires.js zu überschreiben.
+# Karte zu veröffentlichen. Leise beenden (exit 0), damit ein FIRMS-Schluckauf
+# keine CI-Fehlalarme produziert — Veraltung zeigt das Frontend an.
 if ($points.Count -eq 0) {
-    Write-Error 'Keine Detektionen geladen (alle FIRMS-Quellen fehlgeschlagen?) — fires.js bleibt unangetastet.'
-    exit 1
+    Write-Warning 'Keine Detektionen geladen (alle FIRMS-Quellen fehlgeschlagen?) — fires.js bleibt unangetastet.'
+    exit 0
 }
 
 $out = [ordered]@{
