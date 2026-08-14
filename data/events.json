@@ -4416,44 +4416,6 @@
     ]
   },
   {
-    "base": "Polizeipräsidium Aalen|rems-murr-kreis: flächenbrände, motorbrand",
-    "status": "out",
-    "title": "Rems-Murr-Kreis: Flächenbrände, Motorbrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110969/6314712",
-    "first": "2026-07-15T06:01:49Z",
-    "last": "2026-07-15T06:01:49Z",
-    "veg": true,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0,
-    "places": [
-      {
-        "name": "Rems-Murr-Kreis",
-        "lat": 48.8966799,
-        "lon": 9.5037124,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Pforzheim|(enzkreis) wiernsheim - nachtrag zur pressemitteilung vom 14.07.2026, 14:25 uhr gebäudebrand in wiernsheim-pinache",
-    "status": "active",
-    "title": "(Enzkreis) Wiernsheim - Nachtrag zur Pressemitteilung vom 14.07.2026, 14:25 Uhr Gebäudebrand in Wiernsheim-Pinache",
-    "link": "https://www.presseportal.de/blaulicht/pm/137462/6314696",
-    "first": "2026-07-15T05:49:29Z",
-    "last": "2026-07-15T05:49:29Z",
-    "veg": false,
-    "source": "Polizeipräsidium Pforzheim",
-    "updates": 0,
-    "places": [
-      {
-        "name": "Wiernsheim",
-        "lat": 48.8854377,
-        "lon": 8.898631,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Feuerwehr Stuttgart|küchenbrand in mehrfamilienhaus",
     "status": "contained",
     "title": "Küchenbrand in Mehrfamilienhaus",
