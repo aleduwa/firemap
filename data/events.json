@@ -1,5 +1,24 @@
 [
   {
+    "base": "Polizeipräsidium Pforzheim|(pf) pforzheim - brand an blitzeranhänger - polizei sucht zeugen!",
+    "status": "active",
+    "title": "(PF) Pforzheim - Brand an Blitzeranhänger - Polizei sucht Zeugen!",
+    "link": "https://www.presseportal.de/blaulicht/pm/137462/6333189",
+    "first": "2026-08-14T06:47:27Z",
+    "last": "2026-08-14T06:47:27Z",
+    "places": [
+      {
+        "name": "Pforzheim",
+        "lat": 48.890934,
+        "lon": 8.7025509,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Pforzheim",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Mannheim|mannheim: brand in der güterhallenstraße - pressemeldung nr. 2",
     "status": "out",
     "title": "Mannheim: Brand in der Güterhallenstraße - Pressemeldung Nr. 2",
