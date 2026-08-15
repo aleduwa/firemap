@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/130639/6334048",
     "first": "2026-08-15T23:43:07Z",
     "last": "2026-08-15T23:43:07Z",
+    "veg": false,
+    "source": "Feuerwehr Datteln",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Datteln",
@@ -13,11 +17,7 @@
         "lon": 7.3385906,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Datteln",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Heiligenhaus|vegetationsbrand im stadtteil isenbügel - rund 50 einsatzkräfte über drei stunden im einsatz",
