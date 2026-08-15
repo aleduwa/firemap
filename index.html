@@ -29,155 +29,302 @@
 <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.css">
 <style>
   :root {
-    --ink:        #0b0b0b;
-    --ink-2:      #52514e;
-    --muted:      #898781;
+    --ink:        #171614;
+    --ink-2:      #56544f;
+    --muted:      #8b8880;
     --surface:    #fcfcfb;
-    --hairline:   rgba(11,11,11,0.10);
+    --panel:      rgba(252,252,251,0.88);   /* Panels liegen auf der Karte -> leicht transparent */
+    --panel-solid:#fcfcfb;
+    --hairline:   rgba(11,11,11,0.09);
+    --track:      #edebe6;                  /* Rille des Segmented Control */
+    --hover:      rgba(11,11,11,0.05);
+    --accent:     #8f1d1d;
+    --accent-ink: #8f1d1d;
+    --accent-bg:  rgba(143,29,29,0.10);
+    --dot-ring:   #fff;
+    --warn-bg:    #fbe9e7;
+    --warn-line:  #d03b3b;
+    --warn-ink:   #7c1d1d;
+    --shadow:     0 6px 24px rgba(11,11,11,0.10), 0 1px 3px rgba(11,11,11,0.07);
+    --shadow-lg:  0 12px 40px rgba(11,11,11,0.18);
     --age-0:      #8f1d1d;   /* < 24 h  */
     --age-1:      #d03b3b;   /* 24–48 h */
     --age-2:      #f0956e;   /* älter   */
     --persistent: #898781;   /* dauerhafte Wärmequelle (Industrie) */
   }
+  /* Dunkler Kartenstil -> auch die Bedienelemente umfärben, sonst leuchten
+     weiße Kacheln auf der dunklen Karte. Wird per data-ui am <html> gesetzt. */
+  :root[data-ui="dark"] {
+    --ink:        #edebe6;
+    --ink-2:      #b4b1ab;
+    --muted:      #86837d;
+    --surface:    #17181b;
+    --panel:      rgba(23,24,27,0.86);
+    --panel-solid:#17181b;
+    --hairline:   rgba(255,255,255,0.11);
+    --track:      rgba(255,255,255,0.08);
+    --hover:      rgba(255,255,255,0.07);
+    --accent:     #e2706e;
+    --accent-ink: #f0a09e;
+    --accent-bg:  rgba(226,112,110,0.16);
+    --dot-ring:   #24252a;
+    --warn-bg:    rgba(208,59,59,0.16);
+    --warn-line:  rgba(226,112,110,0.55);
+    --warn-ink:   #f3c2c0;
+    --shadow:     0 6px 24px rgba(0,0,0,0.45), 0 1px 3px rgba(0,0,0,0.4);
+    --shadow-lg:  0 12px 44px rgba(0,0,0,0.6);
+  }
+
   html, body { height: 100%; margin: 0; }
-  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--ink); background: var(--surface); }
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    color: var(--ink); background: var(--surface);
+    -webkit-font-smoothing: antialiased;
+  }
   /* Der Canvas ist außerhalb der Kugel transparent — der Container liefert
      deshalb den "Weltraum" hinter dem Globus. Beim Reinzoomen deckt der
      background-Layer des Stils alles ab, die Farbe ist dann unsichtbar. */
   #map { height: 100%; background: #0d1524; }
+  button { font-family: inherit; }
 
+  /* ---- Schwebende Panels (Desktop) ------------------------------------- */
   .panel {
-    background: var(--surface);
+    background: var(--panel);
+    -webkit-backdrop-filter: blur(14px) saturate(1.4);
+    backdrop-filter: blur(14px) saturate(1.4);
     border: 1px solid var(--hairline);
-    border-radius: 8px;
-    box-shadow: 0 1px 4px rgba(11,11,11,0.12);
-    padding: 10px 12px;
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    padding: 12px 14px;
     font-size: 13px;
     line-height: 1.45;
-    max-width: 280px;
-  }
-  .panel h1 { font-size: 14px; margin: 0 0 4px; font-weight: 650; }
-  .panel .meta { color: var(--ink-2); font-size: 12px; }
-  .panel .meta b { color: var(--ink); font-weight: 600; }
-
-  /* Prototyp-Hinweis oben im Info-Panel */
-  .proto-note {
-    display: block; margin: -2px 0 6px; padding: 3px 6px; border-radius: 5px;
-    background: #fff5d6; border: 1px solid #e0c56b; color: #6b5310;
-    font-size: 11.5px; font-weight: 600;
-  }
-  .proto-note a { color: #8f1d1d; }
-
-  .range-ctl { display: flex; gap: 4px; padding: 6px; }
-  .range-ctl .lbl { font-size: 11.5px; color: var(--ink-2); align-self: center; padding: 0 4px 0 2px; }
-  .range-btn {
-    border: 1px solid var(--hairline); background: var(--surface); color: var(--ink-2);
-    border-radius: 6px; padding: 3px 8px; font-size: 12px; cursor: pointer;
-    font-family: inherit;
-  }
-  .range-btn:hover { background: #f1f0ec; }
-  .range-btn.active { background: #8f1d1d; border-color: #8f1d1d; color: #fff; font-weight: 600; }
-
-  .legend .row { display: flex; align-items: center; gap: 8px; margin-top: 6px; }
-  .legend .dot { width: 14px; height: 14px; border-radius: 50%; border: 2px solid #fff; box-shadow: 0 0 0 1px var(--hairline); flex: none; }
-  .legend .dot.dashed { border: 2px dashed #fff; }
-  .legend .label { color: var(--ink-2); font-size: 12px; }
-  .legend .size-hint { margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--hairline); color: var(--muted); font-size: 11.5px; }
-
-  /* Tooltip (Desktop-Hover) und Popup-Inhalt teilen sich die Optik der Leaflet-Karte */
-  .fire-tip {
-    background: var(--surface);
-    border: 1px solid var(--hairline);
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(11,11,11,0.18);
-    padding: 8px 10px;
-    font-size: 12.5px;
-    line-height: 1.5;
+    max-width: 290px;
     color: var(--ink);
+  }
+  .pane h1 { font-size: 13.5px; margin: 0 0 5px; font-weight: 650; letter-spacing: -0.01em; }
+  .meta { color: var(--ink-2); font-size: 12px; }
+  .meta b { color: var(--ink); font-weight: 600; }
+  .meta a { color: var(--accent-ink); }
+  .stale { color: #b45309; }
+  :root[data-ui="dark"] .stale { color: #f0b429; }
+  .pane-links {
+    margin-top: 9px; padding-top: 8px; border-top: 1px solid var(--hairline);
+    font-size: 11.5px; color: var(--muted);
+  }
+  .pane-links a { color: var(--ink-2); text-decoration: none; }
+  .pane-links a:hover { color: var(--accent-ink); text-decoration: underline; }
+  .nina {
+    margin-top: 9px; padding: 7px 9px; border-radius: 9px;
+    background: var(--warn-bg); border: 1px solid var(--warn-line);
+    color: var(--warn-ink); font-size: 12px;
+  }
+
+  /* ---- Zeitraum: Segmented Control -------------------------------------- */
+  .pane-range .lbl {
+    display: block; font-size: 10.5px; text-transform: uppercase; letter-spacing: .05em;
+    color: var(--muted); margin-bottom: 5px; font-weight: 600;
+  }
+  .seg { display: flex; gap: 2px; background: var(--track); border-radius: 11px; padding: 3px; }
+  .seg button {
+    flex: 1; border: 0; background: transparent; color: var(--ink-2);
+    border-radius: 8px; padding: 6px 9px; font-size: 12px; cursor: pointer;
+    transition: background .15s, color .15s, box-shadow .15s; white-space: nowrap;
+  }
+  .seg button:hover { color: var(--ink); }
+  .seg button.active {
+    background: var(--panel-solid); color: var(--accent-ink); font-weight: 650;
+    box-shadow: 0 1px 3px rgba(11,11,11,.14);
+  }
+
+  /* ---- Legende ---------------------------------------------------------- */
+  .legend-row { display: flex; align-items: center; gap: 9px; margin-top: 7px; }
+  .dot { width: 13px; height: 13px; border-radius: 50%; border: 2px solid var(--dot-ring);
+         box-shadow: 0 0 0 1px var(--hairline); flex: none; }
+  .dot.dashed { border: 2px dashed var(--dot-ring); }
+  .legend-row .label { color: var(--ink-2); font-size: 12px; }
+  .size-hint { margin-top: 10px; padding-top: 9px; border-top: 1px solid var(--hairline);
+               color: var(--muted); font-size: 11.5px; line-height: 1.5; }
+
+  /* ---- Ebenen-Menü ------------------------------------------------------ */
+  .layer-ctl { padding: 0; max-width: 300px; overflow: hidden; }
+  .layer-ctl .lc-toggle {
+    width: 42px; height: 42px; border: 0; background: transparent; padding: 0;
+    cursor: pointer; display: flex; align-items: center; justify-content: center;
+    border-radius: 14px; color: var(--ink-2);
+  }
+  .layer-ctl .lc-toggle .ic { width: 21px; height: 21px; }
+  .layer-ctl .lc-toggle:hover { color: var(--ink); }
+  .layer-ctl .lc-toggle:hover { background: var(--hover); }
+  .layer-ctl .lc-body { display: none; padding: 10px 12px 12px; }
+  .layer-ctl.open .lc-body { display: block; }
+  .layer-ctl.open .lc-toggle { display: none; }
+  .lc-head {
+    display: flex; align-items: center; justify-content: space-between;
+    font-size: 12.5px; font-weight: 650; color: var(--ink); margin-bottom: 6px;
+  }
+  .lc-close { border: 0; background: transparent; cursor: pointer; font-size: 15px;
+              color: var(--muted); border-radius: 8px; padding: 2px 6px; }
+  .lc-close:hover { background: var(--hover); color: var(--ink); }
+  .lc-group { margin-top: 9px; padding-top: 9px; border-top: 1px solid var(--hairline); }
+  .lc-group:first-of-type { border-top: 0; padding-top: 0; margin-top: 0; }
+  .lc-group label {
+    display: flex; gap: 9px; align-items: flex-start; font-size: 12.5px;
+    color: var(--ink-2); padding: 5px 0; cursor: pointer; line-height: 1.35;
+    border-radius: 8px;
+  }
+  .lc-group label:hover { color: var(--ink); }
+  .lc-group input { margin: 1px 0 0; flex: none; accent-color: var(--accent); width: 15px; height: 15px; }
+  .lc-title { font-size: 10.5px; color: var(--muted); text-transform: uppercase;
+              letter-spacing: .05em; margin-bottom: 3px; font-weight: 600; }
+
+  /* ---- Tooltip / Popup -------------------------------------------------- */
+  .fire-tip {
+    background: var(--panel-solid);
+    border: 1px solid var(--hairline);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    padding: 10px 12px;
+    font-size: 12.5px; line-height: 1.5; color: var(--ink);
   }
   .fire-tip .tip-head { font-weight: 650; margin-bottom: 2px; }
   .fire-tip .tip-sub { color: var(--ink-2); }
-  .fire-tip .tip-flag { color: var(--muted); font-style: italic; margin-top: 3px; }
-  .fire-tip table { border-collapse: collapse; margin-top: 4px; }
-  .fire-tip td { padding: 0 0 1px; color: var(--ink); }
-  .fire-tip td:first-child { color: var(--ink-2); padding-right: 10px; }
+  .fire-tip .tip-flag { color: var(--muted); font-style: italic; margin-top: 4px; }
+  .fire-tip table { border-collapse: collapse; margin-top: 5px; }
+  .fire-tip td { padding: 0 0 2px; color: var(--ink); }
+  .fire-tip td:first-child { color: var(--ink-2); padding-right: 12px; }
+  .fire-tip a { color: var(--accent-ink); }
 
-  /* Der Hover-Tooltip ist ein freies DIV über der Karte (MapLibre hat kein
-     Tooltip-Konzept wie Leaflet) */
+  /* Hover-Tooltip: freies DIV über der Karte (MapLibre hat kein Tooltip-Konzept) */
   #hovertip {
     position: absolute; z-index: 5; pointer-events: none; display: none;
     max-width: 300px; transform: translate(-50%, -100%); margin-top: -12px;
   }
 
-  /* Popups: Rahmen von MapLibre entfernen, unser .fire-tip bringt ihn mit */
   .maplibregl-popup.fire-popup .maplibregl-popup-content {
-    padding: 0; background: transparent; box-shadow: none; border-radius: 8px;
+    padding: 0; background: transparent; box-shadow: none; border-radius: 12px;
   }
-  .maplibregl-popup.fire-popup .maplibregl-popup-tip { border-top-color: var(--surface); border-bottom-color: var(--surface); }
+  .maplibregl-popup.fire-popup .maplibregl-popup-tip {
+    border-top-color: var(--panel-solid); border-bottom-color: var(--panel-solid);
+  }
   .maplibregl-popup.fire-popup .maplibregl-popup-close-button {
-    font-size: 17px; color: var(--ink-2); padding: 0 5px; z-index: 2;
+    font-size: 18px; color: var(--ink-2); padding: 2px 7px; z-index: 2; border-radius: 8px;
   }
-  /* Attribution muss auch über dunklem Weltraum und über Satellitenbildern
-     lesbar bleiben -> eigener heller Hintergrund statt MapLibre-Default */
-  .maplibregl-ctrl-attrib { font-size: 10px; background: rgba(252,252,251,.9) !important; border-radius: 4px 0 0 0; }
-  .maplibregl-ctrl-attrib, .maplibregl-ctrl-attrib a { color: var(--ink-2); }
 
-  /* Marker-Icons (Meldungen, DWD-Stationen) sind DOM-Marker wie in index.html */
+  /* ---- MapLibre-Bedienelemente ------------------------------------------ */
+  .maplibregl-ctrl-attrib {
+    font-size: 10px; border-radius: 8px 0 0 0;
+    background: var(--panel) !important;
+    -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+  }
+  .maplibregl-ctrl-attrib, .maplibregl-ctrl-attrib a { color: var(--ink-2); }
+  .maplibregl-ctrl-group {
+    background: var(--panel) !important; border: 1px solid var(--hairline);
+    border-radius: 12px !important; box-shadow: var(--shadow) !important; overflow: hidden;
+    -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
+  }
+  .maplibregl-ctrl-group button + button { border-top: 1px solid var(--hairline); }
+  :root[data-ui="dark"] .maplibregl-ctrl-group button .maplibregl-ctrl-icon { filter: invert(1) brightness(1.4); }
+
   .mk { cursor: pointer; }
 
-  .mode-switch { position: absolute; top: 10px; left: 50%; transform: translateX(-50%); z-index: 4;
-    display: flex; background: #fcfcfb; border: 1px solid rgba(11,11,11,.1); border-radius: 8px;
-    box-shadow: 0 1px 4px rgba(11,11,11,.12); overflow: hidden; }
-  .mode-switch a { padding: 6px 14px; font-size: 13px; text-decoration: none; color: #52514e; }
-  .mode-switch a.active { background: #8f1d1d; color: #fff; font-weight: 600; }
-  .mode-switch a:not(.active):hover { background: #f1f0ec; }
+  /* ---- Umschalter oben -------------------------------------------------- */
+  .mode-switch {
+    position: absolute; top: calc(10px + env(safe-area-inset-top)); left: 50%;
+    transform: translateX(-50%); z-index: 4; display: flex; gap: 2px; padding: 3px;
+    background: var(--panel); border: 1px solid var(--hairline); border-radius: 13px;
+    box-shadow: var(--shadow);
+    -webkit-backdrop-filter: blur(14px) saturate(1.4); backdrop-filter: blur(14px) saturate(1.4);
+  }
+  .mode-switch a {
+    padding: 7px 15px; font-size: 13px; text-decoration: none; color: var(--ink-2);
+    border-radius: 10px; transition: background .15s, color .15s;
+  }
+  .mode-switch a.active { background: var(--accent); color: #fff; font-weight: 600; }
+  .mode-switch a:not(.active):hover { background: var(--hover); color: var(--ink); }
 
-  /* Layer-Menü unten links: MapLibre bringt kein Layer-Control mit,
-     deshalb nachgebaut in der Optik von index.html (eingeklapptes Icon) */
-  .layer-ctl { padding: 0; max-width: 300px; }
-  .layer-ctl .lc-toggle {
-    width: 34px; height: 34px; border: 0; background: transparent; padding: 0;
-    font-size: 17px; line-height: 1; cursor: pointer; display: block; font-family: inherit;
-  }
-  .layer-ctl .lc-body { display: none; padding: 8px 10px 10px; }
-  .layer-ctl.open .lc-body { display: block; }
-  .layer-ctl.open .lc-toggle { display: none; }
-  .layer-ctl .lc-head {
-    display: flex; align-items: center; justify-content: space-between;
-    font-size: 12px; font-weight: 650; color: var(--ink); margin-bottom: 4px;
-  }
-  .layer-ctl .lc-close { border: 0; background: transparent; cursor: pointer; font-size: 15px; color: var(--muted); font-family: inherit; }
-  .layer-ctl .lc-group { margin-top: 6px; padding-top: 6px; border-top: 1px solid var(--hairline); }
-  .layer-ctl .lc-group:first-of-type { border-top: 0; padding-top: 0; margin-top: 0; }
-  .layer-ctl label {
-    display: flex; gap: 7px; align-items: flex-start; font-size: 12px;
-    color: var(--ink-2); padding: 3px 0; cursor: pointer; line-height: 1.35;
-  }
-  .layer-ctl input { margin: 2px 0 0; flex: none; accent-color: #8f1d1d; }
-  .layer-ctl .lc-title { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; margin-bottom: 2px; }
-
-  /* Einklapp-Buttons der Karten-Panels: nur auf Mobile sichtbar */
-  .mob-toggle { display: none; }
+  /* ---- Mobile Bedienung: Leiste unten + Sheet --------------------------- */
+  /* Vorher lagen vier Icon-Kacheln frei auf der Karte und überlagerten sich
+     mit der Attributionsleiste — der Ebenen-Button war nicht mehr tippbar.
+     Jetzt: eine Leiste, ein Sheet, feste Reihenfolge. */
+  #mbar, #sheet, #scrim { display: none; }
 
   @media (max-width: 640px) {
     body { height: 100dvh; }
-    .mode-switch a { padding: 9px 12px; }
-    .maplibregl-ctrl-group { display: none; }         /* Zoom-Buttons wie in index.html ausblenden */
-    .maplibregl-ctrl-top-left { top: 44px; }
-    .maplibregl-ctrl-top-right { top: 44px; }
-    .panel { max-width: min(230px, calc(100vw - 60px)); padding: 8px 10px; }
-    .range-btn { padding: 8px 10px; font-size: 13px; min-height: 36px; }
-    .range-ctl { flex-wrap: wrap; }
-    .legend { max-width: 200px; max-height: 38vh; overflow-y: auto; overscroll-behavior: contain; }
-    .legend .size-hint { display: none; }
-    .layer-ctl .lc-body { max-height: 52vh; overflow-y: auto; overscroll-behavior: contain; }
+    .maplibregl-ctrl.panel { display: none; }           /* Desktop-Panels aus */
+    .maplibregl-ctrl-group.nav-ctl { display: none; }   /* Zoom: Pinch reicht */
+    .maplibregl-ctrl-top-right { top: calc(52px + env(safe-area-inset-top)); }
+    .maplibregl-ctrl-bottom-right { bottom: calc(70px + env(safe-area-inset-bottom)); }
+    .maplibregl-ctrl-bottom-left  { bottom: calc(70px + env(safe-area-inset-bottom)); }
+    .mode-switch a { padding: 9px 14px; }
 
-    .mob-toggle { display: flex; align-items: center; justify-content: center;
-      width: 36px; height: 36px; border: 0; background: transparent; padding: 0;
-      font-size: 18px; line-height: 1; cursor: pointer; flex: none; font-family: inherit; }
-    .mob-collapsible.collapsed { width: 42px; height: 42px; padding: 3px; overflow: hidden;
-      max-width: 42px; max-height: 42px; }
-    .mob-collapsible.collapsed > *:not(.mob-toggle) { display: none !important; }
+    /* Standort-Button schwebend über der Leiste */
+    /* über der (eingeklappten) Attributionszeile, die bei 70px sitzt */
+    .geo-ctl {
+      position: fixed !important; right: 12px;
+      bottom: calc(112px + env(safe-area-inset-bottom)); margin: 0 !important;
+      border-radius: 50% !important;
+    }
+    .geo-ctl button { width: 46px !important; height: 46px !important; }
+
+    #mbar {
+      display: flex; position: fixed; z-index: 7; left: 50%; transform: translateX(-50%);
+      bottom: calc(10px + env(safe-area-inset-bottom));
+      gap: 2px; padding: 4px; border-radius: 17px;
+      background: var(--panel); border: 1px solid var(--hairline); box-shadow: var(--shadow);
+      -webkit-backdrop-filter: blur(16px) saturate(1.4); backdrop-filter: blur(16px) saturate(1.4);
+    }
+    #mbar button {
+      min-width: 62px; min-height: 48px; border: 0; background: transparent;
+      border-radius: 13px; color: var(--ink-2); cursor: pointer;
+      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px;
+      font-size: 10.5px; line-height: 1; padding: 0 4px;
+    }
+    #mbar button .ic { width: 21px; height: 21px; }
+    #mbar button.active { background: var(--accent-bg); color: var(--accent-ink); font-weight: 650; }
+
+    #scrim {
+      display: block; position: fixed; inset: 0; z-index: 8; background: rgba(11,11,11,.35);
+      opacity: 0; pointer-events: none; transition: opacity .25s;
+      -webkit-backdrop-filter: blur(1px); backdrop-filter: blur(1px);
+    }
+    #scrim.open { opacity: 1; pointer-events: auto; }
+
+    #sheet {
+      display: flex; flex-direction: column; position: fixed; z-index: 9;
+      left: 0; right: 0; bottom: 0; max-height: 76dvh;
+      background: var(--panel-solid); color: var(--ink);
+      border-radius: 20px 20px 0 0; box-shadow: var(--shadow-lg);
+      transform: translateY(101%); transition: transform .3s cubic-bezier(.32,.72,0,1);
+      padding-bottom: env(safe-area-inset-bottom);
+    }
+    #sheet.open { transform: none; }
+    .sheet-grip {
+      width: 38px; height: 4px; border-radius: 2px; background: var(--hairline);
+      margin: 8px auto 2px; flex: none;
+    }
+    .sheet-head {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 6px 16px 8px; flex: none;
+    }
+    .sheet-head b { font-size: 15px; letter-spacing: -0.01em; }
+    .sheet-close {
+      border: 0; background: var(--track); color: var(--ink-2); cursor: pointer;
+      width: 30px; height: 30px; border-radius: 50%; font-size: 15px; line-height: 1;
+    }
+    .sheet-body {
+      overflow-y: auto; overscroll-behavior: contain;
+      padding: 0 16px 18px; font-size: 14px;
+    }
+    /* Im Sheet ist Platz: größere Schrift und Tippflächen */
+    .sheet-body .pane h1 { font-size: 15px; }
+    .sheet-body .meta, .sheet-body .legend-row .label { font-size: 13px; }
+    .sheet-body .seg { padding: 4px; border-radius: 13px; }
+    .sheet-body .seg button { padding: 10px 8px; font-size: 13px; }
+    .sheet-body .lc-group label { padding: 10px 0; font-size: 14px; }
+    .sheet-body .lc-group input { width: 19px; height: 19px; margin-top: 0; }
+    .sheet-body .lc-head, .sheet-body .lc-close { display: none; }  /* Titel steht im Sheet-Kopf */
+    .sheet-body .legend-row { margin-top: 10px; }
+    .sheet-body .size-hint { font-size: 12.5px; }
   }
 </style>
 <script type="application/ld+json">
@@ -517,15 +664,41 @@
   const map = new maplibregl.Map({
     container: 'map',
     style: STYLES[styleChoice].url || STYLES[styleChoice].build(),
-    // Startansicht wie index.html: ganz Baden-Württemberg
+    // Startansicht: ganz Baden-Württemberg. Im Hochformat passt die Breite
+    // des Landes zuerst — dann bliebe oben und unten viel Fremdgebiet stehen.
+    // Deshalb dort weniger Rand, damit das Land den Bildschirm ausfüllt.
     bounds: [[7.5, 47.53], [10.5, 49.8]],
-    fitBoundsOptions: { padding: 20 },
+    fitBoundsOptions: { padding: isMobile() ? 2 : 20 },
     attributionControl: false,
     maxZoom: 18
   });
-  map.addControl(new maplibregl.NavigationControl({ visualizePitch: false }), 'top-right');
+  // Zoom/Kompass: auf dem Handy überflüssig (Pinch), deshalb per Klasse
+  // markiert und dort ausgeblendet.
+  const navCtl = new maplibregl.NavigationControl({ visualizePitch: false });
+  map.addControl(navCtl, 'top-right');
+  if (navCtl._container) navCtl._container.classList.add('nav-ctl');
+
+  // Standort-Button: zeigt die eigene Position auf der Karte. Die Koordinaten
+  // kommen vom Browser und bleiben im Browser — sie werden nirgendwohin
+  // gesendet (siehe Datenschutzerklärung). Der Browser fragt vorher um
+  // Erlaubnis; ohne HTTPS liefert er gar nichts.
+  const geoCtl = new maplibregl.GeolocateControl({
+    positionOptions: { enableHighAccuracy: true },
+    trackUserLocation: true,
+    showUserLocation: true,
+    showAccuracyCircle: true
+  });
+  map.addControl(geoCtl, 'top-right');
+  if (geoCtl._container) geoCtl._container.classList.add('geo-ctl');
+  geoCtl.on('error', e => {
+    // Häufigster Fall: Nutzer hat abgelehnt oder das Gerät hat kein Signal.
+    console.warn('Standort nicht verfügbar:', e && e.message);
+  });
+
   map.addControl(new maplibregl.AttributionControl({
-    compact: false,
+    // Auf schmalen Displays als kleines ⓘ, sonst frisst die Zeile den
+    // unteren Kartenrand auf und überlagert die Bedienelemente.
+    compact: isMobile(),
     customAttribution:
       '<a href="https://maplibre.org/" target="_blank" rel="noopener">MapLibre</a> &middot; ' +
       '<a href="faq.html">FAQ</a> &middot; ' +
@@ -1000,21 +1173,21 @@
 
   function renderLegend() {
     if (!legendDiv) return;
-    legendDiv.innerHTML = '<button class="mob-toggle" aria-label="Legende ein-/ausblenden" title="Legende">☰</button>' +
+    legendDiv.innerHTML =
       '<h1>Zeitraum: ' + rangeDays + ' Tag' + (rangeDays > 1 ? 'e' : '') + '</h1>' +
       AGE.map((a, i) =>
-        '<div class="row"><span class="dot" style="background:' + a.color + '"></span>' +
+        '<div class="legend-row"><span class="dot" style="background:' + a.color + '"></span>' +
         '<span class="label">Detektion ' + a.label + ' (' + counts[i] + ')</span></div>'
       ).join('') +
-      '<div class="row"><span class="dot dashed" style="background:#898781"></span>' +
+      '<div class="legend-row"><span class="dot dashed" style="background:#898781"></span>' +
       '<span class="label">dauerhafte Wärmequelle / Industrie (' + persistentCount + ')</span></div>' +
-      '<div class="row"><span style="font-size:14px;flex:none;filter:drop-shadow(0 0 1px #8f1d1d)">🔥</span>' +
+      '<div class="legend-row"><span style="font-size:14px;flex:none;filter:drop-shadow(0 0 1px #8f1d1d)">🔥</span>' +
       '<span class="label">Vegetationsbrand-Meldung (' + vegReports + ')</span></div>' +
-      '<div class="row"><span style="font-size:14px;flex:none;filter:grayscale(.6)">🔥</span>' +
+      '<div class="legend-row"><span style="font-size:14px;flex:none;filter:grayscale(.6)">🔥</span>' +
       '<span class="label">sonstiger Brand — Geb&auml;ude/Kfz (' + otherReports + ', zuschaltbar)</span></div>' +
-      '<div class="row"><span class="dot" style="background:rgba(143,29,29,.25);border:2px dashed #8f1d1d;border-radius:4px"></span>' +
+      '<div class="legend-row"><span class="dot" style="background:rgba(143,29,29,.25);border:2px dashed #8f1d1d;border-radius:4px"></span>' +
       '<span class="label">geschätzte betroffene Fläche</span></div>' +
-      '<div class="row"><span class="dot" style="background:rgba(123,31,162,.35);border:2px solid #7b1fa2;border-radius:4px"></span>' +
+      '<div class="legend-row"><span class="dot" style="background:rgba(123,31,162,.35);border:2px solid #7b1fa2;border-radius:4px"></span>' +
       '<span class="label">Brandnarbe Sentinel-2 (' + scarData.scars.length + ')</span></div>' +
       '<div class="size-hint">Kreisgröße = Feuerleistung (FRP in MW).<br>' +
       'Satellitendaten reichen max. 7 Tage zurück.<br>' +
@@ -1022,89 +1195,91 @@
   }
 
   // ---- Bedienelemente ------------------------------------------------------
-  // Auf Mobile: Panels per Icon ein-/ausklappen; beim Öffnen die anderen
-  // schließen, damit die Karte frei bleibt
-  function toggleCollapse(div) {
-    const wasOpen = !div.classList.contains('collapsed');
-    if (wasOpen) { div.classList.add('collapsed'); return; }
-    document.querySelectorAll('.mob-collapsible').forEach(p => p.classList.add('collapsed'));
-    div.classList.remove('collapsed');
-  }
+  // Die vier Inhalte (Info, Zeitraum, Ebenen, Legende) werden EINMAL gebaut und
+  // je nach Bildschirmbreite anders untergebracht:
+  //   Desktop: schwebende Panels in den Kartenecken.
+  //   Mobil:   Leiste unten + Sheet, das von unten einfährt. Die frühere
+  //            Lösung (vier freie Icon-Kacheln) überlagerte sich mit der
+  //            Attributionsleiste; der Ebenen-Button war nicht mehr tippbar.
+  // Die Knoten wandern zwischen Panel und Sheet hin und her — dadurch gibt es
+  // jede Ansicht nur einmal, und alle Event-Handler bleiben daran hängen.
+
   // Minimal-IControl: MapLibre erwartet nur onAdd/onRemove
   function ctrl(el) { return { onAdd: () => el, onRemove: () => el.remove() }; }
   function stopMapEvents(el) {
     ['mousedown', 'dblclick', 'touchstart', 'wheel', 'click'].forEach(ev =>
       el.addEventListener(ev, e => e.stopPropagation()));
   }
+  function pane(cls) {
+    const d = document.createElement('div');
+    d.className = 'pane ' + cls;
+    return d;
+  }
 
-  // Info-Panel oben links
-  const infoDiv = document.createElement('div');
-  infoDiv.className = 'maplibregl-ctrl panel mob-collapsible';
-  stopMapEvents(infoDiv);
-  if (isMobile()) infoDiv.classList.add('collapsed');
-  infoDiv.addEventListener('click', e => { if (e.target.closest('.mob-toggle')) toggleCollapse(infoDiv); });
-  infoDiv.innerHTML =
-    '<button class="mob-toggle" aria-label="Info ein-/ausblenden" title="Info">ℹ️</button>' +
-    '<h1 style="font-size:13px">Feuerkarte Baden-Württemberg</h1>' +
+  // Icons als Inline-SVG statt Emoji: Emoji sehen auf jeder Plattform anders
+  // aus (bunt, unterschiedlich groß) und wirken verspielt; die Strichsymbole
+  // übernehmen per currentColor die Farbe des Bedienelements.
+  const SVG = {
+    info:   '<circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.6v.6"/>',
+    clock:  '<circle cx="12" cy="12" r="9"/><path d="M12 7v5.2l3.2 2"/>',
+    layers: '<path d="M12 3.5 3.5 8 12 12.5 20.5 8 12 3.5Z"/><path d="m4 12 8 4.2 8-4.2"/><path d="m4 16 8 4.2 8-4.2"/>',
+    legend: '<path d="M9 6.5h11M9 12h11M9 17.5h11"/><circle cx="4.3" cy="6.5" r="1.5"/><circle cx="4.3" cy="12" r="1.5"/><circle cx="4.3" cy="17.5" r="1.5"/>'
+  };
+  const icon = n => '<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" ' +
+    'stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + SVG[n] + '</svg>';
+
+  // --- Inhalt: Info ---
+  const paneInfo = pane('pane-info');
+  paneInfo.innerHTML =
+    '<h1>Feuerkarte Baden-Württemberg</h1>' +
     '<div class="meta"><b>' + reportData.reports.filter(r => r.status === 'active').length +
     '</b> gemeldete Br&auml;nde ohne L&ouml;sch-Best&auml;tigung (30 Tage)' +
     '<br>Satellit: <b>' + data.generated + '</b> &middot; Meldungen: <b>' + (reportData.generated || '–') + '</b>' +
     (function () {   // Stale-Hinweis, falls die Satelliten-Pipeline länger hängt
       const t = Date.parse((data.generated || '').replace(' UTC', 'Z').replace(' ', 'T'));
       return (t && (Date.now() - t) > 6 * 3.6e6)
-        ? '<br><span style="color:#b45309">⚠ Satellitendaten derzeit &auml;lter als 6 h</span>' : '';
+        ? '<br><span class="stale">⚠ Satellitendaten derzeit &auml;lter als 6 h</span>' : '';
     })() + '</div>' +
-    '<div class="meta" style="margin-top:5px;color:#898781">Keine amtliche Warnung, Angaben ohne Gew&auml;hr ' +
-    '(<a href="hinweise.html" style="color:#8f1d1d">Quellen</a>). Notfall: 112.</div>' +
+    '<div class="meta" style="margin-top:6px">Keine amtliche Warnung, Angaben ohne Gew&auml;hr ' +
+    '(<a href="hinweise.html">Quellen</a>). Notfall: 112.</div>' +
     ((reportData.nina && reportData.nina.length)
-      ? '<div style="margin-top:8px;padding:6px 8px;border-radius:6px;background:#fbe9e7;border:1px solid #d03b3b;font-size:12px">' +
-        '<b>Amtliche Warnungen (NINA):</b><br>' +
+      ? '<div class="nina"><b>Amtliche Warnungen (NINA):</b><br>' +
         reportData.nina.map(w => w.region + ': ' + w.headline).join('<br>') + '</div>'
-      : '');
-  map.addControl(ctrl(infoDiv), 'top-left');
+      : '') +
+    // Auf dem Handy ist die Attributionszeile zum ⓘ eingeklappt — die
+    // Rechtslinks stehen deshalb zusätzlich hier, direkt erreichbar.
+    '<div class="pane-links"><a href="faq.html">FAQ</a> · <a href="impressum.html">Impressum</a> · ' +
+    '<a href="datenschutz.html">Datenschutz</a> · <a href="hinweise.html">Hinweise</a></div>';
 
-  // Zeitraum-Auswahl (Presets, Standard: 14 Tage)
-  const rangeDiv = document.createElement('div');
-  rangeDiv.className = 'maplibregl-ctrl panel range-ctl mob-collapsible';
-  stopMapEvents(rangeDiv);
-  if (isMobile()) rangeDiv.classList.add('collapsed');
-  rangeDiv.innerHTML = '<button class="mob-toggle" aria-label="Zeitraum-Filter ein-/ausblenden" title="Zeitraum">🕒</button>' +
-    '<span class="lbl">Zeitraum</span>' + RANGES.map(r =>
-      '<button class="range-btn' + (r.days === rangeDays ? ' active' : '') + '" data-days="' + r.days + '">' + r.label + '</button>'
-    ).join('');
-  rangeDiv.addEventListener('click', e => {
-    if (e.target.closest('.mob-toggle')) { toggleCollapse(rangeDiv); return; }
-    const btn = e.target.closest('.range-btn');
+  // --- Inhalt: Zeitraum (Segmented Control) ---
+  const paneRange = pane('pane-range');
+  paneRange.innerHTML = '<span class="lbl">Zeitraum</span><div class="seg">' +
+    RANGES.map(r => '<button class="' + (r.days === rangeDays ? 'active' : '') +
+      '" data-days="' + r.days + '">' + r.label + '</button>').join('') + '</div>';
+  paneRange.addEventListener('click', e => {
+    const btn = e.target.closest('.seg button');
     if (!btn) return;
     rangeDays = +btn.dataset.days;
     localStorage.setItem(LS + 'range', rangeDays);
-    rangeDiv.querySelectorAll('.range-btn').forEach(b => b.classList.toggle('active', +b.dataset.days === rangeDays));
+    paneRange.querySelectorAll('.seg button').forEach(b => b.classList.toggle('active', +b.dataset.days === rangeDays));
+    updateBarLabels();
     rebuild();
   });
-  map.addControl(ctrl(rangeDiv), 'top-left');
 
-  // Layer-Menü unten links (eingeklappt), Nachbau des Leaflet-Layer-Controls
-  const layerDiv = document.createElement('div');
-  layerDiv.className = 'maplibregl-ctrl panel layer-ctl';
-  stopMapEvents(layerDiv);
-  layerDiv.innerHTML =
-    '<button class="lc-toggle" aria-label="Layer-Menü öffnen" title="Layer">🗂️</button>' +
-    '<div class="lc-body">' +
-      '<div class="lc-head"><span>Karte &amp; Ebenen</span><button class="lc-close" aria-label="Layer-Menü schließen">✕</button></div>' +
-      '<div class="lc-group"><div class="lc-title">Kartenstil</div>' +
-        Object.keys(STYLES).map(k =>
-          '<label><input type="radio" name="basestyle" value="' + k + '"' +
-          (k === styleChoice ? ' checked' : '') + '><span>' + STYLES[k].label + '</span></label>').join('') +
-      '</div>' +
-      '<div class="lc-group"><div class="lc-title">Ebenen</div>' +
-        OVERLAYS.map(o =>
-          '<label><input type="checkbox" data-ov="' + o.id + '"' +
-          (vis[o.id] ? ' checked' : '') + '><span>' + o.label + '</span></label>').join('') +
-      '</div>' +
+  // --- Inhalt: Kartenstil + Ebenen ---
+  const paneLayers = pane('pane-layers');
+  paneLayers.innerHTML =
+    '<div class="lc-group"><div class="lc-title">Kartenstil</div>' +
+      Object.keys(STYLES).map(k =>
+        '<label><input type="radio" name="basestyle" value="' + k + '"' +
+        (k === styleChoice ? ' checked' : '') + '><span>' + STYLES[k].label + '</span></label>').join('') +
+    '</div>' +
+    '<div class="lc-group"><div class="lc-title">Ebenen</div>' +
+      OVERLAYS.map(o =>
+        '<label><input type="checkbox" data-ov="' + o.id + '"' +
+        (vis[o.id] ? ' checked' : '') + '><span>' + o.label + '</span></label>').join('') +
     '</div>';
-  layerDiv.querySelector('.lc-toggle').addEventListener('click', () => layerDiv.classList.add('open'));
-  layerDiv.querySelector('.lc-close').addEventListener('click', () => layerDiv.classList.remove('open'));
-  layerDiv.addEventListener('change', e => {
+  paneLayers.addEventListener('change', e => {
     const t = e.target;
     if (t.name === 'basestyle') { setBaseStyle(t.value); return; }
     if (t.dataset.ov) {
@@ -1113,21 +1288,129 @@
       applyVisibility();
     }
   });
-  map.addControl(ctrl(layerDiv), 'bottom-left');
 
-  // Legende unten rechts
-  legendDiv = document.createElement('div');
-  legendDiv.className = 'maplibregl-ctrl panel legend mob-collapsible';
-  stopMapEvents(legendDiv);
-  if (isMobile()) legendDiv.classList.add('collapsed');
-  legendDiv.addEventListener('click', e => { if (e.target.closest('.mob-toggle')) toggleCollapse(legendDiv); });
-  map.addControl(ctrl(legendDiv), 'bottom-right');
+  // --- Inhalt: Legende (Text kommt aus renderLegend) ---
+  legendDiv = pane('pane-legend');
+
+  // --- Desktop: Panels in den Ecken ---
+  function panelWrap(inner, cls) {
+    const w = document.createElement('div');
+    w.className = 'maplibregl-ctrl panel ' + (cls || '');
+    stopMapEvents(w);
+    w.appendChild(inner);
+    return w;
+  }
+  const wrapInfo = panelWrap(paneInfo);
+  const wrapRange = panelWrap(paneRange);
+  const wrapLegend = panelWrap(legendDiv, 'legend');
+
+  // Das Ebenen-Panel bleibt eingeklappt (Icon), bis man es öffnet
+  const wrapLayers = document.createElement('div');
+  wrapLayers.className = 'maplibregl-ctrl panel layer-ctl';
+  stopMapEvents(wrapLayers);
+  wrapLayers.innerHTML =
+    '<button class="lc-toggle" aria-label="Karte und Ebenen öffnen" title="Karte &amp; Ebenen">' +
+    icon('layers') + '</button>' +
+    '<div class="lc-body"><div class="lc-head"><span>Karte &amp; Ebenen</span>' +
+    '<button class="lc-close" aria-label="schließen">✕</button></div></div>';
+  const lcBody = wrapLayers.querySelector('.lc-body');
+  lcBody.appendChild(paneLayers);
+  wrapLayers.querySelector('.lc-toggle').addEventListener('click', () => wrapLayers.classList.add('open'));
+  wrapLayers.querySelector('.lc-close').addEventListener('click', () => wrapLayers.classList.remove('open'));
+
+  map.addControl(ctrl(wrapInfo), 'top-left');
+  map.addControl(ctrl(wrapRange), 'top-left');
+  map.addControl(ctrl(wrapLayers), 'bottom-left');
+  map.addControl(ctrl(wrapLegend), 'bottom-right');
+
+  // --- Mobil: Leiste unten + Sheet ---
+  const SHEETS = {
+    info:   { title: 'Übersicht',      el: paneInfo,   home: wrapInfo,   icon: 'info',   label: 'Info' },
+    range:  { title: 'Zeitraum',       el: paneRange,  home: wrapRange,  icon: 'clock',  label: rangeDays + ' T' },
+    layers: { title: 'Karte & Ebenen', el: paneLayers, home: lcBody,     icon: 'layers', label: 'Ebenen' },
+    legend: { title: 'Legende',        el: legendDiv,  home: wrapLegend, icon: 'legend', label: 'Legende' }
+  };
+
+  const scrim = document.createElement('div');
+  scrim.id = 'scrim';
+  const sheet = document.createElement('div');
+  sheet.id = 'sheet';
+  sheet.setAttribute('role', 'dialog');
+  sheet.innerHTML = '<div class="sheet-grip"></div>' +
+    '<div class="sheet-head"><b id="sheet-title"></b>' +
+    '<button class="sheet-close" aria-label="schließen">✕</button></div>' +
+    '<div class="sheet-body" id="sheet-body"></div>';
+  const sheetBody = sheet.querySelector('#sheet-body');
+  const sheetTitle = sheet.querySelector('#sheet-title');
+
+  const mbar = document.createElement('div');
+  mbar.id = 'mbar';
+  mbar.innerHTML = Object.keys(SHEETS).map(k =>
+    '<button data-sheet="' + k + '" aria-label="' + SHEETS[k].title + '">' + icon(SHEETS[k].icon) +
+    '<span class="tx">' + SHEETS[k].label + '</span></button>').join('');
+  document.body.appendChild(scrim);
+  document.body.appendChild(sheet);
+  document.body.appendChild(mbar);
+
+  let openSheetId = null;
+  function homeAllPanes() {
+    Object.keys(SHEETS).forEach(k => {
+      const s = SHEETS[k];
+      if (s.el.parentNode === sheetBody) s.home.appendChild(s.el);
+    });
+  }
+  function closeSheet() {
+    sheet.classList.remove('open');
+    scrim.classList.remove('open');
+    openSheetId = null;
+    markBar();
+    // Erst nach der Animation zurückhängen, sonst ruckelt es sichtbar
+    setTimeout(homeAllPanes, 320);
+  }
+  function openSheet(id) {
+    if (openSheetId === id) { closeSheet(); return; }
+    homeAllPanes();
+    const s = SHEETS[id];
+    sheetTitle.textContent = s.title;
+    sheetBody.appendChild(s.el);
+    sheet.classList.add('open');
+    scrim.classList.add('open');
+    openSheetId = id;
+    markBar();
+  }
+  function markBar() {
+    mbar.querySelectorAll('button').forEach(b =>
+      b.classList.toggle('active', b.dataset.sheet === openSheetId));
+  }
+  function updateBarLabels() {
+    const b = mbar.querySelector('[data-sheet="range"] .tx');
+    if (b) b.textContent = rangeDays === 1 ? 'Heute' : rangeDays + ' T';
+  }
+  mbar.addEventListener('click', e => {
+    const b = e.target.closest('button');
+    if (b) openSheet(b.dataset.sheet);
+  });
+  sheet.querySelector('.sheet-close').addEventListener('click', closeSheet);
+  scrim.addEventListener('click', closeSheet);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && openSheetId) closeSheet(); });
+  // Wechsel Hoch-/Querformat oder Fensterbreite: Sheet schließen, damit die
+  // Inhalte wieder in ihren Desktop-Panels landen.
+  window.addEventListener('resize', () => { if (!isMobile() && openSheetId) closeSheet(); });
+  updateBarLabels();
 
   // ---- Stilwechsel ---------------------------------------------------------
+  // Bei dunkler Karte auch die Bedienelemente umfärben — helle Kacheln auf
+  // dunkler Karte blenden. Steuert die CSS-Variablen über data-ui am <html>.
+  function applyUiTheme() {
+    document.documentElement.dataset.ui =
+      (styleChoice === 'dunkel' || styleChoice === 'satellit') ? 'dark' : 'light';
+  }
+
   function setBaseStyle(key) {
     if (!STYLES[key]) return;
     styleChoice = key;
     localStorage.setItem(LS + 'style', key);
+    applyUiTheme();
     glBound = false;                       // Handler hängen am Stil, neu binden
     map.setStyle(STYLES[key].url || STYLES[key].build());
   }
@@ -1144,6 +1427,23 @@
     addDataLayers();
   });
 
+  // MapLibre zeigt die kompakte Attribution zunächst ausgeklappt. Auf dem
+  // Handy verdeckt die Zeile die Bedienelemente — einklappen; ein Tipp auf
+  // das ⓘ zeigt sie wieder. Die Rechtslinks stehen zusätzlich im Info-Sheet.
+  if (isMobile()) {
+    map.once('load', () => {
+      const a = document.querySelector('.maplibregl-ctrl-attrib');
+      if (a) a.classList.remove('maplibregl-compact-show');
+      // Hochformat: etwas näher ran, sonst füllt Baden-Württemberg nur die
+      // halbe Höhe und der Rest ist Nachbarland. Oben/unten darf abgeschnitten
+      // werden — die Ränder sind ohnehin nicht unser Gebiet.
+      if (window.innerHeight > window.innerWidth * 1.3) {
+        map.setZoom(map.getZoom() + 0.55);
+      }
+    });
+  }
+
+  applyUiTheme();
   rebuild();
 
   // Für den automatisierten Playwright-Check (scripts/globe-check.mjs) —
