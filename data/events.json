@@ -1,5 +1,49 @@
 [
   {
+    "base": "Polizeipräsidium Ulm|(gp) süßen - dachstuhlbrand, haus ist unbewohnbar",
+    "status": "active",
+    "title": "(GP) Süßen - Dachstuhlbrand, Haus ist unbewohnbar",
+    "link": "https://www.presseportal.de/blaulicht/pm/110979/6333856",
+    "first": "2026-08-15T08:33:46Z",
+    "last": "2026-08-15T08:33:46Z",
+    "places": [
+      {
+        "name": "Süßen",
+        "lat": 48.6707866,
+        "lon": 9.7372379,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|altlußheim/rhein-neckar-kreis: zwei unerlaubte lagerfeuer am rheinufer",
+    "status": "out",
+    "title": "Altlußheim/Rhein-Neckar-Kreis: Zwei unerlaubte Lagerfeuer am Rheinufer",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6333854",
+    "first": "2026-08-15T08:16:40Z",
+    "last": "2026-08-15T08:16:40Z",
+    "places": [
+      {
+        "name": "Altlußheim",
+        "lat": 49.3004929,
+        "lon": 8.4981809,
+        "approx": false
+      },
+      {
+        "name": "Rhein-Neckar-Kreis",
+        "lat": 49.3684797,
+        "lon": 8.7352403,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Offenburg|lahr - vegetationsbrand am galgenberg - mehrere gartenhütten vollständig zerstört",
     "status": "active",
     "title": "Lahr - Vegetationsbrand am Galgenberg - Mehrere Gartenhütten vollständig zerstört",
