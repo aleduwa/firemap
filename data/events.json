@@ -326,26 +326,6 @@
     ]
   },
   {
-    "base": "Polizeipräsidium Heilbronn|stadt- und landkreis heilbronn: einbrüche, unfallflucht, widerstand gegen vollstreckungsbeamte, brand und unfall",
-    "status": "out",
-    "title": "Stadt- und Landkreis Heilbronn: Einbrüche, Unfallflucht, Widerstand gegen Vollstreckungsbeamte, Brand und Unfall",
-    "link": "https://www.presseportal.de/blaulicht/pm/110971/6333518",
-    "first": "2026-08-14T10:38:16Z",
-    "last": "2026-08-14T10:38:16Z",
-    "places": [
-      {
-        "name": "Stadt-",
-        "lat": 49.4093582,
-        "lon": 8.694724,
-        "approx": false
-      }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Heilbronn",
-    "region": "BW",
-    "updates": 0
-  },
-  {
     "base": "Polizeipräsidium Freiburg|weilheim/ remetschwiel: flächenbrand mit zwei leichtverletzten und rund 10.000 euro sachschaden",
     "status": "out",
     "title": "Weilheim/ Remetschwiel: Flächenbrand mit zwei Leichtverletzten und rund 10.000 Euro Sachschaden",
@@ -419,6 +399,26 @@
         "name": "Oberndorf am Neckar",
         "lat": 48.2908613,
         "lon": 8.5711222,
+        "approx": false
+      }
+    ]
+  },
+  {
+    "base": "Polizeipräsidium Heilbronn|stadt- und landkreis heilbronn: einbrüche, unfallflucht, widerstand gegen vollstreckungsbeamte, brand und unfall",
+    "status": "out",
+    "title": "Stadt- und Landkreis Heilbronn: Einbrüche, Unfallflucht, Widerstand gegen Vollstreckungsbeamte, Brand und Unfall",
+    "link": "https://www.presseportal.de/blaulicht/pm/110971/6333518",
+    "first": "2026-08-14T10:38:16Z",
+    "last": "2026-08-14T10:38:16Z",
+    "veg": true,
+    "source": "Polizeipräsidium Heilbronn",
+    "updates": 0,
+    "region": "BW",
+    "places": [
+      {
+        "name": "Stadt-",
+        "lat": 49.4093582,
+        "lon": 8.694724,
         "approx": false
       }
     ]
