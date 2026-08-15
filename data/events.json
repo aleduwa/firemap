@@ -1,5 +1,45 @@
 [
   {
+    "base": "Feuerwehr Wuppertal|rauchwarnmelder verhindert größeren brandschaden",
+    "status": "contained",
+    "title": "Rauchwarnmelder verhindert größeren Brandschaden",
+    "link": "https://www.presseportal.de/blaulicht/pm/115885/6334036",
+    "first": "2026-08-15T21:05:43Z",
+    "last": "2026-08-15T21:05:43Z",
+    "places": [
+      {
+        "name": "Wuppertal",
+        "lat": 51.264018,
+        "lon": 7.1780374,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Wuppertal",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Freiwillige Feuerwehr der Gemeinde Sonsbeck|waldbrand in labbeck",
+    "status": "active",
+    "title": "Waldbrand in Labbeck",
+    "link": "https://www.presseportal.de/blaulicht/pm/140447/6334031",
+    "first": "2026-08-15T20:54:26Z",
+    "last": "2026-08-15T20:54:26Z",
+    "places": [
+      {
+        "name": "Sonsbeck",
+        "lat": 51.6094069,
+        "lon": 6.3760442,
+        "approx": false
+      }
+    ],
+    "veg": true,
+    "source": "Freiwillige Feuerwehr der Gemeinde Sonsbeck",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Freiwillige Feuerwehr Königswinter|brandausbreitung im wald in königswinter-gratzfeld rechtzeitig gestoppt",
     "status": "out",
     "title": "Brandausbreitung im Wald in Königswinter-Gratzfeld rechtzeitig gestoppt",
@@ -269,9 +309,9 @@
     "base": "Feuerwehr Solingen|feuerwehr solingen unterstützt mit remscheid und wuppertal den kreis düren bei großem waldbrand",
     "status": "active",
     "title": "Feuerwehr Solingen unterstützt mit Remscheid und Wuppertal den Kreis Düren bei großem Waldbrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/115884/6333919",
+    "link": "https://www.presseportal.de/blaulicht/pm/115884/6334032",
     "first": "2026-08-15T06:32:52Z",
-    "last": "2026-08-15T11:22:20Z",
+    "last": "2026-08-15T20:58:11Z",
     "veg": true,
     "source": "Feuerwehr Solingen",
     "updates": 1,
