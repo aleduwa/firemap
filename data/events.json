@@ -1,11 +1,35 @@
 [
   {
+    "base": "Feuerwehr Heiligenhaus|vegetationsbrand im stadtteil isenbügel - rund 50 einsatzkräfte über drei stunden im einsatz",
+    "status": "active",
+    "title": "Vegetationsbrand im Stadtteil Isenbügel - rund 50 Einsatzkräfte über drei Stunden im Einsatz",
+    "link": "https://www.presseportal.de/blaulicht/pm/116231/6334047",
+    "first": "2026-08-15T23:11:36Z",
+    "last": "2026-08-15T23:11:36Z",
+    "places": [
+      {
+        "name": "Heiligenhaus",
+        "lat": 51.32658,
+        "lon": 6.9710401,
+        "approx": false
+      }
+    ],
+    "veg": true,
+    "source": "Feuerwehr Heiligenhaus",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Freiwillige Feuerwehr der Stadt Goch|feuerwehr goch: fahrzeugbrand - feuer droht auf mehrfamilienhaus überzugreifen",
     "status": "contained",
     "title": "Feuerwehr Goch: Fahrzeugbrand - Feuer droht auf Mehrfamilienhaus überzugreifen",
     "link": "https://www.presseportal.de/blaulicht/pm/126714/6334045",
     "first": "2026-08-15T22:34:40Z",
     "last": "2026-08-15T22:34:40Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr der Stadt Goch",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Goch",
@@ -13,11 +37,7 @@
         "lon": 6.1593045,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Freiwillige Feuerwehr der Stadt Goch",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Wuppertal|rauchwarnmelder verhindert größeren brandschaden",
