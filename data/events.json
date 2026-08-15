@@ -1,5 +1,25 @@
 [
   {
+    "base": "Freiwillige Feuerwehr der Stadt Goch|feuerwehr goch: fahrzeugbrand - feuer droht auf mehrfamilienhaus überzugreifen",
+    "status": "contained",
+    "title": "Feuerwehr Goch: Fahrzeugbrand - Feuer droht auf Mehrfamilienhaus überzugreifen",
+    "link": "https://www.presseportal.de/blaulicht/pm/126714/6334045",
+    "first": "2026-08-15T22:34:40Z",
+    "last": "2026-08-15T22:34:40Z",
+    "places": [
+      {
+        "name": "Goch",
+        "lat": 51.6755765,
+        "lon": 6.1593045,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Freiwillige Feuerwehr der Stadt Goch",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Wuppertal|rauchwarnmelder verhindert größeren brandschaden",
     "status": "contained",
     "title": "Rauchwarnmelder verhindert größeren Brandschaden",
