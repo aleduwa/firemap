@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/128175/6334005",
     "first": "2026-08-15T18:38:35Z",
     "last": "2026-08-15T18:38:35Z",
+    "veg": true,
+    "source": "Freiwillige Feuerwehr Königswinter",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Königswinter",
@@ -13,11 +17,7 @@
         "lon": 7.1930989,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Freiwillige Feuerwehr Königswinter",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Mönchengladbach|zwei personen mit rauchgasintoxikation nach kellerbrand",
