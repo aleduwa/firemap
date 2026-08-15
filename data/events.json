@@ -4630,31 +4630,6 @@
     ]
   },
   {
-    "base": "Polizeipräsidium Offenburg|kippenheim/schmieheim - gebäudebrand",
-    "status": "active",
-    "title": "Kippenheim/Schmieheim - Gebäudebrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110975/6316102",
-    "first": "2026-07-15T13:36:06Z",
-    "last": "2026-07-16T13:49:48Z",
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "updates": 1,
-    "places": [
-      {
-        "name": "Kippenheim",
-        "lat": 48.2952196,
-        "lon": 7.8235952,
-        "approx": false
-      },
-      {
-        "name": "Schmieheim",
-        "lat": 48.2786884,
-        "lon": 7.8578952,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Feuerwehr Stuttgart|küchenbrand in mehrfamilienhaus",
     "status": "contained",
     "title": "Küchenbrand in Mehrfamilienhaus",
