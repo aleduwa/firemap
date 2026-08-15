@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115885/6334036",
     "first": "2026-08-15T21:05:43Z",
     "last": "2026-08-15T21:05:43Z",
+    "veg": false,
+    "source": "Feuerwehr Wuppertal",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Wuppertal",
@@ -13,11 +17,7 @@
         "lon": 7.1780374,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Wuppertal",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr der Gemeinde Sonsbeck|waldbrand in labbeck",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/140447/6334031",
     "first": "2026-08-15T20:54:26Z",
     "last": "2026-08-15T20:54:26Z",
+    "veg": true,
+    "source": "Freiwillige Feuerwehr der Gemeinde Sonsbeck",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Sonsbeck",
@@ -33,11 +37,7 @@
         "lon": 6.3760442,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Freiwillige Feuerwehr der Gemeinde Sonsbeck",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Königswinter|brandausbreitung im wald in königswinter-gratzfeld rechtzeitig gestoppt",
