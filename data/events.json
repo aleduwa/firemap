@@ -1,5 +1,25 @@
 [
   {
+    "base": "Freiwillige Feuerwehr Königswinter|brandausbreitung im wald in königswinter-gratzfeld rechtzeitig gestoppt",
+    "status": "out",
+    "title": "Brandausbreitung im Wald in Königswinter-Gratzfeld rechtzeitig gestoppt",
+    "link": "https://www.presseportal.de/blaulicht/pm/128175/6334005",
+    "first": "2026-08-15T18:38:35Z",
+    "last": "2026-08-15T18:38:35Z",
+    "places": [
+      {
+        "name": "Königswinter",
+        "lat": 50.6739719,
+        "lon": 7.1930989,
+        "approx": false
+      }
+    ],
+    "veg": true,
+    "source": "Freiwillige Feuerwehr Königswinter",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Mönchengladbach|zwei personen mit rauchgasintoxikation nach kellerbrand",
     "status": "active",
     "title": "Zwei Personen mit Rauchgasintoxikation nach Kellerbrand",
