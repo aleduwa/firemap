@@ -46,7 +46,22 @@
 - [ ] Nach ein paar Wochen ohne Beschwerden: `klassisch.html` überdenken
   (Wartung von zwei Karten kostet).
 
-## 4. Backlog / Gelegenheiten
+## 4. Nordrhein-Westfalen (seit 15.08. auf der Karte)
+
+- [x] ~~NRW aufnehmen~~ **erledigt 15.08.**: Satelliten-Box, DWD-Stationen,
+  53 NINA-Kreise, Geokodierung je Land, Ausschnitt-Umschalter BW/NRW/Beide.
+  Meldungen kommen über den **bundesweiten Blaulicht-Strom** der
+  Presseportal-API (`stories/police`), gefiltert nach Bundesland-Schlagwort —
+  ein Aufruf statt 195 Einzelfeeds allein für NRW.
+- [ ] **Kreis-Landingpages für die 53 NRW-Kreise** noch offen — `generate-kreise.ps1`
+  kennt bisher nur die 44 BW-Kreise (Zentroid + Radius je Kreis nötig).
+  NRW-Ereignisse tauchen dadurch auf keiner Landingpage auf.
+- [ ] API-Quota im Auge behalten: Der Backfill vom 15.08. hat sie einmal
+  gesprengt (Einzelfeeds × 8 Archivseiten). Seitdem läuft der Strom zuerst,
+  die Einzelfeeds nur noch als Ausfallsicherung — Normalbetrieb kostet jetzt
+  2 statt 29 Abfragen je Lauf.
+
+## 5. Backlog / Gelegenheiten
 
 - [ ] Google Search Console + Bing Webmaster: Sitemap einreichen (beschleunigt
   Indexierung der 50 Seiten)

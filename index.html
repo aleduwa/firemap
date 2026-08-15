@@ -3,25 +3,26 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Feuerkarte Baden-Württemberg – aktuelle Waldbrände &amp; Feuerwehreinsätze</title>
-<meta name="description" content="Aktuelle Waldbrände &amp; Feuerwehreinsätze in Baden-Württemberg – Freiburg, Offenburg, Schwarzwald. Satelliten-Branddetektionen (NASA FIRMS), Einsatzmeldungen, DWD-Waldbrandgefahr.">
+<title>Feuerkarte Baden-Württemberg &amp; Nordrhein-Westfalen – aktuelle Waldbrände</title>
+<meta name="description" content="Aktuelle Waldbrände &amp; Feuerwehreinsätze in Baden-Württemberg und Nordrhein-Westfalen – Schwarzwald, Ruhrgebiet, Eifel, Sauerland. Satelliten-Branddetektionen (NASA FIRMS), Einsatzmeldungen, DWD-Waldbrandgefahr.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <link rel="canonical" href="https://map.aleduwa.de/">
 <meta name="theme-color" content="#8f1d1d">
 <meta name="geo.region" content="DE-BW">
-<meta name="geo.placename" content="Baden-Württemberg">
+<meta name="geo.region" content="DE-NW">
+<meta name="geo.placename" content="Baden-Württemberg, Nordrhein-Westfalen">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Feuerkarte Baden-Württemberg">
-<meta property="og:title" content="Feuerkarte Baden-Württemberg – aktuelle Waldbrände &amp; Feuerwehreinsätze">
-<meta property="og:description" content="Live-Karte: Satelliten-Branddetektionen, Polizei- und Feuerwehrmeldungen sowie DWD-Waldbrandgefahr für Baden-Württemberg – von Freiburg über Offenburg bis in den Schwarzwald.">
+<meta property="og:site_name" content="Feuerkarte BW &amp; NRW">
+<meta property="og:title" content="Feuerkarte Baden-Württemberg &amp; Nordrhein-Westfalen">
+<meta property="og:description" content="Live-Karte: Satelliten-Branddetektionen, Polizei- und Feuerwehrmeldungen sowie DWD-Waldbrandgefahr für Baden-Württemberg und Nordrhein-Westfalen.">
 <meta property="og:url" content="https://map.aleduwa.de/">
 <meta property="og:locale" content="de_DE">
 <meta property="og:image" content="https://map.aleduwa.de/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Feuerkarte Baden-Württemberg – aktuelle Waldbrände &amp; Feuerwehreinsätze">
-<meta name="twitter:description" content="Satelliten-Branddetektionen, Einsatzmeldungen und DWD-Waldbrandgefahr für Baden-Württemberg auf einer Karte.">
+<meta name="twitter:title" content="Feuerkarte Baden-Württemberg &amp; Nordrhein-Westfalen">
+<meta name="twitter:description" content="Satelliten-Branddetektionen, Einsatzmeldungen und DWD-Waldbrandgefahr für BW und NRW auf einer Karte.">
 <meta name="twitter:image" content="https://map.aleduwa.de/og-image.png">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="preconnect" href="https://unpkg.com">
@@ -117,7 +118,10 @@
     margin-top: 9px; padding: 7px 9px; border-radius: 9px;
     background: var(--warn-bg); border: 1px solid var(--warn-line);
     color: var(--warn-ink); font-size: 12px;
+    max-height: 34vh; overflow-y: auto; overscroll-behavior: contain;
   }
+  .nina details { margin-top: 5px; }
+  .nina summary { cursor: pointer; opacity: .85; font-weight: 600; }
 
   /* ---- Zeitraum: Segmented Control -------------------------------------- */
   .pane-range .lbl {
@@ -348,9 +352,9 @@
     {
       "@type": "WebApplication",
       "@id": "https://map.aleduwa.de/#webapp",
-      "name": "Feuerkarte Baden-Württemberg",
+      "name": "Feuerkarte Baden-Württemberg & Nordrhein-Westfalen",
       "url": "https://map.aleduwa.de/",
-      "description": "Interaktive Live-Karte aktueller Waldbrände und Feuerwehreinsätze in Baden-Württemberg: Satelliten-Branddetektionen (NASA FIRMS, VIIRS/MODIS), automatisch geokodierte Polizei- und Feuerwehr-Einsatzmeldungen sowie der Waldbrandgefahrenindex des DWD. Keine amtliche Warnung, alle Angaben ohne Gewähr.",
+      "description": "Interaktive Live-Karte aktueller Waldbrände und Feuerwehreinsätze in Baden-Württemberg und Nordrhein-Westfalen: Satelliten-Branddetektionen (NASA FIRMS, VIIRS/MODIS), automatisch geokodierte Polizei- und Feuerwehr-Einsatzmeldungen sowie der Waldbrandgefahrenindex des DWD. Keine amtliche Warnung, alle Angaben ohne Gewähr.",
       "applicationCategory": "Map",
       "operatingSystem": "All",
       "browserRequirements": "Requires JavaScript",
@@ -358,27 +362,29 @@
       "isAccessibleForFree": true,
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
       "publisher": { "@id": "https://map.aleduwa.de/#organization" },
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Baden-Württemberg",
-        "geo": { "@type": "GeoShape", "box": "47.5 7.5 49.8 10.5" }
-      },
-      "keywords": "Waldbrand, Waldbrände, Feuerwehreinsatz, Brandkarte, Baden-Württemberg, Schwarzwald, Freiburg, Offenburg, Waldbrandgefahr, FIRMS, Satellitendaten"
+      "spatialCoverage": [
+        { "@type": "Place", "name": "Baden-Württemberg",
+          "geo": { "@type": "GeoShape", "box": "47.5 7.5 49.8 10.5" } },
+        { "@type": "Place", "name": "Nordrhein-Westfalen",
+          "geo": { "@type": "GeoShape", "box": "50.3 5.9 52.5 9.5" } }
+      ],
+      "keywords": "Waldbrand, Waldbrände, Feuerwehreinsatz, Brandkarte, Baden-Württemberg, Nordrhein-Westfalen, Schwarzwald, Ruhrgebiet, Sauerland, Eifel, Freiburg, Köln, Waldbrandgefahr, FIRMS, Satellitendaten"
     },
     {
       "@type": "Dataset",
       "@id": "https://map.aleduwa.de/#dataset",
-      "name": "Branddetektionen, Einsatzmeldungen und Waldbrandgefahr Baden-Württemberg",
-      "description": "Fortlaufend aktualisierter Datensatz für Baden-Württemberg: Satelliten-Feuerdetektionen der letzten 7 Tage (NASA FIRMS, VIIRS/MODIS), brandbezogene Einsatzmeldungen der Polizeipräsidien und Feuerwehren (geokodiert, dedupliziert) sowie der tägliche Waldbrandgefahrenindex (WBI) des Deutschen Wetterdienstes. Automatisch aggregiert, ohne Gewähr, keine amtliche Warnung.",
+      "name": "Branddetektionen, Einsatzmeldungen und Waldbrandgefahr Baden-Württemberg und Nordrhein-Westfalen",
+      "description": "Fortlaufend aktualisierter Datensatz für Baden-Württemberg und Nordrhein-Westfalen: Satelliten-Feuerdetektionen der letzten 7 Tage (NASA FIRMS, VIIRS/MODIS), brandbezogene Einsatzmeldungen der Polizeipräsidien und Feuerwehren (geokodiert, dedupliziert) sowie der tägliche Waldbrandgefahrenindex (WBI) des Deutschen Wetterdienstes. Automatisch aggregiert, ohne Gewähr, keine amtliche Warnung.",
       "url": "https://map.aleduwa.de/",
       "inLanguage": "de",
       "isAccessibleForFree": true,
       "creator": { "@id": "https://map.aleduwa.de/#organization" },
-      "spatialCoverage": {
-        "@type": "Place",
-        "name": "Baden-Württemberg, Deutschland",
-        "geo": { "@type": "GeoShape", "box": "47.5 7.5 49.8 10.5" }
-      },
+      "spatialCoverage": [
+        { "@type": "Place", "name": "Baden-Württemberg, Deutschland",
+          "geo": { "@type": "GeoShape", "box": "47.5 7.5 49.8 10.5" } },
+        { "@type": "Place", "name": "Nordrhein-Westfalen, Deutschland",
+          "geo": { "@type": "GeoShape", "box": "50.3 5.9 52.5 9.5" } }
+      ],
       "isBasedOn": [
         "https://firms.modaps.eosdis.nasa.gov/",
         "https://opendata.dwd.de/climate_environment/CDC/derived_germany/fire_danger_index/",
@@ -660,14 +666,26 @@
   let styleChoice = localStorage.getItem(LS + 'style') || 'ruhig';
   if (!STYLES[styleChoice]) styleChoice = 'ruhig';
 
+  // ---- Abgedeckte Regionen -------------------------------------------------
+  // Zwischen Baden-Württemberg und Nordrhein-Westfalen liegen 200 km Hessen und
+  // Rheinland-Pfalz, die wir nicht abdecken. Wer nur ein Land betrachtet, soll
+  // nicht ständig darüber hinwegscrollen müssen.
+  const AREAS = {
+    beide: { label: 'Beide Länder',        bounds: [[5.85, 47.53], [10.55, 52.55]] },
+    bw:    { label: 'Baden-Württemberg',   bounds: [[7.50, 47.53], [10.50, 49.80]] },
+    nrw:   { label: 'Nordrhein-Westfalen', bounds: [[5.85, 50.30], [ 9.50, 52.55]] }
+  };
+  let areaChoice = localStorage.getItem(LS + 'area') || 'beide';
+  if (!AREAS[areaChoice]) areaChoice = 'beide';
+
   // ---- Karte ---------------------------------------------------------------
   const map = new maplibregl.Map({
     container: 'map',
     style: STYLES[styleChoice].url || STYLES[styleChoice].build(),
-    // Startansicht: ganz Baden-Württemberg. Im Hochformat passt die Breite
-    // des Landes zuerst — dann bliebe oben und unten viel Fremdgebiet stehen.
-    // Deshalb dort weniger Rand, damit das Land den Bildschirm ausfüllt.
-    bounds: [[7.5, 47.53], [10.5, 49.8]],
+    // Startansicht: zuletzt gewählte Region (Standard: beide Länder).
+    // Im Hochformat passt die Breite zuerst — dann bliebe oben und unten viel
+    // Fremdgebiet stehen; deshalb dort weniger Rand.
+    bounds: AREAS[areaChoice].bounds,
     fitBoundsOptions: { padding: isMobile() ? 2 : 20 },
     attributionControl: false,
     maxZoom: 18
@@ -1231,7 +1249,7 @@
   // --- Inhalt: Info ---
   const paneInfo = pane('pane-info');
   paneInfo.innerHTML =
-    '<h1>Feuerkarte Baden-Württemberg</h1>' +
+    '<h1>Feuerkarte BW &amp; NRW</h1>' +
     '<div class="meta"><b>' + reportData.reports.filter(r => r.status === 'active').length +
     '</b> gemeldete Br&auml;nde ohne L&ouml;sch-Best&auml;tigung (30 Tage)' +
     '<br>Satellit: <b>' + data.generated + '</b> &middot; Meldungen: <b>' + (reportData.generated || '–') + '</b>' +
@@ -1242,9 +1260,19 @@
     })() + '</div>' +
     '<div class="meta" style="margin-top:6px">Keine amtliche Warnung, Angaben ohne Gew&auml;hr ' +
     '(<a href="hinweise.html">Quellen</a>). Notfall: 112.</div>' +
+    // Bei einer größeren Lage meldet jeder betroffene Kreis einzeln — 20+
+    // Warnungen würden das Panel über den halben Bildschirm ziehen. Deshalb
+    // drei anzeigen, den Rest aufklappbar.
     ((reportData.nina && reportData.nina.length)
-      ? '<div class="nina"><b>Amtliche Warnungen (NINA):</b><br>' +
-        reportData.nina.map(w => w.region + ': ' + w.headline).join('<br>') + '</div>'
+      ? (function () {
+          const w = reportData.nina.map(x => x.region + ': ' + x.headline);
+          const head = w.slice(0, 3).join('<br>');
+          const rest = w.length > 3
+            ? '<details><summary>' + (w.length - 3) + ' weitere</summary>' +
+              w.slice(3).join('<br>') + '</details>'
+            : '';
+          return '<div class="nina"><b>Amtliche Warnungen (NINA):</b><br>' + head + rest + '</div>';
+        })()
       : '') +
     // Auf dem Handy ist die Attributionszeile zum ⓘ eingeklappt — die
     // Rechtslinks stehen deshalb zusätzlich hier, direkt erreichbar.
@@ -1269,6 +1297,12 @@
   // --- Inhalt: Kartenstil + Ebenen ---
   const paneLayers = pane('pane-layers');
   paneLayers.innerHTML =
+    '<div class="lc-group"><div class="lc-title">Ausschnitt</div>' +
+      '<div class="seg seg-area">' + Object.keys(AREAS).map(k =>
+        '<button data-area="' + k + '"' + (k === areaChoice ? ' class="active"' : '') + '>' +
+        (k === 'beide' ? 'Beide' : k.toUpperCase()) + '</button>').join('') +
+      '</div>' +
+    '</div>' +
     '<div class="lc-group"><div class="lc-title">Kartenstil</div>' +
       Object.keys(STYLES).map(k =>
         '<label><input type="radio" name="basestyle" value="' + k + '"' +
@@ -1279,6 +1313,15 @@
         '<label><input type="checkbox" data-ov="' + o.id + '"' +
         (vis[o.id] ? ' checked' : '') + '><span>' + o.label + '</span></label>').join('') +
     '</div>';
+  paneLayers.addEventListener('click', e => {
+    const b = e.target.closest('.seg-area button');
+    if (!b) return;
+    areaChoice = b.dataset.area;
+    localStorage.setItem(LS + 'area', areaChoice);
+    paneLayers.querySelectorAll('.seg-area button').forEach(x =>
+      x.classList.toggle('active', x.dataset.area === areaChoice));
+    map.fitBounds(AREAS[areaChoice].bounds, { padding: isMobile() ? 2 : 20, duration: 700 });
+  });
   paneLayers.addEventListener('change', e => {
     const t = e.target;
     if (t.name === 'basestyle') { setBaseStyle(t.value); return; }
@@ -1434,10 +1477,10 @@
     map.once('load', () => {
       const a = document.querySelector('.maplibregl-ctrl-attrib');
       if (a) a.classList.remove('maplibregl-compact-show');
-      // Hochformat: etwas näher ran, sonst füllt Baden-Württemberg nur die
-      // halbe Höhe und der Rest ist Nachbarland. Oben/unten darf abgeschnitten
-      // werden — die Ränder sind ohnehin nicht unser Gebiet.
-      if (window.innerHeight > window.innerWidth * 1.3) {
+      // Hochformat und nur ein Land: etwas näher ran, sonst füllt das Land nur
+      // die halbe Höhe und der Rest ist Nachbarland. Bei "beide Länder" nicht —
+      // dort ist der Ausschnitt ohnehin hoch und würde oben/unten abschneiden.
+      if (areaChoice !== 'beide' && window.innerHeight > window.innerWidth * 1.3) {
         map.setZoom(map.getZoom() + 0.55);
       }
     });

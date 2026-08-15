@@ -1,5 +1,85 @@
 [
   {
+    "base": "Freiwillige Feuerwehr Menden|zwei verletzte bei gebäudebrand in pizzeria an der unnaer straße",
+    "status": "out",
+    "title": "Zwei Verletzte bei Gebäudebrand in Pizzeria an der Unnaer Straße",
+    "link": "https://www.presseportal.de/blaulicht/pm/119161/6333961",
+    "first": "2026-08-15T13:21:43Z",
+    "last": "2026-08-15T13:21:43Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Menden",
+    "updates": 0,
+    "region": "BW",
+    "places": [
+      {
+        "name": "Menden",
+        "lat": 51.43779,
+        "lon": 7.7953822,
+        "approx": false
+      }
+    ]
+  },
+  {
+    "base": "Freiwillige Feuerwehr Alpen|waldbrand in veen",
+    "status": "active",
+    "title": "Waldbrand in Veen",
+    "link": "https://www.presseportal.de/blaulicht/pm/131475/6333946",
+    "first": "2026-08-15T11:14:45Z",
+    "last": "2026-08-15T11:14:45Z",
+    "veg": true,
+    "source": "Freiwillige Feuerwehr Alpen",
+    "updates": 0,
+    "region": "BW",
+    "places": [
+      {
+        "name": "Alpen",
+        "lat": 51.5767474,
+        "lon": 6.5128805,
+        "approx": false
+      }
+    ]
+  },
+  {
+    "base": "Feuerwehr Dinslaken|feuerwehr dinslaken unterstützt bei waldbrandlage",
+    "status": "active",
+    "title": "Feuerwehr Dinslaken unterstützt bei Waldbrandlage",
+    "link": "https://www.presseportal.de/blaulicht/pm/116534/6333942",
+    "first": "2026-08-15T11:03:03Z",
+    "last": "2026-08-15T11:03:03Z",
+    "veg": true,
+    "source": "Feuerwehr Dinslaken",
+    "updates": 0,
+    "region": "BW",
+    "places": [
+      {
+        "name": "Dinslaken",
+        "lat": 51.5623618,
+        "lon": 6.7345106,
+        "approx": false
+      }
+    ]
+  },
+  {
+    "base": "Freiwillige Feuerwehr Hünxe|überörtliche hilfe beim waldbrand in sonsbeck",
+    "status": "active",
+    "title": "Überörtliche Hilfe beim Waldbrand in Sonsbeck",
+    "link": "https://www.presseportal.de/blaulicht/pm/133631/6333921",
+    "first": "2026-08-15T09:32:59Z",
+    "last": "2026-08-15T09:32:59Z",
+    "veg": true,
+    "source": "Freiwillige Feuerwehr Hünxe",
+    "updates": 0,
+    "region": "BW",
+    "places": [
+      {
+        "name": "Hünxe",
+        "lat": 51.6414581,
+        "lon": 6.7660319,
+        "approx": false
+      }
+    ]
+  },
+  {
     "base": "Polizeipräsidium Ulm|(gp) süßen - dachstuhlbrand, haus ist unbewohnbar",
     "status": "active",
     "title": "(GP) Süßen - Dachstuhlbrand, Haus ist unbewohnbar",
@@ -9,12 +89,33 @@
     "veg": false,
     "source": "Polizeipräsidium Ulm",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Süßen",
         "lat": 48.6707866,
         "lon": 9.7372379,
         "approx": false
+      }
+    ]
+  },
+  {
+    "base": "Feuerwehr Leverkusen|aktualisierung überörtliche hilfe - waldbrand hürtgenwald",
+    "status": "active",
+    "title": "Aktualisierung Überörtliche Hilfe - Waldbrand Hürtgenwald",
+    "link": "https://www.presseportal.de/blaulicht/pm/115890/6333907",
+    "first": "2026-08-15T08:27:21Z",
+    "last": "2026-08-15T08:27:21Z",
+    "veg": true,
+    "source": "Feuerwehr Leverkusen",
+    "updates": 0,
+    "region": "BW",
+    "places": [
+      {
+        "name": "Leverkusen",
+        "lat": 51.0324743,
+        "lon": 6.9881194,
+        "approx": true
       }
     ]
   },
@@ -28,6 +129,7 @@
     "veg": false,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Altlußheim",
@@ -44,6 +146,86 @@
     ]
   },
   {
+    "base": "Feuerwehr Mönchengladbach|feuerwehr mönchengladbach unterstützt beim waldbrand im hürtgenwald",
+    "status": "active",
+    "title": "Feuerwehr Mönchengladbach unterstützt beim Waldbrand im Hürtgenwald",
+    "link": "https://www.presseportal.de/blaulicht/pm/115879/6333892",
+    "first": "2026-08-15T07:58:32Z",
+    "last": "2026-08-15T07:58:32Z",
+    "veg": true,
+    "source": "Feuerwehr Mönchengladbach",
+    "updates": 0,
+    "region": "BW",
+    "places": [
+      {
+        "name": "Mönchengladbach",
+        "lat": 51.1947131,
+        "lon": 6.4353792,
+        "approx": false
+      }
+    ]
+  },
+  {
+    "base": "Feuerwehr Bocholt|verkehrsunfall und zwei brandeinsätze",
+    "status": "active",
+    "title": "Verkehrsunfall und zwei Brandeinsätze",
+    "link": "https://www.presseportal.de/blaulicht/pm/146407/6333877",
+    "first": "2026-08-15T07:21:48Z",
+    "last": "2026-08-15T07:21:48Z",
+    "veg": true,
+    "source": "Feuerwehr Bocholt",
+    "updates": 0,
+    "region": "BW",
+    "places": [
+      {
+        "name": "Bocholt",
+        "lat": 51.8382715,
+        "lon": 6.6148669,
+        "approx": false
+      }
+    ]
+  },
+  {
+    "base": "Feuerwehren im Kreis Soest|waldbrand am möhnesee / einsatzkräfte auch an tag drei im einsatz",
+    "status": "out",
+    "title": "Waldbrand am Möhnesee / Einsatzkräfte auch an Tag drei im Einsatz",
+    "link": "https://www.presseportal.de/blaulicht/pm/129590/6333864",
+    "first": "2026-08-15T06:59:32Z",
+    "last": "2026-08-15T06:59:32Z",
+    "veg": true,
+    "source": "Feuerwehren im Kreis Soest",
+    "updates": 0,
+    "region": "BW",
+    "places": [
+      {
+        "name": "Kreis Soest",
+        "lat": 51.5707862,
+        "lon": 8.1071503,
+        "approx": false
+      }
+    ]
+  },
+  {
+    "base": "Feuerwehr Solingen|feuerwehr solingen unterstützt mit remscheid und wuppertal den kreis düren bei großem waldbrand",
+    "status": "active",
+    "title": "Feuerwehr Solingen unterstützt mit Remscheid und Wuppertal den Kreis Düren bei großem Waldbrand",
+    "link": "https://www.presseportal.de/blaulicht/pm/115884/6333919",
+    "first": "2026-08-15T06:32:52Z",
+    "last": "2026-08-15T09:22:20Z",
+    "veg": true,
+    "source": "Feuerwehr Solingen",
+    "updates": 1,
+    "region": "BW",
+    "places": [
+      {
+        "name": "Solingen",
+        "lat": 51.1721629,
+        "lon": 7.0845893,
+        "approx": false
+      }
+    ]
+  },
+  {
     "base": "Polizeipräsidium Offenburg|lahr - vegetationsbrand am galgenberg - mehrere gartenhütten vollständig zerstört",
     "status": "active",
     "title": "Lahr - Vegetationsbrand am Galgenberg - Mehrere Gartenhütten vollständig zerstört",
@@ -53,6 +235,7 @@
     "veg": true,
     "source": "Polizeipräsidium Offenburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Lahr",
@@ -72,6 +255,7 @@
     "veg": false,
     "source": "Feuerwehr Stuttgart",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Stuttgart",
@@ -91,6 +275,7 @@
     "veg": false,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Wehr",
@@ -110,6 +295,7 @@
     "veg": false,
     "source": "Feuerwehr Stuttgart",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Stuttgart",
@@ -129,6 +315,7 @@
     "veg": true,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Grenzach-Wyhlen",
@@ -137,6 +324,26 @@
         "approx": false
       }
     ]
+  },
+  {
+    "base": "Polizeipräsidium Heilbronn|stadt- und landkreis heilbronn: einbrüche, unfallflucht, widerstand gegen vollstreckungsbeamte, brand und unfall",
+    "status": "out",
+    "title": "Stadt- und Landkreis Heilbronn: Einbrüche, Unfallflucht, Widerstand gegen Vollstreckungsbeamte, Brand und Unfall",
+    "link": "https://www.presseportal.de/blaulicht/pm/110971/6333518",
+    "first": "2026-08-14T10:38:16Z",
+    "last": "2026-08-14T10:38:16Z",
+    "places": [
+      {
+        "name": "Stadt-",
+        "lat": 49.4093582,
+        "lon": 8.694724,
+        "approx": false
+      }
+    ],
+    "veg": true,
+    "source": "Polizeipräsidium Heilbronn",
+    "region": "BW",
+    "updates": 0
   },
   {
     "base": "Polizeipräsidium Freiburg|weilheim/ remetschwiel: flächenbrand mit zwei leichtverletzten und rund 10.000 euro sachschaden",
@@ -148,6 +355,7 @@
     "veg": true,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Weilheim",
@@ -173,6 +381,7 @@
     "veg": true,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Dachsberg",
@@ -198,6 +407,7 @@
     "veg": true,
     "source": "Polizeipräsidium Konstanz",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "(Oberndorf am Neckar",
@@ -223,6 +433,7 @@
     "veg": true,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "March",
@@ -248,6 +459,7 @@
     "veg": false,
     "source": "Polizeipräsidium Ulm",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Göppingen",
@@ -267,6 +479,7 @@
     "veg": false,
     "source": "Polizeipräsidium Pforzheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Nagold",
@@ -286,6 +499,7 @@
     "veg": false,
     "source": "Polizeipräsidium Pforzheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Pforzheim",
@@ -305,6 +519,7 @@
     "veg": false,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Mannheim",
@@ -324,6 +539,7 @@
     "veg": false,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Mannheim",
@@ -343,6 +559,7 @@
     "veg": false,
     "source": "Polizeipräsidium Offenburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Friesenheim",
@@ -362,6 +579,7 @@
     "veg": true,
     "source": "Polizeipräsidium Offenburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Willstätt",
@@ -381,6 +599,7 @@
     "veg": false,
     "source": "Polizeipräsidium Pforzheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Eisingen",
@@ -400,6 +619,7 @@
     "veg": false,
     "source": "Feuerwehr Weinheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Weinheim",
@@ -419,6 +639,7 @@
     "veg": false,
     "source": "Polizeipräsidium Ludwigsburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Böblingen",
@@ -438,6 +659,7 @@
     "veg": false,
     "source": "Polizeipräsidium Heilbronn",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Main-Tauber-Kreis",
@@ -463,6 +685,7 @@
     "veg": false,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Emmendingen",
@@ -482,6 +705,7 @@
     "veg": false,
     "source": "Polizeipräsidium Heilbronn",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Stadt-",
@@ -501,6 +725,7 @@
     "veg": false,
     "source": "Feuerwehr Radolfzell",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Radolfzell",
@@ -520,6 +745,7 @@
     "veg": false,
     "source": "Feuerwehr Stuttgart",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Stuttgart",
@@ -539,6 +765,7 @@
     "veg": false,
     "source": "Polizeipräsidium Heilbronn",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Neckar-Odenwald-Kreis",
@@ -558,6 +785,7 @@
     "veg": true,
     "source": "Polizeipräsidium Aalen",
     "updates": 1,
+    "region": "BW",
     "places": [
       {
         "name": "Rems-Murr-Kreis",
@@ -583,6 +811,7 @@
     "veg": true,
     "source": "Polizeipräsidium Pforzheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Karlsbad",
@@ -608,6 +837,7 @@
     "veg": false,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Lauchringen",
@@ -627,6 +857,7 @@
     "veg": true,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Laufenburg",
@@ -646,6 +877,7 @@
     "veg": false,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Lauchringen",
@@ -665,6 +897,7 @@
     "veg": false,
     "source": "Polizeipräsidium Karlsruhe",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Bretten",
@@ -684,6 +917,7 @@
     "veg": false,
     "source": "FF Stockach",
     "updates": 1,
+    "region": "BW",
     "places": [
       {
         "name": "Stockach",
@@ -703,6 +937,7 @@
     "veg": false,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Schopfheim",
@@ -722,6 +957,7 @@
     "veg": false,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Heidelberg",
@@ -741,6 +977,7 @@
     "veg": false,
     "source": "Polizeipräsidium Heilbronn",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Stadt-",
@@ -760,6 +997,7 @@
     "veg": false,
     "source": "Polizeipräsidium Aalen",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ostalbkreis",
@@ -779,6 +1017,7 @@
     "veg": false,
     "source": "Polizeipräsidium Offenburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Friesenheim",
@@ -798,6 +1037,7 @@
     "veg": true,
     "source": "Polizeipräsidium Offenburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Biberach",
@@ -829,6 +1069,7 @@
     "veg": false,
     "source": "Polizeipräsidium Offenburg",
     "updates": 2,
+    "region": "BW",
     "places": [
       {
         "name": "Rastatt",
@@ -848,6 +1089,7 @@
     "veg": false,
     "source": "Polizeipräsidium Freiburg",
     "updates": 1,
+    "region": "BW",
     "places": [
       {
         "name": "Bad Säckingen",
@@ -867,6 +1109,7 @@
     "veg": true,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Wiesloch",
@@ -892,6 +1135,7 @@
     "veg": false,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Küssaberg",
@@ -917,6 +1161,7 @@
     "veg": true,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ühlingen-Birkendorf",
@@ -942,6 +1187,7 @@
     "veg": false,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Heidelberg",
@@ -961,6 +1207,7 @@
     "veg": false,
     "source": "Polizeipräsidium Ulm",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ulm",
@@ -980,6 +1227,7 @@
     "veg": false,
     "source": "Polizeipräsidium Heilbronn",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Neckar-Odenwald-Kreis",
@@ -999,6 +1247,7 @@
     "veg": false,
     "source": "Polizeipräsidium Heilbronn",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Main-Tauber-Kreis",
@@ -1018,6 +1267,7 @@
     "veg": true,
     "source": "Polizeipräsidium Heilbronn",
     "updates": 1,
+    "region": "BW",
     "places": [
       {
         "name": "Stadt-",
@@ -1037,6 +1287,7 @@
     "veg": false,
     "source": "Polizeipräsidium Ludwigsburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ditzingen",
@@ -1056,6 +1307,7 @@
     "veg": false,
     "source": "Polizeipräsidium Ulm",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ebersbach",
@@ -1075,6 +1327,7 @@
     "veg": false,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Rheinfelden",
@@ -1094,6 +1347,7 @@
     "veg": false,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Weil am Rhein",
@@ -1113,6 +1367,7 @@
     "veg": false,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Weil am Rhein",
@@ -1132,6 +1387,7 @@
     "veg": false,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Weil am Rhein",
@@ -1151,6 +1407,7 @@
     "veg": false,
     "source": "Polizeipräsidium Offenburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Achern",
@@ -1170,6 +1427,7 @@
     "veg": false,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Zell im Wiesental",
@@ -1189,6 +1447,7 @@
     "veg": false,
     "source": "Polizeipräsidium Heilbronn",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Neckar-Odenwald-Kreis",
@@ -1208,6 +1467,7 @@
     "veg": false,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Heidelberg",
@@ -1227,6 +1487,7 @@
     "veg": false,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Heidelberg",
@@ -1246,6 +1507,7 @@
     "veg": true,
     "source": "Polizeipräsidium Ulm",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Laupheim",
@@ -1265,6 +1527,7 @@
     "veg": false,
     "source": "Polizeipräsidium Karlsruhe",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Pfinztal",
@@ -1284,9 +1547,16 @@
     "veg": false,
     "source": "Polizeipräsidium Konstanz",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "(Konstanz",
+        "lat": 47.659216,
+        "lon": 9.1750718,
+        "approx": false
+      },
+      {
+        "name": "Konstanz",
         "lat": 47.659216,
         "lon": 9.1750718,
         "approx": false
@@ -1303,6 +1573,7 @@
     "veg": false,
     "source": "Feuerwehr Konstanz",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Konstanz",
@@ -1322,6 +1593,7 @@
     "veg": false,
     "source": "Polizeipräsidium Ludwigsburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ludwigsburg",
@@ -1341,6 +1613,7 @@
     "veg": false,
     "source": "Polizeipräsidium Aalen",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ostalbkreis",
@@ -1360,6 +1633,7 @@
     "veg": false,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Mannheim",
@@ -1379,6 +1653,7 @@
     "veg": false,
     "source": "Polizeipräsidium Ludwigsburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Böblingen-Dagersheim",
@@ -1398,6 +1673,7 @@
     "veg": false,
     "source": "Feuerwehr Stuttgart",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Stuttgart",
@@ -1417,6 +1693,7 @@
     "veg": false,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Schwetzingen",
@@ -1442,6 +1719,7 @@
     "veg": false,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Schwetzingen",
@@ -1467,6 +1745,7 @@
     "veg": false,
     "source": "Feuerwehr Böblingen",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Böblingen",
@@ -1486,6 +1765,7 @@
     "veg": false,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Mannheim",
@@ -1505,6 +1785,7 @@
     "veg": false,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Mannheim",
@@ -1524,6 +1805,7 @@
     "veg": true,
     "source": "Feuerwehr Offenburg",
     "updates": 1,
+    "region": "BW",
     "places": [
       {
         "name": "Offenburg",
@@ -1543,6 +1825,7 @@
     "veg": false,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Heidelberg",
@@ -1562,6 +1845,7 @@
     "veg": false,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Mannheim-Schönau",
@@ -1581,6 +1865,7 @@
     "veg": false,
     "source": "Polizeipräsidium Pforzheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Neulingen",
@@ -1600,6 +1885,7 @@
     "veg": true,
     "source": "Polizeipräsidium Offenburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Schwanau",
@@ -1625,6 +1911,7 @@
     "veg": false,
     "source": "Polizeipräsidium Ludwigsburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Herrenberg-Gültstein",
@@ -1644,6 +1931,7 @@
     "veg": false,
     "source": "Polizeipräsidium Ludwigsburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Marbach am Neckar-Rielingshausen",
@@ -1663,6 +1951,7 @@
     "veg": true,
     "source": "FF Stockach",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Stockach",
@@ -1688,6 +1977,7 @@
     "veg": true,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Lörrach",
@@ -1707,6 +1997,7 @@
     "veg": false,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Lörrach",
@@ -1726,6 +2017,7 @@
     "veg": false,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Küssaberg",
@@ -1751,6 +2043,7 @@
     "veg": false,
     "source": "Polizeipräsidium Aalen",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ostalbkreis",
@@ -1770,6 +2063,7 @@
     "veg": false,
     "source": "Polizeipräsidium Heilbronn",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Neckar-Odenwald-Kreis",
@@ -1789,6 +2083,7 @@
     "veg": false,
     "source": "Polizeipräsidium Ulm",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Eschenbach",
@@ -1808,6 +2103,7 @@
     "veg": false,
     "source": "Polizeipräsidium Aalen",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ostalbkreis",
@@ -1827,6 +2123,7 @@
     "veg": false,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Mannheim-Schönau",
@@ -1846,6 +2143,7 @@
     "veg": true,
     "source": "Polizeipräsidium Mannheim",
     "updates": 1,
+    "region": "BW",
     "places": [
       {
         "name": "Mannheim",
@@ -1865,6 +2163,7 @@
     "veg": true,
     "source": "Polizeipräsidium Karlsruhe",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Stutensee",
@@ -1884,6 +2183,7 @@
     "veg": false,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Bad Säckingen",
@@ -1903,6 +2203,7 @@
     "veg": true,
     "source": "Polizeipräsidium Karlsruhe",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Karlsruhe",
@@ -1922,6 +2223,7 @@
     "veg": false,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Heidelberg",
@@ -1941,6 +2243,7 @@
     "veg": false,
     "source": "Polizeipräsidium Ulm",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Birenbach",
@@ -1960,6 +2263,7 @@
     "veg": false,
     "source": "Polizeipräsidium Aalen",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Fellbach",
@@ -1979,6 +2283,7 @@
     "veg": false,
     "source": "Feuerwehr Weinheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Weinheim",
@@ -1998,6 +2303,7 @@
     "veg": false,
     "source": "Polizeipräsidium Ulm",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Göppingen",
@@ -2017,6 +2323,7 @@
     "veg": true,
     "source": "Polizeipräsidium Ulm",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Seekirch",
@@ -2036,6 +2343,7 @@
     "veg": true,
     "source": "Feuerwehr Weil am Rhein",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Weil am Rhein",
@@ -2055,6 +2363,7 @@
     "veg": false,
     "source": "Polizeipräsidium Aalen",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ostalbkreis",
@@ -2074,6 +2383,7 @@
     "veg": false,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Mannheim",
@@ -2093,6 +2403,7 @@
     "veg": true,
     "source": "Polizeipräsidium Heilbronn",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Main-Tauber-Kreis",
@@ -2124,6 +2435,7 @@
     "veg": true,
     "source": "Polizeipräsidium Mannheim",
     "updates": 3,
+    "region": "BW",
     "places": [
       {
         "name": "Dossenheim",
@@ -2161,6 +2473,7 @@
     "veg": false,
     "source": "Feuerwehr Weinheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Weinheim",
@@ -2180,6 +2493,7 @@
     "veg": false,
     "source": "Polizeipräsidium Heilbronn",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Neckar-Odenwald-Kreis",
@@ -2199,6 +2513,7 @@
     "veg": false,
     "source": "Polizeipräsidium Karlsruhe",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Sulzfeld",
@@ -2218,6 +2533,7 @@
     "veg": false,
     "source": "Polizeipräsidium Ludwigsburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Freiberg am Neckar-Beihingen",
@@ -2237,6 +2553,7 @@
     "veg": false,
     "source": "Polizeipräsidium Heilbronn",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Hohenlohekreis",
@@ -2256,6 +2573,7 @@
     "veg": false,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Emmendingen",
@@ -2275,6 +2593,7 @@
     "veg": false,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Heidelberg",
@@ -2294,6 +2613,7 @@
     "veg": false,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Heidelberg",
@@ -2313,6 +2633,7 @@
     "veg": false,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Heidelberg",
@@ -2332,6 +2653,7 @@
     "veg": false,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Heidelberg",
@@ -2351,6 +2673,7 @@
     "veg": false,
     "source": "Polizeipräsidium Pforzheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Pforzheim",
@@ -2370,6 +2693,7 @@
     "veg": true,
     "source": "Feuerwehr Bad Säckingen",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Bad Säckingen",
@@ -2389,6 +2713,7 @@
     "veg": false,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Heidelberg",
@@ -2408,6 +2733,7 @@
     "veg": false,
     "source": "Polizeipräsidium Ulm",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Mittelbiberach",
@@ -2427,6 +2753,7 @@
     "veg": false,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Eberbach",
@@ -2452,6 +2779,7 @@
     "veg": true,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Mühlhausen",
@@ -2477,6 +2805,7 @@
     "veg": true,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Görwihl",
@@ -2508,6 +2837,7 @@
     "veg": true,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Eggingen",
@@ -2533,6 +2863,7 @@
     "veg": false,
     "source": "Polizeipräsidium Heilbronn",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Neckar-Odenwald-Kreis",
@@ -2552,6 +2883,7 @@
     "veg": false,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Eberbach",
@@ -2577,6 +2909,7 @@
     "veg": true,
     "source": "Polizeipräsidium Heilbronn",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Main-Tauber-Kreis",
@@ -2596,6 +2929,7 @@
     "veg": false,
     "source": "Polizeipräsidium Karlsruhe",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Karlsruhe",
@@ -2615,6 +2949,7 @@
     "veg": false,
     "source": "Polizeipräsidium Ulm",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Blaustein",
@@ -2640,6 +2975,7 @@
     "veg": false,
     "source": "Polizeipräsidium Pforzheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Mühlacker-Enzberg",
@@ -2659,6 +2995,7 @@
     "veg": false,
     "source": "Feuerwehr Weinheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Weinheim",
@@ -2678,6 +3015,7 @@
     "veg": false,
     "source": "Polizeipräsidium Aalen",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ostalbkreis",
@@ -2697,6 +3035,7 @@
     "veg": false,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Schluchsee-Blasiwald",
@@ -2716,6 +3055,7 @@
     "veg": false,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Löffingen-Unadingen",
@@ -2735,6 +3075,7 @@
     "veg": false,
     "source": "Polizeipräsidium Heilbronn",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Stadt-",
@@ -2754,6 +3095,7 @@
     "veg": false,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Weinheim",
@@ -2779,6 +3121,7 @@
     "veg": false,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Bad Säckingen",
@@ -2798,6 +3141,7 @@
     "veg": false,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Weinheim",
@@ -2823,6 +3167,7 @@
     "veg": false,
     "source": "Polizeipräsidium Ulm",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Oberdischingen",
@@ -2842,6 +3187,7 @@
     "veg": false,
     "source": "Polizeipräsidium Pforzheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Pforzheim",
@@ -2861,6 +3207,7 @@
     "veg": false,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Riegel am Kaiserstuhl",
@@ -2880,6 +3227,7 @@
     "veg": false,
     "source": "Polizeipräsidium Heilbronn",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Main-Tauber-Kreis",
@@ -2899,6 +3247,7 @@
     "veg": false,
     "source": "Polizeipräsidium Ulm",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Riedlingen",
@@ -2918,6 +3267,7 @@
     "veg": true,
     "source": "Polizeipräsidium Heilbronn",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Erlenbach",
@@ -2937,6 +3287,7 @@
     "veg": false,
     "source": "Feuerwehr Stuttgart",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Stuttgart",
@@ -2956,6 +3307,7 @@
     "veg": true,
     "source": "Feuerwehr Pforzheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Pforzheim",
@@ -2975,6 +3327,7 @@
     "veg": true,
     "source": "Polizeipräsidium Offenburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Kehl",
@@ -3000,6 +3353,7 @@
     "veg": true,
     "source": "Polizeipräsidium Ulm",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Laupheim",
@@ -3025,6 +3379,7 @@
     "veg": false,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Löffingen",
@@ -3044,6 +3399,7 @@
     "veg": true,
     "source": "Polizeipräsidium Ludwigsburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Marbach am Neckar",
@@ -3063,6 +3419,7 @@
     "veg": false,
     "source": "Polizeipräsidium Ulm",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ulm",
@@ -3082,6 +3439,7 @@
     "veg": false,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Sinsheim",
@@ -3113,6 +3471,7 @@
     "veg": false,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Sinsheim",
@@ -3144,6 +3503,7 @@
     "veg": true,
     "source": "Feuerwehr Offenburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Offenburg",
@@ -3163,6 +3523,7 @@
     "veg": false,
     "source": "Polizeipräsidium Offenburg",
     "updates": 1,
+    "region": "BW",
     "places": [
       {
         "name": "Renchen",
@@ -3182,6 +3543,7 @@
     "veg": true,
     "source": "Polizeipräsidium Mannheim",
     "updates": 1,
+    "region": "BW",
     "places": [
       {
         "name": "St.Leon-Rot",
@@ -3219,9 +3581,16 @@
     "veg": true,
     "source": "Polizeipräsidium Konstanz",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "(Geisingen",
+        "lat": 47.922968,
+        "lon": 8.6491814,
+        "approx": false
+      },
+      {
+        "name": "Geisingen",
         "lat": 47.922968,
         "lon": 8.6491814,
         "approx": false
@@ -3238,6 +3607,7 @@
     "veg": false,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Wutöschingen",
@@ -3263,6 +3633,7 @@
     "veg": false,
     "source": "Polizeipräsidium Offenburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Iffezheim",
@@ -3282,6 +3653,7 @@
     "veg": false,
     "source": "Polizeipräsidium Heilbronn",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Neckar-Odenwald-Kreis",
@@ -3307,6 +3679,7 @@
     "veg": false,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Freiburg-Betzenhausen",
@@ -3326,6 +3699,7 @@
     "veg": false,
     "source": "Polizeipräsidium Heilbronn",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Stadt-",
@@ -3345,6 +3719,7 @@
     "veg": false,
     "source": "Polizeipräsidium Offenburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Steinach",
@@ -3364,6 +3739,7 @@
     "veg": false,
     "source": "Polizeipräsidium Ulm",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Erbach",
@@ -3383,6 +3759,7 @@
     "veg": false,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Malsch",
@@ -3408,6 +3785,7 @@
     "veg": true,
     "source": "Polizeipräsidium Aalen",
     "updates": 1,
+    "region": "BW",
     "places": [
       {
         "name": "Rems-Murr-Kreis",
@@ -3427,6 +3805,7 @@
     "veg": false,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Rheinfelden",
@@ -3446,6 +3825,7 @@
     "veg": false,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Stühlingen- Schwaningen",
@@ -3465,6 +3845,7 @@
     "veg": false,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Waldshut-Tiengen",
@@ -3490,6 +3871,7 @@
     "veg": false,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Schluchsee",
@@ -3509,6 +3891,7 @@
     "veg": false,
     "source": "Polizeipräsidium Ludwigsburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Sindelfingen-Maichingen",
@@ -3528,6 +3911,7 @@
     "veg": true,
     "source": "Polizeipräsidium Konstanz",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "(Aichhalden",
@@ -3540,6 +3924,12 @@
         "lat": 48.28667,
         "lon": 8.41123,
         "approx": true
+      },
+      {
+        "name": "Aichhalden",
+        "lat": 48.2679292,
+        "lon": 8.399562,
+        "approx": false
       }
     ]
   },
@@ -3553,6 +3943,7 @@
     "veg": false,
     "source": "Polizeipräsidium Ludwigsburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Waldenbuch",
@@ -3572,6 +3963,7 @@
     "veg": false,
     "source": "Polizeipräsidium Offenburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Neuried",
@@ -3597,6 +3989,7 @@
     "veg": false,
     "source": "Polizeipräsidium Ulm",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ebersbach",
@@ -3616,6 +4009,7 @@
     "veg": false,
     "source": "Polizeipräsidium Ulm",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Schwendi",
@@ -3641,6 +4035,7 @@
     "veg": true,
     "source": "Polizeipräsidium Ulm",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Langenenslingen",
@@ -3660,6 +4055,7 @@
     "veg": false,
     "source": "Polizeipräsidium Ludwigsburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ludwigsburg-Eglosheim",
@@ -3679,6 +4075,7 @@
     "veg": false,
     "source": "Polizeipräsidium Ludwigsburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Böblingen",
@@ -3698,6 +4095,7 @@
     "veg": true,
     "source": "Polizeipräsidium Aalen",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ostalbkreis",
@@ -3717,6 +4115,7 @@
     "veg": false,
     "source": "Polizeipräsidium Karlsruhe",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Dettenheim",
@@ -3736,6 +4135,7 @@
     "veg": false,
     "source": "Feuerwehr Weinheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Weinheim",
@@ -3755,6 +4155,7 @@
     "veg": false,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Plankstadt",
@@ -3780,6 +4181,7 @@
     "veg": false,
     "source": "Feuerwehr Weinheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Weinheim",
@@ -3799,6 +4201,7 @@
     "veg": true,
     "source": "Polizeipräsidium Mannheim",
     "updates": 1,
+    "region": "BW",
     "places": [
       {
         "name": "Mannheim-Neckarstadt",
@@ -3818,6 +4221,7 @@
     "veg": false,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Weinheim",
@@ -3843,6 +4247,7 @@
     "veg": true,
     "source": "Polizeipräsidium Offenburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Oppenau",
@@ -3862,6 +4267,7 @@
     "veg": false,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Mannheim",
@@ -3881,6 +4287,7 @@
     "veg": false,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Mannheim",
@@ -3900,6 +4307,7 @@
     "veg": true,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "St. Blasien",
@@ -3919,6 +4327,7 @@
     "veg": false,
     "source": "Polizeipräsidium Konstanz",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "(Tuttlingen",
@@ -3931,6 +4340,12 @@
         "lat": 48.73529,
         "lon": 9.22748,
         "approx": true
+      },
+      {
+        "name": "Tuttlingen",
+        "lat": 47.9844315,
+        "lon": 8.8186606,
+        "approx": false
       }
     ]
   },
@@ -3944,6 +4359,7 @@
     "veg": false,
     "source": "Polizeipräsidium Heilbronn",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Main-Tauber-Kreis",
@@ -3963,6 +4379,7 @@
     "veg": false,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Vogtsburg",
@@ -3982,6 +4399,7 @@
     "veg": false,
     "source": "Polizeipräsidium Heilbronn",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Stadt-",
@@ -4007,6 +4425,7 @@
     "veg": false,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Mannheim",
@@ -4026,6 +4445,7 @@
     "veg": false,
     "source": "Feuerwehr Stuttgart",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Stuttgart",
@@ -4045,6 +4465,7 @@
     "veg": false,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Emmendingen",
@@ -4064,6 +4485,7 @@
     "veg": true,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Rheinfelden",
@@ -4083,6 +4505,7 @@
     "veg": false,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Wehr",
@@ -4102,6 +4525,7 @@
     "veg": false,
     "source": "Polizeipräsidium Heilbronn",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Neckar-Odenwald-Kreis",
@@ -4121,6 +4545,7 @@
     "veg": false,
     "source": "Polizeipräsidium Ludwigsburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Freiberg am Neckar-Beihingen",
@@ -4140,6 +4565,7 @@
     "veg": false,
     "source": "Polizeipräsidium Ludwigsburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Renningen",
@@ -4159,6 +4585,7 @@
     "veg": false,
     "source": "Polizeipräsidium Stuttgart",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Staatsanwaltschaft Stuttgart",
@@ -4184,6 +4611,7 @@
     "veg": false,
     "source": "Polizeipräsidium Pforzheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Niefern-Öschelbronn",
@@ -4203,6 +4631,7 @@
     "veg": false,
     "source": "Polizeipräsidium Aalen",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Rems-Murr-Kreis",
@@ -4222,6 +4651,7 @@
     "veg": false,
     "source": "Polizeipräsidium Freiburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Jestetten",
@@ -4253,6 +4683,7 @@
     "veg": false,
     "source": "Polizeipräsidium Ludwigsburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Mötzingen",
@@ -4272,6 +4703,7 @@
     "veg": false,
     "source": "Polizeipräsidium Ulm",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Langenau",
@@ -4291,6 +4723,7 @@
     "veg": false,
     "source": "Polizeipräsidium Offenburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Achern",
@@ -4310,6 +4743,7 @@
     "veg": false,
     "source": "Feuerwehr Allensbach",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Allensbach",
@@ -4329,6 +4763,7 @@
     "veg": false,
     "source": "Polizeipräsidium Heilbronn",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Neckar-Odenwald-Kreis",
@@ -4348,6 +4783,7 @@
     "veg": false,
     "source": "Polizeipräsidium Ludwigsburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Holzgerlingen",
@@ -4367,6 +4803,7 @@
     "veg": false,
     "source": "Polizeipräsidium Stuttgart",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Staatsanwaltschaft",
@@ -4386,6 +4823,7 @@
     "veg": false,
     "source": "Polizeipräsidium Heilbronn",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Stadt-",
@@ -4405,6 +4843,7 @@
     "veg": false,
     "source": "Polizeipräsidium Heilbronn",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Hohenlohekreis",
@@ -4424,6 +4863,7 @@
     "veg": false,
     "source": "Polizeipräsidium Heilbronn",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Main-Tauber-Kreis",
@@ -4443,6 +4883,7 @@
     "veg": false,
     "source": "Polizeipräsidium Ludwigsburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Hessigheim",
@@ -4462,6 +4903,7 @@
     "veg": false,
     "source": "Polizeipräsidium Aalen",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ostalbkreis",
@@ -4481,6 +4923,7 @@
     "veg": false,
     "source": "Polizeipräsidium Ulm",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Eberhardzell",
@@ -4500,6 +4943,7 @@
     "veg": false,
     "source": "Feuerwehr Stuttgart",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Stuttgart",
@@ -4519,6 +4963,7 @@
     "veg": false,
     "source": "Polizeipräsidium Aalen",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ostalbkreis",
@@ -4538,6 +4983,7 @@
     "veg": false,
     "source": "Polizeipräsidium Ludwigsburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ludwigsburg",
@@ -4563,6 +5009,7 @@
     "veg": false,
     "source": "Polizeipräsidium Ludwigsburg",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Besigheim",
@@ -4582,6 +5029,7 @@
     "veg": false,
     "source": "Polizeipräsidium Ulm",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Schelklingen",
@@ -4601,6 +5049,7 @@
     "veg": false,
     "source": "Polizeipräsidium Ulm",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Heidenheim",
@@ -4620,6 +5069,7 @@
     "veg": false,
     "source": "Feuerwehr Weinheim",
     "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Weinheim",
@@ -4639,6 +5089,7 @@
     "veg": false,
     "source": "Feuerwehr Stuttgart",
     "updates": 1,
+    "region": "BW",
     "places": [
       {
         "name": "Stuttgart",

@@ -1,11 +1,21 @@
-# Holt den DWD-Waldbrandgefahrenindex (WBI, Stufen 1-5) für alle Stationen
+﻿# Holt den DWD-Waldbrandgefahrenindex (WBI, Stufen 1-5) für alle Stationen
 # im Kartenausschnitt von opendata.dwd.de und schreibt data/wbi.js.
 # Quelle: https://opendata.dwd.de/climate_environment/CDC/derived_germany/fire_danger_index/woodland/forecast/recent/
 
 $ErrorActionPreference = 'Stop'
 
-$latMin = 47.30; $latMax = 49.85
-$lonMin = 6.80;  $lonMax = 10.55
+# Zwei Regionen: Baden-Wuerttemberg und Nordrhein-Westfalen
+$boxes = @(
+    @{ latMin = 47.30; latMax = 49.85; lonMin = 6.80; lonMax = 10.55 }
+    @{ latMin = 50.25; latMax = 52.60; lonMin = 5.80; lonMax =  9.55 }
+)
+function Test-InRegion([double]$lat, [double]$lon) {
+    foreach ($b in $boxes) {
+        if ($lat -ge $b.latMin -and $lat -le $b.latMax -and
+            $lon -ge $b.lonMin -and $lon -le $b.lonMax) { return $true }
+    }
+    return $false
+}
 
 $root = $PSScriptRoot
 $dataDir = Join-Path $root 'data'
@@ -24,7 +34,7 @@ foreach ($line in ($lines | Select-Object -Skip 1)) {
     if ($f.Count -lt 5) { continue }
     $lat = [double]($f[2].Trim() -replace ',', '.')
     $lon = [double]($f[3].Trim() -replace ',', '.')
-    if ($lat -lt $latMin -or $lat -gt $latMax -or $lon -lt $lonMin -or $lon -gt $lonMax) { continue }
+    if (-not (Test-InRegion $lat $lon)) { continue }
     $stations += @{ id = $f[0].Trim(); name = $f[4].Trim(); lat = $lat; lon = $lon }
 }
 Write-Host "$($stations.Count) WBI-Stationen im Ausschnitt."

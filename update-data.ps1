@@ -1,11 +1,22 @@
-# Downloads NASA FIRMS active-fire detections (last 7 days, Europe),
+﻿# Downloads NASA FIRMS active-fire detections (last 7 days, Europe),
 # filters them to the region of interest and writes data/fires.js
-# Region: ganz Baden-Württemberg + Randstreifen (Elsass, Nordschweiz).
+# Regionen: ganz Baden-Württemberg und ganz Nordrhein-Westfalen, jeweils mit
+# Randstreifen. Zwei getrennte Boxen statt einer gemeinsamen — dazwischen
+# liegen Hessen und Rheinland-Pfalz, die wir nicht abdecken.
 
 $ErrorActionPreference = 'Stop'
 
-$latMin = 47.30; $latMax = 49.85
-$lonMin = 6.80;  $lonMax = 10.55
+$boxes = @(
+    @{ name = 'BW';  latMin = 47.30; latMax = 49.85; lonMin = 6.80; lonMax = 10.55 }
+    @{ name = 'NRW'; latMin = 50.25; latMax = 52.60; lonMin = 5.80; lonMax =  9.55 }
+)
+function Test-InRegion([double]$lat, [double]$lon) {
+    foreach ($b in $boxes) {
+        if ($lat -ge $b.latMin -and $lat -le $b.latMax -and
+            $lon -ge $b.lonMin -and $lon -le $b.lonMax) { return $true }
+    }
+    return $false
+}
 
 $root = $PSScriptRoot
 $dataDir = Join-Path $root 'data'
@@ -39,7 +50,7 @@ foreach ($src in $sources) {
     foreach ($row in Import-Csv $path) {
         $lat = [double]$row.latitude
         $lon = [double]$row.longitude
-        if ($lat -lt $latMin -or $lat -gt $latMax -or $lon -lt $lonMin -or $lon -gt $lonMax) { continue }
+        if (-not (Test-InRegion $lat $lon)) { continue }
 
         # VIIRS uses bright_ti4, MODIS uses brightness
         $bright = if ($row.PSObject.Properties['bright_ti4']) { $row.bright_ti4 } else { $row.brightness }
@@ -71,7 +82,7 @@ if ($points.Count -eq 0) {
 
 $out = [ordered]@{
     generated = (Get-Date).ToUniversalTime().ToString('yyyy-MM-dd HH:mm') + ' UTC'
-    bbox      = @($latMin, $lonMin, $latMax, $lonMax)
+    bbox      = @($boxes | ForEach-Object { @($_.latMin, $_.lonMin, $_.latMax, $_.lonMax) })
     points    = $points
 }
 

@@ -1,4 +1,4 @@
-# Holt lokale Einsatzmeldungen (Polizei-/Feuerwehr-Pressemeldungen via
+﻿# Holt lokale Einsatzmeldungen (Polizei-/Feuerwehr-Pressemeldungen via
 # Presseportal und amtliche Warnungen via NINA-API), filtert Brand-Meldungen,
 # geokodiert die Orte (Nominatim, mit Cache) und schreibt data/reports.js.
 #
@@ -74,6 +74,31 @@ $ninaKreise = @{
     '08425' = 'Alb-Donau-Kreis';      '08426' = 'Biberach';             '08435' = 'Bodenseekreis'
     '08436' = 'Ravensburg';           '08437' = 'Sigmaringen'
 }
+# Alle 53 Kreise und kreisfreien Staedte in Nordrhein-Westfalen.
+# Schluessel gegen die NINA-API selbst geprueft (jeder liefert ein Dashboard),
+# Namen aus OpenStreetMap.
+$ninaKreiseNRW = @{
+    '05111' = 'Düsseldorf';               '05112' = 'Duisburg';                 '05113' = 'Essen'
+    '05114' = 'Krefeld';                  '05116' = 'Mönchengladbach';          '05117' = 'Mülheim an der Ruhr'
+    '05119' = 'Oberhausen';               '05120' = 'Remscheid';                '05122' = 'Solingen'
+    '05124' = 'Wuppertal';                '05154' = 'Kreis Kleve';              '05158' = 'Kreis Mettmann'
+    '05162' = 'Rhein-Kreis Neuss';        '05166' = 'Kreis Viersen';            '05170' = 'Kreis Wesel'
+    '05314' = 'Bonn';                     '05315' = 'Köln';                     '05316' = 'Leverkusen'
+    '05334' = 'Städteregion Aachen';      '05358' = 'Kreis Düren';              '05362' = 'Rhein-Erft-Kreis'
+    '05366' = 'Kreis Euskirchen';         '05370' = 'Kreis Heinsberg';          '05374' = 'Oberbergischer Kreis'
+    '05378' = 'Rheinisch-Bergischer Kreis';'05382' = 'Rhein-Sieg-Kreis';         '05512' = 'Bottrop'
+    '05513' = 'Gelsenkirchen';            '05515' = 'Münster';                  '05554' = 'Kreis Borken'
+    '05558' = 'Kreis Coesfeld';           '05562' = 'Kreis Recklinghausen';     '05566' = 'Kreis Steinfurt'
+    '05570' = 'Kreis Warendorf';          '05711' = 'Bielefeld';                '05754' = 'Kreis Gütersloh'
+    '05758' = 'Kreis Herford';            '05762' = 'Kreis Höxter';             '05766' = 'Kreis Lippe'
+    '05770' = 'Kreis Minden-Lübbecke';    '05774' = 'Kreis Paderborn';          '05911' = 'Bochum'
+    '05913' = 'Dortmund';                 '05914' = 'Hagen';                    '05915' = 'Hamm'
+    '05916' = 'Herne';                    '05954' = 'Ennepe-Ruhr-Kreis';        '05958' = 'Hochsauerlandkreis'
+    '05962' = 'Märkischer Kreis';         '05966' = 'Kreis Olpe';               '05970' = 'Kreis Siegen-Wittgenstein'
+    '05974' = 'Kreis Soest';              '05978' = 'Kreis Unna'
+}
+foreach ($kv in $ninaKreiseNRW.GetEnumerator()) { $ninaKreise[$kv.Key] = $kv.Value }
+
 $ninaRegions = $ninaKreise.GetEnumerator() | ForEach-Object {
     @{ name = $_.Value; ags = $_.Key + '0000000' }
 }
@@ -86,8 +111,12 @@ $ninaRegions = $ninaKreise.GetEnumerator() | ForEach-Object {
 # "brand" (ohne Wortgrenze davor) erfasst.
 $fireRegex = '(?i)(brand(?!enburg|schutz)|br[eä]nn(?!holz)|brannt|feuer(?!wehr)|flammen|rauchentwicklung)'
 $vegRegex  = '(?i)((wald|flaechen|flächen|vegetations|wiesen|gras|feld|acker|hecken|b[oö]schungs)br[aä]nd|(heu|stroh)ballen|unterholz)'
-# Bounding Box wie in update-data.ps1 (für Nominatim-Eingrenzung)
-$viewbox = '6.8,49.85,10.55,47.3'
+# Bounding Boxen wie in update-data.ps1 (für Nominatim-Eingrenzung).
+# Reihenfolge im viewbox-Parameter: linkeLänge,obereBreite,rechteLänge,untereBreite
+$regions = @{
+    BW  = @{ viewbox = '6.8,49.85,10.55,47.3'; land = 'Baden-Württemberg' }
+    NRW = @{ viewbox = '5.85,52.6,9.5,50.3';   land = 'Nordrhein-Westfalen' }
+}
 $placeAlias = @{
     'Zell a.H'  = 'Zell am Harmersbach'
     'Zell a.H.' = 'Zell am Harmersbach'
@@ -102,15 +131,20 @@ if (Test-Path $cachePath) {
         ForEach-Object { $geocache[$_.Name] = $_.Value }
 }
 
-function Resolve-Place([string]$name) {
+function Resolve-Place([string]$name, [string]$region) {
+    if (-not $region -or -not $regions.ContainsKey($region)) { $region = 'BW' }
+    $cfg = $regions[$region]
     $q = $name.Trim()
     if ($placeAlias.ContainsKey($q)) { $q = $placeAlias[$q] }
-    if ($geocache.ContainsKey($q)) { return $geocache[$q] }
+    # Cache-Schlüssel: BW behält den blanken Ortsnamen, damit der bestehende
+    # Cache gültig bleibt (jede Neuauflösung kostet wegen Nominatim 1 s).
+    $key = if ($region -eq 'BW') { $q } else { $region + ':' + $q }
+    if ($geocache.ContainsKey($key)) { return $geocache[$key] }
 
     $url = 'https://nominatim.openstreetmap.org/search?format=json&limit=1&bounded=1' +
            '&countrycodes=de&accept-language=de' +
-           '&viewbox=' + $viewbox +
-           '&q=' + [uri]::EscapeDataString("$q, Baden-Württemberg")
+           '&viewbox=' + $cfg.viewbox +
+           '&q=' + [uri]::EscapeDataString("$q, $($cfg.land)")
     try {
         $res = Invoke-RestMethod -Uri $url -Headers @{ 'User-Agent' = 'firemap-prototype/0.1 (lokales Projekt)' }
         Start-Sleep -Seconds 1   # Nominatim-Nutzungsbedingungen: max. 1 Anfrage/s
@@ -119,8 +153,22 @@ function Resolve-Place([string]$name) {
     $hit = if ($res.Count -gt 0) {
         @{ lat = [double]$res[0].lat; lon = [double]$res[0].lon }
     } else { $null }
-    $geocache[$q] = $hit
+    $geocache[$key] = $hit
     return $hit
+}
+
+# Feuerwehr-Meldungen tragen den Ort meist nicht im Titel, wohl aber im Namen
+# der Dienststelle ("Feuerwehr Dinslaken", "Feuerwehr und Rettungsdienst Bonn",
+# "Feuerwehren im Kreis Soest"). Bei der Polizei steht der Ort im Titel.
+function Get-OfficePlace([string]$company) {
+    if ($company -notmatch '(?i)(feuerwehr|rettungsdienst)') { return $null }
+    $p = $company -replace '(?i)^(freiwillige\s+|kreis|berufs|werk|stadt|gemeinde)?feuerwehr(en)?', '' `
+                  -replace '(?i)^(verband|verein)\w*', '' `
+                  -replace '(?i)\s*und\s+rettungsdienst', '' `
+                  -replace '(?i)^(\s*(im|in|der|des|die|stadt|gemeinde|amt|markt))+\s+', ' '
+    $p = $p.Trim(' ', '-', ',', '.')
+    if ($p.Length -lt 3) { return $null }
+    return $p
 }
 
 # --- Artikel-Volltext + Veröffentlichungsdatum mit Cache --------------------
@@ -255,6 +303,7 @@ function Invoke-ReportItem($feed, [string]$title, [string]$desc, [string]$link, 
         veg    = ($fullText -match $vegRegex)
         status = Get-FireStatus $fullText
         source = $feed.name
+        region = $(if ($feed.region) { $feed.region } else { 'BW' })
         isUpdate = $isUpdate
     })
 }
@@ -264,63 +313,132 @@ function Invoke-ReportItem($feed, [string]$title, [string]$desc, [string]$link, 
 # direkt — RSS + Artikel-Scraping dienen nur noch als Fallback ohne Key.
 $ppApiKey = $env:PRESSEPORTAL_API_KEY
 
-foreach ($feed in $rssFeeds) {
-    $officeId = if ($feed.url -match 'dienststelle_(\d+)') { $Matches[1] } else { $null }
-    $usedApi = $false
-
-    if ($ppApiKey -and $officeId) {
+# --- Bundesweiter Blaulicht-Strom (API) -------------------------------------
+# Ein einziger Endpunkt liefert Polizei- UND Feuerwehr-Meldungen aus ganz
+# Deutschland; jede Story trägt ihr Bundesland als Schlagwort. Wir behalten
+# nur BW und NRW.
+#
+# Warum nicht Einzelfeeds je Dienststelle: allein NRW hat 195 Dienststellen
+# im Presseportal-Verzeichnis (51 Polizei, 129 Feuerwehr). 195 Abfragen alle
+# 15 Minuten wären unverhältnismäßig und würden den API-Key gefährden — der
+# Sammelstrom kostet ein bis zwei Abfragen und erfasst dabei mehr Wehren, als
+# wir je von Hand eintragen würden (128 verschiedene Dienststellen in 300
+# Meldungen). Die BW-Einzelfeeds oben bleiben als zweites Standbein bestehen;
+# doppelte Meldungen fängt die Dedup über Link und Basistitel ab.
+$streamItems = 0
+if ($ppApiKey) {
+    # 50 Meldungen decken bundesweit ~4,5 h ab; zwei Seiten geben dem
+    # 15-Minuten-Takt reichlich Sicherheitsabstand. Der Backfill greift
+    # bewusst nur massvoll tiefer — die API hat eine Tagesquota, die ein
+    # ausuferndes Nachladen sonst fuer den Rest des Tages verbrennt.
+    $streamPages = if ($Backfill) { 0..11 } else { 0..1 }
+    foreach ($p in $streamPages) {
+        $uri = 'https://api.presseportal.de/api/v2/stories/police?api_key={0}&format=json&limit=50&start={1}' -f `
+               $ppApiKey, ($p * 50)
         try {
-            Write-Host "API: $($feed.name) ..."
-            $pages = if ($Backfill) { 0..7 } else { @(0) }   # Backfill: bis 400 Stories je Stelle
-            foreach ($p in $pages) {
-                $uri = 'https://api.presseportal.de/api/v2/stories/office/{0}?api_key={1}&format=json&limit=50&start={2}' -f `
-                    $officeId, $ppApiKey, ($p * 50)
-                $resp = Invoke-RestMethod -Uri $uri -TimeoutSec 40
-                if (-not $resp.success) { throw [string]$resp.error.msg }
-                $stories = @($resp.content.story)
-                if ($stories.Count -eq 0) { break }
-                foreach ($st in $stories) {
-                    Invoke-ReportItem $feed ([string]$st.title) '' ([string]$st.url) ([string]$st.published) ([string]$st.body)
+            $resp = Invoke-RestMethod -Uri $uri -TimeoutSec 40
+        } catch {
+            Write-Warning "Blaulicht-Strom Seite $p fehlgeschlagen ($_)"
+            break
+        }
+        if (-not $resp.success) {
+            $msg = [string]$resp.error.msg
+            if ($msg -match '(?i)quota') {
+                Write-Warning "Presseportal-API: Tagesquota erschoepft — dieser Lauf bleibt ohne neue Meldungen, der 30-Tage-Speicher bleibt erhalten."
+            } else {
+                Write-Warning "Blaulicht-Strom: $msg"
+            }
+            break
+        }
+        $stories = @($resp.content.story)
+        if ($stories.Count -eq 0) { break }
+        foreach ($st in $stories) {
+            $kw = @($st.keywords.keyword)
+            $reg = if ($kw -contains 'NRW') { 'NRW' } elseif ($kw -contains 'BW') { 'BW' } else { $null }
+            if (-not $reg) { continue }
+            $company = [string]$st.company.name
+            if (-not $company) { continue }
+            $streamFeed = @{
+                name   = $company
+                region = $reg
+                place  = (Get-OfficePlace $company)
+            }
+            $streamItems++
+            Invoke-ReportItem $streamFeed ([string]$st.title) '' ([string]$st.url) `
+                              ([string]$st.published) ([string]$st.body)
+        }
+        if ($stories.Count -lt 50) { break }
+        Start-Sleep -Milliseconds 300
+    }
+}
+
+
+# Einzelfeeds je Dienststelle nur noch als Ausfallsicherung: Sie kosten 27
+# Abfragen pro Lauf (~2600/Tag) und haben zusammen mit einem Backfill die
+# API-Quota gesprengt. Der Sammelstrom oben deckt dieselben Dienststellen ab
+# und kostet zwei Abfragen — die Einzelfeeds laufen deshalb nur, wenn er
+# nichts geliefert hat (Ausfall, Quota, Key fehlt).
+if ($streamItems -eq 0) {
+    Write-Warning "Blaulicht-Strom lieferte nichts — weiche auf die Einzelfeeds aus."
+    foreach ($feed in $rssFeeds) {
+        $officeId = if ($feed.url -match 'dienststelle_(\d+)') { $Matches[1] } else { $null }
+        $usedApi = $false
+
+        if ($ppApiKey -and $officeId) {
+            try {
+                Write-Host "API: $($feed.name) ..."
+                $pages = if ($Backfill) { 0..7 } else { @(0) }   # Backfill: bis 400 Stories je Stelle
+                foreach ($p in $pages) {
+                    $uri = 'https://api.presseportal.de/api/v2/stories/office/{0}?api_key={1}&format=json&limit=50&start={2}' -f `
+                        $officeId, $ppApiKey, ($p * 50)
+                    $resp = Invoke-RestMethod -Uri $uri -TimeoutSec 40
+                    if (-not $resp.success) { throw [string]$resp.error.msg }
+                    $stories = @($resp.content.story)
+                    if ($stories.Count -eq 0) { break }
+                    foreach ($st in $stories) {
+                        Invoke-ReportItem $feed ([string]$st.title) '' ([string]$st.url) ([string]$st.published) ([string]$st.body)
+                    }
+                    if ($stories.Count -lt 50) { break }
+                    Start-Sleep -Milliseconds 300
                 }
-                if ($stories.Count -lt 50) { break }
+                $usedApi = $true
+            } catch {
+                Write-Warning "API $($feed.name) fehlgeschlagen ($_) — RSS-Fallback."
+            }
+        }
+
+        if (-not $usedApi) {
+            Write-Host "RSS: $($feed.name) ..."
+            try {
+                $xml = [xml](Invoke-WebRequest -Uri $feed.url -UseBasicParsing -Headers @{ 'User-Agent' = 'Mozilla/5.0' }).Content
+                foreach ($item in $xml.rss.channel.item) {
+                    Invoke-ReportItem $feed ([string]$item.title) ([string]$item.description) ([string]$item.link) ([string]$item.pubDate) $null
+                }
+            } catch {
+                Write-Warning "Feed $($feed.name) nicht abrufbar: $_"   # ein toter Feed stoppt nicht den Lauf
+            }
+        }
+
+        if ((-not $usedApi) -and $Backfill -and $feed.url -match 'dienststelle_(\d+)') {
+            $id = $Matches[1]
+            Write-Host "  Backfill: $BackfillPages Archivseiten ..."
+            for ($off = 0; $off -lt $BackfillPages * 30; $off += 30) {
+                try {
+                    $html = (Invoke-WebRequest -Uri "https://www.presseportal.de/blaulicht/nr/$id/$off" -UseBasicParsing -Headers @{ 'User-Agent' = 'Mozilla/5.0' }).Content
+                } catch { break }
+                $items = [regex]::Matches($html, '<h3 class="news-headline-clamp"><a href="(?<href>[^"]+)" title="(?<title>[^"]+)"')
+                if ($items.Count -eq 0) { break }
+                foreach ($m in $items) {
+                    $aTitle = [System.Net.WebUtility]::HtmlDecode($m.Groups['title'].Value)
+                    # Nur Brand-verdächtige Titel kosten einen Artikel-Abruf
+                    if ($aTitle -notmatch $fireRegex) { continue }
+                    Invoke-ReportItem $feed $aTitle '' $m.Groups['href'].Value $null $null
+                }
                 Start-Sleep -Milliseconds 300
             }
-            $usedApi = $true
-        } catch {
-            Write-Warning "API $($feed.name) fehlgeschlagen ($_) — RSS-Fallback."
         }
     }
 
-    if (-not $usedApi) {
-        Write-Host "RSS: $($feed.name) ..."
-        try {
-            $xml = [xml](Invoke-WebRequest -Uri $feed.url -UseBasicParsing -Headers @{ 'User-Agent' = 'Mozilla/5.0' }).Content
-            foreach ($item in $xml.rss.channel.item) {
-                Invoke-ReportItem $feed ([string]$item.title) ([string]$item.description) ([string]$item.link) ([string]$item.pubDate) $null
-            }
-        } catch {
-            Write-Warning "Feed $($feed.name) nicht abrufbar: $_"   # ein toter Feed stoppt nicht den Lauf
-        }
-    }
-
-    if ((-not $usedApi) -and $Backfill -and $feed.url -match 'dienststelle_(\d+)') {
-        $id = $Matches[1]
-        Write-Host "  Backfill: $BackfillPages Archivseiten ..."
-        for ($off = 0; $off -lt $BackfillPages * 30; $off += 30) {
-            try {
-                $html = (Invoke-WebRequest -Uri "https://www.presseportal.de/blaulicht/nr/$id/$off" -UseBasicParsing -Headers @{ 'User-Agent' = 'Mozilla/5.0' }).Content
-            } catch { break }
-            $items = [regex]::Matches($html, '<h3 class="news-headline-clamp"><a href="(?<href>[^"]+)" title="(?<title>[^"]+)"')
-            if ($items.Count -eq 0) { break }
-            foreach ($m in $items) {
-                $aTitle = [System.Net.WebUtility]::HtmlDecode($m.Groups['title'].Value)
-                # Nur Brand-verdächtige Titel kosten einen Artikel-Abruf
-                if ($aTitle -notmatch $fireRegex) { continue }
-                Invoke-ReportItem $feed $aTitle '' $m.Groups['href'].Value $null $null
-            }
-            Start-Sleep -Milliseconds 300
-        }
-    }
 }
 
 # --- NINA-Warnungen ---------------------------------------------------------
@@ -367,6 +485,7 @@ foreach ($kv in $groups.GetEnumerator()) {
         textLocs = @($tl.Values)
         veg     = ($sorted | Where-Object { $_.veg }).Count -gt 0
         source  = $first.source
+        region  = $first.region
         updates = $sorted.Count - 1
     })
 }
@@ -378,6 +497,8 @@ foreach ($e in ($events | Sort-Object { $_.first })) {
     if ($e.veg) {
         $target = $merged | Where-Object {
             $_.veg -and
+            # gleiche Ortsnamen gibt es in beiden Ländern (Neustadt, Bergheim …)
+            $_.region -eq $e.region -and
             [math]::Abs(($_.first - $e.first).TotalHours) -le 72 -and
             (@($_.places) + @($e.places) | Group-Object | Where-Object Count -gt 1).Count -gt 0
         } | Select-Object -First 1
@@ -400,14 +521,14 @@ $out = [System.Collections.Generic.List[object]]::new()
 foreach ($e in $merged) {
     $located = @()
     foreach ($p in $e.places) {
-        $geo = Resolve-Place $p
+        $geo = Resolve-Place $p $e.region
         if ($geo) { $located += [ordered]@{ name = $p; lat = $geo.lat; lon = $geo.lon; approx = $false } }
         else      { Write-Warning "Nicht geokodierbar: $p" }
     }
     # "zwischen X und Y" -> Mittelpunkt als ungefähre Position
     foreach ($x in $e.textLocs) {
-        $ga = Resolve-Place ($x.a -replace '\s+a\.\s?H\.?$', ' am Harmersbach')
-        $gb = Resolve-Place ($x.b -replace '\s+a\.\s?H\.?$', ' am Harmersbach')
+        $ga = Resolve-Place ($x.a -replace '\s+a\.\s?H\.?$', ' am Harmersbach') $e.region
+        $gb = Resolve-Place ($x.b -replace '\s+a\.\s?H\.?$', ' am Harmersbach') $e.region
         if ($ga -and $gb) {
             $located += [ordered]@{
                 name = $x.label
@@ -419,7 +540,7 @@ foreach ($e in $merged) {
     }
     # Kein Ort auflösbar, aber Feuerwehr-Feed mit Standard-Ort -> Stadt-Ebene
     if (-not $located -and $e.fallback) {
-        $geo = Resolve-Place $e.fallback
+        $geo = Resolve-Place $e.fallback $e.region
         if ($geo) { $located += [ordered]@{ name = $e.fallback; lat = $geo.lat; lon = $geo.lon; approx = $true } }
     }
     if (-not $located) { continue }
@@ -433,6 +554,7 @@ foreach ($e in $merged) {
         places  = $located
         veg     = $e.veg
         source  = $e.source
+        region  = $e.region
         updates = $e.updates
     })
 }
@@ -448,6 +570,8 @@ if (Test-Path $storePath) {
             base = $ev.base; status = $ev.status; title = $ev.title; link = $ev.link
             first = $ev.first; last = $ev.last; veg = [bool]$ev.veg
             source = $ev.source; updates = [int]$ev.updates
+            # Bestand vor der NRW-Erweiterung kennt das Feld nicht -> BW
+            region = $(if ($ev.region) { [string]$ev.region } else { 'BW' })
             places = @($ev.places | ForEach-Object {
                 [ordered]@{ name = $_.name; lat = [double]$_.lat; lon = [double]$_.lon; approx = [bool]$_.approx }
             })
@@ -492,4 +616,5 @@ $result = [ordered]@{
 'window.REPORT_DATA = ' + ($result | ConvertTo-Json -Depth 6 -Compress) + ';' |
     Set-Content (Join-Path $dataDir 'reports.js') -Encoding UTF8
 
+Write-Host "Blaulicht-Strom lieferte $streamItems Meldungen."
 Write-Host "Wrote data/reports.js: $($store.Count) Ereignisse ($($out.Count) aus aktuellem Lauf, $($rawReports.Count) Roh-Meldungen), $($ninaWarnings.Count) NINA-Warnungen."

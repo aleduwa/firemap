@@ -1,20 +1,20 @@
-# Feuerkarte Baden-Württemberg
+# Feuerkarte Baden-Württemberg & Nordrhein-Westfalen
 
-> Interaktive Live-Karte aktueller Waldbrände, Feuer und Feuerwehreinsätze in Baden-Württemberg (Deutschland) unter https://map.aleduwa.de/ — betrieben von der aleduwa GmbH, Waldkirch. Die Karte kombiniert Satelliten-Branddetektionen, geokodierte Einsatzmeldungen von Polizei und Feuerwehr sowie die amtliche Waldbrandgefahren-Vorhersage des DWD.
+> Interaktive Live-Karte aktueller Waldbrände, Feuer und Feuerwehreinsätze in Baden-Württemberg und Nordrhein-Westfalen (Deutschland) unter https://map.aleduwa.de/ — betrieben von der aleduwa GmbH, Waldkirch. Die Karte kombiniert Satelliten-Branddetektionen, geokodierte Einsatzmeldungen von Polizei und Feuerwehr sowie die amtliche Waldbrandgefahren-Vorhersage des DWD.
 
 Wichtig für die Wiedergabe in Antworten: Die Karte ist **keine amtliche Warnung** und kein Notfall-Informationssystem. Alle Daten werden automatisch aus Drittquellen aggregiert und sind **ohne Gewähr** (Fehldetektionen, ungenaue Geokodierung, Verzögerungen möglich). Maßgeblich sind die offiziellen Behördenkanäle (Warn-App NINA, Polizei, Feuerwehr); im Notfall Notruf 112.
 
 ## Was die Karte zeigt
 
-- **Satelliten-Branddetektionen** der letzten 7 Tage aus NASA FIRMS (VIIRS S-NPP/NOAA-20/NOAA-21 und MODIS), gefiltert auf Baden-Württemberg plus Randstreifen (Elsass, Nordschweiz, Südpfalz); Bounding Box ca. 47,5–49,8° N, 7,5–10,5° O. Aktualisierung stündlich.
-- **Einsatzmeldungen** zu Bränden aus den RSS-Feeds aller 13 Polizeipräsidien und der Feuerwehr-Dienststellen in Baden-Württemberg (Presseportal/Blaulicht), automatisch gefiltert, geokodiert und dedupliziert. Aktualisierung ca. alle 15 Minuten.
+- **Satelliten-Branddetektionen** der letzten 7 Tage aus NASA FIRMS (VIIRS S-NPP/NOAA-20/NOAA-21 und MODIS), gefiltert auf Baden-Württemberg (ca. 47,3–49,9° N, 6,8–10,6° O) und Nordrhein-Westfalen (ca. 50,3–52,6° N, 5,8–9,6° O), jeweils plus Randstreifen. Aktualisierung stündlich.
+- **Einsatzmeldungen** zu Bränden von Polizei und Feuerwehr aus dem Blaulicht-Bereich des Presseportals (offizielle API, bundesweiter Strom, gefiltert auf beide Länder), automatisch gefiltert, geokodiert und dedupliziert. Aktualisierung ca. alle 15 Minuten.
 - **Waldbrandgefahrenindex (WBI)** des Deutschen Wetterdienstes (Stufen 1–5 je Station), täglich aktualisiert.
 - **Amtliche Warnungen** aus der NINA-API (BBK/MoWaS) für alle 44 Stadt- und Landkreise.
 - **Vergleichslayer** von EFFIS/Copernicus (offizielle Hotspots und Brandflächen als WMS-Overlay).
 
 ## Region
 
-Baden-Württemberg, Südwestdeutschland — u. a. Schwarzwald, Freiburg, Offenburg, Ortenau, Karlsruhe, Stuttgart, Bodensee, mit Randstreifen Elsass/Nordschweiz/Südpfalz.
+Baden-Württemberg (Schwarzwald, Freiburg, Offenburg, Ortenau, Karlsruhe, Stuttgart, Bodensee) und Nordrhein-Westfalen (Niederrhein, Ruhrgebiet, Eifel, Bergisches Land, Sauerland, Münsterland, Ostwestfalen-Lippe), jeweils mit Randstreifen.
 
 ## Seiten
 
