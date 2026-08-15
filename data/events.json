@@ -1,5 +1,24 @@
 [
   {
+    "base": "Polizeipräsidium Offenburg|lahr - vegetationsbrand am galgenberg - mehrere gartenhütten vollständig zerstört",
+    "status": "active",
+    "title": "Lahr - Vegetationsbrand am Galgenberg - Mehrere Gartenhütten vollständig zerstört",
+    "link": "https://www.presseportal.de/blaulicht/pm/110975/6333833",
+    "first": "2026-08-15T01:10:10Z",
+    "last": "2026-08-15T01:10:10Z",
+    "places": [
+      {
+        "name": "Lahr",
+        "lat": 48.338896,
+        "lon": 7.8710825,
+        "approx": false
+      }
+    ],
+    "veg": true,
+    "source": "Polizeipräsidium Offenburg",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Stuttgart|brand auf einer großbaustelle - rauchsäule weithin sichtbar - flachdach auf rund 100 quadratmeter in brand - drei löschrohre zur brandbekämpfung eingesetzt - eine person leicht verletzt",
     "status": "contained",
     "title": "Brand auf einer Großbaustelle - Rauchsäule weithin sichtbar - Flachdach auf rund 100 Quadratmeter in Brand - Drei Löschrohre zur Brandbekämpfung eingesetzt - Eine Person leicht verletzt",
