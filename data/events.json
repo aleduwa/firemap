@@ -6,6 +6,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6333856",
     "first": "2026-08-15T08:33:46Z",
     "last": "2026-08-15T08:33:46Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
     "places": [
       {
         "name": "Süßen",
@@ -13,10 +16,7 @@
         "lon": 9.7372379,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|altlußheim/rhein-neckar-kreis: zwei unerlaubte lagerfeuer am rheinufer",
@@ -25,6 +25,9 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6333854",
     "first": "2026-08-15T08:16:40Z",
     "last": "2026-08-15T08:16:40Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
     "places": [
       {
         "name": "Altlußheim",
@@ -38,10 +41,7 @@
         "lon": 8.7352403,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Offenburg|lahr - vegetationsbrand am galgenberg - mehrere gartenhütten vollständig zerstört",
