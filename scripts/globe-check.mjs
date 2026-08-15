@@ -190,7 +190,8 @@ async function run(browser, name, viewport, opts = {}) {
   if (!opts.touch) {
     await page.locator('.lc-toggle').click();
     for (const style of ['satellit', 'dunkel', 'detail', 'ruhig']) {
-      await page.locator(`input[name="basestyle"][value="${style}"]`).check();
+      // Das Radio liegt unsichtbar unter der Bildvorschau -> die Karte klicken
+      await page.locator(`.style-card:has(input[value="${style}"])`).click();
       await page.waitForFunction(() => window.__globeMap.loaded(), null, { timeout: 45000 })
         .catch(() => warnings.push(`[${name}] Stil "${style}" nicht fertig geladen`));
       await page.waitForTimeout(2000);

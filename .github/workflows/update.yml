@@ -106,5 +106,6 @@ jobs:
           cp index.html events.html globe.html klassisch.html faq.html impressum.html datenschutz.html hinweise.html \
              robots.txt sitemap.xml llms.txt favicon.svg og-image.png dist/
           cp -r kreise dist/kreise
+          cp -r thumbs dist/thumbs
           cp data/*.js dist/data/
           npx --yes wrangler@4 deploy
