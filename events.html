@@ -171,6 +171,21 @@
   .lv-table tr:hover td { background: #f7f6f3; }
   .lv-more { padding: 10px 12px; color: var(--muted); font-size: 12px; text-align: center; }
 
+  /* "läuft gerade" — der einzige grüne Akzent auf der Seite, damit er sticht */
+  .live-badge {
+    display: inline-block; margin-left: 7px; padding: 1px 7px 2px; border-radius: 999px;
+    background: #e7f4ec; color: #1c6b3f; border: 1px solid #a8d7bd;
+    font-size: 10.5px; font-weight: 700; letter-spacing: .01em; white-space: nowrap;
+    vertical-align: middle;
+  }
+  .live-badge::before {
+    content: ''; display: inline-block; width: 6px; height: 6px; border-radius: 50%;
+    background: #22a05b; margin-right: 5px; vertical-align: middle;
+    animation: livepulse 1.8s ease-in-out infinite;
+  }
+  @keyframes livepulse { 50% { opacity: .35; } }
+  @media (prefers-reduced-motion: reduce) { .live-badge::before { animation: none; } }
+
   /* Info-Panel: auf Desktop immer offen; Einklapp-Verhalten nur mobil (s. Media Query) */
   .info-panel h1 { cursor: default; }
 
@@ -449,6 +464,20 @@
   }
   const hasTime = s => !!s && s.length > 10;
 
+  // "Läuft gerade": nur für Termine mit echter Uhrzeit sinnvoll. Fehlt die
+  // Endzeit (der Normalfall in den Quellen), rechnen wir mit vier Stunden
+  // Laufzeit — lieber knapp schätzen als einen längst beendeten Termin als
+  // laufend ausweisen. Termine ohne Uhrzeit bleiben außen vor: bei ihnen
+  // stünde sonst ab Mitternacht "läuft gerade" am Dorffest.
+  function isRunning(e) {
+    if (!hasTime(e.start)) return false;
+    const s = parseLocal(e.start);
+    if (!s) return false;
+    const end = hasTime(e.end) ? parseLocal(e.end) : new Date(s.getTime() + 4 * 3600e3);
+    const now = new Date();
+    return s <= now && now < end;
+  }
+
   function fmtDate(s) {
     const d = parseLocal(s);
     if (!d) return '–';
@@ -522,7 +551,15 @@
 
   // ---- Zeitraum-Filter (Zukunft) -----------------------------------------
   const RANGES = [
-    { key: 'today',   label: 'Heute' },
+    // Nach Mitternacht heißt "Heute" faktisch "die laufende Nacht" — das sagt
+    // die Beschriftung dann auch, sonst wirkt das Datum daneben wie ein Fehler.
+    { key: 'today',
+      get label() { return isNightOwlHour() ? 'Heute Nacht' : 'Heute'; },
+      get title() {
+        return isNightOwlHour()
+          ? 'Die laufende Nacht: Der Ausgeh-Tag endet erst um 5 Uhr, deshalb siehst du weiter die Termine von gestern Abend.'
+          : 'Heute — inklusive der Nacht bis 5 Uhr morgens.';
+      } },
     { key: 'weekend', label: 'Wochenende' },
     { key: '7',       label: '7 T' },
     { key: '30',      label: '30 T' },
@@ -533,18 +570,36 @@
 
   function addDays(d, n) { return new Date(d.getFullYear(), d.getMonth(), d.getDate() + n); }
 
+  // --- Nachtschwärmer-Tag ---------------------------------------------------
+  // Ein Kalendertag endet um Mitternacht, ein Ausgeh-Abend nicht. Um 1 Uhr
+  // wäre die Party, die um 22 Uhr angefangen hat, sonst schlagartig "gestern"
+  // und aus dem Heute-Filter verschwunden. Deshalb läuft der Tag hier bis
+  // 5 Uhr morgens: Alles vor 5 Uhr zählt noch zum Vorabend.
+  const NIGHT_END = 5;
+  const isNightOwlHour = () => new Date().getHours() < NIGHT_END;
+  // Beginn des laufenden Ausgeh-Tages (vor 5 Uhr: der gestrige)
+  function dayStart(d) {
+    const s = new Date(d.getFullYear(), d.getMonth(), d.getDate());
+    return d.getHours() < NIGHT_END ? addDays(s, -1) : s;
+  }
+  // Ende eines Ausgeh-Tages: der nächste Morgen um 5 Uhr
+  function dayEnd(d) {
+    const e = addDays(d, 1);
+    e.setHours(NIGHT_END, 0, 0, 0);
+    return e;
+  }
+
   function rangeBounds(key) {
-    const now = new Date();
-    const start = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-    if (key === 'today') return [start, addDays(start, 1)];
+    const start = dayStart(new Date());
+    if (key === 'today') return [start, dayEnd(start)];
     if (key === 'weekend') {
       // kommendes Sa+So; läuft das Wochenende schon, dann heute bis So
       const dow = start.getDay();                 // 0 = So, 6 = Sa
       const from = (dow === 6 || dow === 0) ? start : addDays(start, 6 - dow);
       const sunday = (dow === 0) ? start : addDays(from, (from.getDay() === 6) ? 1 : 0);
-      return [from, addDays(sunday, 1)];
+      return [from, dayEnd(sunday)];
     }
-    return [start, addDays(start, +key)];
+    return [start, dayEnd(addDays(start, +key - 1))];
   }
 
   function rangeLabel(key) {
@@ -649,7 +704,8 @@
       const e = list[0];
       const cat = catOf(e);
       const more = list.length - 1;
-      const tip = '<div class="tip-head">' + esc(e.title) + '</div>' +
+      const tip = '<div class="tip-head">' + esc(e.title) +
+        (isRunning(e) ? ' <span class="live-badge">l&auml;uft gerade</span>' : '') + '</div>' +
         (e.place ? '<div class="tip-sub">' + esc(e.place) + '</div>' : '') +
         '<table>' +
         '<tr><td>Wann</td><td>' + fmtDate(e.start) +
@@ -792,7 +848,8 @@
     if (isMobile()) div.classList.add('collapsed');
     div.innerHTML = '<button class="mob-toggle" aria-label="Zeitraum-Filter ein-/ausblenden" title="Zeitraum">🕒</button>' +
       '<span class="lbl">Zeitraum</span>' + RANGES.map(r =>
-      '<button class="range-btn' + (r.key === rangeKey ? ' active' : '') + '" data-key="' + r.key + '">' + r.label + '</button>'
+      '<button class="range-btn' + (r.key === rangeKey ? ' active' : '') + '" data-key="' + r.key + '"' +
+      (r.title ? ' title="' + r.title + '"' : '') + '>' + r.label + '</button>'
     ).join('');
     div.addEventListener('click', e => {
       if (e.target.closest('.mob-toggle')) { toggleCollapse(div); return; }
@@ -927,7 +984,9 @@
       // data-col: auf dem Handy wird die Tabelle per CSS zu Karten umgebaut,
       // die Spalten werden dort einzeln angesprochen statt über die Position.
       return '<tr>' +
-        '<td data-col="start">' + fmtDate(e.start) + (e.end && e.end.slice(0, 10) !== e.start.slice(0, 10) ? '<br>– ' + fmtDate(e.end) : '') + '</td>' +
+        '<td data-col="start">' + fmtDate(e.start) +
+          (e.end && e.end.slice(0, 10) !== e.start.slice(0, 10) ? '<br>– ' + fmtDate(e.end) : '') +
+          (isRunning(e) ? '<span class="live-badge">läuft gerade</span>' : '') + '</td>' +
         '<td class="t-title" data-col="title"><a href="' + esc(e.url) + '" target="_blank" rel="noopener">' + esc(e.title) + '</a></td>' +
         '<td class="t-place" data-col="place">' + esc(e.place || '–') + '</td>' +
         '<td data-col="cat">' + CATS[cat].emoji + ' ' + CATS[cat].label + '</td>' +
@@ -958,6 +1017,7 @@
       b.className = 'chip' + (r.key === rangeKey ? ' active' : '');
       b.dataset.key = r.key;
       b.textContent = r.label;
+      if (r.title) b.title = r.title;
       b.addEventListener('click', () => setRange(r.key));
       rangeSpan.appendChild(b);
     });
