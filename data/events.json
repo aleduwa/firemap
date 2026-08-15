@@ -4630,25 +4630,6 @@
     ]
   },
   {
-    "base": "Polizeipräsidium Heilbronn|stadt- und landkreis heilbronn: einbrüche, brand, unfall, angriff auf polizeibeamte, messer bei kontrolle aufgefunden und verdacht auf sexuellen missbrauch von kindern",
-    "status": "contained",
-    "title": "Stadt- und Landkreis Heilbronn: Einbrüche, Brand, Unfall, Angriff auf Polizeibeamte, Messer bei Kontrolle aufgefunden und Verdacht auf sexuellen Missbrauch von Kindern",
-    "link": "https://www.presseportal.de/blaulicht/pm/110971/6315980",
-    "first": "2026-07-16T12:04:18Z",
-    "last": "2026-07-16T12:04:18Z",
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0,
-    "places": [
-      {
-        "name": "Stadt-",
-        "lat": 49.4093582,
-        "lon": 8.694724,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Polizeipräsidium Offenburg|kippenheim/schmieheim - gebäudebrand",
     "status": "active",
     "title": "Kippenheim/Schmieheim - Gebäudebrand",
