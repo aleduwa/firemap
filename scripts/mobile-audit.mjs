@@ -22,7 +22,7 @@ const port = await new Promise(r => server.listen(0, '127.0.0.1', () => r(server
 const SEL = ['.panel', '.mode-switch', '.maplibregl-ctrl-attrib', '.leaflet-control-attribution',
              '.maplibregl-ctrl-group', '.leaflet-control-zoom', '.layer-ctl', '.legend',
              '.range-ctl', '.lc-toggle', '.leaflet-control-layers',
-             '#mbar', '#sheet.open', '.geo-ctl', '.listview-filters', '.lv-filters'];
+             '#mbar', '#sheet.open', '.geo-ctl', '.locate-ctl', '.view-switch', '.lv-mobilebar'];
 
 const browser = await chromium.launch();
 let problems = 0;
@@ -54,7 +54,7 @@ for (const [label, dev] of [['iphone12', devices['iPhone 12']], ['pixel5', devic
       if (ox > 2 && oy > 2) overlaps.push(`${a.cls} [${a.x},${a.y} ${a.w}x${a.h}] >< ${b.cls} [${b.x},${b.y} ${b.w}x${b.h}] (${ox}x${oy}px)`);
     }
     return { viewport: [innerWidth, innerHeight], els, overlaps,
-             geolocate: !!document.querySelector('.maplibregl-ctrl-geolocate, .leaflet-control-locate') };
+             geolocate: !!document.querySelector('.maplibregl-ctrl-geolocate, .locate-ctl') };
   }, sel);
 
   const info = await measure(SEL);
@@ -66,7 +66,7 @@ for (const [label, dev] of [['iphone12', devices['iPhone 12']], ['pixel5', devic
   await page.screenshot({ path: path.join(OUT, `audit-${PAGE.replace('.html', '')}-${label}.png`) });
 
   // Sheet oeffnen und pruefen, ob es benutzbar ist
-  const btn = await page.$('#mbar button[data-sheet="layers"]');
+  const btn = await page.$('#mbar button[data-sheet="layers"], #mbar button[data-pane="base"]');
   if (btn) {
     await btn.tap();
     await page.waitForTimeout(700);

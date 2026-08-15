@@ -12,11 +12,19 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <style>
   :root {
-    --ink:        #0b0b0b;
-    --ink-2:      #52514e;
-    --muted:      #898781;
+    --ink:        #171614;
+    --ink-2:      #56544f;
+    --muted:      #8b8880;
     --surface:    #fcfcfb;
-    --hairline:   rgba(11,11,11,0.10);
+    --panel:      rgba(252,252,251,0.88);   /* Panels liegen auf der Karte */
+    --panel-solid:#fcfcfb;
+    --hairline:   rgba(11,11,11,0.09);
+    --track:      #edebe6;
+    --hover:      rgba(11,11,11,0.05);
+    --accent:     #8f1d1d;
+    --accent-bg:  rgba(143,29,29,0.10);
+    --shadow:     0 6px 24px rgba(11,11,11,0.10), 0 1px 3px rgba(11,11,11,0.07);
+    --shadow-lg:  0 12px 40px rgba(11,11,11,0.18);
   }
   html, body { height: 100%; margin: 0; }
   body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--ink); background: var(--surface);
@@ -28,16 +36,18 @@
   .lv-table th, .lv-filters select { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
 
   .panel {
-    background: var(--surface);
+    background: var(--panel);
+    -webkit-backdrop-filter: blur(14px) saturate(1.4);
+    backdrop-filter: blur(14px) saturate(1.4);
     border: 1px solid var(--hairline);
-    border-radius: 8px;
-    box-shadow: 0 1px 4px rgba(11,11,11,0.12);
-    padding: 10px 12px;
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    padding: 12px 14px;
     font-size: 13px;
     line-height: 1.45;
-    max-width: 280px;
+    max-width: 290px;
   }
-  .panel h1 { font-size: 14px; margin: 0 0 4px; font-weight: 650; }
+  .panel h1 { font-size: 13.5px; margin: 0 0 5px; font-weight: 650; letter-spacing: -0.01em; }
   .panel .meta { color: var(--ink-2); font-size: 12px; }
   .panel .meta b { color: var(--ink); font-weight: 600; }
 
@@ -51,12 +61,12 @@
     white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .scope-ctl .hint { flex-basis: 100%; font-size: 11px; color: #d03b3b; padding: 2px 2px 0; }
   .range-btn {
-    border: 1px solid var(--hairline); background: var(--surface); color: var(--ink-2);
-    border-radius: 6px; padding: 3px 8px; font-size: 12px; cursor: pointer;
-    font-family: inherit;
+    border: 1px solid var(--hairline); background: var(--panel-solid); color: var(--ink-2);
+    border-radius: 9px; padding: 5px 10px; font-size: 12px; cursor: pointer;
+    font-family: inherit; transition: background .15s, color .15s;
   }
-  .range-btn:hover { background: #f1f0ec; }
-  .range-btn.active { background: #8f1d1d; border-color: #8f1d1d; color: #fff; font-weight: 600; }
+  .range-btn:hover { background: var(--hover); color: var(--ink); }
+  .range-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
 
   .legend .row { display: flex; align-items: center; gap: 8px; margin-top: 6px; cursor: pointer; user-select: none; }
   .legend .row:hover .label { color: var(--ink); }
@@ -96,22 +106,27 @@
   /* OSM-Basiskarte beruhigen: fast monochrom — Event-Marker dominieren */
   .basemap-muted { filter: saturate(0.15) brightness(1.06) contrast(0.9); }
 
-  /* Einklapp-Buttons der Karten-Panels: nur auf Mobile sichtbar */
+  /* Alt-Bestand: die Panels klappten früher per Icon ein. Seit die Mobil-
+     Bedienung über Leiste + Sheet läuft, werden diese Knöpfe nicht mehr
+     gebraucht — die Markup-Stellen bleiben, der Knopf verschwindet. */
   .mob-toggle { display: none; }
 
-  .mode-switch { position:absolute; top:10px; left:50%; transform:translateX(-50%); z-index:1001; display:flex; background:#fcfcfb; border:1px solid rgba(11,11,11,.1); border-radius:8px; box-shadow:0 1px 4px rgba(11,11,11,.12); overflow:hidden; }
-  .mode-switch a { padding:6px 14px; font-size:13px; text-decoration:none; color:#52514e; }
-  .mode-switch a.active { background:#8f1d1d; color:#fff; font-weight:600; }
-  .mode-switch a:not(.active):hover { background:#f1f0ec; }
-
-  /* Umschalter Karte/Liste */
-  .view-switch { position: absolute; top: 10px; right: 10px; z-index: 1101; display: flex;
-    background: var(--surface); border: 1px solid var(--hairline); border-radius: 8px;
-    box-shadow: 0 1px 4px rgba(11,11,11,.12); overflow: hidden; }
-  .view-switch button { border: 0; background: transparent; color: var(--ink-2); padding: 6px 14px;
-    font-size: 13px; cursor: pointer; font-family: inherit; }
-  .view-switch button.active { background: #8f1d1d; color: #fff; font-weight: 600; }
-  .view-switch button:not(.active):hover { background: #f1f0ec; }
+  .mode-switch, .view-switch {
+    position: absolute; top: calc(10px + env(safe-area-inset-top)); z-index: 1101;
+    display: flex; gap: 2px; padding: 3px;
+    background: var(--panel); border: 1px solid var(--hairline); border-radius: 13px;
+    box-shadow: var(--shadow);
+    -webkit-backdrop-filter: blur(14px) saturate(1.4); backdrop-filter: blur(14px) saturate(1.4);
+  }
+  .mode-switch { left: 50%; transform: translateX(-50%); }
+  .view-switch { right: 10px; }
+  .mode-switch a, .view-switch button {
+    padding: 7px 15px; font-size: 13px; text-decoration: none; color: var(--ink-2);
+    border: 0; background: transparent; cursor: pointer; font-family: inherit;
+    border-radius: 10px; transition: background .15s, color .15s;
+  }
+  .mode-switch a.active, .view-switch button.active { background: var(--accent); color: #fff; font-weight: 600; }
+  .mode-switch a:not(.active):hover, .view-switch button:not(.active):hover { background: var(--hover); color: var(--ink); }
 
   /* Listenansicht */
   #listview { position: absolute; inset: 52px 10px 10px 10px; z-index: 1100; display: none;
@@ -123,11 +138,12 @@
   .lv-filters .group { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; }
   .lv-filters .glbl { color: var(--ink-2); font-size: 11.5px; margin-right: 2px; }
   .chip {
-    border: 1px solid var(--hairline); background: var(--surface); color: var(--ink-2);
-    border-radius: 6px; padding: 2px 8px; font-size: 12px; cursor: pointer; font-family: inherit;
+    border: 1px solid var(--hairline); background: var(--panel-solid); color: var(--ink-2);
+    border-radius: 999px; padding: 4px 11px; font-size: 12px; cursor: pointer; font-family: inherit;
+    transition: background .15s, color .15s, border-color .15s;
   }
-  .chip:hover { background: #f1f0ec; }
-  .chip.active { background: #8f1d1d; border-color: #8f1d1d; color: #fff; font-weight: 600; }
+  .chip:hover { background: var(--hover); color: var(--ink); }
+  .chip.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
   .lv-filters input[type="search"] {
     border: 1px solid var(--hairline); border-radius: 6px; padding: 3px 8px; font-size: 12.5px;
     font-family: inherit; background: var(--surface); color: var(--ink); width: 170px;
@@ -158,58 +174,171 @@
   /* Info-Panel: auf Desktop immer offen; Einklapp-Verhalten nur mobil (s. Media Query) */
   .info-panel h1 { cursor: default; }
 
-  @media (max-width: 640px) {
-    /* Obere Umschalter: kompakter, aber Touch-Ziele >= 36px */
-    .mode-switch a, .view-switch button { padding: 9px 10px; font-size: 12.5px; }
+  /* ---- Standort-Button (eigenes Leaflet-Control) ------------------------ */
+  .locate-ctl a {
+    display: flex !important; align-items: center; justify-content: center;
+    width: 34px; height: 34px; color: var(--ink-2); background: var(--panel-solid);
+  }
+  .locate-ctl a.busy { color: var(--accent); animation: pulse 1.1s ease-in-out infinite; }
+  .locate-ctl a.on { color: var(--accent); }
+  .locate-ctl .ic { width: 19px; height: 19px; }
+  @keyframes pulse { 50% { opacity: .45; } }
+  .me-dot {
+    width: 16px; height: 16px; border-radius: 50%; background: #1a73e8;
+    border: 2.5px solid #fff; box-shadow: 0 0 0 1px rgba(11,11,11,.25), 0 1px 4px rgba(11,11,11,.3);
+  }
 
-    /* Zoom-Control ausblenden (Pinch-Zoom reicht), topleft-Controls unter die Umschalter schieben */
+  /* ---- Mobile Bedienung: Leiste unten + Sheet --------------------------- */
+  /* Vorher lagen mehrere Icon-Kacheln frei auf der Karte und überlagerten
+     sich mit der Attributionszeile. Jetzt: eine Leiste, ein Sheet. */
+  #mbar, #sheet, #scrim, .lv-mobilebar { display: none; }
+
+  @media (max-width: 640px) {
+    .mode-switch a, .view-switch button { padding: 9px 12px; font-size: 12.5px; }
+
+    /* Karten-Panels und Leaflet-Menüs wandern ins Sheet */
     .leaflet-control-zoom { display: none; }
-    .leaflet-top.leaflet-left { top: 44px; }
-    .leaflet-left .leaflet-control { margin-left: 8px; margin-top: 8px; }
+    .leaflet-control.panel { display: none; }
+    .leaflet-control-layers { display: none; }
+    .leaflet-top.leaflet-left { top: calc(52px + env(safe-area-inset-top)); }
+    /* Attributionszeile über die Leiste heben */
+    .leaflet-bottom { bottom: calc(64px + env(safe-area-inset-bottom)); }
     .leaflet-bottom .leaflet-control { margin-bottom: 8px; margin-right: 8px; }
 
-    /* Panels kompakter */
-    .panel { max-width: 230px; padding: 8px 10px; }
-    .panel.range-ctl { max-width: calc(100vw - 20px); padding: 5px 6px; }
-    .range-btn { padding: 8px 10px; font-size: 13px; min-height: 36px; }
-    .scope-ctl input { font-size: 16px; padding: 4px 8px; width: 64px; } /* 16px: verhindert iOS-Zoom */
-    .scope-ctl .center-lbl { max-width: 105px; }
+    .locate-ctl {
+      position: fixed !important; right: 12px;
+      bottom: calc(112px + env(safe-area-inset-bottom)); z-index: 1000; margin: 0 !important;
+    }
+    .locate-ctl a { width: 46px !important; height: 46px !important; border-radius: 50% !important; }
+    .locate-ctl .ic { width: 22px; height: 22px; }
 
-    /* Info-Panel einklappbar (initial eingeklappt, s. JS) */
-    .info-panel h1 { cursor: pointer; }
-    .info-panel h1::after { content: " ▾"; color: var(--muted); font-size: 11px; }
-    .info-panel.collapsed h1 { margin-bottom: 0; }
-    .info-panel.collapsed h1::after { content: " ▸"; }
-    .info-panel.collapsed .meta { display: none; }
+    #mbar {
+      display: flex; position: fixed; z-index: 1102; left: 50%; transform: translateX(-50%);
+      bottom: calc(10px + env(safe-area-inset-bottom));
+      gap: 2px; padding: 4px; border-radius: 17px;
+      background: var(--panel); border: 1px solid var(--hairline); box-shadow: var(--shadow);
+      -webkit-backdrop-filter: blur(16px) saturate(1.4); backdrop-filter: blur(16px) saturate(1.4);
+    }
+    #mbar button {
+      min-width: 56px; min-height: 48px; border: 0; background: transparent;
+      border-radius: 13px; color: var(--ink-2); cursor: pointer;
+      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px;
+      font-size: 10px; line-height: 1; padding: 0 3px; font-family: inherit;
+    }
+    #mbar button .ic { width: 20px; height: 20px; }
+    #mbar button.active { background: var(--accent-bg); color: var(--accent); font-weight: 650; }
+    body.list-open #mbar, body.list-open .locate-ctl { display: none; }  /* Liste hat eigene Leiste */
 
-    /* Legende: kompakt, scrollbar statt riesig */
-    .legend { max-width: 190px; max-height: 36vh; overflow-y: auto; overscroll-behavior: contain; }
-    .legend .row { margin-top: 2px; padding: 4px 0; }
-    .legend .size-hint { display: none; }
+    #scrim {
+      display: block; position: fixed; inset: 0; z-index: 1103; background: rgba(11,11,11,.35);
+      opacity: 0; pointer-events: none; transition: opacity .25s;
+    }
+    #scrim.open { opacity: 1; pointer-events: auto; }
 
-    /* Panels zu Icons einklappbar (Zeitraum/Umkreis/Kategorien) — mehr Platz
-       für die Karte; immer nur ein Panel offen (s. JS toggleCollapse) */
-    .mob-toggle { display: flex; align-items: center; justify-content: center;
-      width: 36px; height: 36px; border: 0; background: transparent; padding: 0;
-      font-size: 18px; line-height: 1; cursor: pointer; flex: none; font-family: inherit; }
-    .mob-collapsible.collapsed { width: 42px; height: 42px; padding: 3px; overflow: hidden;
-      max-width: 42px; }
-    .mob-collapsible.collapsed > *:not(.mob-toggle) { display: none !important; }
-    .legend.mob-collapsible.collapsed { max-height: 42px; }
+    #sheet {
+      display: flex; flex-direction: column; position: fixed; z-index: 1104;
+      left: 0; right: 0; bottom: 0; max-height: 78dvh;
+      background: var(--panel-solid); color: var(--ink);
+      border-radius: 20px 20px 0 0; box-shadow: var(--shadow-lg);
+      transform: translateY(101%); transition: transform .3s cubic-bezier(.32,.72,0,1);
+      padding-bottom: env(safe-area-inset-bottom);
+    }
+    #sheet.open { transform: none; }
+    .sheet-grip { width: 38px; height: 4px; border-radius: 2px; background: var(--hairline);
+                  margin: 8px auto 2px; flex: none; }
+    .sheet-head { display: flex; align-items: center; justify-content: space-between;
+                  padding: 6px 16px 8px; flex: none; }
+    .sheet-head b { font-size: 15px; letter-spacing: -0.01em; }
+    .sheet-close { border: 0; background: var(--track); color: var(--ink-2); cursor: pointer;
+                   width: 30px; height: 30px; border-radius: 50%; font-size: 15px; font-family: inherit; }
+    .sheet-body { overflow-y: auto; overscroll-behavior: contain; padding: 0 16px 18px; font-size: 14px; }
+    .sheet-body .panel { display: block !important; background: transparent; border: 0; box-shadow: none;
+                         padding: 0; max-width: none; backdrop-filter: none; }
+    .sheet-body .panel h1 { display: none; }        /* Titel steht im Sheet-Kopf */
+    .sheet-body .range-btn { padding: 10px 14px; font-size: 14px; border-radius: 11px; }
+    .sheet-body .range-ctl { flex-wrap: wrap; gap: 7px; padding: 0; }
+    .sheet-body .legend .row { padding: 9px 0; margin: 0; }
+    .sheet-body .legend .label { font-size: 14px; }
+    .sheet-body .legend { max-width: none; max-height: none; }
+    .sheet-body .scope-ctl input { font-size: 16px; padding: 9px 12px; width: 88px; border-radius: 10px; }
+    .sheet-body .leaflet-control-layers {
+      display: block; background: transparent; border: 0; box-shadow: none; width: 100%;
+    }
+    .sheet-body .leaflet-control-layers-list { display: block; }
+    .sheet-body .leaflet-control-layers-toggle { display: none; }
+    .sheet-body .leaflet-control-layers label { display: flex; gap: 10px; align-items: center;
+      padding: 10px 0; font-size: 14px; }
+    .sheet-body .leaflet-control-layers input { width: 19px; height: 19px; accent-color: var(--accent); }
+    .sheet-body .leaflet-control-layers-separator { margin: 8px 0; border-top: 1px solid var(--hairline); }
 
-    /* Listenansicht: volle Fläche, Filter als horizontale Scroll-Leiste */
-    #listview { inset: 48px 0 0 0; border-radius: 0; border: 0; border-top: 1px solid var(--hairline); }
-    .lv-filters { flex-wrap: nowrap; overflow-x: auto; gap: 6px 10px; padding: 8px 10px;
-      -webkit-overflow-scrolling: touch; overscroll-behavior-x: contain; }
-    .lv-filters .group { flex-wrap: nowrap; flex: none; }
-    .lv-filters .glbl { white-space: nowrap; }
-    .chip { padding: 8px 10px; font-size: 13px; min-height: 36px; white-space: nowrap; }
-    .lv-filters input[type="search"] { font-size: 16px; width: 150px; padding: 5px 8px; } /* 16px: verhindert iOS-Zoom */
-    .lv-filters select { font-size: 14px; padding: 6px; min-height: 36px; }
-    .lv-count { padding-right: 4px; }
-    .lv-tablewrap { -webkit-overflow-scrolling: touch; overscroll-behavior: contain; }
-    .lv-table th, .lv-table td { padding: 9px 10px; }
-    .lv-table td.t-title { min-width: 160px; }
+    /* ---- Listenansicht: Karten statt Tabelle --------------------------- */
+    #listview { inset: calc(48px + env(safe-area-inset-top)) 0 0 0; border-radius: 0; border: 0;
+                border-top: 1px solid var(--hairline); }
+    /* Der Filterblock liegt normalerweise ausgeblendet in der Liste und wird
+       beim Antippen von "Filter" ins Sheet gehängt — dort untereinander,
+       mit Tippflächen statt Maus-Zielen. */
+    .lv-filters { display: none; }
+    .sheet-body .lv-filters {
+      display: flex; flex-direction: column; align-items: stretch; gap: 16px;
+      padding: 0; border: 0; overflow: visible; font-size: 14px;
+    }
+    /* Beschriftung auf eigener Zeile, die Chips darunter umbrechend —
+       nicht untereinander gestapelt, sonst wird das Sheet endlos lang. */
+    .sheet-body .lv-filters .group { flex-direction: row; flex-wrap: wrap; gap: 8px; align-items: center; flex: none; }
+    .sheet-body .lv-filters .glbl {
+      flex-basis: 100%; font-size: 11px; text-transform: uppercase; letter-spacing: .05em;
+      color: var(--muted); font-weight: 600; margin: 0;
+    }
+    .sheet-body .lv-filters .group > :not(.glbl) { flex: none; }
+    .sheet-body .lv-filters .chip { padding: 9px 14px; font-size: 14px; min-height: 40px; }
+    .sheet-body .lv-filters input[type="search"],
+    .sheet-body .lv-filters select {
+      width: 100%; font-size: 16px; padding: 11px 12px; border-radius: 11px;   /* 16px: verhindert iOS-Zoom */
+      border: 1px solid var(--hairline); background: var(--panel-solid); color: var(--ink);
+      font-family: inherit;
+    }
+    .sheet-body .lv-filters input[type="range"] { width: 100%; height: 32px; }
+    .sheet-body .lv-count { display: none; }         /* Trefferzahl steht in der Leiste */
+    .lv-mobilebar {
+      display: flex; align-items: center; gap: 8px; padding: 9px 10px; flex: none;
+      border-bottom: 1px solid var(--hairline); background: var(--panel-solid);
+    }
+    .lv-mobilebar .fbtn {
+      display: flex; align-items: center; gap: 7px; border: 1px solid var(--hairline);
+      background: var(--panel-solid); color: var(--ink); border-radius: 999px;
+      padding: 0 15px; height: 40px; font-size: 13.5px; font-weight: 600;
+      cursor: pointer; font-family: inherit; white-space: nowrap;
+    }
+    .lv-mobilebar .fbtn .ic { width: 17px; height: 17px; }
+    .lv-mobilebar .fbtn.has { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .lv-mobilebar select {
+      border: 1px solid var(--hairline); border-radius: 999px; padding: 0 8px; height: 40px;
+      font-size: 13.5px; background: var(--panel-solid); color: var(--ink-2); font-family: inherit;
+      max-width: 42vw;
+    }
+    .lv-mobilebar .cnt { margin-left: auto; font-size: 12.5px; color: var(--ink-2); white-space: nowrap; }
+    .lv-mobilebar .cnt b { color: var(--ink); }
+
+    .lv-tablewrap { -webkit-overflow-scrolling: touch; overscroll-behavior: contain;
+                    padding: 10px 0 20px; background: #f5f4f1; }
+    .lv-table { display: block; width: auto; font-size: 13px; }
+    .lv-table thead { display: none; }              /* sortiert wird über die Leiste */
+    .lv-table tbody, .lv-table tr, .lv-table td { display: block; width: auto; }
+    .lv-table tr {
+      background: var(--panel-solid); border: 1px solid var(--hairline); border-radius: 14px;
+      box-shadow: 0 1px 3px rgba(11,11,11,.05); padding: 12px 14px; margin: 0 10px 10px;
+    }
+    .lv-table tr:hover td { background: transparent; }
+    .lv-table td { border: 0; padding: 0; white-space: normal; max-width: none; }
+    .lv-table td[data-col="start"] { font-size: 12px; font-weight: 650; color: var(--accent); }
+    .lv-table td[data-col="title"] { font-size: 15px; line-height: 1.3; margin: 4px 0 3px; min-width: 0; }
+    .lv-table td[data-col="title"] a { color: var(--ink); font-weight: 600; }
+    .lv-table td[data-col="place"] { font-size: 13px; color: var(--ink-2); }
+    .lv-table td[data-col="cat"], .lv-table td[data-col="source"], .lv-table td[data-col="dist"] {
+      display: inline-block; font-size: 11.5px; color: var(--muted); margin: 7px 10px 0 0;
+    }
+    .lv-table td[data-col="dist"]::after { content: " km"; }
+    .lv-more { margin: 0 10px; }
   }
 
   /* Sehr schmal: Umschalter nur mit Emoji, damit Mitte und rechts nicht kollidieren */
@@ -795,13 +924,15 @@
     const shown = rows.slice(0, LV_MAX);
     document.getElementById('lv-body').innerHTML = shown.map(e => {
       const cat = catOf(e);
+      // data-col: auf dem Handy wird die Tabelle per CSS zu Karten umgebaut,
+      // die Spalten werden dort einzeln angesprochen statt über die Position.
       return '<tr>' +
-        '<td>' + fmtDate(e.start) + (e.end && e.end.slice(0, 10) !== e.start.slice(0, 10) ? '<br>– ' + fmtDate(e.end) : '') + '</td>' +
-        '<td class="t-title"><a href="' + esc(e.url) + '" target="_blank" rel="noopener">' + esc(e.title) + '</a></td>' +
-        '<td class="t-place">' + esc(e.place || '–') + '</td>' +
-        '<td>' + CATS[cat].emoji + ' ' + CATS[cat].label + '</td>' +
-        '<td>' + esc(e.source) + '</td>' +
-        '<td>' + distKm(e.lat, e.lon).toFixed(0) + '</td>' +
+        '<td data-col="start">' + fmtDate(e.start) + (e.end && e.end.slice(0, 10) !== e.start.slice(0, 10) ? '<br>– ' + fmtDate(e.end) : '') + '</td>' +
+        '<td class="t-title" data-col="title"><a href="' + esc(e.url) + '" target="_blank" rel="noopener">' + esc(e.title) + '</a></td>' +
+        '<td class="t-place" data-col="place">' + esc(e.place || '–') + '</td>' +
+        '<td data-col="cat">' + CATS[cat].emoji + ' ' + CATS[cat].label + '</td>' +
+        '<td data-col="source">' + esc(e.source) + '</td>' +
+        '<td data-col="dist">' + distKm(e.lat, e.lon).toFixed(0) + '</td>' +
         '</tr>';
     }).join('');
 
@@ -816,6 +947,7 @@
     document.getElementById('lv-count').innerHTML = '<b>' + rows.length + '</b> Termine';
     // Kategorie-Chips synchron zur Legende
     document.querySelectorAll('#lv-cats .chip').forEach(b => b.classList.toggle('active', !!activeCats[b.dataset.cat]));
+    syncLvBar(rows.length);
   }
 
   function initListControls() {
@@ -885,6 +1017,195 @@
     });
   }
 
+  // ---- Mobile Bedienung: Leiste unten + Sheet ------------------------------
+  // Auf dem Handy lagen die Panels (Info, Zeitraum, Umkreis, Kategorien) als
+  // freie Icon-Kacheln auf der Karte und überlagerten sich mit der
+  // Attributionszeile — der Ebenen-Button war dadurch nicht mehr tippbar.
+  // Jetzt wandern dieselben Knoten bei Bedarf in ein Sheet; dadurch gibt es
+  // jede Ansicht weiterhin nur einmal und alle Handler bleiben daran hängen.
+  let mobClose = null;
+
+  // Strichsymbole statt Emoji: einheitliche Größe, ruhigere Optik
+  const SVG = {
+    info:   '<circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.6v.6"/>',
+    clock:  '<circle cx="12" cy="12" r="9"/><path d="M12 7v5.2l3.2 2"/>',
+    pin:    '<path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/>',
+    layers: '<path d="M12 3.5 3.5 8 12 12.5 20.5 8 12 3.5Z"/><path d="m4 12 8 4.2 8-4.2"/><path d="m4 16 8 4.2 8-4.2"/>',
+    legend: '<path d="M9 6.5h11M9 12h11M9 17.5h11"/><circle cx="4.3" cy="6.5" r="1.5"/><circle cx="4.3" cy="12" r="1.5"/><circle cx="4.3" cy="17.5" r="1.5"/>',
+    filter: '<path d="M3.5 5.5h17l-6.6 7.6v5.4l-3.8 2v-7.4L3.5 5.5Z"/>',
+    target: '<circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2.4"/><path d="M12 1.8v3.4M12 18.8v3.4M22.2 12h-3.4M5.2 12H1.8"/>'
+  };
+  function icon(n, cls) {
+    return '<svg class="ic ' + (cls || '') + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" ' +
+      'stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + SVG[n] + '</svg>';
+  }
+
+  function initMobileShell() {
+    const PANES = [
+      { id: 'info',  title: 'Übersicht',   icon: 'info',   label: 'Info',    sel: '.info-panel' },
+      { id: 'range', title: 'Zeitraum',    icon: 'clock',  label: 'Zeit',    sel: '.range-ctl:not(.scope-ctl)' },
+      { id: 'scope', title: 'Umkreis',     icon: 'pin',    label: 'Umkreis', sel: '.scope-ctl' },
+      { id: 'cats',  title: 'Kategorien',  icon: 'legend', label: 'Kat.',    sel: '.legend' },
+      { id: 'base',  title: 'Kartenstil',  icon: 'layers', label: 'Karte',   sel: '.leaflet-control-layers' }
+    ].map(p => {
+      const el = document.querySelector(p.sel);
+      return el ? Object.assign(p, { el: el, home: el.parentNode }) : null;
+    }).filter(Boolean);
+
+    // Filter der Listenansicht bekommen dasselbe Sheet
+    const lvFilters = document.querySelector('.lv-filters');
+
+    const scrim = document.createElement('div');
+    scrim.id = 'scrim';
+    const sheet = document.createElement('div');
+    sheet.id = 'sheet';
+    sheet.setAttribute('role', 'dialog');
+    sheet.innerHTML = '<div class="sheet-grip"></div>' +
+      '<div class="sheet-head"><b id="sheet-title"></b>' +
+      '<button class="sheet-close" aria-label="schließen">✕</button></div>' +
+      '<div class="sheet-body" id="sheet-body"></div>';
+    const sheetBody = sheet.querySelector('#sheet-body');
+    const sheetTitle = sheet.querySelector('#sheet-title');
+
+    const mbar = document.createElement('div');
+    mbar.id = 'mbar';
+    mbar.innerHTML = PANES.map(p =>
+      '<button data-pane="' + p.id + '" aria-label="' + p.title + '">' + icon(p.icon) +
+      '<span class="tx">' + p.label + '</span></button>').join('');
+
+    document.body.appendChild(scrim);
+    document.body.appendChild(sheet);
+    document.body.appendChild(mbar);
+
+    let open = null;
+    function homeAll() {
+      PANES.forEach(p => { if (p.el.parentNode === sheetBody) p.home.appendChild(p.el); });
+      if (lvFilters && lvFilters.parentNode === sheetBody) {
+        const lv = document.getElementById('listview');
+        lv.insertBefore(lvFilters, lv.firstChild);
+      }
+    }
+    function close() {
+      sheet.classList.remove('open');
+      scrim.classList.remove('open');
+      open = null;
+      mbar.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+      setTimeout(homeAll, 320);   // erst nach der Animation, sonst ruckelt es
+    }
+    mobClose = close;
+    function openPane(id) {
+      if (open === id) { close(); return; }
+      homeAll();
+      let title, node;
+      if (id === 'lvfilter') { title = 'Filter'; node = lvFilters; }
+      else {
+        const p = PANES.find(x => x.id === id);
+        if (!p) return;
+        title = p.title; node = p.el;
+      }
+      sheetTitle.textContent = title;
+      sheetBody.appendChild(node);
+      sheet.classList.add('open');
+      scrim.classList.add('open');
+      open = id;
+      mbar.querySelectorAll('button').forEach(b => b.classList.toggle('active', b.dataset.pane === id));
+    }
+    mbar.addEventListener('click', e => {
+      const b = e.target.closest('button');
+      if (b) openPane(b.dataset.pane);
+    });
+    sheet.querySelector('.sheet-close').addEventListener('click', close);
+    scrim.addEventListener('click', close);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape' && open) close(); });
+    window.addEventListener('resize', () => { if (!isMobile() && open) close(); });
+
+    // --- Leiste der Listenansicht: Filter-Button, Sortierung, Trefferzahl ---
+    const SORTS = [
+      { v: 'start:1',  t: 'Datum, früheste zuerst' },
+      { v: 'start:-1', t: 'Datum, späteste zuerst' },
+      { v: 'dist:1',   t: 'Entfernung, nächste zuerst' },
+      { v: 'title:1',  t: 'Titel A–Z' },
+      { v: 'place:1',  t: 'Ort A–Z' },
+      { v: 'cat:1',    t: 'Kategorie' }
+    ];
+    const lvBar = document.createElement('div');
+    lvBar.className = 'lv-mobilebar';
+    lvBar.innerHTML =
+      '<button class="fbtn" id="lv-filterbtn">' + icon('filter') + '<span id="lv-filtertx">Filter</span></button>' +
+      '<select id="lv-sortsel" aria-label="Sortierung">' +
+      SORTS.map(s => '<option value="' + s.v + '">' + s.t + '</option>').join('') + '</select>' +
+      '<span class="cnt" id="lv-cnt2"></span>';
+    const lv = document.getElementById('listview');
+    lv.insertBefore(lvBar, lv.firstChild);
+    document.getElementById('lv-filterbtn').addEventListener('click', () => openPane('lvfilter'));
+    const sortSel = document.getElementById('lv-sortsel');
+    sortSel.value = lvSort.col + ':' + lvSort.dir;
+    sortSel.addEventListener('change', () => {
+      const p = sortSel.value.split(':');
+      lvSort = { col: p[0], dir: +p[1] };
+      renderList();
+    });
+  }
+
+  // Hält Trefferzahl, Sortierung und den "aktiv"-Zustand des Filter-Buttons
+  // der Mobil-Leiste im Takt mit den echten Filtern.
+  function syncLvBar(count) {
+    const cnt = document.getElementById('lv-cnt2');
+    if (cnt) cnt.innerHTML = '<b>' + count + '</b> Termine';
+    const sel = document.getElementById('lv-sortsel');
+    if (sel) sel.value = lvSort.col + ':' + lvSort.dir;
+    const btn = document.getElementById('lv-filterbtn');
+    if (btn) {
+      // Wie viele Filter weichen vom Standard ab? Zahl auf den Button.
+      let n = 0;
+      if (lvSearch.trim()) n++;
+      if (lvDays.size) n++;
+      if (lvSource) n++;
+      const allCats = Object.keys(CATS).filter(c => activeCats[c]).length;
+      if (allCats !== Object.keys(CATS).length) n++;
+      btn.classList.toggle('has', n > 0);
+      document.getElementById('lv-filtertx').textContent = n ? 'Filter · ' + n : 'Filter';
+    }
+  }
+
+  // ---- Standort-Button ------------------------------------------------------
+  // Zeigt die eigene Position. Die Koordinaten kommen vom Browser und bleiben
+  // im Browser — sie werden nicht übertragen (siehe Datenschutzerklärung).
+  const locateCtl = L.control({ position: 'topright' });
+  locateCtl.onAdd = function () {
+    const div = L.DomUtil.create('div', 'leaflet-bar locate-ctl');
+    div.innerHTML = '<a href="#" role="button" aria-label="Meinen Standort zeigen" title="Mein Standort">' +
+      icon('target') + '</a>';
+    const a = div.querySelector('a');
+    L.DomEvent.disableClickPropagation(div);
+    let meMarker = null, meCircle = null;
+    L.DomEvent.on(a, 'click', function (e) {
+      L.DomEvent.preventDefault(e);
+      a.classList.add('busy');
+      map.locate({ setView: true, maxZoom: 13, enableHighAccuracy: true, timeout: 12000 });
+    });
+    map.on('locationfound', function (ev) {
+      a.classList.remove('busy');
+      a.classList.add('on');
+      if (meMarker) { map.removeLayer(meMarker); map.removeLayer(meCircle); }
+      meMarker = L.marker(ev.latlng, {
+        icon: L.divIcon({ className: '', html: '<div class="me-dot"></div>', iconSize: [16, 16], iconAnchor: [8, 8] }),
+        interactive: false, keyboard: false
+      }).addTo(map);
+      meCircle = L.circle(ev.latlng, {
+        radius: ev.accuracy || 50, color: '#1a73e8', weight: 1,
+        fillColor: '#1a73e8', fillOpacity: 0.10, interactive: false
+      }).addTo(map);
+    });
+    map.on('locationerror', function () {
+      a.classList.remove('busy');
+      // Häufigster Fall: Nutzer hat abgelehnt oder kein Signal — still bleiben,
+      // der Browser hat die Ablehnung bereits sichtbar gemacht.
+    });
+    return div;
+  };
+  locateCtl.addTo(map);
+
   // Umschalter Karte/Liste
   const btnMap = document.getElementById('btn-map');
   const btnList = document.getElementById('btn-list');
@@ -893,12 +1214,16 @@
     document.getElementById('listview').classList.toggle('open', list);
     btnMap.classList.toggle('active', !list);
     btnList.classList.toggle('active', list);
+    // Karten-Leiste und Standort-Button gehören zur Karte, nicht zur Liste
+    document.body.classList.toggle('list-open', list);
+    if (mobClose) mobClose();
     if (list) renderList();
   }
   btnMap.addEventListener('click', () => setView(false));
   btnList.addEventListener('click', () => setView(true));
 
   initListControls();
+  initMobileShell();
   updateScopeUIs();
   fitToScope();
   rebuild();
