@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/70701/6333972",
     "first": "2026-08-15T16:16:06Z",
     "last": "2026-08-15T16:16:06Z",
+    "veg": false,
+    "source": "Feuerwehr Ratingen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Ratingen",
@@ -13,11 +17,7 @@
         "lon": 6.8493503,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Ratingen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Menden|zwei verletzte bei gebäudebrand in pizzeria an der unnaer straße",
