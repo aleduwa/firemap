@@ -5200,26 +5200,6 @@
     ]
   },
   {
-    "base": "Polizeipräsidium Ludwigsburg|besigheim: blitzeinschlag verursacht dachstuhlbrand",
-    "status": "active",
-    "title": "Besigheim: Blitzeinschlag verursacht Dachstuhlbrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110974/6316586",
-    "first": "2026-07-17T10:13:47Z",
-    "last": "2026-07-17T10:13:47Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Besigheim",
-        "lat": 48.9996364,
-        "lon": 9.1417523,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Feuerwehr Stuttgart|küchenbrand in mehrfamilienhaus",
     "status": "contained",
     "title": "Küchenbrand in Mehrfamilienhaus",
