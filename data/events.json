@@ -1,5 +1,25 @@
 [
   {
+    "base": "Feuerwehr Plettenberg|feuerwehr plettenberg unterstützt bei waldbrand in altena",
+    "status": "active",
+    "title": "Feuerwehr Plettenberg unterstützt bei Waldbrand in Altena",
+    "link": "https://www.presseportal.de/blaulicht/pm/116600/6334309",
+    "first": "2026-08-16T16:39:15Z",
+    "last": "2026-08-16T16:39:15Z",
+    "places": [
+      {
+        "name": "Plettenberg",
+        "lat": 51.2136798,
+        "lon": 7.8745627,
+        "approx": false
+      }
+    ],
+    "veg": true,
+    "source": "Feuerwehr Plettenberg",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Voerde|mit der kreisbereitschaft zum waldbrand in sonsbeck",
     "status": "active",
     "title": "Mit der Kreisbereitschaft zum Waldbrand in Sonsbeck",
