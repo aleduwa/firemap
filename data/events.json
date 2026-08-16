@@ -5220,46 +5220,6 @@
     ]
   },
   {
-    "base": "Polizeipräsidium Ulm|(ul) schelklingen - feuer in nebenraum einer garage / am donnerstag kam es wohl durch einen technischen defekt zum brand in einem gebäude bei schelklingen.",
-    "status": "active",
-    "title": "(UL) Schelklingen - Feuer in Nebenraum einer Garage / Am Donnerstag kam es wohl durch einen technischen Defekt zum Brand in einem Gebäude bei Schelklingen.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6316401",
-    "first": "2026-07-17T08:11:07Z",
-    "last": "2026-07-17T08:11:07Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Schelklingen",
-        "lat": 48.3755469,
-        "lon": 9.7341832,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(hdh) heidenheim - gasflasche sorgt für fahrzeugbrand / hoher sachschaden entstand am donnerstag bei einem feuer.",
-    "status": "active",
-    "title": "(HDH) Heidenheim - Gasflasche sorgt für Fahrzeugbrand / Hoher Sachschaden entstand am Donnerstag bei einem Feuer.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6316356",
-    "first": "2026-07-17T07:47:16Z",
-    "last": "2026-07-17T07:47:16Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Heidenheim",
-        "lat": 48.6767637,
-        "lon": 10.152923,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Feuerwehr Stuttgart|küchenbrand in mehrfamilienhaus",
     "status": "contained",
     "title": "Küchenbrand in Mehrfamilienhaus",
