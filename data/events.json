@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/116730/6334248",
     "first": "2026-08-16T12:25:29Z",
     "last": "2026-08-16T12:25:29Z",
+    "veg": true,
+    "source": "Freiwillige Feuerwehr Werne",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Werne",
@@ -13,11 +17,7 @@
         "lon": 7.6355052,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Freiwillige Feuerwehr Werne",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Mönchengladbach|brennende strohmiete mit rund 50 rundballen",
