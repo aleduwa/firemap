@@ -1,5 +1,25 @@
 [
   {
+    "base": "Feuerwehr Voerde|mit der kreisbereitschaft zum waldbrand in sonsbeck",
+    "status": "active",
+    "title": "Mit der Kreisbereitschaft zum Waldbrand in Sonsbeck",
+    "link": "https://www.presseportal.de/blaulicht/pm/125427/6334286",
+    "first": "2026-08-16T15:09:20Z",
+    "last": "2026-08-16T15:09:20Z",
+    "places": [
+      {
+        "name": "Voerde",
+        "lat": 51.5975224,
+        "lon": 6.6811994,
+        "approx": false
+      }
+    ],
+    "veg": true,
+    "source": "Feuerwehr Voerde",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Freiwillige Feuerwehr Werne|böschungsbrand in werne-holthausen",
     "status": "contained",
     "title": "Böschungsbrand in Werne-Holthausen",
