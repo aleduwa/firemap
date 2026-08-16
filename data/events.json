@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110975/6334066",
     "first": "2026-08-16T05:10:09Z",
     "last": "2026-08-16T05:10:09Z",
+    "veg": false,
+    "source": "Polizeipräsidium Offenburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Neuried-Altenheim",
@@ -13,11 +17,7 @@
         "lon": 7.8090487,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Datteln|gewerbebrand am möllerskamp",
