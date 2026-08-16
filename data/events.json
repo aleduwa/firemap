@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/125427/6334286",
     "first": "2026-08-16T15:09:20Z",
     "last": "2026-08-16T15:09:20Z",
+    "veg": true,
+    "source": "Feuerwehr Voerde",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Voerde",
@@ -13,11 +17,7 @@
         "lon": 6.6811994,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Feuerwehr Voerde",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Werne|böschungsbrand in werne-holthausen",
@@ -263,9 +263,9 @@
     "base": "Freiwillige Feuerwehr Alpen|waldbrand in veen",
     "status": "active",
     "title": "Waldbrand in Veen",
-    "link": "https://www.presseportal.de/blaulicht/pm/131475/6333946",
+    "link": "https://www.presseportal.de/blaulicht/pm/131475/6334295",
     "first": "2026-08-15T11:14:45Z",
-    "last": "2026-08-15T13:14:45Z",
+    "last": "2026-08-16T15:31:52Z",
     "veg": true,
     "source": "Freiwillige Feuerwehr Alpen",
     "updates": 0,
