@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115868/6334333",
     "first": "2026-08-16T21:51:17Z",
     "last": "2026-08-16T21:51:17Z",
+    "veg": false,
+    "source": "Feuerwehr Bochum",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Bochum",
@@ -13,11 +17,7 @@
         "lon": 7.2196635,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Bochum",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Plettenberg|feuerwehr plettenberg unterstützt bei waldbrand in altena",
