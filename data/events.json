@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/116600/6334309",
     "first": "2026-08-16T16:39:15Z",
     "last": "2026-08-16T16:39:15Z",
+    "veg": true,
+    "source": "Feuerwehr Plettenberg",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Plettenberg",
@@ -13,11 +17,7 @@
         "lon": 7.8745627,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Feuerwehr Plettenberg",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Voerde|mit der kreisbereitschaft zum waldbrand in sonsbeck",
