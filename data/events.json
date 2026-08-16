@@ -1,5 +1,25 @@
 [
   {
+    "base": "Freiwillige Feuerwehr Werne|böschungsbrand in werne-holthausen",
+    "status": "contained",
+    "title": "Böschungsbrand in Werne-Holthausen",
+    "link": "https://www.presseportal.de/blaulicht/pm/116730/6334248",
+    "first": "2026-08-16T12:25:29Z",
+    "last": "2026-08-16T12:25:29Z",
+    "places": [
+      {
+        "name": "Werne",
+        "lat": 51.66268,
+        "lon": 7.6355052,
+        "approx": false
+      }
+    ],
+    "veg": true,
+    "source": "Freiwillige Feuerwehr Werne",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Mönchengladbach|brennende strohmiete mit rund 50 rundballen",
     "status": "active",
     "title": "Brennende Strohmiete mit rund 50 Rundballen",
