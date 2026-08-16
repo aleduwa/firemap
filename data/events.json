@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115879/6334083",
     "first": "2026-08-16T07:03:08Z",
     "last": "2026-08-16T07:03:08Z",
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Mönchengladbach",
@@ -13,11 +17,7 @@
         "lon": 6.4353792,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Mönchengladbach",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Offenburg|neuried-altenheim - gebäudebrand",
