@@ -1,11 +1,61 @@
 [
   {
+    "base": "Polizei Lippe|schieder-schwalenberg/horn-bad meinberg/bad salzuflen. mehrere feuer in der lippischen natur - warnung vor erhöhter brandgefahr!",
+    "status": "active",
+    "title": "Schieder-Schwalenberg/Horn-Bad Meinberg/Bad Salzuflen. Mehrere Feuer in der lippischen Natur - Warnung vor erhöhter Brandgefahr!",
+    "link": "https://www.presseportal.de/blaulicht/pm/12727/6334667",
+    "first": "2026-08-17T11:34:34Z",
+    "last": "2026-08-17T11:34:34Z",
+    "places": [
+      {
+        "name": "Schieder-Schwalenberg",
+        "lat": 51.8980505,
+        "lon": 9.1751832,
+        "approx": false
+      },
+      {
+        "name": "Horn-Bad Meinberg",
+        "lat": 51.8801277,
+        "lon": 8.9731695,
+        "approx": false
+      }
+    ],
+    "veg": true,
+    "source": "Polizei Lippe",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Ulm|(gp) ebersbach - wiese in brand / am samstag rückte die feuerwehr zu einem flächenbrand bei ebersbach aus.",
+    "status": "active",
+    "title": "(GP) Ebersbach - Wiese in Brand / Am Samstag rückte die Feuerwehr zu einem Flächenbrand bei Ebersbach aus.",
+    "link": "https://www.presseportal.de/blaulicht/pm/110979/6334641",
+    "first": "2026-08-17T11:22:18Z",
+    "last": "2026-08-17T11:22:18Z",
+    "places": [
+      {
+        "name": "Ebersbach",
+        "lat": 47.9554246,
+        "lon": 9.5791447,
+        "approx": false
+      }
+    ],
+    "veg": true,
+    "source": "Polizeipräsidium Ulm",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Ludwigsburg|schwieberdingen: brand in mehrparteienhaus",
     "status": "active",
     "title": "Schwieberdingen: Brand in Mehrparteienhaus",
     "link": "https://www.presseportal.de/blaulicht/pm/110974/6334635",
     "first": "2026-08-17T11:12:23Z",
     "last": "2026-08-17T11:12:23Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ludwigsburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Schwieberdingen",
@@ -13,11 +63,7 @@
         "lon": 9.0778484,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|dossenheim/rhein-neckar-kreis: einsatz von polizei und feuerwehr wegen brandgeschehen, pm 2",
@@ -26,6 +72,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6334634",
     "first": "2026-08-17T11:11:59Z",
     "last": "2026-08-17T11:11:59Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Dossenheim",
@@ -39,11 +89,7 @@
         "lon": 8.7352403,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Karlsruhe|(ka) stutensee - balkonbrand greift auf dachstuhl über",
@@ -52,6 +98,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110972/6334629",
     "first": "2026-08-17T11:09:45Z",
     "last": "2026-08-17T11:09:45Z",
+    "veg": false,
+    "source": "Polizeipräsidium Karlsruhe",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Stutensee",
@@ -59,11 +109,7 @@
         "lon": 8.4856806,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Karlsruhe",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Sprockhövel|pkw-brand greift auf waldfläche über",
