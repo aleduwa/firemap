@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6334341",
     "first": "2026-08-17T05:09:42Z",
     "last": "2026-08-17T05:09:42Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Dossenheim",
@@ -19,11 +23,7 @@
         "lon": 8.7352403,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Bochum|entstehungsbrand in patientenzimmer",
@@ -5275,32 +5275,6 @@
         "name": "Ostalbkreis",
         "lat": 48.8777738,
         "lon": 10.0337317,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ludwigsburg|ludwigsburg, korntaler straße: dachstuhlbrand nach blitzeinschlag",
-    "status": "contained",
-    "title": "Ludwigsburg, Korntaler Straße: Dachstuhlbrand nach Blitzeinschlag",
-    "link": "https://www.presseportal.de/blaulicht/pm/110974/6316934",
-    "first": "2026-07-18T05:10:44Z",
-    "last": "2026-07-18T05:10:44Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Ludwigsburg",
-        "lat": 48.8953937,
-        "lon": 9.1895147,
-        "approx": false
-      },
-      {
-        "name": "Korntaler Straße",
-        "lat": 48.843359,
-        "lon": 9.1534188,
         "approx": false
       }
     ]
