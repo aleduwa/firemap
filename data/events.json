@@ -1,11 +1,55 @@
 [
   {
+    "base": "Polizeipräsidium Ulm|(ul) blaubeuren - flächenbrand löst feuerwehreinsatz aus / am samstag kam es bei blaubeuren zum brand.",
+    "status": "out",
+    "title": "(UL) Blaubeuren - Flächenbrand löst Feuerwehreinsatz aus / Am Samstag kam es bei Blaubeuren zum Brand.",
+    "link": "https://www.presseportal.de/blaulicht/pm/110979/6334434",
+    "first": "2026-08-17T09:18:34Z",
+    "last": "2026-08-17T09:18:34Z",
+    "places": [
+      {
+        "name": "Blaubeuren",
+        "lat": 48.4121233,
+        "lon": 9.7847091,
+        "approx": false
+      }
+    ],
+    "veg": true,
+    "source": "Polizeipräsidium Ulm",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Karlsruhe|(ka) bruchsal - 54-jähriger bei wohnungsbrand schwer verletzt",
+    "status": "active",
+    "title": "(KA) Bruchsal - 54-Jähriger bei Wohnungsbrand schwer verletzt",
+    "link": "https://www.presseportal.de/blaulicht/pm/110972/6334400",
+    "first": "2026-08-17T08:47:51Z",
+    "last": "2026-08-17T08:47:51Z",
+    "places": [
+      {
+        "name": "Bruchsal",
+        "lat": 49.124118,
+        "lon": 8.5980244,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Karlsruhe",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Dortmund|feuerwehr betreut 40 personen bei kellerbrand",
     "status": "active",
     "title": "Feuerwehr betreut 40 Personen bei Kellerbrand",
     "link": "https://www.presseportal.de/blaulicht/pm/115869/6334380",
     "first": "2026-08-17T08:06:13Z",
     "last": "2026-08-17T08:06:13Z",
+    "veg": false,
+    "source": "Feuerwehr Dortmund",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Dortmund",
@@ -13,11 +57,7 @@
         "lon": 7.4652789,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Dortmund",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Bad Honnef|erneuter waldbrand in bad honnef-wülscheid: 300 quadratmeter unterholz in flammen",
@@ -26,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/133680/6334375",
     "first": "2026-08-17T08:00:18Z",
     "last": "2026-08-17T08:00:18Z",
+    "veg": true,
+    "source": "Freiwillige Feuerwehr Bad Honnef",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Bad Honnef",
@@ -33,11 +77,7 @@
         "lon": 7.2272534,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Freiwillige Feuerwehr Bad Honnef",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Gelsenkirchen|kellerbrand in horst - aufwendige löscharbeiten unter atemschutz",
