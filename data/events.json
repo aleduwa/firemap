@@ -1,5 +1,91 @@
 [
   {
+    "base": "Polizeipräsidium Freiburg|bad bellingen: brand in keller von vereinsheim",
+    "status": "out",
+    "title": "Bad Bellingen: Brand in Keller von Vereinsheim",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6334949",
+    "first": "2026-08-17T14:29:53Z",
+    "last": "2026-08-17T14:29:53Z",
+    "places": [
+      {
+        "name": "Bad Bellingen",
+        "lat": 47.7308736,
+        "lon": 7.5569211,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|schönau im schwarzwald: dachstuhlbrand in der schönenberger straße",
+    "status": "out",
+    "title": "Schönau im Schwarzwald: Dachstuhlbrand in der Schönenberger Straße",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6334946",
+    "first": "2026-08-17T14:27:46Z",
+    "last": "2026-08-17T14:27:46Z",
+    "places": [
+      {
+        "name": "Schönau im Schwarzwald",
+        "lat": 47.7861792,
+        "lon": 7.8933977,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|bad säckingen: brand in wald- und wiesengebiet - großaufgebot von einsatzkräften vor ort",
+    "status": "out",
+    "title": "Bad Säckingen: Brand in Wald- und Wiesengebiet - Großaufgebot von Einsatzkräften vor Ort",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6334898",
+    "first": "2026-08-17T13:58:32Z",
+    "last": "2026-08-17T13:58:32Z",
+    "places": [
+      {
+        "name": "Bad Säckingen",
+        "lat": 47.5527459,
+        "lon": 7.9410556,
+        "approx": false
+      },
+      {
+        "name": "zwischen Harpolingen und Rippolingen",
+        "lat": 47.5744,
+        "lon": 7.99468,
+        "approx": true
+      }
+    ],
+    "veg": true,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Ludwigsburg|ludwigsburg: rund 40.000 euro sachschaden nach brand auf sportzentrumsgelände",
+    "status": "active",
+    "title": "Ludwigsburg: Rund 40.000 Euro Sachschaden nach Brand auf Sportzentrumsgelände",
+    "link": "https://www.presseportal.de/blaulicht/pm/110974/6334897",
+    "first": "2026-08-17T13:58:27Z",
+    "last": "2026-08-17T13:58:27Z",
+    "places": [
+      {
+        "name": "Ludwigsburg",
+        "lat": 48.8953937,
+        "lon": 9.1895147,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ludwigsburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Freiwillige Feuerwehr Alpen|ausgelöste brandmeldeanlage",
     "status": "active",
     "title": "Ausgelöste Brandmeldeanlage",
