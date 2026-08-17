@@ -9,7 +9,8 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://map.aleduwa.de/og-image.png">
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="preconnect" href="https://tiles.openfreemap.org" crossorigin>
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.css">
 <style>
   :root {
     --ink:        #171614;
@@ -29,7 +30,9 @@
   html, body { height: 100%; margin: 0; }
   body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--ink); background: var(--surface);
     height: 100dvh; overflow: hidden; }
-  #map { height: 100%; }
+  /* Ausserhalb der Kugel ist der Canvas transparent — der Container liefert
+     den "Weltraum" hinter dem Globus. */
+  #map { height: 100%; background: #0d1524; }
 
   /* Touch: kein Tap-Blitzen, kein Doppeltipp-Zoom auf Bedienelementen */
   .mode-switch a, .view-switch button, .range-btn, .chip, .legend .row,
@@ -77,7 +80,7 @@
   .legend .row.off .dot { background: transparent !important; box-shadow: inset 0 0 0 2px var(--muted); border-color: transparent; }
   .legend .size-hint { margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--hairline); color: var(--muted); font-size: 11.5px; }
 
-  .leaflet-tooltip.evt-tip {
+  .evt-tip {
     background: var(--surface);
     border: 1px solid var(--hairline);
     border-radius: 8px;
@@ -101,10 +104,38 @@
   .evt-tip td { padding: 0 0 1px; color: var(--ink); vertical-align: top; }
   .evt-tip td:first-child { color: var(--ink-2); padding-right: 10px; white-space: nowrap; }
 
-  .leaflet-control-attribution { font-size: 10px; }
+  .maplibregl-ctrl-attrib {
+    font-size: 10px; border-radius: 8px 0 0 0;
+    background: var(--panel) !important;
+    -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+  }
+  .maplibregl-ctrl-attrib, .maplibregl-ctrl-attrib a { color: var(--ink-2); }
+  .maplibregl-ctrl-group {
+    background: var(--panel) !important; border: 1px solid var(--hairline);
+    border-radius: 12px !important; box-shadow: var(--shadow) !important; overflow: hidden;
+    -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
+  }
+  .maplibregl-ctrl-group button + button { border-top: 1px solid var(--hairline); }
 
-  /* OSM-Basiskarte beruhigen: fast monochrom — Event-Marker dominieren */
-  .basemap-muted { filter: saturate(0.15) brightness(1.06) contrast(0.9); }
+  /* Hover-Tooltip: freies DIV ueber der Karte (MapLibre hat kein Tooltip-Konzept) */
+  #hovertip {
+    position: absolute; z-index: 1102; pointer-events: none; display: none;
+    max-width: 340px; transform: translate(-50%, -100%); margin-top: -14px;
+  }
+  .maplibregl-popup.evt-popup .maplibregl-popup-content {
+    background: var(--panel-solid); border: 1px solid var(--hairline);
+    border-radius: 12px; box-shadow: var(--shadow); padding: 10px 12px;
+    font-size: 12.5px; line-height: 1.5; color: var(--ink);
+  }
+  .maplibregl-popup.evt-popup .maplibregl-popup-tip {
+    border-top-color: var(--panel-solid); border-bottom-color: var(--panel-solid);
+  }
+  .maplibregl-popup.evt-popup .maplibregl-popup-close-button {
+    font-size: 18px; color: var(--ink-2); padding: 2px 7px; border-radius: 8px;
+  }
+  .maplibregl-popup.evt-popup a { color: var(--accent); }
+  .mk { cursor: pointer; }
+
 
   /* Alt-Bestand: die Panels klappten früher per Icon ein. Seit die Mobil-
      Bedienung über Leiste + Sheet läuft, werden diese Knöpfe nicht mehr
@@ -189,19 +220,57 @@
   /* Info-Panel: auf Desktop immer offen; Einklapp-Verhalten nur mobil (s. Media Query) */
   .info-panel h1 { cursor: default; }
 
-  /* ---- Standort-Button (eigenes Leaflet-Control) ------------------------ */
-  .locate-ctl a {
-    display: flex !important; align-items: center; justify-content: center;
-    width: 34px; height: 34px; color: var(--ink-2); background: var(--panel-solid);
+  /* Eingeklapptes Menue unten links (Nachbau des frueheren Layer-Controls) */
+  .layer-ctl { padding: 0; max-width: 300px; overflow: hidden; }
+  .layer-ctl .lc-toggle {
+    width: 42px; height: 42px; border: 0; background: transparent; padding: 0;
+    cursor: pointer; display: flex; align-items: center; justify-content: center;
+    border-radius: 14px; color: var(--ink-2); font-family: inherit;
   }
-  .locate-ctl a.busy { color: var(--accent); animation: pulse 1.1s ease-in-out infinite; }
-  .locate-ctl a.on { color: var(--accent); }
-  .locate-ctl .ic { width: 19px; height: 19px; }
-  @keyframes pulse { 50% { opacity: .45; } }
-  .me-dot {
-    width: 16px; height: 16px; border-radius: 50%; background: #1a73e8;
-    border: 2.5px solid #fff; box-shadow: 0 0 0 1px rgba(11,11,11,.25), 0 1px 4px rgba(11,11,11,.3);
+  .layer-ctl .lc-toggle .ic { width: 21px; height: 21px; }
+  .layer-ctl .lc-toggle:hover { background: var(--hover); color: var(--ink); }
+  .layer-ctl .lc-body { display: none; padding: 10px 12px 12px; }
+  .layer-ctl.open .lc-body { display: block; }
+  .layer-ctl.open .lc-toggle { display: none; }
+  .lc-head {
+    display: flex; align-items: center; justify-content: space-between;
+    font-size: 12.5px; font-weight: 650; color: var(--ink); margin-bottom: 6px;
   }
+  .lc-close { border: 0; background: transparent; cursor: pointer; font-size: 15px;
+              color: var(--muted); border-radius: 8px; padding: 2px 6px; font-family: inherit; }
+  .lc-close:hover { background: var(--hover); color: var(--ink); }
+
+  /* Kartenstil-Auswahl als Bildvorschau (wie auf der Feuerkarte) */
+  .style-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 6px; }
+  .style-card {
+    position: relative; display: block; padding: 0; margin: 0; cursor: pointer;
+    border: 2px solid transparent; border-radius: 11px; overflow: hidden;
+    background: var(--track); transition: border-color .15s, transform .12s;
+    line-height: 0;
+  }
+  .style-card:hover { transform: translateY(-1px); }
+  .style-card input { position: absolute; opacity: 0; pointer-events: none; }
+  .style-card img { display: block; width: 100%; height: 64px; object-fit: cover; }
+  .style-card .style-name {
+    display: block; padding: 5px 8px 6px; font-size: 11.5px; font-weight: 600;
+    line-height: 1.3; color: var(--ink-2); background: var(--panel-solid);
+  }
+  .style-card.active { border-color: var(--accent); }
+  .style-card.active .style-name { color: var(--accent); }
+  .style-card.active::after {
+    content: '¹3'; position: absolute; top: 5px; right: 6px;
+    width: 19px; height: 19px; border-radius: 50%; background: var(--accent); color: #fff;
+    font-size: 12px; line-height: 19px; text-align: center; font-weight: 700;
+  }
+  .pane-links {
+    margin-top: 9px; padding-top: 8px; border-top: 1px solid var(--hairline);
+    font-size: 11.5px; color: var(--muted);
+  }
+  .pane-links a { color: var(--ink-2); text-decoration: none; }
+  .pane-links a:hover { color: var(--accent); text-decoration: underline; }
+  .lc-title { font-size: 10.5px; color: var(--muted); text-transform: uppercase;
+              letter-spacing: .05em; margin: 10px 0 3px; font-weight: 600; }
+  .lc-title:first-child { margin-top: 0; }
 
   /* ---- Mobile Bedienung: Leiste unten + Sheet --------------------------- */
   /* Vorher lagen mehrere Icon-Kacheln frei auf der Karte und überlagerten
@@ -212,20 +281,20 @@
     .mode-switch a, .view-switch button { padding: 9px 12px; font-size: 12.5px; }
 
     /* Karten-Panels und Leaflet-Menüs wandern ins Sheet */
-    .leaflet-control-zoom { display: none; }
-    .leaflet-control.panel { display: none; }
-    .leaflet-control-layers { display: none; }
-    .leaflet-top.leaflet-left { top: calc(52px + env(safe-area-inset-top)); }
-    /* Attributionszeile über die Leiste heben */
-    .leaflet-bottom { bottom: calc(64px + env(safe-area-inset-bottom)); }
-    .leaflet-bottom .leaflet-control { margin-bottom: 8px; margin-right: 8px; }
+    .maplibregl-ctrl.panel { display: none; }
+    .maplibregl-ctrl-group.nav-ctl { display: none; }   /* Zoom: Pinch reicht */
+    .maplibregl-ctrl-top-left { top: calc(52px + env(safe-area-inset-top)); }
+    .maplibregl-ctrl-top-right { top: calc(52px + env(safe-area-inset-top)); }
+    .maplibregl-ctrl-bottom-right { bottom: calc(70px + env(safe-area-inset-bottom)); }
+    .maplibregl-ctrl-bottom-left  { bottom: calc(70px + env(safe-area-inset-bottom)); }
 
-    .locate-ctl {
+    /* Standort-Button schwebend ueber der Leiste, ueber der Attributionszeile */
+    .geo-ctl {
       position: fixed !important; right: 12px;
-      bottom: calc(112px + env(safe-area-inset-bottom)); z-index: 1000; margin: 0 !important;
+      bottom: calc(112px + env(safe-area-inset-bottom)); margin: 0 !important;
+      border-radius: 50% !important;
     }
-    .locate-ctl a { width: 46px !important; height: 46px !important; border-radius: 50% !important; }
-    .locate-ctl .ic { width: 22px; height: 22px; }
+    .geo-ctl button { width: 46px !important; height: 46px !important; }
 
     #mbar {
       display: flex; position: fixed; z-index: 1102; left: 50%; transform: translateX(-50%);
@@ -242,7 +311,7 @@
     }
     #mbar button .ic { width: 20px; height: 20px; }
     #mbar button.active { background: var(--accent-bg); color: var(--accent); font-weight: 650; }
-    body.list-open #mbar, body.list-open .locate-ctl { display: none; }  /* Liste hat eigene Leiste */
+    body.list-open #mbar, body.list-open .geo-ctl { display: none; }  /* Liste hat eigene Leiste */
 
     #scrim {
       display: block; position: fixed; inset: 0; z-index: 1103; background: rgba(11,11,11,.35);
@@ -276,15 +345,9 @@
     .sheet-body .legend .label { font-size: 14px; }
     .sheet-body .legend { max-width: none; max-height: none; }
     .sheet-body .scope-ctl input { font-size: 16px; padding: 9px 12px; width: 88px; border-radius: 10px; }
-    .sheet-body .leaflet-control-layers {
-      display: block; background: transparent; border: 0; box-shadow: none; width: 100%;
-    }
-    .sheet-body .leaflet-control-layers-list { display: block; }
-    .sheet-body .leaflet-control-layers-toggle { display: none; }
-    .sheet-body .leaflet-control-layers label { display: flex; gap: 10px; align-items: center;
-      padding: 10px 0; font-size: 14px; }
-    .sheet-body .leaflet-control-layers input { width: 19px; height: 19px; accent-color: var(--accent); }
-    .sheet-body .leaflet-control-layers-separator { margin: 8px 0; border-top: 1px solid var(--hairline); }
+    .sheet-body .style-grid { gap: 10px; }
+    .sheet-body .style-card img { height: 78px; }
+    .sheet-body .legend .row { padding: 11px 0; }
 
     /* ---- Listenansicht: Karten statt Tabelle --------------------------- */
     #listview { inset: calc(48px + env(safe-area-inset-top)) 0 0 0; border-radius: 0; border: 0;
@@ -369,6 +432,7 @@
 </head>
 <body>
 <div id="map"></div>
+<div id="hovertip" class="evt-tip"></div>
 <div class="mode-switch"><a href="index.html" aria-label="Feuerkarte">🔥<span class="sw-txt"> Feuerkarte</span></a><a href="events.html" class="active" aria-label="Eventkarte">🎉<span class="sw-txt"> Eventkarte</span></a></div>
 <div class="view-switch"><button id="btn-map" class="active" aria-label="Karte">🗺️<span class="sw-txt"> Karte</span></button><button id="btn-list" aria-label="Liste">📋<span class="sw-txt"> Liste</span></button></div>
 
@@ -391,43 +455,66 @@
   </div>
 </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.js"></script>
+<script src="https://unpkg.com/pmtiles@4.5.0/dist/pmtiles.js"></script>
+<script src="mapstyle.js"></script>
 <script src="data/veranstaltungen.js"></script>
 <script>
 (function () {
-  const map = L.map('map', { zoomControl: true });
-  // Freiburg +50 km
-  map.fitBounds(L.latLngBounds([47.45, 7.1], [48.55, 8.6]).pad(0.02));
+  'use strict';
 
-  // ---- Kartentypen (Auswahl bleibt gespeichert) --------------------------
-  const eventAttrib = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · ' +
-      'Events: <a href="https://www.tourismus-bw.de/">toubiz/Open Data BW</a>, ' +
+  // Ohne WebGL kann MapLibre nicht rendern -> klassische Rasterkarte anbieten
+  try {
+    const probe = document.createElement('canvas');
+    if (!(probe.getContext('webgl2') || probe.getContext('webgl'))) throw new Error('kein WebGL');
+  } catch (e) {
+    location.replace('klassisch.html?nowebgl=1');
+    return;
+  }
+
+  const STYLES = window.MAP_STYLES.STYLES;
+  const skyFor = window.MAP_STYLES.skyFor;
+  const PAL = window.MAP_STYLES.PAL;
+  const IS_TOUCH = window.matchMedia && window.matchMedia('(hover: none)').matches;
+  const isMobile = () => window.matchMedia && window.matchMedia('(max-width: 640px)').matches;
+
+  let styleChoice = localStorage.getItem('eventmap.style') || 'ruhig';
+  if (!STYLES[styleChoice]) styleChoice = 'ruhig';
+
+  // Startausschnitt: Freiburg + 50 km (wird nach dem Laden auf den Umkreis gesetzt)
+  const map = new maplibregl.Map({
+    container: 'map',
+    style: window.MAP_STYLES.resolve(styleChoice),
+    bounds: [[7.1, 47.45], [8.6, 48.55]],
+    fitBoundsOptions: { padding: isMobile() ? 2 : 20 },
+    attributionControl: false,
+    maxZoom: 18
+  });
+  const navCtl = new maplibregl.NavigationControl({ visualizePitch: false });
+  map.addControl(navCtl, 'top-right');
+  if (navCtl._container) navCtl._container.classList.add('nav-ctl');
+
+  // Standort: Koordinaten bleiben im Browser (siehe Datenschutzerklärung)
+  const geoCtl = new maplibregl.GeolocateControl({
+    positionOptions: { enableHighAccuracy: true },
+    trackUserLocation: true, showUserLocation: true, showAccuracyCircle: true
+  });
+  map.addControl(geoCtl, 'top-right');
+  if (geoCtl._container) geoCtl._container.classList.add('geo-ctl');
+  geoCtl.on('error', e => console.warn('Standort nicht verfügbar:', e && e.message));
+
+  const eventAttrib = 'Events: <a href="https://www.tourismus-bw.de/">toubiz/Open Data BW</a>, ' +
       '<a href="https://veranstaltungen.freiburg.de/">FWTM</a>, ' +
       '<a href="https://rausgegangen.de/freiburg/">Rausgegangen</a>, ' +
       '<a href="https://freiburg.szene-radar.de/">szene-Radar</a>, ' +
       '<a href="https://www.alemannische-seiten.de/">Alemannische Seiten</a>, ' +
       '<a href="https://www.heuboden.de/">Heuboden</a>';
-  const baseLayers = {
-    'Karte (bunt)': L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19, attribution: eventAttrib }),
-    'Karte (dezent)': L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19, className: 'basemap-muted', attribution: eventAttrib }),
-    'Hellgrau (Esri)': L.layerGroup([
-      L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
-        maxZoom: 16, attribution: 'Kartenbild &copy; Esri &middot; ' + eventAttrib }),
-      L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}', {
-        maxZoom: 16 })
-    ]),
-    'Satellit (Esri)': L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-      maxZoom: 19, attribution: 'Bilddaten &copy; Esri, Maxar, Earthstar Geographics &middot; ' + eventAttrib })
-  };
-  let baseChoice = localStorage.getItem('eventmap.base') || 'Karte (bunt)';
-  if (!baseLayers[baseChoice]) baseChoice = 'Karte (bunt)';
-  baseLayers[baseChoice].addTo(map);
-  L.control.layers(baseLayers, null, { position: 'bottomleft', collapsed: true }).addTo(map);
-  map.on('baselayerchange', e => localStorage.setItem('eventmap.base', e.name));
-
-  map.attributionControl.setPrefix('<a href="https://leafletjs.com">Leaflet</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a> · <a href="hinweise.html">Hinweise</a>');
+  map.addControl(new maplibregl.AttributionControl({
+    compact: isMobile(),
+    customAttribution: '<a href="https://maplibre.org/" target="_blank" rel="noopener">MapLibre</a> &middot; ' +
+      eventAttrib + ' &middot; <a href="impressum.html">Impressum</a> &middot; ' +
+      '<a href="datenschutz.html">Datenschutz</a> &middot; <a href="hinweise.html">Hinweise</a>'
+  }), 'bottom-right');
 
   // ---- Daten & Kategorien -------------------------------------------------
   const data = window.EVENT_DATA || { events: [], generated: '–' };
@@ -523,10 +610,15 @@
   }
 
   function fitToScope() {
+    const pad = isMobile() ? 6 : 24;
     if (radiusKm) {
-      map.fitBounds(L.latLng(center.lat, center.lon).toBounds(radiusKm * 2000).pad(0.05));
+      // Quadrat um den Mittelpunkt, Kantenlaenge = Durchmesser
+      const dLat = radiusKm / 111;
+      const dLon = radiusKm / (111 * Math.cos(center.lat * Math.PI / 180));
+      map.fitBounds([[center.lon - dLon, center.lat - dLat],
+                     [center.lon + dLon, center.lat + dLat]], { padding: pad, duration: 600 });
     } else {
-      map.fitBounds(L.latLngBounds([47.45, 7.1], [48.55, 8.6]).pad(0.02));
+      map.fitBounds([[7.1, 47.45], [8.6, 48.55]], { padding: pad, duration: 600 });
     }
   }
 
@@ -626,36 +718,97 @@
   }
 
   // ---- Karte: Marker ------------------------------------------------------
-  const eventsLayer = L.layerGroup().addTo(map);
-  const scopeLayer = L.layerGroup().addTo(map);
+  // ---- Marker & Umkreis ---------------------------------------------------
+  // MapLibre kennt keine LayerGroup: DOM-Marker werden selbst verwaltet,
+  // der Umkreis ist eine GeoJSON-Quelle.
+  let evtMarkers = [];
+  let scopeMarker = null;
 
-  function renderScope() {
-    scopeLayer.clearLayers();
-    L.marker([center.lat, center.lon], {
-      icon: L.divIcon({ className: '', iconSize: [22, 22], iconAnchor: [11, 20],
-        html: '<div style="font-size:20px;line-height:1;text-shadow:0 1px 2px rgba(11,11,11,.3)">📍</div>' }),
-      interactive: false, keyboard: false
-    }).addTo(scopeLayer);
-    if (radiusKm) {
-      L.circle([center.lat, center.lon], {
-        radius: radiusKm * 1000, color: '#8f1d1d', weight: 1.5, dashArray: '6 6',
-        fill: false, opacity: 0.55, interactive: false
-      }).addTo(scopeLayer);
+  const GEO_SCOPE = { type: 'FeatureCollection', features: [] };
+
+  // Kreis als Polygon (kein turf noetig): 64 Stuetzpunkte reichen optisch
+  function circlePolygon(lat, lon, km) {
+    const ring = [];
+    const dLat = km / 111;
+    const dLon = km / (111 * Math.cos(lat * Math.PI / 180));
+    for (let a = 0; a <= 360; a += 360 / 64) {
+      const r = a * Math.PI / 180;
+      ring.push([lon + dLon * Math.cos(r), lat + dLat * Math.sin(r)]);
+    }
+    return { type: 'Feature', geometry: { type: 'Polygon', coordinates: [ring] }, properties: {} };
+  }
+
+  function addScopeLayers() {
+    if (!map.getSource('scope')) map.addSource('scope', { type: 'geojson', data: GEO_SCOPE });
+    else map.getSource('scope').setData(GEO_SCOPE);
+    if (!map.getLayer('scope-line')) {
+      map.addLayer({ id: 'scope-line', type: 'line', source: 'scope',
+        paint: { 'line-color': '#8f1d1d', 'line-width': 1.5, 'line-dasharray': [4, 4], 'line-opacity': 0.55 } });
     }
   }
+
+  function renderScope() {
+    GEO_SCOPE.features = radiusKm ? [circlePolygon(center.lat, center.lon, radiusKm)] : [];
+    const src = map.getSource('scope');
+    if (src) src.setData(GEO_SCOPE);
+    if (scopeMarker) scopeMarker.remove();
+    const el = document.createElement('div');
+    el.className = 'mk';
+    el.style.cssText = 'font-size:20px;line-height:1;text-shadow:0 1px 2px rgba(11,11,11,.3);pointer-events:none';
+    el.textContent = '📍';
+    scopeMarker = new maplibregl.Marker({ element: el, anchor: 'bottom' })
+      .setLngLat([center.lon, center.lat]).addTo(map);
+  }
+
+  // ---- Tooltip / Popup ------------------------------------------------------
+  // Desktop: Hover-Tooltip + Klick-Popup. Touch: nur Popup, sonst loest ein Tap
+  // beides gleichzeitig aus.
+  const tipEl = document.getElementById('hovertip');
+  function showTip(html, x, y) {
+    tipEl.innerHTML = html;
+    tipEl.style.left = x + 'px';
+    tipEl.style.top = y + 'px';
+    tipEl.style.display = 'block';
+  }
+  function hideTip() { tipEl.style.display = 'none'; }
+
+  function openPopup(lngLat, html) {
+    const w = Math.min(340, document.documentElement.clientWidth - 40);
+    if (IS_TOUCH || document.documentElement.clientWidth < 520) {
+      map.easeTo({ center: lngLat, duration: 250 });
+    }
+    new maplibregl.Popup({ className: 'evt-popup', closeButton: true, maxWidth: w + 'px', offset: 16 })
+      .setLngLat(lngLat).setHTML(html).addTo(map);
+  }
+
+  function bindMarker(el, lngLat, tipHtml, popupHtml) {
+    // stopPropagation: sonst schliesst MapLibres closeOnClick das Popup sofort
+    if (IS_TOUCH) {
+      el.addEventListener('click', ev => { ev.stopPropagation(); openPopup(lngLat, popupHtml); });
+      return;
+    }
+    el.addEventListener('mouseenter', e => showTip(tipHtml, e.clientX, e.clientY));
+    el.addEventListener('mousemove', e => showTip(tipHtml, e.clientX, e.clientY));
+    el.addEventListener('mouseleave', hideTip);
+    el.addEventListener('click', ev => { ev.stopPropagation(); hideTip(); openPopup(lngLat, popupHtml); });
+  }
+
   let legendDiv = null, infoDiv = null;
   let counts = {}, shownGroups = 0, shownDates = 0;
 
-  const evtIcon = cat => L.divIcon({
-    className: '', iconSize: [28, 28], iconAnchor: [14, 14],
-    html: '<div style="width:28px;height:28px;border-radius:50%;background:#fcfcfb;' +
-          'border:2px solid ' + CATS[cat].color + ';' +
-          'box-shadow:0 1px 4px rgba(11,11,11,.25);display:flex;align-items:center;justify-content:center;' +
-          'font-size:14px;line-height:1">' + CATS[cat].emoji + '</div>'
-  });
+  function evtIconEl(cat) {
+    const el = document.createElement('div');
+    el.className = 'mk';
+    el.innerHTML = '<div style="width:28px;height:28px;border-radius:50%;background:#fcfcfb;' +
+      'border:2px solid ' + CATS[cat].color + ';box-shadow:0 1px 4px rgba(11,11,11,.25);' +
+      'display:flex;align-items:center;justify-content:center;font-size:14px;line-height:1">' +
+      CATS[cat].emoji + '</div>';
+    return el;
+  }
 
   function rebuild() {
-    eventsLayer.clearLayers();
+    evtMarkers.forEach(m => m.remove());
+    evtMarkers = [];
     counts = {}; Object.keys(CATS).forEach(c => counts[c] = 0);
     shownGroups = 0; shownDates = 0;
 
@@ -724,12 +877,10 @@
         '<br>' + dateList +
         '<br><a href="' + esc(e.url) + '" target="_blank" rel="noopener">Zur Veranstaltungsseite (' + esc(e.source) + ')</a>';
 
-      const mk = L.marker([e.lat, e.lon], { icon: evtIcon(cat) }).bindPopup(popup);
-      // Touch: Tap löst Hover UND Klick aus -> nur Popup binden
-      if (!window.matchMedia('(hover: none)').matches) {
-        mk.bindTooltip(tip, { className: 'evt-tip', sticky: true, direction: 'top', offset: [0, -12] });
-      }
-      mk.addTo(eventsLayer);
+      const el = evtIconEl(cat);
+      const ll = [e.lon, e.lat];
+      bindMarker(el, ll, '<div class="evt-tip">' + tip + '</div>', popup);
+      evtMarkers.push(new maplibregl.Marker({ element: el }).setLngLat(ll).addTo(map));
     }
 
     function addVenueMarker(lists) {
@@ -744,13 +895,12 @@
       lists.forEach(l => { const p = l[0].place; if (p) placeCount[p] = (placeCount[p] || 0) + 1; });
       const placeLabel = Object.keys(placeCount).sort((a, b) => placeCount[b] - placeCount[a])[0] || 'Veranstaltungsort';
 
-      const icon = L.divIcon({
-        className: '', iconSize: [30, 30], iconAnchor: [15, 15],
-        html: '<div style="width:30px;height:30px;border-radius:50%;background:#fcfcfb;' +
-              'border:2px solid ' + CATS[domCat].color + ';' +
-              'box-shadow:0 1px 4px rgba(11,11,11,.25);display:flex;align-items:center;justify-content:center;' +
-              'font-size:12.5px;font-weight:700;color:#0b0b0b;line-height:1">' + lists.length + '</div>'
-      });
+      const el = document.createElement('div');
+      el.className = 'mk';
+      el.innerHTML = '<div style="width:30px;height:30px;border-radius:50%;background:#fcfcfb;' +
+        'border:2px solid ' + CATS[domCat].color + ';box-shadow:0 1px 4px rgba(11,11,11,.25);' +
+        'display:flex;align-items:center;justify-content:center;font-size:12.5px;font-weight:700;' +
+        'color:#0b0b0b;line-height:1">' + lists.length + '</div>';
 
       const tipRows = lists.slice(0, 6).map(l => {
         const e = l[0];
@@ -772,11 +922,9 @@
         }).join('<br>') +
         (lists.length > 12 ? '<br><i>+ ' + (lists.length - 12) + ' weitere — Listenansicht nutzen</i>' : '');
 
-      const mk = L.marker([first.lat, first.lon], { icon: icon }).bindPopup(popup, { maxWidth: 320 });
-      if (!window.matchMedia('(hover: none)').matches) {
-        mk.bindTooltip(tip, { className: 'evt-tip', sticky: true, direction: 'top', offset: [0, -14] });
-      }
-      mk.addTo(eventsLayer);
+      const ll = [first.lon, first.lat];
+      bindMarker(el, ll, '<div class="evt-tip">' + tip + '</div>', popup);
+      evtMarkers.push(new maplibregl.Marker({ element: el }).setLngLat(ll).addTo(map));
     }
 
     renderScope();
@@ -813,53 +961,59 @@
       '<div class="meta" style="margin-top:6px">' +
       '<b>' + shownGroups + '</b> Veranstaltungen sichtbar (' + shownDates + ' Termine im Zeitraum ' + rangeLabel(rangeKey) + ')' +
       '<br>Umkreis: <b>' + radiusLabel() + '</b> um <b>' + esc(center.label) + '</b>' +
-      '<br>Datenstand: <b>' + esc(data.generated) + '</b></div>';
+      '<br>Datenstand: <b>' + esc(data.generated) + '</b></div>' +
+      '<div class="pane-links"><a href="faq.html">FAQ</a> · <a href="impressum.html">Impressum</a> · ' +
+      '<a href="datenschutz.html">Datenschutz</a> · <a href="hinweise.html">Hinweise</a></div>';
+  }
+
+  // Strichsymbole statt Emoji: einheitliche Größe, ruhigere Optik
+  const SVG = {
+    info:   '<circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.6v.6"/>',
+    clock:  '<circle cx="12" cy="12" r="9"/><path d="M12 7v5.2l3.2 2"/>',
+    pin:    '<path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/>',
+    layers: '<path d="M12 3.5 3.5 8 12 12.5 20.5 8 12 3.5Z"/><path d="m4 12 8 4.2 8-4.2"/><path d="m4 16 8 4.2 8-4.2"/>',
+    legend: '<path d="M9 6.5h11M9 12h11M9 17.5h11"/><circle cx="4.3" cy="6.5" r="1.5"/><circle cx="4.3" cy="12" r="1.5"/><circle cx="4.3" cy="17.5" r="1.5"/>',
+    filter: '<path d="M3.5 5.5h17l-6.6 7.6v5.4l-3.8 2v-7.4L3.5 5.5Z"/>',
+    target: '<circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2.4"/><path d="M12 1.8v3.4M12 18.8v3.4M22.2 12h-3.4M5.2 12H1.8"/>'
+  };
+  function icon(n, cls) {
+    return '<svg class="ic ' + (cls || '') + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" ' +
+      'stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + SVG[n] + '</svg>';
   }
 
   // ---- Bedienelemente Karte ----------------------------------------------
-  const info = L.control({ position: 'topleft' });
-  info.onAdd = function () {
-    infoDiv = L.DomUtil.create('div', 'panel info-panel');
-    L.DomEvent.disableClickPropagation(infoDiv);
-    // Mobil: initial eingeklappt; Tipp auf die Überschrift klappt auf/zu (Wirkung nur < 640px, s. CSS)
-    if (window.matchMedia && window.matchMedia('(max-width: 640px)').matches) infoDiv.classList.add('collapsed');
-    infoDiv.addEventListener('click', function (e) {
-      if (e.target.closest('h1')) infoDiv.classList.toggle('collapsed');
-    });
-    renderInfo();
-    return infoDiv;
-  };
-  info.addTo(map);
-
-  // Auf Mobile: Panel per Icon ein-/ausklappen; beim Öffnen alle anderen
-  // einklappbaren Panels schließen, damit die Karte frei bleibt
-  const isMobile = () => window.matchMedia && window.matchMedia('(max-width: 640px)').matches;
-  function toggleCollapse(div) {
-    const wasOpen = !div.classList.contains('collapsed');
-    if (wasOpen) { div.classList.add('collapsed'); return; }
-    document.querySelectorAll('.mob-collapsible, .info-panel').forEach(p => p.classList.add('collapsed'));
-    div.classList.remove('collapsed');
+  // Minimal-IControl: MapLibre erwartet nur onAdd/onRemove
+  function ctrl(el) { return { onAdd: () => el, onRemove: () => el.remove() }; }
+  function stopMapEvents(el) {
+    ['mousedown', 'dblclick', 'touchstart', 'wheel', 'click'].forEach(ev =>
+      el.addEventListener(ev, e => e.stopPropagation()));
+  }
+  function panelWrap(inner, cls) {
+    const w = document.createElement('div');
+    w.className = 'maplibregl-ctrl panel ' + (cls || '');
+    stopMapEvents(w);
+    w.appendChild(inner);
+    return w;
+  }
+  function pane(cls) {
+    const d = document.createElement('div');
+    d.className = 'pane ' + cls;
+    return d;
   }
 
-  const rangeCtl = L.control({ position: 'topleft' });
-  rangeCtl.onAdd = function () {
-    const div = L.DomUtil.create('div', 'panel range-ctl mob-collapsible');
-    L.DomEvent.disableClickPropagation(div);
-    if (isMobile()) div.classList.add('collapsed');
-    div.innerHTML = '<button class="mob-toggle" aria-label="Zeitraum-Filter ein-/ausblenden" title="Zeitraum">🕒</button>' +
-      '<span class="lbl">Zeitraum</span>' + RANGES.map(r =>
-      '<button class="range-btn' + (r.key === rangeKey ? ' active' : '') + '" data-key="' + r.key + '"' +
-      (r.title ? ' title="' + r.title + '"' : '') + '>' + r.label + '</button>'
-    ).join('');
-    div.addEventListener('click', e => {
-      if (e.target.closest('.mob-toggle')) { toggleCollapse(div); return; }
-      const btn = e.target.closest('.range-btn');
-      if (!btn) return;
-      setRange(btn.dataset.key);
-    });
-    return div;
-  };
-  rangeCtl.addTo(map);
+  // Info
+  infoDiv = pane('pane-info info-panel');
+  renderInfo();
+
+  // Zeitraum
+  const paneRange = pane('pane-range range-ctl');
+  paneRange.innerHTML = '<span class="lbl">Zeitraum</span>' + RANGES.map(r =>
+    '<button class="range-btn' + (r.key === rangeKey ? ' active' : '') + '" data-key="' + r.key + '"' +
+    (r.title ? ' title="' + r.title + '"' : '') + '>' + r.label + '</button>').join('');
+  paneRange.addEventListener('click', e => {
+    const btn = e.target.closest('.range-btn');
+    if (btn) setRange(btn.dataset.key);
+  });
 
   function setRange(key) {
     rangeKey = key;
@@ -869,64 +1023,97 @@
     rebuild();
   }
 
-  // Umkreis-Steuerung: Radius-Presets + Zentrum per PLZ (Standard: Waldkirch)
-  const scopeCtl = L.control({ position: 'topleft' });
-  scopeCtl.onAdd = function () {
-    const div = L.DomUtil.create('div', 'panel range-ctl scope-ctl mob-collapsible');
-    L.DomEvent.disableClickPropagation(div);
-    L.DomEvent.disableScrollPropagation(div);
-    if (isMobile()) div.classList.add('collapsed');
-    div.innerHTML = '<button class="mob-toggle" aria-label="Umkreis-Filter ein-/ausblenden" title="Umkreis">📍</button>' +
-      '<span class="lbl">Umkreis</span>' +
-      RADII.map(r =>
-        '<button class="range-btn scope-r' + (r === radiusKm ? ' active' : '') + '" data-km="' + r + '">' +
-        (r ? r + ' km' : 'Alle') + '</button>'
-      ).join('') +
-      '<span class="center-lbl" id="center-lbl">📍 ' + esc(center.label) + '</span>' +
-      '<input id="plz-in" inputmode="numeric" maxlength="5" placeholder="PLZ">' +
-      '<button class="range-btn" id="plz-go">Setzen</button>' +
-      '<button class="range-btn" id="plz-reset" title="Zur&uuml;ck zu Waldkirch">&#8634;</button>' +
-      '<span class="hint" id="plz-hint"></span>';
-    div.addEventListener('click', e => {
-      const btn = e.target.closest('.scope-r');
-      if (btn) { setRadius(+btn.dataset.km); return; }
-      if (e.target.id === 'plz-go') setCenterFromPlz(div.querySelector('#plz-in').value.trim(), div.querySelector('#plz-hint'));
-      if (e.target.id === 'plz-reset') {
-        div.querySelector('#plz-in').value = '';
-        div.querySelector('#plz-hint').textContent = '';
-        setCenter(DEFAULT_CENTER);
-      }
-    });
-    div.querySelector('#plz-in').addEventListener('keydown', e => {
-      if (e.key === 'Enter') setCenterFromPlz(e.target.value.trim(), div.querySelector('#plz-hint'));
-    });
-    return div;
-  };
-  scopeCtl.addTo(map);
+  // Umkreis: Radius-Vorgaben + Zentrum per PLZ
+  const paneScope = pane('pane-scope range-ctl scope-ctl');
+  paneScope.innerHTML = '<span class="lbl">Umkreis</span>' +
+    RADII.map(r =>
+      '<button class="range-btn scope-r' + (r === radiusKm ? ' active' : '') + '" data-km="' + r + '">' +
+      (r ? r + ' km' : 'Alle') + '</button>').join('') +
+    '<span class="center-lbl" id="center-lbl">\📍 ' + esc(center.label) + '</span>' +
+    '<input id="plz-in" inputmode="numeric" maxlength="5" placeholder="PLZ">' +
+    '<button class="range-btn" id="plz-go">Setzen</button>' +
+    '<button class="range-btn" id="plz-reset" title="Zur&uuml;ck zu Waldkirch">&#8634;</button>' +
+    '<span class="hint" id="plz-hint"></span>';
+  paneScope.addEventListener('click', e => {
+    const btn = e.target.closest('.scope-r');
+    if (btn) { setRadius(+btn.dataset.km); return; }
+    if (e.target.id === 'plz-go') setCenterFromPlz(paneScope.querySelector('#plz-in').value.trim(), paneScope.querySelector('#plz-hint'));
+    if (e.target.id === 'plz-reset') {
+      paneScope.querySelector('#plz-in').value = '';
+      paneScope.querySelector('#plz-hint').textContent = '';
+      setCenter(DEFAULT_CENTER);
+    }
+  });
+  paneScope.querySelector('#plz-in').addEventListener('keydown', e => {
+    if (e.key === 'Enter') setCenterFromPlz(e.target.value.trim(), paneScope.querySelector('#plz-hint'));
+  });
 
   function updateScopeUIs() {
     document.querySelectorAll('.scope-r').forEach(b => b.classList.toggle('active', +b.dataset.km === radiusKm));
     document.querySelectorAll('#lv-radius-group .chip').forEach(b => b.classList.toggle('active', +b.dataset.km === radiusKm));
     const cl = document.getElementById('center-lbl');
-    if (cl) cl.textContent = '📍 ' + center.label;
+    if (cl) cl.textContent = '\📍 ' + center.label;
     const ll = document.getElementById('lv-radius-lbl');
     if (ll) ll.textContent = 'Umkreis um ' + center.label;
   }
 
-  const legend = L.control({ position: 'bottomright' });
-  legend.onAdd = function () {
-    legendDiv = L.DomUtil.create('div', 'panel legend mob-collapsible');
-    L.DomEvent.disableClickPropagation(legendDiv);
-    if (isMobile()) legendDiv.classList.add('collapsed');
-    legendDiv.addEventListener('click', e => {
-      if (e.target.closest('.mob-toggle')) { toggleCollapse(legendDiv); return; }
-      const row = e.target.closest('.row[data-cat]');
-      if (row) toggleCat(row.dataset.cat);
-    });
-    renderLegend();
-    return legendDiv;
-  };
-  legend.addTo(map);
+  // Kategorien (fruehere Legende) - klickbar
+  legendDiv = pane('pane-legend legend');
+  legendDiv.addEventListener('click', e => {
+    const row = e.target.closest('.row[data-cat]');
+    if (row) toggleCat(row.dataset.cat);
+  });
+  renderLegend();
+
+  // Kartenstil mit Bildvorschau. Die Basiskarten-Auswahl lag frueher als
+  // eigenes Leaflet-Menue unten links; jetzt steckt sie hier - eine Stelle
+  // fuer Karte und Ebenen, wie auf der Feuerkarte.
+  const paneStyle = pane('pane-style');
+  paneStyle.innerHTML = '<div class="style-grid">' +
+    Object.keys(STYLES).map(k =>
+      '<label class="style-card' + (k === styleChoice ? ' active' : '') + '">' +
+      '<input type="radio" name="basestyle" value="' + k + '"' + (k === styleChoice ? ' checked' : '') + '>' +
+      '<img src="thumbs/' + k + '.jpg" alt="" width="520" height="340" loading="lazy">' +
+      '<span class="style-name">' + STYLES[k].short + '</span></label>').join('') + '</div>';
+  paneStyle.addEventListener('change', e => {
+    if (e.target.name !== 'basestyle') return;
+    styleChoice = e.target.value;
+    localStorage.setItem('eventmap.style', styleChoice);
+    paneStyle.querySelectorAll('.style-card').forEach(c =>
+      c.classList.toggle('active', c.querySelector('input').value === styleChoice));
+    map.setStyle(window.MAP_STYLES.resolve(styleChoice));
+  });
+
+  // Desktop-Panels
+  const wrapInfo = panelWrap(infoDiv);
+  const wrapRange = panelWrap(paneRange);
+  const wrapScope = panelWrap(paneScope);
+  const wrapLegend = panelWrap(legendDiv, 'legend');
+  const wrapStyle = document.createElement('div');
+  wrapStyle.className = 'maplibregl-ctrl panel layer-ctl';
+  stopMapEvents(wrapStyle);
+  wrapStyle.innerHTML =
+    '<button class="lc-toggle" aria-label="Kartenstil oeffnen" title="Kartenstil">' + icon('layers') + '</button>' +
+    '<div class="lc-body"><div class="lc-head"><span>Kartenstil</span>' +
+    '<button class="lc-close" aria-label="schliessen">✕</button></div></div>';
+  const lcBody = wrapStyle.querySelector('.lc-body');
+  lcBody.appendChild(paneStyle);
+  wrapStyle.querySelector('.lc-toggle').addEventListener('click', () => wrapStyle.classList.add('open'));
+  wrapStyle.querySelector('.lc-close').addEventListener('click', () => wrapStyle.classList.remove('open'));
+
+  map.addControl(ctrl(wrapInfo), 'top-left');
+  map.addControl(ctrl(wrapRange), 'top-left');
+  map.addControl(ctrl(wrapScope), 'top-left');
+  map.addControl(ctrl(wrapStyle), 'bottom-left');
+  map.addControl(ctrl(wrapLegend), 'bottom-right');
+
+  // Nach jedem Stilwechsel: Globus setzen und eigene Ebenen neu anlegen
+  map.on('style.load', () => {
+    try { map.setProjection({ type: 'globe' }); } catch (e) { console.warn('Globus nicht verfuegbar:', e); }
+    try { if (!map.getStyle().sky) map.setSky(skyFor(PAL.hell)); } catch (e) { /* optional */ }
+    addScopeLayers();
+    renderScope();
+  });
 
   // ---- Listenansicht ------------------------------------------------------
   let listOpen = false;
@@ -1085,28 +1272,13 @@
   // jede Ansicht weiterhin nur einmal und alle Handler bleiben daran hängen.
   let mobClose = null;
 
-  // Strichsymbole statt Emoji: einheitliche Größe, ruhigere Optik
-  const SVG = {
-    info:   '<circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.6v.6"/>',
-    clock:  '<circle cx="12" cy="12" r="9"/><path d="M12 7v5.2l3.2 2"/>',
-    pin:    '<path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/>',
-    layers: '<path d="M12 3.5 3.5 8 12 12.5 20.5 8 12 3.5Z"/><path d="m4 12 8 4.2 8-4.2"/><path d="m4 16 8 4.2 8-4.2"/>',
-    legend: '<path d="M9 6.5h11M9 12h11M9 17.5h11"/><circle cx="4.3" cy="6.5" r="1.5"/><circle cx="4.3" cy="12" r="1.5"/><circle cx="4.3" cy="17.5" r="1.5"/>',
-    filter: '<path d="M3.5 5.5h17l-6.6 7.6v5.4l-3.8 2v-7.4L3.5 5.5Z"/>',
-    target: '<circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2.4"/><path d="M12 1.8v3.4M12 18.8v3.4M22.2 12h-3.4M5.2 12H1.8"/>'
-  };
-  function icon(n, cls) {
-    return '<svg class="ic ' + (cls || '') + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" ' +
-      'stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + SVG[n] + '</svg>';
-  }
-
   function initMobileShell() {
     const PANES = [
       { id: 'info',  title: 'Übersicht',   icon: 'info',   label: 'Info',    sel: '.info-panel' },
       { id: 'range', title: 'Zeitraum',    icon: 'clock',  label: 'Zeit',    sel: '.range-ctl:not(.scope-ctl)' },
       { id: 'scope', title: 'Umkreis',     icon: 'pin',    label: 'Umkreis', sel: '.scope-ctl' },
       { id: 'cats',  title: 'Kategorien',  icon: 'legend', label: 'Kat.',    sel: '.legend' },
-      { id: 'base',  title: 'Kartenstil',  icon: 'layers', label: 'Karte',   sel: '.leaflet-control-layers' }
+      { id: 'base',  title: 'Kartenstil',  icon: 'layers', label: 'Karte',   sel: '.pane-style' }
     ].map(p => {
       const el = document.querySelector(p.sel);
       return el ? Object.assign(p, { el: el, home: el.parentNode }) : null;
@@ -1228,43 +1400,6 @@
     }
   }
 
-  // ---- Standort-Button ------------------------------------------------------
-  // Zeigt die eigene Position. Die Koordinaten kommen vom Browser und bleiben
-  // im Browser — sie werden nicht übertragen (siehe Datenschutzerklärung).
-  const locateCtl = L.control({ position: 'topright' });
-  locateCtl.onAdd = function () {
-    const div = L.DomUtil.create('div', 'leaflet-bar locate-ctl');
-    div.innerHTML = '<a href="#" role="button" aria-label="Meinen Standort zeigen" title="Mein Standort">' +
-      icon('target') + '</a>';
-    const a = div.querySelector('a');
-    L.DomEvent.disableClickPropagation(div);
-    let meMarker = null, meCircle = null;
-    L.DomEvent.on(a, 'click', function (e) {
-      L.DomEvent.preventDefault(e);
-      a.classList.add('busy');
-      map.locate({ setView: true, maxZoom: 13, enableHighAccuracy: true, timeout: 12000 });
-    });
-    map.on('locationfound', function (ev) {
-      a.classList.remove('busy');
-      a.classList.add('on');
-      if (meMarker) { map.removeLayer(meMarker); map.removeLayer(meCircle); }
-      meMarker = L.marker(ev.latlng, {
-        icon: L.divIcon({ className: '', html: '<div class="me-dot"></div>', iconSize: [16, 16], iconAnchor: [8, 8] }),
-        interactive: false, keyboard: false
-      }).addTo(map);
-      meCircle = L.circle(ev.latlng, {
-        radius: ev.accuracy || 50, color: '#1a73e8', weight: 1,
-        fillColor: '#1a73e8', fillOpacity: 0.10, interactive: false
-      }).addTo(map);
-    });
-    map.on('locationerror', function () {
-      a.classList.remove('busy');
-      // Häufigster Fall: Nutzer hat abgelehnt oder kein Signal — still bleiben,
-      // der Browser hat die Ablehnung bereits sichtbar gemacht.
-    });
-    return div;
-  };
-  locateCtl.addTo(map);
 
   // Umschalter Karte/Liste
   const btnMap = document.getElementById('btn-map');
@@ -1287,6 +1422,19 @@
   updateScopeUIs();
   fitToScope();
   rebuild();
+
+  // MapLibre zeigt die kompakte Attribution zunaechst ausgeklappt; auf dem
+  // Handy verdeckt die Zeile den halben Kartenfuss. Einklappen — ein Tipp auf
+  // das i zeigt sie wieder, die Rechtslinks stehen zusaetzlich im Info-Sheet.
+  if (isMobile()) {
+    map.once('load', () => {
+      const a = document.querySelector('.maplibregl-ctrl-attrib');
+      if (a) a.classList.remove('maplibregl-compact-show');
+    });
+  }
+
+  // Fuer den automatisierten Check (scripts/events-check.mjs)
+  window.__eventMap = map;
 
   // Seite stündlich neu laden (der Scheduler aktualisiert die Datendatei;
   // Zeitraum & Kategorien bleiben via localStorage erhalten)
