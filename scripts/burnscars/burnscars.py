@@ -10,9 +10,11 @@ Architektur (Details in SENTINEL.md):
   d) NBR = (B8A - B12) / (B8A + B12) pro Szene über die Sentinel Hub
      Process API (CDSE) als Float32-GeoTIFF holen; dNBR = NBR_pre - NBR_post
   e) dNBR > Schwellwert (0.27) + Mindestfläche -> Polygone (rasterio.features)
-  f) Ergebnis als data/brandnarben.js schreiben:
+  f) Ergebnis mit dem vorhandenen Bestand vereinen (Narben sind dauerhaft,
+     siehe SCAR_RETENTION_DAYS) und als data/brandnarben.js schreiben:
      window.BURNSCAR_DATA = {generated, scars:[{eventBase, lat, lon,
                                                 geojson, ha, preDate, postDate}]}
+     Ein Lauf ohne Ergebnis lässt die Datei unangetastet (Leer-Guard).
 
 Credentials (nur für Schritt d nötig, siehe SENTINEL.md):
   CDSE_CLIENT_ID / CDSE_CLIENT_SECRET  (OAuth2 client credentials,
@@ -21,7 +23,8 @@ Credentials (nur für Schritt d nötig, siehe SENTINEL.md):
 Ohne Credentials:
   * Normal-Lauf endet sauber mit klarer Meldung (Exit 0, nichts geschrieben).
   * --dry-run   : Schritte a-c real ausführen (Events + STAC), Plan ausgeben.
-  * --self-test : Schritte d-f offline mit synthetischem dNBR-Raster testen.
+  * --self-test : Schritte d-f offline mit synthetischem dNBR-Raster testen,
+                  inklusive Fortschreibung (Leer-Guard, Zusammenführung, Alter).
   * --probe LAT,LON[,YYYY-MM-DD] : STAC-Szenensuche für einen Punkt ausgeben.
 
 Aufruf normalerweise über den Wrapper update-burnscars.ps1 im Repo-Root.
@@ -62,6 +65,33 @@ DNBR_THRESHOLD = 0.27       # verbrannt ab dNBR > 0.27 (moderate severity)
 MIN_AREA_HA = 0.5           # Mindest-Polygonfläche
 MAX_AOIS = 20               # Sicherheitsdeckel pro Lauf
 UTM_EPSG = 32632            # Baden-Württemberg liegt komplett in Zone 32N
+
+# --- Fortschreibung des Bestands -------------------------------------------
+# Eine Brandnarbe ist eine dauerhafte Spur im Gelände. Ob ein Lauf sie sieht,
+# hängt an Wolken, Szenenverfügbarkeit und Kontingent — nicht daran, ob sie
+# noch da ist. data/brandnarben.js wird deshalb fortgeschrieben (wie der
+# 30-Tage-Ereignisspeicher data/events.json in update-reports.ps1) und nicht
+# bei jedem Lauf neu gesetzt.
+SCAR_RETENTION_DAYS = 180   # Eine Narbe bleibt 180 Tage nach ihrer
+                            # Nachher-Aufnahme im Bestand — rund eine
+                            # Vegetationsperiode. So lange bleibt der
+                            # dNBR-Kontrast im Gelände sichtbar; danach hat
+                            # der Aufwuchs die Fläche geschlossen und die
+                            # Anzeige wäre nur noch Historie. Meldungen
+                            # laufen nach 30 Tagen aus, Narben halten also
+                            # bewusst ein Vielfaches länger.
+SAME_PLACE_DIST_M = 1500    # Zentren näher als das -> dieselbe Fläche
+SAME_EVENT_DIST_M = AOI_MAX_EDGE_M   # bei gleichem eventBase großzügiger:
+                            # weiter als das AOI breit ist (12 km) können
+                            # zwei Messungen desselben Ereignisses nicht
+                            # auseinanderliegen
+SHRINK_GUARD_DAYS = 30      # Fenster für die Schrumpf-Plausibilität
+SHRINK_GUARD_FACTOR = 0.5   # neuere Messung < 50 % der alten -> unplausibel
+MAX_STORED_SCARS = 200      # Deckel für die Ladezeit: eine Narbe kostet in
+                            # brandnarben.js rund 8 KB Polygondaten, die das
+                            # Frontend synchron lädt. 200 Narben ~ 1.5 MB ist
+                            # die Schmerzgrenze; darüber fallen die ältesten
+                            # heraus (Sortierung: neueste zuerst).
 
 # SCL-Klassen, die als ungültig maskiert werden:
 # 0 NO_DATA, 1 SATURATED, 3 CLOUD_SHADOW, 6 WATER, 8 CLOUD_MED,
@@ -422,6 +452,180 @@ def write_output(path, scars, generated=None):
     log(f"geschrieben: {path} ({len(scars)} Narben)")
 
 
+def read_existing_scars(path):
+    """Bestand aus data/brandnarben.js lesen -> Liste (leer, wenn nichts da).
+
+    Bewusst tolerant: eine fehlende oder beschädigte Datei darf den Lauf
+    nicht abbrechen — sie bedeutet nur, dass es nichts fortzuschreiben gibt.
+    """
+    if not os.path.exists(path):
+        return []
+    try:
+        with open(path, encoding="utf-8-sig") as fh:
+            txt = fh.read()
+        payload = json.loads(txt[txt.index("{"):].strip().rstrip(";").strip())
+        scars = payload.get("scars") or []
+    except (ValueError, OSError) as ex:
+        log(f"WARNUNG: Bestand {path} nicht lesbar ({ex}) — beginne leer.")
+        return []
+    # Nur Einträge mit Geometrie und Koordinaten sind brauchbar.
+    return [s for s in scars
+            if isinstance(s, dict) and s.get("geojson")
+            and s.get("lat") is not None and s.get("lon") is not None]
+
+
+def _scar_date(scar):
+    """Beobachtungsdatum (Nachher-Aufnahme) als date; None wenn unbrauchbar."""
+    try:
+        return dt.datetime.strptime(str(scar.get("postDate", "")),
+                                    "%Y-%m-%d").date()
+    except ValueError:
+        return None
+
+
+def same_scar(a, b):
+    """Beschreiben zwei Einträge dieselbe Brandnarbe?
+
+    Zwei Kriterien, weil keines allein trägt:
+
+    * `eventBase` allein reicht nicht. Der Schlüssel ist die Meldung des
+      ältesten Ereignisses im AOI-Cluster (cluster_events sortiert nach
+      `first`). Kommt eine ältere Meldung zum selben Brand dazu oder
+      zerfällt ein Cluster, wechselt der Schlüssel, obwohl die Fläche am
+      Boden dieselbe ist.
+    * Nähe allein reicht nicht, wenn zwei getrennte Brände dicht
+      beieinander liegen — deshalb ist die reine Nähe-Schwelle eng.
+
+    Also: gleicher `eventBase` + im selben AOI (bis 12 km, denn das
+    Flächenzentrum wandert mit jeder neuen Messung — andere Wolkenmaske,
+    mehr oder weniger Teilflächen), ODER — unabhängig vom Schlüssel —
+    Zentren dichter als 1.5 km. Diese 1.5 km liegen deutlich über der real
+    beobachteten Zentrumswanderung zwischen zwei Läufen (Wiesloch,
+    13.->14.08.2026: rund 0.6 km) und deutlich unter dem AOI-Mindestmaß von
+    4 km, trennen Nachbarbrände also weiterhin sauber.
+    """
+    if a.get("lat") is None or b.get("lat") is None:
+        return False
+    d = _dist_m(a, b)
+    base = a.get("eventBase")
+    if base and base == b.get("eventBase"):
+        return d <= SAME_EVENT_DIST_M
+    return d <= SAME_PLACE_DIST_M
+
+
+def pick_better(old, new):
+    """Bei einem Treffer: welche Messung beschreibt die Narbe besser?
+
+    Regel 1: Die neuere Nachher-Aufnahme gewinnt. Der dNBR-Kontrast braucht
+      einige Tage, bis er voll ausgeprägt ist, und die spätere Szene sieht
+      auch die Teilflächen, die beim ersten Blick noch unter Rauch, Schatten
+      oder Restwolken lagen.
+    Regel 2 (Ausnahme zu 1): Schrumpft die Fläche binnen 30 Tagen auf unter
+      die Hälfte, ist das keine Erholung der Vegetation — so schnell wächst
+      keine Brandfläche zu. Es ist eine teilweise verdeckte bzw. maskierte
+      Szene. Dann bleibt der alte, größere Wert stehen.
+    Regel 3: Gleiche Nachher-Szene -> die größere Fläche gewinnt, denn
+      Wolken- und SCL-Maskierung können Fläche nur wegnehmen, nie erfinden.
+    Regel 4: Ältere Nachher-Aufnahme -> Bestand behalten.
+    """
+    d_old, d_new = _scar_date(old), _scar_date(new)
+    ha_old = float(old.get("ha") or 0)
+    ha_new = float(new.get("ha") or 0)
+    if d_old is None:
+        return new          # Bestand ohne Datum: neue Messung ist belegbar
+    if d_new is None:
+        return old
+    if d_new > d_old:
+        if ((d_new - d_old).days <= SHRINK_GUARD_DAYS
+                and ha_new < ha_old * SHRINK_GUARD_FACTOR):
+            log(f"  Bestand behalten: {ha_old} ha ({d_old}) statt "
+                f"{ha_new} ha ({d_new}) — Einbruch zu groß für "
+                f"{(d_new - d_old).days} Tage, vermutlich verdeckte Szene.")
+            return old
+        return new
+    if d_new == d_old:
+        return new if ha_new > ha_old else old
+    return old
+
+
+def merge_scars(existing, fresh, now=None):
+    """Bestand und neue Messungen vereinen, dann nach Alter beschneiden.
+
+    -> (Liste, Statistik-Dict). Ein Eintrag je Fläche, neueste zuerst.
+    """
+    now = now or utcnow()
+    merged = [dict(s) for s in existing]
+    stats = {"added": 0, "replaced": 0, "kept": 0, "dropped": 0,
+             "undated": 0, "capped": 0}
+
+    for n in fresh:
+        idx = next((i for i, o in enumerate(merged) if same_scar(o, n)), None)
+        if idx is None:
+            merged.append(dict(n))
+            stats["added"] += 1
+            continue
+        if pick_better(merged[idx], n) is n:
+            merged[idx] = dict(n)
+            stats["replaced"] += 1
+        else:
+            stats["kept"] += 1
+
+    cutoff = now.date() - dt.timedelta(days=SCAR_RETENTION_DAYS)
+    out = []
+    for s in merged:
+        d = _scar_date(s)
+        if d is None:
+            # Ohne Datum lässt sich weder Alter noch Datenstand beurteilen.
+            # Lauf-Datum stempeln, damit die Uhr ab jetzt läuft und das
+            # Frontend ein Datum anzeigen kann.
+            s["postDate"] = now.strftime("%Y-%m-%d")
+            stats["undated"] += 1
+        elif d < cutoff:
+            stats["dropped"] += 1
+            continue
+        out.append(s)
+
+    out.sort(key=lambda s: (str(s.get("postDate") or ""), float(s.get("ha") or 0)),
+             reverse=True)
+    if len(out) > MAX_STORED_SCARS:
+        stats["capped"] = len(out) - MAX_STORED_SCARS
+        log(f"  Deckel: {stats['capped']} älteste Narbe(n) entfallen "
+            f"(max. {MAX_STORED_SCARS} wegen Dateigröße).")
+        out = out[:MAX_STORED_SCARS]
+    return out, stats
+
+
+def finish_output(path, fresh, now=None):
+    """Lauf-Ergebnis mit dem Bestand vereinen und schreiben. -> Exit-Code.
+
+    Leer-Guard nach demselben Muster wie update-data.ps1 und
+    scripts/events-headless.mjs: Findet ein Lauf nichts (Wolken, keine
+    passende Szene, Kontingent), bleibt die vorhandene Datei unangetastet,
+    statt den Layer zu leeren. Beendet wird leise mit Exit 0, damit ein
+    wolkiger Tag keinen CI-Fehlalarm auslöst.
+    """
+    now = now or utcnow()
+    existing = read_existing_scars(path)
+
+    if not fresh:
+        if existing:
+            log(f"0 neue Narben in diesem Lauf — {path} bleibt unangetastet "
+                f"({len(existing)} Narbe(n) aus früheren Läufen).")
+            return 0
+        # Kein Bestand, nichts Neues: leere Datei anlegen, damit das
+        # Frontend eine definierte window.BURNSCAR_DATA vorfindet.
+        write_output(path, [], now)
+        return 0
+
+    merged, st = merge_scars(existing, fresh, now)
+    write_output(path, merged, now)
+    log(f"  Bestand {len(existing)} + {len(fresh)} neu -> {len(merged)} "
+        f"(neu {st['added']}, ersetzt {st['replaced']}, Bestand besser "
+        f"{st['kept']}, ausgelaufen {st['dropped']}, "
+        f"ohne Datum {st['undated']})")
+    return 0
+
+
 # ----------------------------------------------------------------- Pipelines
 
 def run_pipeline(root, out_path, dry_run=False, now=None):
@@ -435,15 +639,38 @@ def run_pipeline(root, out_path, dry_run=False, now=None):
     log(f"{len(events)} Vegetationsbrände mit Koordinaten in den letzten "
         f"{LOOKBACK_DAYS} Tagen.")
     if not events:
+        # Auch dieser Fall läuft über den Leer-Guard: keine Ereignisse heißt
+        # nur "nichts Neues zu messen", nicht "alte Narben sind weg".
         if not dry_run:
-            write_output(out_path, [], now)
+            return finish_output(out_path, [], now)
         return 0
 
     aois = cluster_events(events)
-    if len(aois) > MAX_AOIS:
-        log(f"WARNUNG: {len(aois)} AOIs, begrenze auf {MAX_AOIS} neueste.")
-        aois = sorted(aois, key=lambda a: a["last"], reverse=True)[:MAX_AOIS]
     log(f"{len(aois)} AOIs nach Zusammenführung (<= {MERGE_DIST_M} m).")
+
+    # AOIs, deren Nachher-Fenster noch gar nicht offen ist, aussortieren —
+    # BEVOR der Deckel greift. Sonst passiert genau das, was am 17.08.2026 zu
+    # 0 Narben geführt hat: der Deckel nimmt die NEUESTEN AOIs, und die
+    # neuesten Brände sind per Definition die, deren Nachher-Szene es noch
+    # nicht gibt (frühestens POST_MIN_DAYS nach der letzten Aktivität). Bei
+    # mehr als MAX_AOIS Clustern belegen sie damit alle Plätze und die
+    # auswertbaren, etwas älteren Brände kommen nie an die Reihe.
+    ready = [a for a in aois
+             if (a["last"] + dt.timedelta(days=POST_MIN_DAYS)).date() <= now.date()]
+    if len(ready) < len(aois):
+        log(f"{len(aois) - len(ready)} AOI(s) warten noch auf ihr "
+            f"Nachher-Fenster (frühestens {POST_MIN_DAYS} Tage nach der "
+            f"letzten Aktivität) — dieser Lauf lässt sie aus.")
+    aois = ready
+    if len(aois) > MAX_AOIS:
+        log(f"WARNUNG: {len(aois)} auswertbare AOIs, begrenze auf "
+            f"{MAX_AOIS} neueste.")
+        aois = sorted(aois, key=lambda a: a["last"], reverse=True)[:MAX_AOIS]
+    if not aois:
+        log("Kein AOI ist in diesem Lauf auswertbar.")
+        if not dry_run:
+            return finish_output(out_path, [], now)
+        return 0
 
     client_id = os.environ.get("CDSE_CLIENT_ID", "").strip()
     client_secret = os.environ.get("CDSE_CLIENT_SECRET", "").strip()
@@ -540,8 +767,7 @@ def run_pipeline(root, out_path, dry_run=False, now=None):
         log("\nDry-Run beendet — nichts geschrieben.")
         return 0
 
-    write_output(out_path, scars, now)
-    return 0
+    return finish_output(out_path, scars, now)
 
 
 # ------------------------------------------------------------------ Testmodi
@@ -611,6 +837,99 @@ def run_self_test():
 
     log(f"Self-Test OK: {len(polys)} Polygon(e), {total_ha:.1f} ha, "
         f"Zentrum {clat}, {clon}, Ausgabeformat validiert.")
+    return run_merge_self_test()
+
+
+def _demo_scar(base, lat, lon, ha, post, pre="2026-07-24"):
+    """Minimale, aber formgleiche Narbe für den Self-Test."""
+    ring = [[lon, lat], [lon + 0.002, lat], [lon + 0.002, lat + 0.002],
+            [lon, lat + 0.002], [lon, lat]]
+    return {"eventBase": base, "lat": lat, "lon": lon,
+            "geojson": {"type": "MultiPolygon", "coordinates": [[ring]]},
+            "ha": ha, "preDate": pre, "postDate": post}
+
+
+def run_merge_self_test():
+    """Offline-Test der Fortschreibung: Leer-Guard, Zusammenführung, Alter."""
+    import tempfile
+
+    now = dt.datetime(2026, 8, 17, 6, 10, tzinfo=dt.timezone.utc)
+    log("\nSelf-Test Fortschreibung ...")
+
+    # 1) Leer-Guard: ein Lauf ohne Ergebnis darf den Bestand nicht leeren.
+    with tempfile.TemporaryDirectory() as td:
+        out = os.path.join(td, "brandnarben.js")
+        bestand = [_demo_scar("PP A|brand a", 48.34, 8.04, 15.68, "2026-08-13"),
+                   _demo_scar("PP B|brand b", 49.29, 8.71, 2.36, "2026-08-13")]
+        write_output(out, bestand, now)
+        vorher = open(out, encoding="utf-8").read()
+        rc = finish_output(out, [], now)
+        nachher = open(out, encoding="utf-8").read()
+        assert rc == 0, "Leer-Guard muss leise mit 0 enden"
+        assert nachher == vorher, "Leer-Lauf hat die Datei verändert"
+        assert len(read_existing_scars(out)) == 2, "Bestand verloren"
+
+    # 2) Zusammenführen: bekannte Narbe + neue Messung -> ein Eintrag,
+    #    und zwar die bessere (neuere Nachher-Szene, größere Fläche).
+    alt = [_demo_scar("PP A|brand a", 48.3400, 8.0400, 15.68, "2026-08-11")]
+    neu = [_demo_scar("PP A|brand a", 48.3450, 8.0430, 21.40, "2026-08-13"),
+           _demo_scar("PP C|brand c", 47.6157, 7.6710, 5.24, "2026-08-13")]
+    merged, st = merge_scars(alt, neu, now)
+    assert len(merged) == 2, f"erwartet 2 Einträge, sind {len(merged)}"
+    treffer = [s for s in merged if s["eventBase"] == "PP A|brand a"]
+    assert len(treffer) == 1, "Narbe wurde dupliziert statt vereint"
+    assert treffer[0]["ha"] == 21.40 and treffer[0]["postDate"] == "2026-08-13"
+    assert st["replaced"] == 1 and st["added"] == 1, st
+
+    # 2b) Nähe ohne gleichen Schlüssel vereint ebenfalls (Cluster zerfallen).
+    m2, _ = merge_scars(alt, [_demo_scar("PP Z|anderer schluessel",
+                                         48.3410, 8.0405, 18.0, "2026-08-13")],
+                        now)
+    assert len(m2) == 1, "gleiche Stelle, anderer Schlüssel -> muss vereinen"
+
+    # 2c) Zu weit weg (rund 8 km) bleibt ein eigener Eintrag.
+    m3, _ = merge_scars(alt, [_demo_scar("PP Z|nachbarbrand",
+                                         48.4100, 8.0400, 4.0, "2026-08-13")],
+                        now)
+    assert len(m3) == 2, "getrennte Brände dürfen nicht verschmelzen"
+
+    # 2d) Unplausibler Einbruch: neuere Szene, aber Fläche < 50 % -> Bestand.
+    m4, st4 = merge_scars(alt, [_demo_scar("PP A|brand a", 48.3400, 8.0400,
+                                           4.0, "2026-08-13")], now)
+    assert len(m4) == 1 and m4[0]["ha"] == 15.68, "Schrumpf-Guard griff nicht"
+    assert st4["kept"] == 1, st4
+
+    # 3) Alter: 200 Tage alt fliegt raus, 100 Tage alt bleibt.
+    alt_datum = (now.date() - dt.timedelta(days=200)).strftime("%Y-%m-%d")
+    jung_datum = (now.date() - dt.timedelta(days=100)).strftime("%Y-%m-%d")
+    m5, st5 = merge_scars(
+        [_demo_scar("PP alt|uralt", 48.10, 9.64, 157.4, alt_datum),
+         _demo_scar("PP jung|jung", 49.57, 9.69, 104.92, jung_datum)],
+        [_demo_scar("PP neu|frisch", 47.85, 9.01, 35.0, "2026-08-13")], now)
+    assert st5["dropped"] == 1, f"Alters-Schnitt: {st5}"
+    assert sorted(s["ha"] for s in m5) == [35.0, 104.92], \
+        f"falsche Auswahl nach Alter: {[s['ha'] for s in m5]}"
+    assert m5[0]["postDate"] == "2026-08-13", "Sortierung: neueste zuerst"
+
+    # 4) Narbe ohne postDate bekommt das Lauf-Datum gestempelt.
+    ohne = _demo_scar("PP x|ohne datum", 48.0, 8.0, 3.0, "")
+    del ohne["postDate"]
+    m6, st6 = merge_scars([ohne], [], now)
+    assert st6["undated"] == 1 and m6[0]["postDate"] == "2026-08-17", m6
+
+    # 5) Größendeckel: die ältesten Narben fallen heraus, nicht die neuesten.
+    # Datum bewusst innerhalb des 180-Tage-Fensters halten (i % 150), sonst
+    # greift vorher der Alters-Schnitt und der Deckel käme nie zum Zug.
+    viele = [_demo_scar(f"PP {i}|brand {i}", 47.5 + i * 0.05, 8.0, 1.0 + i,
+                        (now.date() - dt.timedelta(days=i % 150)).isoformat())
+             for i in range(MAX_STORED_SCARS + 5)]
+    m7, st7 = merge_scars(viele, [], now)
+    assert len(m7) == MAX_STORED_SCARS and st7["capped"] == 5, st7
+    assert m7[0]["postDate"] == now.date().isoformat(), "neueste muss bleiben"
+
+    log("Self-Test Fortschreibung OK: Leer-Guard hält, Zusammenführung "
+        f"({SAME_PLACE_DIST_M} m / eventBase) vereint, Schrumpf-Guard greift, "
+        f"Alters-Schnitt bei {SCAR_RETENTION_DAYS} Tagen.")
     return 0
 
 

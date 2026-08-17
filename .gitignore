@@ -10,3 +10,6 @@ dist/
 
 # PMTiles-Extrakt (hunderte MB) gehoert nicht ins Repo
 tiles/
+
+# Python-Bytecode der Brandnarben-Auswertung
+__pycache__/

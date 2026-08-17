@@ -88,10 +88,36 @@ update-burnscars.ps1 (pwsh-Wrapper: Python + pip-Abhängigkeiten sicherstellen)
           Wasser, Schnee, NoData); dNBR = NBR_pre − NBR_post
        e) Schwellwert dNBR > 0.27, Vektorisierung (rasterio.features.shapes),
           Mindestfläche 0.5 ha, Reprojektion nach WGS84
-       f) data/brandnarben.js:
+       f) Fortschreibung (siehe unten) + data/brandnarben.js:
           window.BURNSCAR_DATA = {generated, scars:[{eventBase, lat, lon,
                                     geojson, ha, preDate, postDate}]}
 ```
+
+### Fortschreibung des Narben-Bestands
+
+Eine Brandnarbe ist eine **dauerhafte Spur im Gelände**. Ob ein Lauf sie
+sieht, hängt an Wolken, Szenenverfügbarkeit und Kontingent — nicht daran, ob
+sie noch existiert. `data/brandnarben.js` wird deshalb fortgeschrieben, wie
+`update-reports.ps1` seinen 30-Tage-Ereignisspeicher `data/events.json`
+fortschreibt. Vorher wurde die Datei bei jedem Lauf neu gesetzt; ein wolkiger
+Tag hat den ganzen Layer geleert (14 Narben am 14.08.2026 → 8 am 15.08. → 0
+am 17.08.2026).
+
+Alles in `scripts/burnscars/burnscars.py`, Konstanten oben im Modul:
+
+| Regel | Wert / Ort | Begründung |
+|---|---|---|
+| **Identität** | gleicher `eventBase` **und** < 12 km (`SAME_EVENT_DIST_M`, = AOI-Deckel), **oder** — unabhängig vom Schlüssel — Zentren < 1.5 km (`SAME_PLACE_DIST_M`) | `eventBase` allein trägt nicht: der Schlüssel ist die Meldung des ältesten Ereignisses im Cluster und wechselt, wenn Cluster wachsen oder zerfallen. Nähe allein trägt nicht bei dicht benachbarten Bränden. Das Flächenzentrum wandert real 30–560 m zwischen zwei Läufen, bleibt also klar unter 1.5 km, während das AOI-Mindestmaß 4 km beträgt. |
+| **Bessere Messung** | `pick_better()` | Neuere Nachher-Aufnahme gewinnt (dNBR-Kontrast braucht Tage, spätere Szene sieht auch anfangs verdeckte Teilflächen). Ausnahme: Einbruch auf < 50 % binnen 30 Tagen (`SHRINK_GUARD_*`) ist keine Erholung, sondern eine verdeckte Szene → Bestand bleibt. Gleiche Szene → größere Fläche gewinnt (Maskierung nimmt Fläche nur weg). |
+| **Alter** | `SCAR_RETENTION_DAYS = 180` (ab `postDate`) | Rund eine Vegetationsperiode; so lange bleibt der Kontrast im Gelände sichtbar. Meldungen laufen nach 30 Tagen aus, Narben halten bewusst ein Vielfaches länger. |
+| **Leer-Guard** | `finish_output()` | Ein Lauf ohne Ergebnis lässt die Datei **unangetastet** und endet leise mit Exit 0 — dasselbe Muster wie in `update-data.ps1` (FIRMS) und `scripts/events-headless.mjs`, damit ein wolkiger Tag keinen CI-Fehlalarm auslöst. |
+| **Datenstand** | `generated` = Lauf, `postDate` = je Narbe | `generated` zeigt den Lauf, `postDate` verrät je Narbe das Alter der Beobachtung (das Frontend zeigt Vorher-/Nachher-Datum im Tooltip). Einträge ohne `postDate` bekommen beim Zusammenführen das Lauf-Datum gestempelt. |
+
+Auswertbarkeit vor dem Deckel: AOIs, deren Nachher-Fenster noch nicht offen
+ist (< `POST_MIN_DAYS` nach der letzten Aktivität), werden **vor** `MAX_AOIS`
+aussortiert. Sonst belegen bei > 20 Clustern die jüngsten — und damit noch
+nicht auswertbaren — Brände alle Plätze, und der Lauf endet strukturell mit
+0 Narben (genau das passierte am 17.08.2026 bei 55 Clustern).
 
 Verhalten ohne Credentials: Der Lauf endet **sauber mit Exit 0** und einer
 klaren Meldung (nichts wird geschrieben) — der Cron-Workflow schlägt also

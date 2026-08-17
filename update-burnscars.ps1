@@ -1,8 +1,15 @@
-# Phase 3: Echte Brandnarben aus Sentinel-2 (dNBR) — Wrapper.
+﻿# Phase 3: Echte Brandnarben aus Sentinel-2 (dNBR) — Wrapper.
 # Ermittelt aus data/events.json die Vegetationsbrände der letzten 21 Tage,
 # bestimmt per anonymer CDSE-STAC-Suche wolkenarme Vorher-/Nachher-Szenen,
 # rechnet dNBR = NBR_pre - NBR_post (B8A/B12) über die Sentinel Hub Process
 # API des Copernicus Data Space Ecosystem und schreibt data/brandnarben.js.
+#
+# data/brandnarben.js wird fortgeschrieben, nicht überschrieben: eine
+# Brandnarbe bleibt im Gelände, auch wenn ein Lauf sie wegen Wolken gerade
+# nicht sieht. Neue Messungen werden mit dem Bestand vereint (bessere Messung
+# gewinnt), Narben laufen erst nach 180 Tagen aus, und ein Lauf ohne Ergebnis
+# lässt die Datei unangetastet. Details: scripts/burnscars/burnscars.py
+# (SCAR_RETENTION_DAYS, merge_scars, finish_output) und SENTINEL.md.
 #
 # Zugangsdaten (GitHub-Secrets bzw. lokale Umgebungsvariablen, s. SENTINEL.md):
 #   CDSE_CLIENT_ID / CDSE_CLIENT_SECRET   (OAuth2 client credentials)
@@ -16,6 +23,7 @@
 #   ./update-burnscars.ps1                 # normaler Lauf
 #   ./update-burnscars.ps1 -DryRun        # nur Events/AOIs/Szenenwahl zeigen
 #   ./update-burnscars.ps1 -SelfTest      # Offline-Test dNBR->Polygone->Datei
+#                                         #   inkl. Fortschreibung/Leer-Guard
 #   ./update-burnscars.ps1 -Probe '48.35,8.06,2026-08-11'  # STAC-Szenensuche
 
 param(

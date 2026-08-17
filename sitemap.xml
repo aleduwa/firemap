@@ -6,247 +6,512 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/events.html</loc>
+    <loc>https://map.aleduwa.de/events</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/faq.html</loc>
+    <loc>https://map.aleduwa.de/faq</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/hinweise.html</loc>
+    <loc>https://map.aleduwa.de/hinweise</loc>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/impressum.html</loc>
+    <loc>https://map.aleduwa.de/impressum</loc>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/datenschutz.html</loc>
+    <loc>https://map.aleduwa.de/datenschutz</loc>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/stuttgart.html</loc>
+    <loc>https://map.aleduwa.de/kreise/stuttgart</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/boeblingen.html</loc>
+    <loc>https://map.aleduwa.de/kreise/boeblingen</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/esslingen.html</loc>
+    <loc>https://map.aleduwa.de/kreise/esslingen</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/goeppingen.html</loc>
+    <loc>https://map.aleduwa.de/kreise/goeppingen</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/ludwigsburg.html</loc>
+    <loc>https://map.aleduwa.de/kreise/ludwigsburg</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/rems-murr-kreis.html</loc>
+    <loc>https://map.aleduwa.de/kreise/rems-murr-kreis</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/heilbronn.html</loc>
+    <loc>https://map.aleduwa.de/kreise/heilbronn</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/landkreis-heilbronn.html</loc>
+    <loc>https://map.aleduwa.de/kreise/landkreis-heilbronn</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/hohenlohekreis.html</loc>
+    <loc>https://map.aleduwa.de/kreise/hohenlohekreis</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/schwaebisch-hall.html</loc>
+    <loc>https://map.aleduwa.de/kreise/schwaebisch-hall</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/main-tauber-kreis.html</loc>
+    <loc>https://map.aleduwa.de/kreise/main-tauber-kreis</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/heidenheim.html</loc>
+    <loc>https://map.aleduwa.de/kreise/heidenheim</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/ostalbkreis.html</loc>
+    <loc>https://map.aleduwa.de/kreise/ostalbkreis</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/baden-baden.html</loc>
+    <loc>https://map.aleduwa.de/kreise/baden-baden</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/karlsruhe.html</loc>
+    <loc>https://map.aleduwa.de/kreise/karlsruhe</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/landkreis-karlsruhe.html</loc>
+    <loc>https://map.aleduwa.de/kreise/landkreis-karlsruhe</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/rastatt.html</loc>
+    <loc>https://map.aleduwa.de/kreise/rastatt</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/heidelberg.html</loc>
+    <loc>https://map.aleduwa.de/kreise/heidelberg</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/mannheim.html</loc>
+    <loc>https://map.aleduwa.de/kreise/mannheim</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/neckar-odenwald-kreis.html</loc>
+    <loc>https://map.aleduwa.de/kreise/neckar-odenwald-kreis</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/rhein-neckar-kreis.html</loc>
+    <loc>https://map.aleduwa.de/kreise/rhein-neckar-kreis</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/pforzheim.html</loc>
+    <loc>https://map.aleduwa.de/kreise/pforzheim</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/calw.html</loc>
+    <loc>https://map.aleduwa.de/kreise/calw</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/enzkreis.html</loc>
+    <loc>https://map.aleduwa.de/kreise/enzkreis</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/freudenstadt.html</loc>
+    <loc>https://map.aleduwa.de/kreise/freudenstadt</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/freiburg.html</loc>
+    <loc>https://map.aleduwa.de/kreise/freiburg</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/breisgau-hochschwarzwald.html</loc>
+    <loc>https://map.aleduwa.de/kreise/breisgau-hochschwarzwald</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/emmendingen.html</loc>
+    <loc>https://map.aleduwa.de/kreise/emmendingen</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/ortenaukreis.html</loc>
+    <loc>https://map.aleduwa.de/kreise/ortenaukreis</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/rottweil.html</loc>
+    <loc>https://map.aleduwa.de/kreise/rottweil</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/schwarzwald-baar-kreis.html</loc>
+    <loc>https://map.aleduwa.de/kreise/schwarzwald-baar-kreis</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/tuttlingen.html</loc>
+    <loc>https://map.aleduwa.de/kreise/tuttlingen</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/konstanz.html</loc>
+    <loc>https://map.aleduwa.de/kreise/konstanz</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/loerrach.html</loc>
+    <loc>https://map.aleduwa.de/kreise/loerrach</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/waldshut.html</loc>
+    <loc>https://map.aleduwa.de/kreise/waldshut</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/reutlingen.html</loc>
+    <loc>https://map.aleduwa.de/kreise/reutlingen</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/tuebingen.html</loc>
+    <loc>https://map.aleduwa.de/kreise/tuebingen</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/zollernalbkreis.html</loc>
+    <loc>https://map.aleduwa.de/kreise/zollernalbkreis</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/ulm.html</loc>
+    <loc>https://map.aleduwa.de/kreise/ulm</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/alb-donau-kreis.html</loc>
+    <loc>https://map.aleduwa.de/kreise/alb-donau-kreis</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/biberach.html</loc>
+    <loc>https://map.aleduwa.de/kreise/biberach</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/bodenseekreis.html</loc>
+    <loc>https://map.aleduwa.de/kreise/bodenseekreis</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/ravensburg.html</loc>
+    <loc>https://map.aleduwa.de/kreise/ravensburg</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://map.aleduwa.de/kreise/sigmaringen.html</loc>
+    <loc>https://map.aleduwa.de/kreise/sigmaringen</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/duesseldorf</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/duisburg</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/essen</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/krefeld</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/moenchengladbach</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/muelheim-an-der-ruhr</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/oberhausen</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/remscheid</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/solingen</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/wuppertal</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/kleve</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/mettmann</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/rhein-kreis-neuss</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/viersen</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/wesel</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/bonn</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/koeln</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/leverkusen</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/staedteregion-aachen</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/dueren</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/rhein-erft-kreis</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/euskirchen</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/heinsberg</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/oberbergischer-kreis</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/rheinisch-bergischer-kreis</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/rhein-sieg-kreis</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/bottrop</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/gelsenkirchen</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/muenster</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/borken</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/coesfeld</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/recklinghausen</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/steinfurt</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/warendorf</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/bielefeld</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/guetersloh</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/herford</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/hoexter</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/lippe</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/minden-luebbecke</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/paderborn</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/bochum</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/dortmund</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/hagen</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/hamm</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/herne</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/ennepe-ruhr-kreis</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/hochsauerlandkreis</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/maerkischer-kreis</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/olpe</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/siegen-wittgenstein</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/soest</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://map.aleduwa.de/kreise/unna</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
