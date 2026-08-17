@@ -1,5 +1,31 @@
 [
   {
+    "base": "Polizeipräsidium Mannheim|dossenheim/rhein-neckar-kreis: einsatz von polizei und feuerwehr wegen brandgeschehen, pm 1",
+    "status": "active",
+    "title": "Dossenheim/Rhein-Neckar-Kreis: Einsatz von Polizei und Feuerwehr wegen Brandgeschehen, PM 1",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6334341",
+    "first": "2026-08-17T05:09:42Z",
+    "last": "2026-08-17T05:09:42Z",
+    "places": [
+      {
+        "name": "Dossenheim",
+        "lat": 49.449242,
+        "lon": 8.6732428,
+        "approx": false
+      },
+      {
+        "name": "Rhein-Neckar-Kreis",
+        "lat": 49.3684797,
+        "lon": 8.7352403,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Bochum|entstehungsbrand in patientenzimmer",
     "status": "active",
     "title": "Entstehungsbrand in Patientenzimmer",
