@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/131475/6334797",
     "first": "2026-08-17T12:36:12Z",
     "last": "2026-08-17T12:36:12Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Alpen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Alpen",
@@ -13,11 +17,7 @@
         "lon": 6.5128805,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Alpen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Offenburg|kehl - dachstuhlbrand",
