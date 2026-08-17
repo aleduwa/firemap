@@ -1,5 +1,45 @@
 [
   {
+    "base": "Feuerwehr Gelsenkirchen|kellerbrand in horst - aufwendige löscharbeiten unter atemschutz",
+    "status": "active",
+    "title": "Kellerbrand in Horst - aufwendige Löscharbeiten unter Atemschutz",
+    "link": "https://www.presseportal.de/blaulicht/pm/116260/6334352",
+    "first": "2026-08-17T06:50:36Z",
+    "last": "2026-08-17T06:50:36Z",
+    "places": [
+      {
+        "name": "Gelsenkirchen",
+        "lat": 51.5110321,
+        "lon": 7.0960124,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Gelsenkirchen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Ennepetal|flächenbrand",
+    "status": "active",
+    "title": "Flächenbrand",
+    "link": "https://www.presseportal.de/blaulicht/pm/69780/6334351",
+    "first": "2026-08-17T06:41:29Z",
+    "last": "2026-08-17T06:41:29Z",
+    "places": [
+      {
+        "name": "Ennepetal",
+        "lat": 51.2967192,
+        "lon": 7.3693335,
+        "approx": false
+      }
+    ],
+    "veg": true,
+    "source": "Feuerwehr Ennepetal",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Mannheim|dossenheim/rhein-neckar-kreis: einsatz von polizei und feuerwehr wegen brandgeschehen, pm 1",
     "status": "active",
     "title": "Dossenheim/Rhein-Neckar-Kreis: Einsatz von Polizei und Feuerwehr wegen Brandgeschehen, PM 1",
