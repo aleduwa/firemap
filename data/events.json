@@ -458,6 +458,26 @@
     ]
   },
   {
+    "base": "Polizeipräsidium Aalen|ostalbkreis:",
+    "status": "active",
+    "title": "Ostalbkreis:",
+    "link": "https://www.presseportal.de/blaulicht/pm/110969/6334399",
+    "first": "2026-08-17T06:45:57Z",
+    "last": "2026-08-17T06:45:57Z",
+    "places": [
+      {
+        "name": "Ostalbkreis",
+        "lat": 48.8777738,
+        "lon": 10.0337317,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Ennepetal|flächenbrand",
     "status": "active",
     "title": "Flächenbrand",
