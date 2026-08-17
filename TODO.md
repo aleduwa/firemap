@@ -1,6 +1,6 @@
 # TODO — Feuerkarte & Eventkarte (map.aleduwa.de)
 
-*Stand: 13. August 2026. Erledigtes fliegt raus, Neues kommt ans passende Ende.*
+*Stand: 17. August 2026. Erledigtes fliegt raus, Neues kommt ans passende Ende.*
 
 ## 1. Wartet auf Schlüssel/Antworten (Anträge sind raus)
 
@@ -47,11 +47,14 @@
 - [x] ~~**Feuerkarte portiert**~~ **erledigt 14.08.**: `index.html` ist jetzt
   die MapLibre-Karte; die Leaflet-Version lebt als `klassisch.html` weiter
   (noindex) und fängt Browser ohne WebGL ab. `globe.html` leitet auf `/`.
-- [ ] **Eventkarte portieren** — größere Baustelle als die Feuerkarte:
-  MapLibre hat **kein Äquivalent zu Leaflet.markercluster**; Clustering geht
-  nur quellenseitig und nicht für DOM-Marker. Die Venue-Cluster-Badges wären
-  also ein Umbau, keine Portierung. Erst angehen, wenn die Feuerkarte sich
-  im Alltag bewährt hat.
+- [x] ~~**Eventkarte portieren**~~ **erledigt 17.08.**: Der Vorbehalt war
+  gegenstandslos — die Eventkarte nutzte nie Leaflet.markercluster, sondern
+  gruppiert selbst nach Ort. Kartenstile liegen jetzt gemeinsam in
+  `mapstyle.js`, die Basiskarten-Auswahl steckt als Bildvorschau im
+  Kartenstil-Menü statt in einem eigenen Menü.
+- [ ] **Eventkarte ohne WebGL**: Browser ohne WebGL sehen jetzt einen
+  ehrlichen Hinweis (vorher landeten sie fälschlich auf der *Feuer*karte).
+  Schöner wäre ein Nur-Listen-Modus — die Listenansicht braucht keine Karte.
 - [ ] Tiles: **Protomaps/PMTiles auf Cloudflare R2** (Anleitung mit geprüften
   Zahlen steht in `GLOBE.md`) — entfernt die letzte Drittanbieter-IP-
   Übertragung der Feuerkarte und macht uns unabhängig von OpenFreeMap.
@@ -80,6 +83,11 @@
 - [ ] Anwaltliche Kurzprüfung Impressum/Datenschutz/Hinweise (Absicherung)
 - [ ] CDSE-Client-Secret-Rotation ca. alle 3 Monate (Empfehlung von CDSE;
   nächster Termin ~November 2026)
+- [ ] **Brandnarben verschwinden wieder**: `data/brandnarben.js` wird bei
+  jedem Lauf neu geschrieben; findet ein Lauf keine auswertbare Szene
+  (Wolken, zu kleine Fläche), steht der Layer auf 0 — so am 17.08. passiert,
+  obwohl 60 Vegetationsbrand-Kandidaten vorlagen. Narben sind aber dauerhafte
+  Spuren: besser fortschreiben wie den 30-Tage-Meldungsspeicher.
 - [ ] Kategorisierung Eventkarte verfeinern (~25 % „sonstiges" — ggf. später
   LLM-Klassifikation im Cron)
 - [ ] Weitere Feuerwehr-Quellen: Gemeinde-Wehren ohne Presseportal (z. B.
@@ -93,5 +101,6 @@
 - Rechnen: GitHub Actions (public Repo, kostenlos) · Ausliefern: Cloudflare
   Workers Static Assets via **Wrangler Direct-Upload** (kein Build-Kontingent)
 - Secrets in GitHub (`aleduwa/firemap`): `CLOUDFLARE_API_TOKEN`,
-  `CLOUDFLARE_ACCOUNT_ID`, `CDSE_CLIENT_ID`, `CDSE_CLIENT_SECRET`
+  `CLOUDFLARE_ACCOUNT_ID`, `CDSE_CLIENT_ID`, `CDSE_CLIENT_SECRET`,
+  `PRESSEPORTAL_API_KEY`, `TOUBIZ_API_TOKEN` (letzterer noch zu setzen)
 - Alles kostenlos; einzige Höflichkeits-Limits: Nominatim 1 req/s, OSM-Tiles

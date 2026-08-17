@@ -42,7 +42,9 @@ await page.waitForFunction(() => window.__fireMap && window.__fireMap.loaded(), 
 // Bildausschnitt: Baden-Württemberg formatfüllend. Die Panels bleiben drin,
 // sie zeigen beim Teilen sofort, worum es geht (Titel, Zeitraum, Legende).
 await page.evaluate(() => {
-  window.__fireMap.jumpTo({ center: [9.05, 48.6], zoom: 6.75, pitch: 0, bearing: 0 });
+  // Beide Laender im Bild: seit dem 15.08. deckt die Karte BW UND NRW ab,
+  // ein reiner BW-Ausschnitt wuerde die Haelfte des Angebots verschweigen.
+  window.__fireMap.jumpTo({ center: [8.35, 50.05], zoom: 5.75, pitch: 0, bearing: 0 });
 });
 // Auf 'idle' warten, aber mit Deckel: Die Karte wird nicht zuverlässig idle
 // (Marker-DOM, laufende Kachel-Nachladungen), und ein unbegrenztes Warten

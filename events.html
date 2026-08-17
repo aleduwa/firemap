@@ -136,6 +136,13 @@
   .maplibregl-popup.evt-popup a { color: var(--accent); }
   .mk { cursor: pointer; }
 
+  .nowebgl {
+    max-width: 480px; margin: 0 auto; padding: 18vh 24px 24px;
+    font-size: 15px; line-height: 1.6; color: var(--ink); text-align: center;
+  }
+  .nowebgl h1 { font-size: 20px; margin: 0 0 10px; }
+  .nowebgl a { color: var(--accent); }
+
 
   /* Alt-Bestand: die Panels klappten früher per Icon ein. Seit die Mobil-
      Bedienung über Leiste + Sheet läuft, werden diese Knöpfe nicht mehr
@@ -468,7 +475,17 @@
     const probe = document.createElement('canvas');
     if (!(probe.getContext('webgl2') || probe.getContext('webgl'))) throw new Error('kein WebGL');
   } catch (e) {
-    location.replace('klassisch.html?nowebgl=1');
+    // Nicht auf klassisch.html umleiten — das ist die FEUERkarte. Hier lieber
+    // ehrlich sagen, was los ist, statt die falsche Karte zu zeigen.
+    document.getElementById('map').innerHTML =
+      '<div class="nowebgl">' +
+      '<h1>Diese Karte braucht WebGL</h1>' +
+      '<p>Dein Browser kann keine 3D-Grafik darstellen — meist liegt das an ' +
+      'abgeschalteter Hardwarebeschleunigung oder einem sehr alten Gerät.</p>' +
+      '<p>Die <a href="klassisch.html">klassische Feuerkarte</a> kommt ohne WebGL aus. ' +
+      'Für die Veranstaltungen gibt es derzeit keine Alternative ohne Karte.</p>' +
+      '<p><a href="index.html">Feuerkarte</a> · <a href="hinweise.html">Hinweise &amp; Quellen</a> · ' +
+      '<a href="impressum.html">Impressum</a></p></div>';
     return;
   }
 
