@@ -551,6 +551,21 @@
   }
   const hasTime = s => !!s && s.length > 10;
 
+  // Lizenzkuerzel des Open-Data-Pools lesbar machen. CC BY-SA verlangt
+  // Namensnennung und Weitergabe unter gleichen Bedingungen — deshalb steht
+  // die Lizenz am einzelnen Termin und nicht nur pauschal im Impressum.
+  const LICENSES = {
+    'cc-by-sa': { label: 'CC BY-SA', url: 'https://creativecommons.org/licenses/by-sa/4.0/deed.de' },
+    'cc-by':    { label: 'CC BY',    url: 'https://creativecommons.org/licenses/by/4.0/deed.de' },
+    'cc-0':     { label: 'CC0',      url: 'https://creativecommons.org/publicdomain/zero/1.0/deed.de' },
+    'cc-by-nc': { label: 'CC BY-NC', url: 'https://creativecommons.org/licenses/by-nc/4.0/deed.de' }
+  };
+  function licHtml(e) {
+    const l = LICENSES[e.lic];
+    if (!l) return '';
+    return '<a href="' + l.url + '" target="_blank" rel="noopener license">' + l.label + '</a>';
+  }
+
   // "Läuft gerade": nur für Termine mit echter Uhrzeit sinnvoll. Fehlt die
   // Endzeit (der Normalfall in den Quellen), rechnen wir mit vier Stunden
   // Laufzeit — lieber knapp schätzen als einen längst beendeten Termin als
@@ -865,7 +880,8 @@
           (e.end && e.end.slice(0, 10) !== e.start.slice(0, 10) ? ' – ' + fmtDate(e.end) : '') +
           (more > 0 ? '<br><i>+ ' + more + ' weitere' + (more > 1 ? ' Termine' : 'r Termin') + '</i>' : '') + '</td></tr>' +
         '<tr><td>Kategorie</td><td>' + CATS[cat].emoji + ' ' + CATS[cat].label + '</td></tr>' +
-        '<tr><td>Quelle</td><td>' + esc(e.source) + '</td></tr>' +
+        '<tr><td>Quelle</td><td>' + esc(e.source) +
+          (licHtml(e) ? ' · ' + licHtml(e) : '') + '</td></tr>' +
         '</table>' +
         (e.desc ? '<div class="tip-flag">' + esc(e.desc) + '</div>' : '') +
         '<div class="tip-flag">Klicken f&uuml;r Details &amp; Link</div>';
@@ -875,7 +891,11 @@
       const popup = '<b>' + esc(e.title) + '</b>' +
         (e.place ? '<br>' + esc(e.place) : '') +
         '<br>' + dateList +
-        '<br><a href="' + esc(e.url) + '" target="_blank" rel="noopener">Zur Veranstaltungsseite (' + esc(e.source) + ')</a>';
+        // Die Landesdatenbank fuehrt nicht zu jedem Termin eine oeffentliche
+        // Seite — dann nur die Quelle nennen statt ins Leere zu verlinken.
+        (e.url ? '<br><a href="' + esc(e.url) + '" target="_blank" rel="noopener">Zur Veranstaltungsseite (' + esc(e.source) + ')</a>'
+               : '<br><span class="tip-sub">Quelle: ' + esc(e.source) + '</span>') +
+        (licHtml(e) ? '<br><span class="tip-sub">Lizenz: ' + licHtml(e) + '</span>' : '');
 
       const el = evtIconEl(cat);
       const ll = [e.lon, e.lat];
@@ -917,8 +937,9 @@
       const popup = '<b>' + esc(placeLabel) + '</b><br>' +
         lists.slice(0, 12).map(l => {
           const e = l[0];
-          return fmtDate(e.start) + ' — <a href="' + esc(e.url) + '" target="_blank" rel="noopener">' +
-                 esc(e.title.length > 60 ? e.title.slice(0, 59) + '…' : e.title) + '</a>';
+          const t = esc(e.title.length > 60 ? e.title.slice(0, 59) + '…' : e.title);
+          return fmtDate(e.start) + ' — ' +
+                 (e.url ? '<a href="' + esc(e.url) + '" target="_blank" rel="noopener">' + t + '</a>' : t);
         }).join('<br>') +
         (lists.length > 12 ? '<br><i>+ ' + (lists.length - 12) + ' weitere — Listenansicht nutzen</i>' : '');
 
@@ -1174,7 +1195,9 @@
         '<td data-col="start">' + fmtDate(e.start) +
           (e.end && e.end.slice(0, 10) !== e.start.slice(0, 10) ? '<br>– ' + fmtDate(e.end) : '') +
           (isRunning(e) ? '<span class="live-badge">läuft gerade</span>' : '') + '</td>' +
-        '<td class="t-title" data-col="title"><a href="' + esc(e.url) + '" target="_blank" rel="noopener">' + esc(e.title) + '</a></td>' +
+        '<td class="t-title" data-col="title">' +
+          (e.url ? '<a href="' + esc(e.url) + '" target="_blank" rel="noopener">' + esc(e.title) + '</a>'
+                 : esc(e.title)) + '</td>' +
         '<td class="t-place" data-col="place">' + esc(e.place || '–') + '</td>' +
         '<td data-col="cat">' + CATS[cat].emoji + ' ' + CATS[cat].label + '</td>' +
         '<td data-col="source">' + esc(e.source) + '</td>' +

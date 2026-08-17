@@ -63,6 +63,11 @@ jobs:
       - name: Eventkarte aktualisieren
         if: github.event_name == 'workflow_dispatch' || github.event.schedule == '40 4 * * *'
         shell: pwsh
+        env:
+          # Offizieller Zugang zum Open-Data-Pool BW (Vertrag mit TMBW).
+          # Ohne Secret faellt die Pipeline auf die oeffentlichen
+          # Widget-Kanaele zurueck.
+          TOUBIZ_API_TOKEN: ${{ secrets.TOUBIZ_API_TOKEN }}
         run: ./update-events.ps1
 
       - name: Sentinel-2-Brandnarben berechnen

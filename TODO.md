@@ -8,10 +8,22 @@
   offizieller API (Volltext + ISO-Datum direkt, 50 Stories/Stelle statt ~30
   RSS-Items, Backfill via Paging), „ots"-Kennzeichnung im Tooltip, RSS als
   Fallback ohne Key; 2-Jahre-Frist durch 30-Tage-Store ohnehin eingehalten.
-- [ ] **Open-Data-Pool BW Token** (TMBW, Antwort per E-Mail ausstehend)
-  → danach: Event-Pipeline von den gescrapten Widget-Tokens auf den eigenen
-  toubiz-Zugang umstellen (stabilste Stelle der Pipeline), **CC-Lizenz je
-  Event im Tooltip/Popup ausweisen** (CC BY = Namensnennung).
+- [x] ~~Open-Data-Pool BW Token~~ **erledigt 17.08.**: offizieller
+  Schnittstellenzugang der TMBW eingebaut. Die Pipeline zieht jetzt die
+  komplette Landesdatenbank statt der Ausschnitte dreier fremder
+  Widget-Tokens; Lizenz (überwiegend CC BY-SA) steht an jedem Termin.
+  Auflage des Anbieters: keine Live-Integration — wir rufen einmal täglich
+  im Cron ab, das passt.
+  **Der Token gehört als Secret `TOUBIZ_API_TOKEN` ins Repo (nicht in Dateien!).**
+- [ ] **Rückfrage an TMBW**: Der offizielle Zugang sieht den offenen Landespool,
+  die Destinations-Tokens zusätzlich die client-verwalteten Bestände ihrer
+  Region — gemessen am 17.08. fehlten ohne die Kanäle 2276 Termine (u. a.
+  Endinger Lichternacht, Highland Games Wittental). Deshalb laufen beide
+  Zugänge parallel. Frage: Lassen sich die Bestände von Schwarzwald Tourismus,
+  Schwarzwaldregion Freiburg und ZweiTälerLand in unseren Zugang aufnehmen?
+  Dann bräuchten wir die fremden Widget-Tokens gar nicht mehr.
+- [ ] Kanal `toubiz/ZTL` (ZweiTälerLand) liefert 0 Termine — schon vor der
+  Umstellung so, bisher nicht untersucht.
 - [x] ~~Cloudflare Web Analytics~~ **aktiv seit 13.08.**: Beacon (cookieless)
   in allen 6 Seiten + 44 Kreisseiten; Auswertung im CF-Dashboard unter
   Analytics & Logs → Web Analytics.

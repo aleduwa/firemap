@@ -1,4 +1,4 @@
-# Holt zukünftige Veranstaltungen (heute bis +90 Tage) im Raum Freiburg +50 km
+﻿# Holt zukünftige Veranstaltungen (heute bis +90 Tage) im Raum Freiburg +50 km
 # aus mehreren offenen Quellen und schreibt data/veranstaltungen.js:
 #
 #   1. toubiz Open-Data-API (mein.toubiz.de) — Landesdatenbank Tourismus BW,
@@ -165,7 +165,8 @@ function Add-Event {
     param(
         [string]$title, [string]$cat, [string]$start, [string]$end,
         [double]$lat, [double]$lon, [string]$place, [string]$url,
-        [string]$source, [string]$desc, [bool]$precise = $false
+        [string]$source, [string]$desc, [bool]$precise = $false,
+        [string]$license
     )
     if (-not $title) { return }
     if ($lat -lt $latMin -or $lat -gt $latMax -or $lon -lt $lonMin -or $lon -gt $lonMax) { return }
@@ -181,6 +182,7 @@ function Add-Event {
                 # Duplikat -> Quellen zusammenführen, fehlende Felder ergänzen
                 if ($e.source -notmatch [regex]::Escape($source)) { $e.source = $e.source + ' + ' + $source }
                 if (-not $e.desc -and $desc) { $e.desc = $desc }
+                if ($license -and -not $e.lic) { $e.lic = $license }
                 if (-not $e.end -and $end) { $e.end = $end }
                 if ($e.start.Length -eq 10 -and $start.Length -gt 10) { $e.start = $start }  # Uhrzeit ergänzen
                 # Quell-Koordinaten (API) schlagen Nominatim-Schätzungen
@@ -205,9 +207,11 @@ function Add-Event {
         source = $source
         desc   = $desc
         gp     = $precise
+        lic    = $license
     }
     if (-not $end)  { $entry.Remove('end') }
     if (-not $desc) { $entry.Remove('desc') }
+    if (-not $license) { $entry.Remove('lic') }
     $events.Add($entry)
     if (-not $eventIndex.ContainsKey($key)) { $eventIndex[$key] = [System.Collections.Generic.List[int]]::new() }
     $eventIndex[$key].Add($events.Count - 1)
@@ -224,6 +228,21 @@ $stats = [ordered]@{}
 # damit eine Token-Rotation den Lauf nicht bricht. Jeder Kanal sieht einen
 # anderen Client-Ausschnitt der Landesdatenbank; identische Events werden
 # über die toubiz-UUID dedupliziert.
+# Offizieller Zugang (Vertrag mit der Tourismus Marketing GmbH BW, Foerderprojekt
+# "Digitalisierung und Datenmanagement im Tourismus"). Der Token gehoert uns,
+# steht als GitHub-Secret TOUBIZ_API_TOKEN bereit und darf laut Vertrag nicht
+# weitergegeben werden -- er steht deshalb nirgends im Repo.
+#
+# Warum das die gescrapten Kanaele ersetzt: Der offizielle Zugang sieht die
+# komplette Landesdatenbank statt nur den Ausschnitt einer Destination, er ist
+# vertraglich abgesichert, und er ueberlebt eine Token-Rotation auf fremden
+# Websites. Die Widget-Tokens bleiben nur als Notnagel, falls das Secret fehlt
+# (z. B. lokaler Lauf ohne Zugangsdaten).
+#
+# Auflage des Anbieters: keine Live-Integration fuer Portale. Wir rufen einmal
+# taeglich im Cron ab und liefern eine statische Datei aus -- genau so gedacht.
+$toubizOfficialToken = $env:TOUBIZ_API_TOKEN
+
 $toubizChannels = @(
     @{ key = 'toubiz/STG'; name = 'Schwarzwald Tourismus'
        scrapeUrl = 'https://www.schwarzwald-tourismus.info/erleben/veranstaltungen'
@@ -243,6 +262,109 @@ $toubizChannels = @(
 )
 $seenToubizIds = [System.Collections.Generic.HashSet[string]]::new()
 
+if ($toubizOfficialToken) {
+    # --- Offizieller Kanal: ganze Landesdatenbank ---------------------------
+    try {
+        Write-Host 'toubiz (Open Data Pool BW, offizieller Zugang): Events abrufen ...'
+        $tbCount = 0
+        $page = 1
+        $lastPage = 1
+        do {
+            # pageSize ist serverseitig auf 20 gedeckelt (groessere Werte
+            # liefern eine Warnung und trotzdem nur 20)
+            $qs = @(
+                'api_token=' + [uri]::EscapeDataString($toubizOfficialToken)
+                'pagination[pageSize]=20'
+                'pagination[page]=' + $page
+                'filter[rectangleArea][0][lat]=' + $latMax.ToString($inv)
+                'filter[rectangleArea][0][lng]=' + $lonMax.ToString($inv)
+                'filter[rectangleArea][1][lat]=' + $latMin.ToString($inv)
+                'filter[rectangleArea][1][lng]=' + $lonMin.ToString($inv)
+                'filter[date][after]=' + $today.ToString('yyyy-MM-dd', $inv)
+                'filter[date][before]=' + $until.ToString('yyyy-MM-dd', $inv)
+            ) -join '&'
+            $res = Invoke-RestMethod -Uri ('https://mein.toubiz.de/api/v1/event?' + $qs) `
+                                     -Headers @{ 'Accept' = 'application/json'; 'User-Agent' = $ua } `
+                                     -TimeoutSec 90
+            $lastPage = [int]$res._attributes.pagination.lastPage
+
+            foreach ($ev in $res.payload) {
+                if ($ev.canceled -or $ev.invisible -or $ev.trashed) { continue }
+                if ($ev.id -and -not $seenToubizIds.Add([string]$ev.id)) { continue }
+                if (-not $ev.geocoordinates -or $null -eq $ev.geocoordinates.latitude) { continue }
+                $lat = [double]$ev.geocoordinates.latitude
+                $lon = [double]$ev.geocoordinates.longitude
+
+                $srcCat = if ($ev.category) { [string]$ev.category.name } else { '' }
+                $cat = Get-Category $ev.name $srcCat
+                $place = if ($ev.location -and $ev.location.name) { [string]$ev.location.name }
+                         elseif ($ev.client) { [string]$ev.client.name } else { $null }
+                $desc = Limit-Text (Remove-Html $ev.intro)
+                $lic = if ($ev.license) { [string]$ev.license } else { $null }
+
+                # Die Landesdatenbank kennt keine kanonische Detailseite; als
+                # oeffentlicher Link dient die Buchungs-/Infoseite des Veranstalters.
+                $url2 = ''
+                if ($ev.bookingUrl) { $url2 = [string]$ev.bookingUrl }
+                elseif ($ev.sourceInformationLink) { $url2 = [string]$ev.sourceInformationLink }
+                elseif ($ev.nextDate -and $ev.nextDate.bookingRequestUrl) { $url2 = [string]$ev.nextDate.bookingRequestUrl }
+
+                $occ = 0
+                $dates = @($ev.datesCache | Where-Object { $_ -and $_.date })
+                foreach ($d in ($dates | Sort-Object date)) {
+                    if ($d.PSObject.Properties['active'] -and $d.active -eq $false) { continue }
+                    if ($d.PSObject.Properties['closed'] -and $d.closed -eq $true) { continue }
+                    if ($d.PSObject.Properties['isCancelled'] -and $d.isCancelled -eq $true) { continue }
+                    $day = [DateTime]::MinValue
+                    if (-not [DateTime]::TryParseExact([string]$d.date, 'yyyy-MM-dd', $inv,
+                            [System.Globalization.DateTimeStyles]::None, [ref]$day)) { continue }
+                    if ($day -lt $today -or $day -gt $until) { continue }
+
+                    $startStr = $day.ToString('yyyy-MM-dd', $inv)
+                    $endStr = $null
+                    if ($d.startAt -and $d.startAt -match '^(\d{2}:\d{2})') { $startStr += 'T' + $Matches[1] }
+                    if ($d.endAt -and $d.endAt -match '^(\d{2}:\d{2})') { $endStr = $day.ToString('yyyy-MM-dd', $inv) + 'T' + $Matches[1] }
+
+                    Add-Event -title $ev.name -cat $cat -start $startStr -end $endStr -lat $lat -lon $lon `
+                        -place $place -url $url2 -source 'Open Data Tourismus BW' -desc $desc `
+                        -precise $true -license $lic
+                    $tbCount++
+                    $occ++
+                    if ($occ -ge $maxOccurrencesPerEvent) { break }
+                }
+
+                if ($occ -eq 0 -and $ev.nextDate -and $ev.nextDate.date) {
+                    $day = [DateTime]::MinValue
+                    if ([DateTime]::TryParseExact([string]$ev.nextDate.date, 'yyyy-MM-dd', $inv,
+                            [System.Globalization.DateTimeStyles]::None, [ref]$day) -and
+                        $day -ge $today -and $day -le $until) {
+                        Add-Event -title $ev.name -cat $cat -start $day.ToString('yyyy-MM-dd', $inv) -end $null `
+                            -lat $lat -lon $lon -place $place -url $url2 -source 'Open Data Tourismus BW' `
+                            -desc $desc -precise $true -license $lic
+                        $tbCount++
+                    }
+                }
+            }
+            $res = $null
+            $page++
+        } while ($page -le $lastPage -and $page -le 120)
+        [GC]::Collect()
+        $stats['toubiz/OpenDataBW'] = $tbCount
+        Write-Host "toubiz (offizieller Zugang): $tbCount Termine aus $lastPage Seiten uebernommen."
+    } catch {
+        Write-Warning "Offizieller toubiz-Zugang fehlgeschlagen: $_"
+        $stats['toubiz/OpenDataBW'] = 0
+        $toubizOfficialToken = $null    # -> Widget-Kanaele als Notnagel
+    }
+}
+
+# Die Destinations-Kanaele laufen ZUSAETZLICH zum offiziellen Zugang weiter.
+# Nachgemessen am 17.08.: Der offizielle Pool und die Client-Bestaende
+# ueberschneiden sich stark, aber keiner enthaelt den anderen — ohne die
+# Kanaele fehlten 2276 Termine, darunter genau die lokalen Sachen
+# (Endinger Lichternacht, Highland Games im Wittental, Nachtwaechterrundgang
+# Burkheim). Der offizielle Kanal laeuft zuerst; ueber $seenToubizIds steuern
+# die Kanaele nur bei, was dort nicht drin ist.
 foreach ($ch in $toubizChannels) {
 try {
     Write-Host "toubiz ($($ch.name)): Events abrufen ..."
