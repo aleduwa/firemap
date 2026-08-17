@@ -100,7 +100,13 @@ Shortbread-Schema — andere `source-layer`-Namen, der Stil müsste angepasst we
 
 Ziel: keine Fremd-IP-Übertragung mehr, alles über `map.aleduwa.de` bzw. eine
 eigene R2-Domain. **Noch nicht ausgeführt** — die Cloudflare-Zugangsdaten liegen
-nur als GitHub-Secrets vor, nicht lokal.
+nur als GitHub-Secrets vor, nicht lokal (und der dortige Token hat nur
+Workers-Rechte, für R2 braucht es eigene).
+
+**Fertig vorbereitet:** `scripts/tiles-to-r2.ps1` erledigt Extrakt, Bucket und
+Upload in einem Lauf und sagt am Ende, was im Dashboard noch von Hand zu tun
+ist. `./scripts/tiles-to-r2.ps1 -DryRun` zeigt den Plan, ohne etwas zu laden —
+das geht auch ohne installiertes pmtiles-CLI.
 
 ### Schritt 1 — pmtiles-CLI installieren
 
@@ -114,6 +120,18 @@ Protomaps veröffentlicht tägliche Planet-Builds unter
 **137,3 GB**, geprüft per HTTP-HEAD). `pmtiles extract` lädt daraus **nur** die
 Kacheln des gewünschten Ausschnitts — per HTTP-Range-Requests, die 137 GB werden
 also nie heruntergeladen.
+
+> **Achtung, Datumsfalle (gemerkt am 17.08.2026):** Protomaps hält nur die
+> Builds der **letzten Woche** vor. Die hier ursprünglich notierte URL
+> `20260810.pmtiles` lieferte nach sieben Tagen 404. Nimm ein aktuelles Datum —
+> oder besser gleich `scripts/tiles-to-r2.ps1`, das den Standard selbst auf
+> „gestern" setzt und vorher prüft, ob der Build erreichbar ist.
+
+> **Bbox veraltet:** Der folgende Befehl deckt nur Baden-Württemberg ab. Seit
+> dem 15.08.2026 gehört Nordrhein-Westfalen dazu, und seit dem 17.08. holt auch
+> die **Eventkarte** ihre Kacheln aus derselben Quelle. Das Skript
+> `scripts/tiles-to-r2.ps1` nutzt deshalb die gemeinsame Box
+> `5.80,47.30,10.55,52.60`.
 
 ```bash
 # Bbox = wie in update-data.ps1: lat 47.30–49.85 / lon 6.80–10.55

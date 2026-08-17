@@ -7,3 +7,6 @@ node_modules/
 
 # Wrangler-Deploy-Ausgabe (wird im CI zusammengestellt)
 dist/
+
+# PMTiles-Extrakt (hunderte MB) gehoert nicht ins Repo
+tiles/
