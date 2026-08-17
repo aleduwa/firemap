@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/69780/6335156",
     "first": "2026-08-17T21:29:33Z",
     "last": "2026-08-17T21:29:33Z",
+    "veg": false,
+    "source": "Feuerwehr Ennepetal",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Ennepetal",
@@ -13,11 +17,7 @@
         "lon": 7.3693335,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Ennepetal",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Paderborn|gemeldeter wohnungsbrand in paderborner innenstadt",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/173646/6335153",
     "first": "2026-08-17T21:13:08Z",
     "last": "2026-08-17T21:13:08Z",
+    "veg": false,
+    "source": "Feuerwehr Paderborn",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Paderborn",
@@ -33,11 +37,7 @@
         "lon": 8.752653,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Paderborn",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Kreispolizeibehörde Wesel|kamp-lintfort - fünf autos durch feuer beschädigt- zeugen gesucht- korrekturmeldung",
