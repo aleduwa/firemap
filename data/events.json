@@ -1,11 +1,35 @@
 [
   {
+    "base": "Polizeipräsidium Offenburg|kehl - dachstuhlbrand",
+    "status": "active",
+    "title": "Kehl - Dachstuhlbrand",
+    "link": "https://www.presseportal.de/blaulicht/pm/110975/6334771",
+    "first": "2026-08-17T12:26:04Z",
+    "last": "2026-08-17T12:26:04Z",
+    "places": [
+      {
+        "name": "Kehl",
+        "lat": 48.5733977,
+        "lon": 7.8114002,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Offenburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizei Lippe|schieder-schwalenberg/horn-bad meinberg/bad salzuflen. mehrere feuer in der lippischen natur - warnung vor erhöhter brandgefahr!",
     "status": "active",
     "title": "Schieder-Schwalenberg/Horn-Bad Meinberg/Bad Salzuflen. Mehrere Feuer in der lippischen Natur - Warnung vor erhöhter Brandgefahr!",
     "link": "https://www.presseportal.de/blaulicht/pm/12727/6334667",
     "first": "2026-08-17T11:34:34Z",
     "last": "2026-08-17T11:34:34Z",
+    "veg": true,
+    "source": "Polizei Lippe",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Schieder-Schwalenberg",
@@ -19,11 +43,7 @@
         "lon": 8.9731695,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Polizei Lippe",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(gp) ebersbach - wiese in brand / am samstag rückte die feuerwehr zu einem flächenbrand bei ebersbach aus.",
@@ -32,6 +52,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6334641",
     "first": "2026-08-17T11:22:18Z",
     "last": "2026-08-17T11:22:18Z",
+    "veg": true,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ebersbach",
@@ -39,11 +63,7 @@
         "lon": 9.5791447,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Ulm",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ludwigsburg|schwieberdingen: brand in mehrparteienhaus",
