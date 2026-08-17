@@ -1,11 +1,55 @@
 [
   {
+    "base": "Feuerwehr Sprockhövel|pkw-brand greift auf waldfläche über",
+    "status": "out",
+    "title": "PKW-Brand greift auf Waldfläche über",
+    "link": "https://www.presseportal.de/blaulicht/pm/69788/6334491",
+    "first": "2026-08-17T09:58:13Z",
+    "last": "2026-08-17T09:58:13Z",
+    "places": [
+      {
+        "name": "Sprockhövel",
+        "lat": 51.3666572,
+        "lon": 7.2485905,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Sprockhövel",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Ulm|(gp) geislingen - brand löst feuerwehreinsatz aus / am samstag kam es bei geislingen zum brand in einem waldstück.",
+    "status": "active",
+    "title": "(GP) Geislingen - Brand löst Feuerwehreinsatz aus / Am Samstag kam es bei Geislingen zum Brand in einem Waldstück.",
+    "link": "https://www.presseportal.de/blaulicht/pm/110979/6334469",
+    "first": "2026-08-17T09:43:55Z",
+    "last": "2026-08-17T09:43:55Z",
+    "places": [
+      {
+        "name": "Geislingen",
+        "lat": 48.6230397,
+        "lon": 9.8356703,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Ulm|(ul) blaubeuren - flächenbrand löst feuerwehreinsatz aus / am samstag kam es bei blaubeuren zum brand.",
     "status": "out",
     "title": "(UL) Blaubeuren - Flächenbrand löst Feuerwehreinsatz aus / Am Samstag kam es bei Blaubeuren zum Brand.",
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6334434",
     "first": "2026-08-17T09:18:34Z",
     "last": "2026-08-17T09:18:34Z",
+    "veg": true,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Blaubeuren",
@@ -13,11 +57,7 @@
         "lon": 9.7847091,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Ulm",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Karlsruhe|(ka) bruchsal - 54-jähriger bei wohnungsbrand schwer verletzt",
@@ -26,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110972/6334400",
     "first": "2026-08-17T08:47:51Z",
     "last": "2026-08-17T08:47:51Z",
+    "veg": false,
+    "source": "Polizeipräsidium Karlsruhe",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Bruchsal",
@@ -33,11 +77,7 @@
         "lon": 8.5980244,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Karlsruhe",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Dortmund|feuerwehr betreut 40 personen bei kellerbrand",
