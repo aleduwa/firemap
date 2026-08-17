@@ -464,6 +464,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6334399",
     "first": "2026-08-17T06:45:57Z",
     "last": "2026-08-17T06:45:57Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ostalbkreis",
@@ -471,11 +475,7 @@
         "lon": 10.0337317,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Ennepetal|flächenbrand",
@@ -587,9 +587,9 @@
     "base": "Freiwillige Feuerwehr Werne|böschungsbrand in werne-holthausen",
     "status": "contained",
     "title": "Böschungsbrand in Werne-Holthausen",
-    "link": "https://www.presseportal.de/blaulicht/pm/116730/6334248",
+    "link": "https://www.presseportal.de/blaulicht/pm/116730/6335146",
     "first": "2026-08-16T12:25:29Z",
-    "last": "2026-08-16T12:25:29Z",
+    "last": "2026-08-17T18:58:51Z",
     "veg": true,
     "source": "Freiwillige Feuerwehr Werne",
     "updates": 0,
