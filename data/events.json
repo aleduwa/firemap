@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/65858/6335053",
     "first": "2026-08-17T15:26:07Z",
     "last": "2026-08-17T15:26:07Z",
+    "veg": false,
+    "source": "Kreispolizeibehörde Wesel",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Kamp-Lintfort",
@@ -13,11 +17,7 @@
         "lon": 6.547923,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Kreispolizeibehörde Wesel",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ludwigsburg|sachsenheim: flächenbrand in weinberg - zeugen gesucht",
