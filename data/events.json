@@ -1,11 +1,35 @@
 [
   {
+    "base": "Polizeipräsidium Heilbronn|hohenlohekreis: brand, unfall und zeugenaufruf nach einbruch",
+    "status": "active",
+    "title": "Hohenlohekreis: Brand, Unfall und Zeugenaufruf nach Einbruch",
+    "link": "https://www.presseportal.de/blaulicht/pm/110971/6335431",
+    "first": "2026-08-18T10:21:18Z",
+    "last": "2026-08-18T10:21:18Z",
+    "places": [
+      {
+        "name": "Hohenlohekreis",
+        "lat": 49.2725125,
+        "lon": 9.6057331,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Essen|mehrere pkw brennen auf parkstreifen in essen-altenessen-süd",
     "status": "contained",
     "title": "Mehrere Pkw brennen auf Parkstreifen in Essen-Altenessen-Süd",
     "link": "https://www.presseportal.de/blaulicht/pm/56893/6335319",
     "first": "2026-08-18T09:13:35Z",
     "last": "2026-08-18T09:13:35Z",
+    "veg": false,
+    "source": "Feuerwehr Essen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Essen",
@@ -13,11 +37,7 @@
         "lon": 7.0158171,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Essen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Ennepetal|verkehrsunfall und angebranntes essen beschäftigen die feuerwehr",
