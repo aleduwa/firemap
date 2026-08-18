@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/65849/6335759",
     "first": "2026-08-18T14:01:51Z",
     "last": "2026-08-18T14:01:51Z",
+    "veg": false,
+    "source": "Kreispolizeibehörde Kleve",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Weeze",
@@ -13,11 +17,7 @@
         "lon": 6.2011559,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Kreispolizeibehörde Kleve",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Kreispolizeibehörde Unna|bergkamen - brand eines reihenhauses",
