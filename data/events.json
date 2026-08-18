@@ -1,11 +1,55 @@
 [
   {
+    "base": "Kreispolizeibehörde Unna|bergkamen - brand eines reihenhauses",
+    "status": "active",
+    "title": "Bergkamen - Brand eines Reihenhauses",
+    "link": "https://www.presseportal.de/blaulicht/pm/65856/6335640",
+    "first": "2026-08-18T12:43:36Z",
+    "last": "2026-08-18T12:43:36Z",
+    "places": [
+      {
+        "name": "Bergkamen",
+        "lat": 51.6149389,
+        "lon": 7.6362876,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Kreispolizeibehörde Unna",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Ulm|(ul) allmendingen - brand in mehrfamilienhaus / am dienstag rückten einsatzkräfte zu einem wohnungsbrand in allmendingen aus. verletzt wurde niemand.",
+    "status": "out",
+    "title": "(UL) Allmendingen - Brand in Mehrfamilienhaus / Am Dienstag rückten Einsatzkräfte zu einem Wohnungsbrand in Allmendingen aus. Verletzt wurde niemand.",
+    "link": "https://www.presseportal.de/blaulicht/pm/110979/6335637",
+    "first": "2026-08-18T12:42:09Z",
+    "last": "2026-08-18T12:42:09Z",
+    "places": [
+      {
+        "name": "Allmendingen",
+        "lat": 48.3282665,
+        "lon": 9.7244123,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Konstanz|(konstanz) unbekannter legt feuer vor einem wohn- und geschäftshaus - polizei ermittelt wegen schwerer brandstiftung und sucht zeugen! (18.08.2026)",
     "status": "active",
     "title": "(Konstanz) Unbekannter legt Feuer vor einem Wohn- und Geschäftshaus - Polizei ermittelt wegen schwerer Brandstiftung und sucht Zeugen! (18.08.2026)",
     "link": "https://www.presseportal.de/blaulicht/pm/110973/6335630",
     "first": "2026-08-18T12:32:18Z",
     "last": "2026-08-18T12:32:18Z",
+    "veg": false,
+    "source": "Polizeipräsidium Konstanz",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Geschäftshaus",
@@ -13,11 +57,7 @@
         "lon": 9.7712345,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Konstanz",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Konstanz|brand im eingangsbereich eines wohn- und geschäftsgebäudes",
