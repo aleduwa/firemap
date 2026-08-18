@@ -1,5 +1,25 @@
 [
   {
+    "base": "Feuerwehr Essen|mehrere pkw brennen auf parkstreifen in essen-altenessen-süd",
+    "status": "contained",
+    "title": "Mehrere Pkw brennen auf Parkstreifen in Essen-Altenessen-Süd",
+    "link": "https://www.presseportal.de/blaulicht/pm/56893/6335319",
+    "first": "2026-08-18T09:13:35Z",
+    "last": "2026-08-18T09:13:35Z",
+    "places": [
+      {
+        "name": "Essen",
+        "lat": 51.4582235,
+        "lon": 7.0158171,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Essen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Ennepetal|verkehrsunfall und angebranntes essen beschäftigen die feuerwehr",
     "status": "active",
     "title": "Verkehrsunfall und angebranntes Essen beschäftigen die Feuerwehr",
