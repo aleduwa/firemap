@@ -1,5 +1,25 @@
 [
   {
+    "base": "Kreispolizeibehörde Kleve|weeze - erstmeldung nach verkehrsunfall: willy-brandt-ring aktuell gesperrt",
+    "status": "active",
+    "title": "Weeze - Erstmeldung nach Verkehrsunfall: Willy-Brandt-Ring aktuell gesperrt",
+    "link": "https://www.presseportal.de/blaulicht/pm/65849/6335759",
+    "first": "2026-08-18T14:01:51Z",
+    "last": "2026-08-18T14:01:51Z",
+    "places": [
+      {
+        "name": "Weeze",
+        "lat": 51.6267298,
+        "lon": 6.2011559,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Kreispolizeibehörde Kleve",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Kreispolizeibehörde Unna|bergkamen - brand eines reihenhauses",
     "status": "active",
     "title": "Bergkamen - Brand eines Reihenhauses",
