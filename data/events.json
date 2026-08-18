@@ -1,11 +1,35 @@
 [
   {
+    "base": "Feuerwehr Bochum|feuerwehr verhindert übergreifen eines brandes auf veranstaltungshalle in weitmar",
+    "status": "contained",
+    "title": "Feuerwehr verhindert Übergreifen eines Brandes auf Veranstaltungshalle in Weitmar",
+    "link": "https://www.presseportal.de/blaulicht/pm/115868/6335499",
+    "first": "2026-08-18T11:06:05Z",
+    "last": "2026-08-18T11:06:05Z",
+    "places": [
+      {
+        "name": "Bochum",
+        "lat": 51.4818111,
+        "lon": 7.2196635,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Bochum",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Heilbronn|hohenlohekreis: brand, unfall und zeugenaufruf nach einbruch",
     "status": "active",
     "title": "Hohenlohekreis: Brand, Unfall und Zeugenaufruf nach Einbruch",
     "link": "https://www.presseportal.de/blaulicht/pm/110971/6335431",
     "first": "2026-08-18T10:21:18Z",
     "last": "2026-08-18T10:21:18Z",
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Hohenlohekreis",
@@ -13,11 +37,7 @@
         "lon": 9.6057331,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Essen|mehrere pkw brennen auf parkstreifen in essen-altenessen-süd",
