@@ -1,11 +1,35 @@
 [
   {
+    "base": "Feuerwehr Schermbeck|müllbrand",
+    "status": "out",
+    "title": "Müllbrand",
+    "link": "https://www.presseportal.de/blaulicht/pm/118232/6335878",
+    "first": "2026-08-18T16:27:13Z",
+    "last": "2026-08-18T16:27:13Z",
+    "places": [
+      {
+        "name": "Schermbeck",
+        "lat": 51.6898739,
+        "lon": 6.8391929,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Schermbeck",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Essen|wohnungsbrand in essen-frohnhausen - feuer schnell gelöscht",
     "status": "out",
     "title": "Wohnungsbrand in Essen-Frohnhausen - Feuer schnell gelöscht",
     "link": "https://www.presseportal.de/blaulicht/pm/56893/6335872",
     "first": "2026-08-18T16:09:22Z",
     "last": "2026-08-18T16:09:22Z",
+    "veg": false,
+    "source": "Feuerwehr Essen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Essen",
@@ -13,11 +37,7 @@
         "lon": 7.0158171,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Essen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Offenburg|baden-baden - großer brand im dachboden",
@@ -26,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110975/6335850",
     "first": "2026-08-18T15:33:20Z",
     "last": "2026-08-18T15:33:20Z",
+    "veg": false,
+    "source": "Polizeipräsidium Offenburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Baden-Baden",
@@ -33,11 +57,7 @@
         "lon": 8.239959,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Kreispolizeibehörde Kleve|weeze - erstmeldung nach verkehrsunfall: willy-brandt-ring aktuell gesperrt",
