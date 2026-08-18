@@ -1,11 +1,35 @@
 [
   {
+    "base": "Feuerwehr Konstanz|brand im eingangsbereich eines wohn- und geschäftsgebäudes",
+    "status": "active",
+    "title": "Brand im Eingangsbereich eines Wohn- und Geschäftsgebäudes",
+    "link": "https://www.presseportal.de/blaulicht/pm/139089/6335579",
+    "first": "2026-08-18T11:57:01Z",
+    "last": "2026-08-18T11:57:01Z",
+    "places": [
+      {
+        "name": "Konstanz",
+        "lat": 47.659216,
+        "lon": 9.1750718,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Konstanz",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Bochum|feuerwehr verhindert übergreifen eines brandes auf veranstaltungshalle in weitmar",
     "status": "contained",
     "title": "Feuerwehr verhindert Übergreifen eines Brandes auf Veranstaltungshalle in Weitmar",
     "link": "https://www.presseportal.de/blaulicht/pm/115868/6335499",
     "first": "2026-08-18T11:06:05Z",
     "last": "2026-08-18T11:06:05Z",
+    "veg": false,
+    "source": "Feuerwehr Bochum",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Bochum",
@@ -13,11 +37,7 @@
         "lon": 7.2196635,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Bochum",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Heilbronn|hohenlohekreis: brand, unfall und zeugenaufruf nach einbruch",
