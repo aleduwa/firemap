@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115880/6335923",
     "first": "2026-08-18T19:41:03Z",
     "last": "2026-08-18T19:41:03Z",
+    "veg": false,
+    "source": "Feuerwehr Mülheim an der Ruhr",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Mülheim an der Ruhr",
@@ -13,11 +17,7 @@
         "lon": 6.8829192,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Mülheim an der Ruhr",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Schermbeck|müllbrand",
