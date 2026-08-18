@@ -1,11 +1,35 @@
 [
   {
+    "base": "Polizeipräsidium Konstanz|(konstanz) unbekannter legt feuer vor einem wohn- und geschäftshaus - polizei ermittelt wegen schwerer brandstiftung und sucht zeugen! (18.08.2026)",
+    "status": "active",
+    "title": "(Konstanz) Unbekannter legt Feuer vor einem Wohn- und Geschäftshaus - Polizei ermittelt wegen schwerer Brandstiftung und sucht Zeugen! (18.08.2026)",
+    "link": "https://www.presseportal.de/blaulicht/pm/110973/6335630",
+    "first": "2026-08-18T12:32:18Z",
+    "last": "2026-08-18T12:32:18Z",
+    "places": [
+      {
+        "name": "Geschäftshaus",
+        "lat": 49.4948559,
+        "lon": 9.7712345,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Konstanz",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Konstanz|brand im eingangsbereich eines wohn- und geschäftsgebäudes",
     "status": "active",
     "title": "Brand im Eingangsbereich eines Wohn- und Geschäftsgebäudes",
     "link": "https://www.presseportal.de/blaulicht/pm/139089/6335579",
     "first": "2026-08-18T11:57:01Z",
     "last": "2026-08-18T11:57:01Z",
+    "veg": false,
+    "source": "Feuerwehr Konstanz",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Konstanz",
@@ -13,11 +37,7 @@
         "lon": 9.1750718,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Konstanz",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Bochum|feuerwehr verhindert übergreifen eines brandes auf veranstaltungshalle in weitmar",
