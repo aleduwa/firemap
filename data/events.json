@@ -1,5 +1,45 @@
 [
   {
+    "base": "Feuerwehr Essen|wohnungsbrand in essen-frohnhausen - feuer schnell gelöscht",
+    "status": "out",
+    "title": "Wohnungsbrand in Essen-Frohnhausen - Feuer schnell gelöscht",
+    "link": "https://www.presseportal.de/blaulicht/pm/56893/6335872",
+    "first": "2026-08-18T16:09:22Z",
+    "last": "2026-08-18T16:09:22Z",
+    "places": [
+      {
+        "name": "Essen",
+        "lat": 51.4582235,
+        "lon": 7.0158171,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Essen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Offenburg|baden-baden - großer brand im dachboden",
+    "status": "active",
+    "title": "Baden-Baden - Großer Brand im Dachboden",
+    "link": "https://www.presseportal.de/blaulicht/pm/110975/6335850",
+    "first": "2026-08-18T15:33:20Z",
+    "last": "2026-08-18T15:33:20Z",
+    "places": [
+      {
+        "name": "Baden-Baden",
+        "lat": 48.7610716,
+        "lon": 8.239959,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Offenburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Kreispolizeibehörde Kleve|weeze - erstmeldung nach verkehrsunfall: willy-brandt-ring aktuell gesperrt",
     "status": "active",
     "title": "Weeze - Erstmeldung nach Verkehrsunfall: Willy-Brandt-Ring aktuell gesperrt",
