@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/118232/6335878",
     "first": "2026-08-18T16:27:13Z",
     "last": "2026-08-18T16:27:13Z",
+    "veg": false,
+    "source": "Feuerwehr Schermbeck",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Schermbeck",
@@ -13,11 +17,7 @@
         "lon": 6.8391929,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Schermbeck",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Essen|wohnungsbrand in essen-frohnhausen - feuer schnell gelöscht",
