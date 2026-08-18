@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/65856/6335640",
     "first": "2026-08-18T12:43:36Z",
     "last": "2026-08-18T12:43:36Z",
+    "veg": false,
+    "source": "Kreispolizeibehörde Unna",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Bergkamen",
@@ -13,11 +17,7 @@
         "lon": 7.6362876,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Kreispolizeibehörde Unna",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(ul) allmendingen - brand in mehrfamilienhaus / am dienstag rückten einsatzkräfte zu einem wohnungsbrand in allmendingen aus. verletzt wurde niemand.",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6335637",
     "first": "2026-08-18T12:42:09Z",
     "last": "2026-08-18T12:42:09Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Allmendingen",
@@ -33,11 +37,7 @@
         "lon": 9.7244123,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Konstanz|(konstanz) unbekannter legt feuer vor einem wohn- und geschäftshaus - polizei ermittelt wegen schwerer brandstiftung und sucht zeugen! (18.08.2026)",
