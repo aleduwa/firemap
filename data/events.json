@@ -1,5 +1,25 @@
 [
   {
+    "base": "Feuerwehr Mülheim an der Ruhr|küchenbrand in mehrfamilienhaus",
+    "status": "active",
+    "title": "Küchenbrand in Mehrfamilienhaus",
+    "link": "https://www.presseportal.de/blaulicht/pm/115880/6335923",
+    "first": "2026-08-18T19:41:03Z",
+    "last": "2026-08-18T19:41:03Z",
+    "places": [
+      {
+        "name": "Mülheim an der Ruhr",
+        "lat": 51.4272925,
+        "lon": 6.8829192,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Mülheim an der Ruhr",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Schermbeck|müllbrand",
     "status": "out",
     "title": "Müllbrand",
