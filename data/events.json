@@ -1,11 +1,35 @@
 [
   {
+    "base": "Polizeipräsidium Ulm|(bc) eberhardzell - brennende holzpresse und person von holzbalken getroffen / wegen eines brandes musste die produktion am dienstagvormittag in einer firma bei eberhardzell eingestellt werden",
+    "status": "active",
+    "title": "(BC) Eberhardzell - Brennende Holzpresse und Person von Holzbalken getroffen / Wegen eines Brandes musste die Produktion am Dienstagvormittag in einer Firma bei Eberhardzell eingestellt werden",
+    "link": "https://www.presseportal.de/blaulicht/pm/110979/6336277",
+    "first": "2026-08-19T12:05:33Z",
+    "last": "2026-08-19T12:05:33Z",
+    "places": [
+      {
+        "name": "Eberhardzell",
+        "lat": 48.0039811,
+        "lon": 9.8233669,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Remscheid|einsatz der bereitschaft 5 beim waldbrand im hürtgenwald beendet",
     "status": "out",
     "title": "Einsatz der Bereitschaft 5 beim Waldbrand im Hürtgenwald beendet",
     "link": "https://www.presseportal.de/blaulicht/pm/115882/6336236",
     "first": "2026-08-19T11:33:56Z",
     "last": "2026-08-19T11:33:56Z",
+    "veg": true,
+    "source": "Feuerwehr Remscheid",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Remscheid",
@@ -13,11 +37,7 @@
         "lon": 7.1943544,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Feuerwehr Remscheid",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Wuppertal|einsatz der bereitschaft 5 beim waldbrand im hürtgenwald beendet",
@@ -6013,26 +6033,6 @@
         "name": "Hohenlohekreis",
         "lat": 49.2725125,
         "lon": 9.6057331,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Heilbronn|main-tauber-kreis: einbruch, diebstahl, brand, unfall",
-    "status": "active",
-    "title": "Main-Tauber-Kreis: Einbruch, Diebstahl, Brand, Unfall",
-    "link": "https://www.presseportal.de/blaulicht/pm/110971/6317852",
-    "first": "2026-07-20T10:49:07Z",
-    "last": "2026-07-20T10:49:07Z",
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Main-Tauber-Kreis",
-        "lat": 49.5713631,
-        "lon": 9.6999301,
         "approx": false
       }
     ]
