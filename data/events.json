@@ -1,5 +1,25 @@
 [
   {
+    "base": "Feuerwehr Solingen|einsatz der bereitschaft 5 beim waldbrand im hürtgenwald beendet",
+    "status": "out",
+    "title": "Einsatz der Bereitschaft 5 beim Waldbrand im Hürtgenwald beendet",
+    "link": "https://www.presseportal.de/blaulicht/pm/115884/6336498",
+    "first": "2026-08-19T15:57:11Z",
+    "last": "2026-08-19T15:57:11Z",
+    "places": [
+      {
+        "name": "Solingen",
+        "lat": 51.1721629,
+        "lon": 7.0845893,
+        "approx": false
+      }
+    ],
+    "veg": true,
+    "source": "Feuerwehr Solingen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizei Duisburg|wanheimerort: brand eines altkleidercontainers - zeugensuche",
     "status": "active",
     "title": "Wanheimerort: Brand eines Altkleidercontainers - Zeugensuche",
