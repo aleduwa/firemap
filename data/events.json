@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6336563",
     "first": "2026-08-19T20:04:42Z",
     "last": "2026-08-19T20:04:42Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Schriesheim",
@@ -25,11 +29,7 @@
         "lon": 10.1396324,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|schriesheim/rhein-neckar-kreis/bab 5: brand eines lkw, vollsperrung der bab 5, pm 1",
