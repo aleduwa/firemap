@@ -1,5 +1,45 @@
 [
   {
+    "base": "Feuerwehr Dortmund|brennender gasherd - feuerwehr verhindert schlimmeres",
+    "status": "active",
+    "title": "Brennender Gasherd - Feuerwehr verhindert schlimmeres",
+    "link": "https://www.presseportal.de/blaulicht/pm/115869/6336082",
+    "first": "2026-08-19T09:38:58Z",
+    "last": "2026-08-19T09:38:58Z",
+    "places": [
+      {
+        "name": "Dortmund",
+        "lat": 51.5142273,
+        "lon": 7.4652789,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Dortmund",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Aalen|ostalbkreis: brand - unfälle - sonstiges",
+    "status": "out",
+    "title": "Ostalbkreis: Brand - Unfälle - Sonstiges",
+    "link": "https://www.presseportal.de/blaulicht/pm/110969/6336056",
+    "first": "2026-08-19T09:12:46Z",
+    "last": "2026-08-19T09:12:46Z",
+    "places": [
+      {
+        "name": "Ostalbkreis",
+        "lat": 48.8777738,
+        "lon": 10.0337317,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Mülheim an der Ruhr|küchenbrand in mehrfamilienhaus",
     "status": "active",
     "title": "Küchenbrand in Mehrfamilienhaus",
@@ -5973,26 +6013,6 @@
         "name": "Hessigheim",
         "lat": 48.9937553,
         "lon": 9.1883111,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Aalen|ostalbkreis: unfallfluchten - einbruch - vom dach gestürzt - tätlicher angriff - sachbeschädigung - unfälle - brandstiftung",
-    "status": "active",
-    "title": "Ostalbkreis: Unfallfluchten - Einbruch - Vom Dach gestürzt - Tätlicher Angriff - Sachbeschädigung - Unfälle - Brandstiftung",
-    "link": "https://www.presseportal.de/blaulicht/pm/110969/6317550",
-    "first": "2026-07-20T08:03:17Z",
-    "last": "2026-07-20T08:03:17Z",
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Ostalbkreis",
-        "lat": 48.8777738,
-        "lon": 10.0337317,
         "approx": false
       }
     ]
