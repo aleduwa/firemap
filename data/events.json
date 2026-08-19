@@ -1,11 +1,35 @@
 [
   {
+    "base": "Feuerwehr Remscheid|einsatz der bereitschaft 5 beim waldbrand im hürtgenwald beendet",
+    "status": "out",
+    "title": "Einsatz der Bereitschaft 5 beim Waldbrand im Hürtgenwald beendet",
+    "link": "https://www.presseportal.de/blaulicht/pm/115882/6336236",
+    "first": "2026-08-19T11:33:56Z",
+    "last": "2026-08-19T11:33:56Z",
+    "places": [
+      {
+        "name": "Remscheid",
+        "lat": 51.1798706,
+        "lon": 7.1943544,
+        "approx": false
+      }
+    ],
+    "veg": true,
+    "source": "Feuerwehr Remscheid",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Wuppertal|einsatz der bereitschaft 5 beim waldbrand im hürtgenwald beendet",
     "status": "out",
     "title": "Einsatz der Bereitschaft 5 beim Waldbrand im Hürtgenwald beendet",
     "link": "https://www.presseportal.de/blaulicht/pm/115885/6336179",
     "first": "2026-08-19T10:55:13Z",
     "last": "2026-08-19T10:55:13Z",
+    "veg": true,
+    "source": "Feuerwehr Wuppertal",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Wuppertal",
@@ -13,11 +37,7 @@
         "lon": 7.1780374,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Feuerwehr Wuppertal",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Dortmund|brennender gasherd - feuerwehr verhindert schlimmeres",
