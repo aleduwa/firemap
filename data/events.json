@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115869/6336082",
     "first": "2026-08-19T09:38:58Z",
     "last": "2026-08-19T09:38:58Z",
+    "veg": false,
+    "source": "Feuerwehr Dortmund",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Dortmund",
@@ -13,11 +17,7 @@
         "lon": 7.4652789,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Dortmund",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Aalen|ostalbkreis: brand - unfälle - sonstiges",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6336056",
     "first": "2026-08-19T09:12:46Z",
     "last": "2026-08-19T09:12:46Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ostalbkreis",
@@ -33,11 +37,7 @@
         "lon": 10.0337317,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Mülheim an der Ruhr|küchenbrand in mehrfamilienhaus",
