@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6336277",
     "first": "2026-08-19T12:05:33Z",
     "last": "2026-08-19T12:05:33Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Eberhardzell",
@@ -13,11 +17,7 @@
         "lon": 9.8233669,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Remscheid|einsatz der bereitschaft 5 beim waldbrand im hürtgenwald beendet",
