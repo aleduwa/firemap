@@ -1,5 +1,37 @@
 [
   {
+    "base": "Polizeipräsidium Mannheim|schriesheim/rhein-neckar-kreis/bab 5: brand eines lkw, vollsperrung der bab 5, pm 1",
+    "status": "active",
+    "title": "Schriesheim/Rhein-Neckar-Kreis/BAB 5: Brand eines Lkw, Vollsperrung der BAB 5, PM 1",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6336558",
+    "first": "2026-08-19T19:16:15Z",
+    "last": "2026-08-19T19:16:15Z",
+    "places": [
+      {
+        "name": "Schriesheim",
+        "lat": 49.4751705,
+        "lon": 8.6611149,
+        "approx": false
+      },
+      {
+        "name": "Rhein-Neckar-Kreis",
+        "lat": 49.3684797,
+        "lon": 8.7352403,
+        "approx": false
+      },
+      {
+        "name": "BAB 5",
+        "lat": 48.0640897,
+        "lon": 10.1396324,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Solingen|einsatz der bereitschaft 5 beim waldbrand im hürtgenwald beendet",
     "status": "out",
     "title": "Einsatz der Bereitschaft 5 beim Waldbrand im Hürtgenwald beendet",
