@@ -6018,26 +6018,6 @@
     ]
   },
   {
-    "base": "Feuerwehr Stuttgart|wohnungsbrand in einem mehrfamilienhaus - stuttgart vaihingen - wohnung in vollbrand - eine verletzte person - raucheintrag in mehrere bereiche des mehrfamilienhauses",
-    "status": "out",
-    "title": "Wohnungsbrand in einem Mehrfamilienhaus - Stuttgart Vaihingen - Wohnung in Vollbrand - Eine verletzte Person - Raucheintrag in mehrere Bereiche des Mehrfamilienhauses",
-    "link": "https://www.presseportal.de/blaulicht/pm/161590/6317385",
-    "first": "2026-07-20T00:11:43Z",
-    "last": "2026-07-20T02:11:43Z",
-    "veg": false,
-    "source": "Feuerwehr Stuttgart",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stuttgart",
-        "lat": 48.7784485,
-        "lon": 9.1800132,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Feuerwehr Stuttgart|küchenbrand in mehrfamilienhaus",
     "status": "contained",
     "title": "Küchenbrand in Mehrfamilienhaus",
