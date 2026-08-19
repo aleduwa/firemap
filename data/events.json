@@ -5998,26 +5998,6 @@
     ]
   },
   {
-    "base": "Polizeipräsidium Ulm|(bc) eberhardzell - korrektur ort millionenschaden bei brand eines holzbaubetriebs",
-    "status": "active",
-    "title": "(BC) Eberhardzell - KORREKTUR Ort Millionenschaden bei Brand eines Holzbaubetriebs",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6317402",
-    "first": "2026-07-20T05:10:12Z",
-    "last": "2026-07-20T05:10:12Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Eberhardzell",
-        "lat": 48.0039811,
-        "lon": 9.8233669,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Feuerwehr Stuttgart|küchenbrand in mehrfamilienhaus",
     "status": "contained",
     "title": "Küchenbrand in Mehrfamilienhaus",
