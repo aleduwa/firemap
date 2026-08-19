@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115888/6336580",
     "first": "2026-08-19T23:17:32Z",
     "last": "2026-08-19T23:17:32Z",
+    "veg": false,
+    "source": "Feuerwehr und Rettungsdienst Bonn",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Bonn",
@@ -13,11 +17,7 @@
         "lon": 7.1024635,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr und Rettungsdienst Bonn",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|schriesheim/rhein-neckar-kreis/bab 5: brand eines lkw, vollsperrung der bab 5, pm 2",
