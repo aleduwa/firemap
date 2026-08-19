@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/50510/6336364",
     "first": "2026-08-19T13:32:31Z",
     "last": "2026-08-19T13:32:31Z",
+    "veg": false,
+    "source": "Polizei Duisburg",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Wanheimerort",
@@ -13,11 +17,7 @@
         "lon": 6.7595258,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizei Duisburg",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|jestetten: brennende tuja-hecke im schrebergarten",
