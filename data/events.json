@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115884/6336498",
     "first": "2026-08-19T15:57:11Z",
     "last": "2026-08-19T15:57:11Z",
+    "veg": true,
+    "source": "Feuerwehr Solingen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Solingen",
@@ -13,11 +17,7 @@
         "lon": 7.0845893,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Feuerwehr Solingen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizei Duisburg|wanheimerort: brand eines altkleidercontainers - zeugensuche",
