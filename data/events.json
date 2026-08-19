@@ -1,11 +1,35 @@
 [
   {
+    "base": "Polizei Duisburg|wanheimerort: brand eines altkleidercontainers - zeugensuche",
+    "status": "active",
+    "title": "Wanheimerort: Brand eines Altkleidercontainers - Zeugensuche",
+    "link": "https://www.presseportal.de/blaulicht/pm/50510/6336364",
+    "first": "2026-08-19T13:32:31Z",
+    "last": "2026-08-19T13:32:31Z",
+    "places": [
+      {
+        "name": "Wanheimerort",
+        "lat": 51.4022807,
+        "lon": 6.7595258,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizei Duisburg",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Freiburg|jestetten: brennende tuja-hecke im schrebergarten",
     "status": "out",
     "title": "Jestetten: Brennende Tuja-Hecke im Schrebergarten",
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6336351",
     "first": "2026-08-19T13:16:57Z",
     "last": "2026-08-19T13:16:57Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Jestetten",
@@ -13,11 +37,7 @@
         "lon": 8.56667,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(bc) eberhardzell - brennende holzpresse und person von holzbalken getroffen / wegen eines brandes musste die produktion am dienstagvormittag in einer firma bei eberhardzell eingestellt werden",
@@ -5993,66 +6013,6 @@
         "name": "Holzgerlingen",
         "lat": 48.6392119,
         "lon": 9.0115732,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Stuttgart|staatsanwaltschaft und polizei stuttgart geben bekannt: wohnung in brand gesetzt - tatverdächtige festgenommen",
-    "status": "active",
-    "title": "Staatsanwaltschaft und Polizei Stuttgart geben bekannt: Wohnung in Brand gesetzt - Tatverdächtige festgenommen",
-    "link": "https://www.presseportal.de/blaulicht/pm/110977/6318008",
-    "first": "2026-07-20T12:16:44Z",
-    "last": "2026-07-20T12:16:44Z",
-    "veg": false,
-    "source": "Polizeipräsidium Stuttgart",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Staatsanwaltschaft",
-        "lat": 47.6618262,
-        "lon": 9.1719411,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Heilbronn|stadt- und landkreis heilbronn: mit messer verletzt, unfälle, bauwagen in brand geraten, widerstand gegen vollstreckungsbeamte, unfallfluchten und einbruch",
-    "status": "active",
-    "title": "Stadt- und Landkreis Heilbronn: Mit Messer verletzt, Unfälle, Bauwagen in Brand geraten, Widerstand gegen Vollstreckungsbeamte, Unfallfluchten und Einbruch",
-    "link": "https://www.presseportal.de/blaulicht/pm/110971/6317992",
-    "first": "2026-07-20T12:09:30Z",
-    "last": "2026-07-20T12:09:30Z",
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stadt-",
-        "lat": 49.4093582,
-        "lon": 8.694724,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Heilbronn|hohenlohekreis: brand, verkehrsunfall",
-    "status": "active",
-    "title": "Hohenlohekreis: Brand, Verkehrsunfall",
-    "link": "https://www.presseportal.de/blaulicht/pm/110971/6317979",
-    "first": "2026-07-20T12:03:09Z",
-    "last": "2026-07-20T12:03:09Z",
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Hohenlohekreis",
-        "lat": 49.2725125,
-        "lon": 9.6057331,
         "approx": false
       }
     ]
