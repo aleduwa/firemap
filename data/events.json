@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110973/6336979",
     "first": "2026-08-20T12:15:01Z",
     "last": "2026-08-20T12:15:01Z",
+    "veg": false,
+    "source": "Polizeipräsidium Konstanz",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Reichenau",
@@ -13,11 +17,7 @@
         "lon": 9.0592022,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Konstanz",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Offenburg|vegetationsbrand im offenburger stadtwald",
