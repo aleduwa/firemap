@@ -1,11 +1,35 @@
 [
   {
+    "base": "Feuerwehr Xanten|traktor gerät während der fahrt in brand",
+    "status": "out",
+    "title": "Traktor gerät während der Fahrt in Brand",
+    "link": "https://www.presseportal.de/blaulicht/pm/122220/6337244",
+    "first": "2026-08-20T16:40:17Z",
+    "last": "2026-08-20T16:40:17Z",
+    "places": [
+      {
+        "name": "Xanten",
+        "lat": 51.661519,
+        "lon": 6.4543203,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Xanten",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Offenburg|neuried-altenheim - gebäudebrand - nachtragsmeldung -",
     "status": "active",
     "title": "Neuried-Altenheim - Gebäudebrand - Nachtragsmeldung -",
     "link": "https://www.presseportal.de/blaulicht/pm/110975/6337222",
     "first": "2026-08-20T15:54:36Z",
     "last": "2026-08-20T15:54:36Z",
+    "veg": false,
+    "source": "Polizeipräsidium Offenburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Neuried-Altenheim",
@@ -13,11 +37,7 @@
         "lon": 7.8090487,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|rheinfelden: größerer vegetationsbrand bei der wannengasse - verdacht herbeiführung einer brandgefahr",
@@ -26,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6337217",
     "first": "2026-08-20T15:49:16Z",
     "last": "2026-08-20T15:49:16Z",
+    "veg": true,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Rheinfelden",
@@ -33,11 +57,7 @@
         "lon": 7.7861959,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Freiburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Weinheim|feuerwehr weinheim unterstützt bei lkw brand auf der bab5",
