@@ -1,11 +1,55 @@
 [
   {
+    "base": "Feuerwehr Offenburg|vegetationsbrand im offenburger stadtwald",
+    "status": "active",
+    "title": "Vegetationsbrand im Offenburger Stadtwald",
+    "link": "https://www.presseportal.de/blaulicht/pm/128693/6336815",
+    "first": "2026-08-20T10:21:35Z",
+    "last": "2026-08-20T10:21:35Z",
+    "places": [
+      {
+        "name": "Offenburg",
+        "lat": 48.4695984,
+        "lon": 7.9429235,
+        "approx": false
+      }
+    ],
+    "veg": true,
+    "source": "Feuerwehr Offenburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Pforzheim|(enzkreis)bauschlott - gemeinsame pressemeldung der staatsanwaltschaft karlsruhe - zweigstelle pforzheim und des pp pforzheim - zwei strafunmündige und ein jugendlicher nach brandserie ermittelt",
+    "status": "active",
+    "title": "(Enzkreis)Bauschlott - Gemeinsame Pressemeldung der Staatsanwaltschaft Karlsruhe - Zweigstelle Pforzheim und des PP Pforzheim - Zwei Strafunmündige und ein Jugendlicher nach Brandserie ermittelt",
+    "link": "https://www.presseportal.de/blaulicht/pm/137462/6336811",
+    "first": "2026-08-20T10:16:44Z",
+    "last": "2026-08-20T10:16:44Z",
+    "places": [
+      {
+        "name": "Bauschlott",
+        "lat": 48.967915,
+        "lon": 8.7249403,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Pforzheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Heilbronn|stadt- und landkreis heilbronn: unfallflucht, brand, körperverletzung, widerstand und diebstahl",
     "status": "active",
     "title": "Stadt- und Landkreis Heilbronn: Unfallflucht, Brand, Körperverletzung, Widerstand und Diebstahl",
     "link": "https://www.presseportal.de/blaulicht/pm/110971/6336774",
     "first": "2026-08-20T09:59:37Z",
     "last": "2026-08-20T09:59:37Z",
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Stadt-",
@@ -13,11 +57,7 @@
         "lon": 8.694724,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Wuppertal|haus nach wohnungsbrand unbewohnbar",
@@ -26,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115885/6336740",
     "first": "2026-08-20T09:22:47Z",
     "last": "2026-08-20T09:22:47Z",
+    "veg": false,
+    "source": "Feuerwehr Wuppertal",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Wuppertal",
@@ -33,11 +77,7 @@
         "lon": 7.1780374,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Wuppertal",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Aalen|rems-murr-kreis: unfälle, einbruchsversuch, betrug, brand, kontrollaktion, trunkenheitsfahrt, steinewerfer",
@@ -6189,26 +6229,6 @@
         "name": "Neckar-Odenwald-Kreis",
         "lat": 49.4678557,
         "lon": 9.2709386,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ludwigsburg|holzgerlingen: feuerwerksrakete landet auf sportplatz - zeugen gesucht",
-    "status": "active",
-    "title": "Holzgerlingen: Feuerwerksrakete landet auf Sportplatz - Zeugen gesucht",
-    "link": "https://www.presseportal.de/blaulicht/pm/110974/6318560",
-    "first": "2026-07-21T08:47:51Z",
-    "last": "2026-07-21T08:47:51Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Holzgerlingen",
-        "lat": 48.6392119,
-        "lon": 9.0115732,
         "approx": false
       }
     ]
