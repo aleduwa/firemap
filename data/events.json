@@ -1,5 +1,25 @@
 [
   {
+    "base": "Polizeipräsidium Aalen|rems-murr-kreis: unfälle, einbruchsversuch, betrug, brand, kontrollaktion, trunkenheitsfahrt, steinewerfer",
+    "status": "active",
+    "title": "Rems-Murr-Kreis: Unfälle, Einbruchsversuch, Betrug, Brand, Kontrollaktion, Trunkenheitsfahrt, Steinewerfer",
+    "link": "https://www.presseportal.de/blaulicht/pm/110969/6336638",
+    "first": "2026-08-20T08:13:20Z",
+    "last": "2026-08-20T08:13:20Z",
+    "places": [
+      {
+        "name": "Rems-Murr-Kreis",
+        "lat": 48.8966799,
+        "lon": 9.5037124,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Mannheim|schriesheim/rhein-neckar-kreis/bab 5: brand eines lkw, vollsperrung der bab 5, pm 3",
     "status": "out",
     "title": "Schriesheim/Rhein-Neckar-Kreis/BAB 5: Brand eines Lkw, Vollsperrung der BAB 5, PM 3",
