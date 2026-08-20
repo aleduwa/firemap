@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/179375/6337054",
     "first": "2026-08-20T13:20:14Z",
     "last": "2026-08-20T13:20:14Z",
+    "veg": false,
+    "source": "Feuerwehr Weinheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Weinheim",
@@ -13,11 +17,7 @@
         "lon": 8.6717458,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Weinheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Konstanz|(reichenau, lkr. konstanz) schilfballen-brand in freilager - polizei sucht zeugen (19.08.2026)",
