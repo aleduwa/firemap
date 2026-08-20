@@ -1,5 +1,25 @@
 [
   {
+    "base": "Feuerwehr Weinheim|feuerwehr weinheim unterstützt bei lkw brand auf der bab5",
+    "status": "active",
+    "title": "Feuerwehr Weinheim unterstützt bei LKW Brand auf der BAB5",
+    "link": "https://www.presseportal.de/blaulicht/pm/179375/6337054",
+    "first": "2026-08-20T13:20:14Z",
+    "last": "2026-08-20T13:20:14Z",
+    "places": [
+      {
+        "name": "Weinheim",
+        "lat": 49.5462349,
+        "lon": 8.6717458,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Weinheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Konstanz|(reichenau, lkr. konstanz) schilfballen-brand in freilager - polizei sucht zeugen (19.08.2026)",
     "status": "active",
     "title": "(Reichenau, Lkr. Konstanz) Schilfballen-Brand in Freilager - Polizei sucht Zeugen (19.08.2026)",
@@ -6229,26 +6249,6 @@
         "name": "Allensbach",
         "lat": 47.7168668,
         "lon": 9.0687005,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Heilbronn|neckar-odenwald-kreis: feld in brand geraten und unfallflucht",
-    "status": "contained",
-    "title": "Neckar-Odenwald-Kreis: Feld in Brand geraten und Unfallflucht",
-    "link": "https://www.presseportal.de/blaulicht/pm/110971/6318774",
-    "first": "2026-07-21T11:43:48Z",
-    "last": "2026-07-21T11:43:48Z",
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Neckar-Odenwald-Kreis",
-        "lat": 49.4678557,
-        "lon": 9.2709386,
         "approx": false
       }
     ]
