@@ -6294,26 +6294,6 @@
     ]
   },
   {
-    "base": "Feuerwehr Allensbach|bma2 personenschutz",
-    "status": "out",
-    "title": "BMA2 Personenschutz",
-    "link": "https://www.presseportal.de/blaulicht/pm/175384/6318974",
-    "first": "2026-07-21T18:14:31Z",
-    "last": "2026-07-21T18:14:31Z",
-    "veg": false,
-    "source": "Feuerwehr Allensbach",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Allensbach",
-        "lat": 47.7168668,
-        "lon": 9.0687005,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Feuerwehr Stuttgart|küchenbrand in mehrfamilienhaus",
     "status": "contained",
     "title": "Küchenbrand in Mehrfamilienhaus",
