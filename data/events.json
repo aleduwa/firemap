@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6337274",
     "first": "2026-08-20T20:44:41Z",
     "last": "2026-08-20T20:44:41Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Heidelberg-Kirchheim",
@@ -13,11 +17,7 @@
         "lon": 8.6753555,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Reichenau|brand von mehreren hundert riedballen fordert feuerwehr über 24 stunden - 19.08.2026",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/163367/6337271",
     "first": "2026-08-20T20:36:48Z",
     "last": "2026-08-20T20:36:48Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Reichenau",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Reichenau",
@@ -33,11 +37,7 @@
         "lon": 9.0592022,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Reichenau",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Xanten|traktor gerät während der fahrt in brand",
