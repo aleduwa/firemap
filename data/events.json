@@ -1,5 +1,45 @@
 [
   {
+    "base": "Polizeipräsidium Offenburg|neuried-altenheim - gebäudebrand - nachtragsmeldung -",
+    "status": "active",
+    "title": "Neuried-Altenheim - Gebäudebrand - Nachtragsmeldung -",
+    "link": "https://www.presseportal.de/blaulicht/pm/110975/6337222",
+    "first": "2026-08-20T15:54:36Z",
+    "last": "2026-08-20T15:54:36Z",
+    "places": [
+      {
+        "name": "Neuried-Altenheim",
+        "lat": 48.4646082,
+        "lon": 7.8090487,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Offenburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|rheinfelden: größerer vegetationsbrand bei der wannengasse - verdacht herbeiführung einer brandgefahr",
+    "status": "contained",
+    "title": "Rheinfelden: Größerer Vegetationsbrand bei der Wannengasse - Verdacht Herbeiführung einer Brandgefahr",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6337217",
+    "first": "2026-08-20T15:49:16Z",
+    "last": "2026-08-20T15:49:16Z",
+    "places": [
+      {
+        "name": "Rheinfelden",
+        "lat": 47.5605924,
+        "lon": 7.7861959,
+        "approx": false
+      }
+    ],
+    "veg": true,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Weinheim|feuerwehr weinheim unterstützt bei lkw brand auf der bab5",
     "status": "active",
     "title": "Feuerwehr Weinheim unterstützt bei LKW Brand auf der BAB5",
