@@ -1,5 +1,45 @@
 [
   {
+    "base": "Polizeipräsidium Mannheim|heidelberg-kirchheim: fahrzeugbrand, pressemitteilung nr. 1",
+    "status": "active",
+    "title": "Heidelberg-Kirchheim: Fahrzeugbrand, Pressemitteilung Nr. 1",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6337274",
+    "first": "2026-08-20T20:44:41Z",
+    "last": "2026-08-20T20:44:41Z",
+    "places": [
+      {
+        "name": "Heidelberg-Kirchheim",
+        "lat": 49.3793639,
+        "lon": 8.6753555,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Freiwillige Feuerwehr Reichenau|brand von mehreren hundert riedballen fordert feuerwehr über 24 stunden - 19.08.2026",
+    "status": "out",
+    "title": "Brand von mehreren hundert Riedballen fordert Feuerwehr über 24 Stunden - 19.08.2026",
+    "link": "https://www.presseportal.de/blaulicht/pm/163367/6337271",
+    "first": "2026-08-20T20:36:48Z",
+    "last": "2026-08-20T20:36:48Z",
+    "places": [
+      {
+        "name": "Reichenau",
+        "lat": 47.6956373,
+        "lon": 9.0592022,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Reichenau",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Xanten|traktor gerät während der fahrt in brand",
     "status": "out",
     "title": "Traktor gerät während der Fahrt in Brand",
