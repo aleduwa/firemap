@@ -3,9 +3,13 @@
     "base": "Feuerwehr Offenburg|vegetationsbrand im offenburger stadtwald",
     "status": "active",
     "title": "Vegetationsbrand im Offenburger Stadtwald",
-    "link": "https://www.presseportal.de/blaulicht/pm/128693/6336815",
+    "link": "https://www.presseportal.de/blaulicht/pm/128693/6336888",
     "first": "2026-08-20T10:21:35Z",
-    "last": "2026-08-20T10:21:35Z",
+    "last": "2026-08-20T11:13:41Z",
+    "veg": true,
+    "source": "Feuerwehr Offenburg",
+    "updates": 1,
+    "region": "BW",
     "places": [
       {
         "name": "Offenburg",
@@ -13,11 +17,7 @@
         "lon": 7.9429235,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Feuerwehr Offenburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Pforzheim|(enzkreis)bauschlott - gemeinsame pressemeldung der staatsanwaltschaft karlsruhe - zweigstelle pforzheim und des pp pforzheim - zwei strafunmündige und ein jugendlicher nach brandserie ermittelt",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/137462/6336811",
     "first": "2026-08-20T10:16:44Z",
     "last": "2026-08-20T10:16:44Z",
+    "veg": false,
+    "source": "Polizeipräsidium Pforzheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Bauschlott",
@@ -33,11 +37,7 @@
         "lon": 8.7249403,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Pforzheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Heilbronn|stadt- und landkreis heilbronn: unfallflucht, brand, körperverletzung, widerstand und diebstahl",
