@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/122220/6337244",
     "first": "2026-08-20T16:40:17Z",
     "last": "2026-08-20T16:40:17Z",
+    "veg": false,
+    "source": "Feuerwehr Xanten",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Xanten",
@@ -13,11 +17,7 @@
         "lon": 6.4543203,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Xanten",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Offenburg|neuried-altenheim - gebäudebrand - nachtragsmeldung -",
