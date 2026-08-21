@@ -1,5 +1,31 @@
 [
   {
+    "base": "Polizeipräsidium Mannheim|eberbach/rhein-neckar-kreis: brand in mehrfamilienhaus - pressemitteilung nr. 2",
+    "status": "contained",
+    "title": "Eberbach/Rhein-Neckar-Kreis: Brand in Mehrfamilienhaus - Pressemitteilung Nr. 2",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6337875",
+    "first": "2026-08-21T22:19:03Z",
+    "last": "2026-08-21T22:19:03Z",
+    "places": [
+      {
+        "name": "Eberbach",
+        "lat": 49.4635303,
+        "lon": 8.9855203,
+        "approx": false
+      },
+      {
+        "name": "Rhein-Neckar-Kreis",
+        "lat": 49.3684797,
+        "lon": 8.7352403,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Bergheim|großbrand im gewerbegebiet bergheim-paffendorf - rund 100 einsatzkräfte im einsatz",
     "status": "active",
     "title": "Großbrand im Gewerbegebiet Bergheim-Paffendorf - Rund 100 Einsatzkräfte im Einsatz",
