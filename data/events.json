@@ -1,5 +1,25 @@
 [
   {
+    "base": "Kreisfeuerwehrverband Calw e.V.|brand in betreuter wohneinrichtung verursacht hohen sachschaden - keine verletzten - 65 einsatzkräfte vor ort",
+    "status": "active",
+    "title": "Brand in betreuter Wohneinrichtung verursacht hohen Sachschaden - Keine Verletzten - 65 Einsatzkräfte vor Ort",
+    "link": "https://www.presseportal.de/blaulicht/pm/116896/6337755",
+    "first": "2026-08-21T14:02:55Z",
+    "last": "2026-08-21T14:02:55Z",
+    "places": [
+      {
+        "name": "Calw e.V",
+        "lat": 48.7041219,
+        "lon": 8.7557644,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Kreisfeuerwehrverband Calw e.V.",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Konstanz|(bodman-ludwigshafen, lkr. konstanz) brand in einem restaurant in der hauptstraße - rund 150.000 euro schaden (21.08.2026)",
     "status": "out",
     "title": "(Bodman-Ludwigshafen, Lkr. Konstanz) Brand in einem Restaurant in der Hauptstraße - rund 150.000 Euro Schaden (21.08.2026)",
