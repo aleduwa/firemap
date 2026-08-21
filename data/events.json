@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6337294",
     "first": "2026-08-21T02:16:27Z",
     "last": "2026-08-21T02:16:27Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Heidelberg-Kirchheim",
@@ -13,11 +17,7 @@
         "lon": 8.6753555,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Iserlohn|feuer in einem waldstück am duloh",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/116234/6337293",
     "first": "2026-08-21T01:35:27Z",
     "last": "2026-08-21T01:35:27Z",
+    "veg": true,
+    "source": "Feuerwehr Iserlohn",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Iserlohn",
@@ -33,11 +37,7 @@
         "lon": 7.6999713,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Feuerwehr Iserlohn",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|heidelberg-kirchheim: fahrzeugbrand, pressemitteilung nr. 1",
