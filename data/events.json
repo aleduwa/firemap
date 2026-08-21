@@ -1,5 +1,45 @@
 [
   {
+    "base": "Polizeipräsidium Ulm|(hdh) nattheim - brand in tankstelle / am donnerstag kam es in einem tankstellengebäude zu einem technischen defekt.",
+    "status": "out",
+    "title": "(HDH) Nattheim - Brand in Tankstelle / Am Donnerstag kam es in einem Tankstellengebäude zu einem technischen Defekt.",
+    "link": "https://www.presseportal.de/blaulicht/pm/110979/6337400",
+    "first": "2026-08-21T09:02:00Z",
+    "last": "2026-08-21T09:02:00Z",
+    "places": [
+      {
+        "name": "Nattheim",
+        "lat": 48.6995114,
+        "lon": 10.2418583,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Freiwillige Feuerwehr Hünxe|ausgelöste brandmeldeanlage in hünxe",
+    "status": "active",
+    "title": "Ausgelöste Brandmeldeanlage in Hünxe",
+    "link": "https://www.presseportal.de/blaulicht/pm/133631/6337383",
+    "first": "2026-08-21T08:54:36Z",
+    "last": "2026-08-21T08:54:36Z",
+    "places": [
+      {
+        "name": "Hünxe",
+        "lat": 51.6414581,
+        "lon": 6.7660319,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Hünxe",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Mannheim|heidelberg-kirchheim: fahrzeugbrand, pressemitteilung nr. 2",
     "status": "active",
     "title": "Heidelberg-Kirchheim: Fahrzeugbrand, Pressemitteilung Nr. 2",
