@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/168361/6337867",
     "first": "2026-08-21T20:08:59Z",
     "last": "2026-08-21T20:08:59Z",
+    "veg": false,
+    "source": "Feuerwehr Bergheim",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Bergheim",
@@ -13,11 +17,7 @@
         "lon": 6.6410004,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Bergheim",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|eberbach/rhein-neckar-kreis: brand in mehrfamilienhaus - pressemitteilung nr. 1",
