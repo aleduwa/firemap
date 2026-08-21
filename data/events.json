@@ -1,5 +1,51 @@
 [
   {
+    "base": "Polizeipräsidium Mannheim|eberbach/rhein-neckar-kreis: brand in mehrfamilienhaus - pressemitteilung nr. 1",
+    "status": "active",
+    "title": "Eberbach/Rhein-Neckar-Kreis: Brand in Mehrfamilienhaus - Pressemitteilung Nr. 1",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6337830",
+    "first": "2026-08-21T16:00:24Z",
+    "last": "2026-08-21T16:00:24Z",
+    "places": [
+      {
+        "name": "Eberbach",
+        "lat": 49.4635303,
+        "lon": 8.9855203,
+        "approx": false
+      },
+      {
+        "name": "Rhein-Neckar-Kreis",
+        "lat": 49.3684797,
+        "lon": 8.7352403,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Freiwillige Feuerwehr Bad Oeynhausen|schornsteinbrand in der innenstadt",
+    "status": "contained",
+    "title": "Schornsteinbrand in der Innenstadt",
+    "link": "https://www.presseportal.de/blaulicht/pm/182385/6337827",
+    "first": "2026-08-21T15:59:10Z",
+    "last": "2026-08-21T15:59:10Z",
+    "places": [
+      {
+        "name": "Bad Oeynhausen",
+        "lat": 52.2014399,
+        "lon": 8.7981244,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Bad Oeynhausen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Kreisfeuerwehrverband Calw e.V.|brand in betreuter wohneinrichtung verursacht hohen sachschaden - keine verletzten - 65 einsatzkräfte vor ort",
     "status": "active",
     "title": "Brand in betreuter Wohneinrichtung verursacht hohen Sachschaden - Keine Verletzten - 65 Einsatzkräfte vor Ort",
