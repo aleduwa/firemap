@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6337875",
     "first": "2026-08-21T22:19:03Z",
     "last": "2026-08-21T22:19:03Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Eberbach",
@@ -19,11 +23,7 @@
         "lon": 8.7352403,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Bergheim|großbrand im gewerbegebiet bergheim-paffendorf - rund 100 einsatzkräfte im einsatz",
