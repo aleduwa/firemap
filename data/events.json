@@ -1,5 +1,25 @@
 [
   {
+    "base": "Feuerwehr Bergheim|großbrand im gewerbegebiet bergheim-paffendorf - rund 100 einsatzkräfte im einsatz",
+    "status": "active",
+    "title": "Großbrand im Gewerbegebiet Bergheim-Paffendorf - Rund 100 Einsatzkräfte im Einsatz",
+    "link": "https://www.presseportal.de/blaulicht/pm/168361/6337867",
+    "first": "2026-08-21T20:08:59Z",
+    "last": "2026-08-21T20:08:59Z",
+    "places": [
+      {
+        "name": "Bergheim",
+        "lat": 50.9540457,
+        "lon": 6.6410004,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Bergheim",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Mannheim|eberbach/rhein-neckar-kreis: brand in mehrfamilienhaus - pressemitteilung nr. 1",
     "status": "active",
     "title": "Eberbach/Rhein-Neckar-Kreis: Brand in Mehrfamilienhaus - Pressemitteilung Nr. 1",
@@ -6463,26 +6483,6 @@
         "name": "Niefern-Öschelbronn",
         "lat": 48.9089709,
         "lon": 8.7980729,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Aalen|rems-murr-kreis: mehrere verletzte nach akkubrand",
-    "status": "out",
-    "title": "Rems-Murr-Kreis: Mehrere Verletzte nach Akkubrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110969/6319713",
-    "first": "2026-07-22T18:39:15Z",
-    "last": "2026-07-22T18:39:15Z",
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Rems-Murr-Kreis",
-        "lat": 48.8966799,
-        "lon": 9.5037124,
         "approx": false
       }
     ]
