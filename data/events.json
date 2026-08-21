@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/116896/6337755",
     "first": "2026-08-21T14:02:55Z",
     "last": "2026-08-21T14:02:55Z",
+    "veg": false,
+    "source": "Kreisfeuerwehrverband Calw e.V.",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Calw e.V",
@@ -13,11 +17,7 @@
         "lon": 8.7557644,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Kreisfeuerwehrverband Calw e.V.",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Konstanz|(bodman-ludwigshafen, lkr. konstanz) brand in einem restaurant in der hauptstraße - rund 150.000 euro schaden (21.08.2026)",
@@ -6438,38 +6438,6 @@
         "lat": 48.8966799,
         "lon": 9.5037124,
         "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|jestetten: skoda-fahrer flüchtet vor zoll-kontrolle - auto geht in flammen auf",
-    "status": "active",
-    "title": "Jestetten: Skoda-Fahrer flüchtet vor Zoll-Kontrolle - Auto geht in Flammen auf",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6319635",
-    "first": "2026-07-22T13:41:58Z",
-    "last": "2026-07-22T13:41:58Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Jestetten",
-        "lat": 47.65,
-        "lon": 8.56667,
-        "approx": false
-      },
-      {
-        "name": "zwischen Jestetten und Altenburg",
-        "lat": 48.0977,
-        "lon": 8.87662,
-        "approx": true
-      },
-      {
-        "name": "zwischen Altenburg und Jestetten",
-        "lat": 48.0977,
-        "lon": 8.87662,
-        "approx": true
       }
     ]
   },
