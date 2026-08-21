@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6337830",
     "first": "2026-08-21T16:00:24Z",
     "last": "2026-08-21T16:00:24Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Eberbach",
@@ -19,11 +23,7 @@
         "lon": 8.7352403,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Bad Oeynhausen|schornsteinbrand in der innenstadt",
@@ -32,6 +32,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/182385/6337827",
     "first": "2026-08-21T15:59:10Z",
     "last": "2026-08-21T15:59:10Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Bad Oeynhausen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Bad Oeynhausen",
@@ -39,11 +43,7 @@
         "lon": 8.7981244,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Bad Oeynhausen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Kreisfeuerwehrverband Calw e.V.|brand in betreuter wohneinrichtung verursacht hohen sachschaden - keine verletzten - 65 einsatzkräfte vor ort",
