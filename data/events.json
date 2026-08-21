@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110973/6337636",
     "first": "2026-08-21T12:15:07Z",
     "last": "2026-08-21T12:15:07Z",
+    "veg": false,
+    "source": "Polizeipräsidium Konstanz",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Bodman-Ludwigshafen",
@@ -13,11 +17,7 @@
         "lon": 9.0359649,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Konstanz",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ludwigsburg|ditzingen: brand in firmengebäude",
@@ -6450,26 +6450,6 @@
         "lat": 48.0977,
         "lon": 8.87662,
         "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ludwigsburg|mötzingen: brand in der hohenzollernstraße",
-    "status": "active",
-    "title": "Mötzingen: Brand in der Hohenzollernstraße",
-    "link": "https://www.presseportal.de/blaulicht/pm/110974/6319506",
-    "first": "2026-07-22T11:26:25Z",
-    "last": "2026-07-22T11:26:25Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Mötzingen",
-        "lat": 48.5354913,
-        "lon": 8.7747087,
-        "approx": false
       }
     ]
   },
