@@ -6448,26 +6448,6 @@
     ]
   },
   {
-    "base": "Polizeipräsidium Freiburg|wehr: brand in wohnung durch defekten drucker",
-    "status": "active",
-    "title": "Wehr: Brand in Wohnung durch defekten Drucker",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6320139",
-    "first": "2026-07-23T10:57:14Z",
-    "last": "2026-07-23T10:57:14Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Wehr",
-        "lat": 47.6286078,
-        "lon": 7.9046417,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Feuerwehr Stuttgart|küchenbrand in mehrfamilienhaus",
     "status": "contained",
     "title": "Küchenbrand in Mehrfamilienhaus",
