@@ -1,5 +1,25 @@
 [
   {
+    "base": "Feuerwehr Bocholt|brand an wohngebäude - feuerwehr verhindert schlimmeres",
+    "status": "out",
+    "title": "Brand an Wohngebäude - Feuerwehr verhindert Schlimmeres",
+    "link": "https://www.presseportal.de/blaulicht/pm/146407/6338039",
+    "first": "2026-08-22T20:41:34Z",
+    "last": "2026-08-22T20:41:34Z",
+    "places": [
+      {
+        "name": "Bocholt",
+        "lat": 51.8382715,
+        "lon": 6.6148669,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Bocholt",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr und Rettungsdienst Bonn|rauchentwicklung aus einem fenster",
     "status": "out",
     "title": "Rauchentwicklung aus einem Fenster",
