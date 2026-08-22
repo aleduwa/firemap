@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/168361/6337966",
     "first": "2026-08-22T10:17:58Z",
     "last": "2026-08-22T10:17:58Z",
+    "veg": false,
+    "source": "Feuerwehr Bergheim",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Bergheim",
@@ -13,11 +17,7 @@
         "lon": 6.6410004,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Bergheim",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Düsseldorf|erstmeldung: waldbrandhilfe für serbien: eu-waldbrandmodul gfff-v de1 geht erneut in den einsatz",
@@ -6463,26 +6463,6 @@
         "name": "Wehr",
         "lat": 47.6286078,
         "lon": 7.9046417,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Heilbronn|neckar-odenwald-kreis: sachbeschädigung und schwelbrand",
-    "status": "out",
-    "title": "Neckar-Odenwald-Kreis: Sachbeschädigung und Schwelbrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110971/6320025",
-    "first": "2026-07-23T09:20:59Z",
-    "last": "2026-07-23T09:20:59Z",
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Neckar-Odenwald-Kreis",
-        "lat": 49.4678557,
-        "lon": 9.2709386,
         "approx": false
       }
     ]
