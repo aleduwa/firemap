@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115888/6337894",
     "first": "2026-08-22T04:02:20Z",
     "last": "2026-08-22T04:02:20Z",
+    "veg": true,
+    "source": "Feuerwehr und Rettungsdienst Bonn",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Bonn",
@@ -13,11 +17,7 @@
         "lon": 7.1024635,
         "approx": true
       }
-    ],
-    "veg": true,
-    "source": "Feuerwehr und Rettungsdienst Bonn",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|eberbach/rhein-neckar-kreis: brand in mehrfamilienhaus - pressemitteilung nr. 2",
