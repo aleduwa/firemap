@@ -1,5 +1,25 @@
 [
   {
+    "base": "Feuerwehr Leverkusen|eu-waldbrandeinheit zur unterstützung bei ausgedehnten waldbränden in die republik serbien",
+    "status": "active",
+    "title": "EU-Waldbrandeinheit zur Unterstützung bei ausgedehnten Waldbränden in die Republik Serbien",
+    "link": "https://www.presseportal.de/blaulicht/pm/115890/6338012",
+    "first": "2026-08-22T15:28:54Z",
+    "last": "2026-08-22T15:28:54Z",
+    "places": [
+      {
+        "name": "Leverkusen",
+        "lat": 51.0324743,
+        "lon": 6.9881194,
+        "approx": false
+      }
+    ],
+    "veg": true,
+    "source": "Feuerwehr Leverkusen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Bergheim|folgemeldung: großbrand in paffendorf unter kontrolle - umfangreiche nachlöscharbeiten dauern an",
     "status": "out",
     "title": "FOLGEMELDUNG: Großbrand in Paffendorf unter Kontrolle - Umfangreiche Nachlöscharbeiten dauern an",
