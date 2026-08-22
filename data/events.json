@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115869/6338045",
     "first": "2026-08-22T21:17:02Z",
     "last": "2026-08-22T21:17:02Z",
+    "veg": false,
+    "source": "Feuerwehr Dortmund",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Dortmund",
@@ -13,11 +17,7 @@
         "lon": 7.4652789,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Dortmund",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Bocholt|brand an wohngebäude - feuerwehr verhindert schlimmeres",
