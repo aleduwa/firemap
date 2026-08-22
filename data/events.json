@@ -1,5 +1,25 @@
 [
   {
+    "base": "Feuerwehr Düren|rauchentwicklung an bahnstrecke - feuerwehr löscht brennende gartenlaube",
+    "status": "out",
+    "title": "Rauchentwicklung an Bahnstrecke - Feuerwehr löscht brennende Gartenlaube",
+    "link": "https://www.presseportal.de/blaulicht/pm/134173/6338017",
+    "first": "2026-08-22T16:12:50Z",
+    "last": "2026-08-22T16:12:50Z",
+    "places": [
+      {
+        "name": "Düren",
+        "lat": 50.8031684,
+        "lon": 6.4820806,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Düren",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Leverkusen|eu-waldbrandeinheit zur unterstützung bei ausgedehnten waldbränden in die republik serbien",
     "status": "active",
     "title": "EU-Waldbrandeinheit zur Unterstützung bei ausgedehnten Waldbränden in die Republik Serbien",
