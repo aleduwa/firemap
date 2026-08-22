@@ -6534,26 +6534,6 @@
     ]
   },
   {
-    "base": "Polizeipräsidium Pforzheim|(enzkreis) niefern-öschelbronn - fahrzeugbrand auf der autobahn 8 führt zu stundenlanger vollsperrung",
-    "status": "contained",
-    "title": "(Enzkreis) Niefern-Öschelbronn - Fahrzeugbrand auf der Autobahn 8 führt zu stundenlanger Vollsperrung",
-    "link": "https://www.presseportal.de/blaulicht/pm/137462/6319904",
-    "first": "2026-07-23T08:02:58Z",
-    "last": "2026-07-23T08:02:58Z",
-    "veg": false,
-    "source": "Polizeipräsidium Pforzheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Niefern-Öschelbronn",
-        "lat": 48.9089709,
-        "lon": 8.7980729,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Feuerwehr Stuttgart|küchenbrand in mehrfamilienhaus",
     "status": "contained",
     "title": "Küchenbrand in Mehrfamilienhaus",
