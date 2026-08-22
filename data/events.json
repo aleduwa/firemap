@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115890/6338012",
     "first": "2026-08-22T15:28:54Z",
     "last": "2026-08-22T15:28:54Z",
+    "veg": true,
+    "source": "Feuerwehr Leverkusen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Leverkusen",
@@ -13,11 +17,7 @@
         "lon": 6.9881194,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Feuerwehr Leverkusen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Bergheim|folgemeldung: großbrand in paffendorf unter kontrolle - umfangreiche nachlöscharbeiten dauern an",
