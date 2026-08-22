@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115876/6337917",
     "first": "2026-08-22T07:55:22Z",
     "last": "2026-08-22T07:55:22Z",
+    "veg": true,
+    "source": "Feuerwehr Düsseldorf",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Düsseldorf",
@@ -13,11 +17,7 @@
         "lon": 6.7763137,
         "approx": true
       }
-    ],
-    "veg": true,
-    "source": "Feuerwehr Düsseldorf",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr und Rettungsdienst Bonn|waldbrandhilfe für serbien: eu-waldbrandmodul gfff-v de1 geht erneut in den einsatz",
