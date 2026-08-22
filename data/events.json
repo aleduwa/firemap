@@ -1,5 +1,25 @@
 [
   {
+    "base": "Feuerwehr Düsseldorf|erstmeldung: waldbrandhilfe für serbien: eu-waldbrandmodul gfff-v de1 geht erneut in den einsatz",
+    "status": "active",
+    "title": "Erstmeldung: Waldbrandhilfe für Serbien: EU-Waldbrandmodul GFFF-V DE1 geht erneut in den Einsatz",
+    "link": "https://www.presseportal.de/blaulicht/pm/115876/6337917",
+    "first": "2026-08-22T07:55:22Z",
+    "last": "2026-08-22T07:55:22Z",
+    "places": [
+      {
+        "name": "Düsseldorf",
+        "lat": 51.2254018,
+        "lon": 6.7763137,
+        "approx": true
+      }
+    ],
+    "veg": true,
+    "source": "Feuerwehr Düsseldorf",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr und Rettungsdienst Bonn|waldbrandhilfe für serbien: eu-waldbrandmodul gfff-v de1 geht erneut in den einsatz",
     "status": "active",
     "title": "Waldbrandhilfe für Serbien: EU-Waldbrandmodul GFFF-V DE1 geht erneut in den Einsatz",
