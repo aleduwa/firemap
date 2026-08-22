@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/134173/6338017",
     "first": "2026-08-22T16:12:50Z",
     "last": "2026-08-22T16:12:50Z",
+    "veg": false,
+    "source": "Feuerwehr Düren",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Düren",
@@ -13,11 +17,7 @@
         "lon": 6.4820806,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Düren",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Leverkusen|eu-waldbrandeinheit zur unterstützung bei ausgedehnten waldbränden in die republik serbien",
