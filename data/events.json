@@ -6428,26 +6428,6 @@
     ]
   },
   {
-    "base": "Polizeipräsidium Freiburg|rheinfelden: flächenbrand in der goethestraße",
-    "status": "active",
-    "title": "Rheinfelden: Flächenbrand in der Goethestraße",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6320175",
-    "first": "2026-07-23T11:24:30Z",
-    "last": "2026-07-23T11:24:30Z",
-    "veg": true,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Rheinfelden",
-        "lat": 47.5605924,
-        "lon": 7.7861959,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Feuerwehr Stuttgart|küchenbrand in mehrfamilienhaus",
     "status": "contained",
     "title": "Küchenbrand in Mehrfamilienhaus",
