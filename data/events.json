@@ -6408,26 +6408,6 @@
     ]
   },
   {
-    "base": "Polizeipräsidium Freiburg|emmendingen: brand in wohnhaus - ursache unklar",
-    "status": "active",
-    "title": "Emmendingen: Brand in Wohnhaus - Ursache unklar",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6320232",
-    "first": "2026-07-23T11:56:29Z",
-    "last": "2026-07-23T11:56:29Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Emmendingen",
-        "lat": 48.1206565,
-        "lon": 7.850993,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Feuerwehr Stuttgart|küchenbrand in mehrfamilienhaus",
     "status": "contained",
     "title": "Küchenbrand in Mehrfamilienhaus",
