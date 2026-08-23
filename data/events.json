@@ -6502,38 +6502,6 @@
     ]
   },
   {
-    "base": "Polizeipräsidium Konstanz|(tuttlingen / lkr. tuttlingen) weizenfeld gerät aus unbekannter ursache in brand: polizei bittet um hinweise (23.07.2026)",
-    "status": "active",
-    "title": "(Tuttlingen / Lkr. Tuttlingen) Weizenfeld gerät aus unbekannter Ursache in Brand: Polizei bittet um Hinweise (23.07.2026)",
-    "link": "https://www.presseportal.de/blaulicht/pm/110973/6320962",
-    "first": "2026-07-24T12:06:17Z",
-    "last": "2026-07-24T12:06:17Z",
-    "veg": false,
-    "source": "Polizeipräsidium Konstanz",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "(Tuttlingen",
-        "lat": 47.9844315,
-        "lon": 8.8186606,
-        "approx": false
-      },
-      {
-        "name": "zwischen Möhringen und Eßlingen",
-        "lat": 48.73529,
-        "lon": 9.22748,
-        "approx": true
-      },
-      {
-        "name": "Tuttlingen",
-        "lat": 47.9844315,
-        "lon": 8.8186606,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Feuerwehr Stuttgart|küchenbrand in mehrfamilienhaus",
     "status": "contained",
     "title": "Küchenbrand in Mehrfamilienhaus",
