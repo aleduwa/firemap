@@ -1,5 +1,25 @@
 [
   {
+    "base": "Feuerwehr Mönchengladbach|brand in dachgeschosswohnung",
+    "status": "active",
+    "title": "Brand in Dachgeschosswohnung",
+    "link": "https://www.presseportal.de/blaulicht/pm/115879/6338159",
+    "first": "2026-08-23T10:03:50Z",
+    "last": "2026-08-23T10:03:50Z",
+    "places": [
+      {
+        "name": "Mönchengladbach",
+        "lat": 51.1947131,
+        "lon": 6.4353792,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Ulm|(ul) heroldstatt/breithülen - brennendes handtuch führt zu feuerwehreinsatz / am samstag geriet ein handtuch in brand und löste einen großeinsatz der feuerwehr aus",
     "status": "active",
     "title": "(UL) Heroldstatt/Breithülen - Brennendes Handtuch führt zu Feuerwehreinsatz / Am Samstag geriet ein Handtuch in Brand und löste einen Großeinsatz der Feuerwehr aus",
