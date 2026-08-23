@@ -1,5 +1,25 @@
 [
   {
+    "base": "Polizeipräsidium Mannheim|heidelberg: brandgeschehen in der sofienstraße",
+    "status": "out",
+    "title": "Heidelberg: Brandgeschehen in der Sofienstraße",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6338305",
+    "first": "2026-08-23T20:28:40Z",
+    "last": "2026-08-23T20:28:40Z",
+    "places": [
+      {
+        "name": "Heidelberg",
+        "lat": 49.4093582,
+        "lon": 8.694724,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Freiwillige Feuerwehr Hünxe|gemeldeter zimmerbrand",
     "status": "out",
     "title": "Gemeldeter Zimmerbrand",
