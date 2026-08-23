@@ -1,11 +1,41 @@
 [
   {
+    "base": "Polizeipräsidium Ulm|(ul) heroldstatt/breithülen - brennendes handtuch führt zu feuerwehreinsatz / am samstag geriet ein handtuch in brand und löste einen großeinsatz der feuerwehr aus",
+    "status": "active",
+    "title": "(UL) Heroldstatt/Breithülen - Brennendes Handtuch führt zu Feuerwehreinsatz / Am Samstag geriet ein Handtuch in Brand und löste einen Großeinsatz der Feuerwehr aus",
+    "link": "https://www.presseportal.de/blaulicht/pm/110979/6338088",
+    "first": "2026-08-23T07:18:53Z",
+    "last": "2026-08-23T07:18:53Z",
+    "places": [
+      {
+        "name": "Heroldstatt",
+        "lat": 48.4426749,
+        "lon": 9.6599683,
+        "approx": false
+      },
+      {
+        "name": "Breithülen",
+        "lat": 48.4208492,
+        "lon": 9.6407709,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Mannheim|eberbach/rhein-neckar-kreis: brand in der hauptstraße - feuerwehr im einsatz - pm nr. 1",
     "status": "active",
     "title": "Eberbach/Rhein-Neckar-Kreis: Brand in der Hauptstraße - Feuerwehr im Einsatz - PM Nr. 1",
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6338080",
     "first": "2026-08-23T06:58:43Z",
     "last": "2026-08-23T06:58:43Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Eberbach",
@@ -19,11 +49,7 @@
         "lon": 8.7352403,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Dortmund|brennende elektrogeräte",
@@ -6463,52 +6489,6 @@
         "name": "Vogtsburg",
         "lat": 48.0826236,
         "lon": 7.6236716,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Heilbronn|stadt- und landkreis heilbronn: lkw-anhänger in brand, bienenvölker beschädigt, einbruch",
-    "status": "active",
-    "title": "Stadt- und Landkreis Heilbronn: Lkw-Anhänger in Brand, Bienenvölker beschädigt, Einbruch",
-    "link": "https://www.presseportal.de/blaulicht/pm/110971/6320503",
-    "first": "2026-07-24T06:32:48Z",
-    "last": "2026-07-24T06:32:48Z",
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stadt-",
-        "lat": 49.4093582,
-        "lon": 8.694724,
-        "approx": false
-      },
-      {
-        "name": "zwischen Donnbronn und Heilbronn",
-        "lat": 49.12227,
-        "lon": 9.24206,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|mannheim: brand in mehrfamilienhaus",
-    "status": "active",
-    "title": "Mannheim: Brand in Mehrfamilienhaus",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6320497",
-    "first": "2026-07-24T06:26:10Z",
-    "last": "2026-07-24T06:26:10Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Mannheim",
-        "lat": 49.4892913,
-        "lon": 8.4673098,
         "approx": false
       }
     ]
