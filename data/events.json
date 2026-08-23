@@ -1,11 +1,35 @@
 [
   {
+    "base": "Feuerwehr Neuss|holzunterstand im leer stehenden damwildgehege in selikum niedergebrannt | knapp 16.000 liter löschwasser eingesetzt",
+    "status": "active",
+    "title": "Holzunterstand im leer stehenden Damwildgehege in Selikum niedergebrannt | Knapp 16.000 Liter Löschwasser eingesetzt",
+    "link": "https://www.presseportal.de/blaulicht/pm/122045/6338193",
+    "first": "2026-08-23T10:57:28Z",
+    "last": "2026-08-23T10:57:28Z",
+    "places": [
+      {
+        "name": "Neuss",
+        "lat": 51.1981778,
+        "lon": 6.6916476,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Neuss",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Bergheim|abschlussmeldung: großbrand in bergheim nach rund 37 stunden gelöscht",
     "status": "out",
     "title": "ABSCHLUSSMELDUNG: Großbrand in Bergheim nach rund 37 Stunden gelöscht",
     "link": "https://www.presseportal.de/blaulicht/pm/168361/6338176",
     "first": "2026-08-23T10:22:14Z",
     "last": "2026-08-23T10:22:14Z",
+    "veg": false,
+    "source": "Feuerwehr Bergheim",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Bergheim",
@@ -13,11 +37,7 @@
         "lon": 6.6410004,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Bergheim",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Mönchengladbach|brand in dachgeschosswohnung",
