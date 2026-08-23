@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6338088",
     "first": "2026-08-23T07:18:53Z",
     "last": "2026-08-23T07:18:53Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Heroldstatt",
@@ -19,11 +23,7 @@
         "lon": 9.6407709,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|eberbach/rhein-neckar-kreis: brand in der hauptstraße - feuerwehr im einsatz - pm nr. 1",
@@ -6469,26 +6469,6 @@
         "name": "Main-Tauber-Kreis",
         "lat": 49.5713631,
         "lon": 9.6999301,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|vogtsburg: schuppenbrand - feuerwehr verhindert übergreifen der flammen auf wohngebäude",
-    "status": "active",
-    "title": "Vogtsburg: Schuppenbrand - Feuerwehr verhindert Übergreifen der Flammen auf Wohngebäude",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6320539",
-    "first": "2026-07-24T07:00:28Z",
-    "last": "2026-07-24T07:00:28Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Vogtsburg",
-        "lat": 48.0826236,
-        "lon": 7.6236716,
         "approx": false
       }
     ]
