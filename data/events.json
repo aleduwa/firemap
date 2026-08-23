@@ -1,5 +1,31 @@
 [
   {
+    "base": "Polizeipräsidium Mannheim|eberbach/rhein-neckar-kreis: brand in der hauptstraße - feuerwehr im einsatz - pm nr. 1",
+    "status": "active",
+    "title": "Eberbach/Rhein-Neckar-Kreis: Brand in der Hauptstraße - Feuerwehr im Einsatz - PM Nr. 1",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6338080",
+    "first": "2026-08-23T06:58:43Z",
+    "last": "2026-08-23T06:58:43Z",
+    "places": [
+      {
+        "name": "Eberbach",
+        "lat": 49.4635303,
+        "lon": 8.9855203,
+        "approx": false
+      },
+      {
+        "name": "Rhein-Neckar-Kreis",
+        "lat": 49.3684797,
+        "lon": 8.7352403,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Dortmund|brennende elektrogeräte",
     "status": "out",
     "title": "Brennende Elektrogeräte",
@@ -6483,26 +6509,6 @@
         "name": "Mannheim",
         "lat": 49.4892913,
         "lon": 8.4673098,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Stuttgart|brand eins gewerbegebäudes in stuttgart - bad cannstatt - vollbrand des restaurants - mehrere gasflaschen brennen - starke rauchentwicklung",
-    "status": "active",
-    "title": "Brand eins Gewerbegebäudes in Stuttgart - Bad Cannstatt - Vollbrand des Restaurants - mehrere Gasflaschen brennen - starke Rauchentwicklung",
-    "link": "https://www.presseportal.de/blaulicht/pm/161590/6320443",
-    "first": "2026-07-24T03:19:50Z",
-    "last": "2026-07-24T05:19:50Z",
-    "veg": false,
-    "source": "Feuerwehr Stuttgart",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stuttgart",
-        "lat": 48.7784485,
-        "lon": 9.1800132,
         "approx": false
       }
     ]
