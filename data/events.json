@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/133631/6338206",
     "first": "2026-08-23T11:22:17Z",
     "last": "2026-08-23T11:22:17Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Hünxe",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Hünxe",
@@ -13,11 +17,7 @@
         "lon": 6.7660319,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Hünxe",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Neuss|holzunterstand im leer stehenden damwildgehege in selikum niedergebrannt | knapp 16.000 liter löschwasser eingesetzt",
