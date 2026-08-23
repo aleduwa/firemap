@@ -1,5 +1,31 @@
 [
   {
+    "base": "Polizeipräsidium Mannheim|eberbach/rhein-neckar-kreis: brand in der hauptstraße - feuerwehr im einsatz - pm nr. 2",
+    "status": "active",
+    "title": "Eberbach/Rhein-Neckar-Kreis: Brand in der Hauptstraße - Feuerwehr im Einsatz - PM Nr. 2",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6338306",
+    "first": "2026-08-23T22:49:32Z",
+    "last": "2026-08-23T22:49:32Z",
+    "places": [
+      {
+        "name": "Eberbach",
+        "lat": 49.4635303,
+        "lon": 8.9855203,
+        "approx": false
+      },
+      {
+        "name": "Rhein-Neckar-Kreis",
+        "lat": 49.3684797,
+        "lon": 8.7352403,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Mannheim|heidelberg: brandgeschehen in der sofienstraße",
     "status": "out",
     "title": "Heidelberg: Brandgeschehen in der Sofienstraße",
