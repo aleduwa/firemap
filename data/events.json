@@ -1,11 +1,35 @@
 [
   {
+    "base": "Freiwillige Feuerwehr Hünxe|gemeldeter zimmerbrand",
+    "status": "out",
+    "title": "Gemeldeter Zimmerbrand",
+    "link": "https://www.presseportal.de/blaulicht/pm/133631/6338206",
+    "first": "2026-08-23T11:22:17Z",
+    "last": "2026-08-23T11:22:17Z",
+    "places": [
+      {
+        "name": "Hünxe",
+        "lat": 51.6414581,
+        "lon": 6.7660319,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Hünxe",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Neuss|holzunterstand im leer stehenden damwildgehege in selikum niedergebrannt | knapp 16.000 liter löschwasser eingesetzt",
     "status": "active",
     "title": "Holzunterstand im leer stehenden Damwildgehege in Selikum niedergebrannt | Knapp 16.000 Liter Löschwasser eingesetzt",
     "link": "https://www.presseportal.de/blaulicht/pm/122045/6338193",
     "first": "2026-08-23T10:57:28Z",
     "last": "2026-08-23T10:57:28Z",
+    "veg": false,
+    "source": "Feuerwehr Neuss",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Neuss",
@@ -13,11 +37,7 @@
         "lon": 6.6916476,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Neuss",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Bergheim|abschlussmeldung: großbrand in bergheim nach rund 37 stunden gelöscht",
