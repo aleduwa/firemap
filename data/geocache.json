@@ -1,1359 +1,1359 @@
 {
-  "Erstmeldung": null,
-  "Cannstatter": {
-    "lon": 9.2115696,
-    "lat": 48.8374235
-  },
-  "Schelklingen": {
-    "lon": 9.7341832,
-    "lat": 48.3755469
-  },
-  "Waldenbuch": {
-    "lon": 9.1312415,
-    "lat": 48.6374291
-  },
-  "NRW:Waldbrandhilfe für Serbien": null,
-  "Hessigheim": {
-    "lon": 9.1883111,
-    "lat": 48.9937553
-  },
-  "Sindelfingen-Maichingen": {
-    "lon": 8.9653797,
-    "lat": 48.7221767
-  },
-  "Geislingen": {
-    "lon": 9.8356703,
-    "lat": 48.6230397
-  },
-  "Wiernsheim": {
-    "lon": 8.898631,
-    "lat": 48.8854377
-  },
-  "Presseeinladung": null,
-  "Waldstück": null,
-  "Süßen": {
-    "lat": 48.6707866,
-    "lon": 9.7372379
-  },
-  "Mosbach": {
-    "lon": 9.1460205,
-    "lat": 49.3521085
-  },
-  "Bad Liebenzell": {
-    "lon": 8.7321279,
-    "lat": 48.7712716
-  },
-  "(KA) Bretten": {
-    "lat": 49.0366265,
-    "lon": 8.7068077
-  },
-  "Langenelz": {
-    "lon": 9.2056201,
-    "lat": 49.5162376
-  },
-  "Hartschwand": {
-    "lon": 8.066153,
-    "lat": 47.6687787
-  },
-  "2. Alarm": {
-    "lon": 8.6560086,
-    "lat": 49.5416104
-  },
-  "Marbach am Neckar-Rielingshausen": {
-    "lon": 9.3220868,
-    "lat": 48.9677561
-  },
-  "Hausach": {
-    "lon": 8.174972,
-    "lat": 48.2836305
-  },
-  "Möhringen": {
-    "lon": 9.1477922,
-    "lat": 48.7278158
-  },
-  "Bruchsal": {
-    "lon": 8.5980244,
-    "lat": 49.124118
-  },
-  "Zimmerbrand in Mehrfamilienhaus": null,
-  "Mühlhausen": {
-    "lon": 8.7270936,
-    "lat": 49.2481325
-  },
-  "Rems-Murr-Kreis": {
-    "lon": 9.5037124,
-    "lat": 48.8966799
-  },
-  "Neckar-Odenwald-Kreis": {
-    "lon": 9.2709386,
-    "lat": 49.4678557
-  },
-  "NRW:Altreifen brennen": null,
-  "Zell im Wiesental": {
-    "lon": 7.8522798,
-    "lat": 47.7080155
-  },
-  "Geschäftshaus in Stuttgart": null,
-  "Degernau": {
-    "lon": 8.3825555,
-    "lat": 47.6679121
-  },
-  "Rastatt": {
-    "lon": 8.2040452,
-    "lat": 48.8584568
-  },
-  "Berau": {
-    "lon": 8.2587575,
-    "lat": 47.695685
-  },
-  "NRW:Bochum": {
-    "lat": 51.4818111,
-    "lon": 7.2196635
-  },
-  "Eggingen": {
-    "lon": 8.3954399,
-    "lat": 47.6962642
-  },
-  "Stadt-": {
-    "lat": 49.4093582,
-    "lon": 8.694724
-  },
-  "Weinheim": {
-    "lat": 49.5462349,
-    "lon": 8.6717458
-  },
-  "NRW:Kellerbrand in Horst": null,
-  "Brand in Mehrfamilienhaus": null,
-  "NRW:Plettenberg": {
-    "lat": 51.2136798,
-    "lon": 7.8745627
-  },
-  "flüchtet": null,
-  "Fellbach": {
-    "lon": 9.2745228,
-    "lat": 48.814499
-  },
-  "Strittmatt": {
-    "lon": 8.0471098,
-    "lat": 47.6647046
-  },
-  "NRW:Alpen": {
-    "lat": 51.5767474,
-    "lon": 6.5128805
-  },
-  "Brand in Monteurspension": null,
-  "Nattheim": {
-    "lon": 10.2418583,
-    "lat": 48.6995114
-  },
-  "Donnbronn": {
-    "lon": 9.2654701,
-    "lat": 49.1022548
-  },
-  "Herrenberg-Gültstein": {
-    "lon": 8.8794268,
-    "lat": 48.5752062
-  },
-  "Bad Bellingen": {
-    "lon": 7.5569211,
-    "lat": 47.7308736
-  },
-  "Eßlingen": {
-    "lon": 9.3071685,
-    "lat": 48.7427584
-  },
-  "NRW:Alter Güterwagen brannte": null,
-  "Rudersberg": {
-    "lon": 9.5294671,
-    "lat": 48.8849825
-  },
-  "NRW:Aktualisierung Überörtliche Hilfe": null,
-  "Heidenheim": {
-    "lon": 10.152923,
-    "lat": 48.6767637
-  },
-  "Wehr": {
-    "lon": 7.9046417,
-    "lat": 47.6286078
-  },
-  "NRW:Rauchentwicklung an Bahnstrecke": null,
-  "Großrinderfeld": {
-    "lon": 9.7332965,
-    "lat": 49.6657707
-  },
-  "NRW:Goch": {
-    "lon": 6.1593045,
-    "lat": 51.6755765
-  },
-  "Hemsbach": {
-    "lon": 8.6460261,
-    "lat": 49.5919545
-  },
-  "Asch": {
-    "lon": 9.81953,
-    "lat": 48.4379
-  },
-  "NRW:Datteln": {
-    "lat": 51.651468,
-    "lon": 7.3385906
-  },
-  "Lörrach": {
-    "lon": 7.6607218,
-    "lat": 47.6120896
-  },
-  "Stutensee": {
-    "lon": 8.4856806,
-    "lat": 49.0895249
-  },
-  "Positive Silvesterbilanz": null,
-  "Biberach": {
-    "lon": 8.0281354,
-    "lat": 48.3388818
-  },
-  "Ilvesheim im Einsatz": null,
-  "Gschwend": {
-    "lon": 9.7432432,
-    "lat": 48.9341783
-  },
-  "Schwabbach": {
-    "lon": 9.4049229,
-    "lat": 49.1835266
-  },
-  "Schopfheim: Angebranntes Essen auf dem Herd ruft Feuerwehr auf den Plan": null,
-  "Gemarkung Herbolzheim": null,
-  "Dachstuhlbrand in Waghäusel-Kirrlach": null,
-  "Motorraum brennt": null,
-  "Pfinztal": {
-    "lon": 8.5553158,
-    "lat": 48.9918661
-  },
-  "Reichenau": {
-    "lat": 47.6956373,
-    "lon": 9.0592022
-  },
-  "Siebersbach": {
-    "lon": 9.4685447,
-    "lat": 49.0196462
-  },
-  "NRW:Waldbrand am Möhnesee": null,
-  "Neulingen": {
-    "lat": 48.9740793,
-    "lon": 8.7106677
-  },
-  "Oberneudorf": {
-    "lon": 9.2645729,
-    "lat": 49.5022554
-  },
-  "Dachstuhlbrand in Reihenmittelhaus": null,
-  "NRW:Ennepetal": {
-    "lon": 7.3693335,
-    "lat": 51.2967192
-  },
-  "Dossenheim": {
-    "lon": 8.6732428,
-    "lat": 49.449242
-  },
-  "Wahlwies": {
-    "lat": 47.816843,
-    "lon": 8.9673114
-  },
-  "Eisingen": {
-    "lon": 8.668972,
-    "lat": 48.9478916
-  },
-  "Laupheim": {
-    "lon": 9.8837005,
-    "lat": 48.2300738
-  },
-  "Mainau": {
-    "lon": 9.1947327,
-    "lat": 47.7052874
-  },
-  "Odelshofen": {
-    "lon": 7.8799819,
-    "lat": 48.5576902
-  },
-  "Wippingen": {
-    "lon": 9.8632014,
-    "lat": 48.4280124
-  },
-  "Sulzfeld": {
-    "lon": 8.8596844,
-    "lat": 49.1060868
-  },
-  "Flächenbrand in Friedrichstal": null,
-  "Walldorf": {
-    "lat": 49.3032669,
-    "lon": 8.6432056
-  },
-  "NRW:Zeugensuche": null,
   "NRW:Kreis Soest": {
     "lat": 51.5707862,
     "lon": 8.1071503
   },
-  "Lauchringen": {
-    "lat": 47.6279841,
-    "lon": 8.313767
-  },
-  "Riegel am Kaiserstuhl": {
-    "lon": 7.7504953,
-    "lat": 48.1509439
-  },
-  "Mötzingen": {
-    "lon": 8.7747087,
-    "lat": 48.5354913
-  },
-  "NRW:Leverkusen": {
-    "lat": 51.0324743,
-    "lon": 6.9881194
-  },
-  "Erbach": {
-    "lon": 9.8913803,
-    "lat": 48.3274603
-  },
-  "Neuried": {
-    "lon": 7.8221045,
-    "lat": 48.444461
-  },
-  "Mannheim-Schönau": {
-    "lon": 8.4707614,
-    "lat": 49.5534527
-  },
-  "NRW:Wuppertal": {
-    "lon": 7.1780374,
-    "lat": 51.264018
-  },
-  "(Tuttlingen": {
-    "lon": 8.8186606,
-    "lat": 47.9844315
-  },
-  "NRW:Weeze": {
-    "lat": 51.6267298,
-    "lon": 6.2011559
-  },
-  "NRW:Autos beschmiert": null,
-  "Roller ausgebrannt": null,
-  "Nonnenweier": {
-    "lon": 7.7608934,
-    "lat": 48.3476599
-  },
-  "Pforzheim": {
-    "lat": 48.890934,
-    "lon": 8.7025509
-  },
-  "Weil am Rhein": {
-    "lat": 47.6056484,
-    "lon": 7.6120793
-  },
-  "Haslach": {
-    "lat": 48.2769011,
-    "lon": 8.0871643
-  },
-  "Schönfeld": {
-    "lon": 9.8017165,
-    "lat": 49.6755716
-  },
-  "Brand gelegt": null,
-  "Abschlussmeldung": null,
-  "Oberndorf am Neckar": {
-    "lat": 48.2908613,
-    "lon": 8.5711222
-  },
-  "NRW:Bad Honnef-Aegidienberg": {
-    "lon": 7.3208494,
-    "lat": 50.6484524
-  },
-  "Nachwuchs-Retter für Stockach": null,
-  "Kehl": {
-    "lon": 7.8114002,
-    "lat": 48.5733977
-  },
-  "Eberfingen": {
-    "lon": 8.4267497,
-    "lat": 47.720067
-  },
-  "Ühlingen": {
-    "lat": 47.7185032,
-    "lon": 8.317351
-  },
-  "Renningen": {
-    "lon": 8.9347008,
-    "lat": 48.7648163
-  },
-  "Gerchsheim": {
-    "lon": 9.7846947,
-    "lat": 49.7061529
-  },
-  "Blaubeuren": {
-    "lon": 9.7847091,
-    "lat": 48.4121233
-  },
-  "Hohenlohekreis": {
-    "lon": 9.6057331,
-    "lat": 49.2725125
-  },
-  "Sirenenalarm beschäftigt Bürger": null,
-  "Vogtsburg": {
-    "lon": 7.6236716,
-    "lat": 48.0826236
-  },
-  "NRW:Brennender Gasherd": null,
-  "Binzen": {
-    "lat": 47.6312281,
-    "lon": 7.6243455
-  },
-  "Leimen": {
-    "lon": 8.6909951,
-    "lat": 49.3491417
-  },
-  "Uhldingen": {
-    "lon": 9.2400277,
-    "lat": 47.7348858
-  },
-  "St. Blasien": {
-    "lon": 8.131426,
-    "lat": 47.7602106
-  },
-  "Heidelberg-Kirchheim": {
-    "lat": 49.3793639,
-    "lon": 8.6753555
-  },
-  "Saunabrand im Rée-Carré": null,
-  "Plankstadt": {
-    "lon": 8.5930329,
-    "lat": 49.3927294
-  },
-  "Häckselhaufen in Vollbrand": null,
-  "Brand im Stromverteilerkasten": null,
-  "Emmendingen": {
-    "lon": 7.850993,
-    "lat": 48.1206565
-  },
-  "Wohnungsbrand in Calw": null,
-  "NRW:Heiligenhaus": {
-    "lat": 51.32658,
-    "lon": 6.9710401
-  },
-  "Heißausbildung": null,
-  "Schwanau": {
-    "lon": 7.7636557,
-    "lat": 48.3629138
-  },
-  "NRW:Essen": {
-    "lon": 7.0158171,
-    "lat": 51.4582235
-  },
-  "Grasflächenbrand am Kinzigdamm": null,
-  "Eingebrochen": null,
-  "Häckselmaschine": null,
-  "Gartenmauer": null,
-  "Unterensingen (ES)": null,
-  "Orsenhausen": {
-    "lon": 9.9626266,
-    "lat": 48.2103141
-  },
-  "Riedlingen": {
-    "lon": 9.4748796,
-    "lat": 48.1534412
-  },
-  "Friesenheim": {
-    "lon": 7.882329,
-    "lat": 48.3734866
-  },
-  "Allmersbach": {
-    "lon": 9.4679753,
-    "lat": 48.9073065
-  },
-  "Allensbach": {
-    "lat": 47.7168668,
-    "lon": 9.0687005
-  },
-  "Erlenbach": {
-    "lon": 9.2692171,
-    "lat": 49.1703333
-  },
-  "Heroldstatt": {
-    "lon": 9.6599683,
-    "lat": 48.4426749
-  },
-  "NRW:Königswinter": {
-    "lon": 7.1930989,
-    "lat": 50.6739719
-  },
-  "NRW:Mönchengladbach": {
-    "lat": 51.1947131,
-    "lon": 6.4353792
-  },
-  "Wohnungsbrand in Stuttgart-Feuerbach": null,
-  "Oberdischingen": {
-    "lon": 9.8329152,
-    "lat": 48.3025238
-  },
-  "NRW:Menden": {
-    "lat": 51.43779,
-    "lon": 7.7953822
-  },
-  "Brand in Neuweiler": null,
-  "Grenzach-Wyhlen": {
-    "lon": 7.6737981,
-    "lat": 47.5528548
-  },
-  "NRW:Horn-Bad Meinberg": {
-    "lat": 51.8801277,
-    "lon": 8.9731695
-  },
-  "Weier": {
-    "lon": 7.9193502,
-    "lat": 48.4977072
-  },
-  "Marxzell": {
-    "lon": 8.4486959,
-    "lat": 48.8618255
-  },
-  "einer Stadtbahn": null,
-  "NRW:Xanten": {
-    "lon": 6.4543203,
-    "lat": 51.661519
-  },
-  "Ühlingen-Birkendorf": {
-    "lon": 8.301544,
-    "lat": 47.7252375
-  },
-  "Autozug brennt": null,
-  "Staatsanwaltschaft Stuttgart": {
-    "lon": 9.1940305,
-    "lat": 48.7894873
-  },
-  "Großschafhausen": {
-    "lon": 9.9723384,
-    "lat": 48.1909837
-  },
-  "Rötenberg": {
-    "lon": 8.4229004,
-    "lat": 48.3054123
-  },
-  "NRW:260818-4": null,
-  "Gebäudebrand in Zell-Weierbach": null,
-  "Großbrand im Altstadtbereich": null,
-  "Waldshut-Tiengen": {
-    "lon": 8.2408579,
-    "lat": 47.6281754
-  },
-  "Weingarten": {
-    "lon": 9.6431145,
-    "lat": 47.8075299
-  },
-  "NRW:Ratingen": {
-    "lon": 6.8493503,
-    "lat": 51.2973261
-  },
-  "Schlechtbarer": null,
-  "Feueralarm im Regionalexpress": null,
-  "Bahnhofstraße": {
-    "lon": 9.2129547,
-    "lat": 49.1427583
-  },
-  "NRW:Bad Oeynhausen": {
-    "lat": 52.2014399,
-    "lon": 8.7981244
-  },
-  "Hinterlintal": {
-    "lon": 9.7562966,
-    "lat": 48.8967384
-  },
-  "Rippolingen": {
-    "lon": 7.9883658,
-    "lat": 47.5764489
-  },
-  "Marbach am Neckar": {
-    "lon": 9.256396,
-    "lat": 48.9402085
-  },
-  "Schriesheim": {
-    "lat": 49.4751705,
-    "lon": 8.6611149
-  },
-  "Tuttlingen": {
-    "lon": 8.8186606,
-    "lat": 47.9844315
-  },
-  "NRW:Feuer in Elsen": null,
-  "Ettikon": {
-    "lon": 8.267909,
-    "lat": 47.6158593
-  },
-  "Ulm": {
-    "lon": 9.9912458,
-    "lat": 48.3984968
+  "Wohnungsbrand": null,
+  "Siebersbach": {
+    "lon": 9.4685447,
+    "lat": 49.0196462
   },
   "Abschlusslage": null,
-  "Rhein-Neckar-Kreis": {
-    "lon": 8.7352403,
-    "lat": 49.3684797
-  },
-  "Göppingen": {
-    "lon": 9.6541116,
-    "lat": 48.7031377
-  },
-  "Mittwochmorgen": null,
-  "Geisingen": {
-    "lon": 8.6491814,
-    "lat": 47.922968
-  },
-  "Brand in Supermarkt": null,
-  "Görwihl": {
-    "lon": 8.0784862,
-    "lat": 47.6411618
-  },
-  "Mühlacker-Enzberg": {
-    "lon": 8.8007522,
-    "lat": 48.9342674
-  },
-  "Kellerbrand in Wohn-": null,
-  "NRW:Autobrand auf Wanderparkplatz": null,
-  "NRW:Bad Honnef": {
-    "lon": 7.2272534,
-    "lat": 50.6448582
-  },
-  "Wimsheim": {
-    "lon": 8.827343,
-    "lat": 48.852109
-  },
-  "Windschläg": {
-    "lon": 7.957775,
-    "lat": 48.5156179
-  },
-  "Iffezheim": {
-    "lon": 8.1421337,
-    "lat": 48.8209175
-  },
-  "Feuer in Kindergarten": null,
-  "Friedrichstraße": {
-    "lon": 8.4634707,
-    "lat": 49.4849591
-  },
+  "Dachstuhlbrand in Waghäusel-Kirrlach": null,
   "Ludwigsburg-Eglosheim": {
     "lon": 9.1711704,
     "lat": 48.909746
   },
-  "(Enzkreis) Neulingen": {
-    "lon": 8.7641411,
-    "lat": 48.9271584
-  },
-  "Ilmspan": {
-    "lon": 9.7908705,
-    "lat": 49.6658631
-  },
-  "Brand in Einfamilienhaus": null,
-  "NRW:Neuss": {
-    "lat": 51.1981778,
-    "lon": 6.6916476
-  },
-  "NRW:Grevenbroich": {
-    "lon": 6.5848937,
-    "lat": 51.0862467
-  },
-  "Freiberg am Neckar-Beihingen": {
-    "lon": 9.1908965,
-    "lat": 48.9420738
-  },
-  "Schwendi": {
-    "lon": 9.9784952,
-    "lat": 48.1756438
-  },
-  "Allmendingen": {
-    "lon": 9.7244123,
-    "lat": 48.3282665
-  },
-  "NRW:Einsatzerfolg beim Rekord-Waldbrand": null,
-  "Seekirch": {
-    "lon": 9.6423439,
-    "lat": 48.1059361
-  },
-  "NRW:Voerde": {
-    "lat": 51.5975224,
-    "lon": 6.6811994
-  },
-  "Wohnhaus in Flammen": null,
-  "Remshalden": {
-    "lat": 48.8119166,
-    "lon": 9.4330544
-  },
-  "Bohlsbach": {
-    "lon": 7.9471514,
-    "lat": 48.4959593
-  },
-  "Schluchsee-Blasiwald": {
-    "lon": 8.1515136,
-    "lat": 47.8174889
-  },
-  "Hohenhaßlach": null,
-  "March": {
-    "lon": 7.7790038,
-    "lat": 48.0578573
-  },
-  "NRW:ABSCHLUSSMELDUNG": null,
-  "Nagold": {
-    "lon": 8.7234942,
-    "lat": 48.5512399
-  },
-  "Hafental": {
-    "lon": 9.7400812,
-    "lat": 48.8926032
-  },
-  "Mittelbiberach": {
-    "lon": 9.7479621,
-    "lat": 48.0877864
-  },
-  "Altlußheim": {
-    "lat": 49.3004929,
-    "lon": 8.4981809
-  },
-  "Efringen-Kirchen und Eimeldingen": null,
-  "Küssaberg": {
-    "lon": 8.3212852,
-    "lat": 47.601678
-  },
-  "BAB6": null,
-  "Stockach": {
-    "lat": 47.8530941,
-    "lon": 9.0134524
-  },
-  "Oppenau": {
-    "lon": 8.1646682,
-    "lat": 48.4751652
-  },
-  "Schorndorf-Schornbach": {
-    "lon": 9.5084117,
-    "lat": 48.8326535
-  },
-  "NRW:Paderborn": {
-    "lat": 51.7177044,
-    "lon": 8.752653
-  },
-  "Dachsberg": {
-    "lon": 8.1028547,
-    "lat": 47.7277539
-  },
-  "H2 VU PKW": null,
-  "Urberg": {
-    "lon": 8.1241619,
-    "lat": 47.7349462
-  },
-  "Goldscheuer": {
-    "lon": 7.8253778,
-    "lat": 48.508866
-  },
-  "Möggingen": {
-    "lat": 47.765886,
-    "lon": 9.0028244
-  },
-  "NRW:Düsseldorf": {
-    "lat": 51.2254018,
-    "lon": 6.7763137
-  },
-  "NRW:Iserlohn": {
-    "lon": 7.6999713,
-    "lat": 51.3746778
-  },
-  "Breithülen": {
-    "lon": 9.6407709,
-    "lat": 48.4208492
-  },
-  "Ahornweg": {
-    "lon": 8.7036801,
-    "lat": 49.3515198
-  },
-  "NRW:Feuer am Freibad": null,
-  "Reihen": {
-    "lon": 8.9157223,
-    "lat": 49.2171053
-  },
-  "Staatsanwaltschaft": {
-    "lon": 9.1719411,
-    "lat": 47.6618262
-  },
-  "Wutöschingen": {
-    "lon": 8.3651806,
-    "lat": 47.6596219
-  },
-  "Wiesloch": {
-    "lon": 8.698707,
-    "lat": 49.2942599
-  },
-  "NRW:Erstmeldung": null,
-  "NRW:Heuballenmiete in Vollbrand": null,
-  "Aichhalden": {
-    "lon": 8.399562,
-    "lat": 48.2679292
-  },
-  "Geschäftshaus": {
-    "lat": 49.4948559,
-    "lon": 9.7712345
-  },
-  "NRW:Wohnungsbrand in Essen-Frohnhausen": null,
-  "Bauschlott": {
-    "lat": 48.967915,
-    "lon": 8.7249403
-  },
-  "Zell am Harmersbach": {
-    "lon": 8.0653343,
-    "lat": 48.3482133
-  },
-  "Entstehungsbrand in Straßenbahn": null,
-  "Lauchringen: Brand auf Betriebsgelände": null,
-  "NRW:Düren": {
-    "lat": 50.8031684,
-    "lon": 6.4820806
-  },
-  "NRW:PKW in Brand": null,
-  "NRW:Schermbeck": {
-    "lon": 6.8391929,
-    "lat": 51.6898739
-  },
-  "Sandhausen": {
-    "lon": 8.6595053,
-    "lat": 49.3424055
-  },
-  "Orsingen": {
-    "lat": 47.8357983,
-    "lon": 8.9293656
-  },
-  "Geparkte Autos ausgebrannt": null,
-  "NRW:Kamp-Lintfort": {
-    "lat": 51.5017981,
-    "lon": 6.547923
-  },
-  "Birenbach": {
-    "lon": 9.6609218,
-    "lat": 48.7491387
-  },
-  "Folgemeldung 5": null,
-  "Brand in Trafostation": null,
-  "Folgemeldung 2": null,
-  "Stuttgart-Zuffenhausen": {
-    "lon": 9.16721,
-    "lat": 48.8295258
-  },
-  "Sinsheim": {
-    "lon": 8.8989482,
-    "lat": 49.2344637
-  },
-  "PP Ravensburg": null,
-  "Sachsenheim": {
-    "lat": 48.9877155,
-    "lon": 9.0453493
-  },
-  "Harpolingen": {
-    "lon": 8.000997,
-    "lat": 47.5723455
-  },
-  "Bühl": {
-    "lon": 8.134423,
-    "lat": 48.6945066
-  },
-  "NRW:Dortmund": {
-    "lon": 7.4652789,
-    "lat": 51.5142273
-  },
-  "Eberstadt": {
-    "lon": 9.3205345,
-    "lat": 49.1808035
-  },
-  "Remetschwiel": {
-    "lon": 8.1506958,
-    "lat": 47.6771916
-  },
-  "Neuried-Altenheim": {
-    "lat": 48.4646082,
-    "lon": 7.8090487
-  },
-  "fünf Gebäude betroffen": null,
-  "Karlsruhe": {
-    "lon": 8.4034195,
-    "lat": 49.0068705
-  },
-  "Forstverwaltung": {
-    "lon": 8.9385217,
-    "lat": 48.4779193
-  },
-  "Löffingen-Unadingen": {
-    "lon": 8.4070082,
-    "lat": 47.8807628
-  },
-  "Großbrand in Wäscherei": null,
-  "Dettingen": {
-    "lon": 8.9343816,
-    "lat": 48.4368485
-  },
-  "Niefern-Öschelbronn": {
-    "lon": 8.7980729,
-    "lat": 48.9089709
-  },
-  "Laufender Einsatz": null,
-  "Ludwigsburg": {
-    "lon": 9.1895147,
-    "lat": 48.8953937
-  },
-  "Waldshut": {
-    "lon": 8.2120605,
-    "lat": 47.6246179
-  },
-  "Kämpfelbach": {
-    "lon": 8.6268392,
-    "lat": 48.9387381
-  },
-  "(Oberndorf am Neckar": {
-    "lon": 8.5711222,
-    "lat": 48.2908613
-  },
-  "Baden-Baden": {
-    "lat": 48.7610716,
-    "lon": 8.239959
-  },
-  "Falschfahrer verursacht Unfall": null,
-  "NRW:Abmarsch": null,
-  "Winterbach": {
-    "lat": 48.7995203,
-    "lon": 9.4793454
-  },
-  "Offenburger Ei": {
-    "lon": 7.9055334,
-    "lat": 48.4722278
-  },
-  "Lahr": {
-    "lon": 7.8710825,
-    "lat": 48.338896
-  },
-  "Atom und Chemie": null,
-  "Eberbach": {
-    "lon": 8.9855203,
-    "lat": 49.4635303
-  },
-  "Stühlingen- Schwaningen": {
-    "lon": 8.4288701,
-    "lat": 47.7786649
-  },
-  "NRW:FOLGEMELDUNG": null,
-  "Heidelberg": {
-    "lon": 8.694724,
-    "lat": 49.4093582
-  },
-  "NRW:Schieder-Schwalenberg": {
-    "lat": 51.8980505,
-    "lon": 9.1751832
-  },
-  "Wohnungsbrand": null,
-  "Brand in Dachgeschosswohnung": null,
-  "Dagersheim": {
-    "lat": 48.691828,
-    "lon": 8.9522805
-  },
-  "Vegetationsbrand": null,
-  "Mannheim-Feudenheim": {
-    "lon": 8.5174925,
-    "lat": 49.4865772
-  },
-  "NRW:Anforderung": null,
-  "Sindelfingen": {
-    "lon": 9.0035455,
-    "lat": 48.7084162
-  },
-  "Willstätt": {
-    "lon": 7.8934991,
-    "lat": 48.5415314
-  },
-  "Kirchardt": {
-    "lon": 8.9915645,
-    "lat": 49.2060256
-  },
-  "NRW:Anzeige nach Lagerfeuer": null,
-  "Langenau": {
-    "lon": 10.1210951,
-    "lat": 48.4995693
-  },
-  "NRW:Bergheim": {
-    "lat": 50.9540457,
-    "lon": 6.6410004
-  },
-  "Heilbronn": {
-    "lon": 9.218655,
-    "lat": 49.142291
-  },
-  "Main-Tauber-Kreis": {
-    "lon": 9.6999301,
-    "lat": 49.5713631
-  },
-  "Kellerbrand in Mehrfamilienhaus": null,
-  "Brand in Tiefgarage": null,
-  "POL-FR: Landkreis Waldshut": null,
-  "Stausee ohne See": null,
-  "Müllen": {
-    "lon": 7.8367168,
-    "lat": 48.4694692
-  },
-  "Polizei Ludwigsburg": {
-    "lon": 9.1765659,
-    "lat": 48.9106087
-  },
-  "NRW:Bergkamen": {
-    "lon": 7.6362876,
-    "lat": 51.6149389
-  },
-  "NRW:Werne": {
-    "lon": 7.6355052,
-    "lat": 51.66268
-  },
-  "NRW:Remscheid": {
-    "lat": 51.1798706,
-    "lon": 7.1943544
-  },
-  "Dienstagvormittag": null,
-  "Karlsbad": {
-    "lon": 8.5088293,
-    "lat": 48.9038411
-  },
-  "NRW:Sonsbeck": {
-    "lon": 6.3760442,
-    "lat": 51.6094069
-  },
-  "Renchen": {
-    "lon": 8.0143673,
-    "lat": 48.5873988
-  },
-  "PKW im Vollbrand": null,
-  "NRW:Königswinter-Ittenbach": null,
-  "Folgemeldung 4": null,
-  "Wohnungsbrand in Pforzheim": null,
-  "Korntaler Straße": {
-    "lon": 9.1534188,
-    "lat": 48.843359
-  },
-  "Waldbach": {
-    "lon": 9.4076444,
-    "lat": 49.163546
-  },
-  "Müllfahrzeug": null,
   "NRW:Mülheim an der Ruhr": {
     "lon": 6.8829192,
     "lat": 51.4272925
   },
-  "Mannheim": {
-    "lon": 8.4673098,
-    "lat": 49.4892913
+  "Unterensingen (ES)": null,
+  "Folgemeldung 5": null,
+  "NRW:Anforderung": null,
+  "NRW:Abmarsch": null,
+  "Brand im Stromverteilerkasten": null,
+  "Schorndorf-Schornbach": {
+    "lon": 9.5084117,
+    "lat": 48.8326535
   },
-  "Rheinfelden": {
-    "lon": 7.7861959,
-    "lat": 47.5605924
-  },
-  "Ostalbkreis": {
-    "lon": 10.0337317,
-    "lat": 48.8777738
-  },
-  "NRW:in Waldstück": null,
-  "Bad Säckingen": {
-    "lat": 47.5527459,
-    "lon": 7.9410556
-  },
-  "Langenenslingen": {
-    "lon": 9.3770185,
-    "lat": 48.1480101
-  },
-  "Mannheim-Neckarstadt": {
-    "lon": 8.4606257,
-    "lat": 49.5046094
-  },
-  "Update": {
-    "lat": 48.9594064,
-    "lon": 9.1292368
-  },
-  "St.Leon-Rot": {
-    "lon": 8.6142616,
-    "lat": 49.2671326
-  },
-  "Schmieheim": {
-    "lon": 7.8578952,
-    "lat": 48.2786884
-  },
-  "NRW:Brand an Wohngebäude": null,
-  "Schwetzingen": {
-    "lon": 8.5735135,
-    "lat": 49.3832919
-  },
-  "Freiburg-Hochdorf": {
-    "lon": 7.8094808,
-    "lat": 48.0369763
-  },
-  "Blaustein": {
-    "lon": 9.9187625,
-    "lat": 48.4159247
-  },
-  "Gartenhütte niedergebrannt": null,
-  "Ditzingen": {
-    "lon": 9.0658446,
-    "lat": 48.8263983
-  },
-  "Dachgeschosswohnung im Vollbrand": null,
-  "Weilheim": {
-    "lon": 8.2413047,
-    "lat": 47.6582006
-  },
-  "Kellerbrand in Weinheim": null,
-  "BAB 5": {
-    "lat": 48.0640897,
-    "lon": 10.1396324
-  },
-  "Tauberbischofsheim": {
-    "lon": 9.6627138,
-    "lat": 49.6229682
-  },
-  "Kippenheim": {
-    "lon": 7.8235952,
-    "lat": 48.2952196
-  },
-  "NRW:Hünxe": {
-    "lat": 51.6414581,
-    "lon": 6.7660319
-  },
-  "Malsch": {
-    "lon": 8.6829484,
-    "lat": 49.2452537
-  },
-  "NRW:Gelsenkirchen": {
-    "lon": 7.0960124,
-    "lat": 51.5110321
-  },
-  "Stuttgart": {
-    "lat": 48.7784485,
-    "lon": 9.1800132
-  },
-  "Eberhardzell": {
-    "lon": 9.8233669,
-    "lat": 48.0039811
-  },
-  "Böblingen": {
-    "lat": 48.684969,
-    "lon": 9.0113444
-  },
-  "NRW:Bocholt": {
-    "lat": 51.8382715,
-    "lon": 6.6148669
-  },
-  "NRW:Wanheimerort": {
-    "lat": 51.4022807,
-    "lon": 6.7595258
-  },
-  "Feueralarm im Freizeitbad": null,
-  "Konstanz": {
-    "lat": 47.659216,
-    "lon": 9.1750718
-  },
-  "Steißlingen": {
-    "lat": 47.7995118,
-    "lon": 8.9278314
-  },
-  "Lauchringen: Feuer noch vor Eintreffen der Einsatzkräfte gelöscht": null,
-  "Schwieberdingen": {
-    "lon": 9.0778484,
-    "lat": 48.8749991
-  },
-  "Eschenbach": {
-    "lon": 9.676742,
-    "lat": 48.6622903
-  },
-  "Altenburg": {
-    "lon": 9.1865684,
-    "lat": 48.5453923
-  },
-  "Allmerbach im Tal": null,
-  "Achern": {
-    "lat": 48.6300161,
-    "lon": 8.0735581
-  },
-  "Neckar-Odenwald-Kreis Haßmersheim": {
-    "lon": 9.1022423,
-    "lat": 49.3260547
-  },
-  "Freiburg-Betzenhausen": {
-    "lon": 7.8040107,
-    "lat": 48.005962
-  },
-  "&#1042;3": {
-    "lat": 49.1696503,
-    "lon": 9.9214688
-  },
-  "Holzgerlingen": {
-    "lon": 9.0115732,
-    "lat": 48.6392119
-  },
-  "NRW:Bonn": {
-    "lat": 50.7352621,
-    "lon": 7.1024635
-  },
-  "NRW:Solingen": {
-    "lat": 51.1721629,
-    "lon": 7.0845893
-  },
-  "Löffingen": {
-    "lon": 8.3446627,
-    "lat": 47.8839004
-  },
-  "Freudental": {
-    "lat": 47.7483761,
-    "lon": 9.0795972
-  },
-  "NRW:Sprockhövel": {
-    "lon": 7.2485905,
-    "lat": 51.3666572
-  },
-  "vier verletzte Personen": null,
-  "Brand 2": {
-    "lon": 8.4628044,
-    "lat": 48.5047248
-  },
-  "Unterensingen (ES": null,
-  "Freitag": {
-    "lon": 9.9908348,
-    "lat": 48.400415
-  },
-  "Fürfeld": {
-    "lon": 9.0583168,
-    "lat": 49.2089363
-  },
-  "Bretten": {
-    "lat": 49.0366265,
-    "lon": 8.7068077
-  },
-  "Horb am Neckar": {
-    "lon": 8.6914794,
-    "lat": 48.4447943
-  },
-  "Unteruhldingen": {
-    "lon": 9.2319644,
-    "lat": 47.7219137
-  },
-  "Dettenheim": {
-    "lon": 8.4190139,
-    "lat": 49.1723804
-  },
-  "Rosensteinstraße": {
-    "lon": 9.1922211,
-    "lat": 48.7940046
-  },
-  "Calw e.V": {
-    "lon": 8.7557644,
-    "lat": 48.7041219
-  },
-  "Schönau im Schwarzwald": {
-    "lon": 7.8933977,
-    "lat": 47.7861792
-  },
-  "Folgemeldung 3": null,
-  "Stuttgart-Giebel": {
-    "lon": 9.0903021,
-    "lat": 48.8035995
-  },
-  "NRW:Pkw in Vollbrand": null,
-  "Böblingen-Dagersheim": {
-    "lon": 8.9522805,
-    "lat": 48.691828
-  },
-  "Papiermülltonne in Flammen": null,
-  "Nordrach": {
-    "lon": 8.083653,
-    "lat": 48.4004384
-  },
-  "Offenburg": {
-    "lat": 48.4695984,
-    "lon": 7.9429235
-  },
-  "Feuerwehr": {
-    "lon": 7.9683524,
-    "lat": 47.5578227
-  },
-  "Lautern": {
-    "lon": 9.9737085,
-    "lat": 48.8014349
-  },
-  "Vorbildhaftes Verhalten": null,
-  "Krenkingen": {
-    "lat": 47.6823462,
-    "lon": 8.3054526
-  },
-  "Besigheim": {
-    "lon": 9.1417523,
-    "lat": 48.9996364
-  },
-  "NRW:Dinslaken": {
-    "lat": 51.5623618,
-    "lon": 6.7345106
-  },
-  "Schluchsee": {
-    "lon": 8.177035,
-    "lat": 47.8185928
-  },
-  "Mutmaßlichen Brandstifter festgenommen": null,
-  "Jestetten": {
-    "lon": 8.56667,
-    "lat": 47.65
-  },
-  "NRW:Feuer auf Grünfläche": null,
-  "Mittwochabend im Bereich": null,
-  "(Geisingen": {
-    "lon": 8.6491814,
-    "lat": 47.922968
-  },
-  "Radolfzell": {
-    "lat": 47.7372802,
-    "lon": 8.9702755
-  },
-  "PM1": {
-    "lon": 8.3951659,
-    "lat": 49.0123104
+  "Orsenhausen": {
+    "lon": 9.9626266,
+    "lat": 48.2103141
   },
   "Ebersbach": {
     "lon": 9.5791447,
     "lat": 47.9554246
   },
-  "Geschäftsgebäude": {
-    "lon": 8.5894604,
-    "lat": 49.3923963
+  "Mannheim-Schönau": {
+    "lon": 8.4707614,
+    "lat": 49.5534527
   },
-  "Feuer im Weinberg": null,
-  "Bodman-Ludwigshafen": {
-    "lon": 9.0359649,
-    "lat": 47.8144912
+  "Berau": {
+    "lon": 8.2587575,
+    "lat": 47.695685
+  },
+  "Freiburg-Betzenhausen": {
+    "lon": 7.8040107,
+    "lat": 48.005962
+  },
+  "Heidelberg-Kirchheim": {
+    "lat": 49.3793639,
+    "lon": 8.6753555
+  },
+  "Wehr": {
+    "lon": 7.9046417,
+    "lat": 47.6286078
+  },
+  "Waldstück": null,
+  "Grenzach-Wyhlen": {
+    "lon": 7.6737981,
+    "lat": 47.5528548
+  },
+  "Kehl": {
+    "lon": 7.8114002,
+    "lat": 48.5733977
+  },
+  "Schönau im Schwarzwald": {
+    "lon": 7.8933977,
+    "lat": 47.7861792
+  },
+  "Donnbronn": {
+    "lon": 9.2654701,
+    "lat": 49.1022548
+  },
+  "Folgemeldung 1": null,
+  "Stuttgart": {
+    "lat": 48.7784485,
+    "lon": 9.1800132
+  },
+  "Freiberg am Neckar-Beihingen": {
+    "lon": 9.1908965,
+    "lat": 48.9420738
+  },
+  "Stuttgart-Giebel": {
+    "lon": 9.0903021,
+    "lat": 48.8035995
+  },
+  "Pforzheim": {
+    "lat": 48.890934,
+    "lon": 8.7025509
+  },
+  "NRW:Plettenberg": {
+    "lat": 51.2136798,
+    "lon": 7.8745627
+  },
+  "Konstanz": {
+    "lat": 47.659216,
+    "lon": 9.1750718
+  },
+  "Abschlussmeldung": null,
+  "Feuer in Kindergarten": null,
+  "Mannheim-Feudenheim": {
+    "lon": 8.5174925,
+    "lat": 49.4865772
+  },
+  "Remshalden": {
+    "lat": 48.8119166,
+    "lon": 9.4330544
+  },
+  "Tauberbischofsheim": {
+    "lon": 9.6627138,
+    "lat": 49.6229682
+  },
+  "Freitag": {
+    "lon": 9.9908348,
+    "lat": 48.400415
+  },
+  "Bad Bellingen": {
+    "lon": 7.5569211,
+    "lat": 47.7308736
+  },
+  "Renchen": {
+    "lon": 8.0143673,
+    "lat": 48.5873988
+  },
+  "Roller ausgebrannt": null,
+  "(Geisingen": {
+    "lon": 8.6491814,
+    "lat": 47.922968
+  },
+  "Mannheim": {
+    "lon": 8.4673098,
+    "lat": 49.4892913
+  },
+  "Feuerwehr": {
+    "lon": 7.9683524,
+    "lat": 47.5578227
+  },
+  "Neuried-Altenheim": {
+    "lat": 48.4646082,
+    "lon": 7.8090487
+  },
+  "Radolfzell": {
+    "lat": 47.7372802,
+    "lon": 8.9702755
+  },
+  "Rippolingen": {
+    "lon": 7.9883658,
+    "lat": 47.5764489
+  },
+  "Möggingen": {
+    "lat": 47.765886,
+    "lon": 9.0028244
+  },
+  "NRW:Bad Oeynhausen": {
+    "lat": 52.2014399,
+    "lon": 8.7981244
+  },
+  "Geschäftshaus in Stuttgart": null,
+  "NRW:Einsatzerfolg beim Rekord-Waldbrand": null,
+  "Flächenbrand in Friedrichstal": null,
+  "Schwanau": {
+    "lon": 7.7636557,
+    "lat": 48.3629138
+  },
+  "Strittmatt": {
+    "lon": 8.0471098,
+    "lat": 47.6647046
+  },
+  "Stadt-": {
+    "lat": 49.4093582,
+    "lon": 8.694724
+  },
+  "2. Alarm": {
+    "lon": 8.6560086,
+    "lat": 49.5416104
+  },
+  "Brand in Trafostation": null,
+  "Hemsbach": {
+    "lon": 8.6460261,
+    "lat": 49.5919545
+  },
+  "Main-Tauber-Kreis": {
+    "lon": 9.6999301,
+    "lat": 49.5713631
+  },
+  "Sinsheim": {
+    "lon": 8.8989482,
+    "lat": 49.2344637
+  },
+  "NRW:in Waldstück": null,
+  "Zell am Harmersbach": {
+    "lon": 8.0653343,
+    "lat": 48.3482133
+  },
+  "Rhein-Neckar-Kreis": {
+    "lon": 8.7352403,
+    "lat": 49.3684797
+  },
+  "Grasflächenbrand am Kinzigdamm": null,
+  "NRW:Pkw in Vollbrand": null,
+  "NRW:Waldbrand am Möhnesee": null,
+  "NRW:Bad Honnef-Aegidienberg": {
+    "lon": 7.3208494,
+    "lat": 50.6484524
+  },
+  "Dachstuhlbrand in Reihenmittelhaus": null,
+  "Walldorf": {
+    "lat": 49.3032669,
+    "lon": 8.6432056
+  },
+  "Geschäftshaus": {
+    "lat": 49.4948559,
+    "lon": 9.7712345
+  },
+  "Allensbach": {
+    "lat": 47.7168668,
+    "lon": 9.0687005
+  },
+  "Görwihl": {
+    "lon": 8.0784862,
+    "lat": 47.6411618
+  },
+  "NRW:Brand an Wohngebäude": null,
+  "Eberstadt": {
+    "lon": 9.3205345,
+    "lat": 49.1808035
+  },
+  "NRW:Gelsenkirchen": {
+    "lon": 7.0960124,
+    "lat": 51.5110321
+  },
+  "Schluchsee-Blasiwald": {
+    "lon": 8.1515136,
+    "lat": 47.8174889
+  },
+  "Kippenheim": {
+    "lon": 7.8235952,
+    "lat": 48.2952196
+  },
+  "Weilheim": {
+    "lon": 8.2413047,
+    "lat": 47.6582006
+  },
+  "Vogtsburg": {
+    "lon": 7.6236716,
+    "lat": 48.0826236
+  },
+  "Großbrand in Wäscherei": null,
+  "Weil am Rhein": {
+    "lat": 47.6056484,
+    "lon": 7.6120793
+  },
+  "Unteruhldingen": {
+    "lon": 9.2319644,
+    "lat": 47.7219137
+  },
+  "Mötzingen": {
+    "lon": 8.7747087,
+    "lat": 48.5354913
+  },
+  "Laufender Einsatz": null,
+  "Friedrichstraße": {
+    "lon": 8.4634707,
+    "lat": 49.4849591
+  },
+  "Krenkingen": {
+    "lat": 47.6823462,
+    "lon": 8.3054526
+  },
+  "Ditzingen": {
+    "lon": 9.0658446,
+    "lat": 48.8263983
+  },
+  "Nordrach": {
+    "lon": 8.083653,
+    "lat": 48.4004384
+  },
+  "Dettenheim": {
+    "lon": 8.4190139,
+    "lat": 49.1723804
+  },
+  "Böblingen": {
+    "lat": 48.684969,
+    "lon": 9.0113444
+  },
+  "Brand gelegt": null,
+  "Urberg": {
+    "lon": 8.1241619,
+    "lat": 47.7349462
+  },
+  "Mittwochabend im Bereich": null,
+  "Seekirch": {
+    "lon": 9.6423439,
+    "lat": 48.1059361
+  },
+  "NRW:Bocholt": {
+    "lat": 51.8382715,
+    "lon": 6.6148669
+  },
+  "NRW:Horn-Bad Meinberg": {
+    "lat": 51.8801277,
+    "lon": 8.9731695
+  },
+  "Allmendingen": {
+    "lon": 9.7244123,
+    "lat": 48.3282665
+  },
+  "Sindelfingen": {
+    "lon": 9.0035455,
+    "lat": 48.7084162
+  },
+  "BAB 5": {
+    "lat": 48.0640897,
+    "lon": 10.1396324
+  },
+  "NRW:Solingen": {
+    "lat": 51.1721629,
+    "lon": 7.0845893
+  },
+  "Stühlingen- Schwaningen": {
+    "lon": 8.4288701,
+    "lat": 47.7786649
+  },
+  "Dachsberg": {
+    "lon": 8.1028547,
+    "lat": 47.7277539
+  },
+  "Hessigheim": {
+    "lon": 9.1883111,
+    "lat": 48.9937553
+  },
+  "Freudental": {
+    "lat": 47.7483761,
+    "lon": 9.0795972
+  },
+  "Kämpfelbach": {
+    "lon": 8.6268392,
+    "lat": 48.9387381
   },
   "Steinach": {
     "lon": 8.057394,
     "lat": 48.3030536
   },
-  "Laufenburg": {
-    "lat": 47.5671976,
-    "lon": 8.0599414
+  "Marbach am Neckar-Rielingshausen": {
+    "lon": 9.3220868,
+    "lat": 48.9677561
   },
-  "Sonntagmittag": null,
+  "Bad Säckingen": {
+    "lat": 47.5527459,
+    "lon": 7.9410556
+  },
+  "Eggingen": {
+    "lon": 8.3954399,
+    "lat": 47.6962642
+  },
+  "NRW:Leverkusen": {
+    "lat": 51.0324743,
+    "lon": 6.9881194
+  },
+  "Tuttlingen": {
+    "lon": 8.8186606,
+    "lat": 47.9844315
+  },
+  "Schönfeld": {
+    "lon": 9.8017165,
+    "lat": 49.6755716
+  },
+  "Offenburg": {
+    "lat": 48.4695984,
+    "lon": 7.9429235
+  },
+  "NRW:Brennender Gasherd": null,
+  "Weinheim": {
+    "lat": 49.5462349,
+    "lon": 8.6717458
+  },
+  "Forstverwaltung": {
+    "lon": 8.9385217,
+    "lat": 48.4779193
+  },
+  "Sandhausen": {
+    "lon": 8.6595053,
+    "lat": 49.3424055
+  },
+  "Jestetten": {
+    "lon": 8.56667,
+    "lat": 47.65
+  },
+  "NRW:Datteln": {
+    "lat": 51.651468,
+    "lon": 7.3385906
+  },
+  "Stausee ohne See": null,
+  "Binzen": {
+    "lat": 47.6312281,
+    "lon": 7.6243455
+  },
+  "Wohnungsbrand in Calw": null,
+  "Allmersbach": {
+    "lon": 9.4679753,
+    "lat": 48.9073065
+  },
+  "(Oberndorf am Neckar": {
+    "lon": 8.5711222,
+    "lat": 48.2908613
+  },
+  "Schluchsee": {
+    "lon": 8.177035,
+    "lat": 47.8185928
+  },
+  "Oberdischingen": {
+    "lon": 9.8329152,
+    "lat": 48.3025238
+  },
+  "Feueralarm im Freizeitbad": null,
+  "Saunabrand im Rée-Carré": null,
+  "Gerchsheim": {
+    "lon": 9.7846947,
+    "lat": 49.7061529
+  },
+  "Marbach am Neckar": {
+    "lon": 9.256396,
+    "lat": 48.9402085
+  },
+  "NRW:Bergkamen": {
+    "lon": 7.6362876,
+    "lat": 51.6149389
+  },
+  "Häckselhaufen in Vollbrand": null,
+  "Neckar-Odenwald-Kreis Haßmersheim": {
+    "lon": 9.1022423,
+    "lat": 49.3260547
+  },
+  "Allmerbach im Tal": null,
+  "NRW:Neuss": {
+    "lat": 51.1981778,
+    "lon": 6.6916476
+  },
+  "(Tuttlingen": {
+    "lon": 8.8186606,
+    "lat": 47.9844315
+  },
+  "Entstehungsbrand in Straßenbahn": null,
+  "PKW im Vollbrand": null,
+  "Zell im Wiesental": {
+    "lon": 7.8522798,
+    "lat": 47.7080155
+  },
+  "Mannheim-Neckarstadt": {
+    "lon": 8.4606257,
+    "lat": 49.5046094
+  },
+  "NRW:Feuer am Freibad": null,
+  "Laupheim": {
+    "lon": 9.8837005,
+    "lat": 48.2300738
+  },
+  "Schwabbach": {
+    "lon": 9.4049229,
+    "lat": 49.1835266
+  },
+  "NRW:Kamp-Lintfort": {
+    "lat": 51.5017981,
+    "lon": 6.547923
+  },
+  "Stutensee": {
+    "lon": 8.4856806,
+    "lat": 49.0895249
+  },
+  "Fürfeld": {
+    "lon": 9.0583168,
+    "lat": 49.2089363
+  },
+  "Rötenberg": {
+    "lon": 8.4229004,
+    "lat": 48.3054123
+  },
+  "Staatsanwaltschaft": {
+    "lon": 9.1719411,
+    "lat": 47.6618262
+  },
+  "NRW:Sonsbeck": {
+    "lon": 6.3760442,
+    "lat": 51.6094069
+  },
+  "NRW:Sprockhövel": {
+    "lon": 7.2485905,
+    "lat": 51.3666572
+  },
+  "Bohlsbach": {
+    "lon": 7.9471514,
+    "lat": 48.4959593
+  },
+  "Oppenau": {
+    "lon": 8.1646682,
+    "lat": 48.4751652
+  },
+  "Blaustein": {
+    "lon": 9.9187625,
+    "lat": 48.4159247
+  },
+  "Brand in Dachgeschosswohnung": null,
+  "NRW:ABSCHLUSSMELDUNG": null,
+  "Eingebrochen": null,
+  "Cannstatter": {
+    "lon": 9.2115696,
+    "lat": 48.8374235
+  },
+  "Rheinfelden": {
+    "lon": 7.7861959,
+    "lat": 47.5605924
+  },
+  "Stockach": {
+    "lat": 47.8530941,
+    "lon": 9.0134524
+  },
+  "Hinterlintal": {
+    "lon": 9.7562966,
+    "lat": 48.8967384
+  },
+  "NRW:Heiligenhaus": {
+    "lat": 51.32658,
+    "lon": 6.9710401
+  },
+  "Hausach": {
+    "lon": 8.174972,
+    "lat": 48.2836305
+  },
+  "Freiburg-Hochdorf": {
+    "lon": 7.8094808,
+    "lat": 48.0369763
+  },
+  "Aichhalden": {
+    "lon": 8.399562,
+    "lat": 48.2679292
+  },
+  "NRW:Königswinter": {
+    "lon": 7.1930989,
+    "lat": 50.6739719
+  },
+  "NRW:Königswinter-Ittenbach": null,
+  "Stuttgart geben bekannt": null,
+  "Schopfheim: Angebranntes Essen auf dem Herd ruft Feuerwehr auf den Plan": null,
   "Schutterwald": {
     "lon": 7.8840188,
     "lat": 48.4563397
   },
-  "Gemarkung Bad Bellingen": null,
-  "Maschinenhalle im Vollbrand  Keine Verletzten": null,
-  "Feuerwehr Weil": {
-    "lat": 47.588129,
-    "lon": 7.6087501
+  "Böblingen-Dagersheim": {
+    "lon": 8.9522805,
+    "lat": 48.691828
   },
-  "Folgemeldung 1": null,
+  "Besigheim": {
+    "lon": 9.1417523,
+    "lat": 48.9996364
+  },
+  "Autozug brennt": null,
+  "Waldshut": {
+    "lon": 8.2120605,
+    "lat": 47.6246179
+  },
+  "Positive Silvesterbilanz": null,
+  "Bruchsal": {
+    "lon": 8.5980244,
+    "lat": 49.124118
+  },
+  "Degernau": {
+    "lon": 8.3825555,
+    "lat": 47.6679121
+  },
+  "Sonntagmittag": null,
+  "flüchtet": null,
+  "Folgemeldung 3": null,
+  "Sulzfeld": {
+    "lon": 8.8596844,
+    "lat": 49.1060868
+  },
+  "Gartenhütte niedergebrannt": null,
+  "Wippingen": {
+    "lon": 9.8632014,
+    "lat": 48.4280124
+  },
+  "Brand in Supermarkt": null,
+  "Schwendi": {
+    "lon": 9.9784952,
+    "lat": 48.1756438
+  },
+  "Hafental": {
+    "lon": 9.7400812,
+    "lat": 48.8926032
+  },
+  "Biberach": {
+    "lon": 8.0281354,
+    "lat": 48.3388818
+  },
+  "NRW:Düsseldorf": {
+    "lat": 51.2254018,
+    "lon": 6.7763137
+  },
+  "NRW:Weeze": {
+    "lat": 51.6267298,
+    "lon": 6.2011559
+  },
+  "Dettingen": {
+    "lon": 8.9343816,
+    "lat": 48.4368485
+  },
+  "NRW:Wuppertal": {
+    "lon": 7.1780374,
+    "lat": 51.264018
+  },
+  "Lauchringen: Brand auf Betriebsgelände": null,
+  "NRW:Düren": {
+    "lat": 50.8031684,
+    "lon": 6.4820806
+  },
+  "NRW:Remscheid": {
+    "lat": 51.1798706,
+    "lon": 7.1943544
+  },
+  "Bodman-Ludwigshafen": {
+    "lon": 9.0359649,
+    "lat": 47.8144912
+  },
+  "Mainau": {
+    "lon": 9.1947327,
+    "lat": 47.7052874
+  },
+  "Kellerbrand in Mehrfamilienhaus": null,
+  "Altlußheim": {
+    "lat": 49.3004929,
+    "lon": 8.4981809
+  },
+  "Remetschwiel": {
+    "lon": 8.1506958,
+    "lat": 47.6771916
+  },
   "Brennende Thujahecke": null,
-  "Stuttgart geben bekannt": null,
+  "Wahlwies": {
+    "lat": 47.816843,
+    "lon": 8.9673114
+  },
+  "Gschwend": {
+    "lon": 9.7432432,
+    "lat": 48.9341783
+  },
+  "Altenburg": {
+    "lon": 9.1865684,
+    "lat": 48.5453923
+  },
+  "Feuer im Weinberg": null,
+  "Plankstadt": {
+    "lon": 8.5930329,
+    "lat": 49.3927294
+  },
+  "Marxzell": {
+    "lon": 8.4486959,
+    "lat": 48.8618255
+  },
+  "Schwieberdingen": {
+    "lon": 9.0778484,
+    "lat": 48.8749991
+  },
+  "Rudersberg": {
+    "lon": 9.5294671,
+    "lat": 48.8849825
+  },
+  "Brand in Neuweiler": null,
+  "POL-FR: Landkreis Waldshut": null,
+  "Ahornweg": {
+    "lon": 8.7036801,
+    "lat": 49.3515198
+  },
+  "Hohenlohekreis": {
+    "lon": 9.6057331,
+    "lat": 49.2725125
+  },
+  "Waldenbuch": {
+    "lon": 9.1312415,
+    "lat": 48.6374291
+  },
+  "Mühlhausen": {
+    "lon": 8.7270936,
+    "lat": 49.2481325
+  },
+  "Wiesloch": {
+    "lon": 8.698707,
+    "lat": 49.2942599
+  },
+  "Müllen": {
+    "lon": 7.8367168,
+    "lat": 48.4694692
+  },
+  "vier verletzte Personen": null,
+  "NRW:Essen": {
+    "lon": 7.0158171,
+    "lat": 51.4582235
+  },
+  "Eberhardzell": {
+    "lon": 9.8233669,
+    "lat": 48.0039811
+  },
+  "Langenau": {
+    "lon": 10.1210951,
+    "lat": 48.4995693
+  },
+  "Schwetzingen": {
+    "lon": 8.5735135,
+    "lat": 49.3832919
+  },
+  "Geislingen": {
+    "lon": 9.8356703,
+    "lat": 48.6230397
+  },
+  "Dossenheim": {
+    "lon": 8.6732428,
+    "lat": 49.449242
+  },
+  "Ilmspan": {
+    "lon": 9.7908705,
+    "lat": 49.6658631
+  },
+  "&#1042;3": {
+    "lat": 49.1696503,
+    "lon": 9.9214688
+  },
+  "fünf Gebäude betroffen": null,
+  "NRW:Menden": {
+    "lat": 51.43779,
+    "lon": 7.7953822
+  },
+  "NRW:Bergheim": {
+    "lat": 50.9540457,
+    "lon": 6.6410004
+  },
+  "Brand in Einfamilienhaus": null,
+  "Großbrand im Altstadtbereich": null,
+  "NRW:Wanheimerort": {
+    "lat": 51.4022807,
+    "lon": 6.7595258
+  },
+  "Häckselmaschine": null,
+  "NRW:Erstmeldung": null,
+  "Geschäftsgebäude": {
+    "lon": 8.5894604,
+    "lat": 49.3923963
+  },
+  "Mittwochmorgen": null,
+  "Harpolingen": {
+    "lon": 8.000997,
+    "lat": 47.5723455
+  },
+  "Nagold": {
+    "lon": 8.7234942,
+    "lat": 48.5512399
+  },
+  "Wohnungsbrand in Stuttgart-Feuerbach": null,
+  "Birenbach": {
+    "lon": 9.6609218,
+    "lat": 48.7491387
+  },
+  "Folgemeldung 2": null,
+  "Geisingen": {
+    "lon": 8.6491814,
+    "lat": 47.922968
+  },
+  "Mühlacker-Enzberg": {
+    "lon": 8.8007522,
+    "lat": 48.9342674
+  },
+  "Schriesheim": {
+    "lat": 49.4751705,
+    "lon": 8.6611149
+  },
+  "Laufenburg": {
+    "lat": 47.5671976,
+    "lon": 8.0599414
+  },
+  "Mittelbiberach": {
+    "lon": 9.7479621,
+    "lat": 48.0877864
+  },
   "Drei Verletzte": null,
-  "Bundesstraße": {
-    "lat": 48.4901591,
-    "lon": 7.9508536
+  "Ostalbkreis": {
+    "lon": 10.0337317,
+    "lat": 48.8777738
+  },
+  "Ulm": {
+    "lon": 9.9912458,
+    "lat": 48.3984968
+  },
+  "Rosensteinstraße": {
+    "lon": 9.1922211,
+    "lat": 48.7940046
+  },
+  "Schmieheim": {
+    "lon": 7.8578952,
+    "lat": 48.2786884
+  },
+  "Update": {
+    "lat": 48.9594064,
+    "lon": 9.1292368
+  },
+  "Uhldingen": {
+    "lon": 9.2400277,
+    "lat": 47.7348858
+  },
+  "Karlsbad": {
+    "lon": 8.5088293,
+    "lat": 48.9038411
+  },
+  "Zimmerbrand in Mehrfamilienhaus": null,
+  "Langenelz": {
+    "lon": 9.2056201,
+    "lat": 49.5162376
+  },
+  "Presseeinladung": null,
+  "Oberneudorf": {
+    "lon": 9.2645729,
+    "lat": 49.5022554
+  },
+  "Heilbronn": {
+    "lon": 9.218655,
+    "lat": 49.142291
+  },
+  "NRW:Hünxe": {
+    "lat": 51.6414581,
+    "lon": 6.7660319
+  },
+  "Möhringen": {
+    "lon": 9.1477922,
+    "lat": 48.7278158
+  },
+  "NRW:Rauchentwicklung an Bahnstrecke": null,
+  "Neulingen": {
+    "lat": 48.9740793,
+    "lon": 8.7106677
+  },
+  "einer Stadtbahn": null,
+  "Holzgerlingen": {
+    "lon": 9.0115732,
+    "lat": 48.6392119
+  },
+  "Winterbach": {
+    "lat": 48.7995203,
+    "lon": 9.4793454
+  },
+  "Erstmeldung": null,
+  "Wohnhaus in Flammen": null,
+  "Müllfahrzeug": null,
+  "Gemarkung Herbolzheim": null,
+  "NRW:Bochum": {
+    "lat": 51.4818111,
+    "lon": 7.2196635
+  },
+  "NRW:Autobrand auf Wanderparkplatz": null,
+  "Eberbach": {
+    "lon": 8.9855203,
+    "lat": 49.4635303
+  },
+  "NRW:Kellerbrand in Horst": null,
+  "Efringen-Kirchen und Eimeldingen": null,
+  "NRW:Voerde": {
+    "lat": 51.5975224,
+    "lon": 6.6811994
+  },
+  "Eschenbach": {
+    "lon": 9.676742,
+    "lat": 48.6622903
+  },
+  "Korntaler Straße": {
+    "lon": 9.1534188,
+    "lat": 48.843359
   },
   "Stuttgart-Mitte": {
     "lon": 9.1798,
     "lat": 48.7759
   },
-  "Laufenburg: Wiesenbrand auf Privatgrundstück": null
+  "Erbach": {
+    "lon": 9.8913803,
+    "lat": 48.3274603
+  },
+  "Hartschwand": {
+    "lon": 8.066153,
+    "lat": 47.6687787
+  },
+  "NRW:Bonn": {
+    "lat": 50.7352621,
+    "lon": 7.1024635
+  },
+  "Bad Liebenzell": {
+    "lon": 8.7321279,
+    "lat": 48.7712716
+  },
+  "Bretten": {
+    "lat": 49.0366265,
+    "lon": 8.7068077
+  },
+  "Kirchardt": {
+    "lon": 8.9915645,
+    "lat": 49.2060256
+  },
+  "NRW:Zeugensuche": null,
+  "NRW:Alpen": {
+    "lat": 51.5767474,
+    "lon": 6.5128805
+  },
+  "Kellerbrand in Wohn-": null,
+  "Renningen": {
+    "lon": 8.9347008,
+    "lat": 48.7648163
+  },
+  "Lörrach": {
+    "lon": 7.6607218,
+    "lat": 47.6120896
+  },
+  "Weingarten": {
+    "lon": 9.6431145,
+    "lat": 47.8075299
+  },
+  "Falschfahrer verursacht Unfall": null,
+  "Folgemeldung 4": null,
+  "Heidelberg": {
+    "lon": 8.694724,
+    "lat": 49.4093582
+  },
+  "Langenenslingen": {
+    "lon": 9.3770185,
+    "lat": 48.1480101
+  },
+  "Offenburger Ei": {
+    "lon": 7.9055334,
+    "lat": 48.4722278
+  },
+  "Staatsanwaltschaft Stuttgart": {
+    "lon": 9.1940305,
+    "lat": 48.7894873
+  },
+  "Gartenmauer": null,
+  "NRW:Schermbeck": {
+    "lon": 6.8391929,
+    "lat": 51.6898739
+  },
+  "Neckar-Odenwald-Kreis": {
+    "lon": 9.2709386,
+    "lat": 49.4678557
+  },
+  "PM1": {
+    "lon": 8.3951659,
+    "lat": 49.0123104
+  },
+  "Pfinztal": {
+    "lon": 8.5553158,
+    "lat": 48.9918661
+  },
+  "Emmendingen": {
+    "lon": 7.850993,
+    "lat": 48.1206565
+  },
+  "Dienstagvormittag": null,
+  "Neuried": {
+    "lon": 7.8221045,
+    "lat": 48.444461
+  },
+  "H2 VU PKW": null,
+  "Dagersheim": {
+    "lat": 48.691828,
+    "lon": 8.9522805
+  },
+  "NRW:Alter Güterwagen brannte": null,
+  "Ühlingen": {
+    "lat": 47.7185032,
+    "lon": 8.317351
+  },
+  "NRW:Autos beschmiert": null,
+  "Nonnenweier": {
+    "lon": 7.7608934,
+    "lat": 48.3476599
+  },
+  "Sirenenalarm beschäftigt Bürger": null,
+  "Eßlingen": {
+    "lon": 9.3071685,
+    "lat": 48.7427584
+  },
+  "Nachwuchs-Retter für Stockach": null,
+  "Mutmaßlichen Brandstifter festgenommen": null,
+  "Vorbildhaftes Verhalten": null,
+  "Sindelfingen-Maichingen": {
+    "lon": 8.9653797,
+    "lat": 48.7221767
+  },
+  "Weier": {
+    "lon": 7.9193502,
+    "lat": 48.4977072
+  },
+  "Calw e.V": {
+    "lon": 8.7557644,
+    "lat": 48.7041219
+  },
+  "Bühl": {
+    "lon": 8.134423,
+    "lat": 48.6945066
+  },
+  "NRW:Feuer auf Grünfläche": null,
+  "Karlsruhe": {
+    "lon": 8.4034195,
+    "lat": 49.0068705
+  },
+  "Dachgeschosswohnung im Vollbrand": null,
+  "Leimen": {
+    "lon": 8.6909951,
+    "lat": 49.3491417
+  },
+  "NRW:Grevenbroich": {
+    "lon": 6.5848937,
+    "lat": 51.0862467
+  },
+  "Iffezheim": {
+    "lon": 8.1421337,
+    "lat": 48.8209175
+  },
+  "NRW:Altreifen brennen": null,
+  "Herrenberg-Gültstein": {
+    "lon": 8.8794268,
+    "lat": 48.5752062
+  },
+  "Wiernsheim": {
+    "lon": 8.898631,
+    "lat": 48.8854377
+  },
+  "Oberndorf am Neckar": {
+    "lat": 48.2908613,
+    "lon": 8.5711222
+  },
+  "Windschläg": {
+    "lon": 7.957775,
+    "lat": 48.5156179
+  },
+  "Reichenau": {
+    "lat": 47.6956373,
+    "lon": 9.0592022
+  },
+  "Motorraum brennt": null,
+  "NRW:Aktualisierung Überörtliche Hilfe": null,
+  "NRW:Schieder-Schwalenberg": {
+    "lat": 51.8980505,
+    "lon": 9.1751832
+  },
+  "Asch": {
+    "lon": 9.81953,
+    "lat": 48.4379
+  },
+  "Achern": {
+    "lat": 48.6300161,
+    "lon": 8.0735581
+  },
+  "NRW:260818-4": null,
+  "NRW:Iserlohn": {
+    "lon": 7.6999713,
+    "lat": 51.3746778
+  },
+  "Atom und Chemie": null,
+  "Ühlingen-Birkendorf": {
+    "lon": 8.301544,
+    "lat": 47.7252375
+  },
+  "Willstätt": {
+    "lon": 7.8934991,
+    "lat": 48.5415314
+  },
+  "Waldshut-Tiengen": {
+    "lon": 8.2408579,
+    "lat": 47.6281754
+  },
+  "Kellerbrand in Weinheim": null,
+  "Rastatt": {
+    "lon": 8.2040452,
+    "lat": 48.8584568
+  },
+  "Großrinderfeld": {
+    "lon": 9.7332965,
+    "lat": 49.6657707
+  },
+  "Riedlingen": {
+    "lon": 9.4748796,
+    "lat": 48.1534412
+  },
+  "NRW:Ratingen": {
+    "lon": 6.8493503,
+    "lat": 51.2973261
+  },
+  "Heidenheim": {
+    "lon": 10.152923,
+    "lat": 48.6767637
+  },
+  "Wutöschingen": {
+    "lon": 8.3651806,
+    "lat": 47.6596219
+  },
+  "Feueralarm im Regionalexpress": null,
+  "Laufenburg: Wiesenbrand auf Privatgrundstück": null,
+  "Ludwigsburg": {
+    "lon": 9.1895147,
+    "lat": 48.8953937
+  },
+  "Breithülen": {
+    "lon": 9.6407709,
+    "lat": 48.4208492
+  },
+  "Göppingen": {
+    "lon": 9.6541116,
+    "lat": 48.7031377
+  },
+  "Goldscheuer": {
+    "lon": 7.8253778,
+    "lat": 48.508866
+  },
+  "Stuttgart-Zuffenhausen": {
+    "lon": 9.16721,
+    "lat": 48.8295258
+  },
+  "NRW:Xanten": {
+    "lon": 6.4543203,
+    "lat": 51.661519
+  },
+  "Reihen": {
+    "lon": 8.9157223,
+    "lat": 49.2171053
+  },
+  "Heißausbildung": null,
+  "Horb am Neckar": {
+    "lon": 8.6914794,
+    "lat": 48.4447943
+  },
+  "Friesenheim": {
+    "lon": 7.882329,
+    "lat": 48.3734866
+  },
+  "NRW:Goch": {
+    "lon": 6.1593045,
+    "lat": 51.6755765
+  },
+  "Bundesstraße": {
+    "lat": 48.4901591,
+    "lon": 7.9508536
+  },
+  "Gemarkung Bad Bellingen": null,
+  "Eberfingen": {
+    "lon": 8.4267497,
+    "lat": 47.720067
+  },
+  "Steißlingen": {
+    "lat": 47.7995118,
+    "lon": 8.9278314
+  },
+  "Löffingen": {
+    "lon": 8.3446627,
+    "lat": 47.8839004
+  },
+  "Ettikon": {
+    "lon": 8.267909,
+    "lat": 47.6158593
+  },
+  "NRW:Anzeige nach Lagerfeuer": null,
+  "Lauchringen": {
+    "lat": 47.6279841,
+    "lon": 8.313767
+  },
+  "Schelklingen": {
+    "lon": 9.7341832,
+    "lat": 48.3755469
+  },
+  "Großschafhausen": {
+    "lon": 9.9723384,
+    "lat": 48.1909837
+  },
+  "Lahr": {
+    "lon": 7.8710825,
+    "lat": 48.338896
+  },
+  "Malsch": {
+    "lon": 8.6829484,
+    "lat": 49.2452537
+  },
+  "NRW:Feuer in Elsen": null,
+  "Maschinenhalle im Vollbrand  Keine Verletzten": null,
+  "Bauschlott": {
+    "lat": 48.967915,
+    "lon": 8.7249403
+  },
+  "Brand in Tiefgarage": null,
+  "Wohnungsbrand in Pforzheim": null,
+  "NRW:Wohnungsbrand in Essen-Frohnhausen": null,
+  "Küssaberg": {
+    "lon": 8.3212852,
+    "lat": 47.601678
+  },
+  "Fellbach": {
+    "lon": 9.2745228,
+    "lat": 48.814499
+  },
+  "NRW:Ennepetal": {
+    "lon": 7.3693335,
+    "lat": 51.2967192
+  },
+  "NRW:Heuballenmiete in Vollbrand": null,
+  "Feuerwehr Weil": {
+    "lat": 47.588129,
+    "lon": 7.6087501
+  },
+  "Schlechtbarer": null,
+  "NRW:Paderborn": {
+    "lat": 51.7177044,
+    "lon": 8.752653
+  },
+  "Eisingen": {
+    "lon": 8.668972,
+    "lat": 48.9478916
+  },
+  "Polizei Ludwigsburg": {
+    "lon": 9.1765659,
+    "lat": 48.9106087
+  },
+  "NRW:Werne": {
+    "lon": 7.6355052,
+    "lat": 51.66268
+  },
+  "Wimsheim": {
+    "lon": 8.827343,
+    "lat": 48.852109
+  },
+  "Papiermülltonne in Flammen": null,
+  "Niefern-Öschelbronn": {
+    "lon": 8.7980729,
+    "lat": 48.9089709
+  },
+  "NRW:Bad Honnef": {
+    "lon": 7.2272534,
+    "lat": 50.6448582
+  },
+  "BAB6": null,
+  "March": {
+    "lon": 7.7790038,
+    "lat": 48.0578573
+  },
+  "Lautern": {
+    "lon": 9.9737085,
+    "lat": 48.8014349
+  },
+  "St. Blasien": {
+    "lon": 8.131426,
+    "lat": 47.7602106
+  },
+  "Mosbach": {
+    "lon": 9.1460205,
+    "lat": 49.3521085
+  },
+  "Haslach": {
+    "lat": 48.2769011,
+    "lon": 8.0871643
+  },
+  "Löffingen-Unadingen": {
+    "lon": 8.4070082,
+    "lat": 47.8807628
+  },
+  "Brand in Monteurspension": null,
+  "Odelshofen": {
+    "lon": 7.8799819,
+    "lat": 48.5576902
+  },
+  "PP Ravensburg": null,
+  "Orsingen": {
+    "lat": 47.8357983,
+    "lon": 8.9293656
+  },
+  "Brand in Mehrfamilienhaus": null,
+  "Rems-Murr-Kreis": {
+    "lon": 9.5037124,
+    "lat": 48.8966799
+  },
+  "Nattheim": {
+    "lon": 10.2418583,
+    "lat": 48.6995114
+  },
+  "NRW:FOLGEMELDUNG": null,
+  "(KA) Bretten": {
+    "lat": 49.0366265,
+    "lon": 8.7068077
+  },
+  "Hohenhaßlach": null,
+  "Erlenbach": {
+    "lon": 9.2692171,
+    "lat": 49.1703333
+  },
+  "Ilvesheim im Einsatz": null,
+  "NRW:Dortmund": {
+    "lon": 7.4652789,
+    "lat": 51.5142273
+  },
+  "Lauchringen: Feuer noch vor Eintreffen der Einsatzkräfte gelöscht": null,
+  "NRW:Dinslaken": {
+    "lat": 51.5623618,
+    "lon": 6.7345106
+  },
+  "NRW:PKW in Brand": null,
+  "Blaubeuren": {
+    "lon": 9.7847091,
+    "lat": 48.4121233
+  },
+  "Heroldstatt": {
+    "lon": 9.6599683,
+    "lat": 48.4426749
+  },
+  "St.Leon-Rot": {
+    "lon": 8.6142616,
+    "lat": 49.2671326
+  },
+  "NRW:Mönchengladbach": {
+    "lat": 51.1947131,
+    "lon": 6.4353792
+  },
+  "Vegetationsbrand": null,
+  "Bahnhofstraße": {
+    "lon": 9.2129547,
+    "lat": 49.1427583
+  },
+  "(Enzkreis) Neulingen": {
+    "lon": 8.7641411,
+    "lat": 48.9271584
+  },
+  "Baden-Baden": {
+    "lat": 48.7610716,
+    "lon": 8.239959
+  },
+  "NRW:Waldbrandhilfe für Serbien": null,
+  "Gebäudebrand in Zell-Weierbach": null,
+  "Unterensingen (ES": null,
+  "Brand 2": {
+    "lon": 8.4628044,
+    "lat": 48.5047248
+  },
+  "Süßen": {
+    "lat": 48.6707866,
+    "lon": 9.7372379
+  },
+  "Sachsenheim": {
+    "lat": 48.9877155,
+    "lon": 9.0453493
+  },
+  "Geparkte Autos ausgebrannt": null,
+  "Waldbach": {
+    "lon": 9.4076444,
+    "lat": 49.163546
+  },
+  "Riegel am Kaiserstuhl": {
+    "lon": 7.7504953,
+    "lat": 48.1509439
+  }
 }
