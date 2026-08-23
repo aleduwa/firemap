@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6338305",
     "first": "2026-08-23T20:28:40Z",
     "last": "2026-08-23T20:28:40Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Heidelberg",
@@ -13,11 +17,7 @@
         "lon": 8.694724,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Hünxe|gemeldeter zimmerbrand",
