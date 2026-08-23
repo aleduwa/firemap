@@ -6534,26 +6534,6 @@
     ]
   },
   {
-    "base": "Polizeipräsidium Heilbronn|main-tauber-kreis: brand",
-    "status": "out",
-    "title": "Main-Tauber-Kreis: Brand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110971/6320927",
-    "first": "2026-07-24T11:26:16Z",
-    "last": "2026-07-24T11:26:16Z",
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Main-Tauber-Kreis",
-        "lat": 49.5713631,
-        "lon": 9.6999301,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Feuerwehr Stuttgart|küchenbrand in mehrfamilienhaus",
     "status": "contained",
     "title": "Küchenbrand in Mehrfamilienhaus",
