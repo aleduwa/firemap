@@ -1,5 +1,25 @@
 [
   {
+    "base": "Feuerwehr Stuttgart|brand kelleraum in stuttgart- mitte",
+    "status": "out",
+    "title": "Brand Kelleraum in Stuttgart- Mitte",
+    "link": "https://www.presseportal.de/blaulicht/pm/161590/6338309",
+    "first": "2026-08-23T23:32:49Z",
+    "last": "2026-08-23T23:32:49Z",
+    "places": [
+      {
+        "name": "Stuttgart",
+        "lat": 48.7784485,
+        "lon": 9.1800132,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Stuttgart",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Mannheim|eberbach/rhein-neckar-kreis: brand in der hauptstraße - feuerwehr im einsatz - pm nr. 2",
     "status": "active",
     "title": "Eberbach/Rhein-Neckar-Kreis: Brand in der Hauptstraße - Feuerwehr im Einsatz - PM Nr. 2",
