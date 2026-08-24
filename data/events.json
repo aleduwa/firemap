@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6338537",
     "first": "2026-08-24T10:25:46Z",
     "last": "2026-08-24T10:25:46Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Laupheim",
@@ -13,11 +17,7 @@
         "lon": 9.8837005,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|freiburg: ein verletzter nach brand in schnellrestaurant",
