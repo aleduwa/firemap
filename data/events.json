@@ -6508,46 +6508,6 @@
     ]
   },
   {
-    "base": "Polizeipräsidium Mannheim|mannheim: brand in mehrfamilienhaus - feuerwehr im einsatz - pressemeldung nr. 2",
-    "status": "out",
-    "title": "Mannheim: Brand in Mehrfamilienhaus - Feuerwehr im Einsatz - Pressemeldung Nr. 2",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6321113",
-    "first": "2026-07-25T01:21:16Z",
-    "last": "2026-07-25T01:21:16Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Mannheim",
-        "lat": 49.4892913,
-        "lon": 8.4673098,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|mannheim: brand in mehrfamilienhaus - feuerwehr im einsatz - pressemeldung nr. 1",
-    "status": "active",
-    "title": "Mannheim: Brand in Mehrfamilienhaus - Feuerwehr im Einsatz - Pressemeldung Nr. 1",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6321109",
-    "first": "2026-07-24T23:59:12Z",
-    "last": "2026-07-24T23:59:12Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Mannheim",
-        "lat": 49.4892913,
-        "lon": 8.4673098,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Feuerwehr Stuttgart|küchenbrand in mehrfamilienhaus",
     "status": "contained",
     "title": "Küchenbrand in Mehrfamilienhaus",
