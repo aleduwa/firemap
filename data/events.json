@@ -1,5 +1,65 @@
 [
   {
+    "base": "Polizeipräsidium Freiburg|freiburg: ein verletzter nach brand in schnellrestaurant",
+    "status": "contained",
+    "title": "Freiburg: Ein Verletzter nach Brand in Schnellrestaurant",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6338397",
+    "first": "2026-08-24T08:34:00Z",
+    "last": "2026-08-24T08:34:00Z",
+    "places": [
+      {
+        "name": "Freiburg",
+        "lat": 47.9960901,
+        "lon": 7.8494005,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|umkirch: großeinsatz nach gebäudebrand endet glimpflich",
+    "status": "active",
+    "title": "Umkirch: Großeinsatz nach Gebäudebrand endet glimpflich",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6338396",
+    "first": "2026-08-24T08:33:40Z",
+    "last": "2026-08-24T08:33:40Z",
+    "places": [
+      {
+        "name": "Umkirch",
+        "lat": 48.0335555,
+        "lon": 7.7649061,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Leverkusen|brand in einem lebensmittelgeschäft",
+    "status": "contained",
+    "title": "Brand in einem Lebensmittelgeschäft",
+    "link": "https://www.presseportal.de/blaulicht/pm/115890/6338384",
+    "first": "2026-08-24T08:06:16Z",
+    "last": "2026-08-24T08:06:16Z",
+    "places": [
+      {
+        "name": "Leverkusen",
+        "lat": 51.0324743,
+        "lon": 6.9881194,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Leverkusen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Stuttgart|brand kelleraum in stuttgart- mitte",
     "status": "out",
     "title": "Brand Kelleraum in Stuttgart- Mitte",
