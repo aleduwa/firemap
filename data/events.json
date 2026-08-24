@@ -1,11 +1,35 @@
 [
   {
+    "base": "Feuerwehr Neuss|lkw-aufbau brennt auf der a57 | autobahn vollständig gesperrt",
+    "status": "active",
+    "title": "Lkw-Aufbau brennt auf der A57 | Autobahn vollständig gesperrt",
+    "link": "https://www.presseportal.de/blaulicht/pm/122045/6339126",
+    "first": "2026-08-24T16:47:36Z",
+    "last": "2026-08-24T16:47:36Z",
+    "places": [
+      {
+        "name": "Neuss",
+        "lat": 51.1981778,
+        "lon": 6.6916476,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Neuss",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Freiwillige Feuerwehr Hünxe|brand einer siebanlage in zwölf metern höhe",
     "status": "out",
     "title": "Brand einer Siebanlage in zwölf Metern Höhe",
     "link": "https://www.presseportal.de/blaulicht/pm/133631/6339123",
     "first": "2026-08-24T16:40:56Z",
     "last": "2026-08-24T16:40:56Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Hünxe",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Hünxe",
@@ -13,11 +37,7 @@
         "lon": 6.7660319,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Hünxe",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|todtnau: feuer in briefkasten - polizei sucht zeugen",
@@ -26,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6339065",
     "first": "2026-08-24T15:42:25Z",
     "last": "2026-08-24T15:42:25Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Todtnau",
@@ -33,11 +57,7 @@
         "lon": 7.9452378,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|gemarkung schopfheim: vegetationsbrand in gartenanlage im außenbereich",
@@ -46,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6339062",
     "first": "2026-08-24T15:38:39Z",
     "last": "2026-08-24T15:38:39Z",
+    "veg": true,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "zwischen Schopfheim-Gündenhausen und Maulburg",
@@ -53,11 +77,7 @@
         "lon": 7.7909,
         "approx": true
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Freiburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|schopfheim: wohnungsbrand in der amalienstraße",
@@ -66,6 +86,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6339060",
     "first": "2026-08-24T15:36:54Z",
     "last": "2026-08-24T15:36:54Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Schopfheim",
@@ -73,11 +97,7 @@
         "lon": 7.8216997,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Aalen|ostalbkreis: diebstahl - einbruch - brand - wer hat auseinandersetzung beobachtet? - farbschmierereien",
