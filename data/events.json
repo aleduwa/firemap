@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/116260/6339164",
     "first": "2026-08-24T22:33:02Z",
     "last": "2026-08-24T22:33:02Z",
+    "veg": false,
+    "source": "Feuerwehr Gelsenkirchen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Gelsenkirchen",
@@ -13,11 +17,7 @@
         "lon": 7.0960124,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Gelsenkirchen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Neuss|lkw-aufbau brennt auf der a57 | autobahn vollständig gesperrt",
