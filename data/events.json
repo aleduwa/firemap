@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6338397",
     "first": "2026-08-24T08:34:00Z",
     "last": "2026-08-24T08:34:00Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Freiburg",
@@ -13,11 +17,7 @@
         "lon": 7.8494005,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|umkirch: großeinsatz nach gebäudebrand endet glimpflich",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6338396",
     "first": "2026-08-24T08:33:40Z",
     "last": "2026-08-24T08:33:40Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Umkirch",
@@ -33,11 +37,7 @@
         "lon": 7.7649061,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Leverkusen|brand in einem lebensmittelgeschäft",
@@ -46,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115890/6338384",
     "first": "2026-08-24T08:06:16Z",
     "last": "2026-08-24T08:06:16Z",
+    "veg": false,
+    "source": "Feuerwehr Leverkusen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Leverkusen",
@@ -53,11 +57,7 @@
         "lon": 6.9881194,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Leverkusen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Stuttgart|brand kelleraum in stuttgart- mitte",
