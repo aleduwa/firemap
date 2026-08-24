@@ -1,5 +1,25 @@
 [
   {
+    "base": "Polizeipräsidium Ulm|(bc) laupheim - porsche gerät in flammen / am sonntag kam es bei laupheim zu einem fahrzeugbrand.",
+    "status": "active",
+    "title": "(BC) Laupheim - Porsche gerät in Flammen / Am Sonntag kam es bei Laupheim zu einem Fahrzeugbrand.",
+    "link": "https://www.presseportal.de/blaulicht/pm/110979/6338537",
+    "first": "2026-08-24T10:25:46Z",
+    "last": "2026-08-24T10:25:46Z",
+    "places": [
+      {
+        "name": "Laupheim",
+        "lat": 48.2300738,
+        "lon": 9.8837005,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Freiburg|freiburg: ein verletzter nach brand in schnellrestaurant",
     "status": "contained",
     "title": "Freiburg: Ein Verletzter nach Brand in Schnellrestaurant",
