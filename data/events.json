@@ -1,11 +1,95 @@
 [
   {
+    "base": "Freiwillige Feuerwehr Hünxe|brand einer siebanlage in zwölf metern höhe",
+    "status": "out",
+    "title": "Brand einer Siebanlage in zwölf Metern Höhe",
+    "link": "https://www.presseportal.de/blaulicht/pm/133631/6339123",
+    "first": "2026-08-24T16:40:56Z",
+    "last": "2026-08-24T16:40:56Z",
+    "places": [
+      {
+        "name": "Hünxe",
+        "lat": 51.6414581,
+        "lon": 6.7660319,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Hünxe",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|todtnau: feuer in briefkasten - polizei sucht zeugen",
+    "status": "out",
+    "title": "Todtnau: Feuer in Briefkasten - Polizei sucht Zeugen",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6339065",
+    "first": "2026-08-24T15:42:25Z",
+    "last": "2026-08-24T15:42:25Z",
+    "places": [
+      {
+        "name": "Todtnau",
+        "lat": 47.8303378,
+        "lon": 7.9452378,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|gemarkung schopfheim: vegetationsbrand in gartenanlage im außenbereich",
+    "status": "out",
+    "title": "Gemarkung Schopfheim: Vegetationsbrand in Gartenanlage im Außenbereich",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6339062",
+    "first": "2026-08-24T15:38:39Z",
+    "last": "2026-08-24T15:38:39Z",
+    "places": [
+      {
+        "name": "zwischen Schopfheim-Gündenhausen und Maulburg",
+        "lat": 47.64355,
+        "lon": 7.7909,
+        "approx": true
+      }
+    ],
+    "veg": true,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|schopfheim: wohnungsbrand in der amalienstraße",
+    "status": "out",
+    "title": "Schopfheim: Wohnungsbrand in der Amalienstraße",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6339060",
+    "first": "2026-08-24T15:36:54Z",
+    "last": "2026-08-24T15:36:54Z",
+    "places": [
+      {
+        "name": "Schopfheim",
+        "lat": 47.6500525,
+        "lon": 7.8216997,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Aalen|ostalbkreis: diebstahl - einbruch - brand - wer hat auseinandersetzung beobachtet? - farbschmierereien",
     "status": "active",
     "title": "Ostalbkreis: Diebstahl - Einbruch - Brand - Wer hat Auseinandersetzung beobachtet? - Farbschmierereien",
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6339043",
     "first": "2026-08-24T15:25:41Z",
     "last": "2026-08-24T15:25:41Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ostalbkreis",
@@ -13,11 +97,7 @@
         "lon": 10.0337317,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|lützelsachsen/rhein-neckar-kreis/bab 5: brennendes motorrad auf dem standstreifen - pm nr. 2",
@@ -26,6 +106,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6339035",
     "first": "2026-08-24T15:14:44Z",
     "last": "2026-08-24T15:14:44Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Lützelsachsen",
@@ -45,11 +129,7 @@
         "lon": 10.1396324,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|lützelsachsen/rhein-neckar-kreis/bab 5: brennendes motorrad auf dem standstreifen - pm nr. 1",
