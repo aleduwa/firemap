@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/122045/6339126",
     "first": "2026-08-24T16:47:36Z",
     "last": "2026-08-24T16:47:36Z",
+    "veg": false,
+    "source": "Feuerwehr Neuss",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Neuss",
@@ -13,11 +17,7 @@
         "lon": 6.6916476,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Neuss",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Hünxe|brand einer siebanlage in zwölf metern höhe",
