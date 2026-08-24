@@ -6832,26 +6832,6 @@
     ]
   },
   {
-    "base": "Polizeipräsidium Offenburg|oppenau - ermittlungen nach waldbrand eingeleitet",
-    "status": "active",
-    "title": "Oppenau - Ermittlungen nach Waldbrand eingeleitet",
-    "link": "https://www.presseportal.de/blaulicht/pm/110975/6321286",
-    "first": "2026-07-25T22:39:34Z",
-    "last": "2026-07-25T22:39:34Z",
-    "veg": true,
-    "source": "Polizeipräsidium Offenburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Oppenau",
-        "lat": 48.4751652,
-        "lon": 8.1646682,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Feuerwehr Stuttgart|küchenbrand in mehrfamilienhaus",
     "status": "contained",
     "title": "Küchenbrand in Mehrfamilienhaus",
