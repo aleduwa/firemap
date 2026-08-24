@@ -1,5 +1,25 @@
 [
   {
+    "base": "Feuerwehr Düsseldorf|feuermeldung am mittag - feuerwehr düsseldorf verhindert ausbreitung, keine verletzten",
+    "status": "active",
+    "title": "Feuermeldung am Mittag - Feuerwehr Düsseldorf verhindert Ausbreitung, keine Verletzten",
+    "link": "https://www.presseportal.de/blaulicht/pm/115876/6338838",
+    "first": "2026-08-24T13:15:45Z",
+    "last": "2026-08-24T13:15:45Z",
+    "places": [
+      {
+        "name": "Düsseldorf",
+        "lat": 51.2254018,
+        "lon": 6.7763137,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Düsseldorf",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Mönchengladbach|küchenbrand im zweiten obergeschoss",
     "status": "out",
     "title": "Küchenbrand im zweiten Obergeschoss",
