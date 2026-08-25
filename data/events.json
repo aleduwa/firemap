@@ -1,5 +1,45 @@
 [
   {
+    "base": "Polizeipräsidium Heilbronn|main-tauber-kreis: diebstahl, brand, unfall",
+    "status": "active",
+    "title": "Main-Tauber-Kreis: Diebstahl, Brand, Unfall",
+    "link": "https://www.presseportal.de/blaulicht/pm/110971/6339468",
+    "first": "2026-08-25T11:18:06Z",
+    "last": "2026-08-25T11:18:06Z",
+    "places": [
+      {
+        "name": "Main-Tauber-Kreis",
+        "lat": 49.5713631,
+        "lon": 9.6999301,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Heilbronn|stadt- und landkreis heilbronn: trickdiebstahl, hühnerdieb unterwegs, fußgänger auf der autobahn angefahren, hundeangriff und küchenbrand",
+    "status": "out",
+    "title": "Stadt- und Landkreis Heilbronn: Trickdiebstahl, Hühnerdieb unterwegs, Fußgänger auf der Autobahn angefahren, Hundeangriff und Küchenbrand",
+    "link": "https://www.presseportal.de/blaulicht/pm/110971/6339467",
+    "first": "2026-08-25T11:17:45Z",
+    "last": "2026-08-25T11:17:45Z",
+    "places": [
+      {
+        "name": "Stadt-",
+        "lat": 49.4093582,
+        "lon": 8.694724,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizei Essen|essen: drei papiercontainer in brand gesetzt - zeugen gesucht",
     "status": "active",
     "title": "Essen: Drei Papiercontainer in Brand gesetzt - Zeugen gesucht",
