@@ -1,5 +1,57 @@
 [
   {
+    "base": "Polizeipräsidium Aalen|rems-murr-kreis: kabel an bahnstrecke beschädigt, trunkenheitsfahrt, unfälle, einbrüche und einbruchsversuche, brand, sachbeschädigung",
+    "status": "contained",
+    "title": "Rems-Murr-Kreis: Kabel an Bahnstrecke beschädigt, Trunkenheitsfahrt, Unfälle, Einbrüche und Einbruchsversuche, Brand, Sachbeschädigung",
+    "link": "https://www.presseportal.de/blaulicht/pm/110969/6339239",
+    "first": "2026-08-25T08:09:18Z",
+    "last": "2026-08-25T08:09:18Z",
+    "places": [
+      {
+        "name": "Rems-Murr-Kreis",
+        "lat": 48.8966799,
+        "lon": 9.5037124,
+        "approx": false
+      },
+      {
+        "name": "B328 zwischen Aspach und Karlshof",
+        "lat": 48.98032,
+        "lon": 9.38032,
+        "approx": true
+      },
+      {
+        "name": "zwischen Backnang und Maubach",
+        "lat": 48.93566,
+        "lon": 9.42823,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Gemeinde Rheurdt|pkw brennt im motorraum",
+    "status": "active",
+    "title": "PKW brennt im Motorraum",
+    "link": "https://www.presseportal.de/blaulicht/pm/130323/6339238",
+    "first": "2026-08-25T08:09:14Z",
+    "last": "2026-08-25T08:09:14Z",
+    "places": [
+      {
+        "name": "Rheurdt",
+        "lat": 51.4677722,
+        "lon": 6.4690655,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Gemeinde Rheurdt",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr und Rettungsdienst Bonn|1. folgemeldung: eu-waldbrandmodul in serbien eingetroffen und bereits im einsatz",
     "status": "active",
     "title": "1. Folgemeldung: EU-Waldbrandmodul in Serbien eingetroffen und bereits im Einsatz",
@@ -6821,32 +6873,6 @@
         "name": "Mannheim-Neckarstadt",
         "lat": 49.5046094,
         "lon": 8.4606257,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|weinheim/rhein-neckar-kreis: pkw-batterie auslöser für fahrzeugbrand, eine person leicht verletzt",
-    "status": "active",
-    "title": "Weinheim/Rhein-Neckar-Kreis: Pkw-Batterie Auslöser für Fahrzeugbrand, eine Person leicht verletzt",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6321360",
-    "first": "2026-07-26T06:26:02Z",
-    "last": "2026-07-26T06:26:02Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Weinheim",
-        "lat": 49.5462349,
-        "lon": 8.6717458,
-        "approx": false
-      },
-      {
-        "name": "Rhein-Neckar-Kreis",
-        "lat": 49.3684797,
-        "lon": 8.7352403,
         "approx": false
       }
     ]
