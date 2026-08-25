@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6339239",
     "first": "2026-08-25T08:09:18Z",
     "last": "2026-08-25T08:09:18Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Rems-Murr-Kreis",
@@ -25,11 +29,7 @@
         "lon": 9.42823,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Gemeinde Rheurdt|pkw brennt im motorraum",
@@ -38,6 +38,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/130323/6339238",
     "first": "2026-08-25T08:09:14Z",
     "last": "2026-08-25T08:09:14Z",
+    "veg": false,
+    "source": "Feuerwehr Gemeinde Rheurdt",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Rheurdt",
@@ -45,11 +49,7 @@
         "lon": 6.4690655,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Gemeinde Rheurdt",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr und Rettungsdienst Bonn|1. folgemeldung: eu-waldbrandmodul in serbien eingetroffen und bereits im einsatz",
