@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/128354/6339727",
     "first": "2026-08-25T15:13:02Z",
     "last": "2026-08-25T15:13:02Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Tönisvorst",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Tönisvorst",
@@ -13,11 +17,7 @@
         "lon": 6.45,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Tönisvorst",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Kreispolizeibehörde Kleve|kevelaer - erstmeldung nach gebäudebrand: sonsbecker straße aktuell gesperrt",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/65849/6339715",
     "first": "2026-08-25T14:59:35Z",
     "last": "2026-08-25T14:59:35Z",
+    "veg": false,
+    "source": "Kreispolizeibehörde Kleve",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Kevelaer",
@@ -33,11 +37,7 @@
         "lon": 6.2456273,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Kreispolizeibehörde Kleve",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizei Warendorf|beckum. brand in werkstatt - weitere ermittlungen durchgeführt - ergänzung zur pressemeldung vom 24.8.2026, 15:01 uhr",
@@ -46,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/52656/6339708",
     "first": "2026-08-25T14:50:37Z",
     "last": "2026-08-25T14:50:37Z",
+    "veg": false,
+    "source": "Polizei Warendorf",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "15",
@@ -53,11 +57,7 @@
         "lon": 7.0091545,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizei Warendorf",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Kreispolizeibehörde Viersen|tönisvorst-vorst: brand in fabrikhalle - technischer defekt",
@@ -6967,32 +6967,6 @@
         "name": "Weinheim",
         "lat": 49.5462349,
         "lon": 8.6717458,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|plankstadt/rhein-neckar-kreis: rauchentwicklung in mehrfamilienhaus, pm 2",
-    "status": "out",
-    "title": "Plankstadt/Rhein-Neckar-Kreis: Rauchentwicklung in Mehrfamilienhaus, PM 2",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6321516",
-    "first": "2026-07-26T14:16:59Z",
-    "last": "2026-07-26T14:16:59Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Plankstadt",
-        "lat": 49.3927294,
-        "lon": 8.5930329,
-        "approx": false
-      },
-      {
-        "name": "Rhein-Neckar-Kreis",
-        "lat": 49.3684797,
-        "lon": 8.7352403,
         "approx": false
       }
     ]
