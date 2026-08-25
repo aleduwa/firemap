@@ -1,5 +1,25 @@
 [
   {
+    "base": "Kreispolizeibehörde Viersen|tönisvorst-vorst: brand in fabrikhalle - technischer defekt",
+    "status": "active",
+    "title": "Tönisvorst-Vorst: Brand in Fabrikhalle - technischer Defekt",
+    "link": "https://www.presseportal.de/blaulicht/pm/65857/6339699",
+    "first": "2026-08-25T14:40:38Z",
+    "last": "2026-08-25T14:40:38Z",
+    "places": [
+      {
+        "name": "Tönisvorst-Vorst",
+        "lat": 51.3242112,
+        "lon": 6.4447616,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Kreispolizeibehörde Viersen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Kreispolizeibehörde Borken|heiden - brand in kommunaler unterkunft",
     "status": "active",
     "title": "Heiden - Brand in kommunaler Unterkunft",
