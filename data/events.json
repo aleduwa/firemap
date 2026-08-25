@@ -1,11 +1,75 @@
 [
   {
+    "base": "Freiwillige Feuerwehr Tönisvorst|industriebrand in tönisvorst-vorst fordert umfangreichen feuerwehreinsatz über viele stunden",
+    "status": "out",
+    "title": "Industriebrand in Tönisvorst-Vorst fordert umfangreichen Feuerwehreinsatz über viele Stunden",
+    "link": "https://www.presseportal.de/blaulicht/pm/128354/6339727",
+    "first": "2026-08-25T15:13:02Z",
+    "last": "2026-08-25T15:13:02Z",
+    "places": [
+      {
+        "name": "Tönisvorst",
+        "lat": 51.3167,
+        "lon": 6.45,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Tönisvorst",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Kreispolizeibehörde Kleve|kevelaer - erstmeldung nach gebäudebrand: sonsbecker straße aktuell gesperrt",
+    "status": "active",
+    "title": "Kevelaer - Erstmeldung nach Gebäudebrand: Sonsbecker Straße aktuell gesperrt",
+    "link": "https://www.presseportal.de/blaulicht/pm/65849/6339715",
+    "first": "2026-08-25T14:59:35Z",
+    "last": "2026-08-25T14:59:35Z",
+    "places": [
+      {
+        "name": "Kevelaer",
+        "lat": 51.5802996,
+        "lon": 6.2456273,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Kreispolizeibehörde Kleve",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizei Warendorf|beckum. brand in werkstatt - weitere ermittlungen durchgeführt - ergänzung zur pressemeldung vom 24.8.2026, 15:01 uhr",
+    "status": "active",
+    "title": "Beckum. Brand in Werkstatt - weitere Ermittlungen durchgeführt - Ergänzung zur Pressemeldung vom 24.8.2026, 15:01 Uhr",
+    "link": "https://www.presseportal.de/blaulicht/pm/52656/6339708",
+    "first": "2026-08-25T14:50:37Z",
+    "last": "2026-08-25T14:50:37Z",
+    "places": [
+      {
+        "name": "15",
+        "lat": 50.877194,
+        "lon": 7.0091545,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizei Warendorf",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Kreispolizeibehörde Viersen|tönisvorst-vorst: brand in fabrikhalle - technischer defekt",
     "status": "active",
     "title": "Tönisvorst-Vorst: Brand in Fabrikhalle - technischer Defekt",
     "link": "https://www.presseportal.de/blaulicht/pm/65857/6339699",
     "first": "2026-08-25T14:40:38Z",
     "last": "2026-08-25T14:40:38Z",
+    "veg": false,
+    "source": "Kreispolizeibehörde Viersen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Tönisvorst-Vorst",
@@ -13,11 +77,7 @@
         "lon": 6.4447616,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Kreispolizeibehörde Viersen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Kreispolizeibehörde Borken|heiden - brand in kommunaler unterkunft",
@@ -6934,26 +6994,6 @@
         "lat": 49.3684797,
         "lon": 8.7352403,
         "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Weinheim|sirenenalarm beschäftigt bürger - feuerwehr gibt entwarnung",
-    "status": "out",
-    "title": "Sirenenalarm beschäftigt Bürger - Feuerwehr gibt Entwarnung",
-    "link": "https://www.presseportal.de/blaulicht/pm/179375/6321512",
-    "first": "2026-07-26T13:53:37Z",
-    "last": "2026-07-26T13:53:37Z",
-    "veg": false,
-    "source": "Feuerwehr Weinheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Weinheim",
-        "lat": 49.5462349,
-        "lon": 8.6717458,
-        "approx": true
       }
     ]
   },
