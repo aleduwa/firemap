@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/11562/6339349",
     "first": "2026-08-25T09:58:39Z",
     "last": "2026-08-25T09:58:39Z",
+    "veg": false,
+    "source": "Polizei Essen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Essen",
@@ -13,11 +17,7 @@
         "lon": 7.0158171,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizei Essen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Aalen|rems-murr-kreis: kabel an bahnstrecke beschädigt, trunkenheitsfahrt, unfälle, einbrüche und einbruchsversuche, brand, sachbeschädigung",
