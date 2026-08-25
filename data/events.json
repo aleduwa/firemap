@@ -1,5 +1,25 @@
 [
   {
+    "base": "Feuerwehr und Rettungsdienst Bonn|1. folgemeldung: eu-waldbrandmodul in serbien eingetroffen und bereits im einsatz",
+    "status": "active",
+    "title": "1. Folgemeldung: EU-Waldbrandmodul in Serbien eingetroffen und bereits im Einsatz",
+    "link": "https://www.presseportal.de/blaulicht/pm/115888/6339172",
+    "first": "2026-08-25T04:32:33Z",
+    "last": "2026-08-25T04:32:33Z",
+    "places": [
+      {
+        "name": "Bonn",
+        "lat": 50.7352621,
+        "lon": 7.1024635,
+        "approx": true
+      }
+    ],
+    "veg": true,
+    "source": "Feuerwehr und Rettungsdienst Bonn",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Gelsenkirchen|kellerbrand in schalke",
     "status": "active",
     "title": "Kellerbrand in Schalke",
