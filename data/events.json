@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115888/6339172",
     "first": "2026-08-25T04:32:33Z",
     "last": "2026-08-25T04:32:33Z",
+    "veg": true,
+    "source": "Feuerwehr und Rettungsdienst Bonn",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Bonn",
@@ -13,11 +17,7 @@
         "lon": 7.1024635,
         "approx": true
       }
-    ],
-    "veg": true,
-    "source": "Feuerwehr und Rettungsdienst Bonn",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Gelsenkirchen|kellerbrand in schalke",
