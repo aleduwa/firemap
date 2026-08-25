@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/24843/6339514",
     "first": "2026-08-25T11:53:02Z",
     "last": "2026-08-25T11:53:02Z",
+    "veg": false,
+    "source": "Kreispolizeibehörde Borken",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Heiden",
@@ -13,11 +17,7 @@
         "lon": 6.9340589,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Kreispolizeibehörde Borken",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Heilbronn|main-tauber-kreis: diebstahl, brand, unfall",
