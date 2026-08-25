@@ -6952,46 +6952,6 @@
     ]
   },
   {
-    "base": "Feuerwehr Weinheim|pkw brand in der mannheimer straße. feuerwehr rettet bewohner aus verrauchter wohnung",
-    "status": "out",
-    "title": "Pkw Brand in der Mannheimer Straße. Feuerwehr rettet Bewohner aus verrauchter Wohnung",
-    "link": "https://www.presseportal.de/blaulicht/pm/179375/6321521",
-    "first": "2026-07-26T14:42:54Z",
-    "last": "2026-07-26T16:42:54Z",
-    "veg": false,
-    "source": "Feuerwehr Weinheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Weinheim",
-        "lat": 49.5462349,
-        "lon": 8.6717458,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|mannheim-neckarstadt: flächenbrand an der max-plank straße",
-    "status": "active",
-    "title": "Mannheim-Neckarstadt: Flächenbrand an der Max-Plank Straße",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6321537",
-    "first": "2026-07-26T13:00:47Z",
-    "last": "2026-07-26T16:56:34Z",
-    "veg": true,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 1,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Mannheim-Neckarstadt",
-        "lat": 49.5046094,
-        "lon": 8.4606257,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Feuerwehr Stuttgart|küchenbrand in mehrfamilienhaus",
     "status": "contained",
     "title": "Küchenbrand in Mehrfamilienhaus",
