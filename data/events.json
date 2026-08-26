@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/50510/6340157",
     "first": "2026-08-26T11:44:56Z",
     "last": "2026-08-26T11:44:56Z",
+    "veg": false,
+    "source": "Polizei Duisburg",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Bergheim",
@@ -13,11 +17,7 @@
         "lon": 6.6410004,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizei Duisburg",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Kreispolizeibehörde Kleve|goch - unbekannte legen feuer in pfalzdorfer kirche / diverse gegenstände beschädigt und spendengeld entwendet / zeugen gesucht",
