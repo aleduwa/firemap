@@ -1,5 +1,45 @@
 [
   {
+    "base": "Polizeipräsidium Aalen|ostalbkreis: fahrzeugbrand - unfallflucht - sachbeschädigung - diebstahl - unfall",
+    "status": "out",
+    "title": "Ostalbkreis: Fahrzeugbrand - Unfallflucht - Sachbeschädigung - Diebstahl - Unfall",
+    "link": "https://www.presseportal.de/blaulicht/pm/110969/6339956",
+    "first": "2026-08-26T09:36:21Z",
+    "last": "2026-08-26T09:36:21Z",
+    "places": [
+      {
+        "name": "Ostalbkreis",
+        "lat": 48.8777738,
+        "lon": 10.0337317,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Ulm|(gp) gruibingen - stromaggregat fängt feuer / 25.000 euro sachschaden sind die bilanz eines brandes am dienstag in gruibingen.",
+    "status": "active",
+    "title": "(GP) Gruibingen - Stromaggregat fängt Feuer / 25.000 Euro Sachschaden sind die Bilanz eines Brandes am Dienstag in Gruibingen.",
+    "link": "https://www.presseportal.de/blaulicht/pm/110979/6339954",
+    "first": "2026-08-26T09:35:56Z",
+    "last": "2026-08-26T09:35:56Z",
+    "places": [
+      {
+        "name": "Gruibingen",
+        "lat": 48.59454,
+        "lon": 9.6431134,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Mannheim|heidelberg: fahrzeugbrand, pressemitteilung nr. 2",
     "status": "out",
     "title": "Heidelberg: Fahrzeugbrand, Pressemitteilung Nr. 2",
@@ -7007,26 +7047,6 @@
         "name": "Ludwigsburg-Eglosheim",
         "lat": 48.909746,
         "lon": 9.1711704,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ludwigsburg|böblingen: kleidercontainer niedergebrannt",
-    "status": "active",
-    "title": "Böblingen: Kleidercontainer niedergebrannt",
-    "link": "https://www.presseportal.de/blaulicht/pm/110974/6321775",
-    "first": "2026-07-27T08:12:41Z",
-    "last": "2026-07-27T08:12:41Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Böblingen",
-        "lat": 48.684969,
-        "lon": 9.0113444,
         "approx": false
       }
     ]
