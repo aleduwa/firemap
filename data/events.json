@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6339821",
     "first": "2026-08-26T04:14:38Z",
     "last": "2026-08-26T04:14:38Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Heidelberg-Boxberg",
@@ -13,11 +17,7 @@
         "lon": 8.7033078,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Tönisvorst|industriebrand in tönisvorst-vorst fordert umfangreichen feuerwehreinsatz über viele stunden",
