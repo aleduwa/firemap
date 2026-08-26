@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6339879",
     "first": "2026-08-26T08:29:35Z",
     "last": "2026-08-26T08:29:35Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Heidelberg",
@@ -13,11 +17,7 @@
         "lon": 8.694724,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Remscheid|kellerbrand spichernstraße",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115882/6339876",
     "first": "2026-08-26T08:25:09Z",
     "last": "2026-08-26T08:25:09Z",
+    "veg": false,
+    "source": "Feuerwehr Remscheid",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Remscheid",
@@ -33,11 +37,7 @@
         "lon": 7.1943544,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Remscheid",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Kreispolizeibehörde Kleve|kevelaer - 1. folgemeldung nach gebäudebrand: sperrung der sonsbecker straße aufgehoben",
@@ -46,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/65849/6339856",
     "first": "2026-08-26T07:59:18Z",
     "last": "2026-08-26T07:59:18Z",
+    "veg": false,
+    "source": "Kreispolizeibehörde Kleve",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Kevelaer",
@@ -53,11 +57,7 @@
         "lon": 6.2456273,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Kreispolizeibehörde Kleve",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Paderborn|dachstuhlbrand realschule st. michael",
@@ -66,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/173646/6339848",
     "first": "2026-08-26T07:39:58Z",
     "last": "2026-08-26T07:39:58Z",
+    "veg": false,
+    "source": "Feuerwehr Paderborn",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Paderborn",
@@ -73,11 +77,7 @@
         "lon": 8.752653,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Paderborn",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ludwigsburg|sindelfingen-maichingen: gebäudebrand in der hölderlinstraße",
@@ -86,6 +86,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110974/6339844",
     "first": "2026-08-26T07:35:13Z",
     "last": "2026-08-26T07:35:13Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ludwigsburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Sindelfingen-Maichingen",
@@ -93,11 +97,7 @@
         "lon": 8.9653797,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|heidelberg-boxberg: fahrzeugbrand, pressemitteilung nr. 1",
@@ -7027,26 +7027,6 @@
         "name": "Böblingen",
         "lat": 48.684969,
         "lon": 9.0113444,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Aalen|ostalbkreis: widerstand - einbruch - exhibitionist - unfallflucht - unfälle - sachbeschädigung - brand - diebstahl",
-    "status": "active",
-    "title": "Ostalbkreis: Widerstand - Einbruch - Exhibitionist - Unfallflucht - Unfälle - Sachbeschädigung - Brand - Diebstahl",
-    "link": "https://www.presseportal.de/blaulicht/pm/110969/6321688",
-    "first": "2026-07-27T07:11:40Z",
-    "last": "2026-07-27T07:11:40Z",
-    "veg": true,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Ostalbkreis",
-        "lat": 48.8777738,
-        "lon": 10.0337317,
         "approx": false
       }
     ]
