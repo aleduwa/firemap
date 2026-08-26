@@ -1,11 +1,35 @@
 [
   {
+    "base": "Feuerwehr Stuttgart|kellerbrand in stuttgart-süd - drei verletzte personen durch rauchgasinhalation",
+    "status": "active",
+    "title": "Kellerbrand in Stuttgart-Süd - drei verletzte Personen durch Rauchgasinhalation",
+    "link": "https://www.presseportal.de/blaulicht/pm/161590/6340490",
+    "first": "2026-08-27T00:26:13Z",
+    "last": "2026-08-27T00:26:13Z",
+    "places": [
+      {
+        "name": "Stuttgart",
+        "lat": 48.7784485,
+        "lon": 9.1800132,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Stuttgart",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Schwelm|schwelbrand auf dem dach eines wohnkomplexes",
     "status": "active",
     "title": "Schwelbrand auf dem Dach eines Wohnkomplexes",
     "link": "https://www.presseportal.de/blaulicht/pm/69781/6340476",
     "first": "2026-08-26T21:21:46Z",
     "last": "2026-08-26T21:21:46Z",
+    "veg": false,
+    "source": "Feuerwehr Schwelm",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Schwelm",
@@ -13,11 +37,7 @@
         "lon": 7.2924712,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Schwelm",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizei Duisburg|bergheim: audi in brand gesetzt - zeugen gesucht",
