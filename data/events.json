@@ -1,5 +1,25 @@
 [
   {
+    "base": "Feuerwehr Schwelm|schwelbrand auf dem dach eines wohnkomplexes",
+    "status": "active",
+    "title": "Schwelbrand auf dem Dach eines Wohnkomplexes",
+    "link": "https://www.presseportal.de/blaulicht/pm/69781/6340476",
+    "first": "2026-08-26T21:21:46Z",
+    "last": "2026-08-26T21:21:46Z",
+    "places": [
+      {
+        "name": "Schwelm",
+        "lat": 51.2841166,
+        "lon": 7.2924712,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Schwelm",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizei Duisburg|bergheim: audi in brand gesetzt - zeugen gesucht",
     "status": "active",
     "title": "Bergheim: Audi in Brand gesetzt - Zeugen gesucht",
