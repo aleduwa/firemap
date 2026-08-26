@@ -6868,26 +6868,6 @@
     ]
   },
   {
-    "base": "Polizeipräsidium Freiburg|rheinfelden: brand von grill auf balkon geht glimpflich aus",
-    "status": "active",
-    "title": "Rheinfelden: Brand von Grill auf Balkon geht glimpflich aus",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6322344",
-    "first": "2026-07-27T13:56:16Z",
-    "last": "2026-07-27T13:56:16Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Rheinfelden",
-        "lat": 47.5605924,
-        "lon": 7.7861959,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Feuerwehr Stuttgart|küchenbrand in mehrfamilienhaus",
     "status": "contained",
     "title": "Küchenbrand in Mehrfamilienhaus",
