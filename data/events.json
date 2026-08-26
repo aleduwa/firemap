@@ -6952,26 +6952,6 @@
     ]
   },
   {
-    "base": "Polizeipräsidium Karlsruhe|(ka) dettenheim - kriminalpolizei sucht zeugen nach mutmaßlicher brandstiftung",
-    "status": "active",
-    "title": "(KA) Dettenheim - Kriminalpolizei sucht Zeugen nach mutmaßlicher Brandstiftung",
-    "link": "https://www.presseportal.de/blaulicht/pm/110972/6321613",
-    "first": "2026-07-27T05:59:20Z",
-    "last": "2026-07-27T05:59:20Z",
-    "veg": false,
-    "source": "Polizeipräsidium Karlsruhe",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Dettenheim",
-        "lat": 49.1723804,
-        "lon": 8.4190139,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Feuerwehr Stuttgart|küchenbrand in mehrfamilienhaus",
     "status": "contained",
     "title": "Küchenbrand in Mehrfamilienhaus",
