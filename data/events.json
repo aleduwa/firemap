@@ -1,11 +1,35 @@
 [
   {
+    "base": "Polizei Duisburg|bergheim: audi in brand gesetzt - zeugen gesucht",
+    "status": "active",
+    "title": "Bergheim: Audi in Brand gesetzt - Zeugen gesucht",
+    "link": "https://www.presseportal.de/blaulicht/pm/50510/6340157",
+    "first": "2026-08-26T11:44:56Z",
+    "last": "2026-08-26T11:44:56Z",
+    "places": [
+      {
+        "name": "Bergheim",
+        "lat": 50.9540457,
+        "lon": 6.6410004,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizei Duisburg",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Kreispolizeibehörde Kleve|goch - unbekannte legen feuer in pfalzdorfer kirche / diverse gegenstände beschädigt und spendengeld entwendet / zeugen gesucht",
     "status": "active",
     "title": "Goch - Unbekannte legen Feuer in Pfalzdorfer Kirche / diverse Gegenstände beschädigt und Spendengeld entwendet / Zeugen gesucht",
     "link": "https://www.presseportal.de/blaulicht/pm/65849/6340150",
     "first": "2026-08-26T11:35:47Z",
     "last": "2026-08-26T11:35:47Z",
+    "veg": false,
+    "source": "Kreispolizeibehörde Kleve",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Goch",
@@ -13,11 +37,7 @@
         "lon": 6.1593045,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Kreispolizeibehörde Kleve",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|teningen: gebäudebrand in mehrfamilienhaus - hoher sachschaden",
@@ -26,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6340107",
     "first": "2026-08-26T11:11:23Z",
     "last": "2026-08-26T11:11:23Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Teningen",
@@ -33,11 +57,7 @@
         "lon": 7.8101648,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Pforzheim|(pf) pforzheim - gemeinsame pressemeldung der staatsanwaltschaft karlsruhe - zweigstelle pforzheim und des pp pforzheim - drei tatverdächtige nach versuchter schwerer brandstiftung festgenommen",
@@ -46,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/137462/6340067",
     "first": "2026-08-26T10:53:18Z",
     "last": "2026-08-26T10:53:18Z",
+    "veg": false,
+    "source": "Polizeipräsidium Pforzheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Pforzheim",
@@ -59,11 +83,7 @@
         "lon": 9.17053,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Pforzheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Aalen|ostalbkreis: fahrzeugbrand - unfallflucht - sachbeschädigung - diebstahl - unfall",
@@ -6929,58 +6949,6 @@
         "name": "Schluchsee",
         "lat": 47.8185928,
         "lon": 8.177035,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ludwigsburg|sindelfingen-maichingen: mehrere fahrzeuge auf feldweg in brand geraten - knapp 50.000 euro sachschaden",
-    "status": "active",
-    "title": "Sindelfingen-Maichingen: Mehrere Fahrzeuge auf Feldweg in Brand geraten - knapp 50.000 Euro Sachschaden",
-    "link": "https://www.presseportal.de/blaulicht/pm/110974/6322026",
-    "first": "2026-07-27T10:39:37Z",
-    "last": "2026-07-27T10:39:37Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Sindelfingen-Maichingen",
-        "lat": 48.7221767,
-        "lon": 8.9653797,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Konstanz|(aichhalden / lkr. rottweil) brand einer ballenpresse löst flächenbrand aus: etwa 15.000 euro schaden (25.07.2026)",
-    "status": "out",
-    "title": "(Aichhalden / Lkr. Rottweil) Brand einer Ballenpresse löst Flächenbrand aus: etwa 15.000 Euro Schaden (25.07.2026)",
-    "link": "https://www.presseportal.de/blaulicht/pm/110973/6321983",
-    "first": "2026-07-27T10:15:14Z",
-    "last": "2026-07-27T10:15:14Z",
-    "veg": true,
-    "source": "Polizeipräsidium Konstanz",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "(Aichhalden",
-        "lat": 48.2679292,
-        "lon": 8.399562,
-        "approx": false
-      },
-      {
-        "name": "zwischen Aichhalden und Rötenberg",
-        "lat": 48.28667,
-        "lon": 8.41123,
-        "approx": true
-      },
-      {
-        "name": "Aichhalden",
-        "lat": 48.2679292,
-        "lon": 8.399562,
         "approx": false
       }
     ]
