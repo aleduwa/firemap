@@ -1,11 +1,81 @@
 [
   {
+    "base": "Kreispolizeibehörde Kleve|goch - unbekannte legen feuer in pfalzdorfer kirche / diverse gegenstände beschädigt und spendengeld entwendet / zeugen gesucht",
+    "status": "active",
+    "title": "Goch - Unbekannte legen Feuer in Pfalzdorfer Kirche / diverse Gegenstände beschädigt und Spendengeld entwendet / Zeugen gesucht",
+    "link": "https://www.presseportal.de/blaulicht/pm/65849/6340150",
+    "first": "2026-08-26T11:35:47Z",
+    "last": "2026-08-26T11:35:47Z",
+    "places": [
+      {
+        "name": "Goch",
+        "lat": 51.6755765,
+        "lon": 6.1593045,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Kreispolizeibehörde Kleve",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|teningen: gebäudebrand in mehrfamilienhaus - hoher sachschaden",
+    "status": "active",
+    "title": "Teningen: Gebäudebrand in Mehrfamilienhaus - hoher Sachschaden",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6340107",
+    "first": "2026-08-26T11:11:23Z",
+    "last": "2026-08-26T11:11:23Z",
+    "places": [
+      {
+        "name": "Teningen",
+        "lat": 48.1270117,
+        "lon": 7.8101648,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Pforzheim|(pf) pforzheim - gemeinsame pressemeldung der staatsanwaltschaft karlsruhe - zweigstelle pforzheim und des pp pforzheim - drei tatverdächtige nach versuchter schwerer brandstiftung festgenommen",
+    "status": "active",
+    "title": "(PF) Pforzheim - Gemeinsame Pressemeldung der Staatsanwaltschaft Karlsruhe - Zweigstelle Pforzheim und des PP Pforzheim - Drei Tatverdächtige nach versuchter schwerer Brandstiftung festgenommen",
+    "link": "https://www.presseportal.de/blaulicht/pm/137462/6340067",
+    "first": "2026-08-26T10:53:18Z",
+    "last": "2026-08-26T10:53:18Z",
+    "places": [
+      {
+        "name": "Pforzheim",
+        "lat": 48.890934,
+        "lon": 8.7025509,
+        "approx": false
+      },
+      {
+        "name": "zwischen Hohenzollernstraße und Friedrich-Ebert-Straße",
+        "lat": 48.78316,
+        "lon": 9.17053,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Pforzheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Aalen|ostalbkreis: fahrzeugbrand - unfallflucht - sachbeschädigung - diebstahl - unfall",
     "status": "out",
     "title": "Ostalbkreis: Fahrzeugbrand - Unfallflucht - Sachbeschädigung - Diebstahl - Unfall",
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6339956",
     "first": "2026-08-26T09:36:21Z",
     "last": "2026-08-26T09:36:21Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ostalbkreis",
@@ -13,11 +83,7 @@
         "lon": 10.0337317,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(gp) gruibingen - stromaggregat fängt feuer / 25.000 euro sachschaden sind die bilanz eines brandes am dienstag in gruibingen.",
@@ -26,6 +92,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6339954",
     "first": "2026-08-26T09:35:56Z",
     "last": "2026-08-26T09:35:56Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Gruibingen",
@@ -33,11 +103,7 @@
         "lon": 9.6431134,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|heidelberg: fahrzeugbrand, pressemitteilung nr. 2",
@@ -6915,138 +6981,6 @@
         "name": "Aichhalden",
         "lat": 48.2679292,
         "lon": 8.399562,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ludwigsburg|waldenbuch: korrektur - kleidercontainer niedergebrannt",
-    "status": "active",
-    "title": "Waldenbuch: KORREKTUR - Kleidercontainer niedergebrannt",
-    "link": "https://www.presseportal.de/blaulicht/pm/110974/6321943",
-    "first": "2026-07-27T09:55:15Z",
-    "last": "2026-07-27T09:55:15Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Waldenbuch",
-        "lat": 48.6374291,
-        "lon": 9.1312415,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Offenburg|neuried - ohne führerschein und unter alkoholeinfluss verunfallt, fahrzeug brennt aus",
-    "status": "active",
-    "title": "Neuried - Ohne Führerschein und unter Alkoholeinfluss verunfallt, Fahrzeug brennt aus",
-    "link": "https://www.presseportal.de/blaulicht/pm/110975/6321919",
-    "first": "2026-07-27T09:45:38Z",
-    "last": "2026-07-27T09:45:38Z",
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Neuried",
-        "lat": 48.444461,
-        "lon": 7.8221045,
-        "approx": false
-      },
-      {
-        "name": "zwischen Müllen und Schutterwald",
-        "lat": 48.4629,
-        "lon": 7.86037,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(gp) ebersbach - feuer in wohnung / bei einem brand am samstag konnten alle bewohner das gebäude in ebersbach rechtzeitig verlassen.",
-    "status": "out",
-    "title": "(GP) Ebersbach - Feuer in Wohnung / Bei einem Brand am Samstag konnten alle Bewohner das Gebäude in Ebersbach rechtzeitig verlassen.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6321887",
-    "first": "2026-07-27T09:32:51Z",
-    "last": "2026-07-27T09:32:51Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Ebersbach",
-        "lat": 47.9554246,
-        "lon": 9.5791447,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(bc) schwendi - mähdrescher brennt gleich zweimal / am samstag und sonntag musste die feuerwehr bei schwendi zu ein und demselben mähdrescher ausrücken. der geriet bei erntearbeiten in brand.",
-    "status": "out",
-    "title": "(BC) Schwendi - Mähdrescher brennt gleich zweimal / Am Samstag und Sonntag musste die Feuerwehr bei Schwendi zu ein und demselben Mähdrescher ausrücken. Der geriet bei Erntearbeiten in Brand.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6321874",
-    "first": "2026-07-27T09:23:22Z",
-    "last": "2026-07-27T09:23:22Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Schwendi",
-        "lat": 48.1756438,
-        "lon": 9.9784952,
-        "approx": false
-      },
-      {
-        "name": "zwischen Orsenhausen und Großschafhausen",
-        "lat": 48.20065,
-        "lon": 9.96748,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(bc) langenenslingen - flächenbrand löst feuerwehreinsatz aus / am samstag kam es bei langenenslingen zu einem flächenbrand. rund sieben hektar stoppelfeld brannten nieder.",
-    "status": "out",
-    "title": "(BC) Langenenslingen - Flächenbrand löst Feuerwehreinsatz aus / Am Samstag kam es bei Langenenslingen zu einem Flächenbrand. Rund sieben Hektar Stoppelfeld brannten nieder.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6321865",
-    "first": "2026-07-27T09:17:53Z",
-    "last": "2026-07-27T09:17:53Z",
-    "veg": true,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Langenenslingen",
-        "lat": 48.1480101,
-        "lon": 9.3770185,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ludwigsburg|ludwigsburg-eglosheim: mehrere pkw im hof eines sportwagenhandels abgebrannt",
-    "status": "out",
-    "title": "Ludwigsburg-Eglosheim: mehrere PKW im Hof eines Sportwagenhandels abgebrannt",
-    "link": "https://www.presseportal.de/blaulicht/pm/110974/6321863",
-    "first": "2026-07-27T09:16:49Z",
-    "last": "2026-07-27T09:16:49Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Ludwigsburg-Eglosheim",
-        "lat": 48.909746,
-        "lon": 9.1711704,
         "approx": false
       }
     ]
