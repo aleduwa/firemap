@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/161590/6340490",
     "first": "2026-08-27T00:26:13Z",
     "last": "2026-08-27T00:26:13Z",
+    "veg": false,
+    "source": "Feuerwehr Stuttgart",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Stuttgart",
@@ -13,11 +17,7 @@
         "lon": 9.1800132,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Stuttgart",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Schwelm|schwelbrand auf dem dach eines wohnkomplexes",
@@ -6857,32 +6857,6 @@
         "name": "Erbach",
         "lat": 48.3274603,
         "lon": 9.8913803,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|malsch/rhein-neckar-kreis: aktueller garagenbrand - pressemeldung nr. 1",
-    "status": "active",
-    "title": "Malsch/Rhein-Neckar-Kreis: Aktueller Garagenbrand - Pressemeldung Nr. 1",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6322435",
-    "first": "2026-07-28T04:56:47Z",
-    "last": "2026-07-28T04:56:47Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Malsch",
-        "lat": 49.2452537,
-        "lon": 8.6829484,
-        "approx": false
-      },
-      {
-        "name": "Rhein-Neckar-Kreis",
-        "lat": 49.3684797,
-        "lon": 8.7352403,
         "approx": false
       }
     ]
