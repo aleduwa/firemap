@@ -1,5 +1,65 @@
 [
   {
+    "base": "Polizeipräsidium Heilbronn|stadt- und landkreis heilbronn: diebstahl, brand, unfall",
+    "status": "out",
+    "title": "Stadt- und Landkreis Heilbronn: Diebstahl, Brand, Unfall",
+    "link": "https://www.presseportal.de/blaulicht/pm/110971/6340774",
+    "first": "2026-08-27T11:06:01Z",
+    "last": "2026-08-27T11:06:01Z",
+    "places": [
+      {
+        "name": "Stadt-",
+        "lat": 49.4093582,
+        "lon": 8.694724,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Pforzheim|(enzkreis) keltern - polizei ermittelt wegen möglicher brandstiftung - zeugen gesucht",
+    "status": "active",
+    "title": "(Enzkreis) Keltern - Polizei ermittelt wegen möglicher Brandstiftung - Zeugen gesucht",
+    "link": "https://www.presseportal.de/blaulicht/pm/137462/6340690",
+    "first": "2026-08-27T10:20:58Z",
+    "last": "2026-08-27T10:20:58Z",
+    "places": [
+      {
+        "name": "Keltern",
+        "lat": 48.8988404,
+        "lon": 8.5821679,
+        "approx": false
+      }
+    ],
+    "veg": true,
+    "source": "Polizeipräsidium Pforzheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Aalen|rems-murr-kreis: unfalle, brände, farbschmiererei",
+    "status": "active",
+    "title": "Rems-Murr-Kreis: Unfalle, Brände, Farbschmiererei",
+    "link": "https://www.presseportal.de/blaulicht/pm/110969/6340534",
+    "first": "2026-08-27T06:13:07Z",
+    "last": "2026-08-27T06:13:07Z",
+    "places": [
+      {
+        "name": "Rems-Murr-Kreis",
+        "lat": 48.8966799,
+        "lon": 9.5037124,
+        "approx": false
+      }
+    ],
+    "veg": true,
+    "source": "Polizeipräsidium Aalen",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Stuttgart|kellerbrand in stuttgart-süd - drei verletzte personen durch rauchgasinhalation",
     "status": "active",
     "title": "Kellerbrand in Stuttgart-Süd - drei verletzte Personen durch Rauchgasinhalation",
@@ -3521,7 +3581,7 @@
     "title": "Stadt- und Landkreis Heilbronn: Einbrüche, Unfallflucht, Widerstand gegen Vollstreckungsbeamte, Brand und Unfall",
     "link": "https://www.presseportal.de/blaulicht/pm/110971/6333518",
     "first": "2026-08-14T10:38:16Z",
-    "last": "2026-08-14T10:38:16Z",
+    "last": "2026-08-14T12:38:16Z",
     "veg": true,
     "source": "Polizeipräsidium Heilbronn",
     "updates": 0,
@@ -6680,184 +6740,6 @@
         "lat": 49.32284,
         "lon": 8.65136,
         "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Konstanz|(geisingen / lkr. tuttlingen) brand einer ballenpresse löst flächenbrand aus: etwa 6.000 euro schaden (27.07.2026)",
-    "status": "out",
-    "title": "(Geisingen / Lkr. Tuttlingen) Brand einer Ballenpresse löst Flächenbrand aus: etwa 6.000 Euro Schaden (27.07.2026)",
-    "link": "https://www.presseportal.de/blaulicht/pm/110973/6322953",
-    "first": "2026-07-28T11:47:58Z",
-    "last": "2026-07-28T11:47:58Z",
-    "veg": true,
-    "source": "Polizeipräsidium Konstanz",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "(Geisingen",
-        "lat": 47.922968,
-        "lon": 8.6491814,
-        "approx": false
-      },
-      {
-        "name": "Geisingen",
-        "lat": 47.922968,
-        "lon": 8.6491814,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|wutöschingen / degernau: brennender baum bei der kirche - zeugensuche",
-    "status": "active",
-    "title": "Wutöschingen / Degernau: Brennender Baum bei der Kirche - Zeugensuche",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6322933",
-    "first": "2026-07-28T11:36:49Z",
-    "last": "2026-07-28T11:36:49Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Wutöschingen",
-        "lat": 47.6596219,
-        "lon": 8.3651806,
-        "approx": false
-      },
-      {
-        "name": "Degernau",
-        "lat": 47.6679121,
-        "lon": 8.3825555,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Offenburg|iffezheim - brand einer ehemaligen gaststätte, zeugen gesucht",
-    "status": "active",
-    "title": "Iffezheim - Brand einer ehemaligen Gaststätte, Zeugen gesucht",
-    "link": "https://www.presseportal.de/blaulicht/pm/110975/6322894",
-    "first": "2026-07-28T10:59:07Z",
-    "last": "2026-07-28T10:59:07Z",
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Iffezheim",
-        "lat": 48.8209175,
-        "lon": 8.1421337,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Heilbronn|neckar-odenwald-kreis: diebstahl, brand und unfall",
-    "status": "active",
-    "title": "Neckar-Odenwald-Kreis: Diebstahl, Brand und Unfall",
-    "link": "https://www.presseportal.de/blaulicht/pm/110971/6322891",
-    "first": "2026-07-28T10:56:33Z",
-    "last": "2026-07-28T10:56:33Z",
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Neckar-Odenwald-Kreis",
-        "lat": 49.4678557,
-        "lon": 9.2709386,
-        "approx": false
-      },
-      {
-        "name": "zwischen Langenelz und Oberneudorf",
-        "lat": 49.50925,
-        "lon": 9.2351,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|freiburg-betzenhausen: feuer in mehrfamilienhaus",
-    "status": "active",
-    "title": "Freiburg-Betzenhausen: Feuer in Mehrfamilienhaus",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6322821",
-    "first": "2026-07-28T09:34:03Z",
-    "last": "2026-07-28T09:34:03Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Freiburg-Betzenhausen",
-        "lat": 48.005962,
-        "lon": 7.8040107,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Heilbronn|stadt- und landkreis heilbronn: kupferkabel gestohlen, sachbeschädigung, unfall und brand",
-    "status": "active",
-    "title": "Stadt- und Landkreis Heilbronn: Kupferkabel gestohlen, Sachbeschädigung, Unfall und Brand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110971/6322792",
-    "first": "2026-07-28T09:19:42Z",
-    "last": "2026-07-28T09:19:42Z",
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stadt-",
-        "lat": 49.4093582,
-        "lon": 8.694724,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Offenburg|steinach - brand in einem heizungsraum",
-    "status": "active",
-    "title": "Steinach - Brand in einem Heizungsraum",
-    "link": "https://www.presseportal.de/blaulicht/pm/110975/6322690",
-    "first": "2026-07-28T08:18:10Z",
-    "last": "2026-07-28T08:18:10Z",
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Steinach",
-        "lat": 48.3030536,
-        "lon": 8.057394,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(ul) erbach - vergessener topf führt zu feuerwehreinsatz / nach einem küchenbrand am montag in erbach entstand rund 50.000 euro sachschaden.",
-    "status": "active",
-    "title": "(UL) Erbach - Vergessener Topf führt zu Feuerwehreinsatz / Nach einem Küchenbrand am Montag in Erbach entstand rund 50.000 Euro Sachschaden.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6322509",
-    "first": "2026-07-28T06:33:14Z",
-    "last": "2026-07-28T06:33:14Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Erbach",
-        "lat": 48.3274603,
-        "lon": 9.8913803,
-        "approx": false
       }
     ]
   },
