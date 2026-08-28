@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115878/6341211",
     "first": "2026-08-27T21:14:06Z",
     "last": "2026-08-27T21:14:06Z",
+    "veg": false,
+    "source": "Feuerwehr Krefeld",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Krefeld",
@@ -13,11 +17,7 @@
         "lon": 6.5623343,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Krefeld",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Alpen|nächtlicher brandmeldealarm",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/131475/6341210",
     "first": "2026-08-27T20:50:01Z",
     "last": "2026-08-27T20:50:01Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Alpen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Alpen",
@@ -33,11 +37,7 @@
         "lon": 6.5128805,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Alpen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Wetter (Ruhr)|wetter - drei brandmeldealarme innerhalb von drei stunden",
@@ -46,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/69783/6341207",
     "first": "2026-08-27T20:40:57Z",
     "last": "2026-08-27T20:40:57Z",
+    "veg": false,
+    "source": "Feuerwehr Wetter (Ruhr)",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Wetter",
@@ -53,11 +57,7 @@
         "lon": 7.3951553,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Wetter (Ruhr)",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Mülheim an der Ruhr|brand eines wäschetrockners im 2.og im stadtteil heißen",
@@ -66,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115880/6341196",
     "first": "2026-08-27T17:53:45Z",
     "last": "2026-08-27T17:53:45Z",
+    "veg": false,
+    "source": "Feuerwehr Mülheim an der Ruhr",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Mülheim an der Ruhr",
@@ -73,11 +77,7 @@
         "lon": 6.8829192,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Mülheim an der Ruhr",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ludwigsburg|staatsanwaltschaft stuttgart und polizeipräsidium ludwigsburg: sindelfingen-maichingen: gebäudebrand in der hölderlinstraße - tatverdächtiger festgenommen",
@@ -86,6 +86,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110974/6341149",
     "first": "2026-08-27T15:33:03Z",
     "last": "2026-08-27T15:33:03Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ludwigsburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Staatsanwaltschaft Stuttgart",
@@ -93,11 +97,7 @@
         "lon": 9.1940305,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Heilbronn|stadt- und landkreis heilbronn: diebstahl, brand, unfall",
@@ -6616,144 +6616,6 @@
     ]
   },
   {
-    "base": "Polizeipräsidium Ulm|(bc) laupheim/schwendi - waldarbeiter löscht glimmende feuerstelle / am dienstag konnte ein waldarbeiter noch rechtzeitig einen größeren brandausbruch in einem waldstück bei laupheim verhindern.",
-    "status": "out",
-    "title": "(BC) Laupheim/Schwendi - Waldarbeiter löscht glimmende Feuerstelle / Am Dienstag konnte ein Waldarbeiter noch rechtzeitig einen größeren Brandausbruch in einem Waldstück bei Laupheim verhindern.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6323756",
-    "first": "2026-07-29T12:47:08Z",
-    "last": "2026-07-29T12:47:08Z",
-    "veg": true,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Laupheim",
-        "lat": 48.2300738,
-        "lon": 9.8837005,
-        "approx": false
-      },
-      {
-        "name": "Schwendi",
-        "lat": 48.1756438,
-        "lon": 9.9784952,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|löffingen: e-scooter-akku löst brand aus",
-    "status": "out",
-    "title": "Löffingen: E-Scooter-Akku löst Brand aus",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6323729",
-    "first": "2026-07-29T12:19:28Z",
-    "last": "2026-07-29T12:19:28Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Löffingen",
-        "lat": 47.8839004,
-        "lon": 8.3446627,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ludwigsburg|steinheim an der murr/marbach am neckar: zeugen nach flächenbrand gesucht",
-    "status": "contained",
-    "title": "Steinheim an der Murr/Marbach am Neckar: Zeugen nach Flächenbrand gesucht",
-    "link": "https://www.presseportal.de/blaulicht/pm/110974/6323545",
-    "first": "2026-07-29T09:51:43Z",
-    "last": "2026-07-29T09:51:43Z",
-    "veg": true,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Marbach am Neckar",
-        "lat": 48.9402085,
-        "lon": 9.256396,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(ul) ulm - gartenhütte brennt / am dienstag rückte die feuerwehr in ulm zu einem brand einer gartenhütte aus.",
-    "status": "active",
-    "title": "(UL) Ulm - Gartenhütte brennt / Am Dienstag rückte die Feuerwehr in Ulm zu einem Brand einer Gartenhütte aus.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6323442",
-    "first": "2026-07-29T08:44:37Z",
-    "last": "2026-07-29T08:44:37Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Ulm",
-        "lat": 48.3984968,
-        "lon": 9.9912458,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|sinsheim/reihen/rhein-neckar-kreis: gebäudebrand - feuerwehr und polizei im einsatz, pressemitteilung nr. 2",
-    "status": "contained",
-    "title": "Sinsheim/Reihen/Rhein-Neckar-Kreis: Gebäudebrand - Feuerwehr und Polizei im Einsatz, Pressemitteilung Nr. 2",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6323160",
-    "first": "2026-07-29T01:54:47Z",
-    "last": "2026-07-29T01:54:47Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Sinsheim",
-        "lat": 49.2344637,
-        "lon": 8.8989482,
-        "approx": false
-      },
-      {
-        "name": "Reihen",
-        "lat": 49.2171053,
-        "lon": 8.9157223,
-        "approx": false
-      },
-      {
-        "name": "Rhein-Neckar-Kreis",
-        "lat": 49.3684797,
-        "lon": 8.7352403,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Offenburg|renchen - brand in lagerhalle",
-    "status": "active",
-    "title": "Renchen - Brand in Lagerhalle",
-    "link": "https://www.presseportal.de/blaulicht/pm/110975/6323487",
-    "first": "2026-07-28T15:09:39Z",
-    "last": "2026-07-29T09:18:30Z",
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "updates": 1,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Renchen",
-        "lat": 48.5873988,
-        "lon": 8.0143673,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Polizeipräsidium Mannheim|st.leon-rot/rhein-neckar-kreis: mehrere heuballen in brand geraten, pm nr. 3 - zeugenaufruf",
     "status": "active",
     "title": "St.Leon-Rot/Rhein-Neckar-Kreis: Mehrere Heuballen in Brand geraten, PM Nr. 3 - Zeugenaufruf",
@@ -6788,26 +6650,6 @@
         "lat": 49.32284,
         "lon": 8.65136,
         "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Aalen|rems-murr-kreis: einbrüche, verkehrsunfall & flächenbrand",
-    "status": "out",
-    "title": "Rems-Murr-Kreis: Einbrüche, Verkehrsunfall & Flächenbrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110969/6323241",
-    "first": "2026-07-27T14:15:34Z",
-    "last": "2026-07-29T06:32:21Z",
-    "veg": true,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 1,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Rems-Murr-Kreis",
-        "lat": 48.8966799,
-        "lon": 9.5037124,
-        "approx": false
       }
     ]
   },
