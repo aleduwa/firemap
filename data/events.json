@@ -1,11 +1,115 @@
 [
   {
+    "base": "Feuerwehr Krefeld|brand auf balkon greift auf dachgeschoss und dach über",
+    "status": "active",
+    "title": "Brand auf Balkon greift auf Dachgeschoss und Dach über",
+    "link": "https://www.presseportal.de/blaulicht/pm/115878/6341211",
+    "first": "2026-08-27T21:14:06Z",
+    "last": "2026-08-27T21:14:06Z",
+    "places": [
+      {
+        "name": "Krefeld",
+        "lat": 51.3331205,
+        "lon": 6.5623343,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Krefeld",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Freiwillige Feuerwehr Alpen|nächtlicher brandmeldealarm",
+    "status": "active",
+    "title": "Nächtlicher Brandmeldealarm",
+    "link": "https://www.presseportal.de/blaulicht/pm/131475/6341210",
+    "first": "2026-08-27T20:50:01Z",
+    "last": "2026-08-27T20:50:01Z",
+    "places": [
+      {
+        "name": "Alpen",
+        "lat": 51.5767474,
+        "lon": 6.5128805,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Alpen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Wetter (Ruhr)|wetter - drei brandmeldealarme innerhalb von drei stunden",
+    "status": "out",
+    "title": "Wetter - drei Brandmeldealarme innerhalb von drei Stunden",
+    "link": "https://www.presseportal.de/blaulicht/pm/69783/6341207",
+    "first": "2026-08-27T20:40:57Z",
+    "last": "2026-08-27T20:40:57Z",
+    "places": [
+      {
+        "name": "Wetter",
+        "lat": 51.3879463,
+        "lon": 7.3951553,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Wetter (Ruhr)",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Mülheim an der Ruhr|brand eines wäschetrockners im 2.og im stadtteil heißen",
+    "status": "out",
+    "title": "Brand eines Wäschetrockners im 2.OG im Stadtteil Heißen",
+    "link": "https://www.presseportal.de/blaulicht/pm/115880/6341196",
+    "first": "2026-08-27T17:53:45Z",
+    "last": "2026-08-27T17:53:45Z",
+    "places": [
+      {
+        "name": "Mülheim an der Ruhr",
+        "lat": 51.4272925,
+        "lon": 6.8829192,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Mülheim an der Ruhr",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Ludwigsburg|staatsanwaltschaft stuttgart und polizeipräsidium ludwigsburg: sindelfingen-maichingen: gebäudebrand in der hölderlinstraße - tatverdächtiger festgenommen",
+    "status": "active",
+    "title": "Staatsanwaltschaft Stuttgart und Polizeipräsidium Ludwigsburg: Sindelfingen-Maichingen: Gebäudebrand in der Hölderlinstraße - Tatverdächtiger festgenommen",
+    "link": "https://www.presseportal.de/blaulicht/pm/110974/6341149",
+    "first": "2026-08-27T15:33:03Z",
+    "last": "2026-08-27T15:33:03Z",
+    "places": [
+      {
+        "name": "Staatsanwaltschaft Stuttgart",
+        "lat": 48.7894873,
+        "lon": 9.1940305,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ludwigsburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Heilbronn|stadt- und landkreis heilbronn: diebstahl, brand, unfall",
     "status": "out",
     "title": "Stadt- und Landkreis Heilbronn: Diebstahl, Brand, Unfall",
     "link": "https://www.presseportal.de/blaulicht/pm/110971/6340774",
     "first": "2026-08-27T11:06:01Z",
     "last": "2026-08-27T11:06:01Z",
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Stadt-",
@@ -13,11 +117,7 @@
         "lon": 8.694724,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Pforzheim|(enzkreis) keltern - polizei ermittelt wegen möglicher brandstiftung - zeugen gesucht",
@@ -26,6 +126,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/137462/6340690",
     "first": "2026-08-27T10:20:58Z",
     "last": "2026-08-27T10:20:58Z",
+    "veg": true,
+    "source": "Polizeipräsidium Pforzheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Keltern",
@@ -33,11 +137,7 @@
         "lon": 8.5821679,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Pforzheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Aalen|rems-murr-kreis: unfalle, brände, farbschmiererei",
@@ -46,6 +146,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6340534",
     "first": "2026-08-27T06:13:07Z",
     "last": "2026-08-27T06:13:07Z",
+    "veg": true,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Rems-Murr-Kreis",
@@ -53,11 +157,7 @@
         "lon": 9.5037124,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Aalen",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Stuttgart|kellerbrand in stuttgart-süd - drei verletzte personen durch rauchgasinhalation",
@@ -6629,58 +6729,6 @@
         "name": "Rhein-Neckar-Kreis",
         "lat": 49.3684797,
         "lon": 8.7352403,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|sinsheim/reihen/rhein-neckar-kreis: gebäudebrand - feuerwehr und polizei im einsatz, pressemitteilung nr. 1",
-    "status": "active",
-    "title": "Sinsheim/Reihen/Rhein-Neckar-Kreis: Gebäudebrand - Feuerwehr und Polizei im Einsatz, Pressemitteilung Nr. 1",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6323153",
-    "first": "2026-07-28T20:22:25Z",
-    "last": "2026-07-28T20:22:25Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Sinsheim",
-        "lat": 49.2344637,
-        "lon": 8.8989482,
-        "approx": false
-      },
-      {
-        "name": "Reihen",
-        "lat": 49.2171053,
-        "lon": 8.9157223,
-        "approx": false
-      },
-      {
-        "name": "Rhein-Neckar-Kreis",
-        "lat": 49.3684797,
-        "lon": 8.7352403,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Offenburg|böschungsbrand neben der autobahn bei offenburg",
-    "status": "active",
-    "title": "Böschungsbrand neben der Autobahn bei Offenburg",
-    "link": "https://www.presseportal.de/blaulicht/pm/128693/6323150",
-    "first": "2026-07-28T19:43:58Z",
-    "last": "2026-07-28T21:43:58Z",
-    "veg": true,
-    "source": "Feuerwehr Offenburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Offenburg",
-        "lat": 48.4695984,
-        "lon": 7.9429235,
         "approx": false
       }
     ]
