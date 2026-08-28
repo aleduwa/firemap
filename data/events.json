@@ -1,5 +1,85 @@
 [
   {
+    "base": "Polizeipräsidium Karlsruhe|(ka) karlsruhe - nach brand in parkhaus - ursache war ein technischer defekt an einem pkw",
+    "status": "active",
+    "title": "(KA) Karlsruhe - Nach Brand in Parkhaus - Ursache war ein technischer Defekt an einem Pkw",
+    "link": "https://www.presseportal.de/blaulicht/pm/110972/6341827",
+    "first": "2026-08-28T15:54:29Z",
+    "last": "2026-08-28T15:54:29Z",
+    "places": [
+      {
+        "name": "Karlsruhe",
+        "lat": 49.0068705,
+        "lon": 8.4034195,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Karlsruhe",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Kreispolizeibehörde Kleve|issum - brand von zwei abgestellten fahrzeugen: kripo ermittelt wegen vorsätzlicher brandstiftung",
+    "status": "active",
+    "title": "Issum - Brand von zwei abgestellten Fahrzeugen: Kripo ermittelt wegen vorsätzlicher Brandstiftung",
+    "link": "https://www.presseportal.de/blaulicht/pm/65849/6341789",
+    "first": "2026-08-28T14:42:43Z",
+    "last": "2026-08-28T14:42:43Z",
+    "places": [
+      {
+        "name": "Issum",
+        "lat": 51.5347321,
+        "lon": 6.4245085,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Kreispolizeibehörde Kleve",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Herdecke|pkw-brand auf der gedener straße",
+    "status": "active",
+    "title": "Pkw-Brand auf der Gedener Straße",
+    "link": "https://www.presseportal.de/blaulicht/pm/69790/6341785",
+    "first": "2026-08-28T14:37:00Z",
+    "last": "2026-08-28T14:37:00Z",
+    "places": [
+      {
+        "name": "Herdecke",
+        "lat": 51.4001119,
+        "lon": 7.4330062,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Herdecke",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Ulm|(gp) geislingen - parkbank in flammen / am donnerstag brannte an einem wanderweg in geislingen eine parkbank.",
+    "status": "active",
+    "title": "(GP) Geislingen - Parkbank in Flammen / Am Donnerstag brannte an einem Wanderweg in Geislingen eine Parkbank.",
+    "link": "https://www.presseportal.de/blaulicht/pm/110979/6341771",
+    "first": "2026-08-28T14:20:00Z",
+    "last": "2026-08-28T14:20:00Z",
+    "places": [
+      {
+        "name": "Geislingen",
+        "lat": 48.6230397,
+        "lon": 9.8356703,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Krefeld|brand auf balkon greift auf dachgeschoss und dach über",
     "status": "active",
     "title": "Brand auf Balkon greift auf Dachgeschoss und Dach über",
@@ -6545,72 +6625,6 @@
         "name": "Erlenbach",
         "lat": 49.1703333,
         "lon": 9.2692171,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Stuttgart|fahrzeugbrand greift auf wohngebäude über",
-    "status": "out",
-    "title": "Fahrzeugbrand greift auf Wohngebäude über",
-    "link": "https://www.presseportal.de/blaulicht/pm/161590/6323894",
-    "first": "2026-07-29T18:26:02Z",
-    "last": "2026-07-29T20:26:02Z",
-    "veg": false,
-    "source": "Feuerwehr Stuttgart",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stuttgart",
-        "lat": 48.7784485,
-        "lon": 9.1800132,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Pforzheim|brand im ehem. emma-jäger-bad",
-    "status": "out",
-    "title": "Brand im ehem. Emma-Jäger-Bad",
-    "link": "https://www.presseportal.de/blaulicht/pm/151867/6323881",
-    "first": "2026-07-29T16:53:02Z",
-    "last": "2026-07-29T18:53:02Z",
-    "veg": true,
-    "source": "Feuerwehr Pforzheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Pforzheim",
-        "lat": 48.890934,
-        "lon": 8.7025509,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Offenburg|kehl/goldscheuer - unerlaubtes grillen trotz waldbrandgefahr",
-    "status": "active",
-    "title": "Kehl/Goldscheuer - Unerlaubtes Grillen trotz Waldbrandgefahr",
-    "link": "https://www.presseportal.de/blaulicht/pm/110975/6323766",
-    "first": "2026-07-29T12:56:22Z",
-    "last": "2026-07-29T12:56:22Z",
-    "veg": true,
-    "source": "Polizeipräsidium Offenburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Kehl",
-        "lat": 48.5733977,
-        "lon": 7.8114002,
-        "approx": false
-      },
-      {
-        "name": "Goldscheuer",
-        "lat": 48.508866,
-        "lon": 7.8253778,
         "approx": false
       }
     ]
