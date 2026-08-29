@@ -1,11 +1,61 @@
 [
   {
+    "base": "Polizeipräsidium Mannheim|leimen/rhein-neckar-kreis: brand in der talstraße - feuerwehr im einsatz - pressemeldung nr. 1",
+    "status": "active",
+    "title": "Leimen/Rhein-Neckar-Kreis: Brand in der Talstraße - Feuerwehr im Einsatz - Pressemeldung Nr. 1",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6341888",
+    "first": "2026-08-29T04:58:00Z",
+    "last": "2026-08-29T04:58:00Z",
+    "places": [
+      {
+        "name": "Leimen",
+        "lat": 49.3491417,
+        "lon": 8.6909951,
+        "approx": false
+      },
+      {
+        "name": "Rhein-Neckar-Kreis",
+        "lat": 49.3684797,
+        "lon": 8.7352403,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr und Rettungsdienst Bonn|3. folgemeldung: waldbrandeinheit arbeitet hand in hand mit serbischen und internationalen einsatzkräften",
+    "status": "active",
+    "title": "3. Folgemeldung: Waldbrandeinheit arbeitet Hand in Hand mit serbischen und internationalen Einsatzkräften",
+    "link": "https://www.presseportal.de/blaulicht/pm/115888/6341872",
+    "first": "2026-08-29T00:30:52Z",
+    "last": "2026-08-29T00:30:52Z",
+    "places": [
+      {
+        "name": "Bonn",
+        "lat": 50.7352621,
+        "lon": 7.1024635,
+        "approx": true
+      }
+    ],
+    "veg": true,
+    "source": "Feuerwehr und Rettungsdienst Bonn",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Karlsruhe|(ka) karlsruhe - nach brand in parkhaus - ursache war ein technischer defekt an einem pkw",
     "status": "active",
     "title": "(KA) Karlsruhe - Nach Brand in Parkhaus - Ursache war ein technischer Defekt an einem Pkw",
     "link": "https://www.presseportal.de/blaulicht/pm/110972/6341827",
     "first": "2026-08-28T15:54:29Z",
     "last": "2026-08-28T15:54:29Z",
+    "veg": false,
+    "source": "Polizeipräsidium Karlsruhe",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Karlsruhe",
@@ -13,11 +63,7 @@
         "lon": 8.4034195,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Karlsruhe",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Kreispolizeibehörde Kleve|issum - brand von zwei abgestellten fahrzeugen: kripo ermittelt wegen vorsätzlicher brandstiftung",
@@ -26,6 +72,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/65849/6341789",
     "first": "2026-08-28T14:42:43Z",
     "last": "2026-08-28T14:42:43Z",
+    "veg": false,
+    "source": "Kreispolizeibehörde Kleve",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Issum",
@@ -33,11 +83,7 @@
         "lon": 6.4245085,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Kreispolizeibehörde Kleve",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Herdecke|pkw-brand auf der gedener straße",
@@ -46,6 +92,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/69790/6341785",
     "first": "2026-08-28T14:37:00Z",
     "last": "2026-08-28T14:37:00Z",
+    "veg": false,
+    "source": "Feuerwehr Herdecke",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Herdecke",
@@ -53,11 +103,7 @@
         "lon": 7.4330062,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Herdecke",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(gp) geislingen - parkbank in flammen / am donnerstag brannte an einem wanderweg in geislingen eine parkbank.",
@@ -66,6 +112,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6341771",
     "first": "2026-08-28T14:20:00Z",
     "last": "2026-08-28T14:20:00Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Geislingen",
@@ -73,11 +123,7 @@
         "lon": 9.8356703,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Krefeld|brand auf balkon greift auf dachgeschoss und dach über",
@@ -6605,26 +6651,6 @@
         "name": "Riedlingen",
         "lat": 48.1534412,
         "lon": 9.4748796,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Heilbronn|landkreis heilbronn/erlenbach: flächenbrand mit autobahnsperrung",
-    "status": "contained",
-    "title": "Landkreis Heilbronn/Erlenbach: Flächenbrand mit Autobahnsperrung",
-    "link": "https://www.presseportal.de/blaulicht/pm/110971/6323916",
-    "first": "2026-07-30T00:40:26Z",
-    "last": "2026-07-30T00:40:26Z",
-    "veg": true,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Erlenbach",
-        "lat": 49.1703333,
-        "lon": 9.2692171,
         "approx": false
       }
     ]
