@@ -1,11 +1,35 @@
 [
   {
+    "base": "Feuerwehr Allensbach|b3 gebäude unklare rauchentwicklung",
+    "status": "active",
+    "title": "B3 Gebäude unklare Rauchentwicklung",
+    "link": "https://www.presseportal.de/blaulicht/pm/175384/6341980",
+    "first": "2026-08-29T12:37:40Z",
+    "last": "2026-08-29T12:37:40Z",
+    "places": [
+      {
+        "name": "Allensbach",
+        "lat": 47.7168668,
+        "lon": 9.0687005,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Allensbach",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Rösrath|brand an wohngebäude in forsbach",
     "status": "out",
     "title": "Brand an Wohngebäude in Forsbach",
     "link": "https://www.presseportal.de/blaulicht/pm/130257/6341971",
     "first": "2026-08-29T12:00:01Z",
     "last": "2026-08-29T12:00:01Z",
+    "veg": false,
+    "source": "Feuerwehr Rösrath",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Rösrath",
@@ -13,11 +37,7 @@
         "lon": 7.1825445,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Rösrath",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Essen|nächtliche brandserie im essener norden - zwei schulen betroffen",
@@ -26,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/56893/6341950",
     "first": "2026-08-29T10:45:20Z",
     "last": "2026-08-29T10:45:20Z",
+    "veg": false,
+    "source": "Feuerwehr Essen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Essen",
@@ -33,11 +57,7 @@
         "lon": 7.0158171,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Essen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|leimen/rhein-neckar-kreis: brand in der talstraße - feuerwehr im einsatz - pressemeldung nr. 2",
@@ -46,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6341947",
     "first": "2026-08-29T10:40:00Z",
     "last": "2026-08-29T10:40:00Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Leimen",
@@ -59,11 +83,7 @@
         "lon": 8.7352403,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|leimen/rhein-neckar-kreis: brand in der talstraße - feuerwehr im einsatz - pressemeldung nr. 1",
@@ -6466,150 +6486,6 @@
         "lat": 49.5462349,
         "lon": 8.6717458,
         "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Aalen|ostalbkreis: kripo sucht zeugen - vollendeter schockanruf - brennender lkw - unfälle",
-    "status": "out",
-    "title": "Ostalbkreis: Kripo sucht Zeugen - Vollendeter Schockanruf - Brennender LKW - Unfälle",
-    "link": "https://www.presseportal.de/blaulicht/pm/110969/6324552",
-    "first": "2026-07-30T13:02:51Z",
-    "last": "2026-07-30T13:02:51Z",
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Ostalbkreis",
-        "lat": 48.8777738,
-        "lon": 10.0337317,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|schluchsee-blasiwald: waldarbeitsmaschine brennt vollständig aus",
-    "status": "out",
-    "title": "Schluchsee-Blasiwald: Waldarbeitsmaschine brennt vollständig aus",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6324496",
-    "first": "2026-07-30T12:10:19Z",
-    "last": "2026-07-30T12:10:19Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Schluchsee-Blasiwald",
-        "lat": 47.8174889,
-        "lon": 8.1515136,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|löffingen-unadingen: brand eines wohnhauses",
-    "status": "out",
-    "title": "Löffingen-Unadingen: Brand eines Wohnhauses",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6324491",
-    "first": "2026-07-30T12:05:36Z",
-    "last": "2026-07-30T12:05:36Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Löffingen-Unadingen",
-        "lat": 47.8807628,
-        "lon": 8.4070082,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Heilbronn|stadt- und landkreis heilbronn: diebstahl, brand, unfall und einbrüche",
-    "status": "active",
-    "title": "Stadt- und Landkreis Heilbronn: Diebstahl, Brand, Unfall und Einbrüche",
-    "link": "https://www.presseportal.de/blaulicht/pm/110971/6324447",
-    "first": "2026-07-30T11:26:02Z",
-    "last": "2026-07-30T11:26:02Z",
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stadt-",
-        "lat": 49.4093582,
-        "lon": 8.694724,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|weinheim/rhein-neckar-kreis: garagenbrand - pm 2",
-    "status": "contained",
-    "title": "Weinheim/Rhein-Neckar-Kreis: Garagenbrand - PM 2",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6324437",
-    "first": "2026-07-30T11:20:30Z",
-    "last": "2026-07-30T11:20:30Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Weinheim",
-        "lat": 49.5462349,
-        "lon": 8.6717458,
-        "approx": false
-      },
-      {
-        "name": "Rhein-Neckar-Kreis",
-        "lat": 49.3684797,
-        "lon": 8.7352403,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|st.leon-rot/rhein-neckar-kreis: mehrere heuballen in brand geraten, pm nr. 3 - zeugenaufruf",
-    "status": "active",
-    "title": "St.Leon-Rot/Rhein-Neckar-Kreis: Mehrere Heuballen in Brand geraten, PM Nr. 3 - Zeugenaufruf",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6324481",
-    "first": "2026-07-28T12:11:28Z",
-    "last": "2026-07-30T11:53:44Z",
-    "veg": true,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 1,
-    "region": "BW",
-    "places": [
-      {
-        "name": "St.Leon-Rot",
-        "lat": 49.2671326,
-        "lon": 8.6142616,
-        "approx": false
-      },
-      {
-        "name": "Rhein-Neckar-Kreis",
-        "lat": 49.3684797,
-        "lon": 8.7352403,
-        "approx": false
-      },
-      {
-        "name": "Sandhausen",
-        "lat": 49.3424055,
-        "lon": 8.6595053,
-        "approx": false
-      },
-      {
-        "name": "L598 zwischen Walldorf und Sandhausen",
-        "lat": 49.32284,
-        "lon": 8.65136,
-        "approx": true
       }
     ]
   },
