@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/175384/6341980",
     "first": "2026-08-29T12:37:40Z",
     "last": "2026-08-29T12:37:40Z",
+    "veg": false,
+    "source": "Feuerwehr Allensbach",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Allensbach",
@@ -13,11 +17,7 @@
         "lon": 9.0687005,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Allensbach",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Rösrath|brand an wohngebäude in forsbach",
