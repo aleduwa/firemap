@@ -6470,26 +6470,6 @@
     ]
   },
   {
-    "base": "Feuerwehr Weinheim|entschlossener feuerwehr-einsatz verhinderte großbrand im wohngebiet",
-    "status": "out",
-    "title": "Entschlossener Feuerwehr-Einsatz verhinderte Großbrand im Wohngebiet",
-    "link": "https://www.presseportal.de/blaulicht/pm/179375/6324676",
-    "first": "2026-07-30T21:19:12Z",
-    "last": "2026-07-30T23:19:12Z",
-    "veg": false,
-    "source": "Feuerwehr Weinheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Weinheim",
-        "lat": 49.5462349,
-        "lon": 8.6717458,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Feuerwehr Stuttgart|küchenbrand in mehrfamilienhaus",
     "status": "contained",
     "title": "Küchenbrand in Mehrfamilienhaus",
