@@ -1,11 +1,51 @@
 [
   {
-    "base": "Polizeipräsidium Mannheim|leimen/rhein-neckar-kreis: brand in der talstraße - feuerwehr im einsatz - pressemeldung nr. 1",
-    "status": "active",
-    "title": "Leimen/Rhein-Neckar-Kreis: Brand in der Talstraße - Feuerwehr im Einsatz - Pressemeldung Nr. 1",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6341888",
-    "first": "2026-08-29T04:58:00Z",
-    "last": "2026-08-29T04:58:00Z",
+    "base": "Feuerwehr Rösrath|brand an wohngebäude in forsbach",
+    "status": "out",
+    "title": "Brand an Wohngebäude in Forsbach",
+    "link": "https://www.presseportal.de/blaulicht/pm/130257/6341971",
+    "first": "2026-08-29T12:00:01Z",
+    "last": "2026-08-29T12:00:01Z",
+    "places": [
+      {
+        "name": "Rösrath",
+        "lat": 50.8963758,
+        "lon": 7.1825445,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Rösrath",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Essen|nächtliche brandserie im essener norden - zwei schulen betroffen",
+    "status": "out",
+    "title": "Nächtliche Brandserie im Essener Norden - zwei Schulen betroffen",
+    "link": "https://www.presseportal.de/blaulicht/pm/56893/6341950",
+    "first": "2026-08-29T10:45:20Z",
+    "last": "2026-08-29T10:45:20Z",
+    "places": [
+      {
+        "name": "Essen",
+        "lat": 51.4582235,
+        "lon": 7.0158171,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Essen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|leimen/rhein-neckar-kreis: brand in der talstraße - feuerwehr im einsatz - pressemeldung nr. 2",
+    "status": "out",
+    "title": "Leimen/Rhein-Neckar-Kreis: Brand in der Talstraße - Feuerwehr im Einsatz - Pressemeldung Nr. 2",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6341947",
+    "first": "2026-08-29T10:40:00Z",
+    "last": "2026-08-29T10:40:00Z",
     "places": [
       {
         "name": "Leimen",
@@ -26,12 +66,42 @@
     "updates": 0
   },
   {
+    "base": "Polizeipräsidium Mannheim|leimen/rhein-neckar-kreis: brand in der talstraße - feuerwehr im einsatz - pressemeldung nr. 1",
+    "status": "active",
+    "title": "Leimen/Rhein-Neckar-Kreis: Brand in der Talstraße - Feuerwehr im Einsatz - Pressemeldung Nr. 1",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6341888",
+    "first": "2026-08-29T04:58:00Z",
+    "last": "2026-08-29T04:58:00Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
+    "places": [
+      {
+        "name": "Leimen",
+        "lat": 49.3491417,
+        "lon": 8.6909951,
+        "approx": false
+      },
+      {
+        "name": "Rhein-Neckar-Kreis",
+        "lat": 49.3684797,
+        "lon": 8.7352403,
+        "approx": false
+      }
+    ]
+  },
+  {
     "base": "Feuerwehr und Rettungsdienst Bonn|3. folgemeldung: waldbrandeinheit arbeitet hand in hand mit serbischen und internationalen einsatzkräften",
     "status": "active",
     "title": "3. Folgemeldung: Waldbrandeinheit arbeitet Hand in Hand mit serbischen und internationalen Einsatzkräften",
     "link": "https://www.presseportal.de/blaulicht/pm/115888/6341872",
     "first": "2026-08-29T00:30:52Z",
     "last": "2026-08-29T00:30:52Z",
+    "veg": true,
+    "source": "Feuerwehr und Rettungsdienst Bonn",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Bonn",
@@ -39,11 +109,7 @@
         "lon": 7.1024635,
         "approx": true
       }
-    ],
-    "veg": true,
-    "source": "Feuerwehr und Rettungsdienst Bonn",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Karlsruhe|(ka) karlsruhe - nach brand in parkhaus - ursache war ein technischer defekt an einem pkw",
@@ -6505,152 +6571,6 @@
         "name": "Rhein-Neckar-Kreis",
         "lat": 49.3684797,
         "lon": 8.7352403,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|bad säckingen: mehrere brandstellen im wald - zeugensuche",
-    "status": "out",
-    "title": "Bad Säckingen: Mehrere Brandstellen im Wald - Zeugensuche",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6324407",
-    "first": "2026-07-30T11:02:26Z",
-    "last": "2026-07-30T11:02:26Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Bad Säckingen",
-        "lat": 47.5527459,
-        "lon": 7.9410556,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|weinheim/rhein-neckar-kreis: garagenbrand - pm 1",
-    "status": "active",
-    "title": "Weinheim/Rhein-Neckar-Kreis: Garagenbrand - PM 1",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6324345",
-    "first": "2026-07-30T10:20:14Z",
-    "last": "2026-07-30T10:20:14Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Weinheim",
-        "lat": 49.5462349,
-        "lon": 8.6717458,
-        "approx": false
-      },
-      {
-        "name": "Rhein-Neckar-Kreis",
-        "lat": 49.3684797,
-        "lon": 8.7352403,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(ul) oberdischingen - auto gerät in flammen / am mittwoch kam es in oberdischingen zu einem fahrzeugbrand.",
-    "status": "active",
-    "title": "(UL) Oberdischingen - Auto gerät in Flammen / Am Mittwoch kam es in Oberdischingen zu einem Fahrzeugbrand.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6324302",
-    "first": "2026-07-30T09:57:50Z",
-    "last": "2026-07-30T09:57:50Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Oberdischingen",
-        "lat": 48.3025238,
-        "lon": 9.8329152,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Pforzheim|(pf) pforzheim - nachtragsmeldung zum brand im ehemaligen emma-jäger-bad: polizei ermittelt wegen möglicher brandstiftung",
-    "status": "active",
-    "title": "(PF) Pforzheim - Nachtragsmeldung zum Brand im ehemaligen Emma-Jäger-Bad: Polizei ermittelt wegen möglicher Brandstiftung",
-    "link": "https://www.presseportal.de/blaulicht/pm/137462/6324287",
-    "first": "2026-07-30T09:45:54Z",
-    "last": "2026-07-30T09:45:54Z",
-    "veg": false,
-    "source": "Polizeipräsidium Pforzheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Pforzheim",
-        "lat": 48.890934,
-        "lon": 8.7025509,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|riegel am kaiserstuhl: lagerhallenkomplex durch großbrand zerstört - schaden in millionenhöhe",
-    "status": "active",
-    "title": "Riegel am Kaiserstuhl: Lagerhallenkomplex durch Großbrand zerstört - Schaden in Millionenhöhe",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6324125",
-    "first": "2026-07-30T07:58:14Z",
-    "last": "2026-07-30T07:58:14Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Riegel am Kaiserstuhl",
-        "lat": 48.1509439,
-        "lon": 7.7504953,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Heilbronn|main-tauber-kreis: brand, straßenverkehrsgefährdung und unfall",
-    "status": "out",
-    "title": "Main-Tauber-Kreis: Brand, Straßenverkehrsgefährdung und Unfall",
-    "link": "https://www.presseportal.de/blaulicht/pm/110971/6324110",
-    "first": "2026-07-30T07:41:05Z",
-    "last": "2026-07-30T07:41:05Z",
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Main-Tauber-Kreis",
-        "lat": 49.5713631,
-        "lon": 9.6999301,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(bc) riedlingen - feuer auf neubau / am mittwoch rückten einsatzkräfte in neufra aus.",
-    "status": "out",
-    "title": "(BC) Riedlingen - Feuer auf Neubau / Am Mittwoch rückten Einsatzkräfte in Neufra aus.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6324050",
-    "first": "2026-07-30T07:00:13Z",
-    "last": "2026-07-30T07:00:13Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Riedlingen",
-        "lat": 48.1534412,
-        "lon": 9.4748796,
         "approx": false
       }
     ]
