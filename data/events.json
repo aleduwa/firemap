@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/133631/6342276",
     "first": "2026-08-30T13:49:07Z",
     "last": "2026-08-30T13:49:07Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Hünxe",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Hünxe",
@@ -13,11 +17,7 @@
         "lon": 6.7660319,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Hünxe",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|mannheim-sandhofen: gebäudebrand in einem gewerbebetrieb - pm nr. 2",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6342253",
     "first": "2026-08-30T12:29:29Z",
     "last": "2026-08-30T12:29:29Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Mannheim-Sandhofen",
@@ -33,11 +37,7 @@
         "lon": 8.4539633,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Stuttgart|brand in dachgeschosswohnung in stuttgart-west",
