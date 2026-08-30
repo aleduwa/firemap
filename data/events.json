@@ -1,11 +1,55 @@
 [
   {
+    "base": "Freiwillige Feuerwehr Hünxe|pkw-brand",
+    "status": "active",
+    "title": "Pkw-Brand",
+    "link": "https://www.presseportal.de/blaulicht/pm/133631/6342276",
+    "first": "2026-08-30T13:49:07Z",
+    "last": "2026-08-30T13:49:07Z",
+    "places": [
+      {
+        "name": "Hünxe",
+        "lat": 51.6414581,
+        "lon": 6.7660319,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Hünxe",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|mannheim-sandhofen: gebäudebrand in einem gewerbebetrieb - pm nr. 2",
+    "status": "out",
+    "title": "Mannheim-Sandhofen: Gebäudebrand in einem Gewerbebetrieb - PM Nr. 2",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6342253",
+    "first": "2026-08-30T12:29:29Z",
+    "last": "2026-08-30T12:29:29Z",
+    "places": [
+      {
+        "name": "Mannheim-Sandhofen",
+        "lat": 49.5536184,
+        "lon": 8.4539633,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Stuttgart|brand in dachgeschosswohnung in stuttgart-west",
     "status": "active",
     "title": "Brand in Dachgeschosswohnung in Stuttgart-West",
     "link": "https://www.presseportal.de/blaulicht/pm/161590/6342144",
     "first": "2026-08-30T08:57:32Z",
     "last": "2026-08-30T08:57:32Z",
+    "veg": false,
+    "source": "Feuerwehr Stuttgart",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Stuttgart",
@@ -13,11 +57,7 @@
         "lon": 9.1800132,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Stuttgart",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Wuppertal|entstehungsbrand im keller - eine person verletzt",
@@ -26,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115885/6342098",
     "first": "2026-08-30T07:31:11Z",
     "last": "2026-08-30T07:31:11Z",
+    "veg": false,
+    "source": "Feuerwehr Wuppertal",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Wuppertal",
@@ -33,11 +77,7 @@
         "lon": 7.1780374,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Wuppertal",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Dinslaken|zimmerbrand mit menschenleben in gefahr",
@@ -46,6 +86,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/116534/6342073",
     "first": "2026-08-30T06:59:46Z",
     "last": "2026-08-30T06:59:46Z",
+    "veg": false,
+    "source": "Feuerwehr Dinslaken",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Dinslaken",
@@ -53,11 +97,7 @@
         "lon": 6.7345106,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Dinslaken",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Kreisfeuerwehrverband Landkreis Karlsruhe|scheunenbrand in mingolsheim - feuerwehr verhindert übergreifen der flammen auf wohnhaus",
@@ -66,6 +106,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/130685/6342060",
     "first": "2026-08-30T04:49:36Z",
     "last": "2026-08-30T04:49:36Z",
+    "veg": false,
+    "source": "Kreisfeuerwehrverband Landkreis Karlsruhe",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Landkreis Karlsruhe",
@@ -73,11 +117,7 @@
         "lon": 8.6106867,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Kreisfeuerwehrverband Landkreis Karlsruhe",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Allensbach|b3 gebäude unklare rauchentwicklung",
@@ -6264,288 +6304,6 @@
         "lat": 47.5527459,
         "lon": 7.9410556,
         "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|heidelberg: fahrzeugbrand; feuer bereits gelöscht",
-    "status": "out",
-    "title": "Heidelberg: Fahrzeugbrand; Feuer bereits gelöscht",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6325289",
-    "first": "2026-07-31T13:02:07Z",
-    "last": "2026-07-31T13:02:07Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Heidelberg",
-        "lat": 49.4093582,
-        "lon": 8.694724,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(bc) mittelbiberach - brand auf recyclinghof / in der nacht auf freitag rückten einsatzkräfte zu einem feuer in mittelbiberach aus.",
-    "status": "contained",
-    "title": "(BC) Mittelbiberach - Brand auf Recyclinghof / In der Nacht auf Freitag rückten Einsatzkräfte zu einem Feuer in Mittelbiberach aus.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6325278",
-    "first": "2026-07-31T12:33:48Z",
-    "last": "2026-07-31T12:33:48Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Mittelbiberach",
-        "lat": 48.0877864,
-        "lon": 9.7479621,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|eberbach/rhein-neckar-kreis: kellerbrand pm nr. 2",
-    "status": "contained",
-    "title": "Eberbach/Rhein-Neckar-Kreis: Kellerbrand PM Nr. 2",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6325255",
-    "first": "2026-07-31T12:23:57Z",
-    "last": "2026-07-31T12:23:57Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Eberbach",
-        "lat": 49.4635303,
-        "lon": 8.9855203,
-        "approx": false
-      },
-      {
-        "name": "Rhein-Neckar-Kreis",
-        "lat": 49.3684797,
-        "lon": 8.7352403,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|mühlhausen/rhein-neckar-kreis: flächenbrand um aussichtspunkt heiligenstein",
-    "status": "out",
-    "title": "Mühlhausen/Rhein-Neckar-Kreis: Flächenbrand um Aussichtspunkt Heiligenstein",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6325253",
-    "first": "2026-07-31T12:20:39Z",
-    "last": "2026-07-31T12:20:39Z",
-    "veg": true,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Mühlhausen",
-        "lat": 49.2481325,
-        "lon": 8.7270936,
-        "approx": false
-      },
-      {
-        "name": "Rhein-Neckar-Kreis",
-        "lat": 49.3684797,
-        "lon": 8.7352403,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|görwihl/ strittmatt: flächenbrand am waldrand - feuerwehreinsatz",
-    "status": "contained",
-    "title": "Görwihl/ Strittmatt: Flächenbrand am Waldrand - Feuerwehreinsatz",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6325232",
-    "first": "2026-07-31T12:01:08Z",
-    "last": "2026-07-31T12:01:08Z",
-    "veg": true,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Görwihl",
-        "lat": 47.6411618,
-        "lon": 8.0784862,
-        "approx": false
-      },
-      {
-        "name": "Strittmatt",
-        "lat": 47.6647046,
-        "lon": 8.0471098,
-        "approx": false
-      },
-      {
-        "name": "zwischen Strittmatt und Hartschwand",
-        "lat": 47.66674,
-        "lon": 8.05663,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|eggingen: lkw mit heu gerät in brand",
-    "status": "active",
-    "title": "Eggingen: LKW mit Heu gerät in Brand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6325226",
-    "first": "2026-07-31T11:59:31Z",
-    "last": "2026-07-31T11:59:31Z",
-    "veg": true,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Eggingen",
-        "lat": 47.6962642,
-        "lon": 8.3954399,
-        "approx": false
-      },
-      {
-        "name": "B315 zwischen Eggingen und Eberfingen",
-        "lat": 47.70817,
-        "lon": 8.41109,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Heilbronn|neckar-odenwald-kreis: diebstahl aus kerzenkassen, mutmaßliche brandstifter vorläufig festgenommen, frau angegriffen",
-    "status": "active",
-    "title": "Neckar-Odenwald-Kreis: Diebstahl aus Kerzenkassen, Mutmaßliche Brandstifter vorläufig festgenommen, Frau angegriffen",
-    "link": "https://www.presseportal.de/blaulicht/pm/110971/6325167",
-    "first": "2026-07-31T11:15:06Z",
-    "last": "2026-07-31T11:15:06Z",
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Neckar-Odenwald-Kreis",
-        "lat": 49.4678557,
-        "lon": 9.2709386,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|eberbach/rhein-neckar-kreis: kellerbrand pm nr. 1",
-    "status": "active",
-    "title": "Eberbach/Rhein-Neckar-Kreis: Kellerbrand PM Nr. 1",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6325165",
-    "first": "2026-07-31T11:12:37Z",
-    "last": "2026-07-31T11:12:37Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Eberbach",
-        "lat": 49.4635303,
-        "lon": 8.9855203,
-        "approx": false
-      },
-      {
-        "name": "Rhein-Neckar-Kreis",
-        "lat": 49.3684797,
-        "lon": 8.7352403,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Heilbronn|main-tauber-kreis: brand, versuchter einbruch und betrunken vor polizei geflüchtet",
-    "status": "active",
-    "title": "Main-Tauber-Kreis: Brand, Versuchter Einbruch und betrunken vor Polizei geflüchtet",
-    "link": "https://www.presseportal.de/blaulicht/pm/110971/6325134",
-    "first": "2026-07-31T10:33:26Z",
-    "last": "2026-07-31T10:33:26Z",
-    "veg": true,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Main-Tauber-Kreis",
-        "lat": 49.5713631,
-        "lon": 9.6999301,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Karlsruhe|(ka) karlsruhe - unbekannter setzt wiese in brand - kriminalpolizei sucht nach zeugen",
-    "status": "active",
-    "title": "(KA) Karlsruhe - Unbekannter setzt Wiese in Brand - Kriminalpolizei sucht nach Zeugen",
-    "link": "https://www.presseportal.de/blaulicht/pm/110972/6324952",
-    "first": "2026-07-31T08:29:04Z",
-    "last": "2026-07-31T10:29:04Z",
-    "veg": false,
-    "source": "Polizeipräsidium Karlsruhe",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Karlsruhe",
-        "lat": 49.0068705,
-        "lon": 8.4034195,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(ul) blaustein - ballenpresse brennt / am donnerstag geriet das landwirtschaftliche gerät bei wippingen in flammen.",
-    "status": "active",
-    "title": "(UL) Blaustein - Ballenpresse brennt / Am Donnerstag geriet das landwirtschaftliche Gerät bei Wippingen in Flammen.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6324943",
-    "first": "2026-07-31T08:21:52Z",
-    "last": "2026-07-31T08:21:52Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Blaustein",
-        "lat": 48.4159247,
-        "lon": 9.9187625,
-        "approx": false
-      },
-      {
-        "name": "zwischen Wippingen und Asch",
-        "lat": 48.43296,
-        "lon": 9.84137,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Pforzheim|(enzkreis) mühlacker-enzberg - brand auf häckselplatz - verdacht der brandstiftung",
-    "status": "contained",
-    "title": "(Enzkreis) Mühlacker-Enzberg - Brand auf Häckselplatz - Verdacht der Brandstiftung",
-    "link": "https://www.presseportal.de/blaulicht/pm/137462/6324839",
-    "first": "2026-07-31T07:15:03Z",
-    "last": "2026-07-31T09:15:03Z",
-    "veg": false,
-    "source": "Polizeipräsidium Pforzheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Mühlacker-Enzberg",
-        "lat": 48.9342674,
-        "lon": 8.8007522,
-        "approx": false
       }
     ]
   },
