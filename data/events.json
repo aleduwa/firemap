@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/69780/6342325",
     "first": "2026-08-30T21:20:56Z",
     "last": "2026-08-30T21:20:56Z",
+    "veg": false,
+    "source": "Feuerwehr Ennepetal",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Ennepetal",
@@ -13,11 +17,7 @@
         "lon": 7.3693335,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Ennepetal",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Hünxe|pkw-brand",
