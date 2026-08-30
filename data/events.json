@@ -1,5 +1,85 @@
 [
   {
+    "base": "Feuerwehr Stuttgart|brand in dachgeschosswohnung in stuttgart-west",
+    "status": "active",
+    "title": "Brand in Dachgeschosswohnung in Stuttgart-West",
+    "link": "https://www.presseportal.de/blaulicht/pm/161590/6342144",
+    "first": "2026-08-30T08:57:32Z",
+    "last": "2026-08-30T08:57:32Z",
+    "places": [
+      {
+        "name": "Stuttgart",
+        "lat": 48.7784485,
+        "lon": 9.1800132,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Stuttgart",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Wuppertal|entstehungsbrand im keller - eine person verletzt",
+    "status": "out",
+    "title": "Entstehungsbrand im Keller - eine Person verletzt",
+    "link": "https://www.presseportal.de/blaulicht/pm/115885/6342098",
+    "first": "2026-08-30T07:31:11Z",
+    "last": "2026-08-30T07:31:11Z",
+    "places": [
+      {
+        "name": "Wuppertal",
+        "lat": 51.264018,
+        "lon": 7.1780374,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Wuppertal",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Dinslaken|zimmerbrand mit menschenleben in gefahr",
+    "status": "out",
+    "title": "Zimmerbrand mit Menschenleben in Gefahr",
+    "link": "https://www.presseportal.de/blaulicht/pm/116534/6342073",
+    "first": "2026-08-30T06:59:46Z",
+    "last": "2026-08-30T06:59:46Z",
+    "places": [
+      {
+        "name": "Dinslaken",
+        "lat": 51.5623618,
+        "lon": 6.7345106,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Dinslaken",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Kreisfeuerwehrverband Landkreis Karlsruhe|scheunenbrand in mingolsheim - feuerwehr verhindert übergreifen der flammen auf wohnhaus",
+    "status": "contained",
+    "title": "Scheunenbrand in Mingolsheim - Feuerwehr verhindert Übergreifen der Flammen auf Wohnhaus",
+    "link": "https://www.presseportal.de/blaulicht/pm/130685/6342060",
+    "first": "2026-08-30T04:49:36Z",
+    "last": "2026-08-30T04:49:36Z",
+    "places": [
+      {
+        "name": "Landkreis Karlsruhe",
+        "lat": 49.0876163,
+        "lon": 8.6106867,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Kreisfeuerwehrverband Landkreis Karlsruhe",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Allensbach|b3 gebäude unklare rauchentwicklung",
     "status": "active",
     "title": "B3 Gebäude unklare Rauchentwicklung",
