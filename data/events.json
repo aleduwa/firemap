@@ -1,5 +1,25 @@
 [
   {
+    "base": "Feuerwehr Ennepetal|patientenrettung über drehleiter und brandmeldealarm",
+    "status": "active",
+    "title": "Patientenrettung über Drehleiter und Brandmeldealarm",
+    "link": "https://www.presseportal.de/blaulicht/pm/69780/6342325",
+    "first": "2026-08-30T21:20:56Z",
+    "last": "2026-08-30T21:20:56Z",
+    "places": [
+      {
+        "name": "Ennepetal",
+        "lat": 51.2967192,
+        "lon": 7.3693335,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Ennepetal",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Freiwillige Feuerwehr Hünxe|pkw-brand",
     "status": "active",
     "title": "Pkw-Brand",
