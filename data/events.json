@@ -1,5 +1,77 @@
 [
   {
+    "base": "Polizeipräsidium Karlsruhe|(ka) bad schönborn - hoher sachschaden nach scheunenbrand",
+    "status": "active",
+    "title": "(KA) Bad Schönborn - Hoher Sachschaden nach Scheunenbrand",
+    "link": "https://www.presseportal.de/blaulicht/pm/110972/6343111",
+    "first": "2026-08-31T16:12:54Z",
+    "last": "2026-08-31T16:12:54Z",
+    "places": [
+      {
+        "name": "Bad Schönborn",
+        "lat": 49.210803,
+        "lon": 8.6548779,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Karlsruhe",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Kreispolizeibehörde Viersen|viersen-dülken: versuchte brandstiftung - zeuginnen und zeugen gesucht",
+    "status": "active",
+    "title": "Viersen-Dülken: Versuchte Brandstiftung - Zeuginnen und Zeugen gesucht",
+    "link": "https://www.presseportal.de/blaulicht/pm/65857/6343071",
+    "first": "2026-08-31T15:37:03Z",
+    "last": "2026-08-31T15:37:03Z",
+    "places": [
+      {
+        "name": "Viersen-Dülken",
+        "lat": 51.2545389,
+        "lon": 6.3617567,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Kreispolizeibehörde Viersen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|schriesheim/rhein-neckar-kreis/bab5: fahrzeugbrand, pm nr.1",
+    "status": "active",
+    "title": "Schriesheim/Rhein-Neckar-Kreis/BAB5: Fahrzeugbrand, PM Nr.1",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6343069",
+    "first": "2026-08-31T15:35:42Z",
+    "last": "2026-08-31T15:35:42Z",
+    "places": [
+      {
+        "name": "Schriesheim",
+        "lat": 49.4751705,
+        "lon": 8.6611149,
+        "approx": false
+      },
+      {
+        "name": "Rhein-Neckar-Kreis",
+        "lat": 49.3684797,
+        "lon": 8.7352403,
+        "approx": false
+      },
+      {
+        "name": "zwischen Ladenburg und Dossenheim",
+        "lat": 49.46084,
+        "lon": 8.64194,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Ennepetal|patientenrettung über drehleiter und brandmeldealarm",
     "status": "active",
     "title": "Patientenrettung über Drehleiter und Brandmeldealarm",
@@ -6304,26 +6376,6 @@
         "lat": 48.890934,
         "lon": 8.7025509,
         "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Bad Säckingen|großbrand in wäscherei - feuerwehr verhindert ausbreitung auf nachbargebäude",
-    "status": "out",
-    "title": "Großbrand in Wäscherei - Feuerwehr verhindert Ausbreitung auf Nachbargebäude",
-    "link": "https://www.presseportal.de/blaulicht/pm/140463/6325418",
-    "first": "2026-08-01T06:42:51Z",
-    "last": "2026-08-01T08:42:51Z",
-    "veg": true,
-    "source": "Feuerwehr Bad Säckingen",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Bad Säckingen",
-        "lat": 47.5527459,
-        "lon": 7.9410556,
-        "approx": true
       }
     ]
   },
