@@ -1,11 +1,35 @@
 [
   {
+    "base": "Kreispolizeibehörde Borken|bocholt - erstmeldung: schwerer verkehrsunfall auf der willy-brandt-straße",
+    "status": "active",
+    "title": "Bocholt - Erstmeldung: Schwerer Verkehrsunfall auf der Willy-Brandt-Straße",
+    "link": "https://www.presseportal.de/blaulicht/pm/24843/6343909",
+    "first": "2026-09-01T16:42:57Z",
+    "last": "2026-09-01T16:42:57Z",
+    "places": [
+      {
+        "name": "Bocholt",
+        "lat": 51.8382715,
+        "lon": 6.6148669,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Kreispolizeibehörde Borken",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Kreispolizeibehörde Viersen|brüggen-bracht: spargelfolien brennen - zeuginnen und zeugen gesucht",
     "status": "active",
     "title": "Brüggen-Bracht: Spargelfolien brennen - Zeuginnen und Zeugen gesucht",
     "link": "https://www.presseportal.de/blaulicht/pm/65857/6343877",
     "first": "2026-09-01T15:39:16Z",
     "last": "2026-09-01T15:39:16Z",
+    "veg": false,
+    "source": "Kreispolizeibehörde Viersen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Brüggen-Bracht",
@@ -13,11 +37,7 @@
         "lon": 6.1724252,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Kreispolizeibehörde Viersen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr und Rettungsdienst Bonn|4. folgemeldung und schlussmeldung: eu-waldbrandmodul beendet einsatz in serbien - 11 tage waldbrandbekämpfung in der deliblatska pescara",
