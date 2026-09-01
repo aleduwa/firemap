@@ -1,11 +1,35 @@
 [
   {
+    "base": "Feuerwehr Mönchengladbach|kellerbrand in mehrfamilienhaus",
+    "status": "active",
+    "title": "Kellerbrand in Mehrfamilienhaus",
+    "link": "https://www.presseportal.de/blaulicht/pm/115879/6343167",
+    "first": "2026-09-01T00:23:52Z",
+    "last": "2026-09-01T00:23:52Z",
+    "places": [
+      {
+        "name": "Mönchengladbach",
+        "lat": 51.1947131,
+        "lon": 6.4353792,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Offenburg|brand in einliegerwohnung - zwei personen leicht verletzt",
     "status": "active",
     "title": "Brand in Einliegerwohnung - zwei Personen leicht verletzt",
     "link": "https://www.presseportal.de/blaulicht/pm/128693/6343149",
     "first": "2026-08-31T19:30:26Z",
     "last": "2026-08-31T19:30:26Z",
+    "veg": false,
+    "source": "Feuerwehr Offenburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Offenburg",
@@ -13,11 +37,7 @@
         "lon": 7.9429235,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Offenburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|schriesheim/rhein-neckar-kreis/bab5: fahrzeugbrand, feuer gelöscht, fahrbahn wieder frei, pressemitteilung nr. 2",
@@ -26,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6343148",
     "first": "2026-08-31T19:26:58Z",
     "last": "2026-08-31T19:26:58Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Schriesheim",
@@ -45,11 +69,7 @@
         "lon": 8.64194,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Karlsruhe|(ka) bad schönborn - hoher sachschaden nach scheunenbrand",
