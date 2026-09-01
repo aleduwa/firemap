@@ -1,5 +1,45 @@
 [
   {
+    "base": "Feuerwehr Gelsenkirchen|erneuter brandeinsatz in gelsenkirchen-horst: küchenbrand sorgt für aufwendigen einsatz",
+    "status": "contained",
+    "title": "Erneuter Brandeinsatz in Gelsenkirchen-Horst: Küchenbrand sorgt für aufwendigen Einsatz",
+    "link": "https://www.presseportal.de/blaulicht/pm/116260/6343963",
+    "first": "2026-09-01T23:09:36Z",
+    "last": "2026-09-01T23:09:36Z",
+    "places": [
+      {
+        "name": "Gelsenkirchen",
+        "lat": 51.5110321,
+        "lon": 7.0960124,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Gelsenkirchen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Gelsenkirchen|kellerbrand mit gas-verpuffung in gelsenkirchen: zwei feuerwehrkräfte verletzt",
+    "status": "active",
+    "title": "Kellerbrand mit Gas-Verpuffung in Gelsenkirchen: Zwei Feuerwehrkräfte verletzt",
+    "link": "https://www.presseportal.de/blaulicht/pm/116260/6343962",
+    "first": "2026-09-01T23:06:33Z",
+    "last": "2026-09-01T23:06:33Z",
+    "places": [
+      {
+        "name": "Gelsenkirchen",
+        "lat": 51.5110321,
+        "lon": 7.0960124,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Gelsenkirchen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Kreispolizeibehörde Borken|bocholt - erstmeldung: schwerer verkehrsunfall auf der willy-brandt-straße",
     "status": "active",
     "title": "Bocholt - Erstmeldung: Schwerer Verkehrsunfall auf der Willy-Brandt-Straße",
@@ -6447,46 +6487,6 @@
         "name": "Emmendingen",
         "lat": 48.1206565,
         "lon": 7.850993,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|heidelberg: brandgeschehen auf balkon, polizei- und feuerwehreinsatz, pm 2",
-    "status": "out",
-    "title": "Heidelberg: Brandgeschehen auf Balkon, Polizei- und Feuerwehreinsatz, PM 2",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6325822",
-    "first": "2026-08-02T23:28:56Z",
-    "last": "2026-08-02T23:28:56Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Heidelberg",
-        "lat": 49.4093582,
-        "lon": 8.694724,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|heidelberg: brandgeschehen auf balkon, polizei- und feuerwehreinsatz, pm 1",
-    "status": "active",
-    "title": "Heidelberg: Brandgeschehen auf Balkon, Polizei- und Feuerwehreinsatz, PM 1",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6325818",
-    "first": "2026-08-02T22:48:14Z",
-    "last": "2026-08-02T22:48:14Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Heidelberg",
-        "lat": 49.4093582,
-        "lon": 8.694724,
         "approx": false
       }
     ]
