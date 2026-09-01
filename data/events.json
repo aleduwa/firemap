@@ -1,11 +1,35 @@
 [
   {
+    "base": "Kreispolizeibehörde Viersen|brüggen-bracht: spargelfolien brennen - zeuginnen und zeugen gesucht",
+    "status": "active",
+    "title": "Brüggen-Bracht: Spargelfolien brennen - Zeuginnen und Zeugen gesucht",
+    "link": "https://www.presseportal.de/blaulicht/pm/65857/6343877",
+    "first": "2026-09-01T15:39:16Z",
+    "last": "2026-09-01T15:39:16Z",
+    "places": [
+      {
+        "name": "Brüggen-Bracht",
+        "lat": 51.2782317,
+        "lon": 6.1724252,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Kreispolizeibehörde Viersen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr und Rettungsdienst Bonn|4. folgemeldung und schlussmeldung: eu-waldbrandmodul beendet einsatz in serbien - 11 tage waldbrandbekämpfung in der deliblatska pescara",
     "status": "active",
     "title": "4. Folgemeldung und Schlussmeldung: EU-Waldbrandmodul beendet Einsatz in Serbien - 11 Tage Waldbrandbekämpfung in der Deliblatska Pescara",
     "link": "https://www.presseportal.de/blaulicht/pm/115888/6343446",
     "first": "2026-09-01T10:53:25Z",
     "last": "2026-09-01T10:53:25Z",
+    "veg": true,
+    "source": "Feuerwehr und Rettungsdienst Bonn",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Bonn",
@@ -13,11 +37,7 @@
         "lon": 7.1024635,
         "approx": true
       }
-    ],
-    "veg": true,
-    "source": "Feuerwehr und Rettungsdienst Bonn",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ludwigsburg|kornwestheim: brandausbruch in leerstehendem haus",
@@ -26,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110974/6343419",
     "first": "2026-09-01T10:35:31Z",
     "last": "2026-09-01T10:35:31Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ludwigsburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Kornwestheim",
@@ -33,11 +57,7 @@
         "lon": 9.1873875,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Offenburg|forbach - rauchentwicklung in einem zweifamilienhaus",
@@ -46,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110975/6343399",
     "first": "2026-09-01T10:21:29Z",
     "last": "2026-09-01T10:21:29Z",
+    "veg": false,
+    "source": "Polizeipräsidium Offenburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Forbach",
@@ -53,11 +77,7 @@
         "lon": 8.3594916,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Mönchengladbach|kellerbrand in mehrfamilienhaus",
@@ -6458,26 +6478,6 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6325804",
     "first": "2026-08-02T18:33:32Z",
     "last": "2026-08-02T18:33:32Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Heidelberg",
-        "lat": 49.4093582,
-        "lon": 8.694724,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|heidelberg: brand in der emmertsgrundpassage - pm 1",
-    "status": "active",
-    "title": "Heidelberg: Brand in der Emmertsgrundpassage - PM 1",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6325753",
-    "first": "2026-08-02T12:38:35Z",
-    "last": "2026-08-02T12:38:35Z",
     "veg": false,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
