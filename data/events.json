@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/24843/6343909",
     "first": "2026-09-01T16:42:57Z",
     "last": "2026-09-01T16:42:57Z",
+    "veg": false,
+    "source": "Kreispolizeibehörde Borken",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Bocholt",
@@ -13,11 +17,7 @@
         "lon": 6.6148669,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Kreispolizeibehörde Borken",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Kreispolizeibehörde Viersen|brüggen-bracht: spargelfolien brennen - zeuginnen und zeugen gesucht",
@@ -6478,26 +6478,6 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6325818",
     "first": "2026-08-02T22:48:14Z",
     "last": "2026-08-02T22:48:14Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Heidelberg",
-        "lat": 49.4093582,
-        "lon": 8.694724,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|heidelberg: brand in der emmertsgrundpassage - pm 2",
-    "status": "out",
-    "title": "Heidelberg: Brand in der Emmertsgrundpassage - PM 2",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6325804",
-    "first": "2026-08-02T18:33:32Z",
-    "last": "2026-08-02T18:33:32Z",
     "veg": false,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
