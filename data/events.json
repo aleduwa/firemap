@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/116260/6343963",
     "first": "2026-09-01T23:09:36Z",
     "last": "2026-09-01T23:09:36Z",
+    "veg": false,
+    "source": "Feuerwehr Gelsenkirchen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Gelsenkirchen",
@@ -13,11 +17,7 @@
         "lon": 7.0960124,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Gelsenkirchen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Gelsenkirchen|kellerbrand mit gas-verpuffung in gelsenkirchen: zwei feuerwehrkräfte verletzt",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/116260/6343962",
     "first": "2026-09-01T23:06:33Z",
     "last": "2026-09-01T23:06:33Z",
+    "veg": false,
+    "source": "Feuerwehr Gelsenkirchen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Gelsenkirchen",
@@ -33,11 +37,7 @@
         "lon": 7.0960124,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Gelsenkirchen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Kreispolizeibehörde Borken|bocholt - erstmeldung: schwerer verkehrsunfall auf der willy-brandt-straße",
