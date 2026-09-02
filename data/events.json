@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/128354/6344661",
     "first": "2026-09-02T20:54:22Z",
     "last": "2026-09-02T20:54:22Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Tönisvorst",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Tönisvorst",
@@ -13,11 +17,7 @@
         "lon": 6.45,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Tönisvorst",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Mönchengladbach|küchenbrand in reihenhaus",
