@@ -1,5 +1,51 @@
 [
   {
+    "base": "Kreispolizeibehörde Viersen|nettetal-lobberich: brennende gartenlaube - fahrlässigkeit möglich",
+    "status": "out",
+    "title": "Nettetal-Lobberich: Brennende Gartenlaube - Fahrlässigkeit möglich",
+    "link": "https://www.presseportal.de/blaulicht/pm/65857/6344379",
+    "first": "2026-09-02T12:31:41Z",
+    "last": "2026-09-02T12:31:41Z",
+    "places": [
+      {
+        "name": "Nettetal-Lobberich",
+        "lat": 51.2857099,
+        "lon": 6.2707822,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Kreispolizeibehörde Viersen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Kreispolizeibehörde Viersen|niederkrüchten-elmpt: brennendes auto - die polizei bittet um hinweise",
+    "status": "active",
+    "title": "Niederkrüchten-Elmpt: Brennendes Auto - die Polizei bittet um Hinweise",
+    "link": "https://www.presseportal.de/blaulicht/pm/65857/6344374",
+    "first": "2026-09-02T12:26:57Z",
+    "last": "2026-09-02T12:26:57Z",
+    "places": [
+      {
+        "name": "Niederkrüchten-Elmpt",
+        "lat": 51.2153582,
+        "lon": 6.1599297,
+        "approx": false
+      },
+      {
+        "name": "zwischen Ortsausgang und Autobahn",
+        "lat": 51.63062,
+        "lon": 7.49952,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Kreispolizeibehörde Viersen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Gelsenkirchen|erneuter brandeinsatz in gelsenkirchen-horst: küchenbrand sorgt für aufwendigen einsatz",
     "status": "contained",
     "title": "Erneuter Brandeinsatz in Gelsenkirchen-Horst: Küchenbrand sorgt für aufwendigen Einsatz",
@@ -6427,66 +6473,6 @@
         "name": "Sulzfeld",
         "lat": 49.1060868,
         "lon": 8.8596844,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ludwigsburg|freiberg am neckar-beihingen: container mit büchern in brand gesteckt",
-    "status": "active",
-    "title": "Freiberg am Neckar-Beihingen: Container mit Büchern in Brand gesteckt",
-    "link": "https://www.presseportal.de/blaulicht/pm/110974/6326190",
-    "first": "2026-08-03T09:45:48Z",
-    "last": "2026-08-03T09:45:48Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Freiberg am Neckar-Beihingen",
-        "lat": 48.9420738,
-        "lon": 9.1908965,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Heilbronn|hohenlohekreis: garagenbrand, beschädigung eines pkws",
-    "status": "out",
-    "title": "Hohenlohekreis: Garagenbrand, Beschädigung eines Pkws",
-    "link": "https://www.presseportal.de/blaulicht/pm/110971/6326092",
-    "first": "2026-08-03T09:08:17Z",
-    "last": "2026-08-03T11:08:17Z",
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Hohenlohekreis",
-        "lat": 49.2725125,
-        "lon": 9.6057331,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|emmendingen: mutmaßlich defektes kabel führt zu brand auf balkon.",
-    "status": "active",
-    "title": "Emmendingen: Mutmaßlich defektes Kabel führt zu Brand auf Balkon.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6326041",
-    "first": "2026-08-03T08:46:46Z",
-    "last": "2026-08-03T08:46:46Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Emmendingen",
-        "lat": 48.1206565,
-        "lon": 7.850993,
         "approx": false
       }
     ]
