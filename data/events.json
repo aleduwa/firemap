@@ -1,11 +1,35 @@
 [
   {
+    "base": "Freiwillige Feuerwehr Tönisvorst|wechsel in die ehrenabteilung: stadtbrandinspektor toni van cleef wechselt nach über 45 jahren aktiver dienstzeit",
+    "status": "active",
+    "title": "Wechsel in die Ehrenabteilung: Stadtbrandinspektor Toni van Cleef wechselt nach über 45 Jahren aktiver Dienstzeit",
+    "link": "https://www.presseportal.de/blaulicht/pm/128354/6344661",
+    "first": "2026-09-02T20:54:22Z",
+    "last": "2026-09-02T20:54:22Z",
+    "places": [
+      {
+        "name": "Tönisvorst",
+        "lat": 51.3167,
+        "lon": 6.45,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Tönisvorst",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Mönchengladbach|küchenbrand in reihenhaus",
     "status": "active",
     "title": "Küchenbrand in Reihenhaus",
     "link": "https://www.presseportal.de/blaulicht/pm/115879/6344646",
     "first": "2026-09-02T19:01:12Z",
     "last": "2026-09-02T19:01:12Z",
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Mönchengladbach",
@@ -19,11 +43,7 @@
         "lon": 6.45692,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Mönchengladbach",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Reichenau|kleiner flächenbrand auf der insel - 01.09.2026",
@@ -32,6 +52,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/163367/6344633",
     "first": "2026-09-02T18:10:29Z",
     "last": "2026-09-02T18:10:29Z",
+    "veg": true,
+    "source": "Freiwillige Feuerwehr Reichenau",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Reichenau",
@@ -39,11 +63,7 @@
         "lon": 9.0592022,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Freiwillige Feuerwehr Reichenau",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Bochum|wohnungsbrand in bochum-wattenscheid: zwei personen mit rauchgasvergiftung",
@@ -52,6 +72,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115868/6344625",
     "first": "2026-09-02T17:14:36Z",
     "last": "2026-09-02T17:14:36Z",
+    "veg": false,
+    "source": "Feuerwehr Bochum",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Bochum",
@@ -59,11 +83,7 @@
         "lon": 7.2196635,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Bochum",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(ul) ulm - brand in mehrfamilienhaus / am mittwoch rückten einsatzkräfte zu einem wohnungsbrand in ulm aus. verletzt wurde niemand.",
