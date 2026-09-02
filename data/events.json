@@ -1,11 +1,55 @@
 [
   {
+    "base": "Polizeipräsidium Ulm|(ul) ulm - brand in mehrfamilienhaus / am mittwoch rückten einsatzkräfte zu einem wohnungsbrand in ulm aus. verletzt wurde niemand.",
+    "status": "out",
+    "title": "(UL) Ulm - Brand in Mehrfamilienhaus / Am Mittwoch rückten Einsatzkräfte zu einem Wohnungsbrand in Ulm aus. Verletzt wurde niemand.",
+    "link": "https://www.presseportal.de/blaulicht/pm/110979/6344599",
+    "first": "2026-09-02T15:53:43Z",
+    "last": "2026-09-02T15:53:43Z",
+    "places": [
+      {
+        "name": "Ulm",
+        "lat": 48.3984968,
+        "lon": 9.9912458,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Aalen|ostalbkreis: brand - diebstahl - straßenverkehrsgefährdung",
+    "status": "active",
+    "title": "Ostalbkreis: Brand - Diebstahl - Straßenverkehrsgefährdung",
+    "link": "https://www.presseportal.de/blaulicht/pm/110969/6344565",
+    "first": "2026-09-02T15:03:17Z",
+    "last": "2026-09-02T15:03:17Z",
+    "places": [
+      {
+        "name": "Ostalbkreis",
+        "lat": 48.8777738,
+        "lon": 10.0337317,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Kreispolizeibehörde Viersen|nettetal-lobberich: brennende gartenlaube - fahrlässigkeit möglich",
     "status": "out",
     "title": "Nettetal-Lobberich: Brennende Gartenlaube - Fahrlässigkeit möglich",
     "link": "https://www.presseportal.de/blaulicht/pm/65857/6344379",
     "first": "2026-09-02T12:31:41Z",
     "last": "2026-09-02T12:31:41Z",
+    "veg": false,
+    "source": "Kreispolizeibehörde Viersen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Nettetal-Lobberich",
@@ -13,11 +57,7 @@
         "lon": 6.2707822,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Kreispolizeibehörde Viersen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Kreispolizeibehörde Viersen|niederkrüchten-elmpt: brennendes auto - die polizei bittet um hinweise",
@@ -26,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/65857/6344374",
     "first": "2026-09-02T12:26:57Z",
     "last": "2026-09-02T12:26:57Z",
+    "veg": false,
+    "source": "Kreispolizeibehörde Viersen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Niederkrüchten-Elmpt",
@@ -39,11 +83,7 @@
         "lon": 7.49952,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Kreispolizeibehörde Viersen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Gelsenkirchen|erneuter brandeinsatz in gelsenkirchen-horst: küchenbrand sorgt für aufwendigen einsatz",
@@ -6328,58 +6368,6 @@
     ]
   },
   {
-    "base": "Polizeipräsidium Mannheim|mannheim: brand vor gaststätte - zeugenaufruf",
-    "status": "active",
-    "title": "Mannheim: Brand vor Gaststätte - Zeugenaufruf",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6326623",
-    "first": "2026-08-03T13:37:19Z",
-    "last": "2026-08-03T13:37:19Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Mannheim",
-        "lat": 49.4892913,
-        "lon": 8.4673098,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Heilbronn|main-tauber-kreis: brände und pkw-brand",
-    "status": "out",
-    "title": "Main-Tauber-Kreis: Brände und Pkw-Brand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110971/6326500",
-    "first": "2026-08-03T12:38:14Z",
-    "last": "2026-08-03T14:38:14Z",
-    "veg": true,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Main-Tauber-Kreis",
-        "lat": 49.5713631,
-        "lon": 9.6999301,
-        "approx": false
-      },
-      {
-        "name": "zwischen Schönfeld und Gerchsheim",
-        "lat": 49.69086,
-        "lon": 9.79321,
-        "approx": true
-      },
-      {
-        "name": "A 81 zwischen Gerchsheim und Tauberbischofsheim",
-        "lat": 49.66456,
-        "lon": 9.7237,
-        "approx": true
-      }
-    ]
-  },
-  {
     "base": "Polizeipräsidium Mannheim|dossenheim/rhein-neckar-kreis: feldbrand hat ermittlungen wegen fahrlässiger brandstiftung zur folge - zeugenaufruf",
     "status": "active",
     "title": "Dossenheim/Rhein-Neckar-Kreis: Feldbrand hat Ermittlungen wegen fahrlässiger Brandstiftung zur Folge - Zeugenaufruf",
@@ -6413,66 +6401,6 @@
         "name": "Malsch",
         "lat": 49.2452537,
         "lon": 8.6829484,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Weinheim|trockenheit sorgt für lose äste am dürreplatz",
-    "status": "active",
-    "title": "Trockenheit sorgt für lose Äste am Dürreplatz",
-    "link": "https://www.presseportal.de/blaulicht/pm/179375/6326460",
-    "first": "2026-08-03T12:15:31Z",
-    "last": "2026-08-03T12:15:31Z",
-    "veg": false,
-    "source": "Feuerwehr Weinheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Weinheim",
-        "lat": 49.5462349,
-        "lon": 8.6717458,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Heilbronn|neckar-odenwald-kreis: brand und sachbeschädigung in kirche",
-    "status": "active",
-    "title": "Neckar-Odenwald-Kreis: Brand und Sachbeschädigung in Kirche",
-    "link": "https://www.presseportal.de/blaulicht/pm/110971/6326403",
-    "first": "2026-08-03T11:36:38Z",
-    "last": "2026-08-03T13:36:38Z",
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Neckar-Odenwald-Kreis",
-        "lat": 49.4678557,
-        "lon": 9.2709386,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Karlsruhe|(ka) sulzfeld - hoher sachschaden nach brand eines einfamilienhauses",
-    "status": "active",
-    "title": "(KA) Sulzfeld - Hoher Sachschaden nach Brand eines Einfamilienhauses",
-    "link": "https://www.presseportal.de/blaulicht/pm/110972/6326385",
-    "first": "2026-08-03T11:22:47Z",
-    "last": "2026-08-03T13:22:47Z",
-    "veg": false,
-    "source": "Polizeipräsidium Karlsruhe",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Sulzfeld",
-        "lat": 49.1060868,
-        "lon": 8.8596844,
         "approx": false
       }
     ]
