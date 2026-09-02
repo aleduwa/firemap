@@ -1,11 +1,81 @@
 [
   {
+    "base": "Feuerwehr Mönchengladbach|küchenbrand in reihenhaus",
+    "status": "active",
+    "title": "Küchenbrand in Reihenhaus",
+    "link": "https://www.presseportal.de/blaulicht/pm/115879/6344646",
+    "first": "2026-09-02T19:01:12Z",
+    "last": "2026-09-02T19:01:12Z",
+    "places": [
+      {
+        "name": "Mönchengladbach",
+        "lat": 51.1947131,
+        "lon": 6.4353792,
+        "approx": false
+      },
+      {
+        "name": "zwischen Hoffnungsstraße und Reyerhütter",
+        "lat": 51.19559,
+        "lon": 6.45692,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Freiwillige Feuerwehr Reichenau|kleiner flächenbrand auf der insel - 01.09.2026",
+    "status": "out",
+    "title": "Kleiner Flächenbrand auf der Insel - 01.09.2026",
+    "link": "https://www.presseportal.de/blaulicht/pm/163367/6344633",
+    "first": "2026-09-02T18:10:29Z",
+    "last": "2026-09-02T18:10:29Z",
+    "places": [
+      {
+        "name": "Reichenau",
+        "lat": 47.6956373,
+        "lon": 9.0592022,
+        "approx": false
+      }
+    ],
+    "veg": true,
+    "source": "Freiwillige Feuerwehr Reichenau",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Bochum|wohnungsbrand in bochum-wattenscheid: zwei personen mit rauchgasvergiftung",
+    "status": "active",
+    "title": "Wohnungsbrand in Bochum-Wattenscheid: Zwei Personen mit Rauchgasvergiftung",
+    "link": "https://www.presseportal.de/blaulicht/pm/115868/6344625",
+    "first": "2026-09-02T17:14:36Z",
+    "last": "2026-09-02T17:14:36Z",
+    "places": [
+      {
+        "name": "Bochum",
+        "lat": 51.4818111,
+        "lon": 7.2196635,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Bochum",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Ulm|(ul) ulm - brand in mehrfamilienhaus / am mittwoch rückten einsatzkräfte zu einem wohnungsbrand in ulm aus. verletzt wurde niemand.",
     "status": "out",
     "title": "(UL) Ulm - Brand in Mehrfamilienhaus / Am Mittwoch rückten Einsatzkräfte zu einem Wohnungsbrand in Ulm aus. Verletzt wurde niemand.",
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6344599",
     "first": "2026-09-02T15:53:43Z",
     "last": "2026-09-02T15:53:43Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ulm",
@@ -13,11 +83,7 @@
         "lon": 9.9912458,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Aalen|ostalbkreis: brand - diebstahl - straßenverkehrsgefährdung",
@@ -26,6 +92,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6344565",
     "first": "2026-09-02T15:03:17Z",
     "last": "2026-09-02T15:03:17Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ostalbkreis",
@@ -33,11 +103,7 @@
         "lon": 10.0337317,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Kreispolizeibehörde Viersen|nettetal-lobberich: brennende gartenlaube - fahrlässigkeit möglich",
