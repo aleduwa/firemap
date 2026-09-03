@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115880/6345332",
     "first": "2026-09-03T17:39:53Z",
     "last": "2026-09-03T17:39:53Z",
+    "veg": false,
+    "source": "Feuerwehr Mülheim an der Ruhr",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Mülheim an der Ruhr",
@@ -13,11 +17,7 @@
         "lon": 6.8829192,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Mülheim an der Ruhr",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Hünxe|gemeldeter pkw-brand auf der bab 3",
