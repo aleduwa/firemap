@@ -1,11 +1,55 @@
 [
   {
+    "base": "Freiwillige Feuerwehr Hünxe|gemeldeter pkw-brand auf der bab 3",
+    "status": "active",
+    "title": "Gemeldeter Pkw-Brand auf der BAB 3",
+    "link": "https://www.presseportal.de/blaulicht/pm/133631/6344983",
+    "first": "2026-09-03T11:48:23Z",
+    "last": "2026-09-03T11:48:23Z",
+    "places": [
+      {
+        "name": "Hünxe",
+        "lat": 51.6414581,
+        "lon": 6.7660319,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Hünxe",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Kreispolizeibehörde Borken|vreden-ammeloe - in feuerwache eingebrochen",
+    "status": "active",
+    "title": "Vreden-Ammeloe - In Feuerwache eingebrochen",
+    "link": "https://www.presseportal.de/blaulicht/pm/24843/6344971",
+    "first": "2026-09-03T11:31:29Z",
+    "last": "2026-09-03T11:31:29Z",
+    "places": [
+      {
+        "name": "Vreden-Ammeloe",
+        "lat": 52.0760111,
+        "lon": 6.784704,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Kreispolizeibehörde Borken",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Minden|pkw vor wohnhaus brennt in voller audehnung",
     "status": "active",
     "title": "PKW vor Wohnhaus brennt in voller Audehnung",
     "link": "https://www.presseportal.de/blaulicht/pm/152228/6344699",
     "first": "2026-09-03T07:50:11Z",
     "last": "2026-09-03T07:50:11Z",
+    "veg": false,
+    "source": "Feuerwehr Minden",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Minden",
@@ -13,11 +57,7 @@
         "lon": 8.9168852,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Minden",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Meerbusch|pressemitteilung der feuerwehr meerbusch zu einem küchenbrand nach fettexplosion in meerbusch-osterath",
@@ -26,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/116674/6344695",
     "first": "2026-09-03T07:32:40Z",
     "last": "2026-09-03T07:32:40Z",
+    "veg": false,
+    "source": "Feuerwehr Meerbusch",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Meerbusch",
@@ -33,11 +77,7 @@
         "lon": 6.6760958,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Meerbusch",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(ul) ulm - lagerhalle brennt / sachschaden entstand in der nacht auf donnerstag bei einem brand in ulm.",
@@ -46,6 +86,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6344681",
     "first": "2026-09-03T06:55:01Z",
     "last": "2026-09-03T06:55:01Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ulm",
@@ -53,11 +97,7 @@
         "lon": 9.9912458,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Tönisvorst|wechsel in die ehrenabteilung: stadtbrandinspektor toni van cleef wechselt nach über 45 jahren aktiver dienstzeit",
@@ -6449,46 +6489,6 @@
         "name": "Göppingen",
         "lat": 48.7031377,
         "lon": 9.6541116,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(bc) seekirch - kleiner flächenbrand löst feuerwehreinsatz aus / am montagmorgen rückte die feuerwehr in seekirch aus.",
-    "status": "out",
-    "title": "(BC) Seekirch - Kleiner Flächenbrand löst Feuerwehreinsatz aus / Am Montagmorgen rückte die Feuerwehr in Seekirch aus.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6327128",
-    "first": "2026-08-04T09:44:52Z",
-    "last": "2026-08-04T09:44:52Z",
-    "veg": true,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Seekirch",
-        "lat": 48.1059361,
-        "lon": 9.6423439,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Weil am Rhein|feuerwehr weil: verkehrsunfall & flächenbrand in weil am rhein",
-    "status": "out",
-    "title": "Feuerwehr Weil: Verkehrsunfall & Flächenbrand in Weil am Rhein",
-    "link": "https://www.presseportal.de/blaulicht/pm/182024/6326834",
-    "first": "2026-08-04T06:44:02Z",
-    "last": "2026-08-04T08:44:02Z",
-    "veg": true,
-    "source": "Feuerwehr Weil am Rhein",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Weil am Rhein",
-        "lat": 47.6056484,
-        "lon": 7.6120793,
         "approx": false
       }
     ]
