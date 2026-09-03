@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/133631/6344983",
     "first": "2026-09-03T11:48:23Z",
     "last": "2026-09-03T11:48:23Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Hünxe",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Hünxe",
@@ -13,11 +17,7 @@
         "lon": 6.7660319,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Hünxe",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Kreispolizeibehörde Borken|vreden-ammeloe - in feuerwache eingebrochen",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/24843/6344971",
     "first": "2026-09-03T11:31:29Z",
     "last": "2026-09-03T11:31:29Z",
+    "veg": false,
+    "source": "Kreispolizeibehörde Borken",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Vreden-Ammeloe",
@@ -33,11 +37,7 @@
         "lon": 6.784704,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Kreispolizeibehörde Borken",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Minden|pkw vor wohnhaus brennt in voller audehnung",
@@ -6434,26 +6434,6 @@
     ]
   },
   {
-    "base": "Polizeipräsidium Aalen|fellbach: brand auf balkon",
-    "status": "active",
-    "title": "Fellbach: Brand auf Balkon",
-    "link": "https://www.presseportal.de/blaulicht/pm/110969/6327386",
-    "first": "2026-08-04T14:52:37Z",
-    "last": "2026-08-04T14:52:37Z",
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Fellbach",
-        "lat": 48.814499,
-        "lon": 9.2745228,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Feuerwehr Weinheim|defekte hydraulikleitung und brandmeldeanlage lösen feuerwehreinsätze aus",
     "status": "contained",
     "title": "Defekte Hydraulikleitung und Brandmeldeanlage lösen Feuerwehreinsätze aus",
@@ -6469,64 +6449,6 @@
         "name": "Weinheim",
         "lat": 49.5462349,
         "lon": 8.6717458,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(gp) göppingen - feuer in reihenhauskomplex / hoher sachschaden entstand am dienstag bei einem brand in göppingen.",
-    "status": "active",
-    "title": "(GP) Göppingen - Feuer in Reihenhauskomplex / Hoher Sachschaden entstand am Dienstag bei einem Brand in Göppingen.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6327306",
-    "first": "2026-08-04T12:48:30Z",
-    "last": "2026-08-04T12:48:30Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Göppingen",
-        "lat": 48.7031377,
-        "lon": 9.6541116,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|dossenheim/rhein-neckar-kreis: feldbrand hat ermittlungen wegen fahrlässiger brandstiftung zur folge - zeugenaufruf",
-    "status": "active",
-    "title": "Dossenheim/Rhein-Neckar-Kreis: Feldbrand hat Ermittlungen wegen fahrlässiger Brandstiftung zur Folge - Zeugenaufruf",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6327339",
-    "first": "2026-08-03T12:25:52Z",
-    "last": "2026-08-04T13:22:41Z",
-    "veg": true,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 3,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Dossenheim",
-        "lat": 49.449242,
-        "lon": 8.6732428,
-        "approx": false
-      },
-      {
-        "name": "Rhein-Neckar-Kreis",
-        "lat": 49.3684797,
-        "lon": 8.7352403,
-        "approx": false
-      },
-      {
-        "name": "Leimen",
-        "lat": 49.3491417,
-        "lon": 8.6909951,
-        "approx": false
-      },
-      {
-        "name": "Malsch",
-        "lat": 49.2452537,
-        "lon": 8.6829484,
         "approx": false
       }
     ]
