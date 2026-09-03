@@ -1,5 +1,65 @@
 [
   {
+    "base": "Feuerwehr Minden|pkw vor wohnhaus brennt in voller audehnung",
+    "status": "active",
+    "title": "PKW vor Wohnhaus brennt in voller Audehnung",
+    "link": "https://www.presseportal.de/blaulicht/pm/152228/6344699",
+    "first": "2026-09-03T07:50:11Z",
+    "last": "2026-09-03T07:50:11Z",
+    "places": [
+      {
+        "name": "Minden",
+        "lat": 52.2881045,
+        "lon": 8.9168852,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Minden",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Meerbusch|pressemitteilung der feuerwehr meerbusch zu einem küchenbrand nach fettexplosion in meerbusch-osterath",
+    "status": "active",
+    "title": "Pressemitteilung der Feuerwehr Meerbusch zu einem Küchenbrand nach Fettexplosion in Meerbusch-Osterath",
+    "link": "https://www.presseportal.de/blaulicht/pm/116674/6344695",
+    "first": "2026-09-03T07:32:40Z",
+    "last": "2026-09-03T07:32:40Z",
+    "places": [
+      {
+        "name": "Meerbusch",
+        "lat": 51.2652237,
+        "lon": 6.6760958,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Meerbusch",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Ulm|(ul) ulm - lagerhalle brennt / sachschaden entstand in der nacht auf donnerstag bei einem brand in ulm.",
+    "status": "active",
+    "title": "(UL) Ulm - Lagerhalle brennt / Sachschaden entstand in der Nacht auf Donnerstag bei einem Brand in Ulm.",
+    "link": "https://www.presseportal.de/blaulicht/pm/110979/6344681",
+    "first": "2026-09-03T06:55:01Z",
+    "last": "2026-09-03T06:55:01Z",
+    "places": [
+      {
+        "name": "Ulm",
+        "lat": 48.3984968,
+        "lon": 9.9912458,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Freiwillige Feuerwehr Tönisvorst|wechsel in die ehrenabteilung: stadtbrandinspektor toni van cleef wechselt nach über 45 jahren aktiver dienstzeit",
     "status": "active",
     "title": "Wechsel in die Ehrenabteilung: Stadtbrandinspektor Toni van Cleef wechselt nach über 45 Jahren aktiver Dienstzeit",
@@ -6429,26 +6489,6 @@
         "name": "Weil am Rhein",
         "lat": 47.6056484,
         "lon": 7.6120793,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Aalen|ostalbkreis: widerstand - unfall - fahrzeugbrand",
-    "status": "active",
-    "title": "Ostalbkreis: Widerstand - Unfall - Fahrzeugbrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110969/6326770",
-    "first": "2026-08-04T05:54:02Z",
-    "last": "2026-08-04T05:54:02Z",
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Ostalbkreis",
-        "lat": 48.8777738,
-        "lon": 10.0337317,
         "approx": false
       }
     ]
