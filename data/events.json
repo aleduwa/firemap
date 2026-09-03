@@ -1,5 +1,25 @@
 [
   {
+    "base": "Feuerwehr Mülheim an der Ruhr|kellerbrand in saarn: e-bike-akkus in brand geraten - bewohner retten sich selbstständig ins freie",
+    "status": "contained",
+    "title": "Kellerbrand in Saarn: E-Bike-Akkus in Brand geraten - Bewohner retten sich selbstständig ins Freie",
+    "link": "https://www.presseportal.de/blaulicht/pm/115880/6345332",
+    "first": "2026-09-03T17:39:53Z",
+    "last": "2026-09-03T17:39:53Z",
+    "places": [
+      {
+        "name": "Mülheim an der Ruhr",
+        "lat": 51.4272925,
+        "lon": 6.8829192,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Mülheim an der Ruhr",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Freiwillige Feuerwehr Hünxe|gemeldeter pkw-brand auf der bab 3",
     "status": "active",
     "title": "Gemeldeter Pkw-Brand auf der BAB 3",
@@ -6429,26 +6449,6 @@
         "name": "Birenbach",
         "lat": 48.7491387,
         "lon": 9.6609218,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Weinheim|defekte hydraulikleitung und brandmeldeanlage lösen feuerwehreinsätze aus",
-    "status": "contained",
-    "title": "Defekte Hydraulikleitung und Brandmeldeanlage lösen Feuerwehreinsätze aus",
-    "link": "https://www.presseportal.de/blaulicht/pm/179375/6327324",
-    "first": "2026-08-04T13:14:15Z",
-    "last": "2026-08-04T15:14:15Z",
-    "veg": false,
-    "source": "Feuerwehr Weinheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Weinheim",
-        "lat": 49.5462349,
-        "lon": 8.6717458,
         "approx": false
       }
     ]
