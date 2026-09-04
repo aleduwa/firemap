@@ -1,51 +1,11 @@
 [
   {
-    "base": "Polizeipräsidium Offenburg|oberharmersbach - brandursache unklar",
-    "status": "active",
-    "title": "Oberharmersbach - Brandursache unklar",
-    "link": "https://www.presseportal.de/blaulicht/pm/110975/6345961",
-    "first": "2026-09-04T16:22:10Z",
-    "last": "2026-09-04T16:22:10Z",
-    "places": [
-      {
-        "name": "Oberharmersbach",
-        "lat": 48.3727696,
-        "lon": 8.1267832,
-        "approx": false
-      }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "region": "BW",
-    "updates": 0
-  },
-  {
-    "base": "Polizeipräsidium Aalen|ostalbkreis: unfallflucht - diebstahl - schmorbrand",
+    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
     "status": "out",
-    "title": "Ostalbkreis: Unfallflucht - Diebstahl - Schmorbrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110969/6345927",
-    "first": "2026-09-04T14:59:28Z",
-    "last": "2026-09-04T14:59:28Z",
-    "places": [
-      {
-        "name": "Ostalbkreis",
-        "lat": 48.8777738,
-        "lon": 10.0337317,
-        "approx": false
-      }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "region": "BW",
-    "updates": 0
-  },
-  {
-    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
-    "status": "out",
-    "title": "Wohnungsbrand im 2. Obergeschoss - PM Nr. 1",
-    "link": "https://www.presseportal.de/blaulicht/pm/134197/6345918",
-    "first": "2026-09-04T14:52:55Z",
-    "last": "2026-09-04T14:52:55Z",
+    "title": "Wohnungsbrand im 2. Obergeschoss - Abschlussmeldung (PM Nr. 2)",
+    "link": "https://www.presseportal.de/blaulicht/pm/134197/6345986",
+    "first": "2026-09-04T18:17:50Z",
+    "last": "2026-09-04T18:17:50Z",
     "places": [
       {
         "name": "Walldorf",
@@ -58,6 +18,66 @@
     "source": "Freiwillige Feuerwehr Walldorf",
     "region": "BW",
     "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Offenburg|oberharmersbach - brandursache unklar",
+    "status": "active",
+    "title": "Oberharmersbach - Brandursache unklar",
+    "link": "https://www.presseportal.de/blaulicht/pm/110975/6345961",
+    "first": "2026-09-04T16:22:10Z",
+    "last": "2026-09-04T16:22:10Z",
+    "veg": false,
+    "source": "Polizeipräsidium Offenburg",
+    "updates": 0,
+    "region": "BW",
+    "places": [
+      {
+        "name": "Oberharmersbach",
+        "lat": 48.3727696,
+        "lon": 8.1267832,
+        "approx": false
+      }
+    ]
+  },
+  {
+    "base": "Polizeipräsidium Aalen|ostalbkreis: unfallflucht - diebstahl - schmorbrand",
+    "status": "out",
+    "title": "Ostalbkreis: Unfallflucht - Diebstahl - Schmorbrand",
+    "link": "https://www.presseportal.de/blaulicht/pm/110969/6345927",
+    "first": "2026-09-04T14:59:28Z",
+    "last": "2026-09-04T14:59:28Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
+    "region": "BW",
+    "places": [
+      {
+        "name": "Ostalbkreis",
+        "lat": 48.8777738,
+        "lon": 10.0337317,
+        "approx": false
+      }
+    ]
+  },
+  {
+    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
+    "status": "out",
+    "title": "Wohnungsbrand im 2. Obergeschoss - PM Nr. 1",
+    "link": "https://www.presseportal.de/blaulicht/pm/134197/6345918",
+    "first": "2026-09-04T14:52:55Z",
+    "last": "2026-09-04T14:52:55Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Walldorf",
+    "updates": 0,
+    "region": "BW",
+    "places": [
+      {
+        "name": "Walldorf",
+        "lat": 49.3032669,
+        "lon": 8.6432056,
+        "approx": false
+      }
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(gp) hohenstadt/a8 - auto in flammen / am donnerstag rückte die feuerwehr zu einem fahrzeugbrand auf der a8 bei hohenstadt aus.",
@@ -6455,46 +6475,6 @@
         "name": "Mannheim-Schönau",
         "lat": 49.5534527,
         "lon": 8.4707614,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|mannheim: flächenbrand an der bab 6 bei feudenheim - pm nr. 1",
-    "status": "out",
-    "title": "Mannheim: Flächenbrand an der BAB 6 bei Feudenheim - PM Nr. 1",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6328063",
-    "first": "2026-08-05T14:51:49Z",
-    "last": "2026-08-05T16:05:32Z",
-    "veg": true,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 1,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Mannheim",
-        "lat": 49.4892913,
-        "lon": 8.4673098,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Karlsruhe|(ka) stutensee - zeugenaufruf nach mutmaßlicher brandstiftung",
-    "status": "active",
-    "title": "(KA) Stutensee - Zeugenaufruf nach mutmaßlicher Brandstiftung",
-    "link": "https://www.presseportal.de/blaulicht/pm/110972/6328012",
-    "first": "2026-08-05T14:02:24Z",
-    "last": "2026-08-05T16:02:24Z",
-    "veg": true,
-    "source": "Polizeipräsidium Karlsruhe",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stutensee",
-        "lat": 49.0895249,
-        "lon": 8.4856806,
         "approx": false
       }
     ]
