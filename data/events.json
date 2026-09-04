@@ -1,11 +1,35 @@
 [
   {
+    "base": "Feuerwehr Mönchengladbach|gartenlaube in vollbrand",
+    "status": "out",
+    "title": "Gartenlaube in Vollbrand",
+    "link": "https://www.presseportal.de/blaulicht/pm/115879/6346012",
+    "first": "2026-09-05T00:14:46Z",
+    "last": "2026-09-05T00:14:46Z",
+    "places": [
+      {
+        "name": "Mönchengladbach",
+        "lat": 51.1947131,
+        "lon": 6.4353792,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Hagen|fassadenbrand greift auf dachstuhl über.",
     "status": "active",
     "title": "Fassadenbrand greift auf Dachstuhl über.",
     "link": "https://www.presseportal.de/blaulicht/pm/129251/6345997",
     "first": "2026-09-04T21:18:11Z",
     "last": "2026-09-04T21:18:11Z",
+    "veg": false,
+    "source": "Feuerwehr Hagen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Hagen",
@@ -13,11 +37,7 @@
         "lon": 7.473296,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Hagen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
