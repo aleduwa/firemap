@@ -1,11 +1,75 @@
 [
   {
+    "base": "Polizeipräsidium Offenburg|oberharmersbach - brandursache unklar",
+    "status": "active",
+    "title": "Oberharmersbach - Brandursache unklar",
+    "link": "https://www.presseportal.de/blaulicht/pm/110975/6345961",
+    "first": "2026-09-04T16:22:10Z",
+    "last": "2026-09-04T16:22:10Z",
+    "places": [
+      {
+        "name": "Oberharmersbach",
+        "lat": 48.3727696,
+        "lon": 8.1267832,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Offenburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Aalen|ostalbkreis: unfallflucht - diebstahl - schmorbrand",
+    "status": "out",
+    "title": "Ostalbkreis: Unfallflucht - Diebstahl - Schmorbrand",
+    "link": "https://www.presseportal.de/blaulicht/pm/110969/6345927",
+    "first": "2026-09-04T14:59:28Z",
+    "last": "2026-09-04T14:59:28Z",
+    "places": [
+      {
+        "name": "Ostalbkreis",
+        "lat": 48.8777738,
+        "lon": 10.0337317,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
+    "status": "out",
+    "title": "Wohnungsbrand im 2. Obergeschoss - PM Nr. 1",
+    "link": "https://www.presseportal.de/blaulicht/pm/134197/6345918",
+    "first": "2026-09-04T14:52:55Z",
+    "last": "2026-09-04T14:52:55Z",
+    "places": [
+      {
+        "name": "Walldorf",
+        "lat": 49.3032669,
+        "lon": 8.6432056,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Walldorf",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Ulm|(gp) hohenstadt/a8 - auto in flammen / am donnerstag rückte die feuerwehr zu einem fahrzeugbrand auf der a8 bei hohenstadt aus.",
     "status": "out",
     "title": "(GP) Hohenstadt/A8 - Auto in Flammen / Am Donnerstag rückte die Feuerwehr zu einem Fahrzeugbrand auf der A8 bei Hohenstadt aus.",
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6345734",
     "first": "2026-09-04T12:29:01Z",
     "last": "2026-09-04T12:29:01Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Hohenstadt",
@@ -19,11 +83,7 @@
         "lon": 9.70966,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(gp) göppingen - feuer bei unkrautvernichtung / am donnerstag geriet bei göppingen eine holzwand in brand.",
@@ -32,6 +92,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6345688",
     "first": "2026-09-04T11:54:13Z",
     "last": "2026-09-04T11:54:13Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Göppingen",
@@ -39,11 +103,7 @@
         "lon": 9.6541116,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Dortmund|brand in der sternstraße",
@@ -6435,66 +6495,6 @@
         "name": "Stutensee",
         "lat": 49.0895249,
         "lon": 8.4856806,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|bad säckingen: feuerwehr löscht feuerstelle am waldrand",
-    "status": "out",
-    "title": "Bad Säckingen: Feuerwehr löscht Feuerstelle am Waldrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6327991",
-    "first": "2026-08-05T13:34:57Z",
-    "last": "2026-08-05T13:34:57Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Bad Säckingen",
-        "lat": 47.5527459,
-        "lon": 7.9410556,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Karlsruhe|(ka) karlsruhe - flächenbrand in neureut - polizei bittet um zeugenhinweise",
-    "status": "contained",
-    "title": "(KA) Karlsruhe - Flächenbrand in Neureut - Polizei bittet um Zeugenhinweise",
-    "link": "https://www.presseportal.de/blaulicht/pm/110972/6327944",
-    "first": "2026-08-05T12:52:21Z",
-    "last": "2026-08-05T14:52:21Z",
-    "veg": true,
-    "source": "Polizeipräsidium Karlsruhe",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Karlsruhe",
-        "lat": 49.0068705,
-        "lon": 8.4034195,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|heidelberg: trafobrand an stromkabel",
-    "status": "active",
-    "title": "Heidelberg: Trafobrand an Stromkabel",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6327869",
-    "first": "2026-08-05T11:41:07Z",
-    "last": "2026-08-05T11:41:07Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Heidelberg",
-        "lat": 49.4093582,
-        "lon": 8.694724,
         "approx": false
       }
     ]
