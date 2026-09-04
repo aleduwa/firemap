@@ -1,11 +1,61 @@
 [
   {
+    "base": "Polizeipräsidium Ulm|(gp) hohenstadt/a8 - auto in flammen / am donnerstag rückte die feuerwehr zu einem fahrzeugbrand auf der a8 bei hohenstadt aus.",
+    "status": "out",
+    "title": "(GP) Hohenstadt/A8 - Auto in Flammen / Am Donnerstag rückte die Feuerwehr zu einem Fahrzeugbrand auf der A8 bei Hohenstadt aus.",
+    "link": "https://www.presseportal.de/blaulicht/pm/110979/6345734",
+    "first": "2026-09-04T12:29:01Z",
+    "last": "2026-09-04T12:29:01Z",
+    "places": [
+      {
+        "name": "Hohenstadt",
+        "lat": 48.544391,
+        "lon": 9.6635527,
+        "approx": false
+      },
+      {
+        "name": "zwischen Merklingen und Hohenstadt",
+        "lat": 48.52725,
+        "lon": 9.70966,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Ulm|(gp) göppingen - feuer bei unkrautvernichtung / am donnerstag geriet bei göppingen eine holzwand in brand.",
+    "status": "out",
+    "title": "(GP) Göppingen - Feuer bei Unkrautvernichtung / Am Donnerstag geriet bei Göppingen eine Holzwand in Brand.",
+    "link": "https://www.presseportal.de/blaulicht/pm/110979/6345688",
+    "first": "2026-09-04T11:54:13Z",
+    "last": "2026-09-04T11:54:13Z",
+    "places": [
+      {
+        "name": "Göppingen",
+        "lat": 48.7031377,
+        "lon": 9.6541116,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Dortmund|brand in der sternstraße",
     "status": "active",
     "title": "Brand in der Sternstraße",
     "link": "https://www.presseportal.de/blaulicht/pm/115869/6345382",
     "first": "2026-09-04T06:07:06Z",
     "last": "2026-09-04T06:07:06Z",
+    "veg": false,
+    "source": "Feuerwehr Dortmund",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Dortmund",
@@ -13,11 +63,7 @@
         "lon": 7.4652789,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Dortmund",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Mülheim an der Ruhr|kellerbrand in saarn: e-bike-akkus in brand geraten - bewohner retten sich selbstständig ins freie",
@@ -6449,26 +6495,6 @@
         "name": "Heidelberg",
         "lat": 49.4093582,
         "lon": 8.694724,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(gp) birenbach - laster brennt / am dienstag geriet ein geparkter lkw in birenbach in brand.",
-    "status": "out",
-    "title": "(GP) Birenbach - Laster brennt / Am Dienstag geriet ein geparkter Lkw in Birenbach in Brand.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6327703",
-    "first": "2026-08-05T09:10:01Z",
-    "last": "2026-08-05T09:10:01Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Birenbach",
-        "lat": 48.7491387,
-        "lon": 9.6609218,
         "approx": false
       }
     ]
