@@ -1,11 +1,35 @@
 [
   {
+    "base": "Feuerwehr Düsseldorf|wohnungsbrand in unterbilk - feuerwehr verhindert brandausbreitung, ein mensch verstorben",
+    "status": "contained",
+    "title": "Wohnungsbrand in Unterbilk - Feuerwehr verhindert Brandausbreitung, ein Mensch verstorben",
+    "link": "https://www.presseportal.de/blaulicht/pm/115876/6346152",
+    "first": "2026-09-05T19:27:14Z",
+    "last": "2026-09-05T19:27:14Z",
+    "places": [
+      {
+        "name": "Düsseldorf",
+        "lat": 51.2254018,
+        "lon": 6.7763137,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Düsseldorf",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Konstanz|brand einer lüftungsanlage in einem gastronomiebetrieb",
     "status": "contained",
     "title": "Brand einer Lüftungsanlage in einem Gastronomiebetrieb",
     "link": "https://www.presseportal.de/blaulicht/pm/139089/6346131",
     "first": "2026-09-05T15:30:01Z",
     "last": "2026-09-05T15:30:01Z",
+    "veg": false,
+    "source": "Feuerwehr Konstanz",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Konstanz",
@@ -13,11 +37,7 @@
         "lon": 9.1750718,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Konstanz",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Kreispolizeibehörde Viersen|schwalmtal: unfall auf der go-kart-bahn - kind erleidet verbrennungen",
@@ -26,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/65857/6346127",
     "first": "2026-09-05T14:36:46Z",
     "last": "2026-09-05T14:36:46Z",
+    "veg": false,
+    "source": "Kreispolizeibehörde Viersen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Schwalmtal",
@@ -33,11 +57,7 @@
         "lon": 6.270687,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Kreispolizeibehörde Viersen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Krefeld|wohnungsbrand in krefelder innenstadt",
