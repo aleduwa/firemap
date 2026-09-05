@@ -1,11 +1,55 @@
 [
   {
+    "base": "Feuerwehr Konstanz|brand einer lüftungsanlage in einem gastronomiebetrieb",
+    "status": "contained",
+    "title": "Brand einer Lüftungsanlage in einem Gastronomiebetrieb",
+    "link": "https://www.presseportal.de/blaulicht/pm/139089/6346131",
+    "first": "2026-09-05T15:30:01Z",
+    "last": "2026-09-05T15:30:01Z",
+    "places": [
+      {
+        "name": "Konstanz",
+        "lat": 47.659216,
+        "lon": 9.1750718,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Konstanz",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Kreispolizeibehörde Viersen|schwalmtal: unfall auf der go-kart-bahn - kind erleidet verbrennungen",
+    "status": "active",
+    "title": "Schwalmtal: Unfall auf der Go-Kart-Bahn - Kind erleidet Verbrennungen",
+    "link": "https://www.presseportal.de/blaulicht/pm/65857/6346127",
+    "first": "2026-09-05T14:36:46Z",
+    "last": "2026-09-05T14:36:46Z",
+    "places": [
+      {
+        "name": "Schwalmtal",
+        "lat": 51.22727,
+        "lon": 6.270687,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Kreispolizeibehörde Viersen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Krefeld|wohnungsbrand in krefelder innenstadt",
     "status": "active",
     "title": "Wohnungsbrand in Krefelder Innenstadt",
     "link": "https://www.presseportal.de/blaulicht/pm/115878/6346106",
     "first": "2026-09-05T12:04:33Z",
     "last": "2026-09-05T12:04:33Z",
+    "veg": false,
+    "source": "Feuerwehr Krefeld",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Krefeld",
@@ -13,11 +57,7 @@
         "lon": 6.5623343,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Krefeld",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|mannheim: brand in wohnhaus - pm 2",
@@ -6390,92 +6430,6 @@
         "lat": 47.82632,
         "lon": 8.94834,
         "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|lörrach: flächenbrand",
-    "status": "out",
-    "title": "Lörrach: Flächenbrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6328722",
-    "first": "2026-08-06T13:42:31Z",
-    "last": "2026-08-06T13:42:31Z",
-    "veg": true,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Lörrach",
-        "lat": 47.6120896,
-        "lon": 7.6607218,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|lörrach: balkonbrand",
-    "status": "active",
-    "title": "Lörrach: Balkonbrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6328721",
-    "first": "2026-08-06T13:42:04Z",
-    "last": "2026-08-06T13:42:04Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Lörrach",
-        "lat": 47.6120896,
-        "lon": 7.6607218,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|küssaberg/ ettikon: schwelbrand an maschine - feuerwehreinsatz",
-    "status": "active",
-    "title": "Küssaberg/ Ettikon: Schwelbrand an Maschine - Feuerwehreinsatz",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6328720",
-    "first": "2026-08-06T13:41:35Z",
-    "last": "2026-08-06T13:41:35Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Küssaberg",
-        "lat": 47.601678,
-        "lon": 8.3212852,
-        "approx": false
-      },
-      {
-        "name": "Ettikon",
-        "lat": 47.6158593,
-        "lon": 8.267909,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Aalen|ostalbkreis: einbruch - brand - unfall - unfallflucht",
-    "status": "out",
-    "title": "Ostalbkreis: Einbruch - Brand - Unfall - Unfallflucht",
-    "link": "https://www.presseportal.de/blaulicht/pm/110969/6328696",
-    "first": "2026-08-06T13:24:33Z",
-    "last": "2026-08-06T15:24:33Z",
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Ostalbkreis",
-        "lat": 48.8777738,
-        "lon": 10.0337317,
-        "approx": false
       }
     ]
   },
