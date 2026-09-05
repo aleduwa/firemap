@@ -1,5 +1,25 @@
 [
   {
+    "base": "Feuerwehr Krefeld|wohnungsbrand in krefelder innenstadt",
+    "status": "active",
+    "title": "Wohnungsbrand in Krefelder Innenstadt",
+    "link": "https://www.presseportal.de/blaulicht/pm/115878/6346106",
+    "first": "2026-09-05T12:04:33Z",
+    "last": "2026-09-05T12:04:33Z",
+    "places": [
+      {
+        "name": "Krefeld",
+        "lat": 51.3331205,
+        "lon": 6.5623343,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Krefeld",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Mannheim|mannheim: brand in wohnhaus - pm 2",
     "status": "out",
     "title": "Mannheim: Brand in Wohnhaus - PM 2",
@@ -6455,46 +6475,6 @@
         "name": "Ostalbkreis",
         "lat": 48.8777738,
         "lon": 10.0337317,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Heilbronn|neckar-odenwald-kreis: unfallflucht und brand",
-    "status": "active",
-    "title": "Neckar-Odenwald-Kreis: Unfallflucht und Brand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110971/6328491",
-    "first": "2026-08-06T10:33:56Z",
-    "last": "2026-08-06T12:33:56Z",
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Neckar-Odenwald-Kreis",
-        "lat": 49.4678557,
-        "lon": 9.2709386,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(gp) eschenbach - essen auf herd vergessen / verbranntes essen führte am mittwoch zu einem einsatz in eschenbach.",
-    "status": "active",
-    "title": "(GP) Eschenbach - Essen auf Herd vergessen / Verbranntes Essen führte am Mittwoch zu einem Einsatz in Eschenbach.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6328446",
-    "first": "2026-08-06T09:55:42Z",
-    "last": "2026-08-06T09:55:42Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Eschenbach",
-        "lat": 48.6622903,
-        "lon": 9.676742,
         "approx": false
       }
     ]
