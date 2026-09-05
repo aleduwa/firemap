@@ -1,1586 +1,1598 @@
 {
-  "79189 bad krozingen": {
-    "lat": 47.9208743,
-    "lon": 7.6808788
-  },
-  "s|friedrichring 38|79098|freiburg im breisgau": {
-    "lat": 47.9981246,
-    "lon": 7.8494975
-  },
-  "neuer messplatz. 1, 79108 freiburg im breisgau": {
-    "lat": 48.0162409,
-    "lon": 7.8377056
-  },
-  "elzhalle wasser, 79312 wasser": {
-    "lon": 7.8592289,
-    "lat": 48.098419
-  },
-  "s|neuer messpl. 1|79108|freiburg im breisgau": {
-    "lat": 48.0135831,
-    "lon": 7.8395074
-  },
-  "s||78132|hornberg": {
-    "lon": 8.2316356,
-    "lat": 48.2128411
-  },
-  "gerätehaus feuerwehr breisach, 79206 breisach": {
-    "lon": 7.5797636,
-    "lat": 48.0387327
-  },
-  "schwarzwaldstraße 181, 79117 freiburg im breisgau": {
-    "lat": 47.9902574,
-    "lon": 7.8851379
-  },
-  "79252 stegen": {
-    "lat": 48.0015499,
-    "lon": 7.9697309
-  },
-  "s|eschholzstraße||freiburg im breisgau": {
-    "lat": 47.9918906,
-    "lon": 7.8314058
-  },
-  "s||77723|reichenbach": {
-    "lat": 48.2175117,
-    "lon": 8.2627313
-  },
-  "s|schützenallee 12|79102|freiburg": {
-    "lon": 7.8658308,
-    "lat": 47.9879215
-  },
-  "77889 seebach": {
-    "lat": 48.4084921,
-    "lon": 8.3042161
-  },
-  "robert-bunsen-straße 5, 79108 freiburg im breisgau": {
-    "lat": 48.0296539,
-    "lon": 7.8504296
-  },
-  "s||79189|tunsel": {
-    "lat": 47.9038557,
-    "lon": 7.6694816
-  },
-  "nußmannstraße 7-9, 790987 freiburg im breisgau": {
-    "lon": 7.8536977,
-    "lat": 47.9969055
-  },
-  "schelklewiese baiersbronn, 72270 baiersbronn": {
-    "lat": 48.5074487,
-    "lon": 8.3718474
-  },
-  "s|wentzingerstraße 15|79106|freiburg im breisgau": {
-    "lat": 47.9965209,
-    "lon": 7.8394932
-  },
-  "s||77933|kippenheimweiler": {
-    "lat": 48.3182043,
-    "lon": 7.8051884
-  },
-  "zasiusstraße 9, 79102 freiburg im breisgau": {
-    "lat": 47.9869137,
-    "lon": 7.8507179
-  },
-  "79215 elzach": {
-    "lon": 8.0832324,
-    "lat": 48.1856526
-  },
-  "hildastr. 5, 79102 freiburg im breisgau": {
-    "lon": 7.8545887,
-    "lat": 47.990123
-  },
-  "s|leopoldring 1,|79098|freiburg im breisgau": {
-    "lat": 47.9984307,
-    "lon": 7.8531629
-  },
-  "s|egonstraße 54|79106|freiburg im breisgau": {
-    "lat": 48.0000062,
-    "lon": 7.8366258
-  },
-  "s|basler straße 103|79100|freiburg im breisgau": {
-    "lat": 47.9860044,
-    "lon": 7.8309557
-  },
-  "s||79312|freiburg im breisgau": {
-    "lat": 47.9960901,
-    "lon": 7.8494005
-  },
-  "s||79312|emmendingen": {
-    "lat": 48.1206565,
-    "lon": 7.850993
-  },
-  "79346 kiechlinsbergen": {
-    "lat": 48.1329176,
-    "lon": 7.6556829
-  },
-  "s|zasiusstraße 5|79102|freiburg im breisgau": {
-    "lat": 47.9868623,
-    "lon": 7.8635406
-  },
-  "77790 steinach": {
-    "lat": 48.2856905,
-    "lon": 8.0284981
-  },
-  "granatgässle 2-7, 79102 freiburg im breisgau": {
-    "lat": 47.9914023,
-    "lon": 7.8548365
-  },
-  "78112 st. georgen im schwarzwald": {
-    "lat": 48.1226922,
-    "lon": 8.3294719
-  },
-  "s|kartäuserstraße 45|79102|freiburg im breisgau": {
-    "lat": 47.9919156,
-    "lon": 7.8602557
-  },
-  "s||79102|freiburg im breisgau": {
-    "lat": 47.9960901,
-    "lon": 7.8494005
-  },
-  "sportplatz in der au kandern, 79400 kandern": {
-    "lon": 7.6540529,
-    "lat": 47.7054712
-  },
-  "79276 reute (breisgau)": {
-    "lat": 48.073271,
-    "lon": 7.8761595
-  },
-  "s|haslacher str. 43|79115|freiburg im breisgau": {
-    "lat": 47.9929431,
-    "lon": 7.8325207
-  },
-  "79295 laufen (sulzburg)": {
-    "lon": 7.6831206,
-    "lat": 47.8429955
-  },
-  "s||79254|oberried": {
-    "lat": 47.9330055,
-    "lon": 7.9498704
-  },
-  "s|bertoldstraße 51|79098|freiburg im breisgau": {
-    "lat": 47.9959345,
-    "lon": 7.8441397
-  },
-  "s||72270|baiersbronn": {
-    "lon": 8.3720124,
-    "lat": 48.5069519
-  },
-  "s|eschholzstraße 118|79115|freiburg im breisgau": {
-    "lon": 7.8290481,
-    "lat": 47.9916272
-  },
-  "s||77709|wolfach": {
-    "lat": 48.2985845,
-    "lon": 8.222608
-  },
-  "schwarzwaldstraße, 79117 freiburg im breisgau": {
-    "lat": 47.9877365,
-    "lon": 7.8685967
-  },
-  "76530 baden-baden": {
-    "lat": 47.5605924,
-    "lon": 7.7861959
-  },
-  "s|ferdinand-weiß-straße 8|79106|freiburg im breisgau": {
-    "lat": 47.9947032,
-    "lon": 7.8332169
-  },
-  "kirchplatz lörrach-stetten, 79539 stetten (lörrach)": {
-    "lon": 7.664869,
-    "lat": 47.6016315
-  },
-  "freiamt, deutschland": {
-    "lon": 7.9182707,
-    "lat": 48.1737465
-  },
-  "haslacher straße 15, 79115 freiburg im breisgau": {
-    "lat": 47.9921026,
-    "lon": 7.8348994
-  },
-  "offohalle schuttern, 77948 schuttern": {
-    "lon": 7.8536101,
-    "lat": 48.3836661
-  },
-  "wentzingerstraße 15, 79106 freiburg im breisgau": {
-    "lon": 7.8394932,
-    "lat": 47.9965209
-  },
   "s||79241|freiburg im breisgau": {
     "lat": 47.9960901,
     "lon": 7.8494005
-  },
-  "fahnenbergplatz 3, 79098 freiburg im breisgau": {
-    "lat": 47.9978301,
-    "lon": 7.8485052
-  },
-  "münsterplatz freiburg, 79098 freiburg (breisgau)": {
-    "lat": 47.9955956,
-    "lon": 7.8527329
-  },
-  "s||79235|burkheim": {
-    "lat": 48.1013025,
-    "lon": 7.598503
-  },
-  "s|rempartstraße 18|79098|freiburg im breisgau": {
-    "lat": 47.992733,
-    "lon": 7.8464447
-  },
-  "s|neuer messplatz. 1|79108|freiburg im breisgau": {
-    "lat": 48.0135831,
-    "lon": 7.8395074
-  },
-  "79694 utzenfeld": {
-    "lat": 47.8132797,
-    "lon": 7.911084
-  },
-  "gerberau 15, 79098 freiburg im breisgau": {
-    "lat": 47.9932832,
-    "lon": 7.8531597
-  },
-  "kurgarten baden-baden, 76530 baden-baden": {
-    "lat": 47.9201124,
-    "lon": 7.6988848
-  },
-  "s||77963|nonnenweier": {
-    "lat": 48.3476599,
-    "lon": 7.7608934
-  },
-  "s||79199|kirchzarten": {
-    "lon": 7.954201,
-    "lat": 47.9626264
-  },
-  "festhalle kollnau, 79183 kollnau": {
-    "lat": 48.1051268,
-    "lon": 7.9693594
-  },
-  "s|waldseestraße|79117|freiburg im breisgau": {
-    "lat": 47.9849281,
-    "lon": 7.8769834
-  },
-  "basler landstraße 35-37, 79111 freiburg im breisgau": {
-    "lat": 47.9821591,
-    "lon": 7.8036843
-  },
-  "lehener str. 47, 79106 freiburg im breisgau": {
-    "lon": 7.8377235,
-    "lat": 48.0010711
-  },
-  "s||79104|freiburg im breisgau": {
-    "lat": 47.9960901,
-    "lon": 7.8494005
-  },
-  "s|merzhauser str. 16|79100|freiburg im breisgau": {
-    "lat": 47.9847726,
-    "lon": 7.836388
-  },
-  "s|ferdinand-weiß-straße 9-11|79106|freiburg im breisgau": {
-    "lat": 47.9948976,
-    "lon": 7.8343744
-  },
-  "insel reichenbach, 79348 reichenbach (freiamt)": {
-    "lat": 48.1577722,
-    "lon": 7.9228068
-  },
-  "s||79822|titisee-neustadt": {
-    "lat": 47.9173421,
-    "lon": 8.1735161
-  },
-  "s|konradstraße 17|79100|freiburg im breisgau": {
-    "lon": 7.8451331,
-    "lat": 47.9860741
-  },
-  "ortsmitte ringsheim, 77975 ringsheim": {
-    "lat": 48.2469065,
-    "lon": 7.7780241
-  },
-  "bahnhof seebrugg, 79859 schluchsee-seebrugg": {
-    "lat": 47.8032017,
-    "lon": 8.1913924
-  },
-  "s|kaiser-joseph-straße 268|79098|freiburg im breisgau": {
-    "lat": 47.9920288,
-    "lon": 7.8482751
-  },
-  "s|schwabentorring 7|79098|freiburg im breisgau": {
-    "lat": 47.9915369,
-    "lon": 7.8546348
-  },
-  "kaiser-joseph-straße 268, 79098 freiburg im breisgau": {
-    "lat": 47.9920288,
-    "lon": 7.8482751
-  },
-  "77728 oppenau": {
-    "lon": 8.1804316,
-    "lat": 48.4828605
-  },
-  "s||79837|ibach": {
-    "lat": 47.7438811,
-    "lon": 8.0682489
-  },
-  "s||79268|bötzingen": {
-    "lat": 48.0713081,
-    "lon": 7.7184992
-  },
-  "sandfangweg, 79117 freiburg im breisgau": {
-    "lat": 47.9897237,
-    "lon": 7.8804672
-  },
-  "kapellenweg 1, 79100 freiburg im breisgau": {
-    "lat": 47.9811816,
-    "lon": 7.8384984
-  },
-  "innenstadt rheinfelden, 79618 rheinfelden": {
-    "lon": 7.7833392,
-    "lat": 47.5596394
-  },
-  "77781 prinzbach (biberach)": {
-    "lat": 48.3322289,
-    "lon": 8.0108581
-  },
-  "katzenmooser höhe, 79215 katzenmoos": {
-    "lon": 8.0361533,
-    "lat": 48.1702292
-  },
-  "gewerbepark h.a.u. schramberg, 78713 schramberg": {
-    "lon": 8.3973457,
-    "lat": 48.2302428
-  },
-  "s||79276|reute": {
-    "lat": 48.0821723,
-    "lon": 7.820585
-  },
-  "79098 freiburg": {
-    "lat": 47.9948074,
-    "lon": 7.8486764
-  },
-  "festhalle kuhbach, 77933 kuhbach": {
-    "lon": 7.9077081,
-    "lat": 48.3393676
-  },
-  "hans-bunte-straße 16c, 79108 freiburg im breisgau": {
-    "lat": 48.0306361,
-    "lon": 7.8590627
-  },
-  "s||78148|gütenbach": {
-    "lat": 48.0454535,
-    "lon": 8.1381577
-  },
-  "s|rathausgasse 5a|79098|freiburg im breisgau": {
-    "lat": 47.9960728,
-    "lon": 7.8487049
-  },
-  "s||78112|st. georgen im schwarzwald": {
-    "lat": 48.1257642,
-    "lon": 8.3330247
-  },
-  "79098 freiburg (breisgau)": {
-    "lat": 47.9948074,
-    "lon": 7.8486764
-  },
-  "festhalle oberbergen, 79235 oberbergen": {
-    "lat": 48.0968179,
-    "lon": 7.6602605
-  },
-  "s||79112|waltershofen": {
-    "lat": 48.024194,
-    "lon": 7.7191502
-  },
-  "weinbrunnen kurpark bad krozingen, 79189 bad krozingen": {
-    "lat": 47.918689,
-    "lon": 7.6921445
-  },
-  "s||79227|wolfenweiler": {
-    "lat": 47.9632282,
-    "lon": 7.7633198
-  },
-  "max-planck-schule bad krozingen, 79189 bad krozingen": {
-    "lon": 7.6968735,
-    "lat": 47.9112551
-  },
-  "sonne-platz gundelfingen, 79194 gundelfingen": {
-    "lat": 48.0432504,
-    "lon": 7.8680787
-  },
-  "städtische galerie offenburg, 77652 offenburg": {
-    "lat": 48.4675599,
-    "lon": 7.9562818
-  },
-  "s|habsburgerstraße 9|79104|freiburg im breisgau": {
-    "lat": 48.0108123,
-    "lon": 7.8556694
-  },
-  "s||79189|biengen": {
-    "lat": 47.9387636,
-    "lon": 7.6912304
-  },
-  "merzhauser straße 119, 79100 freiburg im breisgau": {
-    "lat": 47.9793023,
-    "lon": 7.8322624
-  },
-  "merowingerhalle biengen, 79189 biengen": {
-    "lon": 7.69529,
-    "lat": 47.9371094
-  },
-  "hans-bunte-str. 16c, 79108 freiburg im breisgau": {
-    "lon": 7.8590627,
-    "lat": 48.0306361
-  },
-  "79837 ibach (schwarzwald)": {
-    "lat": 47.7504211,
-    "lon": 8.0599296
-  },
-  "s||77889|seebach": {
-    "lat": 48.4084921,
-    "lon": 8.3042161
-  },
-  "s||79410|badenweiler": {
-    "lat": 47.8025477,
-    "lon": 7.6739717
-  },
-  "s|krozinger straße 13|79114|freiburg": {
-    "lon": 7.8128533,
-    "lat": 47.9942703
-  },
-  "freiburg tiengen, 79112 freiburg tiengen": {
-    "lon": 7.72648,
-    "lat": 47.9820607
-  },
-  "s||79761|waldshut": {
-    "lat": 47.6246179,
-    "lon": 8.2120605
-  },
-  "leopoldring 1,, 79098 freiburg im breisgau": {
-    "lon": 7.8531629,
-    "lat": 47.9984307
-  },
-  "s||77790|steinach": {
-    "lat": 48.3030536,
-    "lon": 8.057394
-  },
-  "s||79206|tuniberg": {
-    "lat": 48.0731137,
-    "lon": 7.7195837
-  },
-  "79112 waltershofen": {
-    "lon": 7.7180477,
-    "lat": 48.0240341
-  },
-  "79183 waldkirch": {
-    "lat": 48.0894245,
-    "lon": 7.9696516
-  },
-  "rathausplatz offenburg, 77652 offenburg": {
-    "lat": 48.4749596,
-    "lon": 7.9846635
-  },
-  "waldkirch, deutschland": {
-    "lon": 7.9610142,
-    "lat": 48.0939396
-  },
-  "s|leo - wohleb - str. 4|79098|freiburg im breisgau": {
-    "lat": 47.9902455,
-    "lon": 7.8586569
-  },
-  "munzinger straße 4, 79111 freiburg im breisgau": {
-    "lat": 47.9895552,
-    "lon": 7.7949522
-  },
-  "s|wilhelmstr. 15/1|79098|freiburg im breisgau": {
-    "lat": 47.9943887,
-    "lon": 7.8413
-  },
-  "s|haslacher straße 15|79115|freiburg im breisgau": {
-    "lat": 47.9921026,
-    "lon": 7.8348994
-  },
-  "s|bismarckallee 9|79098|freiburg im breisgau": {
-    "lat": 47.9979293,
-    "lon": 7.8423773
-  },
-  "79576 weil am rhein": {
-    "lon": 7.6109595,
-    "lat": 47.6059861
-  },
-  "s||79279|vörstetten": {
-    "lon": 7.8493979,
-    "lat": 48.0645765
-  },
-  "leopoldring 1, 79098 freiburg im breisgau": {
-    "lat": 47.9984307,
-    "lon": 7.8531629
-  },
-  "s|nußmannstraße 7-9||freiburg im breisgau": {
-    "lat": 47.9969055,
-    "lon": 7.8536977
-  },
-  "waldseestraße, 79117 freiburg im breisgau": {
-    "lat": 47.9814348,
-    "lon": 7.8808667
-  },
-  "77704 oberkirch": {
-    "lon": 8.0670732,
-    "lat": 48.5216194
-  },
-  "s|haslacher straße 25|79115|freiburg im breisgau": {
-    "lat": 47.992738,
-    "lon": 7.8333749
-  },
-  "s|fahnenbergplatz 3|79098|freiburg im breisgau": {
-    "lat": 47.9978301,
-    "lon": 7.8485052
-  },
-  "s|schwarzwaldstraße 82|79102|freiburg im breisgau": {
-    "lon": 7.875728,
-    "lat": 47.9877215
-  },
-  "s|schwarzwaldstraße|79117|freiburg im breisgau": {
-    "lat": 47.9876354,
-    "lon": 7.9003651
-  },
-  "fahnenbergpl. 3, 79098 freiburg im breisgau": {
-    "lon": 7.8485052,
-    "lat": 47.9978301
-  },
-  "schnewlinstraße 1, 79098 freiburg im breisgau": {
-    "lat": 47.994759,
-    "lon": 7.8405633
-  },
-  "hansjakob-halle nordrach, 77787 nordrach": {
-    "lat": 48.3986528,
-    "lon": 8.0796823
-  },
-  "s|gerberau 11|79098|freiburg im breisgau": {
-    "lat": 47.9934911,
-    "lon": 7.8512616
-  },
-  "s|schwarzwaldstraße 181|79117|freiburg im breisgau": {
-    "lat": 47.9902574,
-    "lon": 7.8851379
-  },
-  "haslacher str. 43, 79115 freiburg im breisgau": {
-    "lon": 7.8325581,
-    "lat": 47.9929625
-  },
-  "restaurant kamino, 79837 häusern": {
-    "lon": 8.1687536,
-    "lat": 47.7534096
-  },
-  "79106 freiburg im breisgau": {
-    "lat": 48.0050912,
-    "lon": 7.8399779
-  },
-  "reithalle weisweil, 79367 weisweil": {
-    "lat": 48.2060927,
-    "lon": 7.6819073
-  },
-  "77656 zunsweier": {
-    "lat": 48.4239441,
-    "lon": 7.9474613
-  },
-  "wilhelmstraße 15/1, 79098 freiburg im breisgau": {
-    "lat": 47.9943887,
-    "lon": 7.8413
-  },
-  "rempartstraße 18, 79098 freiburg im breisgau": {
-    "lat": 47.992733,
-    "lon": 7.8464447
-  },
-  "s||79664|öflingen": {
-    "lon": 7.9174787,
-    "lat": 47.600969
-  },
-  "s|granatgässle 2-7|79102|freiburg im breisgau": {
-    "lat": 47.9914023,
-    "lon": 7.8548365
-  },
-  "s||79677|aitern": {
-    "lat": 47.8037979,
-    "lon": 7.894723
-  },
-  "zentrum oberwiehre, 79098 freiburg": {
-    "lon": 7.870092,
-    "lat": 47.9878797
-  },
-  "79822 titisee-neustadt": {
-    "lon": 8.1899984,
-    "lat": 47.9379513
-  },
-  "leo - wohleb - str. 4, 79098 freiburg im breisgau": {
-    "lat": 47.9902455,
-    "lon": 7.8586569
-  },
-  "s|kirchstraße 12|79100|freiburg im breisgau": {
-    "lat": 47.9876531,
-    "lon": 7.8460331
-  },
-  "79677 aitern": {
-    "lon": 7.8978993,
-    "lat": 47.7987476
-  },
-  "s||79400|kandern": {
-    "lat": 47.714697,
-    "lon": 7.6610865
-  },
-  "messe offenburg-ortenau, 77652 offenburg": {
-    "lon": 7.9340376,
-    "lat": 48.4638873
-  },
-  "kirchstraße 12, 79100 freiburg im breisgau": {
-    "lat": 47.9876531,
-    "lon": 7.8460331
-  },
-  "s||79694|utzenfeld": {
-    "lat": 47.8010461,
-    "lon": 7.9157917
-  },
-  "77723 reichenbach (kinzigtal)": {
-    "lat": 48.4226026,
-    "lon": 7.9824692
-  },
-  "79664 wehr": {
-    "lon": 7.9151105,
-    "lat": 47.6255518
-  },
-  "79369 wyhl": {
-    "lon": 7.6500349,
-    "lat": 48.1695429
-  },
-  "79424 auggen": {
-    "lat": 47.7887895,
-    "lon": 7.589098
-  },
-  "s||79106|freiburg im breisgau": {
-    "lat": 47.9960901,
-    "lon": 7.8494005
-  },
-  "hermann-mitsch-straße 13a, 79108 freiburg im breisgau": {
-    "lat": 48.0201574,
-    "lon": 7.8398583
-  },
-  "s||79691|neuenweg": {
-    "lon": 7.8268252,
-    "lat": 47.7958222
-  },
-  "s|lehener str. 47|79106|freiburg im breisgau": {
-    "lat": 48.0010711,
-    "lon": 7.8377235
-  },
-  "basler straße 103, 79100 freiburg im breisgau": {
-    "lon": 7.8309557,
-    "lat": 47.9860044
-  },
-  "s|merzhauser straße 119|79100|freiburg im breisgau": {
-    "lat": 47.9793023,
-    "lon": 7.8322624
-  },
-  "s|achim-stocker-straße 1|79108|freiburg im breisgau": {
-    "lat": 48.0213778,
-    "lon": 7.829817
-  },
-  "79761 waldshut": {
-    "lon": 8.2429178,
-    "lat": 47.6518801
-  },
-  "s||79215|elzach": {
-    "lat": 48.1738732,
-    "lon": 8.0713324
-  },
-  "steinstraße 1a, 79312 freiburg im breisgau": {
-    "lon": 7.8118588,
-    "lat": 48.0128568
-  },
-  "s||79211|freiburg im breisgau": {
-    "lon": 7.8494005,
-    "lat": 47.9960901
-  },
-  "maria-von-rudloff-platz 2, 79111 freiburg im breisgau": {
-    "lon": 7.7922158,
-    "lat": 47.9994567
-  },
-  "s|leopoldring 1|79098|freiburg im breisgau": {
-    "lat": 47.9984307,
-    "lon": 7.8531629
-  },
-  "s||79365|rheinhausen": {
-    "lon": 7.7144924,
-    "lat": 48.2338362
-  },
-  "s|hans-bunte-str. 16c|79108|freiburg im breisgau": {
-    "lat": 48.0306361,
-    "lon": 7.8590627
-  },
-  "eschholzstraße, 79 freiburg im breisgau": {
-    "lat": 47.9865008,
-    "lon": 7.8288166
-  },
-  "archäologisches museum colombischlössle, 79098 freiburg": {
-    "lon": 7.8461634,
-    "lat": 47.9977313
-  },
-  "bertoldstraße 46, 79098 freiburg im breisgau": {
-    "lat": 47.995267,
-    "lon": 7.8446374
-  },
-  "ferdinand-weiß-straße 9-11, 79106 freiburg im breisgau": {
-    "lat": 47.9948976,
-    "lon": 7.8343744
-  },
-  "s||79274|st. märgen": {
-    "lon": 8.0927702,
-    "lat": 48.007758
-  },
-  "s||79650|gersbach": {
-    "lat": 47.6993025,
-    "lon": 7.9245383
-  },
-  "kirchberghalle heuweiler, 79194 heuweiler": {
-    "lat": 48.0512947,
-    "lon": 7.904944
-  },
-  "s|löwenstraße 8|79098|freiburg im breisgau": {
-    "lat": 47.9938884,
-    "lon": 7.8483592
-  },
-  "neuer messpl. 1, 79108 freiburg": {
-    "lat": 48.0162409,
-    "lon": 7.8377056
-  },
-  "s|sandfangweg|79117|freiburg im breisgau": {
-    "lat": 47.9897237,
-    "lon": 7.8804672
-  },
-  "eschholzstraße 77, 79106 freiburg im breisgau": {
-    "lat": 47.9940662,
-    "lon": 7.833187
-  },
-  "s||79369|wyhl": {
-    "lat": 48.1644346,
-    "lon": 7.6492765
-  },
-  "s|hildastr. 5|79102|freiburg im breisgau": {
-    "lat": 47.990123,
-    "lon": 7.8545887
-  },
-  "s||79424|freiburg im breisgau": {
-    "lat": 47.9960901,
-    "lon": 7.8494005
-  },
-  "keramikmuseum staufen im breisgau, 79219 staufen": {
-    "lon": 7.7297145,
-    "lat": 47.8813037
-  },
-  "neuer messplatz 1, 79108 freiburg im breisgau": {
-    "lat": 48.0162409,
-    "lon": 7.8377056
-  },
-  "habsburgerstraße 9, 79104 freiburg im breisgau": {
-    "lat": 48.0108123,
-    "lon": 7.8556694
-  },
-  "s|münsterplatz 11|79098|freiburg im breisgau": {
-    "lat": 47.9962206,
-    "lon": 7.8526603
-  },
-  "79 freiburg im breisgau": {
-    "lat": 47.9960901,
-    "lon": 7.8494005
-  },
-  "s||78199|bräunlingen": {
-    "lat": 47.9300645,
-    "lon": 8.448329
-  },
-  "s|wilhelmstraße 15/1|79098|freiburg im breisgau": {
-    "lat": 47.9943887,
-    "lon": 7.8413
-  },
-  "79312 emmendingen": {
-    "lon": 7.8642293,
-    "lat": 48.1240537
-  },
-  "s|habsburgerstraße 48|79104|freiburg im breisgau": {
-    "lat": 48.0077997,
-    "lon": 7.8547589
-  },
-  "maierhof steinenstadt, 79395 steinenstadt": {
-    "lat": 47.7671039,
-    "lon": 7.5597985
-  },
-  "77709 wolfach": {
-    "lat": 48.3214205,
-    "lon": 8.2473819
-  },
-  "hochburghalle sexau, 79350 sexau": {
-    "lat": 48.1035609,
-    "lon": 7.9057755
-  },
-  "s||79424|auggen": {
-    "lat": 47.7864318,
-    "lon": 7.5970495
-  },
-  "schwabentorring 7, 79098 freiburg im breisgau": {
-    "lon": 7.8546348,
-    "lat": 47.9915369
-  },
-  "s|marie-curie-straße 1|79100|freiburg im breisgau": {
-    "lat": 47.9768239,
-    "lon": 7.8256014
-  },
-  "79875 dachsberg": {
-    "lon": 8.0986765,
-    "lat": 47.7114468
-  },
-  "gewerbegebiet bahlingen, 79353 bahlingen": {
-    "lon": 7.7495506,
-    "lat": 48.1234544
-  },
-  "schlossbergring 1, 79098 freiburg im breisgau": {
-    "lat": 47.992511,
-    "lon": 7.8549564
-  },
-  "urachstraße 3, 79102 freiburg im breisgau": {
-    "lat": 47.9850139,
-    "lon": 7.8482729
-  },
-  "s|kapellenweg 1|79100|freiburg im breisgau": {
-    "lat": 47.9811816,
-    "lon": 7.8384984
-  },
-  "s|rotteckring 14|79098|freiburg im breisgau": {
-    "lat": 47.9967108,
-    "lon": 7.8473136
-  },
-  "s|gerberau 15|79098|freiburg im breisgau": {
-    "lat": 47.9932832,
-    "lon": 7.8531597
-  },
-  "s|neuer messpl. 1|79108|freiburg": {
-    "lat": 48.0135831,
-    "lon": 7.8395074
-  },
-  "bertoldstraße 17, 79098 freiburg im breisgau": {
-    "lat": 47.99553,
-    "lon": 7.847805
-  },
-  "s||79211|denzlingen": {
-    "lat": 48.0669167,
-    "lon": 7.8862704
-  },
-  "s|schnewlinstraße 7|79098|freiburg im breisgau": {
-    "lat": 47.9937778,
-    "lon": 7.8398472
-  },
-  "s|schützenallee 1|79102|freiburg im breisgau": {
-    "lon": 7.8619383,
-    "lat": 47.9884838
-  },
-  "gummenwald unteribental, 79256 buchenbach": {
-    "lon": 8.0021567,
-    "lat": 47.9719834
-  },
-  "schnewlinstraße 7, 79098 freiburg im breisgau": {
-    "lat": 47.9937778,
-    "lon": 7.8398472
-  },
-  "kartäuserstraße 45, 79102 freiburg im breisgau": {
-    "lat": 47.9919156,
-    "lon": 7.8602557
-  },
-  "am rohrgraben 4a, 79249 merzhausen": {
-    "lat": 47.9714294,
-    "lon": 7.8251954
-  },
-  "s|munzinger straße 4|79111|freiburg im breisgau": {
-    "lat": 47.9895552,
-    "lon": 7.7949522
-  },
-  "friedrichring 38, 79098 freiburg im breisgau": {
-    "lat": 47.9981246,
-    "lon": 7.8494975
-  },
-  "79112 opfingen": {
-    "lat": 47.9977425,
-    "lon": 7.7188582
-  },
-  "77933 kippenheimweiler": {
-    "lat": 48.3198682,
-    "lon": 7.8033104
-  },
-  "s||79295|laufen": {
-    "lat": 47.8429955,
-    "lon": 7.6831206
-  },
-  "79254 oberried": {
-    "lon": 7.9608652,
-    "lat": 47.90555
-  },
-  "wilhelmstraße 9, 79098 freiburg im breisgau": {
-    "lon": 7.8416598,
-    "lat": 47.9942338
-  },
-  "freiburg, deutschland": {
-    "lon": 7.8494005,
-    "lat": 47.9960901
-  },
-  "s|marienstraße 10a|79098|freiburg im breisgau": {
-    "lat": 47.9927656,
-    "lon": 7.8523163
-  },
-  "79206 hochstetten (breisach)": {
-    "lon": 7.6215947,
-    "lat": 48.0167251
-  },
-  "waldseestraße 84, 79117 freiburg im breisgau": {
-    "lat": 47.9828625,
-    "lon": 7.8755593
-  },
-  "festplatz lautenbach, 77794 lautenbach": {
-    "lat": 48.5184424,
-    "lon": 8.1152393
-  },
-  "s||77963|ottenheim": {
-    "lat": 48.3861601,
-    "lon": 7.7579985
-  },
-  "79227 wolfenweiler": {
-    "lon": 7.7354776,
-    "lat": 47.9607608
-  },
-  "s||79664|wehr": {
-    "lat": 47.6286078,
-    "lon": 7.9046417
-  },
-  "bismarckallee 9, 79098 freiburg im breisgau": {
-    "lon": 7.8423773,
-    "lat": 47.9979293
-  },
-  "77652 offenburg": {
-    "lat": 48.50439,
-    "lon": 7.9388418
-  },
-  "s||77746|langhurst": {
-    "lon": 7.8769449,
-    "lat": 48.4732662
-  },
-  "s|schoferstraße 1|79098|freiburg im breisgau": {
-    "lat": 47.9952185,
-    "lon": 7.8548944
-  },
-  "s|konrad-adenauer-platz 1|79098|freiburg im breisgau": {
-    "lat": 47.9957161,
-    "lon": 7.8424183
-  },
-  "79189 biengen": {
-    "lon": 7.6837354,
-    "lat": 47.933736
-  },
-  "s|steinstraße 1a|79312|freiburg im breisgau": {
-    "lat": 48.0128568,
-    "lon": 7.8118588
-  },
-  "wippertskirch 2, 79112 freiburg im breisgau": {
-    "lat": 48.0071307,
-    "lon": 7.716835
-  },
-  "rathausgasse 5a, 79098 freiburg im breisgau": {
-    "lat": 47.9960728,
-    "lon": 7.8487049
-  },
-  "weingut bieselin ettenheim, 77955 ettenheim": {
-    "lon": 7.80334,
-    "lat": 48.2440999
-  },
-  "s||77704|oberkirch": {
-    "lat": 48.5308586,
-    "lon": 8.078657
-  },
-  "79400 kandern": {
-    "lat": 47.7036838,
-    "lon": 7.6540626
-  },
-  "s|paul-ehrlich-straße 5|79106|freiburg im breisgau": {
-    "lat": 48.0142733,
-    "lon": 7.8442459
-  },
-  "79268 bötzingen": {
-    "lat": 48.0738287,
-    "lon": 7.7157422
-  },
-  "s||77716|bollenbach": {
-    "lat": 48.2921058,
-    "lon": 8.0735008
-  },
-  "wilhelmstr. 15/1, 79098 freiburg im breisgau": {
-    "lon": 7.8413,
-    "lat": 47.9943887
-  },
-  "regionales, deutschland": {
-    "lon": 7.6209532,
-    "lat": 47.8925005
-  },
-  "merzhauser str. 16, 79100 freiburg im breisgau": {
-    "lon": 7.836388,
-    "lat": 47.9847726
-  },
-  "emmendingen, deutschland": {
-    "lon": 7.850993,
-    "lat": 48.1206565
-  },
-  "s|maria-von-rudloff-platz 2|79111|freiburg im breisgau": {
-    "lat": 47.9994567,
-    "lon": 7.7922158
-  },
-  "77709 kirnbach": {
-    "lat": 48.2616278,
-    "lon": 8.2459573
-  },
-  "castellberghalle ballrechten-dottingen, 79282 ballrechten-dottingen": {
-    "lon": 7.6977841,
-    "lat": 47.8585111
-  },
-  "s||77977|rust": {
-    "lat": 48.2659347,
-    "lon": 7.7263213
-  },
-  "s|am rohrgraben 4a|79249|merzhausen": {
-    "lat": 47.9714294,
-    "lon": 7.8251954
-  },
-  "s|bertoldstrasse 51|79098|freiburg im breisgau": {
-    "lat": 47.9959345,
-    "lon": 7.8441397
-  },
-  "s|robert-bunsen-straße 5|79108|freiburg im breisgau": {
-    "lat": 48.0296539,
-    "lon": 7.8504296
-  },
-  "s||79183|waldkirch": {
-    "lat": 48.0939396,
-    "lon": 7.9610142
-  },
-  "s||79104|zähringen": {
-    "lat": 48.0231488,
-    "lon": 7.8601394
-  },
-  "innenstadt offenburg, 77652 offenburg": {
-    "lat": 48.4666192,
-    "lon": 7.9439601
-  },
-  "s|eschholzstraße 77|79106|freiburg": {
-    "lon": 7.833187,
-    "lat": 47.9940662
-  },
-  "münsterplatz 11, 79098 freiburg im breisgau": {
-    "lon": 7.8526603,
-    "lat": 47.9962206
-  },
-  "s|nußmannstraße 7-9|79098|freiburg im breisgau": {
-    "lat": 47.9969055,
-    "lon": 7.8536977
-  },
-  "s||77656|zunsweier": {
-    "lat": 48.424311,
-    "lon": 7.9488685
-  },
-  "neuer messpl. 1, 79108 freiburg im breisgau": {
-    "lat": 48.0162409,
-    "lon": 7.8377056
-  },
-  "s|paul-ehrlich-straße 5-13|79106|freiburg im breisgau": {
-    "lon": 7.845624,
-    "lat": 48.0145227
-  },
-  "s||77709|kirnbach": {
-    "lat": 48.2711976,
-    "lon": 8.2301646
-  },
-  "79104 freiburg im breisgau": {
-    "lat": 48.0069647,
-    "lon": 7.8780924
-  },
-  "79102 freiburg im breisgau": {
-    "lat": 47.9875179,
-    "lon": 7.8624278
-  },
-  "s|riedbergstr. 1|79100|freiburg günterstal": {
-    "lat": 47.9683824,
-    "lon": 7.8558889
-  },
-  "s||79252|stegen": {
-    "lat": 47.9815491,
-    "lon": 7.9641532
-  },
-  "s|hans-bunte-straße 16c|79108|freiburg im breisgau": {
-    "lat": 48.0306361,
-    "lon": 7.8590627
-  },
-  "schulzentrum neustadt, 79822 titisee-neustadt": {
-    "lon": 8.2086292,
-    "lat": 47.9194883
-  },
-  "konrad-adenauer-platz 1, 79098 freiburg im breisgau": {
-    "lon": 7.8424183,
-    "lat": 47.9957161
-  },
-  "s|haslacher str. 41|79115|freiburg": {
-    "lon": 7.832924,
-    "lat": 47.9927229
-  },
-  "s||79206|hochstetten": {
-    "lat": 48.0190769,
-    "lon": 7.6098263
-  },
-  "s||79872|bernau": {
-    "lat": 47.8057268,
-    "lon": 8.0345882
-  },
-  "s|schnewlinstraße 1|79098|freiburg im breisgau": {
-    "lat": 47.994759,
-    "lon": 7.8405633
-  },
-  "sängerheim freiamt, 79348 freiamt": {
-    "lat": 48.1696315,
-    "lon": 7.8923611
-  },
-  "79235 burkheim": {
-    "lat": 48.1000412,
-    "lon": 7.5961907
-  },
-  "79104 zähringen": {
-    "lon": 7.8641063,
-    "lat": 48.0247254
-  },
-  "s|paul-ehrlich-straße|79106|freiburg im breisgau": {
-    "lat": 48.0130836,
-    "lon": 7.8432748
-  },
-  "schmids bauernladen schlatt, 79189 schlatt (bad-krozingen)": {
-    "lon": 7.6730589,
-    "lat": 47.9245946
-  },
-  "schlosspark bad säckingen, 79713 bad säckingen": {
-    "lon": 7.9478732,
-    "lat": 47.5505093
-  },
-  "rheinbrücke rheinfelden, 79618 rheinfelden": {
-    "lon": 7.7888478,
-    "lat": 47.5561309
-  },
-  "77815 bühl": {
-    "lat": 47.6154897,
-    "lon": 8.4646051
-  },
-  "79292 pfaffenweiler": {
-    "lat": 47.9382158,
-    "lon": 7.759426
-  },
-  "s|kaiser-joseph-straße 165|79098|freiburg": {
-    "lat": 47.9967249,
-    "lon": 7.8528016
-  },
-  "konradstraße 14, 79100 freiburg im breisgau": {
-    "lat": 47.986285,
-    "lon": 7.8455093
-  },
-  "s|talstraße 90|79102|freiburg im breisgau": {
-    "lat": 47.988581,
-    "lon": 7.8613431
-  },
-  "s||79426|buggingen": {
-    "lat": 47.8469223,
-    "lon": 7.6388717
-  },
-  "habsburgerstraße 48, 79104 freiburg im breisgau": {
-    "lat": 48.0077997,
-    "lon": 7.8547589
-  },
-  "77933 lahr": {
-    "lon": 7.8723584,
-    "lat": 48.3355086
-  },
-  "bertoldstraße 51, 79098 freiburg im breisgau": {
-    "lat": 47.9959345,
-    "lon": 7.8441397
-  },
-  "s||77716|fischerbach": {
-    "lat": 48.287808,
-    "lon": 8.111432
-  },
-  "s||79865|rothaus": {
-    "lat": 47.7942939,
-    "lon": 8.2450569
-  },
-  "77876 kappelrodeck": {
-    "lat": 48.5821598,
-    "lon": 8.1140809
-  },
-  "s||79875|dachsberg": {
-    "lat": 47.7277539,
-    "lon": 8.1028547
-  },
-  "s||79100|günterstal": {
-    "lat": 47.9658924,
-    "lon": 7.8559115
-  },
-  "adam-treiber halle bötzingen, 79268 bötzingen": {
-    "lon": 7.7188039,
-    "lat": 48.0737044
-  },
-  "grünwälderstr. 6, 79098 freiburg im breisgau": {
-    "lon": 7.8499997,
-    "lat": 47.9940589
-  },
-  "weinhof münchweier, 77955 münchweier": {
-    "lat": 48.2480511,
-    "lon": 7.8558841
-  },
-  "s|zasiusstraße 9|79102|freiburg im breisgau": {
-    "lat": 47.9869137,
-    "lon": 7.8507179
-  },
-  "schlossberg freiburg, 79098 freiburg": {
-    "lat": 47.994144,
-    "lon": 7.8553385
-  },
-  "79426 buggingen": {
-    "lon": 7.6319653,
-    "lat": 47.8541215
-  },
-  "riedbergstr. 1, 79100 freiburg günterstal": {
-    "lat": 47.9683824,
-    "lon": 7.8558889
-  },
-  "s||79112|opfingen": {
-    "lat": 48.0008392,
-    "lon": 7.7169929
-  },
-  "77933 lahr (schwarzwald)": {
-    "lon": 7.8723584,
-    "lat": 48.3355086
-  },
-  "achim-stocker-straße 1, 79108 freiburg im breisgau": {
-    "lat": 48.0213778,
-    "lon": 7.829817
-  },
-  "am gansacker 6, 79224 umkirch": {
-    "lat": 48.0366998,
-    "lon": 7.7623638
   },
   "nimberghalle nimburg, 79331 nimburg": {
     "lon": 7.7805562,
     "lat": 48.1034106
   },
-  "s||77723|gengenbach": {
-    "lat": 48.4035425,
-    "lon": 8.0153059
-  },
-  "alte säge zarten, 79199 zarten": {
-    "lat": 47.9772258,
-    "lon": 7.9509722
-  },
-  "s||79292|pfaffenweiler": {
-    "lat": 47.9361324,
-    "lon": 7.7541745
-  },
-  "79400 wollbach": {
-    "lat": 47.6682042,
-    "lon": 7.6486148
-  },
-  "s||79227|freiburg im breisgau": {
+  "s|||freiburg im breisgau": {
     "lat": 47.9960901,
     "lon": 7.8494005
   },
-  "sportplatz nordrach, 77787 nordrach": {
-    "lon": 8.0875864,
-    "lat": 48.4024748
+  "s||77723|reichenbach": {
+    "lat": 48.2175117,
+    "lon": 8.2627313
   },
-  "talstraße 90, 79102 freiburg im breisgau": {
-    "lat": 47.988581,
-    "lon": 7.8613431
+  "hans-bunte-straße 16c, 79108 freiburg im breisgau": {
+    "lat": 48.0306361,
+    "lon": 7.8590627
   },
-  "s||77933|lahr": {
-    "lat": 48.338896,
-    "lon": 7.8710825
+  "s||77963|ottenheim": {
+    "lat": 48.3861601,
+    "lon": 7.7579985
   },
-  "elzach-oberprechtal, deutschland": {
-    "lon": 8.1419332,
-    "lat": 48.2142936
+  "79112 opfingen": {
+    "lat": 47.9977425,
+    "lon": 7.7188582
   },
-  "löwenstraße 8, 79098 freiburg im breisgau": {
-    "lon": 7.8483592,
-    "lat": 47.9938884
-  },
-  "s|bertoldstraße 17|79098|freiburg im breisgau": {
-    "lat": 47.99553,
-    "lon": 7.847805
-  },
-  "sportplatz niederrimsingen, 79206 niederrimsingen": {
-    "lat": 47.9824251,
-    "lon": 7.6720996
-  },
-  "wirtschäftle am tunisee, 79108 hochdorf": {
-    "lat": 48.0643463,
-    "lon": 7.8135827
+  "s|bismarckallee 9|79098|freiburg im breisgau": {
+    "lat": 47.9979293,
+    "lon": 7.8423773
   },
   "s|wippertskirch 2|79112|freiburg im breisgau": {
     "lat": 48.0071307,
     "lon": 7.716835
   },
-  "haslacher straße 25, 79115 freiburg im breisgau": {
-    "lat": 47.992738,
-    "lon": 7.8333749
+  "79426 buggingen": {
+    "lon": 7.6319653,
+    "lat": 47.8541215
   },
-  "79410 badenweiler": {
-    "lon": 7.7061691,
-    "lat": 47.7957658
+  "ferdinand-weiß-straße 9-11, 79106 freiburg im breisgau": {
+    "lat": 47.9948976,
+    "lon": 7.8343744
   },
-  "kaiser-joseph-straße 165, 79098 freiburg": {
-    "lat": 47.9967249,
-    "lon": 7.8528016
+  "79424 auggen": {
+    "lat": 47.7887895,
+    "lon": 7.589098
   },
-  "79865 rothaus": {
-    "lon": 8.2450569,
-    "lat": 47.7942939
+  "s|neuer messplatz 1|79108|freiburg im breisgau": {
+    "lat": 48.0135831,
+    "lon": 7.8395074
   },
-  "eichhalde freiburg herdern, 79104 herdern": {
-    "lon": 7.8709938,
-    "lat": 48.0098545
+  "sportplatz niederrimsingen, 79206 niederrimsingen": {
+    "lat": 47.9824251,
+    "lon": 7.6720996
   },
-  "s|hermann-mitsch-straße 13a|79108|freiburg im breisgau": {
-    "lat": 48.0201574,
-    "lon": 7.8398583
+  "s|sandfangweg|79117|freiburg im breisgau": {
+    "lat": 47.9897237,
+    "lon": 7.8804672
   },
-  "museum für neue kunst freiburg, 79098 freiburg": {
-    "lat": 47.9927656,
-    "lon": 7.8523163
+  "s|schützenallee 12|79102|freiburg": {
+    "lon": 7.8658308,
+    "lat": 47.9879215
   },
-  "lameystraße 2, 79108 freiburg im breisgau": {
-    "lat": 48.019273,
-    "lon": 7.8585962
+  "s|wentzingerstraße 15|79106|freiburg im breisgau": {
+    "lat": 47.9965209,
+    "lon": 7.8394932
   },
-  "s||79576|weil am rhein": {
-    "lat": 47.6056484,
-    "lon": 7.6120793
+  "s|wilhelmstraße 15/1|79098|freiburg im breisgau": {
+    "lat": 47.9943887,
+    "lon": 7.8413
   },
-  "windenreute, deutschland": {
-    "lon": 7.880082,
-    "lat": 48.116332
-  },
-  "s||79400|wollbach": {
-    "lat": 47.6702614,
-    "lon": 7.6532956
-  },
-  "s||79677|schoenau": {
-    "lat": 47.7861792,
-    "lon": 7.8933977
-  },
-  "s|waldseestraße 84|79117|freiburg im breisgau": {
-    "lat": 47.9828625,
-    "lon": 7.8755593
-  },
-  "79206 tuniberg": {
-    "lon": 7.6731371,
-    "lat": 47.9844088
-  },
-  "77716 fischerbach": {
-    "lat": 48.3047728,
-    "lon": 8.123078
-  },
-  "otto-hahn-gymnasium furtwangen, 78120 furtwangen": {
-    "lat": 48.0555662,
-    "lon": 8.1948017
-  },
-  "haslacher straße 41, 79115 freiburg im breisgau": {
-    "lat": 47.9927229,
-    "lon": 7.832924
-  },
-  "s|fahnenbergpl. 3|79098|freiburg im breisgau": {
-    "lat": 47.9978301,
-    "lon": 7.8485052
-  },
-  "marienstraße 10a, 79098 freiburg im breisgau": {
-    "lat": 47.9927656,
-    "lon": 7.8523163
-  },
-  "s||77728|oppenau": {
-    "lat": 48.4751652,
-    "lon": 8.1646682
-  },
-  "s||79117|kappel": {
-    "lat": 47.9646668,
-    "lon": 7.9087001
-  },
-  "gemeindehaus gutach, 77793 gutach (schwarzwaldbahn)": {
-    "lat": 48.2461328,
-    "lon": 8.2116106
-  },
-  "s|haslacher straße 41|79115|freiburg im breisgau": {
-    "lat": 47.9927229,
-    "lon": 7.832924
-  },
-  "s|stühlingerstraße 74|79106|freiburg im breisgau": {
-    "lat": 47.9953145,
-    "lon": 7.8362642
-  },
-  "s|konradstraße 14|79100|freiburg im breisgau": {
-    "lat": 47.986285,
-    "lon": 7.8455093
-  },
-  "sportplatz weilheim, 79809 weilheim (baden)": {
-    "lon": 8.2436223,
-    "lat": 47.6570433
-  },
-  "79872 bernau": {
-    "lat": 47.7963051,
-    "lon": 8.0370653
-  },
-  "78199 bräunlingen": {
-    "lon": 8.3994504,
-    "lat": 47.9304684
-  },
-  "egonstraße 54, 79106 freiburg im breisgau": {
-    "lon": 7.8366258,
-    "lat": 48.0000062
-  },
-  "79117 kappel (freiburg)": {
-    "lon": 7.9011738,
-    "lat": 47.9674092
-  },
-  "77963 nonnenweier": {
-    "lat": 48.3649357,
-    "lon": 7.7639382
-  },
-  "flugplatz altdorf, 77955 altdorf (ettenheim)": {
-    "lon": 7.8415432,
-    "lat": 48.2699417
-  },
-  "s|schlossbergring 1|79098|freiburg im breisgau": {
-    "lat": 47.992511,
-    "lon": 7.8549564
-  },
-  "s||79346|kiechlinsbergen": {
-    "lat": 48.1231835,
-    "lon": 7.6547922
-  },
-  "gerberau 11, 79098 freiburg im breisgau": {
-    "lat": 47.9934911,
-    "lon": 7.8512616
-  },
-  "s||79189|bad krozingen": {
-    "lat": 47.9159087,
-    "lon": 7.6999845
-  },
-  "weinfestgelände breisach, 79206 breisach": {
-    "lat": 48.0331297,
-    "lon": 7.5721706
-  },
-  "s|bertoldstraße 46|79098|freiburg im breisgau": {
-    "lat": 47.995267,
-    "lon": 7.8446374
-  },
-  "s||77781|prinzbach": {
-    "lat": 48.3233074,
-    "lon": 8.0051696
-  },
-  "s||79288|gottenheim": {
-    "lat": 48.0502889,
-    "lon": 7.7261673
+  "s|konrad-adenauer-platz 1|79098|freiburg im breisgau": {
+    "lat": 47.9957161,
+    "lon": 7.8424183
   },
   "s||76530|baden-baden": {
     "lat": 47.5605924,
     "lon": 7.7861959
   },
-  "s|lameystraße 2|79108|freiburg im breisgau": {
-    "lat": 48.019273,
-    "lon": 7.8585962
+  "77933 lahr": {
+    "lon": 7.8723584,
+    "lat": 48.3355086
   },
-  "s|universitätsstraße 3|79098|freiburg im breisgau": {
-    "lat": 47.9947959,
-    "lon": 7.8488548
+  "leopoldring 1,, 79098 freiburg im breisgau": {
+    "lon": 7.8531629,
+    "lat": 47.9984307
   },
-  "s||79219|staufen": {
-    "lat": 47.883211,
-    "lon": 7.7329262
+  "77781 prinzbach (biberach)": {
+    "lat": 48.3322289,
+    "lon": 8.0108581
   },
-  "s||79793|horheim": {
-    "lat": 47.6488676,
-    "lon": 8.3470934
+  "s||79664|öflingen": {
+    "lon": 7.9174787,
+    "lat": 47.600969
   },
-  "s|kaiser-joseph-straße 165|79098|freiburg im breisgau": {
-    "lon": 7.8528016,
-    "lat": 47.9967249
-  },
-  "s|basler landstraße 35-37|79111|freiburg im breisgau": {
-    "lat": 47.9821591,
-    "lon": 7.8036843
-  },
-  "festhalle elgersweier, 77656 elgersweier": {
-    "lat": 48.4385293,
-    "lon": 7.9458273
-  },
-  "s|eschholzstraße 77|79106|freiburg im breisgau": {
-    "lat": 47.9940662,
-    "lon": 7.833187
-  },
-  "79189 tunsel": {
-    "lat": 47.9037795,
-    "lon": 7.6702124
-  },
-  "rotteckring 14, 79098 freiburg im breisgau": {
-    "lat": 47.9967108,
-    "lon": 7.8473136
-  },
-  "s|urachstraße 3|79102|freiburg im breisgau": {
-    "lat": 47.9850139,
-    "lon": 7.8482729
-  },
-  "s|grünwälderstr. 6|79098|freiburg im breisgau": {
-    "lat": 47.9940589,
-    "lon": 7.8499997
-  },
-  "s|||freiburg im breisgau": {
-    "lat": 47.9960901,
-    "lon": 7.8494005
-  },
-  "s||77652|offenburg": {
-    "lat": 48.4695984,
-    "lon": 7.9429235
-  },
-  "weinbaumuseum achkarren, 79235 achkarren": {
-    "lat": 48.0677865,
-    "lon": 7.625273
-  },
-  "s|wilhelmstraße 9|79098|freiburg im breisgau": {
-    "lat": 47.9942338,
-    "lon": 7.8416598
-  },
-  "universitätsstraße 3, 79098 freiburg im breisgau": {
-    "lon": 7.8488548,
-    "lat": 47.9947959
-  },
-  "s||77815|bühl": {
-    "lat": 47.6154897,
-    "lon": 8.4646051
-  },
-  "schlettstadtallee waldkirch, 79183 waldkirch": {
-    "lat": 48.0939609,
-    "lon": 7.95861
-  },
-  "stühlingerstraße 74, 79106 freiburg im breisgau": {
-    "lat": 47.9957405,
-    "lon": 7.8349844
+  "s|neuer messplatz. 1|79108|freiburg im breisgau": {
+    "lat": 48.0135831,
+    "lon": 7.8395074
   },
   "bahlinger straße teningen, 79331 teningen": {
     "lon": 7.8060581,
     "lat": 48.1259897
   },
-  "79211 denzlingen": {
-    "lat": 48.070484,
-    "lon": 7.8843519
+  "schnewlinstraße 1, 79098 freiburg im breisgau": {
+    "lat": 47.994759,
+    "lon": 7.8405633
+  },
+  "s|leopoldring 1,|79098|freiburg im breisgau": {
+    "lat": 47.9984307,
+    "lon": 7.8531629
+  },
+  "77704 oberkirch": {
+    "lon": 8.0670732,
+    "lat": 48.5216194
+  },
+  "s|marienstraße 10a|79098|freiburg im breisgau": {
+    "lat": 47.9927656,
+    "lon": 7.8523163
+  },
+  "hansjakob-halle nordrach, 77787 nordrach": {
+    "lat": 48.3986528,
+    "lon": 8.0796823
+  },
+  "munzinger straße 4, 79111 freiburg im breisgau": {
+    "lat": 47.9895552,
+    "lon": 7.7949522
+  },
+  "s|paul-ehrlich-straße|79106|freiburg im breisgau": {
+    "lat": 48.0130836,
+    "lon": 7.8432748
+  },
+  "bertoldstraße 46, 79098 freiburg im breisgau": {
+    "lat": 47.995267,
+    "lon": 7.8446374
+  },
+  "s||79288|gottenheim": {
+    "lat": 48.0502889,
+    "lon": 7.7261673
+  },
+  "s||79252|stegen": {
+    "lat": 47.9815491,
+    "lon": 7.9641532
+  },
+  "lehener str. 47, 79106 freiburg im breisgau": {
+    "lon": 7.8377235,
+    "lat": 48.0010711
+  },
+  "79694 utzenfeld": {
+    "lat": 47.8132797,
+    "lon": 7.911084
+  },
+  "s||77652|offenburg": {
+    "lat": 48.4695984,
+    "lon": 7.9429235
+  },
+  "robert-bunsen-straße 5, 79108 freiburg im breisgau": {
+    "lat": 48.0296539,
+    "lon": 7.8504296
+  },
+  "basler landstraße 35-37, 79111 freiburg im breisgau": {
+    "lat": 47.9821591,
+    "lon": 7.8036843
+  },
+  "79761 waldshut": {
+    "lon": 8.2429178,
+    "lat": 47.6518801
+  },
+  "s|rotteckring 14|79098|freiburg im breisgau": {
+    "lat": 47.9967108,
+    "lon": 7.8473136
+  },
+  "79102 freiburg im breisgau": {
+    "lat": 47.9875179,
+    "lon": 7.8624278
+  },
+  "urachstraße 3, 79102 freiburg im breisgau": {
+    "lat": 47.9850139,
+    "lon": 7.8482729
+  },
+  "s|hildastr. 5|79102|freiburg im breisgau": {
+    "lat": 47.990123,
+    "lon": 7.8545887
+  },
+  "elzach-oberprechtal, deutschland": {
+    "lon": 8.1419332,
+    "lat": 48.2142936
+  },
+  "freiburg, deutschland": {
+    "lon": 7.8494005,
+    "lat": 47.9960901
+  },
+  "s|fahnenbergpl. 3|79098|freiburg im breisgau": {
+    "lat": 47.9978301,
+    "lon": 7.8485052
+  },
+  "talstraße 90, 79102 freiburg im breisgau": {
+    "lat": 47.988581,
+    "lon": 7.8613431
+  },
+  "s|habsburgerstraße 48|79104|freiburg im breisgau": {
+    "lat": 48.0077997,
+    "lon": 7.8547589
+  },
+  "wirtschäftle am tunisee, 79108 hochdorf": {
+    "lat": 48.0643463,
+    "lon": 7.8135827
+  },
+  "waldkirch, deutschland": {
+    "lon": 7.9610142,
+    "lat": 48.0939396
+  },
+  "s||79227|wolfenweiler": {
+    "lat": 47.9632282,
+    "lon": 7.7633198
+  },
+  "s|wilhelmstr. 15/1|79098|freiburg im breisgau": {
+    "lat": 47.9943887,
+    "lon": 7.8413
+  },
+  "s|münsterplatz 11|79098|freiburg im breisgau": {
+    "lat": 47.9962206,
+    "lon": 7.8526603
+  },
+  "sportplatz in der au kandern, 79400 kandern": {
+    "lon": 7.6540529,
+    "lat": 47.7054712
+  },
+  "haslacher straße 41, 79115 freiburg im breisgau": {
+    "lat": 47.9927229,
+    "lon": 7.832924
+  },
+  "castellberghalle ballrechten-dottingen, 79282 ballrechten-dottingen": {
+    "lon": 7.6977841,
+    "lat": 47.8585111
+  },
+  "offohalle schuttern, 77948 schuttern": {
+    "lon": 7.8536101,
+    "lat": 48.3836661
+  },
+  "s||79576|weil am rhein": {
+    "lat": 47.6056484,
+    "lon": 7.6120793
+  },
+  "79312 emmendingen": {
+    "lon": 7.8642293,
+    "lat": 48.1240537
+  },
+  "79400 kandern": {
+    "lat": 47.7036838,
+    "lon": 7.6540626
+  },
+  "nußmannstraße 7-9, 790987 freiburg im breisgau": {
+    "lon": 7.8536977,
+    "lat": 47.9969055
+  },
+  "haslacher straße 15, 79115 freiburg im breisgau": {
+    "lat": 47.9921026,
+    "lon": 7.8348994
+  },
+  "gewerbepark h.a.u. schramberg, 78713 schramberg": {
+    "lon": 8.3973457,
+    "lat": 48.2302428
+  },
+  "s||79369|wyhl": {
+    "lat": 48.1644346,
+    "lon": 7.6492765
+  },
+  "s||79183|waldkirch": {
+    "lat": 48.0939396,
+    "lon": 7.9610142
+  },
+  "kapellenweg 1, 79100 freiburg im breisgau": {
+    "lat": 47.9811816,
+    "lon": 7.8384984
+  },
+  "79369 wyhl": {
+    "lon": 7.6500349,
+    "lat": 48.1695429
+  },
+  "s||79274|st. märgen": {
+    "lon": 8.0927702,
+    "lat": 48.007758
+  },
+  "79837 ibach (schwarzwald)": {
+    "lat": 47.7504211,
+    "lon": 8.0599296
+  },
+  "77652 offenburg": {
+    "lat": 48.50439,
+    "lon": 7.9388418
+  },
+  "s|gerberau 11|79098|freiburg im breisgau": {
+    "lat": 47.9934911,
+    "lon": 7.8512616
+  },
+  "maierhof steinenstadt, 79395 steinenstadt": {
+    "lat": 47.7671039,
+    "lon": 7.5597985
+  },
+  "79576 weil am rhein": {
+    "lon": 7.6109595,
+    "lat": 47.6059861
+  },
+  "79112 waltershofen": {
+    "lon": 7.7180477,
+    "lat": 48.0240341
+  },
+  "friedrichring 38, 79098 freiburg im breisgau": {
+    "lat": 47.9981246,
+    "lon": 7.8494975
+  },
+  "s||79400|kandern": {
+    "lat": 47.714697,
+    "lon": 7.6610865
+  },
+  "grünwälderstr. 6, 79098 freiburg im breisgau": {
+    "lon": 7.8499997,
+    "lat": 47.9940589
+  },
+  "universitätsstraße 3, 79098 freiburg im breisgau": {
+    "lon": 7.8488548,
+    "lat": 47.9947959
+  },
+  "s|schwabentorring 7|79098|freiburg im breisgau": {
+    "lat": 47.9915369,
+    "lon": 7.8546348
+  },
+  "s|haslacher str. 43|79115|freiburg im breisgau": {
+    "lat": 47.9929431,
+    "lon": 7.8325207
+  },
+  "wilhelmstr. 15/1, 79098 freiburg im breisgau": {
+    "lon": 7.8413,
+    "lat": 47.9943887
+  },
+  "s||77790|steinach": {
+    "lat": 48.3030536,
+    "lon": 8.057394
+  },
+  "79346 kiechlinsbergen": {
+    "lat": 48.1329176,
+    "lon": 7.6556829
+  },
+  "79254 oberried": {
+    "lon": 7.9608652,
+    "lat": 47.90555
+  },
+  "s|egonstraße 54|79106|freiburg im breisgau": {
+    "lat": 48.0000062,
+    "lon": 7.8366258
+  },
+  "s|kapellenweg 1|79100|freiburg im breisgau": {
+    "lat": 47.9811816,
+    "lon": 7.8384984
+  },
+  "79872 bernau": {
+    "lat": 47.7963051,
+    "lon": 8.0370653
+  },
+  "77656 zunsweier": {
+    "lat": 48.4239441,
+    "lon": 7.9474613
+  },
+  "s|granatgässle 2-7|79102|freiburg im breisgau": {
+    "lat": 47.9914023,
+    "lon": 7.8548365
+  },
+  "wilhelmstraße 15/1, 79098 freiburg im breisgau": {
+    "lat": 47.9943887,
+    "lon": 7.8413
+  },
+  "s||79312|emmendingen": {
+    "lat": 48.1206565,
+    "lon": 7.850993
+  },
+  "windenreute, deutschland": {
+    "lon": 7.880082,
+    "lat": 48.116332
+  },
+  "s|kaiser-joseph-straße 268|79098|freiburg im breisgau": {
+    "lat": 47.9920288,
+    "lon": 7.8482751
+  },
+  "s||79189|tunsel": {
+    "lat": 47.9038557,
+    "lon": 7.6694816
+  },
+  "münsterplatz freiburg, 79098 freiburg (breisgau)": {
+    "lat": 47.9955956,
+    "lon": 7.8527329
+  },
+  "s||78199|bräunlingen": {
+    "lat": 47.9300645,
+    "lon": 8.448329
+  },
+  "s|paul-ehrlich-straße 5|79106|freiburg im breisgau": {
+    "lat": 48.0142733,
+    "lon": 7.8442459
+  },
+  "innenstadt rheinfelden, 79618 rheinfelden": {
+    "lon": 7.7833392,
+    "lat": 47.5596394
+  },
+  "77933 kippenheimweiler": {
+    "lat": 48.3198682,
+    "lon": 7.8033104
+  },
+  "s|stühlingerstraße 74|79106|freiburg im breisgau": {
+    "lat": 47.9953145,
+    "lon": 7.8362642
+  },
+  "kaiser-joseph-straße 165, 79098 freiburg": {
+    "lat": 47.9967249,
+    "lon": 7.8528016
+  },
+  "ortsmitte ringsheim, 77975 ringsheim": {
+    "lat": 48.2469065,
+    "lon": 7.7780241
+  },
+  "alte säge zarten, 79199 zarten": {
+    "lat": 47.9772258,
+    "lon": 7.9509722
+  },
+  "s|zasiusstraße 5|79102|freiburg im breisgau": {
+    "lat": 47.9868623,
+    "lon": 7.8635406
+  },
+  "s||79112|opfingen": {
+    "lat": 48.0008392,
+    "lon": 7.7169929
+  },
+  "s|habsburgerstraße 9|79104|freiburg im breisgau": {
+    "lat": 48.0108123,
+    "lon": 7.8556694
+  },
+  "festhalle oberbergen, 79235 oberbergen": {
+    "lat": 48.0968179,
+    "lon": 7.6602605
+  },
+  "s||79865|rothaus": {
+    "lat": 47.7942939,
+    "lon": 8.2450569
+  },
+  "kaiser-joseph-straße 268, 79098 freiburg im breisgau": {
+    "lat": 47.9920288,
+    "lon": 7.8482751
+  },
+  "s|kirchstraße 12|79100|freiburg im breisgau": {
+    "lat": 47.9876531,
+    "lon": 7.8460331
+  },
+  "rheinbrücke rheinfelden, 79618 rheinfelden": {
+    "lon": 7.7888478,
+    "lat": 47.5561309
+  },
+  "s|schnewlinstraße 7|79098|freiburg im breisgau": {
+    "lat": 47.9937778,
+    "lon": 7.8398472
+  },
+  "merzhauser straße 119, 79100 freiburg im breisgau": {
+    "lat": 47.9793023,
+    "lon": 7.8322624
+  },
+  "elzhalle wasser, 79312 wasser": {
+    "lon": 7.8592289,
+    "lat": 48.098419
+  },
+  "s|wilhelmstraße 9|79098|freiburg im breisgau": {
+    "lat": 47.9942338,
+    "lon": 7.8416598
+  },
+  "schelklewiese baiersbronn, 72270 baiersbronn": {
+    "lat": 48.5074487,
+    "lon": 8.3718474
+  },
+  "s||79227|freiburg im breisgau": {
+    "lat": 47.9960901,
+    "lon": 7.8494005
+  },
+  "s||79837|ibach": {
+    "lat": 47.7438811,
+    "lon": 8.0682489
+  },
+  "s||79664|wehr": {
+    "lat": 47.6286078,
+    "lon": 7.9046417
+  },
+  "schlosspark bad säckingen, 79713 bad säckingen": {
+    "lon": 7.9478732,
+    "lat": 47.5505093
+  },
+  "fahnenbergplatz 3, 79098 freiburg im breisgau": {
+    "lat": 47.9978301,
+    "lon": 7.8485052
+  },
+  "festplatz lautenbach, 77794 lautenbach": {
+    "lat": 48.5184424,
+    "lon": 8.1152393
+  },
+  "bertoldstraße 17, 79098 freiburg im breisgau": {
+    "lat": 47.99553,
+    "lon": 7.847805
+  },
+  "s|neuer messpl. 1|79108|freiburg": {
+    "lat": 48.0135831,
+    "lon": 7.8395074
+  },
+  "s|eschholzstraße 77|79106|freiburg im breisgau": {
+    "lat": 47.9940662,
+    "lon": 7.833187
+  },
+  "kartäuserstraße 45, 79102 freiburg im breisgau": {
+    "lat": 47.9919156,
+    "lon": 7.8602557
+  },
+  "s||79219|staufen": {
+    "lat": 47.883211,
+    "lon": 7.7329262
+  },
+  "merzhauser str. 16, 79100 freiburg im breisgau": {
+    "lon": 7.836388,
+    "lat": 47.9847726
+  },
+  "79104 freiburg im breisgau": {
+    "lat": 48.0069647,
+    "lon": 7.8780924
+  },
+  "s||79677|schoenau": {
+    "lat": 47.7861792,
+    "lon": 7.8933977
+  },
+  "schlossberg freiburg, 79098 freiburg": {
+    "lat": 47.994144,
+    "lon": 7.8553385
+  },
+  "s|konradstraße 17|79100|freiburg im breisgau": {
+    "lon": 7.8451331,
+    "lat": 47.9860741
+  },
+  "s||77716|bollenbach": {
+    "lat": 48.2921058,
+    "lon": 8.0735008
+  },
+  "s||79215|elzach": {
+    "lat": 48.1738732,
+    "lon": 8.0713324
+  },
+  "hochburghalle sexau, 79350 sexau": {
+    "lat": 48.1035609,
+    "lon": 7.9057755
+  },
+  "schwarzwaldstraße 181, 79117 freiburg im breisgau": {
+    "lat": 47.9902574,
+    "lon": 7.8851379
+  },
+  "79865 rothaus": {
+    "lon": 8.2450569,
+    "lat": 47.7942939
+  },
+  "s|hans-bunte-str. 16c|79108|freiburg im breisgau": {
+    "lat": 48.0306361,
+    "lon": 7.8590627
+  },
+  "schlettstadtallee waldkirch, 79183 waldkirch": {
+    "lat": 48.0939609,
+    "lon": 7.95861
+  },
+  "79295 laufen (sulzburg)": {
+    "lon": 7.6831206,
+    "lat": 47.8429955
+  },
+  "weinbrunnen kurpark bad krozingen, 79189 bad krozingen": {
+    "lat": 47.918689,
+    "lon": 7.6921445
+  },
+  "s||79424|auggen": {
+    "lat": 47.7864318,
+    "lon": 7.5970495
+  },
+  "s||79346|kiechlinsbergen": {
+    "lat": 48.1231835,
+    "lon": 7.6547922
+  },
+  "achim-stocker-straße 1, 79108 freiburg im breisgau": {
+    "lat": 48.0213778,
+    "lon": 7.829817
+  },
+  "79183 waldkirch": {
+    "lat": 48.0894245,
+    "lon": 7.9696516
+  },
+  "s||79875|dachsberg": {
+    "lat": 47.7277539,
+    "lon": 8.1028547
+  },
+  "sportplatz nordrach, 77787 nordrach": {
+    "lon": 8.0875864,
+    "lat": 48.4024748
+  },
+  "städtische galerie offenburg, 77652 offenburg": {
+    "lat": 48.4675599,
+    "lon": 7.9562818
+  },
+  "s||79761|waldshut": {
+    "lat": 47.6246179,
+    "lon": 8.2120605
+  },
+  "s|schlossbergring 1|79098|freiburg im breisgau": {
+    "lat": 47.992511,
+    "lon": 7.8549564
+  },
+  "weinbaumuseum achkarren, 79235 achkarren": {
+    "lat": 48.0677865,
+    "lon": 7.625273
+  },
+  "79410 badenweiler": {
+    "lon": 7.7061691,
+    "lat": 47.7957658
+  },
+  "wippertskirch 2, 79112 freiburg im breisgau": {
+    "lat": 48.0071307,
+    "lon": 7.716835
+  },
+  "77790 steinach": {
+    "lat": 48.2856905,
+    "lon": 8.0284981
+  },
+  "eichhalde freiburg herdern, 79104 herdern": {
+    "lon": 7.8709938,
+    "lat": 48.0098545
+  },
+  "s||79295|laufen": {
+    "lat": 47.8429955,
+    "lon": 7.6831206
+  },
+  "s||79104|zähringen": {
+    "lat": 48.0231488,
+    "lon": 7.8601394
+  },
+  "s|paul-ehrlich-straße 5-13|79106|freiburg im breisgau": {
+    "lon": 7.845624,
+    "lat": 48.0145227
+  },
+  "sportplatz weilheim, 79809 weilheim (baden)": {
+    "lon": 8.2436223,
+    "lat": 47.6570433
+  },
+  "bertoldstraße 51, 79098 freiburg im breisgau": {
+    "lat": 47.9959345,
+    "lon": 7.8441397
+  },
+  "s||77889|seebach": {
+    "lat": 48.4084921,
+    "lon": 8.3042161
+  },
+  "s|steinstraße 1a|79312|freiburg im breisgau": {
+    "lat": 48.0128568,
+    "lon": 7.8118588
+  },
+  "s|basler straße 103|79100|freiburg im breisgau": {
+    "lat": 47.9860044,
+    "lon": 7.8309557
+  },
+  "79664 wehr": {
+    "lon": 7.9151105,
+    "lat": 47.6255518
+  },
+  "s|bertoldstrasse 51|79098|freiburg im breisgau": {
+    "lat": 47.9959345,
+    "lon": 7.8441397
+  },
+  "s|hans-bunte-straße 16c|79108|freiburg im breisgau": {
+    "lat": 48.0306361,
+    "lon": 7.8590627
+  },
+  "s|löwenstraße 8|79098|freiburg im breisgau": {
+    "lat": 47.9938884,
+    "lon": 7.8483592
   },
   "s||79098|freiburg": {
     "lat": 47.9960901,
     "lon": 7.8494005
   },
-  "s|neuer messplatz 1|79108|freiburg im breisgau": {
+  "stühlingerstraße 74, 79106 freiburg im breisgau": {
+    "lat": 47.9957405,
+    "lon": 7.8349844
+  },
+  "s||79206|tuniberg": {
+    "lat": 48.0731137,
+    "lon": 7.7195837
+  },
+  "s||79279|vörstetten": {
+    "lon": 7.8493979,
+    "lat": 48.0645765
+  },
+  "s||79235|burkheim": {
+    "lat": 48.1013025,
+    "lon": 7.598503
+  },
+  "freiamt, deutschland": {
+    "lon": 7.9182707,
+    "lat": 48.1737465
+  },
+  "winzergenossenschaft bischoffingen, 79235 bischoffingen": {
+    "lon": 7.6235729,
+    "lat": 48.1038867
+  },
+  "79227 wolfenweiler": {
+    "lon": 7.7354776,
+    "lat": 47.9607608
+  },
+  "insel reichenbach, 79348 reichenbach (freiamt)": {
+    "lat": 48.1577722,
+    "lon": 7.9228068
+  },
+  "leopoldring 1, 79098 freiburg im breisgau": {
+    "lat": 47.9984307,
+    "lon": 7.8531629
+  },
+  "79292 pfaffenweiler": {
+    "lat": 47.9382158,
+    "lon": 7.759426
+  },
+  "archäologisches museum colombischlössle, 79098 freiburg": {
+    "lon": 7.8461634,
+    "lat": 47.9977313
+  },
+  "77728 oppenau": {
+    "lon": 8.1804316,
+    "lat": 48.4828605
+  },
+  "s||79112|waltershofen": {
+    "lat": 48.024194,
+    "lon": 7.7191502
+  },
+  "s||77656|zunsweier": {
+    "lat": 48.424311,
+    "lon": 7.9488685
+  },
+  "reithalle weisweil, 79367 weisweil": {
+    "lat": 48.2060927,
+    "lon": 7.6819073
+  },
+  "79677 aitern": {
+    "lon": 7.8978993,
+    "lat": 47.7987476
+  },
+  "s||77716|fischerbach": {
+    "lat": 48.287808,
+    "lon": 8.111432
+  },
+  "s||79410|badenweiler": {
+    "lat": 47.8025477,
+    "lon": 7.6739717
+  },
+  "s||77963|nonnenweier": {
+    "lat": 48.3476599,
+    "lon": 7.7608934
+  },
+  "s||79365|rheinhausen": {
+    "lon": 7.7144924,
+    "lat": 48.2338362
+  },
+  "s|robert-bunsen-straße 5|79108|freiburg im breisgau": {
+    "lat": 48.0296539,
+    "lon": 7.8504296
+  },
+  "79875 dachsberg": {
+    "lon": 8.0986765,
+    "lat": 47.7114468
+  },
+  "s|zasiusstraße 9|79102|freiburg im breisgau": {
+    "lat": 47.9869137,
+    "lon": 7.8507179
+  },
+  "eschholzstraße 77, 79106 freiburg im breisgau": {
+    "lat": 47.9940662,
+    "lon": 7.833187
+  },
+  "s||79100|günterstal": {
+    "lat": 47.9658924,
+    "lon": 7.8559115
+  },
+  "egonstraße 54, 79106 freiburg im breisgau": {
+    "lon": 7.8366258,
+    "lat": 48.0000062
+  },
+  "hermann-mitsch-straße 13a, 79108 freiburg im breisgau": {
+    "lat": 48.0201574,
+    "lon": 7.8398583
+  },
+  "haslacher straße 25, 79115 freiburg im breisgau": {
+    "lat": 47.992738,
+    "lon": 7.8333749
+  },
+  "s|bertoldstraße 51|79098|freiburg im breisgau": {
+    "lat": 47.9959345,
+    "lon": 7.8441397
+  },
+  "s||79780|stühlingen": {
+    "lon": 8.4474495,
+    "lat": 47.7470397
+  },
+  "waldseestraße 84, 79117 freiburg im breisgau": {
+    "lat": 47.9828625,
+    "lon": 7.8755593
+  },
+  "s||79206|hochstetten": {
+    "lat": 48.0190769,
+    "lon": 7.6098263
+  },
+  "s|haslacher str. 41|79115|freiburg": {
+    "lon": 7.832924,
+    "lat": 47.9927229
+  },
+  "gummenwald unteribental, 79256 buchenbach": {
+    "lon": 8.0021567,
+    "lat": 47.9719834
+  },
+  "s|nußmannstraße 7-9|79098|freiburg im breisgau": {
+    "lat": 47.9969055,
+    "lon": 7.8536977
+  },
+  "leo - wohleb - str. 4, 79098 freiburg im breisgau": {
+    "lat": 47.9902455,
+    "lon": 7.8586569
+  },
+  "innenstadt offenburg, 77652 offenburg": {
+    "lat": 48.4666192,
+    "lon": 7.9439601
+  },
+  "s||79691|neuenweg": {
+    "lon": 7.8268252,
+    "lat": 47.7958222
+  },
+  "rathausgasse 5a, 79098 freiburg im breisgau": {
+    "lat": 47.9960728,
+    "lon": 7.8487049
+  },
+  "s||78148|gütenbach": {
+    "lat": 48.0454535,
+    "lon": 8.1381577
+  },
+  "s|munzinger straße 4|79111|freiburg im breisgau": {
+    "lat": 47.9895552,
+    "lon": 7.7949522
+  },
+  "s|kaiser-joseph-straße 165|79098|freiburg": {
+    "lat": 47.9967249,
+    "lon": 7.8528016
+  },
+  "s|ferdinand-weiß-straße 9-11|79106|freiburg im breisgau": {
+    "lat": 47.9948976,
+    "lon": 7.8343744
+  },
+  "merowingerhalle biengen, 79189 biengen": {
+    "lon": 7.69529,
+    "lat": 47.9371094
+  },
+  "sängerheim freiamt, 79348 freiamt": {
+    "lat": 48.1696315,
+    "lon": 7.8923611
+  },
+  "basler straße 103, 79100 freiburg im breisgau": {
+    "lon": 7.8309557,
+    "lat": 47.9860044
+  },
+  "max-planck-schule bad krozingen, 79189 bad krozingen": {
+    "lon": 7.6968735,
+    "lat": 47.9112551
+  },
+  "s||79254|oberried": {
+    "lat": 47.9330055,
+    "lon": 7.9498704
+  },
+  "kirchberghalle heuweiler, 79194 heuweiler": {
+    "lat": 48.0512947,
+    "lon": 7.904944
+  },
+  "fahnenbergpl. 3, 79098 freiburg im breisgau": {
+    "lon": 7.8485052,
+    "lat": 47.9978301
+  },
+  "eschholzstraße, 79 freiburg im breisgau": {
+    "lat": 47.9865008,
+    "lon": 7.8288166
+  },
+  "s|krozinger straße 13|79114|freiburg": {
+    "lon": 7.8128533,
+    "lat": 47.9942703
+  },
+  "s|ferdinand-weiß-straße 8|79106|freiburg im breisgau": {
+    "lat": 47.9947032,
+    "lon": 7.8332169
+  },
+  "festhalle kuhbach, 77933 kuhbach": {
+    "lon": 7.9077081,
+    "lat": 48.3393676
+  },
+  "s|fahnenbergplatz 3|79098|freiburg im breisgau": {
+    "lat": 47.9978301,
+    "lon": 7.8485052
+  },
+  "77933 lahr (schwarzwald)": {
+    "lon": 7.8723584,
+    "lat": 48.3355086
+  },
+  "zentrum oberwiehre, 79098 freiburg": {
+    "lon": 7.870092,
+    "lat": 47.9878797
+  },
+  "s|leo - wohleb - str. 4|79098|freiburg im breisgau": {
+    "lat": 47.9902455,
+    "lon": 7.8586569
+  },
+  "habsburgerstraße 48, 79104 freiburg im breisgau": {
+    "lat": 48.0077997,
+    "lon": 7.8547589
+  },
+  "s|schützenallee 1|79102|freiburg im breisgau": {
+    "lon": 7.8619383,
+    "lat": 47.9884838
+  },
+  "79189 bad krozingen": {
+    "lat": 47.9208743,
+    "lon": 7.6808788
+  },
+  "emmendingen, deutschland": {
+    "lon": 7.850993,
+    "lat": 48.1206565
+  },
+  "s|hermann-mitsch-straße 13a|79108|freiburg im breisgau": {
+    "lat": 48.0201574,
+    "lon": 7.8398583
+  },
+  "steinstraße 1a, 79312 freiburg im breisgau": {
+    "lon": 7.8118588,
+    "lat": 48.0128568
+  },
+  "s|kaiser-joseph-straße 165|79098|freiburg im breisgau": {
+    "lon": 7.8528016,
+    "lat": 47.9967249
+  },
+  "katzenmooser höhe, 79215 katzenmoos": {
+    "lon": 8.0361533,
+    "lat": 48.1702292
+  },
+  "s||78132|hornberg": {
+    "lon": 8.2316356,
+    "lat": 48.2128411
+  },
+  "lameystraße 2, 79108 freiburg im breisgau": {
+    "lat": 48.019273,
+    "lon": 7.8585962
+  },
+  "neuer messpl. 1, 79108 freiburg": {
+    "lat": 48.0162409,
+    "lon": 7.8377056
+  },
+  "s||79426|buggingen": {
+    "lat": 47.8469223,
+    "lon": 7.6388717
+  },
+  "zasiusstraße 9, 79102 freiburg im breisgau": {
+    "lat": 47.9869137,
+    "lon": 7.8507179
+  },
+  "bahnhof seebrugg, 79859 schluchsee-seebrugg": {
+    "lat": 47.8032017,
+    "lon": 8.1913924
+  },
+  "s||77977|rust": {
+    "lat": 48.2659347,
+    "lon": 7.7263213
+  },
+  "s|waldseestraße 84|79117|freiburg im breisgau": {
+    "lat": 47.9828625,
+    "lon": 7.8755593
+  },
+  "79206 hochstetten (breisach)": {
+    "lon": 7.6215947,
+    "lat": 48.0167251
+  },
+  "s||77709|wolfach": {
+    "lat": 48.2985845,
+    "lon": 8.222608
+  },
+  "otto-hahn-gymnasium furtwangen, 78120 furtwangen": {
+    "lat": 48.0555662,
+    "lon": 8.1948017
+  },
+  "s|lehener str. 47|79106|freiburg im breisgau": {
+    "lat": 48.0010711,
+    "lon": 7.8377235
+  },
+  "s|schnewlinstraße 1|79098|freiburg im breisgau": {
+    "lat": 47.994759,
+    "lon": 7.8405633
+  },
+  "s|schwarzwaldstraße|79117|freiburg im breisgau": {
+    "lat": 47.9876354,
+    "lon": 7.9003651
+  },
+  "s|urachstraße 3|79102|freiburg im breisgau": {
+    "lat": 47.9850139,
+    "lon": 7.8482729
+  },
+  "79098 freiburg (breisgau)": {
+    "lat": 47.9948074,
+    "lon": 7.8486764
+  },
+  "s||79292|pfaffenweiler": {
+    "lat": 47.9361324,
+    "lon": 7.7541745
+  },
+  "s|nußmannstraße 7-9||freiburg im breisgau": {
+    "lat": 47.9969055,
+    "lon": 7.8536977
+  },
+  "neuer messpl. 1, 79108 freiburg im breisgau": {
+    "lat": 48.0162409,
+    "lon": 7.8377056
+  },
+  "s||79104|freiburg im breisgau": {
+    "lat": 47.9960901,
+    "lon": 7.8494005
+  },
+  "77709 wolfach": {
+    "lat": 48.3214205,
+    "lon": 8.2473819
+  },
+  "konrad-adenauer-platz 1, 79098 freiburg im breisgau": {
+    "lon": 7.8424183,
+    "lat": 47.9957161
+  },
+  "79206 tuniberg": {
+    "lon": 7.6731371,
+    "lat": 47.9844088
+  },
+  "s|grünwälderstr. 6|79098|freiburg im breisgau": {
+    "lat": 47.9940589,
+    "lon": 7.8499997
+  },
+  "s||79677|aitern": {
+    "lat": 47.8037979,
+    "lon": 7.894723
+  },
+  "gerätehaus feuerwehr breisach, 79206 breisach": {
+    "lon": 7.5797636,
+    "lat": 48.0387327
+  },
+  "s|talstraße 90|79102|freiburg im breisgau": {
+    "lat": 47.988581,
+    "lon": 7.8613431
+  },
+  "79252 stegen": {
+    "lat": 48.0015499,
+    "lon": 7.9697309
+  },
+  "s|leopoldring 1|79098|freiburg im breisgau": {
+    "lat": 47.9984307,
+    "lon": 7.8531629
+  },
+  "77876 kappelrodeck": {
+    "lat": 48.5821598,
+    "lon": 8.1140809
+  },
+  "weinhof münchweier, 77955 münchweier": {
+    "lat": 48.2480511,
+    "lon": 7.8558841
+  },
+  "s|am rohrgraben 4a|79249|merzhausen": {
+    "lat": 47.9714294,
+    "lon": 7.8251954
+  },
+  "s|neuer messpl. 1|79108|freiburg im breisgau": {
     "lat": 48.0135831,
     "lon": 7.8395074
+  },
+  "s|eschholzstraße 118|79115|freiburg im breisgau": {
+    "lon": 7.8290481,
+    "lat": 47.9916272
+  },
+  "festhalle elgersweier, 77656 elgersweier": {
+    "lat": 48.4385293,
+    "lon": 7.9458273
+  },
+  "s|waldseestraße|79117|freiburg im breisgau": {
+    "lat": 47.9849281,
+    "lon": 7.8769834
+  },
+  "78112 st. georgen im schwarzwald": {
+    "lat": 48.1226922,
+    "lon": 8.3294719
+  },
+  "s||79199|kirchzarten": {
+    "lon": 7.954201,
+    "lat": 47.9626264
+  },
+  "kirchstraße 12, 79100 freiburg im breisgau": {
+    "lat": 47.9876531,
+    "lon": 7.8460331
+  },
+  "s||79102|freiburg im breisgau": {
+    "lat": 47.9960901,
+    "lon": 7.8494005
+  },
+  "adam-treiber halle bötzingen, 79268 bötzingen": {
+    "lon": 7.7188039,
+    "lat": 48.0737044
+  },
+  "schmids bauernladen schlatt, 79189 schlatt (bad-krozingen)": {
+    "lon": 7.6730589,
+    "lat": 47.9245946
+  },
+  "79215 elzach": {
+    "lon": 8.0832324,
+    "lat": 48.1856526
+  },
+  "s|bertoldstraße 17|79098|freiburg im breisgau": {
+    "lat": 47.99553,
+    "lon": 7.847805
+  },
+  "schulzentrum neustadt, 79822 titisee-neustadt": {
+    "lon": 8.2086292,
+    "lat": 47.9194883
+  },
+  "s||79400|wollbach": {
+    "lat": 47.6702614,
+    "lon": 7.6532956
+  },
+  "habsburgerstraße 9, 79104 freiburg im breisgau": {
+    "lat": 48.0108123,
+    "lon": 7.8556694
+  },
+  "s||78112|st. georgen im schwarzwald": {
+    "lat": 48.1257642,
+    "lon": 8.3330247
+  },
+  "marienstraße 10a, 79098 freiburg im breisgau": {
+    "lat": 47.9927656,
+    "lon": 7.8523163
+  },
+  "79106 freiburg im breisgau": {
+    "lat": 48.0050912,
+    "lon": 7.8399779
+  },
+  "s||77815|bühl": {
+    "lat": 47.6154897,
+    "lon": 8.4646051
+  },
+  "rotteckring 14, 79098 freiburg im breisgau": {
+    "lat": 47.9967108,
+    "lon": 7.8473136
+  },
+  "s|riedbergstr. 1|79100|freiburg günterstal": {
+    "lat": 47.9683824,
+    "lon": 7.8558889
+  },
+  "s||77746|langhurst": {
+    "lon": 7.8769449,
+    "lat": 48.4732662
+  },
+  "haslacher str. 43, 79115 freiburg im breisgau": {
+    "lon": 7.8325581,
+    "lat": 47.9929625
+  },
+  "s||77933|lahr": {
+    "lat": 48.338896,
+    "lon": 7.8710825
+  },
+  "s|haslacher straße 25|79115|freiburg im breisgau": {
+    "lat": 47.992738,
+    "lon": 7.8333749
+  },
+  "bismarckallee 9, 79098 freiburg im breisgau": {
+    "lon": 7.8423773,
+    "lat": 47.9979293
+  },
+  "s||77704|oberkirch": {
+    "lat": 48.5308586,
+    "lon": 8.078657
+  },
+  "s||79211|freiburg im breisgau": {
+    "lon": 7.8494005,
+    "lat": 47.9960901
+  },
+  "s||79424|freiburg im breisgau": {
+    "lat": 47.9960901,
+    "lon": 7.8494005
+  },
+  "regionales, deutschland": {
+    "lon": 7.6209532,
+    "lat": 47.8925005
+  },
+  "s|schoferstraße 1|79098|freiburg im breisgau": {
+    "lat": 47.9952185,
+    "lon": 7.8548944
+  },
+  "77709 kirnbach": {
+    "lat": 48.2616278,
+    "lon": 8.2459573
+  },
+  "s|merzhauser straße 119|79100|freiburg im breisgau": {
+    "lat": 47.9793023,
+    "lon": 7.8322624
+  },
+  "s|eschholzstraße||freiburg im breisgau": {
+    "lat": 47.9918906,
+    "lon": 7.8314058
+  },
+  "79276 reute (breisgau)": {
+    "lat": 48.073271,
+    "lon": 7.8761595
+  },
+  "keramikmuseum staufen im breisgau, 79219 staufen": {
+    "lon": 7.7297145,
+    "lat": 47.8813037
+  },
+  "s||79594|inzlingen": {
+    "lon": 7.6869534,
+    "lat": 47.5887631
+  },
+  "schwarzwaldstraße, 79117 freiburg im breisgau": {
+    "lat": 47.9877365,
+    "lon": 7.8685967
+  },
+  "s||79650|gersbach": {
+    "lat": 47.6993025,
+    "lon": 7.9245383
+  },
+  "76530 baden-baden": {
+    "lat": 47.5605924,
+    "lon": 7.7861959
+  },
+  "konradstraße 14, 79100 freiburg im breisgau": {
+    "lat": 47.986285,
+    "lon": 7.8455093
+  },
+  "s||79189|biengen": {
+    "lat": 47.9387636,
+    "lon": 7.6912304
+  },
+  "78199 bräunlingen": {
+    "lon": 8.3994504,
+    "lat": 47.9304684
+  },
+  "s||77723|gengenbach": {
+    "lat": 48.4035425,
+    "lon": 8.0153059
+  },
+  "79117 kappel (freiburg)": {
+    "lon": 7.9011738,
+    "lat": 47.9674092
+  },
+  "riedbergstr. 1, 79100 freiburg günterstal": {
+    "lat": 47.9683824,
+    "lon": 7.8558889
+  },
+  "kurgarten baden-baden, 76530 baden-baden": {
+    "lat": 47.9201124,
+    "lon": 7.6988848
+  },
+  "s||79189|bad krozingen": {
+    "lat": 47.9159087,
+    "lon": 7.6999845
+  },
+  "gerberau 15, 79098 freiburg im breisgau": {
+    "lat": 47.9932832,
+    "lon": 7.8531597
+  },
+  "79400 wollbach": {
+    "lat": 47.6682042,
+    "lon": 7.6486148
+  },
+  "79822 titisee-neustadt": {
+    "lon": 8.1899984,
+    "lat": 47.9379513
+  },
+  "granatgässle 2-7, 79102 freiburg im breisgau": {
+    "lat": 47.9914023,
+    "lon": 7.8548365
+  },
+  "maria-von-rudloff-platz 2, 79111 freiburg im breisgau": {
+    "lon": 7.7922158,
+    "lat": 47.9994567
+  },
+  "waldseestraße, 79117 freiburg im breisgau": {
+    "lat": 47.9814348,
+    "lon": 7.8808667
+  },
+  "s||79694|utzenfeld": {
+    "lat": 47.8010461,
+    "lon": 7.9157917
+  },
+  "s|konradstraße 14|79100|freiburg im breisgau": {
+    "lat": 47.986285,
+    "lon": 7.8455093
+  },
+  "rempartstraße 18, 79098 freiburg im breisgau": {
+    "lat": 47.992733,
+    "lon": 7.8464447
+  },
+  "freiburg tiengen, 79112 freiburg tiengen": {
+    "lon": 7.72648,
+    "lat": 47.9820607
+  },
+  "79211 denzlingen": {
+    "lat": 48.070484,
+    "lon": 7.8843519
+  },
+  "s|gerberau 15|79098|freiburg im breisgau": {
+    "lat": 47.9932832,
+    "lon": 7.8531597
+  },
+  "79189 tunsel": {
+    "lat": 47.9037795,
+    "lon": 7.6702124
+  },
+  "museum für neue kunst freiburg, 79098 freiburg": {
+    "lat": 47.9927656,
+    "lon": 7.8523163
+  },
+  "s|kartäuserstraße 45|79102|freiburg im breisgau": {
+    "lat": 47.9919156,
+    "lon": 7.8602557
+  },
+  "s|eschholzstraße 77|79106|freiburg": {
+    "lon": 7.833187,
+    "lat": 47.9940662
+  },
+  "79 freiburg im breisgau": {
+    "lat": 47.9960901,
+    "lon": 7.8494005
+  },
+  "s|haslacher straße 15|79115|freiburg im breisgau": {
+    "lat": 47.9921026,
+    "lon": 7.8348994
+  },
+  "79104 zähringen": {
+    "lon": 7.8641063,
+    "lat": 48.0247254
+  },
+  "schnewlinstraße 7, 79098 freiburg im breisgau": {
+    "lat": 47.9937778,
+    "lon": 7.8398472
+  },
+  "sandfangweg, 79117 freiburg im breisgau": {
+    "lat": 47.9897237,
+    "lon": 7.8804672
+  },
+  "s||77728|oppenau": {
+    "lat": 48.4751652,
+    "lon": 8.1646682
+  },
+  "schlossbergring 1, 79098 freiburg im breisgau": {
+    "lat": 47.992511,
+    "lon": 7.8549564
+  },
+  "s||79106|freiburg im breisgau": {
+    "lat": 47.9960901,
+    "lon": 7.8494005
+  },
+  "festhalle kollnau, 79183 kollnau": {
+    "lat": 48.1051268,
+    "lon": 7.9693594
+  },
+  "s|achim-stocker-straße 1|79108|freiburg im breisgau": {
+    "lat": 48.0213778,
+    "lon": 7.829817
+  },
+  "s||79872|bernau": {
+    "lat": 47.8057268,
+    "lon": 8.0345882
+  },
+  "79268 bötzingen": {
+    "lat": 48.0738287,
+    "lon": 7.7157422
+  },
+  "hans-bunte-str. 16c, 79108 freiburg im breisgau": {
+    "lon": 7.8590627,
+    "lat": 48.0306361
+  },
+  "weinfestgelände breisach, 79206 breisach": {
+    "lat": 48.0331297,
+    "lon": 7.5721706
+  },
+  "rathausplatz offenburg, 77652 offenburg": {
+    "lat": 48.4749596,
+    "lon": 7.9846635
+  },
+  "s|schwarzwaldstraße 82|79102|freiburg im breisgau": {
+    "lon": 7.875728,
+    "lat": 47.9877215
+  },
+  "s||77933|kippenheimweiler": {
+    "lat": 48.3182043,
+    "lon": 7.8051884
+  },
+  "s|rathausgasse 5a|79098|freiburg im breisgau": {
+    "lat": 47.9960728,
+    "lon": 7.8487049
+  },
+  "79098 freiburg": {
+    "lat": 47.9948074,
+    "lon": 7.8486764
+  },
+  "neuer messplatz. 1, 79108 freiburg im breisgau": {
+    "lat": 48.0162409,
+    "lon": 7.8377056
+  },
+  "wilhelmstraße 9, 79098 freiburg im breisgau": {
+    "lon": 7.8416598,
+    "lat": 47.9942338
+  },
+  "wentzingerstraße 15, 79106 freiburg im breisgau": {
+    "lon": 7.8394932,
+    "lat": 47.9965209
+  },
+  "am gansacker 6, 79224 umkirch": {
+    "lat": 48.0366998,
+    "lon": 7.7623638
+  },
+  "s|merzhauser str. 16|79100|freiburg im breisgau": {
+    "lat": 47.9847726,
+    "lon": 7.836388
+  },
+  "77963 nonnenweier": {
+    "lat": 48.3649357,
+    "lon": 7.7639382
+  },
+  "restaurant kamino, 79837 häusern": {
+    "lon": 8.1687536,
+    "lat": 47.7534096
+  },
+  "s||79793|horheim": {
+    "lat": 47.6488676,
+    "lon": 8.3470934
+  },
+  "79189 biengen": {
+    "lon": 7.6837354,
+    "lat": 47.933736
+  },
+  "s||77709|kirnbach": {
+    "lat": 48.2711976,
+    "lon": 8.2301646
+  },
+  "s|bertoldstraße 46|79098|freiburg im breisgau": {
+    "lat": 47.995267,
+    "lon": 7.8446374
+  },
+  "am rohrgraben 4a, 79249 merzhausen": {
+    "lat": 47.9714294,
+    "lon": 7.8251954
+  },
+  "s||77781|prinzbach": {
+    "lat": 48.3233074,
+    "lon": 8.0051696
+  },
+  "s|schwarzwaldstraße 181|79117|freiburg im breisgau": {
+    "lat": 47.9902574,
+    "lon": 7.8851379
+  },
+  "s|friedrichring 38|79098|freiburg im breisgau": {
+    "lat": 47.9981246,
+    "lon": 7.8494975
+  },
+  "kirchplatz lörrach-stetten, 79539 stetten (lörrach)": {
+    "lon": 7.664869,
+    "lat": 47.6016315
+  },
+  "79235 burkheim": {
+    "lat": 48.1000412,
+    "lon": 7.5961907
+  },
+  "s|universitätsstraße 3|79098|freiburg im breisgau": {
+    "lat": 47.9947959,
+    "lon": 7.8488548
+  },
+  "münsterplatz 11, 79098 freiburg im breisgau": {
+    "lon": 7.8526603,
+    "lat": 47.9962206
+  },
+  "hildastr. 5, 79102 freiburg im breisgau": {
+    "lon": 7.8545887,
+    "lat": 47.990123
+  },
+  "s|marie-curie-straße 1|79100|freiburg im breisgau": {
+    "lat": 47.9768239,
+    "lon": 7.8256014
+  },
+  "s|maria-von-rudloff-platz 2|79111|freiburg im breisgau": {
+    "lat": 47.9994567,
+    "lon": 7.7922158
+  },
+  "s|rempartstraße 18|79098|freiburg im breisgau": {
+    "lat": 47.992733,
+    "lon": 7.8464447
+  },
+  "s||72270|baiersbronn": {
+    "lon": 8.3720124,
+    "lat": 48.5069519
+  },
+  "gewerbegebiet bahlingen, 79353 bahlingen": {
+    "lon": 7.7495506,
+    "lat": 48.1234544
+  },
+  "gerberau 11, 79098 freiburg im breisgau": {
+    "lat": 47.9934911,
+    "lon": 7.8512616
+  },
+  "77815 bühl": {
+    "lat": 47.6154897,
+    "lon": 8.4646051
+  },
+  "s|basler landstraße 35-37|79111|freiburg im breisgau": {
+    "lat": 47.9821591,
+    "lon": 7.8036843
+  },
+  "flugplatz altdorf, 77955 altdorf (ettenheim)": {
+    "lon": 7.8415432,
+    "lat": 48.2699417
+  },
+  "s||79268|bötzingen": {
+    "lat": 48.0713081,
+    "lon": 7.7184992
+  },
+  "s||79312|freiburg im breisgau": {
+    "lat": 47.9960901,
+    "lon": 7.8494005
+  },
+  "s||79822|titisee-neustadt": {
+    "lat": 47.9173421,
+    "lon": 8.1735161
+  },
+  "s||79117|kappel": {
+    "lat": 47.9646668,
+    "lon": 7.9087001
+  },
+  "sonne-platz gundelfingen, 79194 gundelfingen": {
+    "lat": 48.0432504,
+    "lon": 7.8680787
+  },
+  "77723 reichenbach (kinzigtal)": {
+    "lat": 48.4226026,
+    "lon": 7.9824692
+  },
+  "s|haslacher straße 41|79115|freiburg im breisgau": {
+    "lat": 47.9927229,
+    "lon": 7.832924
+  },
+  "schwabentorring 7, 79098 freiburg im breisgau": {
+    "lon": 7.8546348,
+    "lat": 47.9915369
+  },
+  "messe offenburg-ortenau, 77652 offenburg": {
+    "lon": 7.9340376,
+    "lat": 48.4638873
+  },
+  "weingut bieselin ettenheim, 77955 ettenheim": {
+    "lon": 7.80334,
+    "lat": 48.2440999
+  },
+  "s||79276|reute": {
+    "lat": 48.0821723,
+    "lon": 7.820585
+  },
+  "77716 fischerbach": {
+    "lat": 48.3047728,
+    "lon": 8.123078
+  },
+  "gemeindehaus gutach, 77793 gutach (schwarzwaldbahn)": {
+    "lat": 48.2461328,
+    "lon": 8.2116106
+  },
+  "neuer messplatz 1, 79108 freiburg im breisgau": {
+    "lat": 48.0162409,
+    "lon": 7.8377056
+  },
+  "77889 seebach": {
+    "lat": 48.4084921,
+    "lon": 8.3042161
+  },
+  "s||79211|denzlingen": {
+    "lat": 48.0669167,
+    "lon": 7.8862704
+  },
+  "s|lameystraße 2|79108|freiburg im breisgau": {
+    "lat": 48.019273,
+    "lon": 7.8585962
+  },
+  "löwenstraße 8, 79098 freiburg im breisgau": {
+    "lon": 7.8483592,
+    "lat": 47.9938884
   }
 }
