@@ -6500,26 +6500,6 @@
     ]
   },
   {
-    "base": "Polizeipräsidium Aalen|ostalbkreis: unfallfluchten - küchenbrand - pkw-lenker bedroht fußgänger - sonstiges",
-    "status": "active",
-    "title": "Ostalbkreis: Unfallfluchten - Küchenbrand - PKW-Lenker bedroht Fußgänger - Sonstiges",
-    "link": "https://www.presseportal.de/blaulicht/pm/110969/6328197",
-    "first": "2026-08-06T06:54:42Z",
-    "last": "2026-08-06T06:54:42Z",
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Ostalbkreis",
-        "lat": 48.8777738,
-        "lon": 10.0337317,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Feuerwehr Stuttgart|küchenbrand in mehrfamilienhaus",
     "status": "contained",
     "title": "Küchenbrand in Mehrfamilienhaus",
