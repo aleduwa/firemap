@@ -6448,32 +6448,6 @@
     ]
   },
   {
-    "base": "FF Stockach|brennender wohnwagen auf der autobahn.",
-    "status": "out",
-    "title": "Brennender Wohnwagen auf der Autobahn.",
-    "link": "https://www.presseportal.de/blaulicht/pm/134581/6328797",
-    "first": "2026-08-06T21:26:17Z",
-    "last": "2026-08-06T23:26:17Z",
-    "veg": true,
-    "source": "FF Stockach",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stockach",
-        "lat": 47.8530941,
-        "lon": 9.0134524,
-        "approx": false
-      },
-      {
-        "name": "zwischen Orsingen und Wahlwies",
-        "lat": 47.82632,
-        "lon": 8.94834,
-        "approx": true
-      }
-    ]
-  },
-  {
     "base": "Feuerwehr Stuttgart|küchenbrand in mehrfamilienhaus",
     "status": "contained",
     "title": "Küchenbrand in Mehrfamilienhaus",
