@@ -1,11 +1,35 @@
 [
   {
+    "base": "Polizeipräsidium Mannheim|mannheim: brand in wohnhaus, pm 1",
+    "status": "active",
+    "title": "Mannheim: Brand in Wohnhaus, PM 1",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6346161",
+    "first": "2026-09-05T21:33:42Z",
+    "last": "2026-09-05T21:33:42Z",
+    "places": [
+      {
+        "name": "Mannheim",
+        "lat": 49.4892913,
+        "lon": 8.4673098,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Düsseldorf|wohnungsbrand in unterbilk - feuerwehr verhindert brandausbreitung, ein mensch verstorben",
     "status": "contained",
     "title": "Wohnungsbrand in Unterbilk - Feuerwehr verhindert Brandausbreitung, ein Mensch verstorben",
     "link": "https://www.presseportal.de/blaulicht/pm/115876/6346152",
     "first": "2026-09-05T19:27:14Z",
     "last": "2026-09-05T19:27:14Z",
+    "veg": false,
+    "source": "Feuerwehr Düsseldorf",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Düsseldorf",
@@ -13,11 +37,7 @@
         "lon": 6.7763137,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Düsseldorf",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Konstanz|brand einer lüftungsanlage in einem gastronomiebetrieb",
