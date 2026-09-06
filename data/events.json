@@ -1,5 +1,25 @@
 [
   {
+    "base": "Feuerwehr und Rettungsdienst Bonn|feuer in patientenzimmer der lvr-klinik bonn - feuerwehr verhindert ausbreitung des brandes",
+    "status": "contained",
+    "title": "Feuer in Patientenzimmer der LVR-Klinik Bonn - Feuerwehr verhindert Ausbreitung des Brandes",
+    "link": "https://www.presseportal.de/blaulicht/pm/115888/6346467",
+    "first": "2026-09-07T00:41:13Z",
+    "last": "2026-09-07T00:41:13Z",
+    "places": [
+      {
+        "name": "Bonn",
+        "lat": 50.7352621,
+        "lon": 7.1024635,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr und Rettungsdienst Bonn",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Karlsruhe|(ka)eggenstein-leopoldshafen - pkw gerät bei unfall in vollbrand",
     "status": "out",
     "title": "(KA)Eggenstein-Leopoldshafen - Pkw gerät bei Unfall in Vollbrand",
@@ -6266,32 +6286,6 @@
         "lat": 48.7784485,
         "lon": 9.1800132,
         "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|schwetzingen/rhein-neckar-kreis: brand einer gartenhütte, pm 2",
-    "status": "out",
-    "title": "Schwetzingen/Rhein-Neckar-Kreis: Brand einer Gartenhütte, PM 2",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6329433",
-    "first": "2026-08-07T22:05:35Z",
-    "last": "2026-08-07T22:05:35Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Schwetzingen",
-        "lat": 49.3832919,
-        "lon": 8.5735135,
-        "approx": false
-      },
-      {
-        "name": "Rhein-Neckar-Kreis",
-        "lat": 49.3684797,
-        "lon": 8.7352403,
-        "approx": false
       }
     ]
   },
