@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110972/6346398",
     "first": "2026-09-06T13:24:50Z",
     "last": "2026-09-06T13:24:50Z",
+    "veg": false,
+    "source": "Polizeipräsidium Karlsruhe",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Eggenstein-Leopoldshafen",
@@ -13,11 +17,7 @@
         "lon": 8.4003114,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Karlsruhe",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Xanten|brand eines schuppens in marienbaum",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/122220/6346388",
     "first": "2026-09-06T12:21:09Z",
     "last": "2026-09-06T12:21:09Z",
+    "veg": false,
+    "source": "Feuerwehr Xanten",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Xanten",
@@ -33,11 +37,7 @@
         "lon": 6.4543203,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Xanten",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Mönchengladbach|kellerbrand mit starker rauchentwicklung - zwei personen gerettet",
@@ -6362,26 +6362,6 @@
     ]
   },
   {
-    "base": "Polizeipräsidium Mannheim|bab6/mannheim: brand eines sattelaufliegers - vollsperrung bab - pm1",
-    "status": "active",
-    "title": "BAB6/Mannheim: Brand eines Sattelaufliegers - Vollsperrung BAB - PM1",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6329393",
-    "first": "2026-08-07T14:23:11Z",
-    "last": "2026-08-07T14:23:11Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Mannheim",
-        "lat": 49.4892913,
-        "lon": 8.4673098,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Feuerwehr Offenburg|böschungsbrand vor dem offenburger messekreisel",
     "status": "active",
     "title": "Böschungsbrand vor dem Offenburger Messekreisel",
@@ -6397,46 +6377,6 @@
         "name": "Offenburg",
         "lat": 48.4695984,
         "lon": 7.9429235,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|heidelberg: brennender blumentopf löst feuerwehreinsatz aus",
-    "status": "out",
-    "title": "Heidelberg: Brennender Blumentopf löst Feuerwehreinsatz aus",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6329371",
-    "first": "2026-08-07T13:15:59Z",
-    "last": "2026-08-07T13:15:59Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Heidelberg",
-        "lat": 49.4093582,
-        "lon": 8.694724,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Pforzheim|(enzkreis) neulingen - brand von altreifen in getreidelagerstätte / polizei sucht zeugen",
-    "status": "active",
-    "title": "(Enzkreis) Neulingen - Brand von Altreifen in Getreidelagerstätte / Polizei sucht Zeugen",
-    "link": "https://www.presseportal.de/blaulicht/pm/137462/6329243",
-    "first": "2026-08-07T11:24:08Z",
-    "last": "2026-08-07T13:24:08Z",
-    "veg": false,
-    "source": "Polizeipräsidium Pforzheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Neulingen",
-        "lat": 48.9740793,
-        "lon": 8.7106677,
         "approx": false
       }
     ]
