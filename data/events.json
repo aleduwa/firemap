@@ -6342,46 +6342,6 @@
     ]
   },
   {
-    "base": "Polizeipräsidium Mannheim|bab6/mannheim: brand eines sattelaufliegers - vollsperrung bab - pm2",
-    "status": "out",
-    "title": "BAB6/Mannheim: Brand eines Sattelaufliegers - Vollsperrung BAB - PM2",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6329407",
-    "first": "2026-08-07T16:14:28Z",
-    "last": "2026-08-07T16:14:28Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Mannheim",
-        "lat": 49.4892913,
-        "lon": 8.4673098,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Offenburg|böschungsbrand vor dem offenburger messekreisel",
-    "status": "active",
-    "title": "Böschungsbrand vor dem Offenburger Messekreisel",
-    "link": "https://www.presseportal.de/blaulicht/pm/128693/6329385",
-    "first": "2026-08-07T13:53:58Z",
-    "last": "2026-08-07T15:53:58Z",
-    "veg": true,
-    "source": "Feuerwehr Offenburg",
-    "updates": 1,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Offenburg",
-        "lat": 48.4695984,
-        "lon": 7.9429235,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Feuerwehr Stuttgart|küchenbrand in mehrfamilienhaus",
     "status": "contained",
     "title": "Küchenbrand in Mehrfamilienhaus",
