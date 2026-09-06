@@ -1,11 +1,35 @@
 [
   {
+    "base": "Feuerwehr Mönchengladbach|kellerbrand mit starker rauchentwicklung - zwei personen gerettet",
+    "status": "out",
+    "title": "Kellerbrand mit starker Rauchentwicklung - zwei Personen gerettet",
+    "link": "https://www.presseportal.de/blaulicht/pm/115879/6346198",
+    "first": "2026-09-06T07:20:57Z",
+    "last": "2026-09-06T07:20:57Z",
+    "places": [
+      {
+        "name": "Mönchengladbach",
+        "lat": 51.1947131,
+        "lon": 6.4353792,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Mannheim|mannheim: brand in wohnhaus, pm 2",
     "status": "active",
     "title": "Mannheim: Brand in Wohnhaus, PM 2",
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6346175",
     "first": "2026-09-06T02:46:07Z",
     "last": "2026-09-06T02:46:07Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Mannheim",
@@ -13,11 +37,7 @@
         "lon": 8.4673098,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|mannheim: brand in wohnhaus, pm 1",
