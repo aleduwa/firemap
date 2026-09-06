@@ -6322,26 +6322,6 @@
     ]
   },
   {
-    "base": "Feuerwehr Böblingen|wohnungsbrand im schützenweg in böblingen",
-    "status": "active",
-    "title": "Wohnungsbrand im Schützenweg in Böblingen",
-    "link": "https://www.presseportal.de/blaulicht/pm/164917/6329410",
-    "first": "2026-08-07T17:22:00Z",
-    "last": "2026-08-07T19:22:00Z",
-    "veg": false,
-    "source": "Feuerwehr Böblingen",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Böblingen",
-        "lat": 48.684969,
-        "lon": 9.0113444,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Feuerwehr Stuttgart|küchenbrand in mehrfamilienhaus",
     "status": "contained",
     "title": "Küchenbrand in Mehrfamilienhaus",
