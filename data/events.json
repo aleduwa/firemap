@@ -1,11 +1,55 @@
 [
   {
+    "base": "Polizeipräsidium Karlsruhe|(ka)eggenstein-leopoldshafen - pkw gerät bei unfall in vollbrand",
+    "status": "out",
+    "title": "(KA)Eggenstein-Leopoldshafen - Pkw gerät bei Unfall in Vollbrand",
+    "link": "https://www.presseportal.de/blaulicht/pm/110972/6346398",
+    "first": "2026-09-06T13:24:50Z",
+    "last": "2026-09-06T13:24:50Z",
+    "places": [
+      {
+        "name": "Eggenstein-Leopoldshafen",
+        "lat": 49.088332,
+        "lon": 8.4003114,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Karlsruhe",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Xanten|brand eines schuppens in marienbaum",
+    "status": "out",
+    "title": "Brand eines Schuppens in Marienbaum",
+    "link": "https://www.presseportal.de/blaulicht/pm/122220/6346388",
+    "first": "2026-09-06T12:21:09Z",
+    "last": "2026-09-06T12:21:09Z",
+    "places": [
+      {
+        "name": "Xanten",
+        "lat": 51.661519,
+        "lon": 6.4543203,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Xanten",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Mönchengladbach|kellerbrand mit starker rauchentwicklung - zwei personen gerettet",
     "status": "out",
     "title": "Kellerbrand mit starker Rauchentwicklung - zwei Personen gerettet",
     "link": "https://www.presseportal.de/blaulicht/pm/115879/6346198",
     "first": "2026-09-06T07:20:57Z",
     "last": "2026-09-06T07:20:57Z",
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Mönchengladbach",
@@ -13,11 +57,7 @@
         "lon": 6.4353792,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Mönchengladbach",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|mannheim: brand in wohnhaus, pm 2",
@@ -6382,26 +6422,6 @@
     ]
   },
   {
-    "base": "Polizeipräsidium Mannheim|mannheim-schönau: wohnungsbrand mit einer verletzten person - zeugenaufruf, pm nr. 2",
-    "status": "active",
-    "title": "Mannheim-Schönau: Wohnungsbrand mit einer verletzten Person - Zeugenaufruf, PM Nr. 2",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6329249",
-    "first": "2026-08-07T11:27:19Z",
-    "last": "2026-08-07T11:27:19Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Mannheim-Schönau",
-        "lat": 49.5534527,
-        "lon": 8.4707614,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Polizeipräsidium Pforzheim|(enzkreis) neulingen - brand von altreifen in getreidelagerstätte / polizei sucht zeugen",
     "status": "active",
     "title": "(Enzkreis) Neulingen - Brand von Altreifen in Getreidelagerstätte / Polizei sucht Zeugen",
@@ -6417,72 +6437,6 @@
         "name": "Neulingen",
         "lat": 48.9740793,
         "lon": 8.7106677,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Offenburg|schwanau, nonnenweier - gefahr eines vegetationsbrandes verhindert -mit guten nachrichten ins wochenende-",
-    "status": "active",
-    "title": "Schwanau, Nonnenweier - Gefahr eines Vegetationsbrandes verhindert -Mit guten Nachrichten ins Wochenende-",
-    "link": "https://www.presseportal.de/blaulicht/pm/110975/6329161",
-    "first": "2026-08-07T10:11:22Z",
-    "last": "2026-08-07T10:11:22Z",
-    "veg": true,
-    "source": "Polizeipräsidium Offenburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Schwanau",
-        "lat": 48.3629138,
-        "lon": 7.7636557,
-        "approx": false
-      },
-      {
-        "name": "Nonnenweier",
-        "lat": 48.3476599,
-        "lon": 7.7608934,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ludwigsburg|herrenberg-gültstein: starke rauchentwicklung in und gültstein nach fahrzeugbrand",
-    "status": "active",
-    "title": "Herrenberg-Gültstein: starke Rauchentwicklung in und Gültstein nach Fahrzeugbrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110974/6329005",
-    "first": "2026-08-07T08:29:55Z",
-    "last": "2026-08-07T10:29:55Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Herrenberg-Gültstein",
-        "lat": 48.5752062,
-        "lon": 8.8794268,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ludwigsburg|marbach am neckar-rielingshausen: garagenbrand führt zu sechsstelligem sachschaden",
-    "status": "out",
-    "title": "Marbach am Neckar-Rielingshausen: Garagenbrand führt zu sechsstelligem Sachschaden",
-    "link": "https://www.presseportal.de/blaulicht/pm/110974/6328978",
-    "first": "2026-08-07T08:10:33Z",
-    "last": "2026-08-07T10:10:33Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Marbach am Neckar-Rielingshausen",
-        "lat": 48.9677561,
-        "lon": 9.3220868,
         "approx": false
       }
     ]
