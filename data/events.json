@@ -6296,32 +6296,6 @@
     ]
   },
   {
-    "base": "Polizeipräsidium Mannheim|schwetzingen/rhein-neckar-kreis: brand einer gartenhütte, pm 1",
-    "status": "active",
-    "title": "Schwetzingen/Rhein-Neckar-Kreis: Brand einer Gartenhütte, PM 1",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6329425",
-    "first": "2026-08-07T20:48:21Z",
-    "last": "2026-08-07T20:48:21Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Schwetzingen",
-        "lat": 49.3832919,
-        "lon": 8.5735135,
-        "approx": false
-      },
-      {
-        "name": "Rhein-Neckar-Kreis",
-        "lat": 49.3684797,
-        "lon": 8.7352403,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Feuerwehr Stuttgart|küchenbrand in mehrfamilienhaus",
     "status": "contained",
     "title": "Küchenbrand in Mehrfamilienhaus",
