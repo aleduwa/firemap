@@ -1,5 +1,105 @@
 [
   {
+    "base": "Freiwillige Feuerwehr Königswinter|brennende thujahecke in königswinter-berghausen schnell gelöscht",
+    "status": "out",
+    "title": "Brennende Thujahecke in Königswinter-Berghausen schnell gelöscht",
+    "link": "https://www.presseportal.de/blaulicht/pm/128175/6347369",
+    "first": "2026-09-07T17:41:49Z",
+    "last": "2026-09-07T17:41:49Z",
+    "places": [
+      {
+        "name": "Königswinter",
+        "lat": 50.6739719,
+        "lon": 7.1930989,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Königswinter",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Essen|großbrand auf schrottplatz - rund 140 einsatzkräfte im einsatz",
+    "status": "out",
+    "title": "Großbrand auf Schrottplatz - rund 140 Einsatzkräfte im Einsatz",
+    "link": "https://www.presseportal.de/blaulicht/pm/56893/6347354",
+    "first": "2026-09-07T16:41:38Z",
+    "last": "2026-09-07T16:41:38Z",
+    "places": [
+      {
+        "name": "Essen",
+        "lat": 51.4582235,
+        "lon": 7.0158171,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Essen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|schopfheim: brand bei einem pflanzencenter in der belchenstraße",
+    "status": "out",
+    "title": "Schopfheim: Brand bei einem Pflanzencenter in der Belchenstraße",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6347307",
+    "first": "2026-09-07T15:52:10Z",
+    "last": "2026-09-07T15:52:10Z",
+    "places": [
+      {
+        "name": "Schopfheim",
+        "lat": 47.6500525,
+        "lon": 7.8216997,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|steinen: schwelbrand in recyclingbetrieb",
+    "status": "out",
+    "title": "Steinen: Schwelbrand in Recyclingbetrieb",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6347287",
+    "first": "2026-09-07T15:43:40Z",
+    "last": "2026-09-07T15:43:40Z",
+    "places": [
+      {
+        "name": "Steinen",
+        "lat": 47.6435624,
+        "lon": 7.7395193,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|bad säckingen: balkonbrand in der marienstraße",
+    "status": "out",
+    "title": "Bad Säckingen: Balkonbrand in der Marienstraße",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6347274",
+    "first": "2026-09-07T15:34:54Z",
+    "last": "2026-09-07T15:34:54Z",
+    "places": [
+      {
+        "name": "Bad Säckingen",
+        "lat": 47.5527459,
+        "lon": 7.9410556,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Mönchengladbach|brennende bettdecke löst feuerwehreinsatz aus",
     "status": "active",
     "title": "Brennende Bettdecke löst Feuerwehreinsatz aus",
@@ -3425,9 +3525,9 @@
     "base": "Polizei Duisburg|wanheimerort: brand eines altkleidercontainers - zeugensuche",
     "status": "active",
     "title": "Wanheimerort: Brand eines Altkleidercontainers - Zeugensuche",
-    "link": "https://www.presseportal.de/blaulicht/pm/50510/6336364",
+    "link": "https://www.presseportal.de/blaulicht/pm/50510/6347327",
     "first": "2026-08-19T13:32:31Z",
-    "last": "2026-08-19T13:32:31Z",
+    "last": "2026-09-07T16:07:52Z",
     "veg": false,
     "source": "Polizei Duisburg",
     "updates": 0,
