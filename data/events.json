@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115879/6346485",
     "first": "2026-09-07T06:49:39Z",
     "last": "2026-09-07T06:49:39Z",
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Mönchengladbach",
@@ -13,11 +17,7 @@
         "lon": 6.4353792,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Mönchengladbach",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Heilbronn|landkreis heilbronn/schwaigern: heuballenbrand",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110971/6346472",
     "first": "2026-09-07T04:12:31Z",
     "last": "2026-09-07T04:12:31Z",
+    "veg": true,
+    "source": "Polizeipräsidium Heilbronn",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Schwaigern",
@@ -33,11 +37,7 @@
         "lon": 9.0571085,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Heilbronn",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr und Rettungsdienst Bonn|feuer in patientenzimmer der lvr-klinik bonn - feuerwehr verhindert ausbreitung des brandes",
