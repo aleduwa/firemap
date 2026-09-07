@@ -1,11 +1,35 @@
 [
   {
+    "base": "Feuerwehr Dinslaken|gartenlaube durch feuer zerstört",
+    "status": "out",
+    "title": "Gartenlaube durch Feuer zerstört",
+    "link": "https://www.presseportal.de/blaulicht/pm/116534/6347392",
+    "first": "2026-09-07T21:37:51Z",
+    "last": "2026-09-07T21:37:51Z",
+    "places": [
+      {
+        "name": "Dinslaken",
+        "lat": 51.5623618,
+        "lon": 6.7345106,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Dinslaken",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Freiwillige Feuerwehr Königswinter|brennende thujahecke in königswinter-berghausen schnell gelöscht",
     "status": "out",
     "title": "Brennende Thujahecke in Königswinter-Berghausen schnell gelöscht",
     "link": "https://www.presseportal.de/blaulicht/pm/128175/6347369",
     "first": "2026-09-07T17:41:49Z",
     "last": "2026-09-07T17:41:49Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Königswinter",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Königswinter",
@@ -13,11 +37,7 @@
         "lon": 7.1930989,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Königswinter",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Essen|großbrand auf schrottplatz - rund 140 einsatzkräfte im einsatz",
@@ -26,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/56893/6347354",
     "first": "2026-09-07T16:41:38Z",
     "last": "2026-09-07T16:41:38Z",
+    "veg": false,
+    "source": "Feuerwehr Essen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Essen",
@@ -33,11 +57,7 @@
         "lon": 7.0158171,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Essen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|schopfheim: brand bei einem pflanzencenter in der belchenstraße",
@@ -46,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6347307",
     "first": "2026-09-07T15:52:10Z",
     "last": "2026-09-07T15:52:10Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Schopfheim",
@@ -53,11 +77,7 @@
         "lon": 7.8216997,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|steinen: schwelbrand in recyclingbetrieb",
@@ -66,6 +86,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6347287",
     "first": "2026-09-07T15:43:40Z",
     "last": "2026-09-07T15:43:40Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Steinen",
@@ -73,11 +97,7 @@
         "lon": 7.7395193,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|bad säckingen: balkonbrand in der marienstraße",
@@ -86,6 +106,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6347274",
     "first": "2026-09-07T15:34:54Z",
     "last": "2026-09-07T15:34:54Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Bad Säckingen",
@@ -93,11 +117,7 @@
         "lon": 7.9410556,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Mönchengladbach|brennende bettdecke löst feuerwehreinsatz aus",
