@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/116534/6347392",
     "first": "2026-09-07T21:37:51Z",
     "last": "2026-09-07T21:37:51Z",
+    "veg": false,
+    "source": "Feuerwehr Dinslaken",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Dinslaken",
@@ -13,11 +17,7 @@
         "lon": 6.7345106,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Dinslaken",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Königswinter|brennende thujahecke in königswinter-berghausen schnell gelöscht",
