@@ -1,5 +1,71 @@
 [
   {
+    "base": "Polizeipräsidium Heilbronn|main-tauber-kreis: brand",
+    "status": "contained",
+    "title": "Main-Tauber-Kreis: Brand",
+    "link": "https://www.presseportal.de/blaulicht/pm/110971/6348163",
+    "first": "2026-09-08T16:08:11Z",
+    "last": "2026-09-08T16:08:11Z",
+    "places": [
+      {
+        "name": "Main-Tauber-Kreis",
+        "lat": 49.5713631,
+        "lon": 9.6999301,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Offenburg|hausach - maschinenbrand",
+    "status": "active",
+    "title": "Hausach - Maschinenbrand",
+    "link": "https://www.presseportal.de/blaulicht/pm/110975/6348091",
+    "first": "2026-09-08T14:55:51Z",
+    "last": "2026-09-08T14:55:51Z",
+    "places": [
+      {
+        "name": "Hausach",
+        "lat": 48.2836305,
+        "lon": 8.174972,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Offenburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|albbruck/ schachen: flächenbrand sorgt für großeinsatz der feuerwehr - zeugensuche",
+    "status": "contained",
+    "title": "Albbruck/ Schachen: Flächenbrand sorgt für Großeinsatz der Feuerwehr - Zeugensuche",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6348069",
+    "first": "2026-09-08T14:39:37Z",
+    "last": "2026-09-08T14:39:37Z",
+    "places": [
+      {
+        "name": "Albbruck",
+        "lat": 47.5943254,
+        "lon": 8.1336893,
+        "approx": false
+      },
+      {
+        "name": "Schachen",
+        "lat": 47.724534,
+        "lon": 9.9569534,
+        "approx": false
+      }
+    ],
+    "veg": true,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Bochum|wohnungsbrand in einem mehrfamilienhaus",
     "status": "out",
     "title": "Wohnungsbrand in einem Mehrfamilienhaus",
@@ -6339,52 +6405,6 @@
         "name": "Pfinztal",
         "lat": 48.9918661,
         "lon": 8.5553158,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Konstanz|(konstanz, lkrs. konstanz) bootsbrand bodensee insel mainau - 78465 litzelstetten",
-    "status": "active",
-    "title": "(Konstanz, Lkrs. Konstanz) Bootsbrand Bodensee Insel Mainau - 78465 Litzelstetten",
-    "link": "https://www.presseportal.de/blaulicht/pm/110973/6329870",
-    "first": "2026-08-09T13:10:01Z",
-    "last": "2026-08-09T13:10:01Z",
-    "veg": false,
-    "source": "Polizeipräsidium Konstanz",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "(Konstanz",
-        "lat": 47.659216,
-        "lon": 9.1750718,
-        "approx": false
-      },
-      {
-        "name": "Konstanz",
-        "lat": 47.659216,
-        "lon": 9.1750718,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Konstanz|bootsbrand bei der insel mainau",
-    "status": "out",
-    "title": "Bootsbrand bei der Insel Mainau",
-    "link": "https://www.presseportal.de/blaulicht/pm/139089/6329844",
-    "first": "2026-08-09T11:32:30Z",
-    "last": "2026-08-09T13:32:30Z",
-    "veg": false,
-    "source": "Feuerwehr Konstanz",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Konstanz",
-        "lat": 47.659216,
-        "lon": 9.1750718,
         "approx": false
       }
     ]
