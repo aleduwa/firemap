@@ -1,5 +1,45 @@
 [
   {
+    "base": "Feuerwehr Bochum|wohnungsbrand in einem mehrfamilienhaus",
+    "status": "out",
+    "title": "Wohnungsbrand in einem Mehrfamilienhaus",
+    "link": "https://www.presseportal.de/blaulicht/pm/115868/6347433",
+    "first": "2026-09-08T07:02:07Z",
+    "last": "2026-09-08T07:02:07Z",
+    "places": [
+      {
+        "name": "Bochum",
+        "lat": 51.4818111,
+        "lon": 7.2196635,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Bochum",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Ennepetal|brandeinsatz und brandmeldeanlage",
+    "status": "out",
+    "title": "Brandeinsatz und Brandmeldeanlage",
+    "link": "https://www.presseportal.de/blaulicht/pm/69780/6347412",
+    "first": "2026-09-08T06:30:53Z",
+    "last": "2026-09-08T06:30:53Z",
+    "places": [
+      {
+        "name": "Ennepetal",
+        "lat": 51.2967192,
+        "lon": 7.3693335,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Ennepetal",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Dinslaken|gartenlaube durch feuer zerstört",
     "status": "out",
     "title": "Gartenlaube durch Feuer zerstört",
@@ -6365,26 +6405,6 @@
         "name": "Ludwigsburg",
         "lat": 48.8953937,
         "lon": 9.1895147,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Aalen|ostalbkreis: wohnhausbrand in schwäbisch gmünd",
-    "status": "active",
-    "title": "Ostalbkreis: Wohnhausbrand in Schwäbisch Gmünd",
-    "link": "https://www.presseportal.de/blaulicht/pm/110969/6329638",
-    "first": "2026-08-09T02:08:51Z",
-    "last": "2026-08-09T04:08:51Z",
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Ostalbkreis",
-        "lat": 48.8777738,
-        "lon": 10.0337317,
         "approx": false
       }
     ]
