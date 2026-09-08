@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115868/6347433",
     "first": "2026-09-08T07:02:07Z",
     "last": "2026-09-08T07:02:07Z",
+    "veg": false,
+    "source": "Feuerwehr Bochum",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Bochum",
@@ -13,11 +17,7 @@
         "lon": 7.2196635,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Bochum",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Ennepetal|brandeinsatz und brandmeldeanlage",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/69780/6347412",
     "first": "2026-09-08T06:30:53Z",
     "last": "2026-09-08T06:30:53Z",
+    "veg": false,
+    "source": "Feuerwehr Ennepetal",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Ennepetal",
@@ -33,11 +37,7 @@
         "lon": 7.3693335,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Ennepetal",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Dinslaken|gartenlaube durch feuer zerstört",
@@ -6385,26 +6385,6 @@
         "name": "Konstanz",
         "lat": 47.659216,
         "lon": 9.1750718,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ludwigsburg|ludwigsburg: hoher sachschaden bei tiefgaragenbrand",
-    "status": "out",
-    "title": "Ludwigsburg: Hoher Sachschaden bei Tiefgaragenbrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110974/6329717",
-    "first": "2026-08-09T07:12:53Z",
-    "last": "2026-08-09T09:12:53Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Ludwigsburg",
-        "lat": 48.8953937,
-        "lon": 9.1895147,
         "approx": false
       }
     ]
