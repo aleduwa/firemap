@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115881/6349108",
     "first": "2026-09-09T22:11:12Z",
     "last": "2026-09-09T22:11:12Z",
+    "veg": false,
+    "source": "Feuerwehr Oberhausen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Oberhausen",
@@ -13,11 +17,7 @@
         "lon": 6.8514435,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Oberhausen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Mönchengladbach|kellerbrand in einem mehrfamilienhaus",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115879/6349098",
     "first": "2026-09-09T20:57:32Z",
     "last": "2026-09-09T20:57:32Z",
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Mönchengladbach",
@@ -33,11 +37,7 @@
         "lon": 6.4353792,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Mönchengladbach",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Paderborn|brand einer souterrainwohnung in paderborn",
