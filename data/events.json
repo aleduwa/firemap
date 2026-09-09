@@ -1,5 +1,45 @@
 [
   {
+    "base": "Feuerwehr Remscheid|brand in industriebetrieb - schnelles eingreifen verhindert schlimmeres",
+    "status": "out",
+    "title": "Brand in Industriebetrieb - Schnelles Eingreifen verhindert Schlimmeres",
+    "link": "https://www.presseportal.de/blaulicht/pm/115882/6349027",
+    "first": "2026-09-09T15:45:01Z",
+    "last": "2026-09-09T15:45:01Z",
+    "places": [
+      {
+        "name": "Remscheid",
+        "lat": 51.1798706,
+        "lon": 7.1943544,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Remscheid",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Stuttgart|wohnungsbrand in mehrfamilienhaus in stuttgart-feuerbach - drei personen gerettet",
+    "status": "active",
+    "title": "Wohnungsbrand in Mehrfamilienhaus in Stuttgart-Feuerbach - drei Personen gerettet",
+    "link": "https://www.presseportal.de/blaulicht/pm/161590/6348987",
+    "first": "2026-09-09T15:05:10Z",
+    "last": "2026-09-09T15:05:10Z",
+    "places": [
+      {
+        "name": "Stuttgart",
+        "lat": 48.7784485,
+        "lon": 9.1800132,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Stuttgart",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Kreisfeuerwehrverband Sigmaringen|gebäudebrand",
     "status": "active",
     "title": "Gebäudebrand",
@@ -6285,106 +6325,6 @@
         "name": "Ebersbach",
         "lat": 47.9554246,
         "lon": 9.5791447,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|rheinfelden: brand an einem holzlagerunterstand in nordschwaben",
-    "status": "active",
-    "title": "Rheinfelden: Brand an einem Holzlagerunterstand in Nordschwaben",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6330736",
-    "first": "2026-08-10T13:48:58Z",
-    "last": "2026-08-10T15:48:58Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Rheinfelden",
-        "lat": 47.5605924,
-        "lon": 7.7861959,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|weil am rhein: brand auf dach einer fahrradgarage einer schule",
-    "status": "out",
-    "title": "Weil am Rhein: Brand auf Dach einer Fahrradgarage einer Schule",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6330727",
-    "first": "2026-08-10T13:40:41Z",
-    "last": "2026-08-10T13:40:41Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Weil am Rhein",
-        "lat": 47.6056484,
-        "lon": 7.6120793,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|weil am rhein: brand eines pkw in der schutzackerstraße - polizei sucht zeugen",
-    "status": "active",
-    "title": "Weil am Rhein: Brand eines Pkw in der Schutzackerstraße - Polizei sucht Zeugen",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6330725",
-    "first": "2026-08-10T13:39:16Z",
-    "last": "2026-08-10T13:39:16Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Weil am Rhein",
-        "lat": 47.6056484,
-        "lon": 7.6120793,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|weil am rhein: brand auf balkon",
-    "status": "out",
-    "title": "Weil am Rhein: Brand auf Balkon",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6330722",
-    "first": "2026-08-10T13:37:01Z",
-    "last": "2026-08-10T13:37:01Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Weil am Rhein",
-        "lat": 47.6056484,
-        "lon": 7.6120793,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Offenburg|achern - fahrzeugbrand - polizei sucht zeugen",
-    "status": "active",
-    "title": "Achern - Fahrzeugbrand - Polizei sucht Zeugen",
-    "link": "https://www.presseportal.de/blaulicht/pm/110975/6330651",
-    "first": "2026-08-10T12:51:02Z",
-    "last": "2026-08-10T14:51:02Z",
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Achern",
-        "lat": 48.6300161,
-        "lon": 8.0735581,
         "approx": false
       }
     ]
