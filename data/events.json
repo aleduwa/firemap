@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/140932/6348248",
     "first": "2026-09-09T07:10:42Z",
     "last": "2026-09-09T07:10:42Z",
+    "veg": false,
+    "source": "Kreisfeuerwehrverband Sigmaringen",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Sigmaringen",
@@ -13,11 +17,7 @@
         "lon": 9.2165039,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Kreisfeuerwehrverband Sigmaringen",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr und Rettungsdienst Bonn|pkw-brand greift auf geschäftshaus über - weitere pkw brände im verlauf der nacht",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115888/6348240",
     "first": "2026-09-09T06:34:11Z",
     "last": "2026-09-09T06:34:11Z",
+    "veg": false,
+    "source": "Feuerwehr und Rettungsdienst Bonn",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Bonn",
@@ -33,11 +37,7 @@
         "lon": 7.1024635,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr und Rettungsdienst Bonn",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Paderborn|dachstuhlbrand am rippinger weg",
@@ -46,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/173646/6348237",
     "first": "2026-09-09T04:48:05Z",
     "last": "2026-09-09T04:48:05Z",
+    "veg": false,
+    "source": "Feuerwehr Paderborn",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Paderborn",
@@ -53,11 +57,7 @@
         "lon": 8.752653,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Paderborn",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Kreisfeuerwehrverband Landkreis Karlsruhe|scheunenbrand beschädigt angrenzendes wohnhaus",
@@ -6385,126 +6385,6 @@
         "name": "Achern",
         "lat": 48.6300161,
         "lon": 8.0735581,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|zell im wiesental: unbekannte entfachen feuer im garten - polizei sucht zeugen",
-    "status": "active",
-    "title": "Zell im Wiesental: Unbekannte entfachen Feuer im Garten - Polizei sucht Zeugen",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6330410",
-    "first": "2026-08-10T10:48:37Z",
-    "last": "2026-08-10T10:48:37Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Zell im Wiesental",
-        "lat": 47.7080155,
-        "lon": 7.8522798,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Heilbronn|neckar-odenwald-kreis: unfallflucht, unfälle mit verletzten, brand und sachbeschädigung",
-    "status": "out",
-    "title": "Neckar-Odenwald-Kreis: Unfallflucht, Unfälle mit Verletzten, Brand und Sachbeschädigung",
-    "link": "https://www.presseportal.de/blaulicht/pm/110971/6330293",
-    "first": "2026-08-10T09:41:37Z",
-    "last": "2026-08-10T11:41:37Z",
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Neckar-Odenwald-Kreis",
-        "lat": 49.4678557,
-        "lon": 9.2709386,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|heidelberg: brand in kompostwerk - pm 2",
-    "status": "out",
-    "title": "Heidelberg: Brand in Kompostwerk - PM 2",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6330291",
-    "first": "2026-08-10T09:40:26Z",
-    "last": "2026-08-10T09:40:26Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Heidelberg",
-        "lat": 49.4093582,
-        "lon": 8.694724,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|heidelberg: brand in kompostwerk - pm 1",
-    "status": "active",
-    "title": "Heidelberg: Brand in Kompostwerk - PM 1",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6330246",
-    "first": "2026-08-10T09:17:41Z",
-    "last": "2026-08-10T09:17:41Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Heidelberg",
-        "lat": 49.4093582,
-        "lon": 8.694724,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(bc) b30/laupheim - böschungsbrand an der b30 / am sonntag musste die b30 für etwa 45 minuten gesperrt werden.",
-    "status": "active",
-    "title": "(BC) B30/Laupheim - Böschungsbrand an der B30 / Am Sonntag musste die B30 für etwa 45 Minuten gesperrt werden.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6330129",
-    "first": "2026-08-10T08:19:40Z",
-    "last": "2026-08-10T08:19:40Z",
-    "veg": true,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Laupheim",
-        "lat": 48.2300738,
-        "lon": 9.8837005,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Karlsruhe|(ka) pfinztal - hoher sachschaden nach brand einer gaststätte",
-    "status": "contained",
-    "title": "(KA) Pfinztal - Hoher Sachschaden nach Brand einer Gaststätte",
-    "link": "https://www.presseportal.de/blaulicht/pm/110972/6329999",
-    "first": "2026-08-10T06:15:28Z",
-    "last": "2026-08-10T08:15:28Z",
-    "veg": false,
-    "source": "Polizeipräsidium Karlsruhe",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Pfinztal",
-        "lat": 48.9918661,
-        "lon": 8.5553158,
         "approx": false
       }
     ]
