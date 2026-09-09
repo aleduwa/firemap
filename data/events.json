@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/130685/6348223",
     "first": "2026-09-08T23:44:18Z",
     "last": "2026-09-08T23:44:18Z",
+    "veg": false,
+    "source": "Kreisfeuerwehrverband Landkreis Karlsruhe",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Landkreis Karlsruhe",
@@ -13,11 +17,7 @@
         "lon": 8.6106867,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Kreisfeuerwehrverband Landkreis Karlsruhe",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Oberhausen|brand einer gartenlaube in eisenheim - übergreifen auf weitere lauben verhindert",
