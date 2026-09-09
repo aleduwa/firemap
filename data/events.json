@@ -1,11 +1,95 @@
 [
   {
+    "base": "Feuerwehr Paderborn|brand einer souterrainwohnung in paderborn",
+    "status": "active",
+    "title": "Brand einer Souterrainwohnung in Paderborn",
+    "link": "https://www.presseportal.de/blaulicht/pm/173646/6349095",
+    "first": "2026-09-09T20:30:29Z",
+    "last": "2026-09-09T20:30:29Z",
+    "places": [
+      {
+        "name": "Paderborn",
+        "lat": 51.7177044,
+        "lon": 8.752653,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Paderborn",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Dortmund|gemeldeter dachbrand in neuasseln",
+    "status": "out",
+    "title": "Gemeldeter Dachbrand in Neuasseln",
+    "link": "https://www.presseportal.de/blaulicht/pm/115869/6349091",
+    "first": "2026-09-09T20:11:06Z",
+    "last": "2026-09-09T20:11:06Z",
+    "places": [
+      {
+        "name": "Dortmund",
+        "lat": 51.5142273,
+        "lon": 7.4652789,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Dortmund",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Kreisfeuerwehrverband Landkreis Karlsruhe|flammen greifen auf wohnhäuser über: großeinsatz der feuerwehren in kronau",
+    "status": "active",
+    "title": "Flammen greifen auf Wohnhäuser über: Großeinsatz der Feuerwehren in Kronau",
+    "link": "https://www.presseportal.de/blaulicht/pm/130685/6349086",
+    "first": "2026-09-09T19:34:32Z",
+    "last": "2026-09-09T19:34:32Z",
+    "places": [
+      {
+        "name": "Landkreis Karlsruhe",
+        "lat": 49.0876163,
+        "lon": 8.6106867,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Kreisfeuerwehrverband Landkreis Karlsruhe",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Gladbeck|kellerbrand in der paßmannstraße - feuerwehr verhindert weitere brandausbreitung",
+    "status": "active",
+    "title": "Kellerbrand in der Paßmannstraße - Feuerwehr verhindert weitere Brandausbreitung",
+    "link": "https://www.presseportal.de/blaulicht/pm/117806/6349082",
+    "first": "2026-09-09T18:48:36Z",
+    "last": "2026-09-09T18:48:36Z",
+    "places": [
+      {
+        "name": "Gladbeck",
+        "lat": 51.5718665,
+        "lon": 6.9877343,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Gladbeck",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Remscheid|brand in industriebetrieb - schnelles eingreifen verhindert schlimmeres",
     "status": "out",
     "title": "Brand in Industriebetrieb - Schnelles Eingreifen verhindert Schlimmeres",
     "link": "https://www.presseportal.de/blaulicht/pm/115882/6349027",
     "first": "2026-09-09T15:45:01Z",
     "last": "2026-09-09T15:45:01Z",
+    "veg": false,
+    "source": "Feuerwehr Remscheid",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Remscheid",
@@ -13,11 +97,7 @@
         "lon": 7.1943544,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Remscheid",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Stuttgart|wohnungsbrand in mehrfamilienhaus in stuttgart-feuerbach - drei personen gerettet",
@@ -26,6 +106,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/161590/6348987",
     "first": "2026-09-09T15:05:10Z",
     "last": "2026-09-09T15:05:10Z",
+    "veg": false,
+    "source": "Feuerwehr Stuttgart",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Stuttgart",
@@ -33,11 +117,7 @@
         "lon": 9.1800132,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Stuttgart",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Kreisfeuerwehrverband Sigmaringen|gebäudebrand",
