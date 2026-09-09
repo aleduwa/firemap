@@ -1,5 +1,65 @@
 [
   {
+    "base": "Kreisfeuerwehrverband Sigmaringen|gebäudebrand",
+    "status": "active",
+    "title": "Gebäudebrand",
+    "link": "https://www.presseportal.de/blaulicht/pm/140932/6348248",
+    "first": "2026-09-09T07:10:42Z",
+    "last": "2026-09-09T07:10:42Z",
+    "places": [
+      {
+        "name": "Sigmaringen",
+        "lat": 48.0869139,
+        "lon": 9.2165039,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Kreisfeuerwehrverband Sigmaringen",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr und Rettungsdienst Bonn|pkw-brand greift auf geschäftshaus über - weitere pkw brände im verlauf der nacht",
+    "status": "contained",
+    "title": "PKW-Brand greift auf Geschäftshaus über - weitere PKW Brände im Verlauf der Nacht",
+    "link": "https://www.presseportal.de/blaulicht/pm/115888/6348240",
+    "first": "2026-09-09T06:34:11Z",
+    "last": "2026-09-09T06:34:11Z",
+    "places": [
+      {
+        "name": "Bonn",
+        "lat": 50.7352621,
+        "lon": 7.1024635,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr und Rettungsdienst Bonn",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Paderborn|dachstuhlbrand am rippinger weg",
+    "status": "out",
+    "title": "Dachstuhlbrand Am Rippinger Weg",
+    "link": "https://www.presseportal.de/blaulicht/pm/173646/6348237",
+    "first": "2026-09-09T04:48:05Z",
+    "last": "2026-09-09T04:48:05Z",
+    "places": [
+      {
+        "name": "Paderborn",
+        "lat": 51.7177044,
+        "lon": 8.752653,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Paderborn",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Kreisfeuerwehrverband Landkreis Karlsruhe|scheunenbrand beschädigt angrenzendes wohnhaus",
     "status": "contained",
     "title": "Scheunenbrand beschädigt angrenzendes Wohnhaus",
