@@ -1,11 +1,55 @@
 [
   {
+    "base": "Feuerwehr Oberhausen|zimmerbrand in oberhausen-lirich-süd - eine person verstorben",
+    "status": "out",
+    "title": "Zimmerbrand in Oberhausen-Lirich-Süd - eine Person verstorben",
+    "link": "https://www.presseportal.de/blaulicht/pm/115881/6349108",
+    "first": "2026-09-09T22:11:12Z",
+    "last": "2026-09-09T22:11:12Z",
+    "places": [
+      {
+        "name": "Oberhausen",
+        "lat": 51.4696137,
+        "lon": 6.8514435,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Oberhausen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Mönchengladbach|kellerbrand in einem mehrfamilienhaus",
+    "status": "active",
+    "title": "Kellerbrand in einem Mehrfamilienhaus",
+    "link": "https://www.presseportal.de/blaulicht/pm/115879/6349098",
+    "first": "2026-09-09T20:57:32Z",
+    "last": "2026-09-09T20:57:32Z",
+    "places": [
+      {
+        "name": "Mönchengladbach",
+        "lat": 51.1947131,
+        "lon": 6.4353792,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Paderborn|brand einer souterrainwohnung in paderborn",
     "status": "active",
     "title": "Brand einer Souterrainwohnung in Paderborn",
     "link": "https://www.presseportal.de/blaulicht/pm/173646/6349095",
     "first": "2026-09-09T20:30:29Z",
     "last": "2026-09-09T20:30:29Z",
+    "veg": false,
+    "source": "Feuerwehr Paderborn",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Paderborn",
@@ -13,11 +57,7 @@
         "lon": 8.752653,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Paderborn",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Dortmund|gemeldeter dachbrand in neuasseln",
@@ -26,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115869/6349091",
     "first": "2026-09-09T20:11:06Z",
     "last": "2026-09-09T20:11:06Z",
+    "veg": false,
+    "source": "Feuerwehr Dortmund",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Dortmund",
@@ -33,11 +77,7 @@
         "lon": 7.4652789,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Dortmund",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Kreisfeuerwehrverband Landkreis Karlsruhe|flammen greifen auf wohnhäuser über: großeinsatz der feuerwehren in kronau",
@@ -46,6 +86,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/130685/6349086",
     "first": "2026-09-09T19:34:32Z",
     "last": "2026-09-09T19:34:32Z",
+    "veg": false,
+    "source": "Kreisfeuerwehrverband Landkreis Karlsruhe",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Landkreis Karlsruhe",
@@ -53,11 +97,7 @@
         "lon": 8.6106867,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Kreisfeuerwehrverband Landkreis Karlsruhe",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Gladbeck|kellerbrand in der paßmannstraße - feuerwehr verhindert weitere brandausbreitung",
@@ -66,6 +106,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/117806/6349082",
     "first": "2026-09-09T18:48:36Z",
     "last": "2026-09-09T18:48:36Z",
+    "veg": false,
+    "source": "Feuerwehr Gladbeck",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Gladbeck",
@@ -73,11 +117,7 @@
         "lon": 6.9877343,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Gladbeck",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Remscheid|brand in industriebetrieb - schnelles eingreifen verhindert schlimmeres",
