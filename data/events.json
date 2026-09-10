@@ -6448,25 +6448,5 @@
         "approx": false
       }
     ]
-  },
-  {
-    "base": "Feuerwehr Stuttgart|küchenbrand in mehrfamilienhaus",
-    "status": "contained",
-    "title": "Küchenbrand in Mehrfamilienhaus",
-    "link": "https://www.presseportal.de/blaulicht/pm/161590/6330872",
-    "first": "2025-12-19T05:54:14Z",
-    "last": "2026-08-11T06:46:08Z",
-    "veg": false,
-    "source": "Feuerwehr Stuttgart",
-    "updates": 1,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stuttgart",
-        "lat": 48.7784485,
-        "lon": 9.1800132,
-        "approx": false
-      }
-    ]
   }
 ]
