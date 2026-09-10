@@ -1,11 +1,75 @@
 [
   {
+    "base": "Feuerwehr Weinheim|nächtlicher brand in steinklingen. bewohner verhindern größere brandausbreitung",
+    "status": "out",
+    "title": "Nächtlicher Brand in Steinklingen. Bewohner verhindern größere Brandausbreitung",
+    "link": "https://www.presseportal.de/blaulicht/pm/179375/6349815",
+    "first": "2026-09-10T15:57:30Z",
+    "last": "2026-09-10T15:57:30Z",
+    "places": [
+      {
+        "name": "Weinheim",
+        "lat": 49.5462349,
+        "lon": 8.6717458,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Weinheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|rheinfelden: bundespolizei löscht brand an fahrzeug",
+    "status": "active",
+    "title": "Rheinfelden: Bundespolizei löscht Brand an Fahrzeug",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6349795",
+    "first": "2026-09-10T15:28:19Z",
+    "last": "2026-09-10T15:28:19Z",
+    "places": [
+      {
+        "name": "Rheinfelden",
+        "lat": 47.5605924,
+        "lon": 7.7861959,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|lörrach: fahrzeugbrand auf autobahnzubringer",
+    "status": "contained",
+    "title": "Lörrach: Fahrzeugbrand auf Autobahnzubringer",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6349793",
+    "first": "2026-09-10T15:26:55Z",
+    "last": "2026-09-10T15:26:55Z",
+    "places": [
+      {
+        "name": "Lörrach",
+        "lat": 47.6120896,
+        "lon": 7.6607218,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Erkrath|tag der offenen tür in der feuer- und rettungswache in erkrath-hochdahl",
     "status": "active",
     "title": "Tag der offenen Tür in der Feuer- und Rettungswache in Erkrath-Hochdahl",
     "link": "https://www.presseportal.de/blaulicht/pm/116243/6349671",
     "first": "2026-09-10T13:39:41Z",
     "last": "2026-09-10T13:39:41Z",
+    "veg": false,
+    "source": "Feuerwehr Erkrath",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Erkrath",
@@ -13,11 +77,7 @@
         "lon": 6.9056079,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Erkrath",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Oberhausen|zimmerbrand in oberhausen-lirich-süd - eine person verstorben",
@@ -6180,38 +6240,6 @@
     ]
   },
   {
-    "base": "Polizeipräsidium Offenburg|biberach / zell a.h. - feuerwehr und polizei im einsatz bei waldbränden",
-    "status": "active",
-    "title": "Biberach / Zell a.H. - Feuerwehr und Polizei im EInsatz bei Waldbränden",
-    "link": "https://www.presseportal.de/blaulicht/pm/110975/6331570",
-    "first": "2026-08-11T15:05:49Z",
-    "last": "2026-08-11T15:05:49Z",
-    "veg": true,
-    "source": "Polizeipräsidium Offenburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Biberach",
-        "lat": 48.3388818,
-        "lon": 8.0281354,
-        "approx": false
-      },
-      {
-        "name": "Zell a.H",
-        "lat": 48.3482133,
-        "lon": 8.0653343,
-        "approx": false
-      },
-      {
-        "name": "B 33 zwischen Biberach und Haslach",
-        "lat": 48.30789,
-        "lon": 8.05765,
-        "approx": true
-      }
-    ]
-  },
-  {
     "base": "Polizeipräsidium Offenburg|rastatt, a5 - vollsperrung: lastwagen in brand geraten",
     "status": "active",
     "title": "Rastatt, A5 - Vollsperrung: Lastwagen in Brand geraten",
@@ -6227,144 +6255,6 @@
         "name": "Rastatt",
         "lat": 48.8584568,
         "lon": 8.2040452,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|landkreis waldshut - bad säckingen: großbrand bei einem industriebetrieb mit hohem sachschaden",
-    "status": "active",
-    "title": "Landkreis Waldshut - Bad Säckingen: Großbrand bei einem Industriebetrieb mit hohem Sachschaden - Folgemeldung",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6331564",
-    "first": "2026-08-11T14:47:25Z",
-    "last": "2026-08-11T16:47:25Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 1,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Bad Säckingen",
-        "lat": 47.5527459,
-        "lon": 7.9410556,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|wiesloch/rhein-neckar-kreis: feuerwehr kann flächenbrand schnell löschen",
-    "status": "active",
-    "title": "Wiesloch/Rhein-Neckar-Kreis: Feuerwehr kann Flächenbrand schnell löschen",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6331542",
-    "first": "2026-08-11T14:07:52Z",
-    "last": "2026-08-11T16:07:52Z",
-    "veg": true,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Wiesloch",
-        "lat": 49.2942599,
-        "lon": 8.698707,
-        "approx": false
-      },
-      {
-        "name": "Rhein-Neckar-Kreis",
-        "lat": 49.3684797,
-        "lon": 8.7352403,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|küssaberg/ettikon: verlassene feuerstelle durch feuerwehr abgelöscht",
-    "status": "out",
-    "title": "Küssaberg/Ettikon: Verlassene Feuerstelle durch Feuerwehr abgelöscht",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6331439",
-    "first": "2026-08-11T12:28:43Z",
-    "last": "2026-08-11T14:28:43Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Küssaberg",
-        "lat": 47.601678,
-        "lon": 8.3212852,
-        "approx": false
-      },
-      {
-        "name": "Ettikon",
-        "lat": 47.6158593,
-        "lon": 8.267909,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|ühlingen-birkendorf / berau: flächenbrand",
-    "status": "contained",
-    "title": "Ühlingen-Birkendorf / Berau: Flächenbrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6331437",
-    "first": "2026-08-11T12:27:29Z",
-    "last": "2026-08-11T14:27:29Z",
-    "veg": true,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Ühlingen-Birkendorf",
-        "lat": 47.7252375,
-        "lon": 8.301544,
-        "approx": false
-      },
-      {
-        "name": "Berau",
-        "lat": 47.695685,
-        "lon": 8.2587575,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|heidelberg: brandgeschehen im garten eines wohnhauses",
-    "status": "out",
-    "title": "Heidelberg: Brandgeschehen im Garten eines Wohnhauses",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6331425",
-    "first": "2026-08-11T12:16:41Z",
-    "last": "2026-08-11T14:16:41Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Heidelberg",
-        "lat": 49.4093582,
-        "lon": 8.694724,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(ul) ulm - schmorbrand in verteilerkasten / am montag kam es in einem geschäft in der ulmer innenstadt zu einem kleinen brand.",
-    "status": "active",
-    "title": "(UL) Ulm - Schmorbrand in Verteilerkasten / Am Montag kam es in einem Geschäft in der Ulmer Innenstadt zu einem kleinen Brand.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6331374",
-    "first": "2026-08-11T11:20:03Z",
-    "last": "2026-08-11T13:20:03Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Ulm",
-        "lat": 48.3984968,
-        "lon": 9.9912458,
         "approx": false
       }
     ]
