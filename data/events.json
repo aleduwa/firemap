@@ -1,51 +1,11 @@
 [
   {
-    "base": "Feuerwehr Weinheim|nächtlicher brand in steinklingen. bewohner verhindern größere brandausbreitung",
+    "base": "Polizeipräsidium Freiburg|lörrach: brand in mehrfamilienhaus",
     "status": "out",
-    "title": "Nächtlicher Brand in Steinklingen. Bewohner verhindern größere Brandausbreitung",
-    "link": "https://www.presseportal.de/blaulicht/pm/179375/6349815",
-    "first": "2026-09-10T15:57:30Z",
-    "last": "2026-09-10T15:57:30Z",
-    "places": [
-      {
-        "name": "Weinheim",
-        "lat": 49.5462349,
-        "lon": 8.6717458,
-        "approx": false
-      }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Weinheim",
-    "region": "BW",
-    "updates": 0
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|rheinfelden: bundespolizei löscht brand an fahrzeug",
-    "status": "active",
-    "title": "Rheinfelden: Bundespolizei löscht Brand an Fahrzeug",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6349795",
-    "first": "2026-09-10T15:28:19Z",
-    "last": "2026-09-10T15:28:19Z",
-    "places": [
-      {
-        "name": "Rheinfelden",
-        "lat": 47.5605924,
-        "lon": 7.7861959,
-        "approx": false
-      }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "region": "BW",
-    "updates": 0
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|lörrach: fahrzeugbrand auf autobahnzubringer",
-    "status": "contained",
-    "title": "Lörrach: Fahrzeugbrand auf Autobahnzubringer",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6349793",
-    "first": "2026-09-10T15:26:55Z",
-    "last": "2026-09-10T15:26:55Z",
+    "title": "Lörrach: Brand in Mehrfamilienhaus",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6349870",
+    "first": "2026-09-10T20:47:36Z",
+    "last": "2026-09-10T20:47:36Z",
     "places": [
       {
         "name": "Lörrach",
@@ -58,6 +18,66 @@
     "source": "Polizeipräsidium Freiburg",
     "region": "BW",
     "updates": 0
+  },
+  {
+    "base": "Feuerwehr Weinheim|nächtlicher brand in steinklingen. bewohner verhindern größere brandausbreitung",
+    "status": "out",
+    "title": "Nächtlicher Brand in Steinklingen. Bewohner verhindern größere Brandausbreitung",
+    "link": "https://www.presseportal.de/blaulicht/pm/179375/6349815",
+    "first": "2026-09-10T15:57:30Z",
+    "last": "2026-09-10T15:57:30Z",
+    "veg": false,
+    "source": "Feuerwehr Weinheim",
+    "updates": 0,
+    "region": "BW",
+    "places": [
+      {
+        "name": "Weinheim",
+        "lat": 49.5462349,
+        "lon": 8.6717458,
+        "approx": false
+      }
+    ]
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|rheinfelden: bundespolizei löscht brand an fahrzeug",
+    "status": "active",
+    "title": "Rheinfelden: Bundespolizei löscht Brand an Fahrzeug",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6349795",
+    "first": "2026-09-10T15:28:19Z",
+    "last": "2026-09-10T15:28:19Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "region": "BW",
+    "places": [
+      {
+        "name": "Rheinfelden",
+        "lat": 47.5605924,
+        "lon": 7.7861959,
+        "approx": false
+      }
+    ]
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|lörrach: fahrzeugbrand auf autobahnzubringer",
+    "status": "contained",
+    "title": "Lörrach: Fahrzeugbrand auf Autobahnzubringer",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6349793",
+    "first": "2026-09-10T15:26:55Z",
+    "last": "2026-09-10T15:26:55Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "region": "BW",
+    "places": [
+      {
+        "name": "Lörrach",
+        "lat": 47.6120896,
+        "lon": 7.6607218,
+        "approx": false
+      }
+    ]
   },
   {
     "base": "Feuerwehr Erkrath|tag der offenen tür in der feuer- und rettungswache in erkrath-hochdahl",
