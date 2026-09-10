@@ -1,11 +1,55 @@
 [
   {
+    "base": "Feuerwehr Oberhausen|brand im hochregallager erfordert den einsatz der höhenrettung",
+    "status": "active",
+    "title": "Brand im Hochregallager erfordert den Einsatz der Höhenrettung",
+    "link": "https://www.presseportal.de/blaulicht/pm/115881/6349894",
+    "first": "2026-09-11T01:17:35Z",
+    "last": "2026-09-11T01:17:35Z",
+    "places": [
+      {
+        "name": "Oberhausen",
+        "lat": 51.4696137,
+        "lon": 6.8514435,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Oberhausen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Remscheid|brand in industriebetrieb",
+    "status": "active",
+    "title": "Brand in Industriebetrieb",
+    "link": "https://www.presseportal.de/blaulicht/pm/115882/6349892",
+    "first": "2026-09-11T00:34:57Z",
+    "last": "2026-09-11T00:34:57Z",
+    "places": [
+      {
+        "name": "Remscheid",
+        "lat": 51.1798706,
+        "lon": 7.1943544,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Remscheid",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Freiwillige Feuerwehr Hennef|b4 - dachstuhlbrand, sirenenalarm in hennef",
     "status": "active",
     "title": "B4 - Dachstuhlbrand, Sirenenalarm in Hennef",
     "link": "https://www.presseportal.de/blaulicht/pm/135052/6349886",
     "first": "2026-09-10T22:54:43Z",
     "last": "2026-09-10T22:54:43Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Hennef",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Hennef",
@@ -13,11 +57,7 @@
         "lon": 7.2847945,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Hennef",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|lörrach: brand in mehrfamilienhaus",
