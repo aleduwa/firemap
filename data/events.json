@@ -1,5 +1,25 @@
 [
   {
+    "base": "Feuerwehr Erkrath|tag der offenen tür in der feuer- und rettungswache in erkrath-hochdahl",
+    "status": "active",
+    "title": "Tag der offenen Tür in der Feuer- und Rettungswache in Erkrath-Hochdahl",
+    "link": "https://www.presseportal.de/blaulicht/pm/116243/6349671",
+    "first": "2026-09-10T13:39:41Z",
+    "last": "2026-09-10T13:39:41Z",
+    "places": [
+      {
+        "name": "Erkrath",
+        "lat": 51.2209866,
+        "lon": 6.9056079,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Erkrath",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Oberhausen|zimmerbrand in oberhausen-lirich-süd - eine person verstorben",
     "status": "out",
     "title": "Zimmerbrand in Oberhausen-Lirich-Süd - eine Person verstorben",
@@ -6350,46 +6370,6 @@
     ]
   },
   {
-    "base": "Polizeipräsidium Heilbronn|neckar-odenwald-kreis: brand und kassen in kirche aufgebrochen",
-    "status": "out",
-    "title": "Neckar-Odenwald-Kreis: Brand und Kassen in Kirche aufgebrochen",
-    "link": "https://www.presseportal.de/blaulicht/pm/110971/6331355",
-    "first": "2026-08-11T11:02:26Z",
-    "last": "2026-08-11T13:02:26Z",
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Neckar-Odenwald-Kreis",
-        "lat": 49.4678557,
-        "lon": 9.2709386,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Heilbronn|main-tauber-kreis: von dach gestürzt, brand und einbruch",
-    "status": "out",
-    "title": "Main-Tauber-Kreis: Von Dach gestürzt, Brand und Einbruch",
-    "link": "https://www.presseportal.de/blaulicht/pm/110971/6331340",
-    "first": "2026-08-11T10:58:16Z",
-    "last": "2026-08-11T12:58:16Z",
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Main-Tauber-Kreis",
-        "lat": 49.5713631,
-        "lon": 9.6999301,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Polizeipräsidium Heilbronn|stadt- und landkreis heilbronn: flächenbrand, fahrzeugbrand und automatenaufbruch",
     "status": "out",
     "title": "Stadt- und Landkreis Heilbronn: Flächenbrand, Fahrzeugbrand und Automatenaufbruch",
@@ -6405,46 +6385,6 @@
         "name": "Stadt-",
         "lat": 49.4093582,
         "lon": 8.694724,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ludwigsburg|b295 / ditzingen: mehrere verletzte nach unfall an der anschlussstelle stuttgart-feuerbach - zeugen gesucht",
-    "status": "active",
-    "title": "B295 / Ditzingen: mehrere Verletzte nach Unfall an der Anschlussstelle Stuttgart-Feuerbach - Zeugen gesucht",
-    "link": "https://www.presseportal.de/blaulicht/pm/110974/6331268",
-    "first": "2026-08-11T09:54:52Z",
-    "last": "2026-08-11T11:54:52Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Ditzingen",
-        "lat": 48.8263983,
-        "lon": 9.0658446,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(gp) ebersbach - fritteuse in flammen / am montag sorgte ein küchenbrand für einen feuerwehr- und polizeieinsatz in ebersbach.",
-    "status": "active",
-    "title": "(GP) Ebersbach - Fritteuse in Flammen / Am Montag sorgte ein Küchenbrand für einen Feuerwehr- und Polizeieinsatz in Ebersbach.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6331100",
-    "first": "2026-08-11T08:04:28Z",
-    "last": "2026-08-11T10:04:28Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Ebersbach",
-        "lat": 47.9554246,
-        "lon": 9.5791447,
         "approx": false
       }
     ]
