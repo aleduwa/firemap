@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115876/6350610",
     "first": "2026-09-11T20:35:02Z",
     "last": "2026-09-11T20:35:02Z",
+    "veg": false,
+    "source": "Feuerwehr Düsseldorf",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Düsseldorf",
@@ -13,11 +17,7 @@
         "lon": 6.7763137,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Düsseldorf",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(ul) blaubeuren - brand auf landwirtschaftlichem anwesen",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6350600",
     "first": "2026-09-11T19:31:49Z",
     "last": "2026-09-11T19:31:49Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Blaubeuren",
@@ -33,11 +37,7 @@
         "lon": 9.7847091,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|weinheim/rhein-neckar-kreis: vegetationsbrand im gleisbereich - zugverkehr eingestellt - pm 1",
