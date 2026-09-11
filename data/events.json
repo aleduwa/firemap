@@ -1,11 +1,35 @@
 [
   {
+    "base": "Polizeipräsidium Mannheim|mannheim: brand in wohnhaus in der innenstadt - pressemitteilung nr. 1",
+    "status": "active",
+    "title": "Mannheim: Brand in Wohnhaus in der Innenstadt - Pressemitteilung Nr. 1",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6349901",
+    "first": "2026-09-11T05:15:35Z",
+    "last": "2026-09-11T05:15:35Z",
+    "places": [
+      {
+        "name": "Mannheim",
+        "lat": 49.4892913,
+        "lon": 8.4673098,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Oberhausen|brand im hochregallager erfordert den einsatz der höhenrettung",
     "status": "active",
     "title": "Brand im Hochregallager erfordert den Einsatz der Höhenrettung",
     "link": "https://www.presseportal.de/blaulicht/pm/115881/6349894",
     "first": "2026-09-11T01:17:35Z",
     "last": "2026-09-11T01:17:35Z",
+    "veg": false,
+    "source": "Feuerwehr Oberhausen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Oberhausen",
@@ -13,11 +37,7 @@
         "lon": 6.8514435,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Oberhausen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Remscheid|brand in industriebetrieb",
@@ -26,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115882/6349892",
     "first": "2026-09-11T00:34:57Z",
     "last": "2026-09-11T00:34:57Z",
+    "veg": false,
+    "source": "Feuerwehr Remscheid",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Remscheid",
@@ -33,11 +57,7 @@
         "lon": 7.1943544,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Remscheid",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Hennef|b4 - dachstuhlbrand, sirenenalarm in hennef",
