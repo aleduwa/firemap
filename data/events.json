@@ -1,11 +1,55 @@
 [
   {
+    "base": "Polizeipräsidium Aalen|ostalbkreis: einbruch - fahrzeugbrand - diebstahl - straßenverkehrsgefährdung - sonstiges",
+    "status": "out",
+    "title": "Ostalbkreis: Einbruch - Fahrzeugbrand - Diebstahl - Straßenverkehrsgefährdung - Sonstiges",
+    "link": "https://www.presseportal.de/blaulicht/pm/110969/6350014",
+    "first": "2026-09-11T09:11:21Z",
+    "last": "2026-09-11T09:11:21Z",
+    "places": [
+      {
+        "name": "Ostalbkreis",
+        "lat": 48.8777738,
+        "lon": 10.0337317,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Stuttgart|wohnungsbrand in mehrfamilienhaus im stuttgarter süden",
+    "status": "active",
+    "title": "Wohnungsbrand in Mehrfamilienhaus im Stuttgarter Süden",
+    "link": "https://www.presseportal.de/blaulicht/pm/161590/6349954",
+    "first": "2026-09-11T08:02:59Z",
+    "last": "2026-09-11T08:02:59Z",
+    "places": [
+      {
+        "name": "Stuttgart",
+        "lat": 48.7784485,
+        "lon": 9.1800132,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Stuttgart",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Mannheim|mannheim: brand in wohnhaus in der innenstadt - pressemitteilung nr. 1",
     "status": "active",
     "title": "Mannheim: Brand in Wohnhaus in der Innenstadt - Pressemitteilung Nr. 1",
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6349901",
     "first": "2026-09-11T05:15:35Z",
     "last": "2026-09-11T05:15:35Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Mannheim",
@@ -13,11 +57,7 @@
         "lon": 8.4673098,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Oberhausen|brand im hochregallager erfordert den einsatz der höhenrettung",
@@ -6275,66 +6315,6 @@
         "name": "Heidelberg",
         "lat": 49.4093582,
         "lon": 8.694724,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Heilbronn|stadt- und landkreis heilbronn: einbruch und brände",
-    "status": "active",
-    "title": "Stadt- und Landkreis Heilbronn: Einbruch und Brände",
-    "link": "https://www.presseportal.de/blaulicht/pm/110971/6331835",
-    "first": "2026-08-12T08:17:36Z",
-    "last": "2026-08-12T08:17:36Z",
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stadt-",
-        "lat": 49.4093582,
-        "lon": 8.694724,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Aalen|ostalbkreis: wohnung verwüstet - unfallflucht - diebstahl - brand - von hund gebissen - pkw zerkratzt - sonstiges",
-    "status": "out",
-    "title": "Ostalbkreis: Wohnung verwüstet - Unfallflucht - Diebstahl - Brand - Von Hund gebissen - Pkw zerkratzt - Sonstiges",
-    "link": "https://www.presseportal.de/blaulicht/pm/110969/6331703",
-    "first": "2026-08-12T06:44:02Z",
-    "last": "2026-08-12T08:44:02Z",
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Ostalbkreis",
-        "lat": 48.8777738,
-        "lon": 10.0337317,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Offenburg|friesenheim - gebäudebrand",
-    "status": "contained",
-    "title": "Friesenheim - Gebäudebrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110975/6331666",
-    "first": "2026-08-12T05:58:55Z",
-    "last": "2026-08-12T07:58:55Z",
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Friesenheim",
-        "lat": 48.3734866,
-        "lon": 7.882329,
         "approx": false
       }
     ]
