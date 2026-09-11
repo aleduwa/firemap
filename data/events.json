@@ -1,5 +1,91 @@
 [
   {
+    "base": "Polizeipräsidium Mannheim|weinheim/rhein-neckar-kreis: vegetationsbrand im gleisbereich - zugverkehr eingestellt - pm 1",
+    "status": "out",
+    "title": "Weinheim/Rhein-Neckar-Kreis: Vegetationsbrand im Gleisbereich - Zugverkehr eingestellt - PM 1",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6350589",
+    "first": "2026-09-11T17:49:46Z",
+    "last": "2026-09-11T18:11:57Z",
+    "places": [
+      {
+        "name": "Weinheim",
+        "lat": 49.5462349,
+        "lon": 8.6717458,
+        "approx": false
+      },
+      {
+        "name": "Rhein-Neckar-Kreis",
+        "lat": 49.3684797,
+        "lon": 8.7352403,
+        "approx": false
+      }
+    ],
+    "veg": true,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 1
+  },
+  {
+    "base": "Feuerwehr Wuppertal|durch den einsatz der feuerwehr konnte das abbrennen einer gartenhütte und eines baumes verhindert werden.",
+    "status": "out",
+    "title": "Durch den Einsatz der Feuerwehr konnte das Abbrennen einer Gartenhütte und eines Baumes verhindert werden.",
+    "link": "https://www.presseportal.de/blaulicht/pm/115885/6350581",
+    "first": "2026-09-11T17:14:41Z",
+    "last": "2026-09-11T17:14:41Z",
+    "places": [
+      {
+        "name": "Wuppertal",
+        "lat": 51.264018,
+        "lon": 7.1780374,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Wuppertal",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Düsseldorf|folgemeldung: feuer im gewerbebetrieb - zeitweise warnung vor geruchsbelästigung durch brandrauch",
+    "status": "active",
+    "title": "FOLGEMELDUNG: Feuer im Gewerbebetrieb - zeitweise Warnung vor Geruchsbelästigung durch Brandrauch",
+    "link": "https://www.presseportal.de/blaulicht/pm/115876/6350552",
+    "first": "2026-09-11T15:34:50Z",
+    "last": "2026-09-11T15:34:50Z",
+    "places": [
+      {
+        "name": "Düsseldorf",
+        "lat": 51.2254018,
+        "lon": 6.7763137,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Düsseldorf",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Düsseldorf|erstmeldung: feuer im gewerbebetrieb - feuerwehr leitet löschmaßnahmen ein",
+    "status": "active",
+    "title": "ERSTMELDUNG: Feuer im Gewerbebetrieb - Feuerwehr leitet Löschmaßnahmen ein",
+    "link": "https://www.presseportal.de/blaulicht/pm/115876/6350520",
+    "first": "2026-09-11T14:40:45Z",
+    "last": "2026-09-11T14:40:45Z",
+    "places": [
+      {
+        "name": "Düsseldorf",
+        "lat": 51.2254018,
+        "lon": 6.7763137,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Düsseldorf",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Aalen|ostalbkreis: einbruch - fahrzeugbrand - diebstahl - straßenverkehrsgefährdung - sonstiges",
     "status": "out",
     "title": "Ostalbkreis: Einbruch - Fahrzeugbrand - Diebstahl - Straßenverkehrsgefährdung - Sonstiges",
@@ -6108,26 +6194,6 @@
     ]
   },
   {
-    "base": "Polizeipräsidium Heilbronn|neckar-odenwald-kreis: brand",
-    "status": "active",
-    "title": "Neckar-Odenwald-Kreis: Brand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110971/6332248",
-    "first": "2026-08-12T14:37:50Z",
-    "last": "2026-08-12T16:37:50Z",
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Neckar-Odenwald-Kreis",
-        "lat": 49.4678557,
-        "lon": 9.2709386,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Polizeipräsidium Aalen|rems-murr-kreis: pkw und flächenbrand, arbeitsunfall",
     "status": "active",
     "title": "Rems-Murr-Kreis: Pkw und Flächenbrand, Arbeitsunfall",
@@ -6150,112 +6216,6 @@
         "lat": 48.80572,
         "lon": 9.4562,
         "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Pforzheim|(pf) karlsbad/pforzheim - fahrzeugbrand auf der autobahn 8",
-    "status": "active",
-    "title": "(PF) Karlsbad/Pforzheim - Fahrzeugbrand auf der Autobahn 8",
-    "link": "https://www.presseportal.de/blaulicht/pm/137462/6332099",
-    "first": "2026-08-12T11:51:33Z",
-    "last": "2026-08-12T13:51:33Z",
-    "veg": true,
-    "source": "Polizeipräsidium Pforzheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Karlsbad",
-        "lat": 48.9038411,
-        "lon": 8.5088293,
-        "approx": false
-      },
-      {
-        "name": "Pforzheim",
-        "lat": 48.890934,
-        "lon": 8.7025509,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|lauchringen: brand auf betriebsgelände",
-    "status": "active",
-    "title": "Lauchringen: Brand auf Betriebsgelände",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6332092",
-    "first": "2026-08-12T11:47:51Z",
-    "last": "2026-08-12T13:47:51Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Lauchringen",
-        "lat": 47.6279841,
-        "lon": 8.313767,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|laufenburg: wiesenbrand auf privatgrundstück",
-    "status": "contained",
-    "title": "Laufenburg: Wiesenbrand auf Privatgrundstück",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6332088",
-    "first": "2026-08-12T11:45:55Z",
-    "last": "2026-08-12T13:45:55Z",
-    "veg": true,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Laufenburg",
-        "lat": 47.5671976,
-        "lon": 8.0599414,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|lauchringen: feuer noch vor eintreffen der einsatzkräfte gelöscht",
-    "status": "out",
-    "title": "Lauchringen: Feuer noch vor Eintreffen der Einsatzkräfte gelöscht",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6332087",
-    "first": "2026-08-12T11:45:03Z",
-    "last": "2026-08-12T13:45:03Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Lauchringen",
-        "lat": 47.6279841,
-        "lon": 8.313767,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Karlsruhe|(ka) bretten - brand an einfamilienhaus verursacht hohen sachschaden",
-    "status": "out",
-    "title": "(KA) Bretten - Brand an Einfamilienhaus verursacht hohen Sachschaden",
-    "link": "https://www.presseportal.de/blaulicht/pm/110972/6332055",
-    "first": "2026-08-12T11:13:00Z",
-    "last": "2026-08-12T13:13:00Z",
-    "veg": false,
-    "source": "Polizeipräsidium Karlsruhe",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Bretten",
-        "lat": 49.0366265,
-        "lon": 8.7068077,
-        "approx": false
       }
     ]
   },
