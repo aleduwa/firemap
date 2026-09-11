@@ -1,11 +1,55 @@
 [
   {
+    "base": "Feuerwehr Düsseldorf|abschlussmeldung: feuer im gewerbebetrieb - umfangreiche nachlöscharbeiten, ein mensch schwer verletzt",
+    "status": "out",
+    "title": "Abschlussmeldung: Feuer im Gewerbebetrieb - Umfangreiche Nachlöscharbeiten, ein Mensch schwer verletzt",
+    "link": "https://www.presseportal.de/blaulicht/pm/115876/6350610",
+    "first": "2026-09-11T20:35:02Z",
+    "last": "2026-09-11T20:35:02Z",
+    "places": [
+      {
+        "name": "Düsseldorf",
+        "lat": 51.2254018,
+        "lon": 6.7763137,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Düsseldorf",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Ulm|(ul) blaubeuren - brand auf landwirtschaftlichem anwesen",
+    "status": "active",
+    "title": "(UL) Blaubeuren - Brand auf landwirtschaftlichem Anwesen",
+    "link": "https://www.presseportal.de/blaulicht/pm/110979/6350600",
+    "first": "2026-09-11T19:31:49Z",
+    "last": "2026-09-11T19:31:49Z",
+    "places": [
+      {
+        "name": "Blaubeuren",
+        "lat": 48.4121233,
+        "lon": 9.7847091,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Mannheim|weinheim/rhein-neckar-kreis: vegetationsbrand im gleisbereich - zugverkehr eingestellt - pm 1",
     "status": "out",
     "title": "Weinheim/Rhein-Neckar-Kreis: Vegetationsbrand im Gleisbereich - Zugverkehr eingestellt - PM 1",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6350589",
+    "link": "https://www.presseportal.de/blaulicht/pm/179375/6350601",
     "first": "2026-09-11T17:49:46Z",
-    "last": "2026-09-11T18:11:57Z",
+    "last": "2026-09-11T19:35:01Z",
+    "veg": true,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 2,
+    "region": "BW",
     "places": [
       {
         "name": "Weinheim",
@@ -19,11 +63,7 @@
         "lon": 8.7352403,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 1
+    ]
   },
   {
     "base": "Feuerwehr Wuppertal|durch den einsatz der feuerwehr konnte das abbrennen einer gartenhütte und eines baumes verhindert werden.",
@@ -32,6 +72,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115885/6350581",
     "first": "2026-09-11T17:14:41Z",
     "last": "2026-09-11T17:14:41Z",
+    "veg": false,
+    "source": "Feuerwehr Wuppertal",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Wuppertal",
@@ -39,11 +83,7 @@
         "lon": 7.1780374,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Wuppertal",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Düsseldorf|folgemeldung: feuer im gewerbebetrieb - zeitweise warnung vor geruchsbelästigung durch brandrauch",
@@ -52,6 +92,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115876/6350552",
     "first": "2026-09-11T15:34:50Z",
     "last": "2026-09-11T15:34:50Z",
+    "veg": false,
+    "source": "Feuerwehr Düsseldorf",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Düsseldorf",
@@ -59,11 +103,7 @@
         "lon": 6.7763137,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Düsseldorf",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Düsseldorf|erstmeldung: feuer im gewerbebetrieb - feuerwehr leitet löschmaßnahmen ein",
@@ -72,6 +112,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115876/6350520",
     "first": "2026-09-11T14:40:45Z",
     "last": "2026-09-11T14:40:45Z",
+    "veg": false,
+    "source": "Feuerwehr Düsseldorf",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Düsseldorf",
@@ -79,11 +123,7 @@
         "lon": 6.7763137,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Düsseldorf",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Aalen|ostalbkreis: einbruch - fahrzeugbrand - diebstahl - straßenverkehrsgefährdung - sonstiges",
