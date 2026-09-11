@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6350014",
     "first": "2026-09-11T09:11:21Z",
     "last": "2026-09-11T09:11:21Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ostalbkreis",
@@ -13,11 +17,7 @@
         "lon": 10.0337317,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Stuttgart|wohnungsbrand in mehrfamilienhaus im stuttgarter süden",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/161590/6349954",
     "first": "2026-09-11T08:02:59Z",
     "last": "2026-09-11T08:02:59Z",
+    "veg": false,
+    "source": "Feuerwehr Stuttgart",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Stuttgart",
@@ -33,11 +37,7 @@
         "lon": 9.1800132,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Stuttgart",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|mannheim: brand in wohnhaus in der innenstadt - pressemitteilung nr. 1",
@@ -6255,66 +6255,6 @@
         "name": "Bretten",
         "lat": 49.0366265,
         "lon": 8.7068077,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "FF Stockach|brand am gebäude",
-    "status": "contained",
-    "title": "Brand am Gebäude",
-    "link": "https://www.presseportal.de/blaulicht/pm/134581/6332033",
-    "first": "2026-08-12T10:52:34Z",
-    "last": "2026-08-12T12:52:34Z",
-    "veg": false,
-    "source": "FF Stockach",
-    "updates": 1,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stockach",
-        "lat": 47.8530941,
-        "lon": 9.0134524,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|schopfheim: angebranntes essen auf dem herd ruft feuerwehr auf den plan",
-    "status": "active",
-    "title": "Schopfheim: Angebranntes Essen auf dem Herd ruft Feuerwehr auf den Plan",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6332012",
-    "first": "2026-08-12T10:35:40Z",
-    "last": "2026-08-12T12:35:40Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Schopfheim",
-        "lat": 47.6500525,
-        "lon": 7.8216997,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|heidelberg: tannenbaum und holzzaun nach brand beschädigt",
-    "status": "out",
-    "title": "Heidelberg: Tannenbaum und Holzzaun nach Brand beschädigt",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6331958",
-    "first": "2026-08-12T09:52:57Z",
-    "last": "2026-08-12T11:52:57Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Heidelberg",
-        "lat": 49.4093582,
-        "lon": 8.694724,
         "approx": false
       }
     ]
