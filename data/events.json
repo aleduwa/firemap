@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6350759",
     "first": "2026-09-12T17:03:09Z",
     "last": "2026-09-12T17:03:09Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Freiburg-Landwasser",
@@ -13,11 +17,7 @@
         "lon": 7.8116358,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Ennepetal|brandeinsatz und unterstützung rettungsdienst",
@@ -6063,26 +6063,6 @@
         "name": "Mannheim",
         "lat": 49.4892913,
         "lon": 8.4673098,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Offenburg|friesenheim - gebäudebrand - polizei bittet um zeugen",
-    "status": "contained",
-    "title": "Friesenheim - Gebäudebrand - Polizei bittet um Zeugen",
-    "link": "https://www.presseportal.de/blaulicht/pm/110975/6332998",
-    "first": "2026-08-13T13:56:32Z",
-    "last": "2026-08-13T15:56:32Z",
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Friesenheim",
-        "lat": 48.3734866,
-        "lon": 7.882329,
         "approx": false
       }
     ]
