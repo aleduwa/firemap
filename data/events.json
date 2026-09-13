@@ -6028,46 +6028,6 @@
     ]
   },
   {
-    "base": "Polizeipräsidium Mannheim|mannheim: brand in der güterhallenstraße - pressemeldung nr. 2",
-    "status": "out",
-    "title": "Mannheim: Brand in der Güterhallenstraße - Pressemeldung Nr. 2",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6333091",
-    "first": "2026-08-14T01:06:47Z",
-    "last": "2026-08-14T03:06:47Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Mannheim",
-        "lat": 49.4892913,
-        "lon": 8.4673098,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|mannheim: brand in der güterhallenstraße - feuerwehr im einsatz - pressemeldung nr. 1",
-    "status": "active",
-    "title": "Mannheim: Brand in der Güterhallenstraße - Feuerwehr im Einsatz - Pressemeldung Nr. 1",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6333088",
-    "first": "2026-08-13T23:42:28Z",
-    "last": "2026-08-14T01:42:28Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Mannheim",
-        "lat": 49.4892913,
-        "lon": 8.4673098,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Polizeipräsidium Aalen|rems-murr-kreis: pkw und flächenbrand, arbeitsunfall",
     "status": "active",
     "title": "Rems-Murr-Kreis: Pkw und Flächenbrand, Arbeitsunfall",
