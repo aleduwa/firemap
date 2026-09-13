@@ -1,5 +1,25 @@
 [
   {
+    "base": "Feuerwehr Neuss|containerbrand an der eichendorffstraße | feuer am nelly-sachs-gymnasium",
+    "status": "active",
+    "title": "Containerbrand an der Eichendorffstraße | Feuer am Nelly-Sachs-Gymnasium",
+    "link": "https://www.presseportal.de/blaulicht/pm/122045/6351004",
+    "first": "2026-09-13T13:35:11Z",
+    "last": "2026-09-13T13:35:11Z",
+    "places": [
+      {
+        "name": "Neuss",
+        "lat": 51.1981778,
+        "lon": 6.6916476,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Neuss",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Freiburg|freiburg-landwasser: balkonbrand in mehrfamilienhaus endet glimpflich",
     "status": "out",
     "title": "Freiburg-Landwasser: Balkonbrand in Mehrfamilienhaus endet glimpflich",
@@ -5820,236 +5840,6 @@
         "lat": 48.7784485,
         "lon": 9.1800132,
         "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|grenzach-wyhlen: grillen im garten endet mit feuerwehreinsatz",
-    "status": "out",
-    "title": "Grenzach-Wyhlen: Grillen im Garten endet mit Feuerwehreinsatz",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6333697",
-    "first": "2026-08-14T12:47:21Z",
-    "last": "2026-08-14T12:47:21Z",
-    "veg": true,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Grenzach-Wyhlen",
-        "lat": 47.5528548,
-        "lon": 7.6737981,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|weilheim/ remetschwiel: flächenbrand mit zwei leichtverletzten und rund 10.000 euro sachschaden",
-    "status": "out",
-    "title": "Weilheim/ Remetschwiel: Flächenbrand mit zwei Leichtverletzten und rund 10.000 Euro Sachschaden",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6333659",
-    "first": "2026-08-14T12:10:42Z",
-    "last": "2026-08-14T14:10:42Z",
-    "veg": true,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Weilheim",
-        "lat": 47.6582006,
-        "lon": 8.2413047,
-        "approx": false
-      },
-      {
-        "name": "Remetschwiel",
-        "lat": 47.6771916,
-        "lon": 8.1506958,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|dachsberg/ urberg: flächenbrand löst großeinsatz von feuerwehr aus",
-    "status": "active",
-    "title": "Dachsberg/ Urberg: Flächenbrand löst Großeinsatz von Feuerwehr aus",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6333657",
-    "first": "2026-08-14T12:09:44Z",
-    "last": "2026-08-14T14:09:44Z",
-    "veg": true,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Dachsberg",
-        "lat": 47.7277539,
-        "lon": 8.1028547,
-        "approx": false
-      },
-      {
-        "name": "Urberg",
-        "lat": 47.7349462,
-        "lon": 8.1241619,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Konstanz|(oberndorf am neckar / lkr. rottweil) unbekannte lösen vermutlich beim grillen waldbrand aus: polizei bittet um hinweise (13.08.2026)",
-    "status": "out",
-    "title": "(Oberndorf am Neckar / Lkr. Rottweil) Unbekannte lösen vermutlich beim Grillen Waldbrand aus: Polizei bittet um Hinweise (13.08.2026)",
-    "link": "https://www.presseportal.de/blaulicht/pm/110973/6333519",
-    "first": "2026-08-14T10:38:44Z",
-    "last": "2026-08-14T12:38:44Z",
-    "veg": true,
-    "source": "Polizeipräsidium Konstanz",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "(Oberndorf am Neckar",
-        "lat": 48.2908613,
-        "lon": 8.5711222,
-        "approx": false
-      },
-      {
-        "name": "Oberndorf am Neckar",
-        "lat": 48.2908613,
-        "lon": 8.5711222,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Heilbronn|stadt- und landkreis heilbronn: einbrüche, unfallflucht, widerstand gegen vollstreckungsbeamte, brand und unfall",
-    "status": "out",
-    "title": "Stadt- und Landkreis Heilbronn: Einbrüche, Unfallflucht, Widerstand gegen Vollstreckungsbeamte, Brand und Unfall",
-    "link": "https://www.presseportal.de/blaulicht/pm/110971/6333518",
-    "first": "2026-08-14T10:38:16Z",
-    "last": "2026-08-14T12:38:16Z",
-    "veg": true,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stadt-",
-        "lat": 49.4093582,
-        "lon": 8.694724,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|march: mehrere flächenbrände durch mutmaßliche brandstiftung",
-    "status": "active",
-    "title": "March: Mehrere Flächenbrände durch mutmaßliche Brandstiftung",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6333444",
-    "first": "2026-08-14T09:47:56Z",
-    "last": "2026-08-14T11:47:56Z",
-    "veg": true,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "March",
-        "lat": 48.0578573,
-        "lon": 7.7790038,
-        "approx": false
-      },
-      {
-        "name": "zwischen March und Freiburg-Hochdorf",
-        "lat": 48.04742,
-        "lon": 7.79424,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(gp) göppingen - brennende zigarette löst brand aus / einsatzkräfte rückten am donnerstag zu einem brand bei göppingen-faurndau aus.",
-    "status": "out",
-    "title": "(GP) Göppingen - Brennende Zigarette löst Brand aus / Einsatzkräfte rückten am Donnerstag zu einem Brand bei Göppingen-Faurndau aus.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6333391",
-    "first": "2026-08-14T09:12:39Z",
-    "last": "2026-08-14T11:12:39Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Göppingen",
-        "lat": 48.7031377,
-        "lon": 9.6541116,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Pforzheim|(cw) nagold - brand in einem bewaldeten bereich fordert die einsatzkräfte",
-    "status": "active",
-    "title": "(CW) Nagold - Brand in einem bewaldeten Bereich fordert die Einsatzkräfte",
-    "link": "https://www.presseportal.de/blaulicht/pm/137462/6333362",
-    "first": "2026-08-14T08:46:49Z",
-    "last": "2026-08-14T10:46:49Z",
-    "veg": false,
-    "source": "Polizeipräsidium Pforzheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Nagold",
-        "lat": 48.5512399,
-        "lon": 8.7234942,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Aalen|rems-murr-kreis: pkw und flächenbrand, arbeitsunfall",
-    "status": "active",
-    "title": "Rems-Murr-Kreis: Pkw und Flächenbrand, Arbeitsunfall",
-    "link": "https://www.presseportal.de/blaulicht/pm/110969/6333531",
-    "first": "2026-08-12T13:41:14Z",
-    "last": "2026-08-14T12:51:25Z",
-    "veg": true,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 1,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Rems-Murr-Kreis",
-        "lat": 48.8966799,
-        "lon": 9.5037124,
-        "approx": false
-      },
-      {
-        "name": "B29 zwischen Remshalden und Winterbach",
-        "lat": 48.80572,
-        "lon": 9.4562,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Heilbronn|stadt- und landkreis heilbronn: flächenbrand, fahrzeugbrand und automatenaufbruch",
-    "status": "out",
-    "title": "Stadt- und Landkreis Heilbronn: Flächenbrand, Fahrzeugbrand und Automatenaufbruch",
-    "link": "https://www.presseportal.de/blaulicht/pm/110971/6333518",
-    "first": "2026-08-11T10:57:41Z",
-    "last": "2026-08-14T12:38:16Z",
-    "veg": true,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 1,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stadt-",
-        "lat": 49.4093582,
-        "lon": 8.694724,
-        "approx": false
       }
     ]
   }
