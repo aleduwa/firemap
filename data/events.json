@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/127035/6351061",
     "first": "2026-09-13T19:49:51Z",
     "last": "2026-09-13T19:49:51Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Sankt Augustin",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Sankt Augustin",
@@ -13,11 +17,7 @@
         "lon": 7.1895507,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Sankt Augustin",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Alpen|garagenbrand auf der rheinberger straße",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/131475/6351059",
     "first": "2026-09-13T19:43:10Z",
     "last": "2026-09-13T19:43:10Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Alpen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Alpen",
@@ -33,11 +37,7 @@
         "lon": 6.5128805,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Alpen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Schermbeck|brandgeruch",
@@ -5859,26 +5859,6 @@
         "name": "Lahr",
         "lat": 48.338896,
         "lon": 7.8710825,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Stuttgart|brand auf einer großbaustelle - rauchsäule weithin sichtbar - flachdach auf rund 100 quadratmeter in brand - drei löschrohre zur brandbekämpfung eingesetzt - eine person leicht verletzt",
-    "status": "contained",
-    "title": "Brand auf einer Großbaustelle - Rauchsäule weithin sichtbar - Flachdach auf rund 100 Quadratmeter in Brand - Drei Löschrohre zur Brandbekämpfung eingesetzt - Eine Person leicht verletzt",
-    "link": "https://www.presseportal.de/blaulicht/pm/161590/6333818",
-    "first": "2026-08-14T22:11:22Z",
-    "last": "2026-08-14T22:11:22Z",
-    "veg": false,
-    "source": "Feuerwehr Stuttgart",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stuttgart",
-        "lat": 48.7784485,
-        "lon": 9.1800132,
         "approx": false
       }
     ]
