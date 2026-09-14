@@ -1,5 +1,25 @@
 [
   {
+    "base": "Feuerwehr Herdecke|folgemeldung zum brand in der nierfeldstraße: feuerwehr herdecke weiterhin im großeinsatz",
+    "status": "active",
+    "title": "Folgemeldung zum Brand in der Nierfeldstraße: Feuerwehr Herdecke weiterhin im Großeinsatz",
+    "link": "https://www.presseportal.de/blaulicht/pm/69790/6351501",
+    "first": "2026-09-14T12:02:02Z",
+    "last": "2026-09-14T12:02:02Z",
+    "places": [
+      {
+        "name": "Herdecke",
+        "lat": 51.4001119,
+        "lon": 7.4330062,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Herdecke",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Freiwillige Feuerwehr Sankt Augustin|freiwillige feuerwehr löscht küchenbrand",
     "status": "active",
     "title": "Freiwillige Feuerwehr löscht Küchenbrand",
@@ -5693,112 +5713,6 @@
         "name": "Hünxe",
         "lat": 51.6414581,
         "lon": 6.7660319,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(gp) süßen - dachstuhlbrand, haus ist unbewohnbar",
-    "status": "active",
-    "title": "(GP) Süßen - Dachstuhlbrand, Haus ist unbewohnbar",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6333856",
-    "first": "2026-08-15T08:33:46Z",
-    "last": "2026-08-15T08:33:46Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Süßen",
-        "lat": 48.6707866,
-        "lon": 9.7372379,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Leverkusen|aktualisierung überörtliche hilfe - waldbrand hürtgenwald",
-    "status": "active",
-    "title": "Aktualisierung Überörtliche Hilfe - Waldbrand Hürtgenwald",
-    "link": "https://www.presseportal.de/blaulicht/pm/115890/6333907",
-    "first": "2026-08-15T08:27:21Z",
-    "last": "2026-08-15T10:27:21Z",
-    "veg": true,
-    "source": "Feuerwehr Leverkusen",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Leverkusen",
-        "lat": 51.0324743,
-        "lon": 6.9881194,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|altlußheim/rhein-neckar-kreis: zwei unerlaubte lagerfeuer am rheinufer",
-    "status": "out",
-    "title": "Altlußheim/Rhein-Neckar-Kreis: Zwei unerlaubte Lagerfeuer am Rheinufer",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6333854",
-    "first": "2026-08-15T08:16:40Z",
-    "last": "2026-08-15T08:16:40Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Altlußheim",
-        "lat": 49.3004929,
-        "lon": 8.4981809,
-        "approx": false
-      },
-      {
-        "name": "Rhein-Neckar-Kreis",
-        "lat": 49.3684797,
-        "lon": 8.7352403,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Mönchengladbach|feuerwehr mönchengladbach unterstützt beim waldbrand im hürtgenwald",
-    "status": "active",
-    "title": "Feuerwehr Mönchengladbach unterstützt beim Waldbrand im Hürtgenwald",
-    "link": "https://www.presseportal.de/blaulicht/pm/115879/6333892",
-    "first": "2026-08-15T07:58:32Z",
-    "last": "2026-08-15T09:58:32Z",
-    "veg": true,
-    "source": "Feuerwehr Mönchengladbach",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Mönchengladbach",
-        "lat": 51.1947131,
-        "lon": 6.4353792,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Bocholt|verkehrsunfall und zwei brandeinsätze",
-    "status": "active",
-    "title": "Verkehrsunfall und zwei Brandeinsätze",
-    "link": "https://www.presseportal.de/blaulicht/pm/146407/6333877",
-    "first": "2026-08-15T07:21:48Z",
-    "last": "2026-08-15T09:21:48Z",
-    "veg": true,
-    "source": "Feuerwehr Bocholt",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Bocholt",
-        "lat": 51.8382715,
-        "lon": 6.6148669,
         "approx": false
       }
     ]
