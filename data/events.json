@@ -1,5 +1,25 @@
 [
   {
+    "base": "Feuerwehr Herdecke|abschlussmeldung - großbrand in recyclingbetrieb im gewerbegebiet loerfeld - einsatz nach umfangreichen maßnahmen am abend nach 21 stunden beendet",
+    "status": "out",
+    "title": "ABSCHLUSSMELDUNG - Großbrand in Recyclingbetrieb im Gewerbegebiet Loerfeld - Einsatz nach umfangreichen Maßnahmen am Abend nach 21 Stunden beendet",
+    "link": "https://www.presseportal.de/blaulicht/pm/69790/6351969",
+    "first": "2026-09-14T22:50:29Z",
+    "last": "2026-09-14T22:50:29Z",
+    "places": [
+      {
+        "name": "Herdecke",
+        "lat": 51.4001119,
+        "lon": 7.4330062,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Herdecke",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Sprockhövel|fahrzeug gerät nach verkehrsunfall in brand",
     "status": "contained",
     "title": "Fahrzeug gerät nach Verkehrsunfall in Brand",
@@ -5558,86 +5578,6 @@
     ]
   },
   {
-    "base": "Feuerwehr Datteln|gewerbebrand am möllerskamp",
-    "status": "contained",
-    "title": "Gewerbebrand am Möllerskamp",
-    "link": "https://www.presseportal.de/blaulicht/pm/130639/6334048",
-    "first": "2026-08-15T23:43:07Z",
-    "last": "2026-08-15T23:43:07Z",
-    "veg": false,
-    "source": "Feuerwehr Datteln",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Datteln",
-        "lat": 51.651468,
-        "lon": 7.3385906,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Heiligenhaus|vegetationsbrand im stadtteil isenbügel - rund 50 einsatzkräfte über drei stunden im einsatz",
-    "status": "active",
-    "title": "Vegetationsbrand im Stadtteil Isenbügel - rund 50 Einsatzkräfte über drei Stunden im Einsatz",
-    "link": "https://www.presseportal.de/blaulicht/pm/116231/6334047",
-    "first": "2026-08-15T23:11:36Z",
-    "last": "2026-08-15T23:11:36Z",
-    "veg": true,
-    "source": "Feuerwehr Heiligenhaus",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Heiligenhaus",
-        "lat": 51.32658,
-        "lon": 6.9710401,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Freiwillige Feuerwehr der Stadt Goch|feuerwehr goch: fahrzeugbrand - feuer droht auf mehrfamilienhaus überzugreifen",
-    "status": "contained",
-    "title": "Feuerwehr Goch: Fahrzeugbrand - Feuer droht auf Mehrfamilienhaus überzugreifen",
-    "link": "https://www.presseportal.de/blaulicht/pm/126714/6334045",
-    "first": "2026-08-15T22:34:40Z",
-    "last": "2026-08-15T22:34:40Z",
-    "veg": false,
-    "source": "Freiwillige Feuerwehr der Stadt Goch",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Goch",
-        "lat": 51.6755765,
-        "lon": 6.1593045,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Wuppertal|rauchwarnmelder verhindert größeren brandschaden",
-    "status": "contained",
-    "title": "Rauchwarnmelder verhindert größeren Brandschaden",
-    "link": "https://www.presseportal.de/blaulicht/pm/115885/6334036",
-    "first": "2026-08-15T21:05:43Z",
-    "last": "2026-08-15T21:05:43Z",
-    "veg": false,
-    "source": "Feuerwehr Wuppertal",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Wuppertal",
-        "lat": 51.264018,
-        "lon": 7.1780374,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Freiwillige Feuerwehr der Gemeinde Sonsbeck|waldbrand in labbeck",
     "status": "active",
     "title": "Waldbrand in Labbeck",
@@ -5693,26 +5633,6 @@
         "name": "Kreis Soest",
         "lat": 51.5707862,
         "lon": 8.1071503,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Solingen|feuerwehr solingen unterstützt mit remscheid und wuppertal den kreis düren bei großem waldbrand",
-    "status": "active",
-    "title": "Feuerwehr Solingen unterstützt mit Remscheid und Wuppertal den Kreis Düren bei großem Waldbrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/115884/6334032",
-    "first": "2026-08-15T06:32:52Z",
-    "last": "2026-08-15T20:58:11Z",
-    "veg": true,
-    "source": "Feuerwehr Solingen",
-    "updates": 1,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Solingen",
-        "lat": 51.1721629,
-        "lon": 7.0845893,
         "approx": false
       }
     ]
