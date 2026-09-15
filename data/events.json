@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/69790/6351969",
     "first": "2026-09-14T22:50:29Z",
     "last": "2026-09-14T22:50:29Z",
+    "veg": false,
+    "source": "Feuerwehr Herdecke",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Herdecke",
@@ -13,11 +17,7 @@
         "lon": 7.4330062,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Herdecke",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Sprockhövel|fahrzeug gerät nach verkehrsunfall in brand",
