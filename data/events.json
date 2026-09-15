@@ -1,5 +1,25 @@
 [
   {
+    "base": "Feuerwehr Detmold|scheune bei nächtlichem brand vollständig zerstört - zwei feuerwehrleute im krankenhaus",
+    "status": "out",
+    "title": "Scheune bei nächtlichem Brand vollständig zerstört - zwei Feuerwehrleute im Krankenhaus",
+    "link": "https://www.presseportal.de/blaulicht/pm/116239/6352064",
+    "first": "2026-09-15T08:27:15Z",
+    "last": "2026-09-15T08:27:15Z",
+    "places": [
+      {
+        "name": "Detmold",
+        "lat": 51.936284,
+        "lon": 8.8791526,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Detmold",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Herdecke|abschlussmeldung - großbrand in recyclingbetrieb im gewerbegebiet loerfeld - einsatz nach umfangreichen maßnahmen am abend nach 21 stunden beendet",
     "status": "out",
     "title": "ABSCHLUSSMELDUNG - Großbrand in Recyclingbetrieb im Gewerbegebiet Loerfeld - Einsatz nach umfangreichen Maßnahmen am Abend nach 21 Stunden beendet",
@@ -5533,46 +5553,6 @@
         "name": "Werne",
         "lat": 51.66268,
         "lon": 7.6355052,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Mönchengladbach|brennende strohmiete mit rund 50 rundballen",
-    "status": "active",
-    "title": "Brennende Strohmiete mit rund 50 Rundballen",
-    "link": "https://www.presseportal.de/blaulicht/pm/115879/6334083",
-    "first": "2026-08-16T07:03:08Z",
-    "last": "2026-08-16T07:03:08Z",
-    "veg": false,
-    "source": "Feuerwehr Mönchengladbach",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Mönchengladbach",
-        "lat": 51.1947131,
-        "lon": 6.4353792,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Offenburg|neuried-altenheim - gebäudebrand",
-    "status": "active",
-    "title": "Neuried-Altenheim - Gebäudebrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110975/6334066",
-    "first": "2026-08-16T05:10:09Z",
-    "last": "2026-08-16T05:10:09Z",
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Neuried-Altenheim",
-        "lat": 48.4646082,
-        "lon": 7.8090487,
         "approx": false
       }
     ]
