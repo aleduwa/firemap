@@ -1,5 +1,125 @@
 [
   {
+    "base": "Feuerwehr Sprockhövel|ausgelöste brandmeldeanlage",
+    "status": "active",
+    "title": "Ausgelöste Brandmeldeanlage",
+    "link": "https://www.presseportal.de/blaulicht/pm/69788/6352784",
+    "first": "2026-09-15T18:46:57Z",
+    "last": "2026-09-15T18:46:57Z",
+    "places": [
+      {
+        "name": "Sprockhövel",
+        "lat": 51.3666572,
+        "lon": 7.2485905,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Sprockhövel",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Freiwillige Feuerwehr Gangelt|brennende pkws am wildpark in gangelt",
+    "status": "out",
+    "title": "Brennende Pkws am Wildpark in Gangelt",
+    "link": "https://www.presseportal.de/blaulicht/pm/130424/6352750",
+    "first": "2026-09-15T16:18:11Z",
+    "last": "2026-09-15T16:18:11Z",
+    "places": [
+      {
+        "name": "Gangelt",
+        "lat": 50.9928407,
+        "lon": 5.997057,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Gangelt",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Pforzheim|(enzkreis) kämpfelbach - gemeinsame pressemitteilung der staatsanwaltschaft karlsruhe - zweigstelle pforzheim und des polizeipräsidiums pforzheim - mutmaßlicher brandstifter in haft",
+    "status": "out",
+    "title": "(Enzkreis) Kämpfelbach - Gemeinsame Pressemitteilung der Staatsanwaltschaft Karlsruhe - Zweigstelle Pforzheim und des Polizeipräsidiums Pforzheim - Mutmaßlicher Brandstifter in Haft",
+    "link": "https://www.presseportal.de/blaulicht/pm/137462/6352715",
+    "first": "2026-09-15T15:25:24Z",
+    "last": "2026-09-15T15:25:24Z",
+    "places": [
+      {
+        "name": "Kämpfelbach",
+        "lat": 48.9387381,
+        "lon": 8.6268392,
+        "approx": false
+      }
+    ],
+    "veg": true,
+    "source": "Polizeipräsidium Pforzheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|eisenbach: wiesenfläche in brand",
+    "status": "out",
+    "title": "Eisenbach: Wiesenfläche in Brand",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6352698",
+    "first": "2026-09-15T15:11:35Z",
+    "last": "2026-09-15T15:11:35Z",
+    "places": [
+      {
+        "name": "Eisenbach",
+        "lat": 47.9624362,
+        "lon": 8.2710482,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Kreispolizeibehörde Viersen|viersen: pkw in flammen - wer kann hinweise geben?",
+    "status": "active",
+    "title": "Viersen: Pkw in Flammen - wer kann Hinweise geben?",
+    "link": "https://www.presseportal.de/blaulicht/pm/65857/6352691",
+    "first": "2026-09-15T15:02:32Z",
+    "last": "2026-09-15T15:02:32Z",
+    "places": [
+      {
+        "name": "Viersen",
+        "lat": 51.2562118,
+        "lon": 6.3905476,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Kreispolizeibehörde Viersen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Kreispolizeibehörde Viersen|nettetal-lobberich: mülltonne brennt lichterloh - zeuginnen oder zeugen gesucht",
+    "status": "active",
+    "title": "Nettetal-Lobberich: Mülltonne brennt lichterloh - Zeuginnen oder Zeugen gesucht",
+    "link": "https://www.presseportal.de/blaulicht/pm/65857/6352683",
+    "first": "2026-09-15T14:58:58Z",
+    "last": "2026-09-15T14:58:58Z",
+    "places": [
+      {
+        "name": "Nettetal-Lobberich",
+        "lat": 51.2857099,
+        "lon": 6.2707822,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Kreispolizeibehörde Viersen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Detmold|scheune bei nächtlichem brand vollständig zerstört - zwei feuerwehrleute im krankenhaus",
     "status": "out",
     "title": "Scheune bei nächtlichem Brand vollständig zerstört - zwei Feuerwehrleute im Krankenhaus",
@@ -5498,46 +5618,6 @@
     ]
   },
   {
-    "base": "Feuerwehr Plettenberg|feuerwehr plettenberg unterstützt bei waldbrand in altena",
-    "status": "active",
-    "title": "Feuerwehr Plettenberg unterstützt bei Waldbrand in Altena",
-    "link": "https://www.presseportal.de/blaulicht/pm/116600/6334309",
-    "first": "2026-08-16T16:39:15Z",
-    "last": "2026-08-16T16:39:15Z",
-    "veg": true,
-    "source": "Feuerwehr Plettenberg",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Plettenberg",
-        "lat": 51.2136798,
-        "lon": 7.8745627,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Voerde|mit der kreisbereitschaft zum waldbrand in sonsbeck",
-    "status": "active",
-    "title": "Mit der Kreisbereitschaft zum Waldbrand in Sonsbeck",
-    "link": "https://www.presseportal.de/blaulicht/pm/125427/6334286",
-    "first": "2026-08-16T15:09:20Z",
-    "last": "2026-08-16T15:09:20Z",
-    "veg": true,
-    "source": "Feuerwehr Voerde",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Voerde",
-        "lat": 51.5975224,
-        "lon": 6.6811994,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Freiwillige Feuerwehr Werne|böschungsbrand in werne-holthausen",
     "status": "contained",
     "title": "Böschungsbrand in Werne-Holthausen",
@@ -5573,46 +5653,6 @@
         "name": "Sonsbeck",
         "lat": 51.6094069,
         "lon": 6.3760442,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Freiwillige Feuerwehr Alpen|waldbrand in veen",
-    "status": "active",
-    "title": "Waldbrand in Veen",
-    "link": "https://www.presseportal.de/blaulicht/pm/131475/6334295",
-    "first": "2026-08-15T11:14:45Z",
-    "last": "2026-08-16T15:31:52Z",
-    "veg": true,
-    "source": "Freiwillige Feuerwehr Alpen",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Alpen",
-        "lat": 51.5767474,
-        "lon": 6.5128805,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehren im Kreis Soest|waldbrand am möhnesee / einsatzkräfte auch an tag drei im einsatz",
-    "status": "out",
-    "title": "Waldbrand am Möhnesee / Einsatzkräfte auch an Tag drei im Einsatz",
-    "link": "https://www.presseportal.de/blaulicht/pm/129590/6334282",
-    "first": "2026-08-15T06:59:32Z",
-    "last": "2026-08-16T14:49:15Z",
-    "veg": true,
-    "source": "Feuerwehren im Kreis Soest",
-    "updates": 1,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Kreis Soest",
-        "lat": 51.5707862,
-        "lon": 8.1071503,
         "approx": false
       }
     ]
