@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115888/6352798",
     "first": "2026-09-15T21:09:28Z",
     "last": "2026-09-15T21:09:28Z",
+    "veg": false,
+    "source": "Feuerwehr und Rettungsdienst Bonn",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Bonn",
@@ -13,11 +17,7 @@
         "lon": 7.1024635,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr und Rettungsdienst Bonn",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Sprockhövel|ausgelöste brandmeldeanlage",
@@ -5613,26 +5613,6 @@
         "name": "Rhein-Neckar-Kreis",
         "lat": 49.3684797,
         "lon": 8.7352403,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Bochum|entstehungsbrand in patientenzimmer",
-    "status": "active",
-    "title": "Entstehungsbrand in Patientenzimmer",
-    "link": "https://www.presseportal.de/blaulicht/pm/115868/6334333",
-    "first": "2026-08-16T21:51:17Z",
-    "last": "2026-08-16T21:51:17Z",
-    "veg": false,
-    "source": "Feuerwehr Bochum",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Bochum",
-        "lat": 51.4818111,
-        "lon": 7.2196635,
         "approx": false
       }
     ]
