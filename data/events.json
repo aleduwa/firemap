@@ -1,11 +1,35 @@
 [
   {
+    "base": "Feuerwehr Wuppertal|brand in vohwinkel",
+    "status": "out",
+    "title": "Brand in Vohwinkel",
+    "link": "https://www.presseportal.de/blaulicht/pm/115885/6353578",
+    "first": "2026-09-16T21:44:45Z",
+    "last": "2026-09-16T21:44:45Z",
+    "places": [
+      {
+        "name": "Wuppertal",
+        "lat": 51.264018,
+        "lon": 7.1780374,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Wuppertal",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Offenburg|ottersweier, a5 - sperrung nach fahrzeugbrand",
     "status": "active",
     "title": "Ottersweier, A5 - Sperrung nach Fahrzeugbrand",
     "link": "https://www.presseportal.de/blaulicht/pm/110975/6353489",
     "first": "2026-09-16T15:30:39Z",
     "last": "2026-09-16T15:30:39Z",
+    "veg": false,
+    "source": "Polizeipräsidium Offenburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ottersweier",
@@ -13,11 +37,7 @@
         "lon": 8.110948,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|todtnau/ todtnauberg: brand eines holzunterstandes - zeugensuche",
@@ -5115,46 +5135,6 @@
         "name": "Essen",
         "lat": 51.4582235,
         "lon": 7.0158171,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Ennepetal|verkehrsunfall und angebranntes essen beschäftigen die feuerwehr",
-    "status": "active",
-    "title": "Verkehrsunfall und angebranntes Essen beschäftigen die Feuerwehr",
-    "link": "https://www.presseportal.de/blaulicht/pm/69780/6335156",
-    "first": "2026-08-17T21:29:33Z",
-    "last": "2026-08-17T21:29:33Z",
-    "veg": false,
-    "source": "Feuerwehr Ennepetal",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Ennepetal",
-        "lat": 51.2967192,
-        "lon": 7.3693335,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Paderborn|gemeldeter wohnungsbrand in paderborner innenstadt",
-    "status": "active",
-    "title": "Gemeldeter Wohnungsbrand in Paderborner Innenstadt",
-    "link": "https://www.presseportal.de/blaulicht/pm/173646/6335153",
-    "first": "2026-08-17T21:13:08Z",
-    "last": "2026-08-17T21:13:08Z",
-    "veg": false,
-    "source": "Feuerwehr Paderborn",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Paderborn",
-        "lat": 51.7177044,
-        "lon": 8.752653,
         "approx": false
       }
     ]
