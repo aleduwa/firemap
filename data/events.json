@@ -1,11 +1,41 @@
 [
   {
+    "base": "Polizeipräsidium Freiburg|todtnau/ todtnauberg: brand eines holzunterstandes - zeugensuche",
+    "status": "contained",
+    "title": "Todtnau/ Todtnauberg: Brand eines Holzunterstandes - Zeugensuche",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6353346",
+    "first": "2026-09-16T13:32:51Z",
+    "last": "2026-09-16T13:32:51Z",
+    "places": [
+      {
+        "name": "Todtnau",
+        "lat": 47.8303378,
+        "lon": 7.9452378,
+        "approx": false
+      },
+      {
+        "name": "Todtnauberg",
+        "lat": 47.8516814,
+        "lon": 7.9420935,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Aalen|plüderhausen: zwei tote bei brand in mehrfamilienhaus",
     "status": "active",
     "title": "Plüderhausen: Zwei Tote bei Brand in Mehrfamilienhaus",
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6352848",
     "first": "2026-09-16T07:28:24Z",
     "last": "2026-09-16T07:28:24Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Plüderhausen",
@@ -13,11 +43,7 @@
         "lon": 9.6025045,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr und Rettungsdienst Bonn|wohnung in bonn-lannesdorf nach feuer unbewohnbar",
@@ -5315,298 +5341,6 @@
         "name": "Kehl",
         "lat": 48.5733977,
         "lon": 7.8114002,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizei Lippe|schieder-schwalenberg/horn-bad meinberg/bad salzuflen. mehrere feuer in der lippischen natur - warnung vor erhöhter brandgefahr!",
-    "status": "active",
-    "title": "Schieder-Schwalenberg/Horn-Bad Meinberg/Bad Salzuflen. Mehrere Feuer in der lippischen Natur - Warnung vor erhöhter Brandgefahr!",
-    "link": "https://www.presseportal.de/blaulicht/pm/12727/6334667",
-    "first": "2026-08-17T11:34:34Z",
-    "last": "2026-08-17T11:34:34Z",
-    "veg": true,
-    "source": "Polizei Lippe",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Schieder-Schwalenberg",
-        "lat": 51.8980505,
-        "lon": 9.1751832,
-        "approx": false
-      },
-      {
-        "name": "Horn-Bad Meinberg",
-        "lat": 51.8801277,
-        "lon": 8.9731695,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(gp) ebersbach - wiese in brand / am samstag rückte die feuerwehr zu einem flächenbrand bei ebersbach aus.",
-    "status": "active",
-    "title": "(GP) Ebersbach - Wiese in Brand / Am Samstag rückte die Feuerwehr zu einem Flächenbrand bei Ebersbach aus.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6334641",
-    "first": "2026-08-17T11:22:18Z",
-    "last": "2026-08-17T11:22:18Z",
-    "veg": true,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Ebersbach",
-        "lat": 47.9554246,
-        "lon": 9.5791447,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ludwigsburg|schwieberdingen: brand in mehrparteienhaus",
-    "status": "active",
-    "title": "Schwieberdingen: Brand in Mehrparteienhaus",
-    "link": "https://www.presseportal.de/blaulicht/pm/110974/6334635",
-    "first": "2026-08-17T11:12:23Z",
-    "last": "2026-08-17T11:12:23Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Schwieberdingen",
-        "lat": 48.8749991,
-        "lon": 9.0778484,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|dossenheim/rhein-neckar-kreis: einsatz von polizei und feuerwehr wegen brandgeschehen, pm 2",
-    "status": "out",
-    "title": "Dossenheim/Rhein-Neckar-Kreis: Einsatz von Polizei und Feuerwehr wegen Brandgeschehen, PM 2",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6334634",
-    "first": "2026-08-17T11:11:59Z",
-    "last": "2026-08-17T11:11:59Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Dossenheim",
-        "lat": 49.449242,
-        "lon": 8.6732428,
-        "approx": false
-      },
-      {
-        "name": "Rhein-Neckar-Kreis",
-        "lat": 49.3684797,
-        "lon": 8.7352403,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Karlsruhe|(ka) stutensee - balkonbrand greift auf dachstuhl über",
-    "status": "contained",
-    "title": "(KA) Stutensee - Balkonbrand greift auf Dachstuhl über",
-    "link": "https://www.presseportal.de/blaulicht/pm/110972/6334629",
-    "first": "2026-08-17T11:09:45Z",
-    "last": "2026-08-17T11:09:45Z",
-    "veg": false,
-    "source": "Polizeipräsidium Karlsruhe",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stutensee",
-        "lat": 49.0895249,
-        "lon": 8.4856806,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Sprockhövel|pkw-brand greift auf waldfläche über",
-    "status": "out",
-    "title": "PKW-Brand greift auf Waldfläche über",
-    "link": "https://www.presseportal.de/blaulicht/pm/69788/6334491",
-    "first": "2026-08-17T09:58:13Z",
-    "last": "2026-08-17T09:58:13Z",
-    "veg": false,
-    "source": "Feuerwehr Sprockhövel",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Sprockhövel",
-        "lat": 51.3666572,
-        "lon": 7.2485905,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(gp) geislingen - brand löst feuerwehreinsatz aus / am samstag kam es bei geislingen zum brand in einem waldstück.",
-    "status": "active",
-    "title": "(GP) Geislingen - Brand löst Feuerwehreinsatz aus / Am Samstag kam es bei Geislingen zum Brand in einem Waldstück.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6334469",
-    "first": "2026-08-17T09:43:55Z",
-    "last": "2026-08-17T09:43:55Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Geislingen",
-        "lat": 48.6230397,
-        "lon": 9.8356703,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(ul) blaubeuren - flächenbrand löst feuerwehreinsatz aus / am samstag kam es bei blaubeuren zum brand.",
-    "status": "out",
-    "title": "(UL) Blaubeuren - Flächenbrand löst Feuerwehreinsatz aus / Am Samstag kam es bei Blaubeuren zum Brand.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6334434",
-    "first": "2026-08-17T09:18:34Z",
-    "last": "2026-08-17T09:18:34Z",
-    "veg": true,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Blaubeuren",
-        "lat": 48.4121233,
-        "lon": 9.7847091,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Karlsruhe|(ka) bruchsal - 54-jähriger bei wohnungsbrand schwer verletzt",
-    "status": "active",
-    "title": "(KA) Bruchsal - 54-Jähriger bei Wohnungsbrand schwer verletzt",
-    "link": "https://www.presseportal.de/blaulicht/pm/110972/6334400",
-    "first": "2026-08-17T08:47:51Z",
-    "last": "2026-08-17T08:47:51Z",
-    "veg": false,
-    "source": "Polizeipräsidium Karlsruhe",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Bruchsal",
-        "lat": 49.124118,
-        "lon": 8.5980244,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Dortmund|feuerwehr betreut 40 personen bei kellerbrand",
-    "status": "active",
-    "title": "Feuerwehr betreut 40 Personen bei Kellerbrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/115869/6334380",
-    "first": "2026-08-17T08:06:13Z",
-    "last": "2026-08-17T08:06:13Z",
-    "veg": false,
-    "source": "Feuerwehr Dortmund",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Dortmund",
-        "lat": 51.5142273,
-        "lon": 7.4652789,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Freiwillige Feuerwehr Bad Honnef|erneuter waldbrand in bad honnef-wülscheid: 300 quadratmeter unterholz in flammen",
-    "status": "out",
-    "title": "Erneuter Waldbrand in Bad Honnef-Wülscheid: 300 Quadratmeter Unterholz in Flammen",
-    "link": "https://www.presseportal.de/blaulicht/pm/133680/6334375",
-    "first": "2026-08-17T08:00:18Z",
-    "last": "2026-08-17T08:00:18Z",
-    "veg": true,
-    "source": "Freiwillige Feuerwehr Bad Honnef",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Bad Honnef",
-        "lat": 50.6448582,
-        "lon": 7.2272534,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Gelsenkirchen|kellerbrand in horst - aufwendige löscharbeiten unter atemschutz",
-    "status": "active",
-    "title": "Kellerbrand in Horst - aufwendige Löscharbeiten unter Atemschutz",
-    "link": "https://www.presseportal.de/blaulicht/pm/116260/6334352",
-    "first": "2026-08-17T06:50:36Z",
-    "last": "2026-08-17T06:50:36Z",
-    "veg": false,
-    "source": "Feuerwehr Gelsenkirchen",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Gelsenkirchen",
-        "lat": 51.5110321,
-        "lon": 7.0960124,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Aalen|ostalbkreis:",
-    "status": "active",
-    "title": "Ostalbkreis:",
-    "link": "https://www.presseportal.de/blaulicht/pm/110969/6334399",
-    "first": "2026-08-17T06:45:57Z",
-    "last": "2026-08-17T06:45:57Z",
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Ostalbkreis",
-        "lat": 48.8777738,
-        "lon": 10.0337317,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Ennepetal|flächenbrand",
-    "status": "active",
-    "title": "Flächenbrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/69780/6334351",
-    "first": "2026-08-17T06:41:29Z",
-    "last": "2026-08-17T06:41:29Z",
-    "veg": true,
-    "source": "Feuerwehr Ennepetal",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Ennepetal",
-        "lat": 51.2967192,
-        "lon": 7.3693335,
         "approx": false
       }
     ]
