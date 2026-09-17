@@ -46,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6353439",
     "first": "2026-09-16T14:47:45Z",
     "last": "2026-09-16T14:47:45Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Mannheim",
@@ -53,11 +57,7 @@
         "lon": 8.4673098,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|todtnau/ todtnauberg: brand eines holzunterstandes - zeugensuche",
@@ -92,6 +92,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110975/6353120",
     "first": "2026-09-16T11:04:16Z",
     "last": "2026-09-16T11:04:16Z",
+    "veg": false,
+    "source": "Polizeipräsidium Offenburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Rastatt",
@@ -111,11 +115,7 @@
         "lon": 8.23611,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(bc) gutenzell-hürbel - kleiner flächenbrand ruft feuerwehr auf den plan / das anzünden eines reisighaufens führte am dienstag zu einem weiteren ungewollten brand bei gutenzell-hürbel.",
@@ -124,6 +124,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6352991",
     "first": "2026-09-16T09:40:01Z",
     "last": "2026-09-16T09:40:01Z",
+    "veg": true,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Gutenzell-Hürbel",
@@ -131,11 +135,7 @@
         "lon": 9.9755859,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Ulm",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|lörrach: brand an der fassade eine wohnhauses - zeugensuche",
@@ -144,6 +144,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6352914",
     "first": "2026-09-16T08:55:01Z",
     "last": "2026-09-16T08:55:01Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Lörrach",
@@ -151,11 +155,7 @@
         "lon": 7.6607218,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Aalen|plüderhausen: zwei tote bei brand in mehrfamilienhaus",
@@ -324,6 +324,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6352354",
     "first": "2026-09-15T11:17:43Z",
     "last": "2026-09-15T11:17:43Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Wain",
@@ -331,11 +335,7 @@
         "lon": 10.0182982,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Detmold|scheune bei nächtlichem brand vollständig zerstört - zwei feuerwehrleute im krankenhaus",
@@ -464,6 +464,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/179375/6351676",
     "first": "2026-09-14T13:42:50Z",
     "last": "2026-09-14T13:42:50Z",
+    "veg": false,
+    "source": "Feuerwehr Weinheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Weinheim",
@@ -471,11 +475,7 @@
         "lon": 8.6717458,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Weinheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Herdecke|folgemeldung zum brand in der nierfeldstraße: feuerwehr herdecke weiterhin im großeinsatz",
@@ -604,6 +604,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6350827",
     "first": "2026-09-13T07:26:23Z",
     "last": "2026-09-13T07:26:23Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Giengen",
@@ -611,11 +615,7 @@
         "lon": 10.2442196,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|freiburg-landwasser: balkonbrand in mehrfamilienhaus endet glimpflich",
@@ -1496,6 +1496,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110971/6346939",
     "first": "2026-09-07T12:32:06Z",
     "last": "2026-09-07T12:32:06Z",
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Hohenlohekreis",
@@ -1503,11 +1507,7 @@
         "lon": 9.6057331,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Mönchengladbach|brennende bettdecke löst feuerwehreinsatz aus",
@@ -1942,6 +1942,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110971/6345527",
     "first": "2026-09-04T09:59:40Z",
     "last": "2026-09-04T09:59:40Z",
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Hohenlohekreis",
@@ -1949,11 +1953,7 @@
         "lon": 9.6057331,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Dortmund|brand in der sternstraße",
@@ -2558,6 +2558,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/137462/6342658",
     "first": "2026-08-31T11:14:00Z",
     "last": "2026-08-31T11:14:00Z",
+    "veg": false,
+    "source": "Polizeipräsidium Pforzheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Kämpfelbach-Ersingen",
@@ -2565,11 +2569,7 @@
         "lon": 8.6346048,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Pforzheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Ennepetal|patientenrettung über drehleiter und brandmeldealarm",
@@ -3030,6 +3030,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/179375/6341010",
     "first": "2026-08-27T13:52:27Z",
     "last": "2026-08-27T13:52:27Z",
+    "veg": false,
+    "source": "Feuerwehr Weinheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Weinheim",
@@ -3037,11 +3041,7 @@
         "lon": 8.6717458,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Weinheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Heilbronn|stadt- und landkreis heilbronn: diebstahl, brand, unfall",
