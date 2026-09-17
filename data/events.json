@@ -1,5 +1,85 @@
 [
   {
+    "base": "Feuerwehr Oberhausen|containerbrand auf der bab a3 - feuerwehr löscht brandgut bei containerdienst ab",
+    "status": "active",
+    "title": "Containerbrand auf der BAB A3 - Feuerwehr löscht Brandgut bei Containerdienst ab",
+    "link": "https://www.presseportal.de/blaulicht/pm/115881/6354254",
+    "first": "2026-09-17T15:53:29Z",
+    "last": "2026-09-17T15:53:29Z",
+    "places": [
+      {
+        "name": "Oberhausen",
+        "lat": 51.4696137,
+        "lon": 6.8514435,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Oberhausen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|lörrach: brand einer papiertonne - zeugensuche",
+    "status": "active",
+    "title": "Lörrach: Brand einer Papiertonne - Zeugensuche",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6354236",
+    "first": "2026-09-17T15:29:50Z",
+    "last": "2026-09-17T15:29:50Z",
+    "places": [
+      {
+        "name": "Lörrach",
+        "lat": 47.6120896,
+        "lon": 7.6607218,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Detmold|gemeldeter brand im gebäude ( feuer 3 )",
+    "status": "active",
+    "title": "Gemeldeter Brand im Gebäude ( Feuer 3 )",
+    "link": "https://www.presseportal.de/blaulicht/pm/116239/6354234",
+    "first": "2026-09-17T15:28:40Z",
+    "last": "2026-09-17T15:28:40Z",
+    "places": [
+      {
+        "name": "Detmold",
+        "lat": 51.936284,
+        "lon": 8.8791526,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Detmold",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Herdecke|sauna brannte im keller in der berliner straße - bewohner weist feuerwehr vorbildlich ein",
+    "status": "out",
+    "title": "Sauna brannte im Keller in der Berliner Straße - Bewohner weist Feuerwehr vorbildlich ein",
+    "link": "https://www.presseportal.de/blaulicht/pm/69790/6354190",
+    "first": "2026-09-17T14:52:06Z",
+    "last": "2026-09-17T14:52:06Z",
+    "places": [
+      {
+        "name": "Herdecke",
+        "lat": 51.4001119,
+        "lon": 7.4330062,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Herdecke",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Wuppertal|brand in vohwinkel",
     "status": "out",
     "title": "Brand in Vohwinkel",
@@ -5188,126 +5268,6 @@
         "lat": 51.4582235,
         "lon": 7.0158171,
         "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Offenburg|baden-baden - großer brand im dachboden",
-    "status": "active",
-    "title": "Baden-Baden - Großer Brand im Dachboden",
-    "link": "https://www.presseportal.de/blaulicht/pm/110975/6335850",
-    "first": "2026-08-18T15:33:20Z",
-    "last": "2026-08-18T15:33:20Z",
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Baden-Baden",
-        "lat": 48.7610716,
-        "lon": 8.239959,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Kreispolizeibehörde Kleve|weeze - erstmeldung nach verkehrsunfall: willy-brandt-ring aktuell gesperrt",
-    "status": "active",
-    "title": "Weeze - Erstmeldung nach Verkehrsunfall: Willy-Brandt-Ring aktuell gesperrt",
-    "link": "https://www.presseportal.de/blaulicht/pm/65849/6335759",
-    "first": "2026-08-18T14:01:51Z",
-    "last": "2026-08-18T14:01:51Z",
-    "veg": false,
-    "source": "Kreispolizeibehörde Kleve",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Weeze",
-        "lat": 51.6267298,
-        "lon": 6.2011559,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Kreispolizeibehörde Unna|bergkamen - brand eines reihenhauses",
-    "status": "active",
-    "title": "Bergkamen - Brand eines Reihenhauses",
-    "link": "https://www.presseportal.de/blaulicht/pm/65856/6335640",
-    "first": "2026-08-18T12:43:36Z",
-    "last": "2026-08-18T12:43:36Z",
-    "veg": false,
-    "source": "Kreispolizeibehörde Unna",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Bergkamen",
-        "lat": 51.6149389,
-        "lon": 7.6362876,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(ul) allmendingen - brand in mehrfamilienhaus / am dienstag rückten einsatzkräfte zu einem wohnungsbrand in allmendingen aus. verletzt wurde niemand.",
-    "status": "out",
-    "title": "(UL) Allmendingen - Brand in Mehrfamilienhaus / Am Dienstag rückten Einsatzkräfte zu einem Wohnungsbrand in Allmendingen aus. Verletzt wurde niemand.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6335637",
-    "first": "2026-08-18T12:42:09Z",
-    "last": "2026-08-18T12:42:09Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Allmendingen",
-        "lat": 48.3282665,
-        "lon": 9.7244123,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Konstanz|(konstanz) unbekannter legt feuer vor einem wohn- und geschäftshaus - polizei ermittelt wegen schwerer brandstiftung und sucht zeugen! (18.08.2026)",
-    "status": "active",
-    "title": "(Konstanz) Unbekannter legt Feuer vor einem Wohn- und Geschäftshaus - Polizei ermittelt wegen schwerer Brandstiftung und sucht Zeugen! (18.08.2026)",
-    "link": "https://www.presseportal.de/blaulicht/pm/110973/6335630",
-    "first": "2026-08-18T12:32:18Z",
-    "last": "2026-08-18T12:32:18Z",
-    "veg": false,
-    "source": "Polizeipräsidium Konstanz",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Geschäftshaus",
-        "lat": 49.4948559,
-        "lon": 9.7712345,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Konstanz|brand im eingangsbereich eines wohn- und geschäftsgebäudes",
-    "status": "active",
-    "title": "Brand im Eingangsbereich eines Wohn- und Geschäftsgebäudes",
-    "link": "https://www.presseportal.de/blaulicht/pm/139089/6335579",
-    "first": "2026-08-18T11:57:01Z",
-    "last": "2026-08-18T11:57:01Z",
-    "veg": false,
-    "source": "Feuerwehr Konstanz",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Konstanz",
-        "lat": 47.659216,
-        "lon": 9.1750718,
-        "approx": false
       }
     ]
   }
