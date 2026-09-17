@@ -1,5 +1,51 @@
 [
   {
+    "base": "Feuerwehr Wuppertal|ausgelöste brandmeldeanlage führt zu gefahrstoffeinsatz",
+    "status": "active",
+    "title": "Ausgelöste Brandmeldeanlage führt zu Gefahrstoffeinsatz",
+    "link": "https://www.presseportal.de/blaulicht/pm/115885/6354325",
+    "first": "2026-09-17T23:20:45Z",
+    "last": "2026-09-17T23:20:45Z",
+    "places": [
+      {
+        "name": "Wuppertal",
+        "lat": 51.264018,
+        "lon": 7.1780374,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Wuppertal",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|stühlingen/ grimmelshofen: person bei brand verstorben",
+    "status": "active",
+    "title": "Stühlingen/ Grimmelshofen: Person bei Brand verstorben",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6354321",
+    "first": "2026-09-17T22:39:09Z",
+    "last": "2026-09-17T22:39:09Z",
+    "places": [
+      {
+        "name": "Stühlingen",
+        "lat": 47.7470397,
+        "lon": 8.4474495,
+        "approx": false
+      },
+      {
+        "name": "Grimmelshofen",
+        "lat": 47.7861745,
+        "lon": 8.497838,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Oberhausen|containerbrand auf der bab a3 - feuerwehr löscht brandgut bei containerdienst ab",
     "status": "active",
     "title": "Containerbrand auf der BAB A3 - Feuerwehr löscht Brandgut bei Containerdienst ab",
@@ -5207,26 +5253,6 @@
         "name": "Ostalbkreis",
         "lat": 48.8777738,
         "lon": 10.0337317,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Mülheim an der Ruhr|küchenbrand in mehrfamilienhaus",
-    "status": "active",
-    "title": "Küchenbrand in Mehrfamilienhaus",
-    "link": "https://www.presseportal.de/blaulicht/pm/115880/6335923",
-    "first": "2026-08-18T19:41:03Z",
-    "last": "2026-08-18T19:41:03Z",
-    "veg": false,
-    "source": "Feuerwehr Mülheim an der Ruhr",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Mülheim an der Ruhr",
-        "lat": 51.4272925,
-        "lon": 6.8829192,
         "approx": false
       }
     ]
