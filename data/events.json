@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115881/6354254",
     "first": "2026-09-17T15:53:29Z",
     "last": "2026-09-17T15:53:29Z",
+    "veg": false,
+    "source": "Feuerwehr Oberhausen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Oberhausen",
@@ -13,11 +17,7 @@
         "lon": 6.8514435,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Oberhausen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|lörrach: brand einer papiertonne - zeugensuche",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6354236",
     "first": "2026-09-17T15:29:50Z",
     "last": "2026-09-17T15:29:50Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Lörrach",
@@ -33,11 +37,7 @@
         "lon": 7.6607218,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Detmold|gemeldeter brand im gebäude ( feuer 3 )",
@@ -46,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/116239/6354234",
     "first": "2026-09-17T15:28:40Z",
     "last": "2026-09-17T15:28:40Z",
+    "veg": false,
+    "source": "Feuerwehr Detmold",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Detmold",
@@ -53,11 +57,7 @@
         "lon": 8.8791526,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Detmold",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Herdecke|sauna brannte im keller in der berliner straße - bewohner weist feuerwehr vorbildlich ein",
@@ -66,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/69790/6354190",
     "first": "2026-09-17T14:52:06Z",
     "last": "2026-09-17T14:52:06Z",
+    "veg": false,
+    "source": "Feuerwehr Herdecke",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Herdecke",
@@ -73,11 +77,7 @@
         "lon": 7.4330062,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Herdecke",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Wuppertal|brand in vohwinkel",
@@ -5228,46 +5228,6 @@
         "lat": 51.4272925,
         "lon": 6.8829192,
         "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Schermbeck|müllbrand",
-    "status": "out",
-    "title": "Müllbrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/118232/6335878",
-    "first": "2026-08-18T16:27:13Z",
-    "last": "2026-08-18T16:27:13Z",
-    "veg": false,
-    "source": "Feuerwehr Schermbeck",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Schermbeck",
-        "lat": 51.6898739,
-        "lon": 6.8391929,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Essen|wohnungsbrand in essen-frohnhausen - feuer schnell gelöscht",
-    "status": "out",
-    "title": "Wohnungsbrand in Essen-Frohnhausen - Feuer schnell gelöscht",
-    "link": "https://www.presseportal.de/blaulicht/pm/56893/6335872",
-    "first": "2026-08-18T16:09:22Z",
-    "last": "2026-08-18T16:09:22Z",
-    "veg": false,
-    "source": "Feuerwehr Essen",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Essen",
-        "lat": 51.4582235,
-        "lon": 7.0158171,
-        "approx": true
       }
     ]
   }
