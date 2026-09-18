@@ -1,11 +1,35 @@
 [
   {
+    "base": "Feuerwehr Stuttgart|brand in gemeinschaftsunterkunft in stuttgart-bad cannstatt - zimmerbrand mit starker rauchentwicklung - 8 verletzte personen - mehrere atemschutztrupps im einsatz",
+    "status": "active",
+    "title": "Brand in Gemeinschaftsunterkunft in Stuttgart-Bad Cannstatt - Zimmerbrand mit starker Rauchentwicklung - 8 verletzte Personen - mehrere Atemschutztrupps im Einsatz",
+    "link": "https://www.presseportal.de/blaulicht/pm/161590/6354335",
+    "first": "2026-09-18T06:08:30Z",
+    "last": "2026-09-18T06:08:30Z",
+    "places": [
+      {
+        "name": "Stuttgart",
+        "lat": 48.7784485,
+        "lon": 9.1800132,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Stuttgart",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Düsseldorf|feuermeldung in düsseldorf-oberbilk - verpuffung in einer obdachlosenunterkunft",
     "status": "out",
     "title": "Feuermeldung in Düsseldorf-Oberbilk - Verpuffung in einer Obdachlosenunterkunft",
     "link": "https://www.presseportal.de/blaulicht/pm/115876/6354326",
     "first": "2026-09-18T00:03:31Z",
     "last": "2026-09-18T00:03:31Z",
+    "veg": false,
+    "source": "Feuerwehr Düsseldorf",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Düsseldorf",
@@ -13,11 +37,7 @@
         "lon": 6.7763137,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Düsseldorf",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Wuppertal|ausgelöste brandmeldeanlage führt zu gefahrstoffeinsatz",
