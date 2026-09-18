@@ -1,5 +1,125 @@
 [
   {
+    "base": "Feuerwehr Mülheim an der Ruhr|brand in mehrfamilienhaus in mülheim an der ruhr - bewohner über steckleiter gerettet",
+    "status": "active",
+    "title": "Brand in Mehrfamilienhaus in Mülheim an der Ruhr - Bewohner über Steckleiter gerettet",
+    "link": "https://www.presseportal.de/blaulicht/pm/115880/6355033",
+    "first": "2026-09-18T19:58:31Z",
+    "last": "2026-09-18T19:58:31Z",
+    "places": [
+      {
+        "name": "Mülheim an der Ruhr",
+        "lat": 51.4272925,
+        "lon": 6.8829192,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Mülheim an der Ruhr",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Ense|zugübung: brand in einem maschinenlager",
+    "status": "active",
+    "title": "Zugübung: Brand in einem Maschinenlager",
+    "link": "https://www.presseportal.de/blaulicht/pm/173619/6355023",
+    "first": "2026-09-18T18:37:44Z",
+    "last": "2026-09-18T18:37:44Z",
+    "places": [
+      {
+        "name": "Ense",
+        "lat": 51.502011,
+        "lon": 7.9722118,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Ense",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Ratingen|küchenbrand in ratingen-ost",
+    "status": "active",
+    "title": "Küchenbrand in Ratingen-Ost",
+    "link": "https://www.presseportal.de/blaulicht/pm/70701/6355014",
+    "first": "2026-09-18T17:45:36Z",
+    "last": "2026-09-18T17:45:36Z",
+    "places": [
+      {
+        "name": "Ratingen",
+        "lat": 51.2973261,
+        "lon": 6.8493503,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Ratingen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Freiwillige Feuerwehr Reichenau|ausgelöste brandmeldeanlage - 17.09.2026",
+    "status": "active",
+    "title": "Ausgelöste Brandmeldeanlage - 17.09.2026",
+    "link": "https://www.presseportal.de/blaulicht/pm/163367/6355008",
+    "first": "2026-09-18T17:17:37Z",
+    "last": "2026-09-18T17:17:37Z",
+    "places": [
+      {
+        "name": "Reichenau",
+        "lat": 47.6956373,
+        "lon": 9.0592022,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Reichenau",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Düsseldorf|wohnungsbrand in derendorf - feuerwehr rettet bewohner, rettungshubschrauber im einsatz",
+    "status": "out",
+    "title": "Wohnungsbrand in Derendorf - Feuerwehr rettet Bewohner, Rettungshubschrauber im Einsatz",
+    "link": "https://www.presseportal.de/blaulicht/pm/115876/6354997",
+    "first": "2026-09-18T16:31:35Z",
+    "last": "2026-09-18T16:31:35Z",
+    "places": [
+      {
+        "name": "Düsseldorf",
+        "lat": 51.2254018,
+        "lon": 6.7763137,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Düsseldorf",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Freiwillige Feuerwehr Gangelt|unterstützung bei brand in den niederlanden",
+    "status": "active",
+    "title": "Unterstützung bei Brand in den Niederlanden",
+    "link": "https://www.presseportal.de/blaulicht/pm/130424/6354986",
+    "first": "2026-09-18T16:02:15Z",
+    "last": "2026-09-18T16:02:15Z",
+    "places": [
+      {
+        "name": "Gangelt",
+        "lat": 50.9928407,
+        "lon": 5.997057,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Gangelt",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Mannheim|wiesloch/rhein-neckar-kreis: feuerzeug räuberisch erpresst - zeugenaufruf",
     "status": "active",
     "title": "Wiesloch/Rhein-Neckar-Kreis: Feuerzeug räuberisch erpresst - Zeugenaufruf",
@@ -57,7 +177,11 @@
     "title": "Brandmeldeanlage in Pflegeheim Ursache für Feuerwehreinsatz",
     "link": "https://www.presseportal.de/blaulicht/pm/179375/6354998",
     "first": "2026-09-18T14:45:01Z",
-    "last": "2026-09-18T14:45:01Z",
+    "last": "2026-09-18T16:45:01Z",
+    "veg": false,
+    "source": "Feuerwehr Weinheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Weinheim",
@@ -65,11 +189,7 @@
         "lon": 8.6717458,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Weinheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|weinheim/rhein-neckar-kreis: person bei kellerbrand leicht verletzt",
@@ -104,6 +224,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6354860",
     "first": "2026-09-18T13:47:11Z",
     "last": "2026-09-18T13:47:11Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Rems-Murr-Kreis",
@@ -111,11 +235,7 @@
         "lon": 9.5037124,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(ul) laichingen - zeugen zu brand gesucht / eine holzhütte und ein bauwagen brannten am donnerstagabend in laichingen.",
@@ -124,6 +244,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6354766",
     "first": "2026-09-18T12:45:51Z",
     "last": "2026-09-18T12:45:51Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Laichingen",
@@ -131,11 +255,7 @@
         "lon": 9.6861474,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|leimen/rhein-neckar-kreis: e-scooter-kontrollen - manipulierter e-scooter festgestellt",
@@ -144,6 +264,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6354884",
     "first": "2026-09-18T12:03:30Z",
     "last": "2026-09-18T12:03:30Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Leimen",
@@ -157,11 +281,7 @@
         "lon": 8.7352403,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Dörentrup|strohballenbrand entwickelte sich rasant zu kräftezehrendem einsatz für die feuerwehr",
@@ -190,6 +310,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110971/6354523",
     "first": "2026-09-18T10:09:40Z",
     "last": "2026-09-18T10:09:40Z",
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Stadt-",
@@ -197,11 +321,7 @@
         "lon": 8.694724,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Stuttgart|brand in gemeinschaftsunterkunft in stuttgart-bad cannstatt - zimmerbrand mit starker rauchentwicklung - 8 verletzte personen - mehrere atemschutztrupps im einsatz",
@@ -376,6 +496,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6353887",
     "first": "2026-09-17T09:02:11Z",
     "last": "2026-09-17T09:02:11Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Mannheim",
@@ -383,11 +507,7 @@
         "lon": 8.4673098,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Offenburg|ottersweier, a5 - sperrung nach fahrzeugbrand - nachtragsmeldung -",
@@ -396,6 +516,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110975/6353860",
     "first": "2026-09-17T08:47:32Z",
     "last": "2026-09-17T08:47:32Z",
+    "veg": false,
+    "source": "Polizeipräsidium Offenburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ottersweier",
@@ -403,11 +527,7 @@
         "lon": 8.110948,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Wuppertal|brand in vohwinkel",
@@ -874,6 +994,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110972/6351794",
     "first": "2026-09-14T14:58:12Z",
     "last": "2026-09-14T14:58:12Z",
+    "veg": true,
+    "source": "Polizeipräsidium Karlsruhe",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Pfinztal",
@@ -887,11 +1011,7 @@
         "lon": 8.55481,
         "approx": true
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Karlsruhe",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Weinheim|feuerwehr weinheim zu vermeindlichem zimmerbrand alarmiert",
@@ -940,6 +1060,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6351170",
     "first": "2026-09-14T08:32:40Z",
     "last": "2026-09-14T08:32:40Z",
+    "veg": true,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Rems-Murr-Kreis",
@@ -947,11 +1071,7 @@
         "lon": 9.5037124,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Aalen",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Sankt Augustin|freiwillige feuerwehr löscht küchenbrand",
@@ -1466,6 +1586,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110972/6349518",
     "first": "2026-09-10T11:42:41Z",
     "last": "2026-09-10T11:42:41Z",
+    "veg": false,
+    "source": "Polizeipräsidium Karlsruhe",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Kronau",
@@ -1473,11 +1597,7 @@
         "lon": 8.6328799,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Karlsruhe",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Oberhausen|zimmerbrand in oberhausen-lirich-süd - eine person verstorben",
@@ -1646,6 +1766,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110972/6348636",
     "first": "2026-09-09T11:06:57Z",
     "last": "2026-09-09T11:06:57Z",
+    "veg": false,
+    "source": "Polizeipräsidium Karlsruhe",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Stutensee",
@@ -1653,11 +1777,7 @@
         "lon": 8.4856806,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Karlsruhe",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Kreisfeuerwehrverband Sigmaringen|gebäudebrand",
@@ -2306,6 +2426,26 @@
     ]
   },
   {
+    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
+    "status": "out",
+    "title": "Wohnungsbrand im 2. Obergeschoss - Abschlussmeldung (PM Nr. 2)",
+    "link": "https://www.presseportal.de/blaulicht/pm/134197/6345986",
+    "first": "2026-09-04T18:17:50Z",
+    "last": "2026-09-04T18:17:50Z",
+    "veg": false,
+    "source": "FF Walldorf",
+    "updates": 0,
+    "region": "BW",
+    "places": [
+      {
+        "name": "Walldorf",
+        "lat": 49.3032669,
+        "lon": 8.6432056,
+        "approx": false
+      }
+    ]
+  },
+  {
     "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - Abschlussmeldung (PM Nr. 2)",
@@ -2324,26 +2464,6 @@
         "approx": false
       }
     ]
-  },
-  {
-    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
-    "status": "out",
-    "title": "Wohnungsbrand im 2. Obergeschoss - Abschlussmeldung (PM Nr. 2)",
-    "link": "https://www.presseportal.de/blaulicht/pm/134197/6345986",
-    "first": "2026-09-04T18:17:50Z",
-    "last": "2026-09-04T18:17:50Z",
-    "places": [
-      {
-        "name": "Walldorf",
-        "lat": 49.3032669,
-        "lon": 8.6432056,
-        "approx": false
-      }
-    ],
-    "veg": false,
-    "source": "FF Walldorf",
-    "region": "BW",
-    "updates": 0
   },
   {
     "base": "Polizeipräsidium Offenburg|oberharmersbach - brandursache unklar",
@@ -2392,6 +2512,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345918",
     "first": "2026-09-04T14:52:55Z",
     "last": "2026-09-04T14:52:55Z",
+    "veg": false,
+    "source": "FF Walldorf",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Walldorf",
@@ -2399,11 +2523,7 @@
         "lon": 8.6432056,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "FF Walldorf",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
@@ -3912,6 +4032,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/179375/6339854",
     "first": "2026-08-26T05:51:11Z",
     "last": "2026-08-26T05:51:11Z",
+    "veg": false,
+    "source": "Feuerwehr Weinheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Weinheim",
@@ -3919,11 +4043,7 @@
         "lon": 8.6717458,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Weinheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|heidelberg-boxberg: fahrzeugbrand, pressemitteilung nr. 1",
@@ -5459,70 +5579,6 @@
         "name": "Bonn",
         "lat": 50.7352621,
         "lon": 7.1024635,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|schriesheim/rhein-neckar-kreis/bab 5: brand eines lkw, vollsperrung der bab 5, pm 2",
-    "status": "active",
-    "title": "Schriesheim/Rhein-Neckar-Kreis/BAB 5: Brand eines Lkw, Vollsperrung der BAB 5, PM 2",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6336563",
-    "first": "2026-08-19T20:04:42Z",
-    "last": "2026-08-19T20:04:42Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Schriesheim",
-        "lat": 49.4751705,
-        "lon": 8.6611149,
-        "approx": false
-      },
-      {
-        "name": "Rhein-Neckar-Kreis",
-        "lat": 49.3684797,
-        "lon": 8.7352403,
-        "approx": false
-      },
-      {
-        "name": "BAB 5",
-        "lat": 48.0640897,
-        "lon": 10.1396324,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|schriesheim/rhein-neckar-kreis/bab 5: brand eines lkw, vollsperrung der bab 5, pm 1",
-    "status": "active",
-    "title": "Schriesheim/Rhein-Neckar-Kreis/BAB 5: Brand eines Lkw, Vollsperrung der BAB 5, PM 1",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6336558",
-    "first": "2026-08-19T19:16:15Z",
-    "last": "2026-08-19T19:16:15Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Schriesheim",
-        "lat": 49.4751705,
-        "lon": 8.6611149,
-        "approx": false
-      },
-      {
-        "name": "Rhein-Neckar-Kreis",
-        "lat": 49.3684797,
-        "lon": 8.7352403,
-        "approx": false
-      },
-      {
-        "name": "BAB 5",
-        "lat": 48.0640897,
-        "lon": 10.1396324,
         "approx": false
       }
     ]
