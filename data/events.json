@@ -1,11 +1,35 @@
 [
   {
+    "base": "Feuerwehr Wuppertal|dachstuhlbrand und ein schwerer verkehrsunfall fordern die feuerwehr",
+    "status": "out",
+    "title": "Dachstuhlbrand und ein schwerer Verkehrsunfall fordern die Feuerwehr",
+    "link": "https://www.presseportal.de/blaulicht/pm/115885/6355048",
+    "first": "2026-09-18T22:45:06Z",
+    "last": "2026-09-18T22:45:06Z",
+    "places": [
+      {
+        "name": "Wuppertal",
+        "lat": 51.264018,
+        "lon": 7.1780374,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Wuppertal",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Mülheim an der Ruhr|brand in mehrfamilienhaus in mülheim an der ruhr - bewohner über steckleiter gerettet",
     "status": "active",
     "title": "Brand in Mehrfamilienhaus in Mülheim an der Ruhr - Bewohner über Steckleiter gerettet",
     "link": "https://www.presseportal.de/blaulicht/pm/115880/6355033",
     "first": "2026-09-18T19:58:31Z",
     "last": "2026-09-18T19:58:31Z",
+    "veg": false,
+    "source": "Feuerwehr Mülheim an der Ruhr",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Mülheim an der Ruhr",
@@ -13,11 +37,7 @@
         "lon": 6.8829192,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Mülheim an der Ruhr",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Ense|zugübung: brand in einem maschinenlager",
@@ -26,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/173619/6355023",
     "first": "2026-09-18T18:37:44Z",
     "last": "2026-09-18T18:37:44Z",
+    "veg": false,
+    "source": "Feuerwehr Ense",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Ense",
@@ -33,11 +57,7 @@
         "lon": 7.9722118,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Ense",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Ratingen|küchenbrand in ratingen-ost",
@@ -46,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/70701/6355014",
     "first": "2026-09-18T17:45:36Z",
     "last": "2026-09-18T17:45:36Z",
+    "veg": false,
+    "source": "Feuerwehr Ratingen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Ratingen",
@@ -53,11 +77,7 @@
         "lon": 6.8493503,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Ratingen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Reichenau|ausgelöste brandmeldeanlage - 17.09.2026",
@@ -66,6 +86,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/163367/6355008",
     "first": "2026-09-18T17:17:37Z",
     "last": "2026-09-18T17:17:37Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Reichenau",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Reichenau",
@@ -73,11 +97,7 @@
         "lon": 9.0592022,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Reichenau",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Düsseldorf|wohnungsbrand in derendorf - feuerwehr rettet bewohner, rettungshubschrauber im einsatz",
@@ -86,6 +106,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115876/6354997",
     "first": "2026-09-18T16:31:35Z",
     "last": "2026-09-18T16:31:35Z",
+    "veg": false,
+    "source": "Feuerwehr Düsseldorf",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Düsseldorf",
@@ -93,11 +117,7 @@
         "lon": 6.7763137,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Düsseldorf",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Gangelt|unterstützung bei brand in den niederlanden",
@@ -106,6 +126,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/130424/6354986",
     "first": "2026-09-18T16:02:15Z",
     "last": "2026-09-18T16:02:15Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Gangelt",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Gangelt",
@@ -113,11 +137,7 @@
         "lon": 5.997057,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Gangelt",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|wiesloch/rhein-neckar-kreis: feuerzeug räuberisch erpresst - zeugenaufruf",
@@ -2426,14 +2446,14 @@
     ]
   },
   {
-    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
+    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - Abschlussmeldung (PM Nr. 2)",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345986",
     "first": "2026-09-04T18:17:50Z",
     "last": "2026-09-04T18:17:50Z",
     "veg": false,
-    "source": "FF Walldorf",
+    "source": "Freiwillige Feuerwehr Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -2446,14 +2466,14 @@
     ]
   },
   {
-    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
+    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - Abschlussmeldung (PM Nr. 2)",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345986",
     "first": "2026-09-04T18:17:50Z",
     "last": "2026-09-04T18:17:50Z",
     "veg": false,
-    "source": "Freiwillige Feuerwehr Walldorf",
+    "source": "FF Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
