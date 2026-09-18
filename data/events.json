@@ -1,11 +1,35 @@
 [
   {
+    "base": "Feuerwehr Dörentrup|strohballenbrand entwickelte sich rasant zu kräftezehrendem einsatz für die feuerwehr",
+    "status": "contained",
+    "title": "Strohballenbrand entwickelte sich rasant zu kräftezehrendem Einsatz für die Feuerwehr",
+    "link": "https://www.presseportal.de/blaulicht/pm/179920/6354602",
+    "first": "2026-09-18T11:03:37Z",
+    "last": "2026-09-18T11:03:37Z",
+    "places": [
+      {
+        "name": "Dörentrup",
+        "lat": 52.0408142,
+        "lon": 9.0033681,
+        "approx": false
+      }
+    ],
+    "veg": true,
+    "source": "Feuerwehr Dörentrup",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Stuttgart|brand in gemeinschaftsunterkunft in stuttgart-bad cannstatt - zimmerbrand mit starker rauchentwicklung - 8 verletzte personen - mehrere atemschutztrupps im einsatz",
     "status": "active",
     "title": "Brand in Gemeinschaftsunterkunft in Stuttgart-Bad Cannstatt - Zimmerbrand mit starker Rauchentwicklung - 8 verletzte Personen - mehrere Atemschutztrupps im Einsatz",
     "link": "https://www.presseportal.de/blaulicht/pm/161590/6354335",
     "first": "2026-09-18T06:08:30Z",
     "last": "2026-09-18T06:08:30Z",
+    "veg": false,
+    "source": "Feuerwehr Stuttgart",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Stuttgart",
@@ -13,11 +37,7 @@
         "lon": 9.1800132,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Stuttgart",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Düsseldorf|feuermeldung in düsseldorf-oberbilk - verpuffung in einer obdachlosenunterkunft",
@@ -5253,46 +5273,6 @@
         "name": "Wuppertal",
         "lat": 51.264018,
         "lon": 7.1780374,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Dortmund|brennender gasherd - feuerwehr verhindert schlimmeres",
-    "status": "active",
-    "title": "Brennender Gasherd - Feuerwehr verhindert schlimmeres",
-    "link": "https://www.presseportal.de/blaulicht/pm/115869/6336082",
-    "first": "2026-08-19T09:38:58Z",
-    "last": "2026-08-19T09:38:58Z",
-    "veg": false,
-    "source": "Feuerwehr Dortmund",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Dortmund",
-        "lat": 51.5142273,
-        "lon": 7.4652789,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Aalen|ostalbkreis: brand - unfälle - sonstiges",
-    "status": "out",
-    "title": "Ostalbkreis: Brand - Unfälle - Sonstiges",
-    "link": "https://www.presseportal.de/blaulicht/pm/110969/6336056",
-    "first": "2026-08-19T09:12:46Z",
-    "last": "2026-08-19T09:12:46Z",
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Ostalbkreis",
-        "lat": 48.8777738,
-        "lon": 10.0337317,
         "approx": false
       }
     ]
