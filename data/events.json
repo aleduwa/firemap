@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6354979",
     "first": "2026-09-18T15:38:01Z",
     "last": "2026-09-18T15:38:01Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Wiesloch",
@@ -25,11 +29,7 @@
         "lon": 8.71819,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Weinheim|kellerbrand in steinklingen schnell gelöscht",
@@ -38,6 +38,26 @@
     "link": "https://www.presseportal.de/blaulicht/pm/179375/6354970",
     "first": "2026-09-18T15:18:48Z",
     "last": "2026-09-18T15:18:48Z",
+    "veg": false,
+    "source": "Feuerwehr Weinheim",
+    "updates": 0,
+    "region": "BW",
+    "places": [
+      {
+        "name": "Weinheim",
+        "lat": 49.5462349,
+        "lon": 8.6717458,
+        "approx": false
+      }
+    ]
+  },
+  {
+    "base": "Feuerwehr Weinheim|brandmeldeanlage in pflegeheim ursache für feuerwehreinsatz",
+    "status": "active",
+    "title": "Brandmeldeanlage in Pflegeheim Ursache für Feuerwehreinsatz",
+    "link": "https://www.presseportal.de/blaulicht/pm/179375/6354998",
+    "first": "2026-09-18T14:45:01Z",
+    "last": "2026-09-18T14:45:01Z",
     "places": [
       {
         "name": "Weinheim",
@@ -58,11 +78,77 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6354899",
     "first": "2026-09-18T14:12:52Z",
     "last": "2026-09-18T14:12:52Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Weinheim",
         "lat": 49.5462349,
         "lon": 8.6717458,
+        "approx": false
+      },
+      {
+        "name": "Rhein-Neckar-Kreis",
+        "lat": 49.3684797,
+        "lon": 8.7352403,
+        "approx": false
+      }
+    ]
+  },
+  {
+    "base": "Polizeipräsidium Aalen|rems-murr-kreis: zwei verletzte nach brand einer arbeitsmaschine & diebstahlsdelikte aus und von pkw - polizei gibt präventionshinweise",
+    "status": "out",
+    "title": "Rems-Murr-Kreis: Zwei Verletzte nach Brand einer Arbeitsmaschine & Diebstahlsdelikte aus und von Pkw - Polizei gibt Präventionshinweise",
+    "link": "https://www.presseportal.de/blaulicht/pm/110969/6354860",
+    "first": "2026-09-18T13:47:11Z",
+    "last": "2026-09-18T13:47:11Z",
+    "places": [
+      {
+        "name": "Rems-Murr-Kreis",
+        "lat": 48.8966799,
+        "lon": 9.5037124,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Ulm|(ul) laichingen - zeugen zu brand gesucht / eine holzhütte und ein bauwagen brannten am donnerstagabend in laichingen.",
+    "status": "active",
+    "title": "(UL) Laichingen - Zeugen zu Brand gesucht / Eine Holzhütte und ein Bauwagen brannten am Donnerstagabend in Laichingen.",
+    "link": "https://www.presseportal.de/blaulicht/pm/110979/6354766",
+    "first": "2026-09-18T12:45:51Z",
+    "last": "2026-09-18T12:45:51Z",
+    "places": [
+      {
+        "name": "Laichingen",
+        "lat": 48.4896773,
+        "lon": 9.6861474,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|leimen/rhein-neckar-kreis: e-scooter-kontrollen - manipulierter e-scooter festgestellt",
+    "status": "active",
+    "title": "Leimen/Rhein-Neckar-Kreis: E-Scooter-Kontrollen - manipulierter E-Scooter festgestellt",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6354884",
+    "first": "2026-09-18T12:03:30Z",
+    "last": "2026-09-18T12:03:30Z",
+    "places": [
+      {
+        "name": "Leimen",
+        "lat": 49.3491417,
+        "lon": 8.6909951,
         "approx": false
       },
       {
@@ -96,6 +182,26 @@
         "approx": false
       }
     ]
+  },
+  {
+    "base": "Polizeipräsidium Heilbronn|stadt- und landkreis heilbronn: brand und unfall unter alkoholeinfluss",
+    "status": "out",
+    "title": "Stadt- und Landkreis Heilbronn: Brand und Unfall unter Alkoholeinfluss",
+    "link": "https://www.presseportal.de/blaulicht/pm/110971/6354523",
+    "first": "2026-09-18T10:09:40Z",
+    "last": "2026-09-18T10:09:40Z",
+    "places": [
+      {
+        "name": "Stadt-",
+        "lat": 49.4093582,
+        "lon": 8.694724,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "region": "BW",
+    "updates": 0
   },
   {
     "base": "Feuerwehr Stuttgart|brand in gemeinschaftsunterkunft in stuttgart-bad cannstatt - zimmerbrand mit starker rauchentwicklung - 8 verletzte personen - mehrere atemschutztrupps im einsatz",
@@ -262,6 +368,46 @@
         "approx": false
       }
     ]
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|mannheim: brand verursacht erhebliche geruchsbelästigung",
+    "status": "active",
+    "title": "Mannheim: Brand verursacht erhebliche Geruchsbelästigung",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6353887",
+    "first": "2026-09-17T09:02:11Z",
+    "last": "2026-09-17T09:02:11Z",
+    "places": [
+      {
+        "name": "Mannheim",
+        "lat": 49.4892913,
+        "lon": 8.4673098,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Offenburg|ottersweier, a5 - sperrung nach fahrzeugbrand - nachtragsmeldung -",
+    "status": "active",
+    "title": "Ottersweier, A5 - Sperrung nach Fahrzeugbrand - Nachtragsmeldung -",
+    "link": "https://www.presseportal.de/blaulicht/pm/110975/6353860",
+    "first": "2026-09-17T08:47:32Z",
+    "last": "2026-09-17T08:47:32Z",
+    "places": [
+      {
+        "name": "Ottersweier",
+        "lat": 48.6687192,
+        "lon": 8.110948,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Offenburg",
+    "region": "BW",
+    "updates": 0
   },
   {
     "base": "Feuerwehr Wuppertal|brand in vohwinkel",
@@ -722,6 +868,32 @@
     ]
   },
   {
+    "base": "Polizeipräsidium Karlsruhe|(ka) pfinztal - kriminalpolizei sucht zeugen nach flächenbrand",
+    "status": "contained",
+    "title": "(KA) Pfinztal - Kriminalpolizei sucht Zeugen nach Flächenbrand",
+    "link": "https://www.presseportal.de/blaulicht/pm/110972/6351794",
+    "first": "2026-09-14T14:58:12Z",
+    "last": "2026-09-14T14:58:12Z",
+    "places": [
+      {
+        "name": "Pfinztal",
+        "lat": 48.9918661,
+        "lon": 8.5553158,
+        "approx": false
+      },
+      {
+        "name": "zwischen Wöschbach und Söllingen",
+        "lat": 48.99406,
+        "lon": 8.55481,
+        "approx": true
+      }
+    ],
+    "veg": true,
+    "source": "Polizeipräsidium Karlsruhe",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Weinheim|feuerwehr weinheim zu vermeindlichem zimmerbrand alarmiert",
     "status": "out",
     "title": "Feuerwehr Weinheim zu vermeindlichem Zimmerbrand alarmiert",
@@ -760,6 +932,26 @@
         "approx": false
       }
     ]
+  },
+  {
+    "base": "Polizeipräsidium Aalen|rems-murr-kreis: einbrüche - roller entwendet - widerstand - verkehrsunfälle - flächenbrand",
+    "status": "out",
+    "title": "Rems-Murr-Kreis: Einbrüche - Roller entwendet - Widerstand - Verkehrsunfälle - Flächenbrand",
+    "link": "https://www.presseportal.de/blaulicht/pm/110969/6351170",
+    "first": "2026-09-14T08:32:40Z",
+    "last": "2026-09-14T08:32:40Z",
+    "places": [
+      {
+        "name": "Rems-Murr-Kreis",
+        "lat": 48.8966799,
+        "lon": 9.5037124,
+        "approx": false
+      }
+    ],
+    "veg": true,
+    "source": "Polizeipräsidium Aalen",
+    "region": "BW",
+    "updates": 0
   },
   {
     "base": "Freiwillige Feuerwehr Sankt Augustin|freiwillige feuerwehr löscht küchenbrand",
@@ -1268,6 +1460,26 @@
     ]
   },
   {
+    "base": "Polizeipräsidium Karlsruhe|(ka) kronau - eine leichtverletzte person nach brand eines holzunterstands",
+    "status": "out",
+    "title": "(KA) Kronau - Eine leichtverletzte Person nach Brand eines Holzunterstands",
+    "link": "https://www.presseportal.de/blaulicht/pm/110972/6349518",
+    "first": "2026-09-10T11:42:41Z",
+    "last": "2026-09-10T11:42:41Z",
+    "places": [
+      {
+        "name": "Kronau",
+        "lat": 49.2190434,
+        "lon": 8.6328799,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Karlsruhe",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Oberhausen|zimmerbrand in oberhausen-lirich-süd - eine person verstorben",
     "status": "out",
     "title": "Zimmerbrand in Oberhausen-Lirich-Süd - eine Person verstorben",
@@ -1428,6 +1640,26 @@
     ]
   },
   {
+    "base": "Polizeipräsidium Karlsruhe|(ka) stutensee - nach scheunenbrand bittet die polizei um zeugenhinweise",
+    "status": "active",
+    "title": "(KA) Stutensee - Nach Scheunenbrand bittet die Polizei um Zeugenhinweise",
+    "link": "https://www.presseportal.de/blaulicht/pm/110972/6348636",
+    "first": "2026-09-09T11:06:57Z",
+    "last": "2026-09-09T11:06:57Z",
+    "places": [
+      {
+        "name": "Stutensee",
+        "lat": 49.0895249,
+        "lon": 8.4856806,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Karlsruhe",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Kreisfeuerwehrverband Sigmaringen|gebäudebrand",
     "status": "active",
     "title": "Gebäudebrand",
@@ -1531,12 +1763,12 @@
     "base": "Polizeipräsidium Heilbronn|main-tauber-kreis: brand",
     "status": "contained",
     "title": "Main-Tauber-Kreis: Brand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110971/6348163",
+    "link": "https://www.presseportal.de/blaulicht/pm/110971/6354822",
     "first": "2026-09-08T16:08:11Z",
-    "last": "2026-09-08T16:08:11Z",
+    "last": "2026-09-18T13:20:47Z",
     "veg": false,
     "source": "Polizeipräsidium Heilbronn",
-    "updates": 0,
+    "updates": 1,
     "region": "BW",
     "places": [
       {
@@ -2094,6 +2326,26 @@
     ]
   },
   {
+    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
+    "status": "out",
+    "title": "Wohnungsbrand im 2. Obergeschoss - Abschlussmeldung (PM Nr. 2)",
+    "link": "https://www.presseportal.de/blaulicht/pm/134197/6345986",
+    "first": "2026-09-04T18:17:50Z",
+    "last": "2026-09-04T18:17:50Z",
+    "places": [
+      {
+        "name": "Walldorf",
+        "lat": 49.3032669,
+        "lon": 8.6432056,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "FF Walldorf",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Offenburg|oberharmersbach - brandursache unklar",
     "status": "active",
     "title": "Oberharmersbach - Brandursache unklar",
@@ -2132,6 +2384,26 @@
         "approx": false
       }
     ]
+  },
+  {
+    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
+    "status": "out",
+    "title": "Wohnungsbrand im 2. Obergeschoss - PM Nr. 1",
+    "link": "https://www.presseportal.de/blaulicht/pm/134197/6345918",
+    "first": "2026-09-04T14:52:55Z",
+    "last": "2026-09-04T14:52:55Z",
+    "places": [
+      {
+        "name": "Walldorf",
+        "lat": 49.3032669,
+        "lon": 8.6432056,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "FF Walldorf",
+    "region": "BW",
+    "updates": 0
   },
   {
     "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
@@ -3632,6 +3904,26 @@
         "approx": false
       }
     ]
+  },
+  {
+    "base": "Feuerwehr Weinheim|tag der offenen tür am 13. september in oberflockenbach",
+    "status": "active",
+    "title": "Tag der offenen Tür am 13. September in Oberflockenbach",
+    "link": "https://www.presseportal.de/blaulicht/pm/179375/6339854",
+    "first": "2026-08-26T05:51:11Z",
+    "last": "2026-08-26T05:51:11Z",
+    "places": [
+      {
+        "name": "Weinheim",
+        "lat": 49.5462349,
+        "lon": 8.6717458,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Weinheim",
+    "region": "BW",
+    "updates": 0
   },
   {
     "base": "Polizeipräsidium Mannheim|heidelberg-boxberg: fahrzeugbrand, pressemitteilung nr. 1",
@@ -5231,26 +5523,6 @@
         "name": "BAB 5",
         "lat": 48.0640897,
         "lon": 10.1396324,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Solingen|einsatz der bereitschaft 5 beim waldbrand im hürtgenwald beendet",
-    "status": "out",
-    "title": "Einsatz der Bereitschaft 5 beim Waldbrand im Hürtgenwald beendet",
-    "link": "https://www.presseportal.de/blaulicht/pm/115884/6336498",
-    "first": "2026-08-19T15:57:11Z",
-    "last": "2026-08-19T15:57:11Z",
-    "veg": true,
-    "source": "Feuerwehr Solingen",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Solingen",
-        "lat": 51.1721629,
-        "lon": 7.0845893,
         "approx": false
       }
     ]
