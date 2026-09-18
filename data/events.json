@@ -1,11 +1,93 @@
 [
   {
+    "base": "Polizeipräsidium Mannheim|wiesloch/rhein-neckar-kreis: feuerzeug räuberisch erpresst - zeugenaufruf",
+    "status": "active",
+    "title": "Wiesloch/Rhein-Neckar-Kreis: Feuerzeug räuberisch erpresst - Zeugenaufruf",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6354979",
+    "first": "2026-09-18T15:38:01Z",
+    "last": "2026-09-18T15:38:01Z",
+    "places": [
+      {
+        "name": "Wiesloch",
+        "lat": 49.2942599,
+        "lon": 8.698707,
+        "approx": false
+      },
+      {
+        "name": "Rhein-Neckar-Kreis",
+        "lat": 49.3684797,
+        "lon": 8.7352403,
+        "approx": false
+      },
+      {
+        "name": "zwischen Wiesloch und Baiertal",
+        "lat": 49.29839,
+        "lon": 8.71819,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Weinheim|kellerbrand in steinklingen schnell gelöscht",
+    "status": "out",
+    "title": "Kellerbrand in Steinklingen schnell gelöscht",
+    "link": "https://www.presseportal.de/blaulicht/pm/179375/6354970",
+    "first": "2026-09-18T15:18:48Z",
+    "last": "2026-09-18T15:18:48Z",
+    "places": [
+      {
+        "name": "Weinheim",
+        "lat": 49.5462349,
+        "lon": 8.6717458,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Weinheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|weinheim/rhein-neckar-kreis: person bei kellerbrand leicht verletzt",
+    "status": "active",
+    "title": "Weinheim/Rhein-Neckar-Kreis: Person bei Kellerbrand leicht verletzt",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6354899",
+    "first": "2026-09-18T14:12:52Z",
+    "last": "2026-09-18T14:12:52Z",
+    "places": [
+      {
+        "name": "Weinheim",
+        "lat": 49.5462349,
+        "lon": 8.6717458,
+        "approx": false
+      },
+      {
+        "name": "Rhein-Neckar-Kreis",
+        "lat": 49.3684797,
+        "lon": 8.7352403,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Dörentrup|strohballenbrand entwickelte sich rasant zu kräftezehrendem einsatz für die feuerwehr",
     "status": "contained",
     "title": "Strohballenbrand entwickelte sich rasant zu kräftezehrendem Einsatz für die Feuerwehr",
     "link": "https://www.presseportal.de/blaulicht/pm/179920/6354602",
     "first": "2026-09-18T11:03:37Z",
     "last": "2026-09-18T11:03:37Z",
+    "veg": true,
+    "source": "Feuerwehr Dörentrup",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Dörentrup",
@@ -13,11 +95,7 @@
         "lon": 9.0033681,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Feuerwehr Dörentrup",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Stuttgart|brand in gemeinschaftsunterkunft in stuttgart-bad cannstatt - zimmerbrand mit starker rauchentwicklung - 8 verletzte personen - mehrere atemschutztrupps im einsatz",
@@ -5193,86 +5271,6 @@
         "name": "Wanheimerort",
         "lat": 51.4022807,
         "lon": 6.7595258,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|jestetten: brennende tuja-hecke im schrebergarten",
-    "status": "out",
-    "title": "Jestetten: Brennende Tuja-Hecke im Schrebergarten",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6336351",
-    "first": "2026-08-19T13:16:57Z",
-    "last": "2026-08-19T13:16:57Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Jestetten",
-        "lat": 47.65,
-        "lon": 8.56667,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(bc) eberhardzell - brennende holzpresse und person von holzbalken getroffen / wegen eines brandes musste die produktion am dienstagvormittag in einer firma bei eberhardzell eingestellt werden",
-    "status": "active",
-    "title": "(BC) Eberhardzell - Brennende Holzpresse und Person von Holzbalken getroffen / Wegen eines Brandes musste die Produktion am Dienstagvormittag in einer Firma bei Eberhardzell eingestellt werden",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6336277",
-    "first": "2026-08-19T12:05:33Z",
-    "last": "2026-08-19T12:05:33Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Eberhardzell",
-        "lat": 48.0039811,
-        "lon": 9.8233669,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Remscheid|einsatz der bereitschaft 5 beim waldbrand im hürtgenwald beendet",
-    "status": "out",
-    "title": "Einsatz der Bereitschaft 5 beim Waldbrand im Hürtgenwald beendet",
-    "link": "https://www.presseportal.de/blaulicht/pm/115882/6336236",
-    "first": "2026-08-19T11:33:56Z",
-    "last": "2026-08-19T11:33:56Z",
-    "veg": true,
-    "source": "Feuerwehr Remscheid",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Remscheid",
-        "lat": 51.1798706,
-        "lon": 7.1943544,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Wuppertal|einsatz der bereitschaft 5 beim waldbrand im hürtgenwald beendet",
-    "status": "out",
-    "title": "Einsatz der Bereitschaft 5 beim Waldbrand im Hürtgenwald beendet",
-    "link": "https://www.presseportal.de/blaulicht/pm/115885/6336179",
-    "first": "2026-08-19T10:55:13Z",
-    "last": "2026-08-19T10:55:13Z",
-    "veg": true,
-    "source": "Feuerwehr Wuppertal",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Wuppertal",
-        "lat": 51.264018,
-        "lon": 7.1780374,
         "approx": false
       }
     ]
