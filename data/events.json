@@ -1,11 +1,35 @@
 [
   {
+    "base": "Feuerwehr Paderborn|zimmerbrand in leerstehenden bürokomplex",
+    "status": "contained",
+    "title": "Zimmerbrand in leerstehenden Bürokomplex",
+    "link": "https://www.presseportal.de/blaulicht/pm/173646/6355056",
+    "first": "2026-09-19T01:11:36Z",
+    "last": "2026-09-19T01:11:36Z",
+    "places": [
+      {
+        "name": "Paderborn",
+        "lat": 51.7177044,
+        "lon": 8.752653,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Paderborn",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Wuppertal|dachstuhlbrand und ein schwerer verkehrsunfall fordern die feuerwehr",
     "status": "out",
     "title": "Dachstuhlbrand und ein schwerer Verkehrsunfall fordern die Feuerwehr",
     "link": "https://www.presseportal.de/blaulicht/pm/115885/6355048",
     "first": "2026-09-18T22:45:06Z",
     "last": "2026-09-18T22:45:06Z",
+    "veg": false,
+    "source": "Feuerwehr Wuppertal",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Wuppertal",
@@ -13,11 +37,7 @@
         "lon": 7.1780374,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Wuppertal",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Mülheim an der Ruhr|brand in mehrfamilienhaus in mülheim an der ruhr - bewohner über steckleiter gerettet",
@@ -2446,14 +2466,14 @@
     ]
   },
   {
-    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
+    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - Abschlussmeldung (PM Nr. 2)",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345986",
     "first": "2026-09-04T18:17:50Z",
     "last": "2026-09-04T18:17:50Z",
     "veg": false,
-    "source": "Freiwillige Feuerwehr Walldorf",
+    "source": "FF Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -2466,14 +2486,14 @@
     ]
   },
   {
-    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
+    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - Abschlussmeldung (PM Nr. 2)",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345986",
     "first": "2026-09-04T18:17:50Z",
     "last": "2026-09-04T18:17:50Z",
     "veg": false,
-    "source": "FF Walldorf",
+    "source": "Freiwillige Feuerwehr Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -5579,26 +5599,6 @@
         "name": "BAB 5",
         "lat": 48.0640897,
         "lon": 10.1396324,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr und Rettungsdienst Bonn|dachstuhlbrand in friesdorf",
-    "status": "active",
-    "title": "Dachstuhlbrand in Friesdorf",
-    "link": "https://www.presseportal.de/blaulicht/pm/115888/6336580",
-    "first": "2026-08-19T23:17:32Z",
-    "last": "2026-08-19T23:17:32Z",
-    "veg": false,
-    "source": "Feuerwehr und Rettungsdienst Bonn",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Bonn",
-        "lat": 50.7352621,
-        "lon": 7.1024635,
         "approx": false
       }
     ]
