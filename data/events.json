@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115868/6355201",
     "first": "2026-09-19T17:50:38Z",
     "last": "2026-09-19T17:50:38Z",
+    "veg": false,
+    "source": "Feuerwehr Bochum",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Bochum",
@@ -13,11 +17,7 @@
         "lon": 7.2196635,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Bochum",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Breckerfeld|brandmeldeanlage durch küchendämpfe ausgelöst",
