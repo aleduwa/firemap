@@ -1,11 +1,35 @@
 [
   {
+    "base": "Freiwillige Feuerwehr Breckerfeld|brandmeldeanlage durch küchendämpfe ausgelöst",
+    "status": "out",
+    "title": "Brandmeldeanlage durch Küchendämpfe ausgelöst",
+    "link": "https://www.presseportal.de/blaulicht/pm/69791/6355151",
+    "first": "2026-09-19T12:06:17Z",
+    "last": "2026-09-19T12:06:17Z",
+    "places": [
+      {
+        "name": "Breckerfeld",
+        "lat": 51.2603083,
+        "lon": 7.4667789,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Breckerfeld",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Mannheim|mannheim-wallstadt - pkw brennt vollständig aus - l597 zeitweise gesperrt",
     "status": "active",
     "title": "Mannheim-Wallstadt - Pkw brennt vollständig aus - L597 zeitweise gesperrt",
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6355127",
     "first": "2026-09-19T09:33:03Z",
     "last": "2026-09-19T09:33:03Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Mannheim-Wallstadt",
@@ -13,11 +37,7 @@
         "lon": 8.5417395,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Düren|scheune in merken steht beim eintreffen in vollbrand.",
@@ -5487,66 +5507,6 @@
         "name": "Rheinfelden",
         "lat": 47.5605924,
         "lon": 7.7861959,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Weinheim|feuerwehr weinheim unterstützt bei lkw brand auf der bab5",
-    "status": "active",
-    "title": "Feuerwehr Weinheim unterstützt bei LKW Brand auf der BAB5",
-    "link": "https://www.presseportal.de/blaulicht/pm/179375/6337054",
-    "first": "2026-08-20T13:20:14Z",
-    "last": "2026-08-20T13:20:14Z",
-    "veg": false,
-    "source": "Feuerwehr Weinheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Weinheim",
-        "lat": 49.5462349,
-        "lon": 8.6717458,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Konstanz|(reichenau, lkr. konstanz) schilfballen-brand in freilager - polizei sucht zeugen (19.08.2026)",
-    "status": "active",
-    "title": "(Reichenau, Lkr. Konstanz) Schilfballen-Brand in Freilager - Polizei sucht Zeugen (19.08.2026)",
-    "link": "https://www.presseportal.de/blaulicht/pm/110973/6336979",
-    "first": "2026-08-20T12:15:01Z",
-    "last": "2026-08-20T12:15:01Z",
-    "veg": false,
-    "source": "Polizeipräsidium Konstanz",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Reichenau",
-        "lat": 47.6956373,
-        "lon": 9.0592022,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Offenburg|vegetationsbrand im offenburger stadtwald",
-    "status": "active",
-    "title": "Vegetationsbrand im Offenburger Stadtwald",
-    "link": "https://www.presseportal.de/blaulicht/pm/128693/6336888",
-    "first": "2026-08-20T10:21:35Z",
-    "last": "2026-08-20T11:13:41Z",
-    "veg": true,
-    "source": "Feuerwehr Offenburg",
-    "updates": 1,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Offenburg",
-        "lat": 48.4695984,
-        "lon": 7.9429235,
         "approx": false
       }
     ]
