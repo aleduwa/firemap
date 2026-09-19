@@ -1,5 +1,25 @@
 [
   {
+    "base": "Freiwillige Feuerwehr Hünxe|pkw-brand durch ersthelfer und polizei gelöscht",
+    "status": "out",
+    "title": "Pkw-Brand durch Ersthelfer und Polizei gelöscht",
+    "link": "https://www.presseportal.de/blaulicht/pm/133631/6355216",
+    "first": "2026-09-19T21:05:45Z",
+    "last": "2026-09-19T21:05:45Z",
+    "places": [
+      {
+        "name": "Hünxe",
+        "lat": 51.6414581,
+        "lon": 6.7660319,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Hünxe",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Bochum|wohnungsbrand auf der hattinger straße: zwei personen aus brandwohnung gerettet",
     "status": "contained",
     "title": "Wohnungsbrand auf der Hattinger Straße: Zwei Personen aus Brandwohnung gerettet",
@@ -5427,46 +5447,6 @@
         "name": "Iserlohn",
         "lat": 51.3746778,
         "lon": 7.6999713,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|heidelberg-kirchheim: fahrzeugbrand, pressemitteilung nr. 1",
-    "status": "active",
-    "title": "Heidelberg-Kirchheim: Fahrzeugbrand, Pressemitteilung Nr. 1",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6337274",
-    "first": "2026-08-20T20:44:41Z",
-    "last": "2026-08-20T20:44:41Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Heidelberg-Kirchheim",
-        "lat": 49.3793639,
-        "lon": 8.6753555,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Freiwillige Feuerwehr Reichenau|brand von mehreren hundert riedballen fordert feuerwehr über 24 stunden - 19.08.2026",
-    "status": "out",
-    "title": "Brand von mehreren hundert Riedballen fordert Feuerwehr über 24 Stunden - 19.08.2026",
-    "link": "https://www.presseportal.de/blaulicht/pm/163367/6337271",
-    "first": "2026-08-20T20:36:48Z",
-    "last": "2026-08-20T20:36:48Z",
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Reichenau",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Reichenau",
-        "lat": 47.6956373,
-        "lon": 9.0592022,
         "approx": false
       }
     ]
