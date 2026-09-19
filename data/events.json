@@ -1,11 +1,35 @@
 [
   {
+    "base": "Feuerwehr Bochum|wohnungsbrand auf der hattinger straße: zwei personen aus brandwohnung gerettet",
+    "status": "contained",
+    "title": "Wohnungsbrand auf der Hattinger Straße: Zwei Personen aus Brandwohnung gerettet",
+    "link": "https://www.presseportal.de/blaulicht/pm/115868/6355201",
+    "first": "2026-09-19T17:50:38Z",
+    "last": "2026-09-19T17:50:38Z",
+    "places": [
+      {
+        "name": "Bochum",
+        "lat": 51.4818111,
+        "lon": 7.2196635,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Bochum",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Freiwillige Feuerwehr Breckerfeld|brandmeldeanlage durch küchendämpfe ausgelöst",
     "status": "out",
     "title": "Brandmeldeanlage durch Küchendämpfe ausgelöst",
     "link": "https://www.presseportal.de/blaulicht/pm/69791/6355151",
     "first": "2026-09-19T12:06:17Z",
     "last": "2026-09-19T12:06:17Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Breckerfeld",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Breckerfeld",
@@ -13,11 +37,7 @@
         "lon": 7.4667789,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Breckerfeld",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|mannheim-wallstadt - pkw brennt vollständig aus - l597 zeitweise gesperrt",
@@ -5447,66 +5467,6 @@
         "name": "Reichenau",
         "lat": 47.6956373,
         "lon": 9.0592022,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Xanten|traktor gerät während der fahrt in brand",
-    "status": "out",
-    "title": "Traktor gerät während der Fahrt in Brand",
-    "link": "https://www.presseportal.de/blaulicht/pm/122220/6337244",
-    "first": "2026-08-20T16:40:17Z",
-    "last": "2026-08-20T16:40:17Z",
-    "veg": false,
-    "source": "Feuerwehr Xanten",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Xanten",
-        "lat": 51.661519,
-        "lon": 6.4543203,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Offenburg|neuried-altenheim - gebäudebrand - nachtragsmeldung -",
-    "status": "active",
-    "title": "Neuried-Altenheim - Gebäudebrand - Nachtragsmeldung -",
-    "link": "https://www.presseportal.de/blaulicht/pm/110975/6337222",
-    "first": "2026-08-20T15:54:36Z",
-    "last": "2026-08-20T15:54:36Z",
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Neuried-Altenheim",
-        "lat": 48.4646082,
-        "lon": 7.8090487,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|rheinfelden: größerer vegetationsbrand bei der wannengasse - verdacht herbeiführung einer brandgefahr",
-    "status": "contained",
-    "title": "Rheinfelden: Größerer Vegetationsbrand bei der Wannengasse - Verdacht Herbeiführung einer Brandgefahr",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6337217",
-    "first": "2026-08-20T15:49:16Z",
-    "last": "2026-08-20T15:49:16Z",
-    "veg": true,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Rheinfelden",
-        "lat": 47.5605924,
-        "lon": 7.7861959,
         "approx": false
       }
     ]
