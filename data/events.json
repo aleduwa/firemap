@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115868/6355481",
     "first": "2026-09-20T16:49:43Z",
     "last": "2026-09-20T16:49:43Z",
+    "veg": false,
+    "source": "Feuerwehr Bochum",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Bochum",
@@ -13,11 +17,7 @@
         "lon": 7.2196635,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Bochum",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Weinheim|ausgelöste brandwarnanlage in sozialer einrichtung in der innenstadt",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/179375/6355460",
     "first": "2026-09-20T14:49:53Z",
     "last": "2026-09-20T14:49:53Z",
+    "veg": false,
+    "source": "Feuerwehr Weinheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Weinheim",
@@ -33,11 +37,7 @@
         "lon": 8.6717458,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Weinheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Weinheim|brandmeldeanlage ruft die feuerwehr weinhein am frühen samstagmorgen auf den plan",
@@ -46,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/179375/6355456",
     "first": "2026-09-20T14:31:58Z",
     "last": "2026-09-20T14:31:58Z",
+    "veg": false,
+    "source": "Feuerwehr Weinheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Weinheim",
@@ -53,11 +57,7 @@
         "lon": 8.6717458,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Weinheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Solingen|rauchmelder führt feuerwehr zu schwelbrand in darüberliegender wohnung",
