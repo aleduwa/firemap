@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115884/6355243",
     "first": "2026-09-20T06:26:19Z",
     "last": "2026-09-20T06:26:19Z",
+    "veg": false,
+    "source": "Feuerwehr Solingen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Solingen",
@@ -13,11 +17,7 @@
         "lon": 7.0845893,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Solingen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Hünxe|pkw-brand durch ersthelfer und polizei gelöscht",
@@ -2606,14 +2606,14 @@
     ]
   },
   {
-    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
+    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - Abschlussmeldung (PM Nr. 2)",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345986",
     "first": "2026-09-04T18:17:50Z",
     "last": "2026-09-04T18:17:50Z",
     "veg": false,
-    "source": "Freiwillige Feuerwehr Walldorf",
+    "source": "FF Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -2626,14 +2626,14 @@
     ]
   },
   {
-    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
+    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - Abschlussmeldung (PM Nr. 2)",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345986",
     "first": "2026-09-04T18:17:50Z",
     "last": "2026-09-04T18:17:50Z",
     "veg": false,
-    "source": "FF Walldorf",
+    "source": "Freiwillige Feuerwehr Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -5287,146 +5287,6 @@
         "name": "Calw e.V",
         "lat": 48.7041219,
         "lon": 8.7557644,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Konstanz|(bodman-ludwigshafen, lkr. konstanz) brand in einem restaurant in der hauptstraße - rund 150.000 euro schaden (21.08.2026)",
-    "status": "out",
-    "title": "(Bodman-Ludwigshafen, Lkr. Konstanz) Brand in einem Restaurant in der Hauptstraße - rund 150.000 Euro Schaden (21.08.2026)",
-    "link": "https://www.presseportal.de/blaulicht/pm/110973/6337636",
-    "first": "2026-08-21T12:15:07Z",
-    "last": "2026-08-21T12:15:07Z",
-    "veg": false,
-    "source": "Polizeipräsidium Konstanz",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Bodman-Ludwigshafen",
-        "lat": 47.8144912,
-        "lon": 9.0359649,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ludwigsburg|ditzingen: brand in firmengebäude",
-    "status": "active",
-    "title": "Ditzingen: Brand in Firmengebäude",
-    "link": "https://www.presseportal.de/blaulicht/pm/110974/6337522",
-    "first": "2026-08-21T10:55:44Z",
-    "last": "2026-08-21T10:55:44Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Ditzingen",
-        "lat": 48.8263983,
-        "lon": 9.0658446,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Pforzheim|(cw) nagold - brand in betreuter wohneinrichtung - hoher sachschaden",
-    "status": "active",
-    "title": "(CW) Nagold - Brand in betreuter Wohneinrichtung - hoher Sachschaden",
-    "link": "https://www.presseportal.de/blaulicht/pm/137462/6337509",
-    "first": "2026-08-21T10:40:55Z",
-    "last": "2026-08-21T10:40:55Z",
-    "veg": false,
-    "source": "Polizeipräsidium Pforzheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Nagold",
-        "lat": 48.5512399,
-        "lon": 8.7234942,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Grevenbroich|feuer in elsen - feuerwehr verhindert übergreifen auf wohnhaus",
-    "status": "active",
-    "title": "Feuer in Elsen - Feuerwehr verhindert Übergreifen auf Wohnhaus",
-    "link": "https://www.presseportal.de/blaulicht/pm/134498/6337487",
-    "first": "2026-08-21T10:21:17Z",
-    "last": "2026-08-21T10:21:17Z",
-    "veg": false,
-    "source": "Feuerwehr Grevenbroich",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Grevenbroich",
-        "lat": 51.0862467,
-        "lon": 6.5848937,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Pforzheim|(enzkreis) kämpfelbach - gartenhütte in brand gesetzt - polizei ermittelt wegen brandstiftung",
-    "status": "active",
-    "title": "(Enzkreis) Kämpfelbach - Gartenhütte in Brand gesetzt - Polizei ermittelt wegen Brandstiftung",
-    "link": "https://www.presseportal.de/blaulicht/pm/137462/6337437",
-    "first": "2026-08-21T09:41:39Z",
-    "last": "2026-08-21T09:41:39Z",
-    "veg": false,
-    "source": "Polizeipräsidium Pforzheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Kämpfelbach",
-        "lat": 48.9387381,
-        "lon": 8.6268392,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(hdh) nattheim - brand in tankstelle / am donnerstag kam es in einem tankstellengebäude zu einem technischen defekt.",
-    "status": "out",
-    "title": "(HDH) Nattheim - Brand in Tankstelle / Am Donnerstag kam es in einem Tankstellengebäude zu einem technischen Defekt.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6337400",
-    "first": "2026-08-21T09:02:00Z",
-    "last": "2026-08-21T09:02:00Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Nattheim",
-        "lat": 48.6995114,
-        "lon": 10.2418583,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Freiwillige Feuerwehr Hünxe|ausgelöste brandmeldeanlage in hünxe",
-    "status": "active",
-    "title": "Ausgelöste Brandmeldeanlage in Hünxe",
-    "link": "https://www.presseportal.de/blaulicht/pm/133631/6337383",
-    "first": "2026-08-21T08:54:36Z",
-    "last": "2026-08-21T08:54:36Z",
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Hünxe",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Hünxe",
-        "lat": 51.6414581,
-        "lon": 6.7660319,
         "approx": false
       }
     ]
