@@ -1,5 +1,65 @@
 [
   {
+    "base": "Feuerwehr Bochum|kellerbrand an der stiepeler straße: brennender wäschetrockner sorgt für starke verrauchung",
+    "status": "active",
+    "title": "Kellerbrand an der Stiepeler Straße: Brennender Wäschetrockner sorgt für starke Verrauchung",
+    "link": "https://www.presseportal.de/blaulicht/pm/115868/6355481",
+    "first": "2026-09-20T16:49:43Z",
+    "last": "2026-09-20T16:49:43Z",
+    "places": [
+      {
+        "name": "Bochum",
+        "lat": 51.4818111,
+        "lon": 7.2196635,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Bochum",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Weinheim|ausgelöste brandwarnanlage in sozialer einrichtung in der innenstadt",
+    "status": "active",
+    "title": "Ausgelöste Brandwarnanlage in sozialer Einrichtung in der Innenstadt",
+    "link": "https://www.presseportal.de/blaulicht/pm/179375/6355460",
+    "first": "2026-09-20T14:49:53Z",
+    "last": "2026-09-20T14:49:53Z",
+    "places": [
+      {
+        "name": "Weinheim",
+        "lat": 49.5462349,
+        "lon": 8.6717458,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Weinheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Weinheim|brandmeldeanlage ruft die feuerwehr weinhein am frühen samstagmorgen auf den plan",
+    "status": "active",
+    "title": "Brandmeldeanlage ruft die Feuerwehr Weinhein am frühen Samstagmorgen auf den Plan",
+    "link": "https://www.presseportal.de/blaulicht/pm/179375/6355456",
+    "first": "2026-09-20T14:31:58Z",
+    "last": "2026-09-20T14:31:58Z",
+    "places": [
+      {
+        "name": "Weinheim",
+        "lat": 49.5462349,
+        "lon": 8.6717458,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Weinheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Solingen|rauchmelder führt feuerwehr zu schwelbrand in darüberliegender wohnung",
     "status": "out",
     "title": "Rauchmelder führt Feuerwehr zu Schwelbrand in darüberliegender Wohnung",
@@ -5221,72 +5281,6 @@
         "name": "Bergheim",
         "lat": 50.9540457,
         "lon": 6.6410004,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|eberbach/rhein-neckar-kreis: brand in mehrfamilienhaus - pressemitteilung nr. 1",
-    "status": "active",
-    "title": "Eberbach/Rhein-Neckar-Kreis: Brand in Mehrfamilienhaus - Pressemitteilung Nr. 1",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6337830",
-    "first": "2026-08-21T16:00:24Z",
-    "last": "2026-08-21T16:00:24Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Eberbach",
-        "lat": 49.4635303,
-        "lon": 8.9855203,
-        "approx": false
-      },
-      {
-        "name": "Rhein-Neckar-Kreis",
-        "lat": 49.3684797,
-        "lon": 8.7352403,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Freiwillige Feuerwehr Bad Oeynhausen|schornsteinbrand in der innenstadt",
-    "status": "contained",
-    "title": "Schornsteinbrand in der Innenstadt",
-    "link": "https://www.presseportal.de/blaulicht/pm/182385/6337827",
-    "first": "2026-08-21T15:59:10Z",
-    "last": "2026-08-21T15:59:10Z",
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Bad Oeynhausen",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Bad Oeynhausen",
-        "lat": 52.2014399,
-        "lon": 8.7981244,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Kreisfeuerwehrverband Calw e.V.|brand in betreuter wohneinrichtung verursacht hohen sachschaden - keine verletzten - 65 einsatzkräfte vor ort",
-    "status": "active",
-    "title": "Brand in betreuter Wohneinrichtung verursacht hohen Sachschaden - Keine Verletzten - 65 Einsatzkräfte vor Ort",
-    "link": "https://www.presseportal.de/blaulicht/pm/116896/6337755",
-    "first": "2026-08-21T14:02:55Z",
-    "last": "2026-08-21T14:02:55Z",
-    "veg": false,
-    "source": "Kreisfeuerwehrverband Calw e.V.",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Calw e.V",
-        "lat": 48.7041219,
-        "lon": 8.7557644,
         "approx": false
       }
     ]
