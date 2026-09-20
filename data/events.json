@@ -1,5 +1,25 @@
 [
   {
+    "base": "Feuerwehr Solingen|rauchmelder führt feuerwehr zu schwelbrand in darüberliegender wohnung",
+    "status": "out",
+    "title": "Rauchmelder führt Feuerwehr zu Schwelbrand in darüberliegender Wohnung",
+    "link": "https://www.presseportal.de/blaulicht/pm/115884/6355243",
+    "first": "2026-09-20T06:26:19Z",
+    "last": "2026-09-20T06:26:19Z",
+    "places": [
+      {
+        "name": "Solingen",
+        "lat": 51.1721629,
+        "lon": 7.0845893,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Solingen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Freiwillige Feuerwehr Hünxe|pkw-brand durch ersthelfer und polizei gelöscht",
     "status": "out",
     "title": "Pkw-Brand durch Ersthelfer und Polizei gelöscht",
@@ -2666,14 +2686,14 @@
     ]
   },
   {
-    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
+    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - PM Nr. 1",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345918",
     "first": "2026-09-04T14:52:55Z",
     "last": "2026-09-04T14:52:55Z",
     "veg": false,
-    "source": "FF Walldorf",
+    "source": "Freiwillige Feuerwehr Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -2686,14 +2706,14 @@
     ]
   },
   {
-    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
+    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - PM Nr. 1",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345918",
     "first": "2026-09-04T14:52:55Z",
     "last": "2026-09-04T14:52:55Z",
     "veg": false,
-    "source": "Freiwillige Feuerwehr Walldorf",
+    "source": "FF Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -5407,26 +5427,6 @@
         "name": "Hünxe",
         "lat": 51.6414581,
         "lon": 6.7660319,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|heidelberg-kirchheim: fahrzeugbrand, pressemitteilung nr. 2",
-    "status": "active",
-    "title": "Heidelberg-Kirchheim: Fahrzeugbrand, Pressemitteilung Nr. 2",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6337294",
-    "first": "2026-08-21T02:16:27Z",
-    "last": "2026-08-21T02:16:27Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Heidelberg-Kirchheim",
-        "lat": 49.3793639,
-        "lon": 8.6753555,
         "approx": false
       }
     ]
