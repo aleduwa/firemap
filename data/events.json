@@ -1,11 +1,11 @@
 [
   {
-    "base": "Feuerwehr Ratingen|pkw-brand auf der bab 52",
-    "status": "active",
-    "title": "PKW-Brand auf der BAB 52",
-    "link": "https://www.presseportal.de/blaulicht/pm/70701/6355582",
-    "first": "2026-09-21T08:09:37Z",
-    "last": "2026-09-21T08:09:37Z",
+    "base": "Feuerwehr Ratingen|taxi im stadtteil west in brand geraten",
+    "status": "contained",
+    "title": "Taxi im Stadtteil West in Brand geraten",
+    "link": "https://www.presseportal.de/blaulicht/pm/70701/6356199",
+    "first": "2026-09-21T14:38:29Z",
+    "last": "2026-09-21T14:38:29Z",
     "places": [
       {
         "name": "Ratingen",
@@ -20,12 +20,56 @@
     "updates": 0
   },
   {
+    "base": "Freiwillige Feuerwehr Kranenburg|eine person stirbt nach rauchentwicklung in wohnhaus",
+    "status": "active",
+    "title": "Eine Person stirbt nach Rauchentwicklung in Wohnhaus",
+    "link": "https://www.presseportal.de/blaulicht/pm/145404/6356159",
+    "first": "2026-09-21T14:13:36Z",
+    "last": "2026-09-21T14:13:36Z",
+    "places": [
+      {
+        "name": "Kranenburg",
+        "lat": 51.7895581,
+        "lon": 6.0074359,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Kranenburg",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Ratingen|pkw-brand auf der bab 52",
+    "status": "active",
+    "title": "PKW-Brand auf der BAB 52",
+    "link": "https://www.presseportal.de/blaulicht/pm/70701/6355582",
+    "first": "2026-09-21T08:09:37Z",
+    "last": "2026-09-21T08:09:37Z",
+    "veg": false,
+    "source": "Feuerwehr Ratingen",
+    "updates": 0,
+    "region": "NRW",
+    "places": [
+      {
+        "name": "Ratingen",
+        "lat": 51.2973261,
+        "lon": 6.8493503,
+        "approx": false
+      }
+    ]
+  },
+  {
     "base": "Polizeipräsidium Aalen|rems-murr-kreis: brand, einbruch",
     "status": "active",
     "title": "Rems-Murr-Kreis: Brand, Einbruch",
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6355566",
     "first": "2026-09-21T07:49:43Z",
     "last": "2026-09-21T07:49:43Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Rems-Murr-Kreis",
@@ -33,11 +77,7 @@
         "lon": 9.5037124,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Bochum|kellerbrand an der stiepeler straße: brennender wäschetrockner sorgt für starke verrauchung",
@@ -2706,14 +2746,14 @@
     ]
   },
   {
-    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
+    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - Abschlussmeldung (PM Nr. 2)",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345986",
     "first": "2026-09-04T18:17:50Z",
     "last": "2026-09-04T18:17:50Z",
     "veg": false,
-    "source": "FF Walldorf",
+    "source": "Freiwillige Feuerwehr Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -2726,14 +2766,14 @@
     ]
   },
   {
-    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
+    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - Abschlussmeldung (PM Nr. 2)",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345986",
     "first": "2026-09-04T18:17:50Z",
     "last": "2026-09-04T18:17:50Z",
     "veg": false,
-    "source": "Freiwillige Feuerwehr Walldorf",
+    "source": "FF Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -5216,46 +5256,6 @@
         "lat": 51.0324743,
         "lon": 6.9881194,
         "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Bergheim|folgemeldung: großbrand in paffendorf unter kontrolle - umfangreiche nachlöscharbeiten dauern an",
-    "status": "out",
-    "title": "FOLGEMELDUNG: Großbrand in Paffendorf unter Kontrolle - Umfangreiche Nachlöscharbeiten dauern an",
-    "link": "https://www.presseportal.de/blaulicht/pm/168361/6337966",
-    "first": "2026-08-22T10:17:58Z",
-    "last": "2026-08-22T10:17:58Z",
-    "veg": false,
-    "source": "Feuerwehr Bergheim",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Bergheim",
-        "lat": 50.9540457,
-        "lon": 6.6410004,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Düsseldorf|erstmeldung: waldbrandhilfe für serbien: eu-waldbrandmodul gfff-v de1 geht erneut in den einsatz",
-    "status": "active",
-    "title": "Erstmeldung: Waldbrandhilfe für Serbien: EU-Waldbrandmodul GFFF-V DE1 geht erneut in den Einsatz",
-    "link": "https://www.presseportal.de/blaulicht/pm/115876/6337917",
-    "first": "2026-08-22T07:55:22Z",
-    "last": "2026-08-22T07:55:22Z",
-    "veg": true,
-    "source": "Feuerwehr Düsseldorf",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Düsseldorf",
-        "lat": 51.2254018,
-        "lon": 6.7763137,
-        "approx": true
       }
     ]
   },
