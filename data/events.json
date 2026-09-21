@@ -1,11 +1,81 @@
 [
   {
+    "base": "Kreispolizeibehörde Viersen|viersen-dülken: unkraut abgeflämmt, hecke in brand gesetzt, hausfassade beschädigt",
+    "status": "active",
+    "title": "Viersen-Dülken: Unkraut abgeflämmt, Hecke in Brand gesetzt, Hausfassade beschädigt",
+    "link": "https://www.presseportal.de/blaulicht/pm/65857/6356349",
+    "first": "2026-09-21T17:00:16Z",
+    "last": "2026-09-21T17:00:16Z",
+    "places": [
+      {
+        "name": "Viersen-Dülken",
+        "lat": 51.2545389,
+        "lon": 6.3617567,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Kreispolizeibehörde Viersen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Karlsruhe|(ka) karlsruhe - zwei 15-jährige tatverdächtige nach versuchter brandstiftung festgenommen",
+    "status": "active",
+    "title": "(KA) Karlsruhe - Zwei 15-jährige Tatverdächtige nach versuchter Brandstiftung festgenommen",
+    "link": "https://www.presseportal.de/blaulicht/pm/110972/6356299",
+    "first": "2026-09-21T15:54:58Z",
+    "last": "2026-09-21T15:54:58Z",
+    "places": [
+      {
+        "name": "Karlsruhe",
+        "lat": 49.0068705,
+        "lon": 8.4034195,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Karlsruhe",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|walldorf/rhein-neckar-kreis: feuerwehr löscht waldbrand - zeugenaufruf",
+    "status": "out",
+    "title": "Walldorf/Rhein-Neckar-Kreis: Feuerwehr löscht Waldbrand - Zeugenaufruf",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6356293",
+    "first": "2026-09-21T15:51:29Z",
+    "last": "2026-09-21T15:51:29Z",
+    "places": [
+      {
+        "name": "Walldorf",
+        "lat": 49.3032669,
+        "lon": 8.6432056,
+        "approx": false
+      },
+      {
+        "name": "Rhein-Neckar-Kreis",
+        "lat": 49.3684797,
+        "lon": 8.7352403,
+        "approx": false
+      }
+    ],
+    "veg": true,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Ratingen|taxi im stadtteil west in brand geraten",
     "status": "contained",
     "title": "Taxi im Stadtteil West in Brand geraten",
     "link": "https://www.presseportal.de/blaulicht/pm/70701/6356199",
     "first": "2026-09-21T14:38:29Z",
     "last": "2026-09-21T14:38:29Z",
+    "veg": false,
+    "source": "Feuerwehr Ratingen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Ratingen",
@@ -13,11 +83,7 @@
         "lon": 6.8493503,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Ratingen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Kranenburg|eine person stirbt nach rauchentwicklung in wohnhaus",
@@ -26,6 +92,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/145404/6356159",
     "first": "2026-09-21T14:13:36Z",
     "last": "2026-09-21T14:13:36Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Kranenburg",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Kranenburg",
@@ -33,11 +103,7 @@
         "lon": 6.0074359,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Kranenburg",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Ratingen|pkw-brand auf der bab 52",
@@ -2746,14 +2812,14 @@
     ]
   },
   {
-    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
+    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - Abschlussmeldung (PM Nr. 2)",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345986",
     "first": "2026-09-04T18:17:50Z",
     "last": "2026-09-04T18:17:50Z",
     "veg": false,
-    "source": "Freiwillige Feuerwehr Walldorf",
+    "source": "FF Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -2766,14 +2832,14 @@
     ]
   },
   {
-    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
+    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - Abschlussmeldung (PM Nr. 2)",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345986",
     "first": "2026-09-04T18:17:50Z",
     "last": "2026-09-04T18:17:50Z",
     "veg": false,
-    "source": "FF Walldorf",
+    "source": "Freiwillige Feuerwehr Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -2826,14 +2892,14 @@
     ]
   },
   {
-    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
+    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - PM Nr. 1",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345918",
     "first": "2026-09-04T14:52:55Z",
     "last": "2026-09-04T14:52:55Z",
     "veg": false,
-    "source": "FF Walldorf",
+    "source": "Freiwillige Feuerwehr Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -2846,14 +2912,14 @@
     ]
   },
   {
-    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
+    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - PM Nr. 1",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345918",
     "first": "2026-09-04T14:52:55Z",
     "last": "2026-09-04T14:52:55Z",
     "veg": false,
-    "source": "Freiwillige Feuerwehr Walldorf",
+    "source": "FF Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -5196,66 +5262,6 @@
         "lat": 51.8382715,
         "lon": 6.6148669,
         "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr und Rettungsdienst Bonn|rauchentwicklung aus einem fenster",
-    "status": "out",
-    "title": "Rauchentwicklung aus einem Fenster",
-    "link": "https://www.presseportal.de/blaulicht/pm/115888/6338025",
-    "first": "2026-08-22T18:03:38Z",
-    "last": "2026-08-22T18:03:38Z",
-    "veg": false,
-    "source": "Feuerwehr und Rettungsdienst Bonn",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Bonn",
-        "lat": 50.7352621,
-        "lon": 7.1024635,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Düren|rauchentwicklung an bahnstrecke - feuerwehr löscht brennende gartenlaube",
-    "status": "out",
-    "title": "Rauchentwicklung an Bahnstrecke - Feuerwehr löscht brennende Gartenlaube",
-    "link": "https://www.presseportal.de/blaulicht/pm/134173/6338017",
-    "first": "2026-08-22T16:12:50Z",
-    "last": "2026-08-22T16:12:50Z",
-    "veg": false,
-    "source": "Feuerwehr Düren",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Düren",
-        "lat": 50.8031684,
-        "lon": 6.4820806,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Leverkusen|eu-waldbrandeinheit zur unterstützung bei ausgedehnten waldbränden in die republik serbien",
-    "status": "active",
-    "title": "EU-Waldbrandeinheit zur Unterstützung bei ausgedehnten Waldbränden in die Republik Serbien",
-    "link": "https://www.presseportal.de/blaulicht/pm/115890/6338012",
-    "first": "2026-08-22T15:28:54Z",
-    "last": "2026-08-22T15:28:54Z",
-    "veg": true,
-    "source": "Feuerwehr Leverkusen",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Leverkusen",
-        "lat": 51.0324743,
-        "lon": 6.9881194,
-        "approx": false
       }
     ]
   },
