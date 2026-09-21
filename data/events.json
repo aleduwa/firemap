@@ -1,5 +1,45 @@
 [
   {
+    "base": "Feuerwehr Ratingen|pkw-brand auf der bab 52",
+    "status": "active",
+    "title": "PKW-Brand auf der BAB 52",
+    "link": "https://www.presseportal.de/blaulicht/pm/70701/6355582",
+    "first": "2026-09-21T08:09:37Z",
+    "last": "2026-09-21T08:09:37Z",
+    "places": [
+      {
+        "name": "Ratingen",
+        "lat": 51.2973261,
+        "lon": 6.8493503,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Ratingen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Aalen|rems-murr-kreis: brand, einbruch",
+    "status": "active",
+    "title": "Rems-Murr-Kreis: Brand, Einbruch",
+    "link": "https://www.presseportal.de/blaulicht/pm/110969/6355566",
+    "first": "2026-09-21T07:49:43Z",
+    "last": "2026-09-21T07:49:43Z",
+    "places": [
+      {
+        "name": "Rems-Murr-Kreis",
+        "lat": 48.8966799,
+        "lon": 9.5037124,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Bochum|kellerbrand an der stiepeler straße: brennender wäschetrockner sorgt für starke verrauchung",
     "status": "active",
     "title": "Kellerbrand an der Stiepeler Straße: Brennender Wäschetrockner sorgt für starke Verrauchung",
@@ -2746,14 +2786,14 @@
     ]
   },
   {
-    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
+    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - PM Nr. 1",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345918",
     "first": "2026-09-04T14:52:55Z",
     "last": "2026-09-04T14:52:55Z",
     "veg": false,
-    "source": "Freiwillige Feuerwehr Walldorf",
+    "source": "FF Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -2766,14 +2806,14 @@
     ]
   },
   {
-    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
+    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - PM Nr. 1",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345918",
     "first": "2026-09-04T14:52:55Z",
     "last": "2026-09-04T14:52:55Z",
     "veg": false,
-    "source": "FF Walldorf",
+    "source": "Freiwillige Feuerwehr Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -5215,26 +5255,6 @@
         "name": "Düsseldorf",
         "lat": 51.2254018,
         "lon": 6.7763137,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr und Rettungsdienst Bonn|waldbrandhilfe für serbien: eu-waldbrandmodul gfff-v de1 geht erneut in den einsatz",
-    "status": "active",
-    "title": "Waldbrandhilfe für Serbien: EU-Waldbrandmodul GFFF-V DE1 geht erneut in den Einsatz",
-    "link": "https://www.presseportal.de/blaulicht/pm/115888/6337894",
-    "first": "2026-08-22T04:02:20Z",
-    "last": "2026-08-22T04:02:20Z",
-    "veg": true,
-    "source": "Feuerwehr und Rettungsdienst Bonn",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Bonn",
-        "lat": 50.7352621,
-        "lon": 7.1024635,
         "approx": true
       }
     ]
