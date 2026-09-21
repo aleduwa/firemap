@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/65857/6356349",
     "first": "2026-09-21T17:00:16Z",
     "last": "2026-09-21T17:00:16Z",
+    "veg": false,
+    "source": "Kreispolizeibehörde Viersen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Viersen-Dülken",
@@ -13,11 +17,7 @@
         "lon": 6.3617567,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Kreispolizeibehörde Viersen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Karlsruhe|(ka) karlsruhe - zwei 15-jährige tatverdächtige nach versuchter brandstiftung festgenommen",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110972/6356299",
     "first": "2026-09-21T15:54:58Z",
     "last": "2026-09-21T15:54:58Z",
+    "veg": false,
+    "source": "Polizeipräsidium Karlsruhe",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Karlsruhe",
@@ -33,11 +37,7 @@
         "lon": 8.4034195,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Karlsruhe",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|walldorf/rhein-neckar-kreis: feuerwehr löscht waldbrand - zeugenaufruf",
@@ -46,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6356293",
     "first": "2026-09-21T15:51:29Z",
     "last": "2026-09-21T15:51:29Z",
+    "veg": true,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Walldorf",
@@ -59,11 +63,7 @@
         "lon": 8.7352403,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Ratingen|taxi im stadtteil west in brand geraten",
@@ -2892,14 +2892,14 @@
     ]
   },
   {
-    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
+    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - PM Nr. 1",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345918",
     "first": "2026-09-04T14:52:55Z",
     "last": "2026-09-04T14:52:55Z",
     "veg": false,
-    "source": "Freiwillige Feuerwehr Walldorf",
+    "source": "FF Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -2912,14 +2912,14 @@
     ]
   },
   {
-    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
+    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - PM Nr. 1",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345918",
     "first": "2026-09-04T14:52:55Z",
     "last": "2026-09-04T14:52:55Z",
     "veg": false,
-    "source": "FF Walldorf",
+    "source": "Freiwillige Feuerwehr Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -5222,46 +5222,6 @@
         "lat": 49.3684797,
         "lon": 8.7352403,
         "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Dortmund|brennende elektrogeräte",
-    "status": "out",
-    "title": "Brennende Elektrogeräte",
-    "link": "https://www.presseportal.de/blaulicht/pm/115869/6338045",
-    "first": "2026-08-22T21:17:02Z",
-    "last": "2026-08-22T21:17:02Z",
-    "veg": false,
-    "source": "Feuerwehr Dortmund",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Dortmund",
-        "lat": 51.5142273,
-        "lon": 7.4652789,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Bocholt|brand an wohngebäude - feuerwehr verhindert schlimmeres",
-    "status": "out",
-    "title": "Brand an Wohngebäude - Feuerwehr verhindert Schlimmeres",
-    "link": "https://www.presseportal.de/blaulicht/pm/146407/6338039",
-    "first": "2026-08-22T20:41:34Z",
-    "last": "2026-08-22T20:41:34Z",
-    "veg": false,
-    "source": "Feuerwehr Bocholt",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Bocholt",
-        "lat": 51.8382715,
-        "lon": 6.6148669,
-        "approx": true
       }
     ]
   },
