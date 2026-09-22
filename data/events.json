@@ -1,11 +1,35 @@
 [
   {
+    "base": "Polizeipräsidium Freiburg|lörrach: balkonbrand",
+    "status": "out",
+    "title": "Lörrach: Balkonbrand",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6357109",
+    "first": "2026-09-22T16:06:24Z",
+    "last": "2026-09-22T16:06:24Z",
+    "places": [
+      {
+        "name": "Lörrach",
+        "lat": 47.6120896,
+        "lon": 7.6607218,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Mannheim|mannheim: fahrlässige brandstiftung durch feuerwerkskörper - zeugenaufruf",
     "status": "out",
     "title": "Mannheim: Fahrlässige Brandstiftung durch Feuerwerkskörper - Zeugenaufruf",
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6356919",
     "first": "2026-09-22T13:19:30Z",
     "last": "2026-09-22T13:19:30Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Mannheim",
@@ -13,11 +37,7 @@
         "lon": 8.4673098,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Kreispolizeibehörde Kleve|nachtrag zu meldung vom 21.09.2026, 10:22 uhr: kranenburg - rauchentwicklung in wohnung / 47-jähriger bewohner leblos aufgefunden",
@@ -26,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/65849/6356852",
     "first": "2026-09-22T12:13:02Z",
     "last": "2026-09-22T12:13:02Z",
+    "veg": false,
+    "source": "Kreispolizeibehörde Kleve",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "10",
@@ -33,11 +57,7 @@
         "lon": 7.5129001,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Kreispolizeibehörde Kleve",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Konstanz|(vs-villingen / schwarzwald baar kreis) baum brennt - zeugenaufruf (21.09.2026)",
@@ -46,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110973/6356819",
     "first": "2026-09-22T12:00:04Z",
     "last": "2026-09-22T12:00:04Z",
+    "veg": false,
+    "source": "Polizeipräsidium Konstanz",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "VS-Villingen",
@@ -53,11 +77,7 @@
         "lon": 8.4598995,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Konstanz",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Bocholt|löschzug suderwick unterstützt bei großbrand in dinxperlo",
@@ -2992,14 +3012,14 @@
     ]
   },
   {
-    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
+    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - PM Nr. 1",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345918",
     "first": "2026-09-04T14:52:55Z",
     "last": "2026-09-04T14:52:55Z",
     "veg": false,
-    "source": "FF Walldorf",
+    "source": "Freiwillige Feuerwehr Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -3012,14 +3032,14 @@
     ]
   },
   {
-    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
+    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - PM Nr. 1",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345918",
     "first": "2026-09-04T14:52:55Z",
     "last": "2026-09-04T14:52:55Z",
     "veg": false,
-    "source": "Freiwillige Feuerwehr Walldorf",
+    "source": "FF Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
