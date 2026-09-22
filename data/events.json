@@ -1,11 +1,35 @@
 [
   {
+    "base": "Feuerwehr Bocholt|löschzug suderwick unterstützt bei großbrand in dinxperlo",
+    "status": "active",
+    "title": "Löschzug Suderwick unterstützt bei Großbrand in Dinxperlo",
+    "link": "https://www.presseportal.de/blaulicht/pm/146407/6356442",
+    "first": "2026-09-22T07:45:17Z",
+    "last": "2026-09-22T07:45:17Z",
+    "places": [
+      {
+        "name": "Bocholt",
+        "lat": 51.8382715,
+        "lon": 6.6148669,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Bocholt",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Karlsruhe|karlsruhe - drei verletzte nach brand in einem mehrfamilienhaus in der karlsruher südstadt",
     "status": "out",
     "title": "Karlsruhe - Drei Verletzte nach Brand in einem Mehrfamilienhaus in der Karlsruher Südstadt",
     "link": "https://www.presseportal.de/blaulicht/pm/110972/6356397",
     "first": "2026-09-22T02:06:36Z",
     "last": "2026-09-22T02:06:36Z",
+    "veg": false,
+    "source": "Polizeipräsidium Karlsruhe",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Karlsruhe",
@@ -13,11 +37,7 @@
         "lon": 8.4034195,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Karlsruhe",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Kreispolizeibehörde Viersen|viersen-dülken: unkraut abgeflämmt, hecke in brand gesetzt, hausfassade beschädigt",
