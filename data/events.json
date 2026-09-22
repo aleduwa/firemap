@@ -1,11 +1,75 @@
 [
   {
+    "base": "Polizeipräsidium Mannheim|mannheim: fahrlässige brandstiftung durch feuerwerkskörper - zeugenaufruf",
+    "status": "out",
+    "title": "Mannheim: Fahrlässige Brandstiftung durch Feuerwerkskörper - Zeugenaufruf",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6356919",
+    "first": "2026-09-22T13:19:30Z",
+    "last": "2026-09-22T13:19:30Z",
+    "places": [
+      {
+        "name": "Mannheim",
+        "lat": 49.4892913,
+        "lon": 8.4673098,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Kreispolizeibehörde Kleve|nachtrag zu meldung vom 21.09.2026, 10:22 uhr: kranenburg - rauchentwicklung in wohnung / 47-jähriger bewohner leblos aufgefunden",
+    "status": "active",
+    "title": "Nachtrag zu Meldung vom 21.09.2026, 10:22 Uhr: Kranenburg - Rauchentwicklung in Wohnung / 47-jähriger Bewohner leblos aufgefunden",
+    "link": "https://www.presseportal.de/blaulicht/pm/65849/6356852",
+    "first": "2026-09-22T12:13:02Z",
+    "last": "2026-09-22T12:13:02Z",
+    "places": [
+      {
+        "name": "10",
+        "lat": 51.3592913,
+        "lon": 7.5129001,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Kreispolizeibehörde Kleve",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Konstanz|(vs-villingen / schwarzwald baar kreis) baum brennt - zeugenaufruf (21.09.2026)",
+    "status": "active",
+    "title": "(VS-Villingen / Schwarzwald Baar Kreis) Baum brennt - Zeugenaufruf (21.09.2026)",
+    "link": "https://www.presseportal.de/blaulicht/pm/110973/6356819",
+    "first": "2026-09-22T12:00:04Z",
+    "last": "2026-09-22T12:00:04Z",
+    "places": [
+      {
+        "name": "VS-Villingen",
+        "lat": 48.0596619,
+        "lon": 8.4598995,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Konstanz",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Bocholt|löschzug suderwick unterstützt bei großbrand in dinxperlo",
     "status": "active",
     "title": "Löschzug Suderwick unterstützt bei Großbrand in Dinxperlo",
     "link": "https://www.presseportal.de/blaulicht/pm/146407/6356442",
     "first": "2026-09-22T07:45:17Z",
     "last": "2026-09-22T07:45:17Z",
+    "veg": false,
+    "source": "Feuerwehr Bocholt",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Bocholt",
@@ -13,11 +77,7 @@
         "lon": 6.6148669,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Bocholt",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Karlsruhe|karlsruhe - drei verletzte nach brand in einem mehrfamilienhaus in der karlsruher südstadt",
@@ -5129,138 +5189,6 @@
         "name": "Heidelberg",
         "lat": 49.4093582,
         "lon": 8.694724,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Freiwillige Feuerwehr Hünxe|gemeldeter zimmerbrand",
-    "status": "out",
-    "title": "Gemeldeter Zimmerbrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/133631/6338206",
-    "first": "2026-08-23T11:22:17Z",
-    "last": "2026-08-23T11:22:17Z",
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Hünxe",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Hünxe",
-        "lat": 51.6414581,
-        "lon": 6.7660319,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Neuss|holzunterstand im leer stehenden damwildgehege in selikum niedergebrannt | knapp 16.000 liter löschwasser eingesetzt",
-    "status": "active",
-    "title": "Holzunterstand im leer stehenden Damwildgehege in Selikum niedergebrannt | Knapp 16.000 Liter Löschwasser eingesetzt",
-    "link": "https://www.presseportal.de/blaulicht/pm/122045/6338193",
-    "first": "2026-08-23T10:57:28Z",
-    "last": "2026-08-23T10:57:28Z",
-    "veg": false,
-    "source": "Feuerwehr Neuss",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Neuss",
-        "lat": 51.1981778,
-        "lon": 6.6916476,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Bergheim|abschlussmeldung: großbrand in bergheim nach rund 37 stunden gelöscht",
-    "status": "out",
-    "title": "ABSCHLUSSMELDUNG: Großbrand in Bergheim nach rund 37 Stunden gelöscht",
-    "link": "https://www.presseportal.de/blaulicht/pm/168361/6338176",
-    "first": "2026-08-23T10:22:14Z",
-    "last": "2026-08-23T10:22:14Z",
-    "veg": false,
-    "source": "Feuerwehr Bergheim",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Bergheim",
-        "lat": 50.9540457,
-        "lon": 6.6410004,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Mönchengladbach|brand in dachgeschosswohnung",
-    "status": "active",
-    "title": "Brand in Dachgeschosswohnung",
-    "link": "https://www.presseportal.de/blaulicht/pm/115879/6338159",
-    "first": "2026-08-23T10:03:50Z",
-    "last": "2026-08-23T10:03:50Z",
-    "veg": false,
-    "source": "Feuerwehr Mönchengladbach",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Mönchengladbach",
-        "lat": 51.1947131,
-        "lon": 6.4353792,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(ul) heroldstatt/breithülen - brennendes handtuch führt zu feuerwehreinsatz / am samstag geriet ein handtuch in brand und löste einen großeinsatz der feuerwehr aus",
-    "status": "active",
-    "title": "(UL) Heroldstatt/Breithülen - Brennendes Handtuch führt zu Feuerwehreinsatz / Am Samstag geriet ein Handtuch in Brand und löste einen Großeinsatz der Feuerwehr aus",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6338088",
-    "first": "2026-08-23T07:18:53Z",
-    "last": "2026-08-23T07:18:53Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Heroldstatt",
-        "lat": 48.4426749,
-        "lon": 9.6599683,
-        "approx": false
-      },
-      {
-        "name": "Breithülen",
-        "lat": 48.4208492,
-        "lon": 9.6407709,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|eberbach/rhein-neckar-kreis: brand in der hauptstraße - feuerwehr im einsatz - pm nr. 1",
-    "status": "active",
-    "title": "Eberbach/Rhein-Neckar-Kreis: Brand in der Hauptstraße - Feuerwehr im Einsatz - PM Nr. 1",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6338080",
-    "first": "2026-08-23T06:58:43Z",
-    "last": "2026-08-23T06:58:43Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Eberbach",
-        "lat": 49.4635303,
-        "lon": 8.9855203,
-        "approx": false
-      },
-      {
-        "name": "Rhein-Neckar-Kreis",
-        "lat": 49.3684797,
-        "lon": 8.7352403,
         "approx": false
       }
     ]
