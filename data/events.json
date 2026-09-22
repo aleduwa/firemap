@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/56893/6357167",
     "first": "2026-09-22T21:15:44Z",
     "last": "2026-09-22T21:15:44Z",
+    "veg": false,
+    "source": "Feuerwehr Essen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Essen",
@@ -13,11 +17,7 @@
         "lon": 7.0158171,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Essen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|lörrach: balkonbrand",
@@ -5183,52 +5183,6 @@
         "name": "Stuttgart",
         "lat": 48.7784485,
         "lon": 9.1800132,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|eberbach/rhein-neckar-kreis: brand in der hauptstraße - feuerwehr im einsatz - pm nr. 2",
-    "status": "active",
-    "title": "Eberbach/Rhein-Neckar-Kreis: Brand in der Hauptstraße - Feuerwehr im Einsatz - PM Nr. 2",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6338306",
-    "first": "2026-08-23T22:49:32Z",
-    "last": "2026-08-23T22:49:32Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Eberbach",
-        "lat": 49.4635303,
-        "lon": 8.9855203,
-        "approx": false
-      },
-      {
-        "name": "Rhein-Neckar-Kreis",
-        "lat": 49.3684797,
-        "lon": 8.7352403,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|heidelberg: brandgeschehen in der sofienstraße",
-    "status": "out",
-    "title": "Heidelberg: Brandgeschehen in der Sofienstraße",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6338305",
-    "first": "2026-08-23T20:28:40Z",
-    "last": "2026-08-23T20:28:40Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Heidelberg",
-        "lat": 49.4093582,
-        "lon": 8.694724,
         "approx": false
       }
     ]
