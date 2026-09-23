@@ -1,5 +1,45 @@
 [
   {
+    "base": "Polizeipräsidium Karlsruhe|(ka) karlsdorf-neuthard - zeugen nach mutmaßlicher brandstiftung an einem pkw gesucht",
+    "status": "active",
+    "title": "(KA) Karlsdorf-Neuthard - Zeugen nach mutmaßlicher Brandstiftung an einem Pkw gesucht",
+    "link": "https://www.presseportal.de/blaulicht/pm/110972/6357214",
+    "first": "2026-09-23T07:50:57Z",
+    "last": "2026-09-23T07:50:57Z",
+    "places": [
+      {
+        "name": "Karlsdorf-Neuthard",
+        "lat": 49.1353209,
+        "lon": 8.5304408,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Karlsruhe",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Mönchengladbach|brand in dönerladen",
+    "status": "out",
+    "title": "Brand in Dönerladen",
+    "link": "https://www.presseportal.de/blaulicht/pm/115879/6357196",
+    "first": "2026-09-23T07:21:43Z",
+    "last": "2026-09-23T07:21:43Z",
+    "places": [
+      {
+        "name": "Mönchengladbach",
+        "lat": 51.1947131,
+        "lon": 6.4353792,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Essen|ausgedehnter zimmerbrand in einem mehrfamilienhaus - zwei personen retten sich auf einen balkon",
     "status": "contained",
     "title": "Ausgedehnter Zimmerbrand in einem Mehrfamilienhaus - zwei Personen retten sich auf einen Balkon",
