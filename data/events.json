@@ -1,11 +1,75 @@
 [
   {
+    "base": "Feuerwehr Bocholt|brand in kellerraum eines mehrfamilienhauses - fünf personen ins krankenhaus gebracht",
+    "status": "out",
+    "title": "Brand in Kellerraum eines Mehrfamilienhauses - fünf Personen ins Krankenhaus gebracht",
+    "link": "https://www.presseportal.de/blaulicht/pm/146407/6357717",
+    "first": "2026-09-23T13:29:15Z",
+    "last": "2026-09-23T13:29:15Z",
+    "places": [
+      {
+        "name": "Bocholt",
+        "lat": 51.8382715,
+        "lon": 6.6148669,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Bocholt",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|mannheim: kellerbrand im stadtteil schönau",
+    "status": "out",
+    "title": "Mannheim: Kellerbrand im Stadtteil Schönau",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6357689",
+    "first": "2026-09-23T13:01:00Z",
+    "last": "2026-09-23T13:01:00Z",
+    "places": [
+      {
+        "name": "Mannheim",
+        "lat": 49.4892913,
+        "lon": 8.4673098,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Konstanz|(tengen-talheim / lkr. konstanz) - radlader gerät in brand (22.09.2026)",
+    "status": "active",
+    "title": "(Tengen-Talheim / Lkr. Konstanz) - Radlader gerät in Brand (22.09.2026)",
+    "link": "https://www.presseportal.de/blaulicht/pm/110973/6357599",
+    "first": "2026-09-23T12:00:10Z",
+    "last": "2026-09-23T12:00:10Z",
+    "places": [
+      {
+        "name": "Tengen-Talheim",
+        "lat": 47.8164111,
+        "lon": 8.6388891,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Konstanz",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Karlsruhe|(ka) karlsdorf-neuthard - zeugen nach mutmaßlicher brandstiftung an einem pkw gesucht",
     "status": "active",
     "title": "(KA) Karlsdorf-Neuthard - Zeugen nach mutmaßlicher Brandstiftung an einem Pkw gesucht",
     "link": "https://www.presseportal.de/blaulicht/pm/110972/6357214",
     "first": "2026-09-23T07:50:57Z",
     "last": "2026-09-23T07:50:57Z",
+    "veg": false,
+    "source": "Polizeipräsidium Karlsruhe",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Karlsdorf-Neuthard",
@@ -13,11 +77,7 @@
         "lon": 8.5304408,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Karlsruhe",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Mönchengladbach|brand in dönerladen",
@@ -26,6 +86,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115879/6357196",
     "first": "2026-09-23T07:21:43Z",
     "last": "2026-09-23T07:21:43Z",
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Mönchengladbach",
@@ -33,11 +97,7 @@
         "lon": 6.4353792,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Mönchengladbach",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Essen|ausgedehnter zimmerbrand in einem mehrfamilienhaus - zwei personen retten sich auf einen balkon",
@@ -5123,86 +5183,6 @@
         "name": "Mönchengladbach",
         "lat": 51.1947131,
         "lon": 6.4353792,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(bc) laupheim - porsche gerät in flammen / am sonntag kam es bei laupheim zu einem fahrzeugbrand.",
-    "status": "active",
-    "title": "(BC) Laupheim - Porsche gerät in Flammen / Am Sonntag kam es bei Laupheim zu einem Fahrzeugbrand.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6338537",
-    "first": "2026-08-24T10:25:46Z",
-    "last": "2026-08-24T10:25:46Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Laupheim",
-        "lat": 48.2300738,
-        "lon": 9.8837005,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|freiburg: ein verletzter nach brand in schnellrestaurant",
-    "status": "contained",
-    "title": "Freiburg: Ein Verletzter nach Brand in Schnellrestaurant",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6338397",
-    "first": "2026-08-24T08:34:00Z",
-    "last": "2026-08-24T08:34:00Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Freiburg",
-        "lat": 47.9960901,
-        "lon": 7.8494005,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|umkirch: großeinsatz nach gebäudebrand endet glimpflich",
-    "status": "active",
-    "title": "Umkirch: Großeinsatz nach Gebäudebrand endet glimpflich",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6338396",
-    "first": "2026-08-24T08:33:40Z",
-    "last": "2026-08-24T08:33:40Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Umkirch",
-        "lat": 48.0335555,
-        "lon": 7.7649061,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Leverkusen|brand in einem lebensmittelgeschäft",
-    "status": "contained",
-    "title": "Brand in einem Lebensmittelgeschäft",
-    "link": "https://www.presseportal.de/blaulicht/pm/115890/6338384",
-    "first": "2026-08-24T08:06:16Z",
-    "last": "2026-08-24T08:06:16Z",
-    "veg": false,
-    "source": "Feuerwehr Leverkusen",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Leverkusen",
-        "lat": 51.0324743,
-        "lon": 6.9881194,
         "approx": false
       }
     ]
