@@ -5168,26 +5168,6 @@
     ]
   },
   {
-    "base": "Feuerwehr Stuttgart|brand kelleraum in stuttgart- mitte",
-    "status": "out",
-    "title": "Brand Kelleraum in Stuttgart- Mitte",
-    "link": "https://www.presseportal.de/blaulicht/pm/161590/6338309",
-    "first": "2026-08-23T23:32:49Z",
-    "last": "2026-08-23T23:32:49Z",
-    "veg": false,
-    "source": "Feuerwehr Stuttgart",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stuttgart",
-        "lat": 48.7784485,
-        "lon": 9.1800132,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Polizei Duisburg|wanheimerort: brand eines altkleidercontainers - zeugensuche",
     "status": "active",
     "title": "Wanheimerort: Brand eines Altkleidercontainers - Zeugensuche",
