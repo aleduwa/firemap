@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/183200/6358690",
     "first": "2026-09-24T20:14:51Z",
     "last": "2026-09-24T20:14:51Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Niederkrüchten",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Niederkrüchten",
@@ -13,11 +17,7 @@
         "lon": 6.2196622,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Niederkrüchten",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr und Rettungsdienst Bonn|brand auf schrottplatz",
