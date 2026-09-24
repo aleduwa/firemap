@@ -1,11 +1,35 @@
 [
   {
+    "base": "Freiwillige Feuerwehr Niederkrüchten|feuerwehr übt am ehemaligen hotel lenhsen in elmpt / löschzug elmpt trainiert brandbekämpfung und rettung von personen, verkehrsbehinderungen möglich",
+    "status": "active",
+    "title": "Feuerwehr übt am ehemaligen Hotel Lenhsen in Elmpt / Löschzug Elmpt trainiert Brandbekämpfung und Rettung von Personen, Verkehrsbehinderungen möglich",
+    "link": "https://www.presseportal.de/blaulicht/pm/183200/6358690",
+    "first": "2026-09-24T20:14:51Z",
+    "last": "2026-09-24T20:14:51Z",
+    "places": [
+      {
+        "name": "Niederkrüchten",
+        "lat": 51.2000398,
+        "lon": 6.2196622,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Niederkrüchten",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr und Rettungsdienst Bonn|brand auf schrottplatz",
     "status": "out",
     "title": "Brand auf Schrottplatz",
     "link": "https://www.presseportal.de/blaulicht/pm/115888/6358677",
     "first": "2026-09-24T18:10:00Z",
     "last": "2026-09-24T18:10:00Z",
+    "veg": false,
+    "source": "Feuerwehr und Rettungsdienst Bonn",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Bonn",
@@ -13,11 +37,7 @@
         "lon": 7.1024635,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr und Rettungsdienst Bonn",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Kreispolizeibehörde Unna|fröndenberg - brand im jvk fröndenberg",
@@ -26,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/65856/6358670",
     "first": "2026-09-24T17:23:15Z",
     "last": "2026-09-24T17:23:15Z",
+    "veg": false,
+    "source": "Kreispolizeibehörde Unna",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Fröndenberg",
@@ -33,11 +57,7 @@
         "lon": 7.7617558,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Kreispolizeibehörde Unna",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|nußloch/rhein-neckar-kreis: beherztes eingreifen verhindert gebäudebrand",
@@ -46,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6358655",
     "first": "2026-09-24T16:24:13Z",
     "last": "2026-09-24T16:24:13Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Nußloch",
@@ -59,11 +83,7 @@
         "lon": 8.7352403,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Heilbronn|erlenbach: tatverdächtiger nach brandserie im bereich schemelsberg in untersuchungshaft, gemeinsame pressemitteilung der staatsanwaltschaft heilbronn und des polizeipräsidiums heilbronn",
@@ -72,6 +92,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110971/6358645",
     "first": "2026-09-24T16:07:51Z",
     "last": "2026-09-24T16:07:51Z",
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Erlenbach",
@@ -79,11 +103,7 @@
         "lon": 9.2692171,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|lörrach-brombach: brand in der küche eines mehrfamilienhauses",
@@ -92,6 +112,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6358627",
     "first": "2026-09-24T15:43:31Z",
     "last": "2026-09-24T15:43:31Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Lörrach-Brombach",
@@ -99,11 +123,7 @@
         "lon": 7.6925159,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Heilbronn|stadt- und landkreis heilbronn: brand einer gartenhütte und rauchentwicklung in schule",
@@ -112,6 +132,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110971/6358555",
     "first": "2026-09-24T14:39:03Z",
     "last": "2026-09-24T14:39:03Z",
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Stadt-",
@@ -119,11 +143,7 @@
         "lon": 8.694724,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Karlsruhe|(ka) karlsdorf-neuthard - polizei sucht zeugen nach mutmaßlicher brandstiftung an kfz",
@@ -132,6 +152,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110972/6358544",
     "first": "2026-09-24T14:29:56Z",
     "last": "2026-09-24T14:29:56Z",
+    "veg": false,
+    "source": "Polizeipräsidium Karlsruhe",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Karlsdorf-Neuthard",
@@ -139,11 +163,7 @@
         "lon": 8.5304408,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Karlsruhe",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Paderborn|gemeldeter dachstuhlbrand neuhäuser straße",
