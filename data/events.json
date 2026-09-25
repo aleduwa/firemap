@@ -1,5 +1,25 @@
 [
   {
+    "base": "Polizeipräsidium Aalen|rems-murr-kreis: brand - unfallflucht - rathausmitarbeiter angegriffen - diebstahl von e-scooter",
+    "status": "active",
+    "title": "Rems-Murr-Kreis: Brand - Unfallflucht - Rathausmitarbeiter angegriffen - Diebstahl von E-Scooter",
+    "link": "https://www.presseportal.de/blaulicht/pm/110969/6358757",
+    "first": "2026-09-25T07:48:46Z",
+    "last": "2026-09-25T07:48:46Z",
+    "places": [
+      {
+        "name": "Rems-Murr-Kreis",
+        "lat": 48.8966799,
+        "lon": 9.5037124,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Freiwillige Feuerwehr Niederkrüchten|feuerwehr übt am ehemaligen hotel lenhsen in elmpt / löschzug elmpt trainiert brandbekämpfung und rettung von personen, verkehrsbehinderungen möglich",
     "status": "active",
     "title": "Feuerwehr übt am ehemaligen Hotel Lenhsen in Elmpt / Löschzug Elmpt trainiert Brandbekämpfung und Rettung von Personen, Verkehrsbehinderungen möglich",
@@ -4833,46 +4853,6 @@
         "name": "Sindelfingen-Maichingen",
         "lat": 48.7221767,
         "lon": 8.9653797,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Weinheim|tag der offenen tür am 13. september in oberflockenbach",
-    "status": "active",
-    "title": "Tag der offenen Tür am 13. September in Oberflockenbach",
-    "link": "https://www.presseportal.de/blaulicht/pm/179375/6339854",
-    "first": "2026-08-26T05:51:11Z",
-    "last": "2026-08-26T05:51:11Z",
-    "veg": false,
-    "source": "Feuerwehr Weinheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Weinheim",
-        "lat": 49.5462349,
-        "lon": 8.6717458,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|heidelberg-boxberg: fahrzeugbrand, pressemitteilung nr. 1",
-    "status": "active",
-    "title": "Heidelberg-Boxberg: Fahrzeugbrand, Pressemitteilung Nr. 1",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6339821",
-    "first": "2026-08-26T04:14:38Z",
-    "last": "2026-08-26T04:14:38Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Heidelberg-Boxberg",
-        "lat": 49.3722599,
-        "lon": 8.7033078,
         "approx": false
       }
     ]
