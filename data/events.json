@@ -1,11 +1,35 @@
 [
   {
+    "base": "Freiwillige Feuerwehr Stadt Kempen|brand eines trockners im keller des krankenhauses",
+    "status": "contained",
+    "title": "Brand eines Trockners im Keller des Krankenhauses",
+    "link": "https://www.presseportal.de/blaulicht/pm/175781/6359418",
+    "first": "2026-09-25T22:38:28Z",
+    "last": "2026-09-25T22:38:28Z",
+    "places": [
+      {
+        "name": "Kempen",
+        "lat": 51.3642126,
+        "lon": 6.4195011,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Stadt Kempen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Freiwillige Feuerwehr Alpen|pkw-brand am abend",
     "status": "active",
     "title": "Pkw-Brand am Abend",
     "link": "https://www.presseportal.de/blaulicht/pm/131475/6359415",
     "first": "2026-09-25T21:54:44Z",
     "last": "2026-09-25T21:54:44Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Alpen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Alpen",
@@ -13,11 +37,7 @@
         "lon": 6.5128805,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Alpen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Ratingen|zwei neue brandmeister für die feuerwehr ratingen",
@@ -4728,26 +4748,6 @@
         "lat": 48.7784485,
         "lon": 9.1800132,
         "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Schwelm|schwelbrand auf dem dach eines wohnkomplexes",
-    "status": "active",
-    "title": "Schwelbrand auf dem Dach eines Wohnkomplexes",
-    "link": "https://www.presseportal.de/blaulicht/pm/69781/6340476",
-    "first": "2026-08-26T21:21:46Z",
-    "last": "2026-08-26T21:21:46Z",
-    "veg": false,
-    "source": "Feuerwehr Schwelm",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Schwelm",
-        "lat": 51.2841166,
-        "lon": 7.2924712,
-        "approx": false
       }
     ]
   },
