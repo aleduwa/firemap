@@ -1,11 +1,95 @@
 [
   {
+    "base": "Polizeipräsidium Heilbronn|stadt- und landkreis heilbronn: einbruch, rauchentwicklung in schule und müllfahrzeug prallt gegen unterführung",
+    "status": "active",
+    "title": "Stadt- und Landkreis Heilbronn: Einbruch, Rauchentwicklung in Schule und Müllfahrzeug prallt gegen Unterführung",
+    "link": "https://www.presseportal.de/blaulicht/pm/110971/6359227",
+    "first": "2026-09-25T13:25:17Z",
+    "last": "2026-09-25T13:25:17Z",
+    "places": [
+      {
+        "name": "Stadt-",
+        "lat": 49.4093582,
+        "lon": 8.694724,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Düsseldorf|rauchentwicklung aus wohnung - feuerwehr löscht brennenden papierkorb",
+    "status": "active",
+    "title": "Rauchentwicklung aus Wohnung - Feuerwehr löscht brennenden Papierkorb",
+    "link": "https://www.presseportal.de/blaulicht/pm/115876/6359222",
+    "first": "2026-09-25T13:20:19Z",
+    "last": "2026-09-25T13:20:19Z",
+    "places": [
+      {
+        "name": "Düsseldorf",
+        "lat": 51.2254018,
+        "lon": 6.7763137,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Düsseldorf",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Offenburg|kehl - fahrzeugbrand, polizei sucht zeugen",
+    "status": "active",
+    "title": "Kehl - Fahrzeugbrand, Polizei sucht Zeugen",
+    "link": "https://www.presseportal.de/blaulicht/pm/110975/6359190",
+    "first": "2026-09-25T12:57:03Z",
+    "last": "2026-09-25T12:57:03Z",
+    "places": [
+      {
+        "name": "Kehl",
+        "lat": 48.5733977,
+        "lon": 7.8114002,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Offenburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Ulm|(ul) altheim (alb) - scheune in flammen / am freitagmorgen (25.09.2026) geriet ein landwirtschaftliches gebäude bei altheim in brand.",
+    "status": "out",
+    "title": "(UL) Altheim (Alb) - Scheune in Flammen / Am Freitagmorgen (25.09.2026) geriet ein landwirtschaftliches Gebäude bei Altheim in Brand.",
+    "link": "https://www.presseportal.de/blaulicht/pm/110979/6359146",
+    "first": "2026-09-25T12:20:05Z",
+    "last": "2026-09-25T12:20:05Z",
+    "places": [
+      {
+        "name": "Altheim (Alb",
+        "lat": 48.5808015,
+        "lon": 10.0271338,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Aalen|rems-murr-kreis: brand - unfallflucht - rathausmitarbeiter angegriffen - diebstahl von e-scooter",
     "status": "active",
     "title": "Rems-Murr-Kreis: Brand - Unfallflucht - Rathausmitarbeiter angegriffen - Diebstahl von E-Scooter",
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6358757",
     "first": "2026-09-25T07:48:46Z",
     "last": "2026-09-25T07:48:46Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Rems-Murr-Kreis",
@@ -13,11 +97,7 @@
         "lon": 9.5037124,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Niederkrüchten|feuerwehr übt am ehemaligen hotel lenhsen in elmpt / löschzug elmpt trainiert brandbekämpfung und rettung von personen, verkehrsbehinderungen möglich",
@@ -4627,232 +4707,6 @@
         "name": "Schwelm",
         "lat": 51.2841166,
         "lon": 7.2924712,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizei Duisburg|bergheim: audi in brand gesetzt - zeugen gesucht",
-    "status": "active",
-    "title": "Bergheim: Audi in Brand gesetzt - Zeugen gesucht",
-    "link": "https://www.presseportal.de/blaulicht/pm/50510/6340157",
-    "first": "2026-08-26T11:44:56Z",
-    "last": "2026-08-26T11:44:56Z",
-    "veg": false,
-    "source": "Polizei Duisburg",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Bergheim",
-        "lat": 50.9540457,
-        "lon": 6.6410004,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Kreispolizeibehörde Kleve|goch - unbekannte legen feuer in pfalzdorfer kirche / diverse gegenstände beschädigt und spendengeld entwendet / zeugen gesucht",
-    "status": "active",
-    "title": "Goch - Unbekannte legen Feuer in Pfalzdorfer Kirche / diverse Gegenstände beschädigt und Spendengeld entwendet / Zeugen gesucht",
-    "link": "https://www.presseportal.de/blaulicht/pm/65849/6340150",
-    "first": "2026-08-26T11:35:47Z",
-    "last": "2026-08-26T11:35:47Z",
-    "veg": false,
-    "source": "Kreispolizeibehörde Kleve",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Goch",
-        "lat": 51.6755765,
-        "lon": 6.1593045,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|teningen: gebäudebrand in mehrfamilienhaus - hoher sachschaden",
-    "status": "active",
-    "title": "Teningen: Gebäudebrand in Mehrfamilienhaus - hoher Sachschaden",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6340107",
-    "first": "2026-08-26T11:11:23Z",
-    "last": "2026-08-26T11:11:23Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Teningen",
-        "lat": 48.1270117,
-        "lon": 7.8101648,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Pforzheim|(pf) pforzheim - gemeinsame pressemeldung der staatsanwaltschaft karlsruhe - zweigstelle pforzheim und des pp pforzheim - drei tatverdächtige nach versuchter schwerer brandstiftung festgenommen",
-    "status": "active",
-    "title": "(PF) Pforzheim - Gemeinsame Pressemeldung der Staatsanwaltschaft Karlsruhe - Zweigstelle Pforzheim und des PP Pforzheim - Drei Tatverdächtige nach versuchter schwerer Brandstiftung festgenommen",
-    "link": "https://www.presseportal.de/blaulicht/pm/137462/6340067",
-    "first": "2026-08-26T10:53:18Z",
-    "last": "2026-08-26T10:53:18Z",
-    "veg": false,
-    "source": "Polizeipräsidium Pforzheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Pforzheim",
-        "lat": 48.890934,
-        "lon": 8.7025509,
-        "approx": false
-      },
-      {
-        "name": "zwischen Hohenzollernstraße und Friedrich-Ebert-Straße",
-        "lat": 48.78316,
-        "lon": 9.17053,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Aalen|ostalbkreis: fahrzeugbrand - unfallflucht - sachbeschädigung - diebstahl - unfall",
-    "status": "out",
-    "title": "Ostalbkreis: Fahrzeugbrand - Unfallflucht - Sachbeschädigung - Diebstahl - Unfall",
-    "link": "https://www.presseportal.de/blaulicht/pm/110969/6339956",
-    "first": "2026-08-26T09:36:21Z",
-    "last": "2026-08-26T09:36:21Z",
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Ostalbkreis",
-        "lat": 48.8777738,
-        "lon": 10.0337317,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(gp) gruibingen - stromaggregat fängt feuer / 25.000 euro sachschaden sind die bilanz eines brandes am dienstag in gruibingen.",
-    "status": "active",
-    "title": "(GP) Gruibingen - Stromaggregat fängt Feuer / 25.000 Euro Sachschaden sind die Bilanz eines Brandes am Dienstag in Gruibingen.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6339954",
-    "first": "2026-08-26T09:35:56Z",
-    "last": "2026-08-26T09:35:56Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Gruibingen",
-        "lat": 48.59454,
-        "lon": 9.6431134,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|heidelberg: fahrzeugbrand, pressemitteilung nr. 2",
-    "status": "out",
-    "title": "Heidelberg: Fahrzeugbrand, Pressemitteilung Nr. 2",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6339879",
-    "first": "2026-08-26T08:29:35Z",
-    "last": "2026-08-26T08:29:35Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Heidelberg",
-        "lat": 49.4093582,
-        "lon": 8.694724,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Remscheid|kellerbrand spichernstraße",
-    "status": "out",
-    "title": "Kellerbrand Spichernstraße",
-    "link": "https://www.presseportal.de/blaulicht/pm/115882/6339876",
-    "first": "2026-08-26T08:25:09Z",
-    "last": "2026-08-26T08:25:09Z",
-    "veg": false,
-    "source": "Feuerwehr Remscheid",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Remscheid",
-        "lat": 51.1798706,
-        "lon": 7.1943544,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Kreispolizeibehörde Kleve|kevelaer - 1. folgemeldung nach gebäudebrand: sperrung der sonsbecker straße aufgehoben",
-    "status": "active",
-    "title": "Kevelaer - 1. Folgemeldung nach Gebäudebrand: Sperrung der Sonsbecker Straße aufgehoben",
-    "link": "https://www.presseportal.de/blaulicht/pm/65849/6339856",
-    "first": "2026-08-26T07:59:18Z",
-    "last": "2026-08-26T07:59:18Z",
-    "veg": false,
-    "source": "Kreispolizeibehörde Kleve",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Kevelaer",
-        "lat": 51.5802996,
-        "lon": 6.2456273,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Paderborn|dachstuhlbrand realschule st. michael",
-    "status": "out",
-    "title": "Dachstuhlbrand Realschule St. Michael",
-    "link": "https://www.presseportal.de/blaulicht/pm/173646/6339848",
-    "first": "2026-08-26T07:39:58Z",
-    "last": "2026-08-26T07:39:58Z",
-    "veg": false,
-    "source": "Feuerwehr Paderborn",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Paderborn",
-        "lat": 51.7177044,
-        "lon": 8.752653,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ludwigsburg|sindelfingen-maichingen: gebäudebrand in der hölderlinstraße",
-    "status": "active",
-    "title": "Sindelfingen-Maichingen: Gebäudebrand in der Hölderlinstraße",
-    "link": "https://www.presseportal.de/blaulicht/pm/110974/6339844",
-    "first": "2026-08-26T07:35:13Z",
-    "last": "2026-08-26T07:35:13Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Sindelfingen-Maichingen",
-        "lat": 48.7221767,
-        "lon": 8.9653797,
         "approx": false
       }
     ]
