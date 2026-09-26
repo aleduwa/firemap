@@ -1,17 +1,16 @@
 {
- "generated": "2026-09-25T10:08:31.864Z",
+ "generated": "2026-09-26T09:52:02.627Z",
  "window": [
-  "2026-09-25",
-  "2026-12-24"
+  "2026-09-26",
+  "2026-12-25"
  ],
  "warnings": [
   "ZweiTälerLand tPortal (TOMAS): Ergebnisliste leer (Suche liefert serverseitig aktuell keine Treffer).",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568701.am-2.-oktober%2C-wi…: page.goto: Timeout 60000ms exceeded.",
-  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569210.25.-september-2026-…: page.goto: Timeout 60000ms exceeded.",
-  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569154.26.-september-2026-…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569154.26.-september-2026-waldkircher-museumsnacht---eine-nacht%2C-sieben-orte%2C-unzaehlige-erlebnisse.html",
+  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569154.26.-september-2026-…: page.goto: Timeout 60000ms exceeded.",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.566610.26.-september-2026-…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.566610.26.-september-2026-kindersachenflohmarkt-und-offene-buecherei-im-kurhaus-freiamt---anmeldungen-fuer-flohmarkt-sind-ab-sofort-moeglich-.html",
-  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569109.26.27.-september-20…: page.goto: Timeout 60000ms exceeded.",
-  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568865.kindertheater-morge…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.568865.kindertheater-morgen-bestimme-ich%21---veranstaltung-am-mittwoch%2C-30.09.2026-im-saal-des-kurhauses-freiamt-.html",
+  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569109.26.27.-september-20…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569109.26.27.-september-2026-herbstfest-mit-kunst-und-handwerk-in-denzlingen---veranstaltung-in-der-lebendigen-ortsmitte-und-rund-um-die-kirche-st.-georg-.html",
+  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568865.kindertheater-morge…: page.goto: Timeout 60000ms exceeded.",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568740.vortrag-wohnen-im-a…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.568740.vortrag-wohnen-im-alter-30.-september-2026-in-riegel-abgesagt---nachholtermin-steht-noch-nicht-fest-.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569091.1.-oktober-2026-ber…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569091.1.-oktober-2026-beratungsangebot-fuer-frauen-zu-beruflichen-themen-in-emmendingen---veranstaltung-in-der-vhs-noerdlicher-breisgau.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568891.2.-oktober-2026-rau…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.568891.2.-oktober-2026-raus-mit-klaus-in-teningen-heimbach---westweg-in-gegenrichtung---reportage-im-gemeindehaus.html",
@@ -22,7 +21,9 @@
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569122.10.-oktober-2026-wo…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569122.10.-oktober-2026-wollbasar-fuer-den-guten-zweck-in-riegel---gruppe-nadelwerkeln-in-der-spitalstrasse-38-laedt-ein-.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568106.13.-oktober-2026--s…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.568106.13.-oktober-2026--sanierungssprint---energetisch-modernisieren-in-22-tagen--in-denzlingen---kostenfreies-info-event-fuer-hauseigentuemer-sowie-sanierungsinteressierte-.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569294.18.-oktober-2026-fu…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569294.18.-oktober-2026-fuehrung-durch-das-anwesen-leonhardt-in-emmendingen---veranstaltung-gibt-einblicke-in-das-leben-der-kuenstlerin-gertrud-leonhardt.html",
-  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568496.digitaltag-freiburg…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.568496.digitaltag-freiburg-25.-september-2026-gaming-als-innovationstreiber-fuer-industrie-und-mittelstand---barcamp-zeigt%2C-wie-gaming-technologien-neue-geschaeftsmodelle%2C-digitale-prozesse-und-wettbewerbsfaehigkeit-foerdern.html",
+  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569371.burgfuehrung-durch-…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569371.burgfuehrung-durch-die-burgruine-lichteneck-am-18.10.2026-mit-michael-moser.html",
+  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569321.grosse-vogelausstel…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569321.grosse-vogelausstellung-mit-verbandsschau---am-31.10.und-01.11.2026-in-der-heinz-ritter-halle-in-voerstetten%2C.html",
+  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569372.burgfuehrung-durch-…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569372.burgfuehrung-durch-die-burgruine-lichteneck-am-1.-november-2026.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568670.26.-september-2026-…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.568670.26.-september-2026-tag-der-aus--und-weiterbildung-in-freiburg---veranstaltung-der-ihk-suedlicher-oberrhein-soll-helfen-fragen-zu-beantworten-und-richtige-berufliche-entscheidung-zu-treffen.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569156.29.-september-2026-…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569156.29.-september-2026-holocaust-ueberlebende-und-zeitzeugin-eva-weyl-zu-besuch-in-freiburg---veranstaltung-auf-einladung-des-dokumentationszentrums-nationalsozialismus-und-des-vereins-zweitzeugen.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569256.7.-oktober-2026-neu…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569256.7.-oktober-2026-neues-universitaets-brustzentrum-freiburg-oeffnet-seine-tueren-fuer-interessierte---persoenliche-gespraeche-mit-experten---mvz-praxis-und-universitaere-medizin-kuenftig-in-einer-gemeinsamen-struktur--.html",
@@ -31,11 +32,10 @@
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.567527.26.-september-2026-…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.567527.26.-september-2026-schlosskonzert-in-bad-krozingen---veranstaltung-im-rahmen-des-markgraefler-musikherbstes.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569157.27.-september-2026-…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569157.27.-september-2026-outdoor-aktiv-tag-im-kurpark-in-bad-krozingen---veranstaltung-parallel-zur-gesundheitsmesse.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568934.1.-oktober-2026-ges…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.568934.1.-oktober-2026-gesungene-und-getanzte-ukrainische-folklore-in-bad-krozingen---preisgekroentes-kinder-ensemble-tscherwona-ruta-und-tanzgruppe-molodist-treten-im-kurhaus-auf-.html",
+  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569332.18.-oktober-2026-sh…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569332.18.-oktober-2026-shinrin-yoku-in-bad-krozingen---waldbaden-im-kaeppeledobel-bollschweil-st.-ulrich--.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568170.27.-november-2026-k…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.568170.27.-november-2026-kulinarisches-weinerlebnis-im-weingut-fritz-wassmer-in-bad-krozingen-schlatt---genussvoller-auftakt-in-die-adventszeit.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568464.28.-november-2026-e…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.568464.28.-november-2026-erste-hilfe-bei-kindernotfaellen-in-ebringen--malteser-bieten-praxisnahen-kurs-fuer-eltern%2C-grosseltern-und-babysitter-an.html",
-  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.569188.html…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.569188.html",
-  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.569187.html…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.569187.html",
-  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569186.html…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569186.html"
+  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/sport/index.news.569367.html…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/sport/index.news.569367.html"
  ],
  "events": [
   {
@@ -44,22 +44,6 @@
    "place": "Emmendingen",
    "address": "Emmendingen, Deutschland",
    "url": "https://www.regiotrends.de/de/regiotermine/index.news.568701.am-2.-oktober%2C-wird-mit-live-musik-gefeiert%21---31.-musiknacht-emmendingen---tickets-sichern-und-live-dabei-sein%21---programm-der-naechsten-emmendinger-musiknacht-steht.html",
-   "source": "RegioTrends"
-  },
-  {
-   "title": "Multimediale Dichterlesung in Denzlingen - nano-sonett® im Café Panorama mit Dr. Dirk Schindelbeck",
-   "start": "2026-09-25",
-   "place": "Denzlingen",
-   "address": "Denzlingen, Deutschland",
-   "url": "https://www.regiotrends.de/de/regiotermine/index.news.569210.25.-september-2026-multimediale-dichterlesung-in-denzlingen---nano-sonett-im-cafe-panorama-mit-dr.-dirk-schindelbeck.html",
-   "source": "RegioTrends"
-  },
-  {
-   "title": "Musikalischer Blick in den Hochschwarzwald - Konzert „Wilde Wälder“ in Riegel am Freitag, 25. September 2026, 19.30 Uhr, im Bürgerhaus „Alte Schule“",
-   "start": "2026-09-25T19:30",
-   "place": "Riegel am Kaiserstuhl",
-   "address": "Riegel am Kaiserstuhl, Deutschland",
-   "url": "https://www.regiotrends.de/de/regiotermine/index.news.568717.musikalischer-blick-in-den-hochschwarzwald---konzert-wilde-waelder-in-riegel-am-freitag%2C-25.-september-2026%2C-19.30-uhr%2C-im-buergerhaus-alte-schule.html",
    "source": "RegioTrends"
   },
   {
@@ -192,6 +176,14 @@
    "source": "RegioTrends"
   },
   {
+   "title": "Herbstfest der Feuerwehr Herbolzheim am 11.10.2026 mit Tag der offenen Tür",
+   "start": "2026-10-11T11:00",
+   "place": "Herbolzheim",
+   "address": "Herbolzheim, Deutschland",
+   "url": "https://www.regiotrends.de/de/regiotermine/index.news.569364.herbstfest-der-feuerwehr-herbolzheim-am-11.10.2026-mit-tag-der-offenen-tuer.html",
+   "source": "RegioTrends"
+  },
+  {
    "title": "\"Sanierungssprint - energetisch modernisieren in 22 Tagen\" in Denzlingen - Kostenfreies Info-Event für Hauseigentümer sowie Sanierungsinteressierte",
    "start": "2026-10-13",
    "place": "Denzlingen",
@@ -216,11 +208,27 @@
    "source": "RegioTrends"
   },
   {
-   "title": "Digitaltag Freiburg (25. September 2026): Gaming als Innovationstreiber für Industrie und Mittelstand - Barcamp zeigt, wie Gaming-Technologien neue Geschäftsmodelle, digitale Prozesse und Wettbewerbsfähigkeit fördern",
-   "start": "2026-09-25",
-   "place": "Freiburg",
-   "address": "Freiburg, Deutschland",
-   "url": "https://www.regiotrends.de/de/regiotermine/index.news.568496.digitaltag-freiburg-25.-september-2026-gaming-als-innovationstreiber-fuer-industrie-und-mittelstand---barcamp-zeigt%2C-wie-gaming-technologien-neue-geschaeftsmodelle%2C-digitale-prozesse-und-wettbewerbsfaehigkeit-foerdern.html",
+   "title": "Burgführung durch die Burgruine Lichteneck am 18.10.2026 mit Michael Moser",
+   "start": "2026-10-18",
+   "place": "Kenzingen-Hecklingen",
+   "address": "Kenzingen-Hecklingen, Deutschland",
+   "url": "https://www.regiotrends.de/de/regiotermine/index.news.569371.burgfuehrung-durch-die-burgruine-lichteneck-am-18.10.2026-mit-michael-moser.html",
+   "source": "RegioTrends"
+  },
+  {
+   "title": "Große Vogelausstellung mit Verbandsschau - Am 31.10.und 01.11.2026 in der Heinz-Ritter-Halle in Vörstetten,",
+   "start": "2026-11-01",
+   "place": "Vörstetten",
+   "address": "Vörstetten, Deutschland",
+   "url": "https://www.regiotrends.de/de/regiotermine/index.news.569321.grosse-vogelausstellung-mit-verbandsschau---am-31.10.und-01.11.2026-in-der-heinz-ritter-halle-in-voerstetten%2C.html",
+   "source": "RegioTrends"
+  },
+  {
+   "title": "Burgführung durch die Burgruine Lichteneck am 1. November 2026",
+   "start": "2026-11-01",
+   "place": "Kenzingen-Hecklingen",
+   "address": "Kenzingen-Hecklingen, Deutschland",
+   "url": "https://www.regiotrends.de/de/regiotermine/index.news.569372.burgfuehrung-durch-die-burgruine-lichteneck-am-1.-november-2026.html",
    "source": "RegioTrends"
   },
   {
@@ -288,6 +296,14 @@
    "source": "RegioTrends"
   },
   {
+   "title": "„Shinrin Yoku“ in Bad Krozingen - Waldbaden im Käppeledobel Bollschweil-St. Ulrich",
+   "start": "2026-10-18",
+   "place": "Hochschwarzwald - Bad Krozingen",
+   "address": "Hochschwarzwald - Bad Krozingen, Deutschland",
+   "url": "https://www.regiotrends.de/de/regiotermine/index.news.569332.18.-oktober-2026-shinrin-yoku-in-bad-krozingen---waldbaden-im-kaeppeledobel-bollschweil-st.-ulrich--.html",
+   "source": "RegioTrends"
+  },
+  {
    "title": "Kulinarisches Weinerlebnis im Weingut Fritz Waßmer in Bad Krozingen-Schlatt - Genussvoller Auftakt in die Adventszeit",
    "start": "2026-11-27",
    "place": "Hochschwarzwald - Bad Krozingen",
@@ -301,6 +317,14 @@
    "place": "Hochschwarzwald - Ebringen",
    "address": "Hochschwarzwald - Ebringen, Deutschland",
    "url": "https://www.regiotrends.de/de/regiotermine/index.news.568464.28.-november-2026-erste-hilfe-bei-kindernotfaellen-in-ebringen--malteser-bieten-praxisnahen-kurs-fuer-eltern%2C-grosseltern-und-babysitter-an.html",
+   "source": "RegioTrends"
+  },
+  {
+   "title": "Am 26. und 27. September Sepp-Mack-Fechtturnier in Waldkirch - Ranglisten-Turnier von der U11 bis U20 - Kioskbetrieb und freier Eintritt – Umzug von der Kastelberghalle in die Stadthalle",
+   "start": "2026-09-27",
+   "place": "Sport",
+   "address": "Sport, Deutschland",
+   "url": "https://www.regiotrends.de/de/sport/index.news.569367.html",
    "source": "RegioTrends"
   },
   {
@@ -352,22 +376,6 @@
    "source": "RegioTrends"
   },
   {
-   "title": "Rathaus Waldkirch am Freitag, 25. September 2026 geschlossen - Grund der Schließung ist eine interne Veranstaltung",
-   "start": "2026-09-25",
-   "place": "Städte und Gemeinden",
-   "address": "Städte und Gemeinden, Deutschland",
-   "url": "https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.568817.html",
-   "source": "RegioTrends"
-  },
-  {
-   "title": "Gläserne Produktion - Betriebsführung in der Kühlen Mühle in Waldkirch am Freitag, 25. September 2026 von 15 bis 17 Uhr - Anmeldung erforderlich",
-   "start": "2026-09-25",
-   "place": "Aus den Landkreisen",
-   "address": "Aus den Landkreisen, Deutschland",
-   "url": "https://www.regiotrends.de/de/verbraucher-wirtschaft/index.news.568736.html",
-   "source": "RegioTrends"
-  },
-  {
    "title": "Waldkircher Museumsnacht - Eine Nacht, sieben Orte und unzählige Erlebnisse in Waldkirch",
    "start": "2026-09-26",
    "place": "Städte und Gemeinden",
@@ -414,14 +422,6 @@
    "place": "Städte und Gemeinden",
    "address": "Städte und Gemeinden, Deutschland",
    "url": "https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.568950.html",
-   "source": "RegioTrends"
-  },
-  {
-   "title": "Rathaus in Emmendingen und Außenstellen geschlossen - Betriebsinterne Veranstaltung wird durchgeführt",
-   "start": "2026-09-25",
-   "place": "Städte und Gemeinden",
-   "address": "Städte und Gemeinden, Deutschland",
-   "url": "https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.568947.html",
    "source": "RegioTrends"
   },
   {
@@ -489,13 +489,12 @@
    "source": "RegioTrends"
   },
   {
-   "title": "FreiTagZeit und Kinderprogramm in Denzlingen - Terminankündigungen der Mediathek",
-   "start": "2026-09-25T17:00",
+   "title": "\"ZockFreitag\" in Denzlingen - Terminankündigung der Mediathek",
+   "start": "2026-10-02T17:00",
    "place": "Städte und Gemeinden",
    "address": "Städte und Gemeinden, Deutschland",
-   "url": "https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.569020.html",
-   "source": "RegioTrends",
-   "end": "2026-09-28"
+   "url": "https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.569358.html",
+   "source": "RegioTrends"
   },
   {
    "title": "Sammlung von gut erhaltenen Waren in Herbolzheim und Denzlingen - Sammelfahrzeug von 48-Grad-Süd steht am Samstag, 26. September 2026 auf dem Grünschnittplatz der beiden Gemeinden",
