@@ -1,11 +1,35 @@
 [
   {
+    "base": "Feuerwehr Voerde|strohmiete brannte-feuerwehr voerde im einsatz",
+    "status": "active",
+    "title": "Strohmiete brannte-Feuerwehr Voerde im Einsatz",
+    "link": "https://www.presseportal.de/blaulicht/pm/125427/6359580",
+    "first": "2026-09-26T16:35:10Z",
+    "last": "2026-09-26T16:35:10Z",
+    "places": [
+      {
+        "name": "Voerde",
+        "lat": 51.5975224,
+        "lon": 6.6811994,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Voerde",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Düren|maschinenbrand in düren-niederau: schnelles handeln und gute zusammenarbeit verhindern brandausbreitung",
     "status": "contained",
     "title": "Maschinenbrand in Düren-Niederau: Schnelles Handeln und gute Zusammenarbeit verhindern Brandausbreitung",
     "link": "https://www.presseportal.de/blaulicht/pm/134173/6359544",
     "first": "2026-09-26T13:07:18Z",
     "last": "2026-09-26T13:07:18Z",
+    "veg": false,
+    "source": "Feuerwehr Düren",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Düren",
@@ -13,11 +37,7 @@
         "lon": 6.4820806,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Düren",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Kreispolizeibehörde Viersen|willich: brand in einem trafohaus führt zu einem stromausfall",
@@ -26,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/65857/6359540",
     "first": "2026-09-26T12:12:10Z",
     "last": "2026-09-26T12:12:10Z",
+    "veg": false,
+    "source": "Kreispolizeibehörde Viersen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Willich",
@@ -33,11 +57,7 @@
         "lon": 6.5446958,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Kreispolizeibehörde Viersen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Konstanz|kellerbrand",
@@ -46,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/139089/6359517",
     "first": "2026-09-26T10:01:15Z",
     "last": "2026-09-26T10:01:15Z",
+    "veg": false,
+    "source": "Feuerwehr Konstanz",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Konstanz",
@@ -53,11 +77,7 @@
         "lon": 9.1750718,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Konstanz",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Weinheim|angebranntes essen löst feuerwehreinsatz im 3-glocken-center aus",
@@ -66,6 +86,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/179375/6359498",
     "first": "2026-09-26T09:24:41Z",
     "last": "2026-09-26T09:24:41Z",
+    "veg": false,
+    "source": "Feuerwehr Weinheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Weinheim",
@@ -73,11 +97,7 @@
         "lon": 8.6717458,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Weinheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Alpen|brandmeldeanlage löste aus",
@@ -3598,14 +3618,14 @@
     ]
   },
   {
-    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
+    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - PM Nr. 1",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345918",
     "first": "2026-09-04T14:52:55Z",
     "last": "2026-09-04T14:52:55Z",
     "veg": false,
-    "source": "FF Walldorf",
+    "source": "Freiwillige Feuerwehr Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -3618,14 +3638,14 @@
     ]
   },
   {
-    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
+    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - PM Nr. 1",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345918",
     "first": "2026-09-04T14:52:55Z",
     "last": "2026-09-04T14:52:55Z",
     "veg": false,
-    "source": "Freiwillige Feuerwehr Walldorf",
+    "source": "FF Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -4747,46 +4767,6 @@
         "name": "Mülheim an der Ruhr",
         "lat": 51.4272925,
         "lon": 6.8829192,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ludwigsburg|staatsanwaltschaft stuttgart und polizeipräsidium ludwigsburg: sindelfingen-maichingen: gebäudebrand in der hölderlinstraße - tatverdächtiger festgenommen",
-    "status": "active",
-    "title": "Staatsanwaltschaft Stuttgart und Polizeipräsidium Ludwigsburg: Sindelfingen-Maichingen: Gebäudebrand in der Hölderlinstraße - Tatverdächtiger festgenommen",
-    "link": "https://www.presseportal.de/blaulicht/pm/110974/6341149",
-    "first": "2026-08-27T15:33:03Z",
-    "last": "2026-08-27T15:33:03Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Staatsanwaltschaft Stuttgart",
-        "lat": 48.7894873,
-        "lon": 9.1940305,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Weinheim|brandmeldealarm in pflegeheim durch technische störung",
-    "status": "active",
-    "title": "Brandmeldealarm in Pflegeheim durch technische Störung",
-    "link": "https://www.presseportal.de/blaulicht/pm/179375/6341010",
-    "first": "2026-08-27T13:52:27Z",
-    "last": "2026-08-27T13:52:27Z",
-    "veg": false,
-    "source": "Feuerwehr Weinheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Weinheim",
-        "lat": 49.5462349,
-        "lon": 8.6717458,
         "approx": false
       }
     ]
