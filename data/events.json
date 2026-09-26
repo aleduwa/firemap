@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/175781/6359418",
     "first": "2026-09-25T22:38:28Z",
     "last": "2026-09-25T22:38:28Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Stadt Kempen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Kempen",
@@ -13,11 +17,7 @@
         "lon": 6.4195011,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Stadt Kempen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Alpen|pkw-brand am abend",
@@ -4728,26 +4728,6 @@
         "lat": 48.8966799,
         "lon": 9.5037124,
         "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Stuttgart|kellerbrand in stuttgart-süd - drei verletzte personen durch rauchgasinhalation",
-    "status": "active",
-    "title": "Kellerbrand in Stuttgart-Süd - drei verletzte Personen durch Rauchgasinhalation",
-    "link": "https://www.presseportal.de/blaulicht/pm/161590/6340490",
-    "first": "2026-08-27T00:26:13Z",
-    "last": "2026-08-27T00:26:13Z",
-    "veg": false,
-    "source": "Feuerwehr Stuttgart",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stuttgart",
-        "lat": 48.7784485,
-        "lon": 9.1800132,
-        "approx": true
       }
     ]
   },
