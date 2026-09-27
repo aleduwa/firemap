@@ -1,5 +1,25 @@
 [
   {
+    "base": "Freiwillige Feuerwehr Bedburg-Hau|freiwillige feuerwehr bedburg-hau erreicht platz 6 bei den \"internationale brandweerwedstrijden\" in den niederlanden",
+    "status": "active",
+    "title": "Freiwillige Feuerwehr Bedburg-Hau erreicht Platz 6 bei den \"Internationale Brandweerwedstrijden\" in den Niederlanden",
+    "link": "https://www.presseportal.de/blaulicht/pm/116244/6359751",
+    "first": "2026-09-27T10:29:15Z",
+    "last": "2026-09-27T10:29:15Z",
+    "places": [
+      {
+        "name": "Bedburg-Hau",
+        "lat": 51.7624802,
+        "lon": 6.1932936,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Bedburg-Hau",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Kreisfeuerwehrverband Sigmaringen|brand mehrfamilienhaus",
     "status": "active",
     "title": "Brand Mehrfamilienhaus",
