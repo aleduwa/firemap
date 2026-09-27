@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/179375/6359918",
     "first": "2026-09-27T20:38:12Z",
     "last": "2026-09-27T20:38:12Z",
+    "veg": false,
+    "source": "Feuerwehr Weinheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Weinheim",
@@ -13,11 +17,7 @@
         "lon": 8.6717458,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Weinheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Stockach|brennender lkw auf der autobahn a98",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/134581/6359917",
     "first": "2026-09-27T20:35:08Z",
     "last": "2026-09-27T20:35:08Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Stockach",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Stockach",
@@ -33,11 +37,7 @@
         "lon": 9.0134524,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Stockach",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Lage|flächenbrand im lagenser stadtwald",
@@ -46,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/117388/6359909",
     "first": "2026-09-27T19:50:04Z",
     "last": "2026-09-27T19:50:04Z",
+    "veg": true,
+    "source": "Freiwillige Feuerwehr Lage",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Lage",
@@ -53,11 +57,7 @@
         "lon": 8.7919583,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Freiwillige Feuerwehr Lage",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Kreispolizeibehörde Heinsberg|hückelhoven-hilfarth - brand eines dachstuhls",
@@ -66,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/65845/6359903",
     "first": "2026-09-27T18:59:09Z",
     "last": "2026-09-27T18:59:09Z",
+    "veg": false,
+    "source": "Kreispolizeibehörde Heinsberg",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Hückelhoven-Hilfarth",
@@ -73,11 +77,7 @@
         "lon": 6.2192468,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Kreispolizeibehörde Heinsberg",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Witten|abschlussmeldung: dachstuhlbrand in witten",
@@ -86,6 +86,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/120429/6359886",
     "first": "2026-09-27T17:25:41Z",
     "last": "2026-09-27T17:25:41Z",
+    "veg": false,
+    "source": "Feuerwehr Witten",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Witten",
@@ -93,11 +97,7 @@
         "lon": 7.335124,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Witten",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Wuppertal|spät entdeckter brand",
