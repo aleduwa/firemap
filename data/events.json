@@ -1,11 +1,35 @@
 [
   {
+    "base": "Feuerwehr Wuppertal|spät entdeckter brand",
+    "status": "out",
+    "title": "Spät entdeckter Brand",
+    "link": "https://www.presseportal.de/blaulicht/pm/115885/6359879",
+    "first": "2026-09-27T16:21:38Z",
+    "last": "2026-09-27T16:21:38Z",
+    "places": [
+      {
+        "name": "Wuppertal",
+        "lat": 51.264018,
+        "lon": 7.1780374,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Wuppertal",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Freiwillige Feuerwehr Bedburg-Hau|freiwillige feuerwehr bedburg-hau erreicht platz 6 bei den \"internationale brandweerwedstrijden\" in den niederlanden",
     "status": "active",
     "title": "Freiwillige Feuerwehr Bedburg-Hau erreicht Platz 6 bei den \"Internationale Brandweerwedstrijden\" in den Niederlanden",
     "link": "https://www.presseportal.de/blaulicht/pm/116244/6359751",
     "first": "2026-09-27T10:29:15Z",
     "last": "2026-09-27T10:29:15Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Bedburg-Hau",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Bedburg-Hau",
@@ -13,11 +37,7 @@
         "lon": 6.1932936,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Bedburg-Hau",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Kreisfeuerwehrverband Sigmaringen|brand mehrfamilienhaus",
@@ -4747,66 +4767,6 @@
         "name": "Karlsruhe",
         "lat": 49.0068705,
         "lon": 8.4034195,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Kreispolizeibehörde Kleve|issum - brand von zwei abgestellten fahrzeugen: kripo ermittelt wegen vorsätzlicher brandstiftung",
-    "status": "active",
-    "title": "Issum - Brand von zwei abgestellten Fahrzeugen: Kripo ermittelt wegen vorsätzlicher Brandstiftung",
-    "link": "https://www.presseportal.de/blaulicht/pm/65849/6341789",
-    "first": "2026-08-28T14:42:43Z",
-    "last": "2026-08-28T14:42:43Z",
-    "veg": false,
-    "source": "Kreispolizeibehörde Kleve",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Issum",
-        "lat": 51.5347321,
-        "lon": 6.4245085,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Herdecke|pkw-brand auf der gedener straße",
-    "status": "active",
-    "title": "Pkw-Brand auf der Gedener Straße",
-    "link": "https://www.presseportal.de/blaulicht/pm/69790/6341785",
-    "first": "2026-08-28T14:37:00Z",
-    "last": "2026-08-28T14:37:00Z",
-    "veg": false,
-    "source": "Feuerwehr Herdecke",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Herdecke",
-        "lat": 51.4001119,
-        "lon": 7.4330062,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(gp) geislingen - parkbank in flammen / am donnerstag brannte an einem wanderweg in geislingen eine parkbank.",
-    "status": "active",
-    "title": "(GP) Geislingen - Parkbank in Flammen / Am Donnerstag brannte an einem Wanderweg in Geislingen eine Parkbank.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6341771",
-    "first": "2026-08-28T14:20:00Z",
-    "last": "2026-08-28T14:20:00Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Geislingen",
-        "lat": 48.6230397,
-        "lon": 9.8356703,
         "approx": false
       }
     ]
