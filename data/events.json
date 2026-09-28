@@ -1,11 +1,165 @@
 [
   {
+    "base": "Polizeipräsidium Freiburg|bernau im schwarzwald: rauchentwicklung führt zu feuerwehreinsatz",
+    "status": "active",
+    "title": "Bernau im Schwarzwald: Rauchentwicklung führt zu Feuerwehreinsatz",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6360801",
+    "first": "2026-09-28T16:06:47Z",
+    "last": "2026-09-28T16:06:47Z",
+    "places": [
+      {
+        "name": "Bernau im Schwarzwald",
+        "lat": 47.8057268,
+        "lon": 8.0345882,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|albbruck/ unteralpfen: brennender kompost - feuerwehreinsatz",
+    "status": "active",
+    "title": "Albbruck/ Unteralpfen: Brennender Kompost - Feuerwehreinsatz",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6360800",
+    "first": "2026-09-28T16:06:24Z",
+    "last": "2026-09-28T16:06:24Z",
+    "places": [
+      {
+        "name": "Albbruck",
+        "lat": 47.5943254,
+        "lon": 8.1336893,
+        "approx": false
+      },
+      {
+        "name": "Unteralpfen",
+        "lat": 47.6469308,
+        "lon": 8.1320457,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|klettgau/ erzingen: fahrzeugbrand",
+    "status": "contained",
+    "title": "Klettgau/ Erzingen: Fahrzeugbrand",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6360794",
+    "first": "2026-09-28T16:04:09Z",
+    "last": "2026-09-28T16:04:09Z",
+    "places": [
+      {
+        "name": "Klettgau",
+        "lat": 47.635682,
+        "lon": 8.4089759,
+        "approx": false
+      },
+      {
+        "name": "Erzingen",
+        "lat": 47.6573292,
+        "lon": 8.4215904,
+        "approx": false
+      },
+      {
+        "name": "B 34 zwischen Erzingen und Oberlauchringen",
+        "lat": 47.64321,
+        "lon": 8.37189,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|ühlingen-birkendorf/ berau: flächenbrand",
+    "status": "active",
+    "title": "Ühlingen-Birkendorf/ Berau: Flächenbrand",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6360791",
+    "first": "2026-09-28T16:03:29Z",
+    "last": "2026-09-28T16:03:29Z",
+    "places": [
+      {
+        "name": "Ühlingen-Birkendorf",
+        "lat": 47.7252375,
+        "lon": 8.301544,
+        "approx": false
+      },
+      {
+        "name": "Berau",
+        "lat": 47.695685,
+        "lon": 8.2587575,
+        "approx": false
+      }
+    ],
+    "veg": true,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|klettgau/rechberg: brand eines wintergartens",
+    "status": "contained",
+    "title": "Klettgau/Rechberg: Brand eines Wintergartens",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6360790",
+    "first": "2026-09-28T16:02:58Z",
+    "last": "2026-09-28T16:02:58Z",
+    "places": [
+      {
+        "name": "Klettgau",
+        "lat": 47.635682,
+        "lon": 8.4089759,
+        "approx": false
+      },
+      {
+        "name": "Rechberg",
+        "lat": 48.752007,
+        "lon": 9.7939889,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|jestetten: brand an mehrfamilienhaus",
+    "status": "out",
+    "title": "Jestetten: Brand an Mehrfamilienhaus",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6360789",
+    "first": "2026-09-28T16:02:24Z",
+    "last": "2026-09-28T16:02:24Z",
+    "places": [
+      {
+        "name": "Jestetten",
+        "lat": 47.65,
+        "lon": 8.56667,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Aalen|rems-murr-kreis: diebstahl und einbrüche, unfall und unfallfluchten, brand",
     "status": "out",
     "title": "Rems-Murr-Kreis: Diebstahl und Einbrüche, Unfall und Unfallfluchten, Brand",
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6359986",
     "first": "2026-09-28T08:24:38Z",
     "last": "2026-09-28T08:24:38Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Rems-Murr-Kreis",
@@ -13,11 +167,7 @@
         "lon": 9.5037124,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Wuppertal|brand in einer doppelhaushälfte - eine person verstorben",
@@ -3898,14 +4048,14 @@
     ]
   },
   {
-    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
+    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - PM Nr. 1",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345918",
     "first": "2026-09-04T14:52:55Z",
     "last": "2026-09-04T14:52:55Z",
     "veg": false,
-    "source": "FF Walldorf",
+    "source": "Freiwillige Feuerwehr Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -3918,14 +4068,14 @@
     ]
   },
   {
-    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
+    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - PM Nr. 1",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345918",
     "first": "2026-09-04T14:52:55Z",
     "last": "2026-09-04T14:52:55Z",
     "veg": false,
-    "source": "Freiwillige Feuerwehr Walldorf",
+    "source": "FF Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -4756,92 +4906,6 @@
         "lat": 49.0876163,
         "lon": 8.6106867,
         "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Allensbach|b3 gebäude unklare rauchentwicklung",
-    "status": "active",
-    "title": "B3 Gebäude unklare Rauchentwicklung",
-    "link": "https://www.presseportal.de/blaulicht/pm/175384/6341980",
-    "first": "2026-08-29T12:37:40Z",
-    "last": "2026-08-29T12:37:40Z",
-    "veg": false,
-    "source": "Feuerwehr Allensbach",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Allensbach",
-        "lat": 47.7168668,
-        "lon": 9.0687005,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Rösrath|brand an wohngebäude in forsbach",
-    "status": "out",
-    "title": "Brand an Wohngebäude in Forsbach",
-    "link": "https://www.presseportal.de/blaulicht/pm/130257/6341971",
-    "first": "2026-08-29T12:00:01Z",
-    "last": "2026-08-29T12:00:01Z",
-    "veg": false,
-    "source": "Feuerwehr Rösrath",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Rösrath",
-        "lat": 50.8963758,
-        "lon": 7.1825445,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Essen|nächtliche brandserie im essener norden - zwei schulen betroffen",
-    "status": "out",
-    "title": "Nächtliche Brandserie im Essener Norden - zwei Schulen betroffen",
-    "link": "https://www.presseportal.de/blaulicht/pm/56893/6341950",
-    "first": "2026-08-29T10:45:20Z",
-    "last": "2026-08-29T10:45:20Z",
-    "veg": false,
-    "source": "Feuerwehr Essen",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Essen",
-        "lat": 51.4582235,
-        "lon": 7.0158171,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|leimen/rhein-neckar-kreis: brand in der talstraße - feuerwehr im einsatz - pressemeldung nr. 2",
-    "status": "out",
-    "title": "Leimen/Rhein-Neckar-Kreis: Brand in der Talstraße - Feuerwehr im Einsatz - Pressemeldung Nr. 2",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6341947",
-    "first": "2026-08-29T10:40:00Z",
-    "last": "2026-08-29T10:40:00Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Leimen",
-        "lat": 49.3491417,
-        "lon": 8.6909951,
-        "approx": false
-      },
-      {
-        "name": "Rhein-Neckar-Kreis",
-        "lat": 49.3684797,
-        "lon": 8.7352403,
-        "approx": false
       }
     ]
   },
