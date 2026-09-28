@@ -1,11 +1,35 @@
 [
   {
+    "base": "Polizeipräsidium Aalen|rems-murr-kreis: diebstahl und einbrüche, unfall und unfallfluchten, brand",
+    "status": "out",
+    "title": "Rems-Murr-Kreis: Diebstahl und Einbrüche, Unfall und Unfallfluchten, Brand",
+    "link": "https://www.presseportal.de/blaulicht/pm/110969/6359986",
+    "first": "2026-09-28T08:24:38Z",
+    "last": "2026-09-28T08:24:38Z",
+    "places": [
+      {
+        "name": "Rems-Murr-Kreis",
+        "lat": 48.8966799,
+        "lon": 9.5037124,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Wuppertal|brand in einer doppelhaushälfte - eine person verstorben",
     "status": "out",
     "title": "Brand in einer Doppelhaushälfte - eine Person verstorben",
     "link": "https://www.presseportal.de/blaulicht/pm/115885/6359930",
     "first": "2026-09-28T01:23:39Z",
     "last": "2026-09-28T01:23:39Z",
+    "veg": false,
+    "source": "Feuerwehr Wuppertal",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Wuppertal",
@@ -13,11 +37,7 @@
         "lon": 7.1780374,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Wuppertal",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Weinheim|zwei einsätze am sonntagnachmittag in weinheim - betriebsstoffe ausgelaufen und mülleimer in brand",
@@ -4806,32 +4826,6 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6341947",
     "first": "2026-08-29T10:40:00Z",
     "last": "2026-08-29T10:40:00Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Leimen",
-        "lat": 49.3491417,
-        "lon": 8.6909951,
-        "approx": false
-      },
-      {
-        "name": "Rhein-Neckar-Kreis",
-        "lat": 49.3684797,
-        "lon": 8.7352403,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|leimen/rhein-neckar-kreis: brand in der talstraße - feuerwehr im einsatz - pressemeldung nr. 1",
-    "status": "active",
-    "title": "Leimen/Rhein-Neckar-Kreis: Brand in der Talstraße - Feuerwehr im Einsatz - Pressemeldung Nr. 1",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6341888",
-    "first": "2026-08-29T04:58:00Z",
-    "last": "2026-08-29T04:58:00Z",
     "veg": false,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
