@@ -1,17 +1,17 @@
 {
- "generated": "2026-09-27T10:32:37.155Z",
+ "generated": "2026-09-28T11:28:30.616Z",
  "window": [
-  "2026-09-27",
-  "2026-12-26"
+  "2026-09-28",
+  "2026-12-27"
  ],
  "warnings": [
   "ZweiTälerLand tPortal (TOMAS): Ergebnisliste leer (Suche liefert serverseitig aktuell keine Treffer).",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568701.am-2.-oktober%2C-wi…: page.goto: Timeout 60000ms exceeded.",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568865.kindertheater-morge…: page.goto: Timeout 60000ms exceeded.",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568740.vortrag-wohnen-im-a…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.568740.vortrag-wohnen-im-alter-30.-september-2026-in-riegel-abgesagt---nachholtermin-steht-noch-nicht-fest-.html",
-  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569091.1.-oktober-2026-ber…: page.goto: Timeout 60000ms exceeded.",
+  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569091.1.-oktober-2026-ber…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569091.1.-oktober-2026-beratungsangebot-fuer-frauen-zu-beruflichen-themen-in-emmendingen---veranstaltung-in-der-vhs-noerdlicher-breisgau.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568891.2.-oktober-2026-rau…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.568891.2.-oktober-2026-raus-mit-klaus-in-teningen-heimbach---westweg-in-gegenrichtung---reportage-im-gemeindehaus.html",
-  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568255.3.-oktober-2026-22.…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.568255.3.-oktober-2026-22.-oldtimer-teilemarkt-in-freiamt-von-8-bis-18-uhr---mehrere-hunderte-private-haendler-werden-erwartet.html",
+  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568255.3.-oktober-2026-22.…: page.goto: Timeout 60000ms exceeded.",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569186.4.-oktober-2026-zau…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569186.4.-oktober-2026-zaubervoegel-und-schoene-erinnerungen-in-waldkirch---familiensonntag-im-elztalmuseum-.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568896.7.-oktober-2026-reg…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.568896.7.-oktober-2026-regierungspraesidium-freiburg-informiert-ueber-aktuelle-planungen-beim-radschnellweg-rs-6---beradelung-in-waldkirch-.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568438.1.-voerstetter-ladi…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.568438.1.-voerstetter-ladies-night-flohmarkt-am-freitag%2C-9.-oktober-2026-.html",
@@ -25,17 +25,17 @@
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569256.7.-oktober-2026-neu…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569256.7.-oktober-2026-neues-universitaets-brustzentrum-freiburg-oeffnet-seine-tueren-fuer-interessierte---persoenliche-gespraeche-mit-experten---mvz-praxis-und-universitaere-medizin-kuenftig-in-einer-gemeinsamen-struktur--.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569237.10.-oktober-2026-in…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569237.10.-oktober-2026-infoveranstaltung-ueber-epilepsie-in-freiburg---vortraege-fuer-patienten-und-angehoerige---neue-entwicklungen-in-diagnostik-und-therapie---raum-fuer-fragen-und-austausch-.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569160.14.-oktober-2026--b…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569160.14.-oktober-2026--brancheneinblick-klimarelevantes-handwerk--in-freiburg---schuelerinnen-erhalten-einblicke-in-berufszweig-sanitaer%2C-heizung-und-klima---teil-des-projekts-klimaheldin-im-handwerk-.html",
-  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569157.27.-september-2026-…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569157.27.-september-2026-outdoor-aktiv-tag-im-kurpark-in-bad-krozingen---veranstaltung-parallel-zur-gesundheitsmesse.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568934.1.-oktober-2026-ges…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.568934.1.-oktober-2026-gesungene-und-getanzte-ukrainische-folklore-in-bad-krozingen---preisgekroentes-kinder-ensemble-tscherwona-ruta-und-tanzgruppe-molodist-treten-im-kurhaus-auf-.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569332.18.-oktober-2026-sh…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569332.18.-oktober-2026-shinrin-yoku-in-bad-krozingen---waldbaden-im-kaeppeledobel-bollschweil-st.-ulrich--.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568170.27.-november-2026-k…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.568170.27.-november-2026-kulinarisches-weinerlebnis-im-weingut-fritz-wassmer-in-bad-krozingen-schlatt---genussvoller-auftakt-in-die-adventszeit.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568464.28.-november-2026-e…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.568464.28.-november-2026-erste-hilfe-bei-kindernotfaellen-in-ebringen--malteser-bieten-praxisnahen-kurs-fuer-eltern%2C-grosseltern-und-babysitter-an.html",
-  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/sport/index.news.569367.html…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/sport/index.news.569367.html",
-  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.569188.html…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.569188.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.569187.html…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.569187.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569186.html…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569186.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568896.html…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.568896.html",
-  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/verbraucher-wirtschaft/index.news.568819.html…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/verbraucher-wirtschaft/index.news.568819.html"
+  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/verbraucher-wirtschaft/index.news.568819.html…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/verbraucher-wirtschaft/index.news.568819.html",
+  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568701.html…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.568701.html",
+  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.569351.html…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.569351.html",
+  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569294.html…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569294.html"
  ],
  "events": [
   {
@@ -92,6 +92,14 @@
    "place": "Freiamt",
    "address": "Freiamt, Deutschland",
    "url": "https://www.regiotrends.de/de/regiotermine/index.news.568255.3.-oktober-2026-22.-oldtimer-teilemarkt-in-freiamt-von-8-bis-18-uhr---mehrere-hunderte-private-haendler-werden-erwartet.html",
+   "source": "RegioTrends"
+  },
+  {
+   "title": "\"Stoff – Ein Spitzengeschäft\" - Filmmatinee der Klappe 11 in Waldkirch - Sonntag, den 04. Oktober 2026 um 11.00 Uhr",
+   "start": "2026-10-04T11:00",
+   "place": "Waldkirch",
+   "address": "Waldkirch, Deutschland",
+   "url": "https://www.regiotrends.de/de/regiotermine/index.news.569415.-stoff--ein-spitzengeschaeft----filmmatinee-der-klappe-11-in-waldkirch---sonntag%2C-den-04.-oktober-2026-um-11.00-uhr.html",
    "source": "RegioTrends"
   },
   {
@@ -223,14 +231,6 @@
    "source": "RegioTrends"
   },
   {
-   "title": "Outdoor-Aktiv-Tag im Kurpark in Bad Krozingen - Veranstaltung parallel zur Gesundheitsmesse",
-   "start": "2026-09-27",
-   "place": "Hochschwarzwald - Bad Krozingen",
-   "address": "Hochschwarzwald - Bad Krozingen, Deutschland",
-   "url": "https://www.regiotrends.de/de/regiotermine/index.news.569157.27.-september-2026-outdoor-aktiv-tag-im-kurpark-in-bad-krozingen---veranstaltung-parallel-zur-gesundheitsmesse.html",
-   "source": "RegioTrends"
-  },
-  {
    "title": "Gesungene und getanzte ukrainische Folklore in Bad Krozingen - Preisgekröntes Kinder-Ensemble „Tscherwona Ruta“ und Tanzgruppe „Molodist“ treten im Kurhaus auf",
    "start": "2026-10-01",
    "place": "Hochschwarzwald - Bad Krozingen",
@@ -260,22 +260,6 @@
    "place": "Hochschwarzwald - Ebringen",
    "address": "Hochschwarzwald - Ebringen, Deutschland",
    "url": "https://www.regiotrends.de/de/regiotermine/index.news.568464.28.-november-2026-erste-hilfe-bei-kindernotfaellen-in-ebringen--malteser-bieten-praxisnahen-kurs-fuer-eltern%2C-grosseltern-und-babysitter-an.html",
-   "source": "RegioTrends"
-  },
-  {
-   "title": "Am 26. und 27. September Sepp-Mack-Fechtturnier in Waldkirch - Ranglisten-Turnier von der U11 bis U20 - Kioskbetrieb und freier Eintritt – Umzug von der Kastelberghalle in die Stadthalle",
-   "start": "2026-09-27",
-   "place": "Sport",
-   "address": "Sport, Deutschland",
-   "url": "https://www.regiotrends.de/de/sport/index.news.569367.html",
-   "source": "RegioTrends"
-  },
-  {
-   "title": "Ein Frühstück, viele Kulturen in Waldkirch - Interkulturelles Familienfrühstück im Roten Haus",
-   "start": "2026-09-27",
-   "place": "Städte und Gemeinden",
-   "address": "Städte und Gemeinden, Deutschland",
-   "url": "https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.569188.html",
    "source": "RegioTrends"
   },
   {
@@ -377,14 +361,6 @@
    "source": "RegioTrends"
   },
   {
-   "title": "Aktueller Förderaufruf für Projekte in der LEADER-Region und geförderte Projekte 2026 im Landkreis Emmendingen: Frauenforum, Stadtjubiläum Elzach und Klimaanpassung im ZweiTälerLand",
-   "start": "2026-09-27",
-   "place": "Aus den Landkreisen",
-   "address": "Aus den Landkreisen, Deutschland",
-   "url": "https://www.regiotrends.de/de/verbraucher-wirtschaft/index.news.567738.html",
-   "source": "RegioTrends"
-  },
-  {
    "title": "Jetzt anmelden: Unternehmen treffen Fachkräfte von morgen bei der Emmendinger Nacht der Ausbildung (2. Oktober 2026) - Organisatorinnen Petra Mörder und Luisa Huber: \"Persönlicher Kontakt ist durch nichts zu ersetzen.\"",
    "start": "2026-10-02",
    "place": "Städte und Gemeinden",
@@ -414,6 +390,14 @@
    "place": "Hier schreiben Sie!",
    "address": "Hier schreiben Sie!, Deutschland",
    "url": "https://www.regiotrends.de/de/meldung_schreiben/index.news.568218.html",
+   "source": "RegioTrends"
+  },
+  {
+   "title": "Ab 28. September 2026: Fernwärmenetz in Breisach wächst weiter - Während Bauarbeiten ist in mehreren Straßen mit Einschränkungen zu rechnen",
+   "start": "2026-09-28",
+   "place": "Verbraucher / Wirtschaft",
+   "address": "Verbraucher / Wirtschaft, Deutschland",
+   "url": "https://www.regiotrends.de/de/regiomix/index.news.569179.html",
    "source": "RegioTrends"
   }
  ]
