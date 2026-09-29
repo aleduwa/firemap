@@ -1,11 +1,187 @@
 [
   {
+    "base": "Polizeipräsidium Freiburg|titisee-neustadt: pkw gerät in brand",
+    "status": "active",
+    "title": "Titisee-Neustadt: Pkw gerät in Brand",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6361596",
+    "first": "2026-09-29T15:09:33Z",
+    "last": "2026-09-29T15:09:33Z",
+    "places": [
+      {
+        "name": "Titisee-Neustadt",
+        "lat": 47.9173421,
+        "lon": 8.1735161,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|hockenheim/bab61/rhein-neckar-kreis: fahrzeugbrand - ausfahrten bab 61 bei hockenheim beidseitig gesperrt - sperrung teilweise aufgehoben, pm nr.2",
+    "status": "out",
+    "title": "Hockenheim/BAB61/Rhein-Neckar-Kreis: Fahrzeugbrand - Ausfahrten BAB 61 bei Hockenheim beidseitig gesperrt - Sperrung teilweise aufgehoben, PM Nr.2",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6361592",
+    "first": "2026-09-29T15:07:51Z",
+    "last": "2026-09-29T15:07:51Z",
+    "places": [
+      {
+        "name": "Hockenheim",
+        "lat": 49.3188892,
+        "lon": 8.5475467,
+        "approx": false
+      },
+      {
+        "name": "Rhein-Neckar-Kreis",
+        "lat": 49.3684797,
+        "lon": 8.7352403,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Ludwigsburg|staatsanwaltschaft stuttgart und polizeipräsidium ludwigsburg: zwei tatverdächtige wegen schwerer brandstiftung sowie versuchten mordes in untersuchungshaft",
+    "status": "active",
+    "title": "Staatsanwaltschaft Stuttgart und Polizeipräsidium Ludwigsburg: zwei Tatverdächtige wegen schwerer Brandstiftung sowie versuchten Mordes in Untersuchungshaft",
+    "link": "https://www.presseportal.de/blaulicht/pm/110974/6361577",
+    "first": "2026-09-29T14:57:17Z",
+    "last": "2026-09-29T14:57:17Z",
+    "places": [
+      {
+        "name": "Staatsanwaltschaft Stuttgart",
+        "lat": 48.7894873,
+        "lon": 9.1940305,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ludwigsburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|häusern: brand in altpapiercontainer",
+    "status": "contained",
+    "title": "Häusern: Brand in Altpapiercontainer",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6361549",
+    "first": "2026-09-29T14:22:45Z",
+    "last": "2026-09-29T14:22:45Z",
+    "places": [
+      {
+        "name": "Häusern",
+        "lat": 47.7540444,
+        "lon": 8.1672955,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Ludwigsburg|marbach am neckar: brand einer dachgeschosswohnung",
+    "status": "out",
+    "title": "Marbach am Neckar: Brand einer Dachgeschosswohnung",
+    "link": "https://www.presseportal.de/blaulicht/pm/110974/6361544",
+    "first": "2026-09-29T14:18:55Z",
+    "last": "2026-09-29T14:18:55Z",
+    "places": [
+      {
+        "name": "Marbach am Neckar",
+        "lat": 48.9402085,
+        "lon": 9.256396,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ludwigsburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizei Duisburg|wanheimerort: mülltonnen brannten - zeugensuche",
+    "status": "active",
+    "title": "Wanheimerort: Mülltonnen brannten - Zeugensuche",
+    "link": "https://www.presseportal.de/blaulicht/pm/50510/6361540",
+    "first": "2026-09-29T14:15:07Z",
+    "last": "2026-09-29T14:15:07Z",
+    "places": [
+      {
+        "name": "Wanheimerort",
+        "lat": 51.4022807,
+        "lon": 6.7595258,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizei Duisburg",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|hockenheim/bab61/rhein-neckar-kreis: fahrzeugbrand - ausfahrten bab 61 bei hockenheim beidseitig gesperrt, pm nr.1",
+    "status": "active",
+    "title": "Hockenheim/BAB61/Rhein-Neckar-Kreis: Fahrzeugbrand - Ausfahrten BAB 61 bei Hockenheim beidseitig gesperrt, PM Nr.1",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6361524",
+    "first": "2026-09-29T14:06:44Z",
+    "last": "2026-09-29T14:06:44Z",
+    "places": [
+      {
+        "name": "Hockenheim",
+        "lat": 49.3188892,
+        "lon": 8.5475467,
+        "approx": false
+      },
+      {
+        "name": "Rhein-Neckar-Kreis",
+        "lat": 49.3684797,
+        "lon": 8.7352403,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Stuttgart|kellerbrand in einem mehrfamilienhaus",
+    "status": "out",
+    "title": "Kellerbrand in einem Mehrfamilienhaus",
+    "link": "https://www.presseportal.de/blaulicht/pm/161590/6361499",
+    "first": "2026-09-29T13:53:22Z",
+    "last": "2026-09-29T13:53:22Z",
+    "places": [
+      {
+        "name": "Stuttgart",
+        "lat": 48.7784485,
+        "lon": 9.1800132,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Stuttgart",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Wuppertal|frau stirbt bei wohnungsbrand",
     "status": "active",
     "title": "Frau stirbt bei Wohnungsbrand",
     "link": "https://www.presseportal.de/blaulicht/pm/115885/6360929",
     "first": "2026-09-29T07:40:52Z",
     "last": "2026-09-29T07:40:52Z",
+    "veg": false,
+    "source": "Feuerwehr Wuppertal",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Wuppertal",
@@ -13,11 +189,7 @@
         "lon": 7.1780374,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Wuppertal",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Remscheid|brand in einem industriebetrieb mit drei leicht verletzten",
@@ -4048,14 +4220,14 @@
     ]
   },
   {
-    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
+    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - Abschlussmeldung (PM Nr. 2)",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345986",
     "first": "2026-09-04T18:17:50Z",
     "last": "2026-09-04T18:17:50Z",
     "veg": false,
-    "source": "FF Walldorf",
+    "source": "Freiwillige Feuerwehr Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -4068,14 +4240,14 @@
     ]
   },
   {
-    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
+    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - Abschlussmeldung (PM Nr. 2)",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345986",
     "first": "2026-09-04T18:17:50Z",
     "last": "2026-09-04T18:17:50Z",
     "veg": false,
-    "source": "Freiwillige Feuerwehr Walldorf",
+    "source": "FF Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -4128,14 +4300,14 @@
     ]
   },
   {
-    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
+    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - PM Nr. 1",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345918",
     "first": "2026-09-04T14:52:55Z",
     "last": "2026-09-04T14:52:55Z",
     "veg": false,
-    "source": "FF Walldorf",
+    "source": "Freiwillige Feuerwehr Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -4148,14 +4320,14 @@
     ]
   },
   {
-    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
+    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - PM Nr. 1",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345918",
     "first": "2026-09-04T14:52:55Z",
     "last": "2026-09-04T14:52:55Z",
     "veg": false,
-    "source": "Freiwillige Feuerwehr Walldorf",
+    "source": "FF Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -4865,106 +5037,6 @@
         "name": "Ennepetal",
         "lat": 51.2967192,
         "lon": 7.3693335,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Freiwillige Feuerwehr Hünxe|pkw-brand",
-    "status": "active",
-    "title": "Pkw-Brand",
-    "link": "https://www.presseportal.de/blaulicht/pm/133631/6342276",
-    "first": "2026-08-30T13:49:07Z",
-    "last": "2026-08-30T13:49:07Z",
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Hünxe",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Hünxe",
-        "lat": 51.6414581,
-        "lon": 6.7660319,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|mannheim-sandhofen: gebäudebrand in einem gewerbebetrieb - pm nr. 2",
-    "status": "out",
-    "title": "Mannheim-Sandhofen: Gebäudebrand in einem Gewerbebetrieb - PM Nr. 2",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6342253",
-    "first": "2026-08-30T12:29:29Z",
-    "last": "2026-08-30T12:29:29Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Mannheim-Sandhofen",
-        "lat": 49.5536184,
-        "lon": 8.4539633,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Stuttgart|brand in dachgeschosswohnung in stuttgart-west",
-    "status": "active",
-    "title": "Brand in Dachgeschosswohnung in Stuttgart-West",
-    "link": "https://www.presseportal.de/blaulicht/pm/161590/6342144",
-    "first": "2026-08-30T08:57:32Z",
-    "last": "2026-08-30T08:57:32Z",
-    "veg": false,
-    "source": "Feuerwehr Stuttgart",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stuttgart",
-        "lat": 48.7784485,
-        "lon": 9.1800132,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Wuppertal|entstehungsbrand im keller - eine person verletzt",
-    "status": "out",
-    "title": "Entstehungsbrand im Keller - eine Person verletzt",
-    "link": "https://www.presseportal.de/blaulicht/pm/115885/6342098",
-    "first": "2026-08-30T07:31:11Z",
-    "last": "2026-08-30T07:31:11Z",
-    "veg": false,
-    "source": "Feuerwehr Wuppertal",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Wuppertal",
-        "lat": 51.264018,
-        "lon": 7.1780374,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Dinslaken|zimmerbrand mit menschenleben in gefahr",
-    "status": "out",
-    "title": "Zimmerbrand mit Menschenleben in Gefahr",
-    "link": "https://www.presseportal.de/blaulicht/pm/116534/6342073",
-    "first": "2026-08-30T06:59:46Z",
-    "last": "2026-08-30T06:59:46Z",
-    "veg": false,
-    "source": "Feuerwehr Dinslaken",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Dinslaken",
-        "lat": 51.5623618,
-        "lon": 6.7345106,
         "approx": false
       }
     ]
