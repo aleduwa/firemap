@@ -1,11 +1,35 @@
 [
   {
+    "base": "Feuerwehr Wuppertal|frau stirbt bei wohnungsbrand",
+    "status": "active",
+    "title": "Frau stirbt bei Wohnungsbrand",
+    "link": "https://www.presseportal.de/blaulicht/pm/115885/6360929",
+    "first": "2026-09-29T07:40:52Z",
+    "last": "2026-09-29T07:40:52Z",
+    "places": [
+      {
+        "name": "Wuppertal",
+        "lat": 51.264018,
+        "lon": 7.1780374,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Wuppertal",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Remscheid|brand in einem industriebetrieb mit drei leicht verletzten",
     "status": "out",
     "title": "Brand in einem Industriebetrieb mit drei leicht Verletzten",
     "link": "https://www.presseportal.de/blaulicht/pm/115882/6360894",
     "first": "2026-09-29T01:56:36Z",
     "last": "2026-09-29T01:56:36Z",
+    "veg": false,
+    "source": "Feuerwehr Remscheid",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Remscheid",
@@ -13,11 +37,7 @@
         "lon": 7.1943544,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Remscheid",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Oberhausen|brand in einem altenheim - eine person gerettet",
@@ -26,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115881/6360890",
     "first": "2026-09-29T00:38:19Z",
     "last": "2026-09-29T00:38:19Z",
+    "veg": false,
+    "source": "Feuerwehr Oberhausen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Oberhausen",
@@ -33,11 +57,7 @@
         "lon": 6.8514435,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Oberhausen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Schwelm|feuerwehr schwelm löscht wohnungsbrand",
@@ -4946,26 +4966,6 @@
         "lat": 51.5623618,
         "lon": 6.7345106,
         "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Kreisfeuerwehrverband Landkreis Karlsruhe|scheunenbrand in mingolsheim - feuerwehr verhindert übergreifen der flammen auf wohnhaus",
-    "status": "contained",
-    "title": "Scheunenbrand in Mingolsheim - Feuerwehr verhindert Übergreifen der Flammen auf Wohnhaus",
-    "link": "https://www.presseportal.de/blaulicht/pm/130685/6342060",
-    "first": "2026-08-30T04:49:36Z",
-    "last": "2026-08-30T04:49:36Z",
-    "veg": false,
-    "source": "Kreisfeuerwehrverband Landkreis Karlsruhe",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Landkreis Karlsruhe",
-        "lat": 49.0876163,
-        "lon": 8.6106867,
-        "approx": true
       }
     ]
   },
