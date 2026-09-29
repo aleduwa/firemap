@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/70701/6361687",
     "first": "2026-09-29T20:35:22Z",
     "last": "2026-09-29T20:35:22Z",
+    "veg": false,
+    "source": "Feuerwehr Ratingen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Ratingen",
@@ -13,11 +17,7 @@
         "lon": 6.8493503,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Ratingen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|hockenheim/bab61/rhein-neckar-kreis: fahrzeugbrand - ausfahrten bab 61 bei hockenheim beidseitig gesperrt - sperrung aufgehoben, pm nr.3",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6361670",
     "first": "2026-09-29T18:00:47Z",
     "last": "2026-09-29T18:00:47Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Hockenheim",
@@ -39,11 +43,7 @@
         "lon": 8.7352403,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Mönchengladbach|angebranntes essen löst feuerwehreinsatz aus - eine person erleidet rauchgasvergiftung",
@@ -52,6 +52,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115879/6361647",
     "first": "2026-09-29T16:39:17Z",
     "last": "2026-09-29T16:39:17Z",
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Mönchengladbach",
@@ -59,11 +63,7 @@
         "lon": 6.4353792,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Mönchengladbach",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|titisee-neustadt: pkw gerät in brand",
@@ -5083,26 +5083,6 @@
         "name": "Kämpfelbach-Ersingen",
         "lat": 48.9332707,
         "lon": 8.6346048,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Ennepetal|patientenrettung über drehleiter und brandmeldealarm",
-    "status": "active",
-    "title": "Patientenrettung über Drehleiter und Brandmeldealarm",
-    "link": "https://www.presseportal.de/blaulicht/pm/69780/6342325",
-    "first": "2026-08-30T21:20:56Z",
-    "last": "2026-08-30T21:20:56Z",
-    "veg": false,
-    "source": "Feuerwehr Ennepetal",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Ennepetal",
-        "lat": 51.2967192,
-        "lon": 7.3693335,
         "approx": false
       }
     ]
