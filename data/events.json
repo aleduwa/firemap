@@ -1,11 +1,55 @@
 [
   {
+    "base": "Feuerwehr Remscheid|brand in einem industriebetrieb mit drei leicht verletzten",
+    "status": "out",
+    "title": "Brand in einem Industriebetrieb mit drei leicht Verletzten",
+    "link": "https://www.presseportal.de/blaulicht/pm/115882/6360894",
+    "first": "2026-09-29T01:56:36Z",
+    "last": "2026-09-29T01:56:36Z",
+    "places": [
+      {
+        "name": "Remscheid",
+        "lat": 51.1798706,
+        "lon": 7.1943544,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Remscheid",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Oberhausen|brand in einem altenheim - eine person gerettet",
+    "status": "active",
+    "title": "Brand in einem Altenheim - eine Person gerettet",
+    "link": "https://www.presseportal.de/blaulicht/pm/115881/6360890",
+    "first": "2026-09-29T00:38:19Z",
+    "last": "2026-09-29T00:38:19Z",
+    "places": [
+      {
+        "name": "Oberhausen",
+        "lat": 51.4696137,
+        "lon": 6.8514435,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Oberhausen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Schwelm|feuerwehr schwelm löscht wohnungsbrand",
     "status": "out",
     "title": "Feuerwehr Schwelm löscht Wohnungsbrand",
     "link": "https://www.presseportal.de/blaulicht/pm/69781/6360872",
     "first": "2026-09-28T19:11:49Z",
     "last": "2026-09-28T19:11:49Z",
+    "veg": false,
+    "source": "Feuerwehr Schwelm",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Schwelm",
@@ -13,11 +57,7 @@
         "lon": 7.2924712,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Schwelm",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|bernau im schwarzwald: rauchentwicklung führt zu feuerwehreinsatz",
