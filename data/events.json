@@ -1,11 +1,81 @@
 [
   {
+    "base": "Feuerwehr Ratingen|küchenbrand in ratingen-homberg",
+    "status": "active",
+    "title": "Küchenbrand in Ratingen-Homberg",
+    "link": "https://www.presseportal.de/blaulicht/pm/70701/6361687",
+    "first": "2026-09-29T20:35:22Z",
+    "last": "2026-09-29T20:35:22Z",
+    "places": [
+      {
+        "name": "Ratingen",
+        "lat": 51.2973261,
+        "lon": 6.8493503,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Ratingen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|hockenheim/bab61/rhein-neckar-kreis: fahrzeugbrand - ausfahrten bab 61 bei hockenheim beidseitig gesperrt - sperrung aufgehoben, pm nr.3",
+    "status": "active",
+    "title": "Hockenheim/BAB61/Rhein-Neckar-Kreis: Fahrzeugbrand - Ausfahrten BAB 61 bei Hockenheim beidseitig gesperrt - Sperrung aufgehoben, PM Nr.3",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6361670",
+    "first": "2026-09-29T18:00:47Z",
+    "last": "2026-09-29T18:00:47Z",
+    "places": [
+      {
+        "name": "Hockenheim",
+        "lat": 49.3188892,
+        "lon": 8.5475467,
+        "approx": false
+      },
+      {
+        "name": "Rhein-Neckar-Kreis",
+        "lat": 49.3684797,
+        "lon": 8.7352403,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Mönchengladbach|angebranntes essen löst feuerwehreinsatz aus - eine person erleidet rauchgasvergiftung",
+    "status": "active",
+    "title": "Angebranntes Essen löst Feuerwehreinsatz aus - eine Person erleidet Rauchgasvergiftung",
+    "link": "https://www.presseportal.de/blaulicht/pm/115879/6361647",
+    "first": "2026-09-29T16:39:17Z",
+    "last": "2026-09-29T16:39:17Z",
+    "places": [
+      {
+        "name": "Mönchengladbach",
+        "lat": 51.1947131,
+        "lon": 6.4353792,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Freiburg|titisee-neustadt: pkw gerät in brand",
     "status": "active",
     "title": "Titisee-Neustadt: Pkw gerät in Brand",
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6361596",
     "first": "2026-09-29T15:09:33Z",
     "last": "2026-09-29T15:09:33Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Titisee-Neustadt",
@@ -13,11 +83,7 @@
         "lon": 8.1735161,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|hockenheim/bab61/rhein-neckar-kreis: fahrzeugbrand - ausfahrten bab 61 bei hockenheim beidseitig gesperrt - sperrung teilweise aufgehoben, pm nr.2",
@@ -26,6 +92,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6361592",
     "first": "2026-09-29T15:07:51Z",
     "last": "2026-09-29T15:07:51Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Hockenheim",
@@ -39,11 +109,7 @@
         "lon": 8.7352403,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ludwigsburg|staatsanwaltschaft stuttgart und polizeipräsidium ludwigsburg: zwei tatverdächtige wegen schwerer brandstiftung sowie versuchten mordes in untersuchungshaft",
@@ -52,6 +118,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110974/6361577",
     "first": "2026-09-29T14:57:17Z",
     "last": "2026-09-29T14:57:17Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ludwigsburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Staatsanwaltschaft Stuttgart",
@@ -59,11 +129,7 @@
         "lon": 9.1940305,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|häusern: brand in altpapiercontainer",
@@ -72,6 +138,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6361549",
     "first": "2026-09-29T14:22:45Z",
     "last": "2026-09-29T14:22:45Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Häusern",
@@ -79,11 +149,7 @@
         "lon": 8.1672955,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ludwigsburg|marbach am neckar: brand einer dachgeschosswohnung",
@@ -92,6 +158,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110974/6361544",
     "first": "2026-09-29T14:18:55Z",
     "last": "2026-09-29T14:18:55Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ludwigsburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Marbach am Neckar",
@@ -99,11 +169,7 @@
         "lon": 9.256396,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizei Duisburg|wanheimerort: mülltonnen brannten - zeugensuche",
@@ -112,6 +178,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/50510/6361540",
     "first": "2026-09-29T14:15:07Z",
     "last": "2026-09-29T14:15:07Z",
+    "veg": false,
+    "source": "Polizei Duisburg",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Wanheimerort",
@@ -119,11 +189,7 @@
         "lon": 6.7595258,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizei Duisburg",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|hockenheim/bab61/rhein-neckar-kreis: fahrzeugbrand - ausfahrten bab 61 bei hockenheim beidseitig gesperrt, pm nr.1",
@@ -132,6 +198,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6361524",
     "first": "2026-09-29T14:06:44Z",
     "last": "2026-09-29T14:06:44Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Hockenheim",
@@ -145,11 +215,7 @@
         "lon": 8.7352403,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Stuttgart|kellerbrand in einem mehrfamilienhaus",
@@ -158,6 +224,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/161590/6361499",
     "first": "2026-09-29T13:53:22Z",
     "last": "2026-09-29T13:53:22Z",
+    "veg": false,
+    "source": "Feuerwehr Stuttgart",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Stuttgart",
@@ -165,11 +235,7 @@
         "lon": 9.1800132,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Stuttgart",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Wuppertal|frau stirbt bei wohnungsbrand",
