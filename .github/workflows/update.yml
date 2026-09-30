@@ -31,6 +31,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Eventseiten-Generator prüfen
+        run: node --test tests/event-pages.test.mjs
+
       - name: Einsatzmeldungen aktualisieren
         if: github.event_name == 'workflow_dispatch' || github.event.schedule == '*/15 * * * *'
         shell: pwsh
@@ -114,4 +121,5 @@ jobs:
           cp mapstyle.js dist/
           cp -r thumbs dist/thumbs
           cp data/*.js dist/data/
+          node scripts/generate-event-pages.mjs --out dist
           npx --yes wrangler@4 deploy

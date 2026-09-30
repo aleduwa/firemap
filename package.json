@@ -1,8 +1,12 @@
 {
   "name": "firemap",
   "private": true,
-  "description": "Node-Abhängigkeiten nur für scripts/events-headless.mjs (Headless-Browser-Schritt der Event-Pipeline).",
+  "description": "Eventdaten-Pipeline und statische, datenbasierte Veranstaltungstermine.",
   "dependencies": {
     "playwright": "^1.62.1"
+  },
+  "scripts": {
+    "test": "node --test tests/event-pages.test.mjs",
+    "build:events": "node scripts/generate-event-pages.mjs"
   }
 }

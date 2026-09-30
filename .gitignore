@@ -13,3 +13,6 @@ tiles/
 
 # Python-Bytecode der Brandnarben-Auswertung
 __pycache__/
+
+# Generierte Eventseiten (werden direkt in dist/ gebaut)
+.event-pages/

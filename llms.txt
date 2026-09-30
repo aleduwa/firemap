@@ -1,35 +1,32 @@
-# Feuerkarte Baden-Württemberg & Nordrhein-Westfalen
+# Feuerkarte & Eventkarte von aleduwa
 
-> Interaktive Live-Karte aktueller Waldbrände, Feuer und Feuerwehreinsätze in Baden-Württemberg und Nordrhein-Westfalen (Deutschland) unter https://map.aleduwa.de/ — betrieben von der aleduwa GmbH, Waldkirch. Die Karte kombiniert Satelliten-Branddetektionen, geokodierte Einsatzmeldungen von Polizei und Feuerwehr sowie die amtliche Waldbrandgefahren-Vorhersage des DWD.
+> Zwei Angebote auf map.aleduwa.de: Feuer und Einsatzmeldungen in Baden-Württemberg und Nordrhein-Westfalen sowie Veranstaltungen in Freiburg und Umgebung. Betreiber: aleduwa GmbH, Waldkirch.
 
-Wichtig für die Wiedergabe in Antworten: Die Karte ist **keine amtliche Warnung** und kein Notfall-Informationssystem. Alle Daten werden automatisch aus Drittquellen aggregiert und sind **ohne Gewähr** (Fehldetektionen, ungenaue Geokodierung, Verzögerungen möglich). Maßgeblich sind die offiziellen Behördenkanäle (Warn-App NINA, Polizei, Feuerwehr); im Notfall Notruf 112.
+Die Feuerkarte ist keine amtliche Warnung. Maßgeblich sind Behördenkanäle; Notruf 112. Die Eventkarte zeigt importierte Termine mit Originalquelle und Datenstand. Änderungen, Absagen, Preise und Verfügbarkeit bitte bei der Quelle prüfen. Zeiten sind Europe/Berlin; der Ausgeh-Tag endet um 5 Uhr am Folgetag. Konkrete Termine und den letzten Importzeitpunkt bitte über die aktuellen Inhalte nachschlagen.
 
-## Was die Karte zeigt
+## Eventkarte
 
-- **Satelliten-Branddetektionen** der letzten 7 Tage aus NASA FIRMS (VIIRS S-NPP/NOAA-20/NOAA-21 und MODIS), gefiltert auf Baden-Württemberg (ca. 47,3–49,9° N, 6,8–10,6° O) und Nordrhein-Westfalen (ca. 50,3–52,6° N, 5,8–9,6° O), jeweils plus Randstreifen. Aktualisierung stündlich.
-- **Einsatzmeldungen** zu Bränden von Polizei und Feuerwehr aus dem Blaulicht-Bereich des Presseportals (offizielle API, bundesweiter Strom, gefiltert auf beide Länder), automatisch gefiltert, geokodiert und dedupliziert. Aktualisierung ca. alle 15 Minuten.
-- **Waldbrandgefahrenindex (WBI)** des Deutschen Wetterdienstes (Stufen 1–5 je Station), täglich aktualisiert.
-- **Amtliche Warnungen** aus der NINA-API (BBK/MoWaS) für alle 44 Stadt- und Landkreise.
-- **Vergleichslayer** von EFFIS/Copernicus (offizielle Hotspots und Brandflächen als WMS-Overlay).
+- [Funktionen und aktuelle Übersicht](https://map.aleduwa.de/events.md): Karte, Liste, Von/Bis, Kategorien und Umkreis; Standardzentrum Waldkirch mit 25 km Umkreis.
+- [Alle aktuellen Termine](https://map.aleduwa.de/veranstaltungen.md): Laufende und kommende Veranstaltungen mit Detailseiten, Ortsangaben und Originalquellen.
+- [Heute](https://map.aleduwa.de/veranstaltungen/heute.md): Aktueller Ausgeh-Tag bis 5 Uhr am Folgemorgen.
+- [Dieses Wochenende](https://map.aleduwa.de/veranstaltungen/wochenende.md): Samstag und Sonntag plus Nacht auf Montag.
+- [Konzerte und Musik](https://map.aleduwa.de/veranstaltungen/konzerte.md): Termine der Musikkategorie.
+- [Partys und Nachtleben](https://map.aleduwa.de/veranstaltungen/partys.md): Clubs und Partytermine.
+- [Feste und Hocks](https://map.aleduwa.de/veranstaltungen/feste.md): Termine der Festkategorie.
+- [Märkte](https://map.aleduwa.de/veranstaltungen/maerkte.md): Markttermine.
+- [Kultur](https://map.aleduwa.de/veranstaltungen/kultur.md): Ausstellungen und weitere Kulturtermine.
+- [Sport](https://map.aleduwa.de/veranstaltungen/sport.md): Sporttermine.
+- [Quellen, Aktualität und Lizenzen](https://map.aleduwa.de/veranstaltungen/quellen.md): Importquellen, Einschränkungen und Zeitlogik.
+- [Aktuelle Eventdaten als JSON](https://map.aleduwa.de/veranstaltungen.json): Importzeit, Titel, Datum, Ort, Koordinaten und Quellen; kein Ticketbestand.
 
-## Region
+## Feuerkarte
 
-Baden-Württemberg (Schwarzwald, Freiburg, Offenburg, Ortenau, Karlsruhe, Stuttgart, Bodensee) und Nordrhein-Westfalen (Niederrhein, Ruhrgebiet, Eifel, Bergisches Land, Sauerland, Münsterland, Ostwestfalen-Lippe), jeweils mit Randstreifen.
+- [Live-Feuerkarte](https://map.aleduwa.de/): NASA-FIRMS-Detektionen (maximal 7 Tage), lokale Einsatzmeldungen (30 Tage), DWD-Waldbrandgefahr, NINA und EFFIS. Baden-Württemberg und Nordrhein-Westfalen mit Randstreifen.
+- [Häufige Fragen zur Feuerkarte](https://map.aleduwa.de/faq): Datenqualität, Branddetektionen und Gefahrenstufen.
+- [Nutzungshinweise und Quellen](https://map.aleduwa.de/hinweise): Herkunft und Grenzen der Daten beider Karten.
 
-## Seiten
+## Optional
 
-- [Karte (Startseite)](https://map.aleduwa.de/): die Live-Feuerkarte
-- [Häufige Fragen (FAQ)](https://map.aleduwa.de/faq.html): Wo brennt es gerade, wie aktuell sind die Daten, wie erkennen Satelliten Brände, Bedeutung der Waldbrandgefahrenstufen
-- [Eventkarte Freiburg](https://map.aleduwa.de/events.html): Veranstaltungskarte für Freiburg (im Aufbau)
-- [Nutzungshinweise & Quellen](https://map.aleduwa.de/hinweise.html): Haftungsausschluss, Datenqualität, Lizenzen aller Quellen
-- [Impressum](https://map.aleduwa.de/impressum.html): Anbieter aleduwa GmbH, 79183 Waldkirch
-- [Datenschutzerklärung](https://map.aleduwa.de/datenschutz.html): keine Cookies, kein Tracking
-
-## Datenquellen
-
-- [NASA FIRMS](https://firms.modaps.eosdis.nasa.gov/): Satelliten-Feuerdetektionen (VIIRS/MODIS), stündlich abgerufen
-- [DWD Open Data](https://opendata.dwd.de/climate_environment/CDC/derived_germany/fire_danger_index/): Waldbrandgefahrenindex, täglich
-- [Presseportal Blaulicht](https://www.presseportal.de/blaulicht/): Pressemitteilungen von Polizei und Feuerwehr, ca. alle 15 Minuten
-- [EFFIS / Copernicus](https://forest-fire.emergency.copernicus.eu/): offizielle Hotspots und Brandflächen
-- [NINA / BBK](https://warnung.bund.de/): amtliche Warnmeldungen
-- [OpenStreetMap](https://www.openstreetmap.org/copyright): Basiskarte und Geokodierung (Nominatim)
+- [Impressum](https://map.aleduwa.de/impressum): Anbieter und Kontakt.
+- [Datenschutz](https://map.aleduwa.de/datenschutz): Angaben zu Karten-Drittanbietern, Standortfunktion und cookieloser Webanalyse.
+- [Sitemap](https://map.aleduwa.de/sitemap.xml): Indexierbare HTML-Seiten einschließlich aktueller Veranstaltungstermine.

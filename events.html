@@ -4,20 +4,22 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Eventkarte Freiburg &amp; Umgebung – Feste, Partys &amp; Konzerte</title>
-<meta name="description" content="Was ist los in Freiburg und Umgebung? Stadtfeste, Weinfeste, Partys, Konzerte und Märkte im Umkreis von 50 km – auf Karte und als filterbare Liste, täglich aktualisiert aus offenen Daten.">
+<meta name="description" content="Was ist los in Freiburg, Breisgau und Elztal? Echte Termine mit Quellen, Heute- und Wochenendübersicht, Karte, Liste und frei wählbarem Zeitraum.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <link rel="canonical" href="https://map.aleduwa.de/events">
+<link rel="alternate" type="text/markdown" href="/events.md">
+<link rel="describedby" href="/llms.txt">
 <meta name="theme-color" content="#8f1d1d">
 <meta name="geo.region" content="DE-BW">
 <meta name="geo.placename" content="Freiburg im Breisgau">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Eventkarte Freiburg &amp; Umgebung">
 <meta property="og:title" content="Eventkarte Freiburg &amp; Umgebung – Feste, Partys &amp; Konzerte">
-<meta property="og:description" content="Stadtfeste, Weinfeste, Partys, Konzerte und Märkte im Umkreis von 50 km um Freiburg – auf Karte und als filterbare Liste.">
+<meta property="og:description" content="Feste, Partys, Konzerte und Märkte in Freiburg und Umgebung. Aktuelle Termine mit Quellen, Karte, Liste und öffentlichen Terminseiten.">
 <meta property="og:url" content="https://map.aleduwa.de/events">
 <meta property="og:locale" content="de_DE">
 <meta name="twitter:title" content="Eventkarte Freiburg &amp; Umgebung">
-<meta name="twitter:description" content="Feste, Partys, Konzerte und Märkte im Umkreis von 50 km um Freiburg – Karte und Liste.">
+<meta name="twitter:description" content="Echte Veranstaltungen in Freiburg und Umgebung: Heute, Wochenende, Karte und Liste mit Quellen.">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <meta property="og:image" content="https://map.aleduwa.de/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -32,7 +34,7 @@
   "@type": "WebApplication",
   "name": "Eventkarte Freiburg & Umgebung",
   "url": "https://map.aleduwa.de/events",
-  "description": "Interaktive Karte und filterbare Liste kommender Veranstaltungen im Umkreis von rund 50 km um Freiburg im Breisgau: Stadtfeste, Weinfeste, Partys, Konzerte, Märkte und Sportveranstaltungen. Täglich aktualisiert aus offenen Datenquellen, u. a. dem Open Data Pool Tourismus Baden-Württemberg (überwiegend CC BY-SA).",
+  "description": "Interaktive Karte und filterbare Liste von Veranstaltungen in Freiburg, Breisgau, Elztal, Kaiserstuhl und Schwarzwald. Öffentlich lesbare Terminseiten mit Originalquellen, Heute- und Wochenendübersicht. Von/Bis-Filter und wählbarer Umkreis; Standardzentrum Waldkirch mit 25 km. Datenimport täglich geplant, tatsächlicher Datenstand auf den Seiten.",
   "applicationCategory": "Map",
   "operatingSystem": "All",
   "browserRequirements": "Requires JavaScript and WebGL",
@@ -77,6 +79,15 @@
     --shadow-lg:  0 12px 40px rgba(11,11,11,0.18);
   }
   html, body { height: 100%; margin: 0; }
+  #event-snapshot { position: fixed; inset: 58px 10px 10px; z-index: 1100; padding: 20px;
+    overflow-y: auto; background: var(--surface); border-radius: 14px; }
+  #event-snapshot h1 { font-size: 26px; }
+  .event-map-ready #event-snapshot { display: none; }
+  .snapshot-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,260px),1fr)); gap: 14px; }
+  .snapshot-grid .event-card { padding: 16px; border: 1px solid var(--hairline); border-radius: 10px; }
+  .snapshot-grid h3 { margin: 5px 0; font-size: 17px; }
+  .snapshot-grid .source, .snapshot-grid .eyebrow { font-size: 12px; }
+  #event-snapshot a { color: var(--accent); }
   body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--ink); background: var(--surface);
     height: 100dvh; overflow: hidden; }
   /* Ausserhalb der Kugel ist der Canvas transparent — der Container liefert
@@ -221,13 +232,14 @@
   }
   .mode-switch { left: 50%; transform: translateX(-50%); }
   .view-switch { right: 10px; }
-  .mode-switch a, .view-switch button {
+  .mode-switch a, .view-switch button, .view-switch a {
     padding: 7px 15px; font-size: 13px; text-decoration: none; color: var(--ink-2);
     border: 0; background: transparent; cursor: pointer; font-family: inherit;
     border-radius: 10px; transition: background .15s, color .15s;
   }
   .mode-switch a.active, .view-switch button.active { background: var(--accent); color: #fff; font-weight: 600; }
   .mode-switch a:not(.active):hover, .view-switch button:not(.active):hover { background: var(--hover); color: var(--ink); }
+  .view-switch a:hover { background: var(--hover); color: var(--ink); }
 
   /* Listenansicht */
   #listview { position: absolute; inset: 52px 10px 10px 10px; z-index: 1100; display: none;
@@ -348,7 +360,8 @@
   #mbar, #sheet, #scrim, .lv-mobilebar { display: none; }
 
   @media (max-width: 640px) {
-    .mode-switch a, .view-switch button { padding: 9px 12px; font-size: 12.5px; }
+    .mode-switch { left: 10px; transform: none; }
+    .mode-switch a, .view-switch button, .view-switch a { padding: 9px 12px; font-size: 12.5px; }
 
     /* Karten-Panels und Leaflet-Menüs wandern ins Sheet */
     .maplibregl-ctrl.panel { display: none; }
@@ -501,13 +514,17 @@
 </style>
 </head>
 <body>
+<!-- EVENT_SNAPSHOT_START -->
+<section id="event-snapshot"><h1>Veranstaltungen in Freiburg &amp; Umgebung</h1><p><a href="/veranstaltungen">Aktuelle Termine mit Quellen ansehen</a> · <a href="/veranstaltungen/heute">Heute</a> · <a href="/veranstaltungen/wochenende">Wochenende</a></p><p>Alle Terminseiten sind auch ohne JavaScript und WebGL erreichbar.</p></section>
+<!-- EVENT_SNAPSHOT_END -->
 <div id="map"></div>
 <div id="hovertip" class="evt-tip"></div>
 <div class="mode-switch"><a href="index.html" aria-label="Feuerkarte">🔥<span class="sw-txt"> Feuerkarte</span></a><a href="events.html" class="active" aria-label="Eventkarte">🎉<span class="sw-txt"> Eventkarte</span></a></div>
-<div class="view-switch"><button id="btn-map" class="active" aria-label="Karte">🗺️<span class="sw-txt"> Karte</span></button><button id="btn-list" aria-label="Liste">📋<span class="sw-txt"> Liste</span></button></div>
+<div class="view-switch"><button id="btn-map" class="active" aria-label="Karte">🗺️<span class="sw-txt"> Karte</span></button><button id="btn-list" aria-label="Liste">📋<span class="sw-txt"> Liste</span></button><a href="/veranstaltungen" aria-label="Termine ohne Karte ansehen">Termine</a></div>
 
 <div id="listview">
   <div class="lv-filters">
+    <span class="group"><a href="/veranstaltungen">Terminseiten &amp; Übersicht</a></span>
     <span class="group" id="lv-range"><span class="glbl">Zeitraum</span></span>
     <span class="group" id="lv-cats"><span class="glbl">Kategorie</span></span>
     <span class="group"><span class="glbl">Suche</span><input type="search" id="lv-search" placeholder="Titel oder Ort …"></span>
@@ -546,7 +563,7 @@
       '<p>Dein Browser kann keine 3D-Grafik darstellen — meist liegt das an ' +
       'abgeschalteter Hardwarebeschleunigung oder einem sehr alten Gerät.</p>' +
       '<p>Die <a href="klassisch.html">klassische Feuerkarte</a> kommt ohne WebGL aus. ' +
-      'Für die Veranstaltungen gibt es derzeit keine Alternative ohne Karte.</p>' +
+      'Die <a href="/veranstaltungen">Veranstaltungstermine</a> sind auch ohne Karte erreichbar.</p>' +
       '<p><a href="index.html">Feuerkarte</a> · <a href="hinweise.html">Hinweise &amp; Quellen</a> · ' +
       '<a href="impressum.html">Impressum</a></p></div>';
     return;
@@ -598,6 +615,7 @@
 
   // ---- Daten & Kategorien -------------------------------------------------
   const data = window.EVENT_DATA || { events: [], generated: '–' };
+  const pageParams = new URLSearchParams(location.search);
 
   const CATS = {
     fest:      { emoji: '🎪', label: 'Fest',      color: '#c2410c' },
@@ -619,6 +637,9 @@
     Object.keys(CATS).forEach(c => activeCats[c] = (c !== 'kultur'));
   }
   Object.keys(CATS).forEach(c => { if (typeof activeCats[c] !== 'boolean') activeCats[c] = (c !== 'kultur'); });
+  if (CATS[pageParams.get('cat')]) {
+    Object.keys(CATS).forEach(c => { activeCats[c] = c === pageParams.get('cat'); });
+  }
 
   // start/end kommen als "yyyy-MM-dd" oder "yyyy-MM-ddTHH:mm" (Lokalzeit
   // Europe/Berlin). Wir bauen daraus lokale Date-Objekte aus Komponenten.
@@ -678,6 +699,14 @@
   if (!center || typeof center.lat !== 'number' || typeof center.lon !== 'number' || !center.label) center = DEFAULT_CENTER;
   let radiusKm = +(localStorage.getItem('eventmap.radius') || 25);
   if (!RADII.includes(radiusKm)) radiusKm = 25;
+  if (pageParams.has('lat') && pageParams.has('lon')) {
+    const lat = Number(pageParams.get('lat')), lon = Number(pageParams.get('lon'));
+    if (Number.isFinite(lat) && Number.isFinite(lon) && lat >= 47.45 && lat <= 48.55 && lon >= 7.1 && lon <= 8.6) {
+      center = { lat, lon, label: 'Gewählter Veranstaltungsort' };
+      const radius = Number(pageParams.get('radius'));
+      if (pageParams.has('radius') && RADII.includes(radius)) radiusKm = radius;
+    }
+  }
 
   // Entfernung vom gewählten Zentrum in km
   function distKm(lat, lon) {
@@ -765,6 +794,12 @@
     customFrom = customTo = '';
   }
   if (!(rangeKey === 'custom' && customFrom && customTo) && !RANGES.some(r => r.key === rangeKey)) rangeKey = 'weekend';
+  const linkedFrom = pageParams.get('from'), linkedTo = pageParams.get('to');
+  if (parseRangeDate(linkedFrom) && parseRangeDate(linkedTo) && linkedFrom <= linkedTo) {
+    customFrom = linkedFrom;
+    customTo = linkedTo;
+    rangeKey = 'custom';
+  }
 
   function addDays(d, n) { return new Date(d.getFullYear(), d.getMonth(), d.getDate() + n); }
 
@@ -1071,13 +1106,14 @@
     if (!infoDiv) return;
     infoDiv.innerHTML =
       '<h1>Events — Freiburg &amp; Umgebung</h1>' +
-      '<div class="meta">Stadtfeste, Partys, Konzerte, M&auml;rkte &amp; mehr im Umkreis von ca. 50 km — ' +
+      '<div class="meta">Stadtfeste, Partys, Konzerte, M&auml;rkte &amp; mehr in Freiburg und Umgebung. ' +
       'aus offenen Quellen (toubiz/Open Data BW, FWTM, Rausgegangen, szene-Radar, Alemannische Seiten, Heuboden).</div>' +
       '<div class="meta" style="margin-top:6px">' +
       '<b>' + shownGroups + '</b> Veranstaltungen sichtbar (' + shownDates + ' Termine im Zeitraum ' + rangeLabel(rangeKey) + ')' +
       '<br>Umkreis: <b>' + radiusLabel() + '</b> um <b>' + esc(center.label) + '</b>' +
       '<br>Datenstand: <b>' + esc(data.generated) + '</b></div>' +
-      '<div class="pane-links"><a href="faq.html">FAQ</a> · <a href="impressum.html">Impressum</a> · ' +
+      '<div class="meta" style="margin-top:6px"><a href="/veranstaltungen">Alle Termine, Heute &amp; Wochenende</a> · <a href="/veranstaltungen/quellen">Quellen &amp; FAQ</a></div>' +
+      '<div class="pane-links"><a href="/veranstaltungen/quellen">Event-FAQ</a> · <a href="impressum.html">Impressum</a> · ' +
       '<a href="datenschutz.html">Datenschutz</a> · <a href="hinweise.html">Hinweise</a></div>';
   }
 
@@ -1588,6 +1624,7 @@
 
   // Fuer den automatisierten Check (scripts/events-check.mjs)
   window.__eventMap = map;
+  document.documentElement.classList.add('event-map-ready');
 
   // Seite stündlich neu laden (der Scheduler aktualisiert die Datendatei;
   // Zeitraum & Kategorien bleiben via localStorage erhalten)

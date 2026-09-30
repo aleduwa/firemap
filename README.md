@@ -30,6 +30,12 @@ dient dabei als Gratis-Archiv aller Ereignisse.
 
 Ein lokaler Server ist nötig, da die Karte Daten aus `data/` nachlädt.
 
+## Öffentliche Veranstaltungstermine
+
+Neben der interaktiven Eventkarte unter `/events` gibt es `/veranstaltungen`: echte Termine aus denselben Quelldaten, ohne JavaScript oder WebGL lesbar. Heute, Wochenende, Kategorien, Orte und einzelne Termine erhalten eigene Seiten mit Quellen und Datenstand. Markdown-Versionen, Sitemap und `llms.txt` werden im Deployment automatisch erzeugt.
+
+`npm run build:events` erzeugt die Seiten lokal in `.event-pages/`; `npm test` prüft den Generator. Details zu Aktualisierung, Markup und GEO: [docs/event-geo.md](docs/event-geo.md).
+
 ## Datenquellen (alle offen, ohne API-Key)
 
 | Quelle | Was | Automatisierung |
@@ -114,3 +120,4 @@ Ein lokaler Server ist nötig, da die Karte Daten aus `data/` nachlädt.
 - Dauerhafte Wärmequellen (Raffinerie Karlsruhe, Stahlwerk Kehl …) erscheinen
   täglich; die Karte markiert Zellen mit Detektionen an ≥ 4 Tagen als
   „Industrie" (grau, gestrichelt).
+
