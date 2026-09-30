@@ -139,6 +139,24 @@
     background: var(--panel-solid); color: var(--accent-ink); font-weight: 650;
     box-shadow: 0 1px 3px rgba(11,11,11,.14);
   }
+  .range-options { display: flex; align-items: flex-end; gap: 12px; flex-wrap: wrap; }
+  .range-custom { display: flex; gap: 6px; }
+  .range-custom label { display: flex; flex-direction: column; gap: 4px; font-size: 11px; color: var(--ink-2); }
+  .range-custom input {
+    width: 125px; min-width: 0; box-sizing: border-box; padding: 6px;
+    border: 1px solid var(--hairline); border-radius: 8px;
+    background: var(--panel-solid); color: var(--ink); font: inherit; font-size: 12px;
+    color-scheme: light;
+  }
+  :root[data-ui="dark"] .range-custom input { color-scheme: dark; }
+  .range-custom input:focus-visible { outline: 2px solid var(--accent-ink); outline-offset: 2px; }
+  .range-error { margin-top: 6px; font-size: 12px; color: var(--accent-ink); }
+  @media (max-width: 640px) {
+    .range-options { display: block; }
+    .range-custom { margin-top: 12px; }
+    .range-custom label { flex: 1; min-width: 0; font-size: 13px; }
+    .range-custom input { width: 100%; min-height: 44px; font-size: 14px; }
+  }
 
   /* ---- Legende ---------------------------------------------------------- */
   .legend-row { display: flex; align-items: center; gap: 9px; margin-top: 7px; }
@@ -815,6 +833,28 @@
   ];
   let rangeDays = +(localStorage.getItem(LS + 'range') || 14);
   if (!RANGES.some(r => r.days === rangeDays)) rangeDays = 14;
+  function parseRangeDate(value) {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(value || '')) return null;
+    const [y, m, d] = value.split('-').map(Number);
+    const date = new Date(y, m - 1, d);
+    return date.getFullYear() === y && date.getMonth() === m - 1 && date.getDate() === d ? date : null;
+  }
+  let customFrom = localStorage.getItem(LS + 'range.from') || '';
+  let customTo = localStorage.getItem(LS + 'range.to') || '';
+  if (!parseRangeDate(customFrom) || !parseRangeDate(customTo) || customFrom > customTo) {
+    customFrom = customTo = '';
+  }
+  function rangeBounds() {
+    if (!customFrom || !customTo) return [now - rangeDays * 864e5, Infinity];
+    const end = parseRangeDate(customTo);
+    end.setDate(end.getDate() + 1);
+    return [parseRangeDate(customFrom).getTime(), end.getTime()];
+  }
+  function rangeLabel() {
+    const format = value => parseRangeDate(value).toLocaleDateString('de-DE');
+    return customFrom && customTo ? format(customFrom) + ' bis ' + format(customTo)
+      : rangeDays + ' Tag' + (rangeDays > 1 ? 'e' : '');
+  }
 
   let legendDiv = null;
   const counts = [0, 0, 0];
@@ -852,7 +892,7 @@
   });
 
   function rebuild() {
-    const cutoff = now - rangeDays * 864e5;
+    const [cutoff, until] = rangeBounds();
     GEO.footprints.features = [];
     GEO.areas.features = [];
     GEO.fires.features = [];
@@ -862,7 +902,10 @@
     persistentCount = 0; vegReports = 0; otherReports = 0;
 
     // Satelliten-Detektionen (FIRMS liefert max. 7 Tage)
-    const pts = data.points.filter(p => acqDate(p).getTime() >= cutoff);
+    const pts = data.points.filter(p => {
+      const time = acqDate(p).getTime();
+      return time >= cutoff && time < until;
+    });
     pts.slice()
       .sort((a, b) => acqDate(a) - acqDate(b))       // frisch zuletzt = oben
       .forEach(p => {
@@ -961,7 +1004,10 @@
     }
 
     reportData.reports
-      .filter(rep => new Date(rep.last).getTime() >= cutoff)
+      .filter(rep => {
+        const time = new Date(rep.last).getTime();
+        return time >= cutoff && time < until;
+      })
       .forEach(rep => {
         if (rep.veg) { vegReports++; } else { otherReports++; }
         rep.places.forEach(pl => {
@@ -1004,7 +1050,7 @@
   function renderLegend() {
     if (!legendDiv) return;
     legendDiv.innerHTML =
-      '<h1>Zeitraum: ' + rangeDays + ' Tag' + (rangeDays > 1 ? 'e' : '') + '</h1>' +
+      '<h1>Zeitraum: ' + rangeLabel() + '</h1>' +
       AGE.map((a, i) =>
         '<div class="legend-row"><span class="dot" style="background:' + a.color + '"></span>' +
         '<span class="label">Detektion ' + a.label + ' (' + counts[i] + ')</span></div>'
@@ -1093,13 +1139,52 @@
 
   // --- Inhalt: Zeitraum (Segmented Control) ---
   const paneRange = pane('pane-range');
-  paneRange.innerHTML = '<span class="lbl">Zeitraum</span><div class="seg">' +
-    RANGES.map(r => '<button class="' + (r.days === rangeDays ? 'active' : '') +
-      '" data-days="' + r.days + '">' + r.label + '</button>').join('') + '</div>';
+  paneRange.innerHTML = '<span class="lbl">Zeitraum</span><div class="range-options"><div class="seg">' +
+    RANGES.map(r => '<button class="' + (!customFrom && r.days === rangeDays ? 'active' : '') +
+      '" data-days="' + r.days + '">' + r.label + '</button>').join('') + '</div>' +
+    '<div class="range-custom"><label>Von<input type="date" id="range-from" value="' + customFrom + '"></label>' +
+    '<label>Bis<input type="date" id="range-to" value="' + customTo + '"></label></div></div>' +
+    '<div class="range-error" role="status" aria-live="polite"></div>';
+  const rangeFromInput = paneRange.querySelector('#range-from');
+  const rangeToInput = paneRange.querySelector('#range-to');
+  const rangeError = paneRange.querySelector('.range-error');
+  function syncRangeInputs() {
+    rangeFromInput.value = customFrom;
+    rangeToInput.value = customTo;
+    rangeFromInput.max = customTo;
+    rangeToInput.min = customFrom;
+  }
+  syncRangeInputs();
+  paneRange.addEventListener('change', e => {
+    if (e.target !== rangeFromInput && e.target !== rangeToInput) return;
+    const from = rangeFromInput.value, to = rangeToInput.value;
+    rangeError.textContent = '';
+    if (!from || !to) {
+      rangeError.textContent = 'Bitte Von- und Bis-Datum auswählen.';
+      return;
+    }
+    if (!parseRangeDate(from) || !parseRangeDate(to) || from > to) {
+      rangeError.textContent = 'Das Bis-Datum muss am oder nach dem Von-Datum liegen.';
+      return;
+    }
+    customFrom = from;
+    customTo = to;
+    localStorage.setItem(LS + 'range.from', customFrom);
+    localStorage.setItem(LS + 'range.to', customTo);
+    syncRangeInputs();
+    paneRange.querySelectorAll('.seg button').forEach(b => b.classList.remove('active'));
+    updateBarLabels();
+    rebuild();
+  });
   paneRange.addEventListener('click', e => {
     const btn = e.target.closest('.seg button');
     if (!btn) return;
     rangeDays = +btn.dataset.days;
+    customFrom = customTo = '';
+    localStorage.removeItem(LS + 'range.from');
+    localStorage.removeItem(LS + 'range.to');
+    syncRangeInputs();
+    rangeError.textContent = '';
     localStorage.setItem(LS + 'range', rangeDays);
     paneRange.querySelectorAll('.seg button').forEach(b => b.classList.toggle('active', +b.dataset.days === rangeDays));
     updateBarLabels();
@@ -1250,7 +1335,7 @@
   }
   function updateBarLabels() {
     const b = mbar.querySelector('[data-sheet="range"] .tx');
-    if (b) b.textContent = rangeDays === 1 ? 'Heute' : rangeDays + ' T';
+    if (b) b.textContent = customFrom && customTo ? 'Von/Bis' : rangeDays === 1 ? 'Heute' : rangeDays + ' T';
   }
   mbar.addEventListener('click', e => {
     const b = e.target.closest('button');
