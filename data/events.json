@@ -1,11 +1,55 @@
 [
   {
+    "base": "Polizeipräsidium Ulm|(gp) gingen a.d.fils - auto in flammen / am dienstag brannte in gingen ein vw aus.",
+    "status": "active",
+    "title": "(GP) Gingen a.d.Fils - Auto in Flammen / Am Dienstag brannte in Gingen ein VW aus.",
+    "link": "https://www.presseportal.de/blaulicht/pm/110979/6361869",
+    "first": "2026-09-30T09:31:32Z",
+    "last": "2026-09-30T09:31:32Z",
+    "places": [
+      {
+        "name": "Gingen a.d.Fils",
+        "lat": 48.6590603,
+        "lon": 9.7825817,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Stuttgart|vollbrand eines pkw - rauchsäule weithin sichtbar",
+    "status": "active",
+    "title": "Vollbrand eines PKW - Rauchsäule weithin sichtbar",
+    "link": "https://www.presseportal.de/blaulicht/pm/161590/6361798",
+    "first": "2026-09-30T08:32:58Z",
+    "last": "2026-09-30T08:32:58Z",
+    "places": [
+      {
+        "name": "Stuttgart",
+        "lat": 48.7784485,
+        "lon": 9.1800132,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Stuttgart",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Mannheim|wiesloch / rhein-neckar-kreis: brandgeschehen auf recyclinghof - pm nr.2",
     "status": "out",
     "title": "Wiesloch / Rhein-Neckar-Kreis: Brandgeschehen auf Recyclinghof - PM Nr.2",
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6361702",
     "first": "2026-09-30T03:30:04Z",
     "last": "2026-09-30T03:30:04Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Wiesloch",
@@ -19,11 +63,7 @@
         "lon": 8.7352403,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|wiesloch / rhein-neckar-kreis: brandgeschehen auf recyclinghof - pm nr.1",
@@ -32,6 +72,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6361696",
     "first": "2026-09-30T00:35:27Z",
     "last": "2026-09-30T00:35:27Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Wiesloch",
@@ -45,11 +89,7 @@
         "lon": 8.7352403,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Ratingen|küchenbrand in ratingen-homberg",
@@ -4338,14 +4378,14 @@
     ]
   },
   {
-    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
+    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - Abschlussmeldung (PM Nr. 2)",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345986",
     "first": "2026-09-04T18:17:50Z",
     "last": "2026-09-04T18:17:50Z",
     "veg": false,
-    "source": "FF Walldorf",
+    "source": "Freiwillige Feuerwehr Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -4358,14 +4398,14 @@
     ]
   },
   {
-    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
+    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - Abschlussmeldung (PM Nr. 2)",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345986",
     "first": "2026-09-04T18:17:50Z",
     "last": "2026-09-04T18:17:50Z",
     "veg": false,
-    "source": "Freiwillige Feuerwehr Walldorf",
+    "source": "FF Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
