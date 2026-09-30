@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6361869",
     "first": "2026-09-30T09:31:32Z",
     "last": "2026-09-30T09:31:32Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Gingen a.d.Fils",
@@ -13,11 +17,7 @@
         "lon": 9.7825817,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Stuttgart|vollbrand eines pkw - rauchsäule weithin sichtbar",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/161590/6361798",
     "first": "2026-09-30T08:32:58Z",
     "last": "2026-09-30T08:32:58Z",
+    "veg": false,
+    "source": "Feuerwehr Stuttgart",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Stuttgart",
@@ -33,11 +37,7 @@
         "lon": 9.1800132,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Stuttgart",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|wiesloch / rhein-neckar-kreis: brandgeschehen auf recyclinghof - pm nr.2",
@@ -5156,26 +5156,6 @@
         "lat": 49.46084,
         "lon": 8.64194,
         "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Pforzheim|(enzkreis) kämpfelbach-ersingen - zwei brände an brennholzlagern - polizei ermittelt wegen des verdachts der brandstiftung und bittet um hinweise",
-    "status": "contained",
-    "title": "(Enzkreis) Kämpfelbach-Ersingen - Zwei Brände an Brennholzlagern - Polizei ermittelt wegen des Verdachts der Brandstiftung und bittet um Hinweise",
-    "link": "https://www.presseportal.de/blaulicht/pm/137462/6342658",
-    "first": "2026-08-31T11:14:00Z",
-    "last": "2026-08-31T11:14:00Z",
-    "veg": false,
-    "source": "Polizeipräsidium Pforzheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Kämpfelbach-Ersingen",
-        "lat": 48.9332707,
-        "lon": 8.6346048,
-        "approx": false
       }
     ]
   },
