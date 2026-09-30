@@ -119,6 +119,20 @@
   }
   .range-btn:hover { background: var(--hover); color: var(--ink); }
   .range-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .event-range-custom { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .event-range-custom label { display: flex; gap: 4px; align-items: center; font-size: 12px; color: var(--ink-2); }
+  .event-range-custom input {
+    width: 125px; min-width: 0; box-sizing: border-box; padding: 5px;
+    border: 1px solid var(--hairline); border-radius: 8px;
+    background: var(--panel-solid); color: var(--ink); font: inherit;
+  }
+  .event-range-custom input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .event-range-error { flex-basis: 100%; font-size: 12px; color: var(--accent); }
+  @media (max-width: 640px) {
+    .event-range-custom { width: 100%; }
+    .event-range-custom label { flex: 1; min-width: 0; flex-direction: column; align-items: stretch; }
+    .event-range-custom input { width: 100%; min-height: 44px; font-size: 14px; }
+  }
 
   .legend .row { display: flex; align-items: center; gap: 8px; margin-top: 6px; cursor: pointer; user-select: none; }
   .legend .row:hover .label { color: var(--ink); }
@@ -739,7 +753,18 @@
     { key: '90',      label: '90 T' }
   ];
   let rangeKey = localStorage.getItem('eventmap.range') || 'weekend';
-  if (!RANGES.some(r => r.key === rangeKey)) rangeKey = 'weekend';
+  function parseRangeDate(value) {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(value || '')) return null;
+    const [y, m, d] = value.split('-').map(Number);
+    const date = new Date(y, m - 1, d);
+    return date.getFullYear() === y && date.getMonth() === m - 1 && date.getDate() === d ? date : null;
+  }
+  let customFrom = localStorage.getItem('eventmap.range.from') || '';
+  let customTo = localStorage.getItem('eventmap.range.to') || '';
+  if (!parseRangeDate(customFrom) || !parseRangeDate(customTo) || customFrom > customTo) {
+    customFrom = customTo = '';
+  }
+  if (!(rangeKey === 'custom' && customFrom && customTo) && !RANGES.some(r => r.key === rangeKey)) rangeKey = 'weekend';
 
   function addDays(d, n) { return new Date(d.getFullYear(), d.getMonth(), d.getDate() + n); }
 
@@ -763,6 +788,9 @@
   }
 
   function rangeBounds(key) {
+    if (key === 'custom' && customFrom && customTo) {
+      return [parseRangeDate(customFrom), dayEnd(parseRangeDate(customTo))];
+    }
     const start = dayStart(new Date());
     if (key === 'today') return [start, dayEnd(start)];
     if (key === 'weekend') {
@@ -1096,15 +1124,49 @@
   const paneRange = pane('pane-range range-ctl');
   paneRange.innerHTML = '<span class="lbl">Zeitraum</span>' + RANGES.map(r =>
     '<button class="range-btn' + (r.key === rangeKey ? ' active' : '') + '" data-key="' + r.key + '"' +
-    (r.title ? ' title="' + r.title + '"' : '') + '>' + r.label + '</button>').join('');
+    (r.title ? ' title="' + r.title + '"' : '') + '>' + r.label + '</button>').join('') + rangePickerHtml();
+  paneRange.addEventListener('change', changeCustomRange);
+  function rangePickerHtml() {
+    return '<div class="event-range-custom"><label>Von<input type="date" data-range-date="from" value="' + customFrom + '"></label>' +
+      '<label>Bis<input type="date" data-range-date="to" value="' + customTo + '"></label>' +
+      '<span class="event-range-error" role="status" aria-live="polite"></span></div>';
+  }
+  function changeCustomRange(e) {
+    if (!e.target.dataset.rangeDate) return;
+    const picker = e.target.closest('.event-range-custom');
+    const from = picker.querySelector('[data-range-date="from"]').value;
+    const to = picker.querySelector('[data-range-date="to"]').value;
+    const error = picker.querySelector('.event-range-error');
+    error.textContent = '';
+    if (!from || !to) { error.textContent = 'Bitte Von- und Bis-Datum auswählen.'; return; }
+    if (!parseRangeDate(from) || !parseRangeDate(to) || from > to) {
+      error.textContent = 'Das Bis-Datum muss am oder nach dem Von-Datum liegen.';
+      return;
+    }
+    customFrom = from;
+    customTo = to;
+    localStorage.setItem('eventmap.range.from', from);
+    localStorage.setItem('eventmap.range.to', to);
+    setRange('custom');
+  }
   paneRange.addEventListener('click', e => {
     const btn = e.target.closest('.range-btn');
     if (btn) setRange(btn.dataset.key);
   });
 
   function setRange(key) {
+    if (key !== 'custom' && !RANGES.some(r => r.key === key)) return;
+    if (key !== 'custom') {
+      customFrom = customTo = '';
+      localStorage.removeItem('eventmap.range.from');
+      localStorage.removeItem('eventmap.range.to');
+    }
     rangeKey = key;
     localStorage.setItem('eventmap.range', rangeKey);
+    document.querySelectorAll('[data-range-date]').forEach(input => {
+      input.value = input.dataset.rangeDate === 'from' ? customFrom : customTo;
+    });
+    document.querySelectorAll('.event-range-error').forEach(error => { error.textContent = ''; });
     document.querySelectorAll('.range-btn[data-key]').forEach(b => b.classList.toggle('active', b.dataset.key === rangeKey));
     document.querySelectorAll('#lv-range .chip').forEach(b => b.classList.toggle('active', b.dataset.key === rangeKey));
     rebuild();
@@ -1297,6 +1359,8 @@
       b.addEventListener('click', () => setRange(r.key));
       rangeSpan.appendChild(b);
     });
+    rangeSpan.insertAdjacentHTML('beforeend', rangePickerHtml());
+    rangeSpan.addEventListener('change', changeCustomRange);
     // Kategorie-Chips
     const catSpan = document.getElementById('lv-cats');
     Object.keys(CATS).forEach(c => {
