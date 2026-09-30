@@ -1,5 +1,65 @@
 [
   {
+    "base": "Feuerwehr Gladbeck|wohnungsbrand in der hagelkreuzstraße - eine person leicht verletzt",
+    "status": "out",
+    "title": "Wohnungsbrand in der Hagelkreuzstraße - eine Person leicht verletzt",
+    "link": "https://www.presseportal.de/blaulicht/pm/117806/6362494",
+    "first": "2026-10-01T00:20:32Z",
+    "last": "2026-10-01T00:20:32Z",
+    "places": [
+      {
+        "name": "Gladbeck",
+        "lat": 51.5718665,
+        "lon": 6.9877343,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Gladbeck",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Wetter (Ruhr)|wetter - brand an gebäude",
+    "status": "out",
+    "title": "Wetter - Brand an Gebäude",
+    "link": "https://www.presseportal.de/blaulicht/pm/69783/6362484",
+    "first": "2026-09-30T22:25:49Z",
+    "last": "2026-09-30T22:25:49Z",
+    "places": [
+      {
+        "name": "Wetter",
+        "lat": 51.3879463,
+        "lon": 7.3951553,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Wetter (Ruhr)",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Mönchengladbach|angebranntes essen löst feuerwehreinsatz aus",
+    "status": "active",
+    "title": "Angebranntes Essen löst Feuerwehreinsatz aus",
+    "link": "https://www.presseportal.de/blaulicht/pm/115879/6362483",
+    "first": "2026-09-30T22:14:40Z",
+    "last": "2026-09-30T22:14:40Z",
+    "places": [
+      {
+        "name": "Mönchengladbach",
+        "lat": 51.1947131,
+        "lon": 6.4353792,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Ulm|(gp) gingen a.d.fils - auto in flammen / am dienstag brannte in gingen ein vw aus.",
     "status": "active",
     "title": "(GP) Gingen a.d.Fils - Auto in Flammen / Am Dienstag brannte in Gingen ein VW aus.",
