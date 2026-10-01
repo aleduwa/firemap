@@ -1,31 +1,11 @@
 [
   {
-    "base": "Feuerwehr Wuppertal|feuerwehreinsatz durch angebranntes essen",
-    "status": "active",
-    "title": "Feuerwehreinsatz durch angebranntes Essen",
-    "link": "https://www.presseportal.de/blaulicht/pm/115885/6362515",
-    "first": "2026-10-01T06:19:23Z",
-    "last": "2026-10-01T06:19:23Z",
-    "places": [
-      {
-        "name": "Wuppertal",
-        "lat": 51.264018,
-        "lon": 7.1780374,
-        "approx": false
-      }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Wuppertal",
-    "region": "NRW",
-    "updates": 0
-  },
-  {
-    "base": "Feuerwehr Recklinghausen|fünf zeitgleiche einsätze für die feuerwehr recklinghausen am mittwochabend: abc-einsatz, brandeinsätze, verkehrsunfälle",
+    "base": "Feuerwehr Recklinghausen|wohnungsbrand mit zwei verletzten personen in recklinghausen-grullbad",
     "status": "out",
-    "title": "Fünf zeitgleiche Einsätze für die Feuerwehr Recklinghausen am Mittwochabend: ABC-Einsatz, Brandeinsätze, Verkehrsunfälle",
-    "link": "https://www.presseportal.de/blaulicht/pm/119285/6362511",
-    "first": "2026-10-01T05:35:01Z",
-    "last": "2026-10-01T05:35:01Z",
+    "title": "Wohnungsbrand mit zwei verletzten Personen in Recklinghausen-Grullbad",
+    "link": "https://www.presseportal.de/blaulicht/pm/119285/6363326",
+    "first": "2026-10-01T17:15:01Z",
+    "last": "2026-10-01T17:15:01Z",
     "places": [
       {
         "name": "Recklinghausen",
@@ -38,6 +18,86 @@
     "source": "Feuerwehr Recklinghausen",
     "region": "NRW",
     "updates": 0
+  },
+  {
+    "base": "Polizei Köln|261001-3-k/rek zeugenaufruf nach mutmaßlicher brandstiftung unter hochspannungsleitung in bergheim-niederaußem - staatsschutz ermittelt",
+    "status": "out",
+    "title": "261001-3-K/REK Zeugenaufruf nach mutmaßlicher Brandstiftung unter Hochspannungsleitung in Bergheim-Niederaußem - Staatsschutz ermittelt",
+    "link": "https://www.presseportal.de/blaulicht/pm/12415/6363268",
+    "first": "2026-10-01T15:36:55Z",
+    "last": "2026-10-01T15:36:55Z",
+    "places": [
+      {
+        "name": "261001-3-K",
+        "lat": 50.9120864,
+        "lon": 6.8913957,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizei Köln",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Neuss|feuerwehr neuss startet im zwei-wachen-system | erste 24-stunden-schicht auf der neuen feuerwache süd",
+    "status": "active",
+    "title": "Feuerwehr Neuss startet im Zwei-Wachen-System | Erste 24-Stunden-Schicht auf der neuen Feuerwache Süd",
+    "link": "https://www.presseportal.de/blaulicht/pm/122045/6363253",
+    "first": "2026-10-01T15:24:51Z",
+    "last": "2026-10-01T15:24:51Z",
+    "places": [
+      {
+        "name": "Neuss",
+        "lat": 51.1981778,
+        "lon": 6.6916476,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Neuss",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Wuppertal|feuerwehreinsatz durch angebranntes essen",
+    "status": "active",
+    "title": "Feuerwehreinsatz durch angebranntes Essen",
+    "link": "https://www.presseportal.de/blaulicht/pm/115885/6362515",
+    "first": "2026-10-01T06:19:23Z",
+    "last": "2026-10-01T06:19:23Z",
+    "veg": false,
+    "source": "Feuerwehr Wuppertal",
+    "updates": 0,
+    "region": "NRW",
+    "places": [
+      {
+        "name": "Wuppertal",
+        "lat": 51.264018,
+        "lon": 7.1780374,
+        "approx": false
+      }
+    ]
+  },
+  {
+    "base": "Feuerwehr Recklinghausen|fünf zeitgleiche einsätze für die feuerwehr recklinghausen am mittwochabend: abc-einsatz, brandeinsätze, verkehrsunfälle",
+    "status": "out",
+    "title": "Fünf zeitgleiche Einsätze für die Feuerwehr Recklinghausen am Mittwochabend: ABC-Einsatz, Brandeinsätze, Verkehrsunfälle",
+    "link": "https://www.presseportal.de/blaulicht/pm/119285/6362511",
+    "first": "2026-10-01T05:35:01Z",
+    "last": "2026-10-01T05:35:01Z",
+    "veg": false,
+    "source": "Feuerwehr Recklinghausen",
+    "updates": 0,
+    "region": "NRW",
+    "places": [
+      {
+        "name": "Recklinghausen",
+        "lat": 51.6143815,
+        "lon": 7.1978546,
+        "approx": false
+      }
+    ]
   },
   {
     "base": "Feuerwehr Gladbeck|wohnungsbrand in der hagelkreuzstraße - eine person leicht verletzt",
@@ -4478,14 +4538,14 @@
     ]
   },
   {
-    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
+    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - Abschlussmeldung (PM Nr. 2)",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345986",
     "first": "2026-09-04T18:17:50Z",
     "last": "2026-09-04T18:17:50Z",
     "veg": false,
-    "source": "Freiwillige Feuerwehr Walldorf",
+    "source": "FF Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -4498,14 +4558,14 @@
     ]
   },
   {
-    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
+    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - Abschlussmeldung (PM Nr. 2)",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345986",
     "first": "2026-09-04T18:17:50Z",
     "last": "2026-09-04T18:17:50Z",
     "veg": false,
-    "source": "FF Walldorf",
+    "source": "Freiwillige Feuerwehr Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -5011,106 +5071,6 @@
         "name": "Gelsenkirchen",
         "lat": 51.5110321,
         "lon": 7.0960124,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Kreispolizeibehörde Borken|bocholt - erstmeldung: schwerer verkehrsunfall auf der willy-brandt-straße",
-    "status": "active",
-    "title": "Bocholt - Erstmeldung: Schwerer Verkehrsunfall auf der Willy-Brandt-Straße",
-    "link": "https://www.presseportal.de/blaulicht/pm/24843/6343909",
-    "first": "2026-09-01T16:42:57Z",
-    "last": "2026-09-01T16:42:57Z",
-    "veg": false,
-    "source": "Kreispolizeibehörde Borken",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Bocholt",
-        "lat": 51.8382715,
-        "lon": 6.6148669,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Kreispolizeibehörde Viersen|brüggen-bracht: spargelfolien brennen - zeuginnen und zeugen gesucht",
-    "status": "active",
-    "title": "Brüggen-Bracht: Spargelfolien brennen - Zeuginnen und Zeugen gesucht",
-    "link": "https://www.presseportal.de/blaulicht/pm/65857/6343877",
-    "first": "2026-09-01T15:39:16Z",
-    "last": "2026-09-01T15:39:16Z",
-    "veg": false,
-    "source": "Kreispolizeibehörde Viersen",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Brüggen-Bracht",
-        "lat": 51.2782317,
-        "lon": 6.1724252,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr und Rettungsdienst Bonn|4. folgemeldung und schlussmeldung: eu-waldbrandmodul beendet einsatz in serbien - 11 tage waldbrandbekämpfung in der deliblatska pescara",
-    "status": "active",
-    "title": "4. Folgemeldung und Schlussmeldung: EU-Waldbrandmodul beendet Einsatz in Serbien - 11 Tage Waldbrandbekämpfung in der Deliblatska Pescara",
-    "link": "https://www.presseportal.de/blaulicht/pm/115888/6343446",
-    "first": "2026-09-01T10:53:25Z",
-    "last": "2026-09-01T10:53:25Z",
-    "veg": true,
-    "source": "Feuerwehr und Rettungsdienst Bonn",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Bonn",
-        "lat": 50.7352621,
-        "lon": 7.1024635,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ludwigsburg|kornwestheim: brandausbruch in leerstehendem haus",
-    "status": "active",
-    "title": "Kornwestheim: Brandausbruch in leerstehendem Haus",
-    "link": "https://www.presseportal.de/blaulicht/pm/110974/6343419",
-    "first": "2026-09-01T10:35:31Z",
-    "last": "2026-09-01T10:35:31Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Kornwestheim",
-        "lat": 48.8611498,
-        "lon": 9.1873875,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Offenburg|forbach - rauchentwicklung in einem zweifamilienhaus",
-    "status": "active",
-    "title": "Forbach - Rauchentwicklung in einem Zweifamilienhaus",
-    "link": "https://www.presseportal.de/blaulicht/pm/110975/6343399",
-    "first": "2026-09-01T10:21:29Z",
-    "last": "2026-09-01T10:21:29Z",
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Forbach",
-        "lat": 48.6790385,
-        "lon": 8.3594916,
         "approx": false
       }
     ]
