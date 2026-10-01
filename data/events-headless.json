@@ -1,19 +1,16 @@
 {
- "generated": "2026-09-30T11:00:16.565Z",
+ "generated": "2026-10-01T11:31:17.121Z",
  "window": [
-  "2026-09-30",
-  "2026-12-29"
+  "2026-10-01",
+  "2026-12-30"
  ],
  "warnings": [
   "ZweiTälerLand tPortal (TOMAS): Ergebnisliste leer (Suche liefert serverseitig aktuell keine Treffer).",
-  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568701.am-2.-oktober%2C-wi…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.568701.am-2.-oktober%2C-wird-mit-live-musik-gefeiert%21---31.-musiknacht-emmendingen---tickets-sichern-und-live-dabei-sein%21---programm-der-naechsten-emmendinger-musiknacht-steht.html",
-  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568865.kindertheater-morge…: page.goto: Timeout 60000ms exceeded.",
-  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568740.vortrag-wohnen-im-a…: page.goto: Timeout 60000ms exceeded.",
-  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569091.1.-oktober-2026-ber…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569091.1.-oktober-2026-beratungsangebot-fuer-frauen-zu-beruflichen-themen-in-emmendingen---veranstaltung-in-der-vhs-noerdlicher-breisgau.html",
-  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568891.2.-oktober-2026-rau…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.568891.2.-oktober-2026-raus-mit-klaus-in-teningen-heimbach---westweg-in-gegenrichtung---reportage-im-gemeindehaus.html",
+  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568701.am-2.-oktober%2C-wi…: page.goto: Timeout 60000ms exceeded.",
+  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568891.2.-oktober-2026-rau…: page.goto: Timeout 60000ms exceeded.",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568255.3.-oktober-2026-22.…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.568255.3.-oktober-2026-22.-oldtimer-teilemarkt-in-freiamt-von-8-bis-18-uhr---mehrere-hunderte-private-haendler-werden-erwartet.html",
-  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569468.3.-oktober-2026-22.…: page.goto: Timeout 60000ms exceeded.",
-  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569186.4.-oktober-2026-zau…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569186.4.-oktober-2026-zaubervoegel-und-schoene-erinnerungen-in-waldkirch---familiensonntag-im-elztalmuseum-.html",
+  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569468.3.-oktober-2026-22.…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569468.3.-oktober-2026-22.-oldtimer-teilemarkt-in-freiamt----das-rostigste-hobby-der-welt----ein-mekka-fuer-alle-oldtimerfreunde-.html",
+  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569186.4.-oktober-2026-zau…: page.goto: Timeout 60000ms exceeded.",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568896.7.-oktober-2026-reg…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.568896.7.-oktober-2026-regierungspraesidium-freiburg-informiert-ueber-aktuelle-planungen-beim-radschnellweg-rs-6---beradelung-in-waldkirch-.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569506.8.-oktober-2026%2C-…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569506.8.-oktober-2026%2C-14-uhr--quilts-und-collagen--von-monika-schiwy-jessen-in-denzlingen---fuehrung-mit-der-kuenstlerin-im-cafe-panorama.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569471.8.-oktober-2026-rei…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569471.8.-oktober-2026-reise-durch-das-reich-der-pilze-in-emmendingen---koestlichkeiten-aus-dem-unterholz---kochworkshop-am-landwirtschaftlichen-bildungszentrum-emmendingen-hochburg--.html",
@@ -30,12 +27,15 @@
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569256.7.-oktober-2026-neu…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569256.7.-oktober-2026-neues-universitaets-brustzentrum-freiburg-oeffnet-seine-tueren-fuer-interessierte---persoenliche-gespraeche-mit-experten---mvz-praxis-und-universitaere-medizin-kuenftig-in-einer-gemeinsamen-struktur--.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569436.8.-oktober-2026--la…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569436.8.-oktober-2026--laser-statt-brille---in-freiburg---informationsveranstaltung-zur-laserbehandlung-von-fehlsichtigkeiten-am-universitaetsklinikum.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569237.10.-oktober-2026-in…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569237.10.-oktober-2026-infoveranstaltung-ueber-epilepsie-in-freiburg---vortraege-fuer-patienten-und-angehoerige---neue-entwicklungen-in-diagnostik-und-therapie---raum-fuer-fragen-und-austausch-.html",
+  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569597.11.-oktober-2026-he…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569597.11.-oktober-2026-herbst--und-kuerbisfest-auf-dem-mundenhof-in-freiburg---spielen%2C-schnitzen%2C-mampfen.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569160.14.-oktober-2026--b…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569160.14.-oktober-2026--brancheneinblick-klimarelevantes-handwerk--in-freiburg---schuelerinnen-erhalten-einblicke-in-berufszweig-sanitaer%2C-heizung-und-klima---teil-des-projekts-klimaheldin-im-handwerk-.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568934.1.-oktober-2026-ges…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.568934.1.-oktober-2026-gesungene-und-getanzte-ukrainische-folklore-in-bad-krozingen---preisgekroentes-kinder-ensemble-tscherwona-ruta-und-tanzgruppe-molodist-treten-im-kurhaus-auf-.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569542.17.-oktober-2026-wi…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569542.17.-oktober-2026-wildtiere-rund-ums-haus-der-natur-in-feldberg-entdecken---unterwegs-mit-bewusstwild.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569332.18.-oktober-2026-sh…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569332.18.-oktober-2026-shinrin-yoku-in-bad-krozingen---waldbaden-im-kaeppeledobel-bollschweil-st.-ulrich--.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568170.27.-november-2026-k…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.568170.27.-november-2026-kulinarisches-weinerlebnis-im-weingut-fritz-wassmer-in-bad-krozingen-schlatt---genussvoller-auftakt-in-die-adventszeit.html",
-  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568464.28.-november-2026-e…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.568464.28.-november-2026-erste-hilfe-bei-kindernotfaellen-in-ebringen--malteser-bieten-praxisnahen-kurs-fuer-eltern%2C-grosseltern-und-babysitter-an.html"
+  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568464.28.-november-2026-e…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.568464.28.-november-2026-erste-hilfe-bei-kindernotfaellen-in-ebringen--malteser-bieten-praxisnahen-kurs-fuer-eltern%2C-grosseltern-und-babysitter-an.html",
+  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.569590.html…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.569590.html",
+  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.569546.html…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.569546.html"
  ],
  "events": [
   {
@@ -44,30 +44,6 @@
    "place": "Emmendingen",
    "address": "Emmendingen, Deutschland",
    "url": "https://www.regiotrends.de/de/regiotermine/index.news.568701.am-2.-oktober%2C-wird-mit-live-musik-gefeiert%21---31.-musiknacht-emmendingen---tickets-sichern-und-live-dabei-sein%21---programm-der-naechsten-emmendinger-musiknacht-steht.html",
-   "source": "RegioTrends"
-  },
-  {
-   "title": "Kindertheater Morgen bestimme ich! - Veranstaltung am Mittwoch, 30.09.2026 im Saal des Kurhauses Freiamt",
-   "start": "2026-09-30",
-   "place": "Freiamt",
-   "address": "Freiamt, Deutschland",
-   "url": "https://www.regiotrends.de/de/regiotermine/index.news.568865.kindertheater-morgen-bestimme-ich%21---veranstaltung-am-mittwoch%2C-30.09.2026-im-saal-des-kurhauses-freiamt-.html",
-   "source": "RegioTrends"
-  },
-  {
-   "title": "Vortrag „Wohnen im Alter“ (30. September 2026) in Riegel abgesagt - Nachholtermin steht noch nicht fest",
-   "start": "2026-09-30",
-   "place": "Riegel am Kaiserstuhl",
-   "address": "Riegel am Kaiserstuhl, Deutschland",
-   "url": "https://www.regiotrends.de/de/regiotermine/index.news.568740.vortrag-wohnen-im-alter-30.-september-2026-in-riegel-abgesagt---nachholtermin-steht-noch-nicht-fest-.html",
-   "source": "RegioTrends"
-  },
-  {
-   "title": "Beratungsangebot für Frauen zu beruflichen Themen in Emmendingen - Veranstaltung in der vhs Nördlicher Breisgau",
-   "start": "2026-10-01",
-   "place": "Emmendingen",
-   "address": "Emmendingen, Deutschland",
-   "url": "https://www.regiotrends.de/de/regiotermine/index.news.569091.1.-oktober-2026-beratungsangebot-fuer-frauen-zu-beruflichen-themen-in-emmendingen---veranstaltung-in-der-vhs-noerdlicher-breisgau.html",
    "source": "RegioTrends"
   },
   {
@@ -247,6 +223,14 @@
    "source": "RegioTrends"
   },
   {
+   "title": "„Zwei trauen sich was“ in der Stadtbibliothek Emmendingen - Veranstaltung verbindet Lesung und Livemusik",
+   "start": "2026-10-23T19:00",
+   "place": "Emmendingen",
+   "address": "Emmendingen, Deutschland",
+   "url": "https://www.regiotrends.de/de/regiotermine/index.news.569583.23.-oktober-2026-zwei-trauen-sich-was-in-der-stadtbibliothek-emmendingen---veranstaltung-verbindet-lesung-und-livemusik-.html",
+   "source": "RegioTrends"
+  },
+  {
    "title": "Große Vogelausstellung mit Verbandsschau - Am 31.10.und 01.11.2026 in der Heinz-Ritter-Halle in Vörstetten,",
    "start": "2026-11-01",
    "place": "Vörstetten",
@@ -260,6 +244,14 @@
    "place": "Kenzingen-Hecklingen",
    "address": "Kenzingen-Hecklingen, Deutschland",
    "url": "https://www.regiotrends.de/de/regiotermine/index.news.569372.burgfuehrung-durch-die-burgruine-lichteneck-am-1.-november-2026.html",
+   "source": "RegioTrends"
+  },
+  {
+   "title": "\"Maximilian Dortu - Ein Leben für Freiheit und Gerechtigkeit\" in Freiburg - Führungen durch die Ausstellung im Stadtarchiv",
+   "start": "2026-10-07T15:00",
+   "place": "Freiburg",
+   "address": "Freiburg, Deutschland",
+   "url": "https://www.regiotrends.de/de/regiotermine/index.news.569591.7.-oktober-2026--maximilian-dortu---ein-leben-fuer-freiheit-und-gerechtigkeit--in-freiburg---fuehrungen-durch-die-ausstellung-im-stadtarchiv-.html",
    "source": "RegioTrends"
   },
   {
@@ -284,6 +276,14 @@
    "place": "Freiburg",
    "address": "Freiburg, Deutschland",
    "url": "https://www.regiotrends.de/de/regiotermine/index.news.569237.10.-oktober-2026-infoveranstaltung-ueber-epilepsie-in-freiburg---vortraege-fuer-patienten-und-angehoerige---neue-entwicklungen-in-diagnostik-und-therapie---raum-fuer-fragen-und-austausch-.html",
+   "source": "RegioTrends"
+  },
+  {
+   "title": "Herbst- und Kürbisfest auf dem Mundenhof in Freiburg - Spielen, Schnitzen, Mampfen",
+   "start": "2026-10-11",
+   "place": "Freiburg",
+   "address": "Freiburg, Deutschland",
+   "url": "https://www.regiotrends.de/de/regiotermine/index.news.569597.11.-oktober-2026-herbst--und-kuerbisfest-auf-dem-mundenhof-in-freiburg---spielen%2C-schnitzen%2C-mampfen.html",
    "source": "RegioTrends"
   },
   {
@@ -332,6 +332,14 @@
    "place": "Hochschwarzwald - Ebringen",
    "address": "Hochschwarzwald - Ebringen, Deutschland",
    "url": "https://www.regiotrends.de/de/regiotermine/index.news.568464.28.-november-2026-erste-hilfe-bei-kindernotfaellen-in-ebringen--malteser-bieten-praxisnahen-kurs-fuer-eltern%2C-grosseltern-und-babysitter-an.html",
+   "source": "RegioTrends"
+  },
+  {
+   "title": "Wochenmärkte in Waldkirch einen Tag früher - Vorverlegung aufgrund von Feiertag",
+   "start": "2026-10-02",
+   "place": "Städte und Gemeinden",
+   "address": "Städte und Gemeinden, Deutschland",
+   "url": "https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.569590.html",
    "source": "RegioTrends"
   },
   {
@@ -396,6 +404,14 @@
    "place": "Aus den Landkreisen",
    "address": "Aus den Landkreisen, Deutschland",
    "url": "https://www.regiotrends.de/de/verbraucher-wirtschaft/index.news.568819.html",
+   "source": "RegioTrends"
+  },
+  {
+   "title": "Unsere besonderen Angebote am 1. und 2. Oktober 2026 | Metzgerei & Partyservice Mertz, Emmendingen",
+   "start": "2026-10-02",
+   "place": "Trends - Aktionen",
+   "address": "Trends - Aktionen, Deutschland",
+   "url": "https://www.regiotrends.de/de/tipps-der-woche/index.news.569509.html",
    "source": "RegioTrends"
   },
   {
@@ -464,14 +480,6 @@
    "place": "Städte und Gemeinden",
    "address": "Städte und Gemeinden, Deutschland",
    "url": "https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.568869.html",
-   "source": "RegioTrends"
-  },
-  {
-   "title": "Kreativ kochen statt verschwenden – Quiches & Tartes mit Sinn und Genuss - Kochworkshop am Mittwoch, 30. September 2026 ab 18 Uhr am Landwirtschaftlichen Bildungszentrum Emmendingen-Hochburg - Anmeldung erforderlich",
-   "start": "2026-09-30T18:00",
-   "place": "Aus den Landkreisen",
-   "address": "Aus den Landkreisen, Deutschland",
-   "url": "https://www.regiotrends.de/de/verbraucher-wirtschaft/index.news.568737.html",
    "source": "RegioTrends"
   },
   {
