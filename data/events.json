@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/119285/6363326",
     "first": "2026-10-01T17:15:01Z",
     "last": "2026-10-01T17:15:01Z",
+    "veg": false,
+    "source": "Feuerwehr Recklinghausen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Recklinghausen",
@@ -13,11 +17,7 @@
         "lon": 7.1978546,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Recklinghausen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizei Köln|261001-3-k/rek zeugenaufruf nach mutmaßlicher brandstiftung unter hochspannungsleitung in bergheim-niederaußem - staatsschutz ermittelt",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/12415/6363268",
     "first": "2026-10-01T15:36:55Z",
     "last": "2026-10-01T15:36:55Z",
+    "veg": false,
+    "source": "Polizei Köln",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "261001-3-K",
@@ -33,11 +37,7 @@
         "lon": 6.8913957,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizei Köln",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Neuss|feuerwehr neuss startet im zwei-wachen-system | erste 24-stunden-schicht auf der neuen feuerwache süd",
@@ -46,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/122045/6363253",
     "first": "2026-10-01T15:24:51Z",
     "last": "2026-10-01T15:24:51Z",
+    "veg": false,
+    "source": "Feuerwehr Neuss",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Neuss",
@@ -53,11 +57,7 @@
         "lon": 6.6916476,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Neuss",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Wuppertal|feuerwehreinsatz durch angebranntes essen",
