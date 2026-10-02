@@ -5036,46 +5036,6 @@
     ]
   },
   {
-    "base": "Feuerwehr Gelsenkirchen|erneuter brandeinsatz in gelsenkirchen-horst: küchenbrand sorgt für aufwendigen einsatz",
-    "status": "contained",
-    "title": "Erneuter Brandeinsatz in Gelsenkirchen-Horst: Küchenbrand sorgt für aufwendigen Einsatz",
-    "link": "https://www.presseportal.de/blaulicht/pm/116260/6343963",
-    "first": "2026-09-01T23:09:36Z",
-    "last": "2026-09-01T23:09:36Z",
-    "veg": false,
-    "source": "Feuerwehr Gelsenkirchen",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Gelsenkirchen",
-        "lat": 51.5110321,
-        "lon": 7.0960124,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Gelsenkirchen|kellerbrand mit gas-verpuffung in gelsenkirchen: zwei feuerwehrkräfte verletzt",
-    "status": "active",
-    "title": "Kellerbrand mit Gas-Verpuffung in Gelsenkirchen: Zwei Feuerwehrkräfte verletzt",
-    "link": "https://www.presseportal.de/blaulicht/pm/116260/6343962",
-    "first": "2026-09-01T23:06:33Z",
-    "last": "2026-09-01T23:06:33Z",
-    "veg": false,
-    "source": "Feuerwehr Gelsenkirchen",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Gelsenkirchen",
-        "lat": 51.5110321,
-        "lon": 7.0960124,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Polizei Duisburg|wanheimerort: brand eines altkleidercontainers - zeugensuche",
     "status": "active",
     "title": "Wanheimerort: Brand eines Altkleidercontainers - Zeugensuche",
