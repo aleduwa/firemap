@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6363887",
     "first": "2026-10-02T13:30:33Z",
     "last": "2026-10-02T13:30:33Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Rems-Murr-Kreis",
@@ -19,11 +23,7 @@
         "lon": 9.56871,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Iserlohn|großbrand bei müllverwerter",
@@ -4971,112 +4971,6 @@
         "name": "Tönisvorst",
         "lat": 51.3167,
         "lon": 6.45,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Mönchengladbach|küchenbrand in reihenhaus",
-    "status": "active",
-    "title": "Küchenbrand in Reihenhaus",
-    "link": "https://www.presseportal.de/blaulicht/pm/115879/6344646",
-    "first": "2026-09-02T19:01:12Z",
-    "last": "2026-09-02T19:01:12Z",
-    "veg": false,
-    "source": "Feuerwehr Mönchengladbach",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Mönchengladbach",
-        "lat": 51.1947131,
-        "lon": 6.4353792,
-        "approx": false
-      },
-      {
-        "name": "zwischen Hoffnungsstraße und Reyerhütter",
-        "lat": 51.19559,
-        "lon": 6.45692,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Freiwillige Feuerwehr Reichenau|kleiner flächenbrand auf der insel - 01.09.2026",
-    "status": "out",
-    "title": "Kleiner Flächenbrand auf der Insel - 01.09.2026",
-    "link": "https://www.presseportal.de/blaulicht/pm/163367/6344633",
-    "first": "2026-09-02T18:10:29Z",
-    "last": "2026-09-02T18:10:29Z",
-    "veg": true,
-    "source": "Freiwillige Feuerwehr Reichenau",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Reichenau",
-        "lat": 47.6956373,
-        "lon": 9.0592022,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Bochum|wohnungsbrand in bochum-wattenscheid: zwei personen mit rauchgasvergiftung",
-    "status": "active",
-    "title": "Wohnungsbrand in Bochum-Wattenscheid: Zwei Personen mit Rauchgasvergiftung",
-    "link": "https://www.presseportal.de/blaulicht/pm/115868/6344625",
-    "first": "2026-09-02T17:14:36Z",
-    "last": "2026-09-02T17:14:36Z",
-    "veg": false,
-    "source": "Feuerwehr Bochum",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Bochum",
-        "lat": 51.4818111,
-        "lon": 7.2196635,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(ul) ulm - brand in mehrfamilienhaus / am mittwoch rückten einsatzkräfte zu einem wohnungsbrand in ulm aus. verletzt wurde niemand.",
-    "status": "out",
-    "title": "(UL) Ulm - Brand in Mehrfamilienhaus / Am Mittwoch rückten Einsatzkräfte zu einem Wohnungsbrand in Ulm aus. Verletzt wurde niemand.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6344599",
-    "first": "2026-09-02T15:53:43Z",
-    "last": "2026-09-02T15:53:43Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Ulm",
-        "lat": 48.3984968,
-        "lon": 9.9912458,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Aalen|ostalbkreis: brand - diebstahl - straßenverkehrsgefährdung",
-    "status": "active",
-    "title": "Ostalbkreis: Brand - Diebstahl - Straßenverkehrsgefährdung",
-    "link": "https://www.presseportal.de/blaulicht/pm/110969/6344565",
-    "first": "2026-09-02T15:03:17Z",
-    "last": "2026-09-02T15:03:17Z",
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Ostalbkreis",
-        "lat": 48.8777738,
-        "lon": 10.0337317,
         "approx": false
       }
     ]
