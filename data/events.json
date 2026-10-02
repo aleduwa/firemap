@@ -4630,14 +4630,14 @@
     ]
   },
   {
-    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
+    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - Abschlussmeldung (PM Nr. 2)",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345986",
     "first": "2026-09-04T18:17:50Z",
     "last": "2026-09-04T18:17:50Z",
     "veg": false,
-    "source": "Freiwillige Feuerwehr Walldorf",
+    "source": "FF Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -4650,14 +4650,14 @@
     ]
   },
   {
-    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
+    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - Abschlussmeldung (PM Nr. 2)",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345986",
     "first": "2026-09-04T18:17:50Z",
     "last": "2026-09-04T18:17:50Z",
     "veg": false,
-    "source": "FF Walldorf",
+    "source": "Freiwillige Feuerwehr Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -4951,26 +4951,6 @@
         "name": "Ulm",
         "lat": 48.3984968,
         "lon": 9.9912458,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Freiwillige Feuerwehr Tönisvorst|wechsel in die ehrenabteilung: stadtbrandinspektor toni van cleef wechselt nach über 45 jahren aktiver dienstzeit",
-    "status": "active",
-    "title": "Wechsel in die Ehrenabteilung: Stadtbrandinspektor Toni van Cleef wechselt nach über 45 Jahren aktiver Dienstzeit",
-    "link": "https://www.presseportal.de/blaulicht/pm/128354/6344661",
-    "first": "2026-09-02T20:54:22Z",
-    "last": "2026-09-02T20:54:22Z",
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Tönisvorst",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Tönisvorst",
-        "lat": 51.3167,
-        "lon": 6.45,
         "approx": false
       }
     ]
