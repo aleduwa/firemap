@@ -1,5 +1,71 @@
 [
   {
+    "base": "Feuerwehr Iserlohn|großbrand bei müllverwerter",
+    "status": "out",
+    "title": "Großbrand bei Müllverwerter",
+    "link": "https://www.presseportal.de/blaulicht/pm/116234/6363466",
+    "first": "2026-10-02T08:06:24Z",
+    "last": "2026-10-02T08:06:24Z",
+    "places": [
+      {
+        "name": "Iserlohn",
+        "lat": 51.3746778,
+        "lon": 7.6999713,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Iserlohn",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|ilvesheim/rhein-neckar-kreis: brandgeschehen in den neckarplatten - feuerwehr im einsatz - pressemeldung nr. 1",
+    "status": "active",
+    "title": "Ilvesheim/Rhein-Neckar-Kreis: Brandgeschehen in den Neckarplatten - Feuerwehr im Einsatz - Pressemeldung Nr. 1",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6363408",
+    "first": "2026-10-02T06:47:15Z",
+    "last": "2026-10-02T06:47:15Z",
+    "places": [
+      {
+        "name": "Ilvesheim",
+        "lat": 49.4735917,
+        "lon": 8.5673003,
+        "approx": false
+      },
+      {
+        "name": "Rhein-Neckar-Kreis",
+        "lat": 49.3684797,
+        "lon": 8.7352403,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Gelsenkirchen|brand in einem mehrfamilienhaus in gelsenkirchen-hassel: vier personen nach nächtlichem einsatz im krankenhaus",
+    "status": "active",
+    "title": "Brand in einem Mehrfamilienhaus in Gelsenkirchen-Hassel: Vier Personen nach nächtlichem Einsatz im Krankenhaus",
+    "link": "https://www.presseportal.de/blaulicht/pm/116260/6363391",
+    "first": "2026-10-02T03:59:21Z",
+    "last": "2026-10-02T03:59:21Z",
+    "places": [
+      {
+        "name": "Gelsenkirchen",
+        "lat": 51.5110321,
+        "lon": 7.0960124,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Gelsenkirchen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Recklinghausen|wohnungsbrand mit zwei verletzten personen in recklinghausen-grullbad",
     "status": "out",
     "title": "Wohnungsbrand mit zwei verletzten Personen in Recklinghausen-Grullbad",
@@ -4538,14 +4604,14 @@
     ]
   },
   {
-    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
+    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - Abschlussmeldung (PM Nr. 2)",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345986",
     "first": "2026-09-04T18:17:50Z",
     "last": "2026-09-04T18:17:50Z",
     "veg": false,
-    "source": "FF Walldorf",
+    "source": "Freiwillige Feuerwehr Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -4558,14 +4624,14 @@
     ]
   },
   {
-    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
+    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - Abschlussmeldung (PM Nr. 2)",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345986",
     "first": "2026-09-04T18:17:50Z",
     "last": "2026-09-04T18:17:50Z",
     "veg": false,
-    "source": "Freiwillige Feuerwehr Walldorf",
+    "source": "FF Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -4618,14 +4684,14 @@
     ]
   },
   {
-    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
+    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - PM Nr. 1",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345918",
     "first": "2026-09-04T14:52:55Z",
     "last": "2026-09-04T14:52:55Z",
     "veg": false,
-    "source": "FF Walldorf",
+    "source": "Freiwillige Feuerwehr Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -4638,14 +4704,14 @@
     ]
   },
   {
-    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
+    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - PM Nr. 1",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345918",
     "first": "2026-09-04T14:52:55Z",
     "last": "2026-09-04T14:52:55Z",
     "veg": false,
-    "source": "Freiwillige Feuerwehr Walldorf",
+    "source": "FF Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
