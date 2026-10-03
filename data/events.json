@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115885/6364188",
     "first": "2026-10-03T18:51:36Z",
     "last": "2026-10-03T18:51:36Z",
+    "veg": false,
+    "source": "Feuerwehr Wuppertal",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Wuppertal",
@@ -13,11 +17,7 @@
         "lon": 7.1780374,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Wuppertal",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Breckerfeld|brandeinsätze und person hinter tür",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/69791/6364182",
     "first": "2026-10-03T17:22:57Z",
     "last": "2026-10-03T17:22:57Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Breckerfeld",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Breckerfeld",
@@ -33,11 +37,7 @@
         "lon": 7.4667789,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Breckerfeld",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Kreisfeuerwehrverband Calw e.V.|brand in reha-klinik mehr als 200 patienten in dobel evakuiert/beherzter patient startet löscharbeiten/40 zimmer nicht mehr bewohnbar",
@@ -4932,26 +4932,6 @@
         "lat": 51.5142273,
         "lon": 7.4652789,
         "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Mülheim an der Ruhr|kellerbrand in saarn: e-bike-akkus in brand geraten - bewohner retten sich selbstständig ins freie",
-    "status": "contained",
-    "title": "Kellerbrand in Saarn: E-Bike-Akkus in Brand geraten - Bewohner retten sich selbstständig ins Freie",
-    "link": "https://www.presseportal.de/blaulicht/pm/115880/6345332",
-    "first": "2026-09-03T17:39:53Z",
-    "last": "2026-09-03T17:39:53Z",
-    "veg": false,
-    "source": "Feuerwehr Mülheim an der Ruhr",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Mülheim an der Ruhr",
-        "lat": 51.4272925,
-        "lon": 6.8829192,
-        "approx": true
       }
     ]
   },
