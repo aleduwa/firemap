@@ -1,5 +1,25 @@
 [
   {
+    "base": "Polizeipräsidium Konstanz|(rottweil/ landkreis rottweil) fahrzeugbrand in der stadtgrabenstraße - polizei bittet um zeugenhinweise (03.10.2026)",
+    "status": "active",
+    "title": "(Rottweil/ Landkreis Rottweil) Fahrzeugbrand in der Stadtgrabenstraße - Polizei bittet um Zeugenhinweise (03.10.2026)",
+    "link": "https://www.presseportal.de/blaulicht/pm/110973/6364096",
+    "first": "2026-10-03T07:58:49Z",
+    "last": "2026-10-03T07:58:49Z",
+    "places": [
+      {
+        "name": "Rottweil",
+        "lat": 48.1678244,
+        "lon": 8.626979,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Konstanz",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Aalen|rems-murr-kreis: gebäudebrand, unfallflucht, sachbeschädigung",
     "status": "out",
     "title": "Rems-Murr-Kreis: Gebäudebrand, Unfallflucht, Sachbeschädigung",
@@ -4630,14 +4650,14 @@
     ]
   },
   {
-    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
+    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - Abschlussmeldung (PM Nr. 2)",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345986",
     "first": "2026-09-04T18:17:50Z",
     "last": "2026-09-04T18:17:50Z",
     "veg": false,
-    "source": "Freiwillige Feuerwehr Walldorf",
+    "source": "FF Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -4650,14 +4670,14 @@
     ]
   },
   {
-    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
+    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
     "status": "out",
     "title": "Wohnungsbrand im 2. Obergeschoss - Abschlussmeldung (PM Nr. 2)",
     "link": "https://www.presseportal.de/blaulicht/pm/134197/6345986",
     "first": "2026-09-04T18:17:50Z",
     "last": "2026-09-04T18:17:50Z",
     "veg": false,
-    "source": "FF Walldorf",
+    "source": "Freiwillige Feuerwehr Walldorf",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -4891,66 +4911,6 @@
         "name": "Vreden-Ammeloe",
         "lat": 52.0760111,
         "lon": 6.784704,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Minden|pkw vor wohnhaus brennt in voller audehnung",
-    "status": "active",
-    "title": "PKW vor Wohnhaus brennt in voller Audehnung",
-    "link": "https://www.presseportal.de/blaulicht/pm/152228/6344699",
-    "first": "2026-09-03T07:50:11Z",
-    "last": "2026-09-03T07:50:11Z",
-    "veg": false,
-    "source": "Feuerwehr Minden",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Minden",
-        "lat": 52.2881045,
-        "lon": 8.9168852,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Meerbusch|pressemitteilung der feuerwehr meerbusch zu einem küchenbrand nach fettexplosion in meerbusch-osterath",
-    "status": "active",
-    "title": "Pressemitteilung der Feuerwehr Meerbusch zu einem Küchenbrand nach Fettexplosion in Meerbusch-Osterath",
-    "link": "https://www.presseportal.de/blaulicht/pm/116674/6344695",
-    "first": "2026-09-03T07:32:40Z",
-    "last": "2026-09-03T07:32:40Z",
-    "veg": false,
-    "source": "Feuerwehr Meerbusch",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Meerbusch",
-        "lat": 51.2652237,
-        "lon": 6.6760958,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(ul) ulm - lagerhalle brennt / sachschaden entstand in der nacht auf donnerstag bei einem brand in ulm.",
-    "status": "active",
-    "title": "(UL) Ulm - Lagerhalle brennt / Sachschaden entstand in der Nacht auf Donnerstag bei einem Brand in Ulm.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6344681",
-    "first": "2026-09-03T06:55:01Z",
-    "last": "2026-09-03T06:55:01Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Ulm",
-        "lat": 48.3984968,
-        "lon": 9.9912458,
         "approx": false
       }
     ]
