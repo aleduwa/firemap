@@ -1,11 +1,55 @@
 [
   {
+    "base": "Feuerwehr Wuppertal|kellerbrand in der schimmelsburg",
+    "status": "out",
+    "title": "Kellerbrand in der Schimmelsburg",
+    "link": "https://www.presseportal.de/blaulicht/pm/115885/6364188",
+    "first": "2026-10-03T18:51:36Z",
+    "last": "2026-10-03T18:51:36Z",
+    "places": [
+      {
+        "name": "Wuppertal",
+        "lat": 51.264018,
+        "lon": 7.1780374,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Wuppertal",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Freiwillige Feuerwehr Breckerfeld|brandeinsätze und person hinter tür",
+    "status": "out",
+    "title": "Brandeinsätze und Person hinter Tür",
+    "link": "https://www.presseportal.de/blaulicht/pm/69791/6364182",
+    "first": "2026-10-03T17:22:57Z",
+    "last": "2026-10-03T17:22:57Z",
+    "places": [
+      {
+        "name": "Breckerfeld",
+        "lat": 51.2603083,
+        "lon": 7.4667789,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Breckerfeld",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Kreisfeuerwehrverband Calw e.V.|brand in reha-klinik mehr als 200 patienten in dobel evakuiert/beherzter patient startet löscharbeiten/40 zimmer nicht mehr bewohnbar",
     "status": "out",
     "title": "Brand in Reha-Klinik Mehr als 200 Patienten in Dobel evakuiert/Beherzter Patient startet Löscharbeiten/40 Zimmer nicht mehr bewohnbar",
     "link": "https://www.presseportal.de/blaulicht/pm/116896/6364145",
     "first": "2026-10-03T12:32:50Z",
     "last": "2026-10-03T12:32:50Z",
+    "veg": false,
+    "source": "Kreisfeuerwehrverband Calw e.V.",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Calw e.V",
@@ -13,11 +57,7 @@
         "lon": 8.7557644,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Kreisfeuerwehrverband Calw e.V.",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Grevenbroich|fünf verletzte bei wohnungsbrand in grevenbroich-elsen",
@@ -26,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/134498/6364123",
     "first": "2026-10-03T10:06:53Z",
     "last": "2026-10-03T10:06:53Z",
+    "veg": false,
+    "source": "Feuerwehr Grevenbroich",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Grevenbroich",
@@ -33,11 +77,7 @@
         "lon": 6.5848937,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Grevenbroich",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Konstanz|(rottweil/ landkreis rottweil) fahrzeugbrand in der stadtgrabenstraße - polizei bittet um zeugenhinweise (03.10.2026)",
