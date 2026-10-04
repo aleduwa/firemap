@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/183200/6364453",
     "first": "2026-10-04T15:21:09Z",
     "last": "2026-10-04T15:21:09Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Niederkrüchten",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Niederkrüchten",
@@ -13,11 +17,7 @@
         "lon": 6.2196622,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Niederkrüchten",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Kreispolizeibehörde Viersen|niederkrüchten: kaminbrand weitet sich aus und macht haus unbewohnbar",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/65857/6364438",
     "first": "2026-10-04T13:04:31Z",
     "last": "2026-10-04T13:04:31Z",
+    "veg": false,
+    "source": "Kreispolizeibehörde Viersen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Niederkrüchten",
@@ -33,11 +37,7 @@
         "lon": 6.2196622,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Kreispolizeibehörde Viersen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Detmold|kleinbrand an einer gartenhütte",
@@ -46,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/116239/6364426",
     "first": "2026-10-04T12:37:04Z",
     "last": "2026-10-04T12:37:04Z",
+    "veg": false,
+    "source": "Feuerwehr Detmold",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Detmold",
@@ -53,11 +57,7 @@
         "lon": 8.8791526,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Detmold",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Aalen|ostalbkreis: fahrzeugbrand",
@@ -66,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6364353",
     "first": "2026-10-04T10:40:30Z",
     "last": "2026-10-04T10:40:30Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ostalbkreis",
@@ -73,11 +77,7 @@
         "lon": 10.0337317,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Mülheim an der Ruhr|rauchmelder und feuerschein in speldorf - feuerwehr löscht zimmerbrand",
@@ -4825,126 +4825,6 @@
         "name": "Hagen",
         "lat": 51.3582945,
         "lon": 7.473296,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
-    "status": "out",
-    "title": "Wohnungsbrand im 2. Obergeschoss - Abschlussmeldung (PM Nr. 2)",
-    "link": "https://www.presseportal.de/blaulicht/pm/134197/6345986",
-    "first": "2026-09-04T18:17:50Z",
-    "last": "2026-09-04T18:17:50Z",
-    "veg": false,
-    "source": "FF Walldorf",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Walldorf",
-        "lat": 49.3032669,
-        "lon": 8.6432056,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - abschlussmeldung (pm nr. 2)",
-    "status": "out",
-    "title": "Wohnungsbrand im 2. Obergeschoss - Abschlussmeldung (PM Nr. 2)",
-    "link": "https://www.presseportal.de/blaulicht/pm/134197/6345986",
-    "first": "2026-09-04T18:17:50Z",
-    "last": "2026-09-04T18:17:50Z",
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Walldorf",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Walldorf",
-        "lat": 49.3032669,
-        "lon": 8.6432056,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Offenburg|oberharmersbach - brandursache unklar",
-    "status": "active",
-    "title": "Oberharmersbach - Brandursache unklar",
-    "link": "https://www.presseportal.de/blaulicht/pm/110975/6345961",
-    "first": "2026-09-04T16:22:10Z",
-    "last": "2026-09-04T16:22:10Z",
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Oberharmersbach",
-        "lat": 48.3727696,
-        "lon": 8.1267832,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Aalen|ostalbkreis: unfallflucht - diebstahl - schmorbrand",
-    "status": "out",
-    "title": "Ostalbkreis: Unfallflucht - Diebstahl - Schmorbrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110969/6345927",
-    "first": "2026-09-04T14:59:28Z",
-    "last": "2026-09-04T14:59:28Z",
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Ostalbkreis",
-        "lat": 48.8777738,
-        "lon": 10.0337317,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Freiwillige Feuerwehr Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
-    "status": "out",
-    "title": "Wohnungsbrand im 2. Obergeschoss - PM Nr. 1",
-    "link": "https://www.presseportal.de/blaulicht/pm/134197/6345918",
-    "first": "2026-09-04T14:52:55Z",
-    "last": "2026-09-04T14:52:55Z",
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Walldorf",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Walldorf",
-        "lat": 49.3032669,
-        "lon": 8.6432056,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "FF Walldorf|wohnungsbrand im 2. obergeschoss - pm nr. 1",
-    "status": "out",
-    "title": "Wohnungsbrand im 2. Obergeschoss - PM Nr. 1",
-    "link": "https://www.presseportal.de/blaulicht/pm/134197/6345918",
-    "first": "2026-09-04T14:52:55Z",
-    "last": "2026-09-04T14:52:55Z",
-    "veg": false,
-    "source": "FF Walldorf",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Walldorf",
-        "lat": 49.3032669,
-        "lon": 8.6432056,
         "approx": false
       }
     ]
