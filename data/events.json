@@ -1,11 +1,95 @@
 [
   {
+    "base": "Freiwillige Feuerwehr Niederkrüchten|feuerwehr löscht dachstuhlbrand in niederkrüchten / brand beschädigt zwei haushälften, verletzt wurde niemand",
+    "status": "active",
+    "title": "Feuerwehr löscht Dachstuhlbrand in Niederkrüchten / Brand beschädigt zwei Haushälften, verletzt wurde niemand",
+    "link": "https://www.presseportal.de/blaulicht/pm/183200/6364453",
+    "first": "2026-10-04T15:21:09Z",
+    "last": "2026-10-04T15:21:09Z",
+    "places": [
+      {
+        "name": "Niederkrüchten",
+        "lat": 51.2000398,
+        "lon": 6.2196622,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Niederkrüchten",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Kreispolizeibehörde Viersen|niederkrüchten: kaminbrand weitet sich aus und macht haus unbewohnbar",
+    "status": "out",
+    "title": "Niederkrüchten: Kaminbrand weitet sich aus und macht Haus unbewohnbar",
+    "link": "https://www.presseportal.de/blaulicht/pm/65857/6364438",
+    "first": "2026-10-04T13:04:31Z",
+    "last": "2026-10-04T13:04:31Z",
+    "places": [
+      {
+        "name": "Niederkrüchten",
+        "lat": 51.2000398,
+        "lon": 6.2196622,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Kreispolizeibehörde Viersen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Detmold|kleinbrand an einer gartenhütte",
+    "status": "out",
+    "title": "Kleinbrand an einer Gartenhütte",
+    "link": "https://www.presseportal.de/blaulicht/pm/116239/6364426",
+    "first": "2026-10-04T12:37:04Z",
+    "last": "2026-10-04T12:37:04Z",
+    "places": [
+      {
+        "name": "Detmold",
+        "lat": 51.936284,
+        "lon": 8.8791526,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Detmold",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Aalen|ostalbkreis: fahrzeugbrand",
+    "status": "out",
+    "title": "Ostalbkreis: Fahrzeugbrand",
+    "link": "https://www.presseportal.de/blaulicht/pm/110969/6364353",
+    "first": "2026-10-04T10:40:30Z",
+    "last": "2026-10-04T10:40:30Z",
+    "places": [
+      {
+        "name": "Ostalbkreis",
+        "lat": 48.8777738,
+        "lon": 10.0337317,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Mülheim an der Ruhr|rauchmelder und feuerschein in speldorf - feuerwehr löscht zimmerbrand",
     "status": "out",
     "title": "Rauchmelder und Feuerschein in Speldorf - Feuerwehr löscht Zimmerbrand",
     "link": "https://www.presseportal.de/blaulicht/pm/115880/6364272",
     "first": "2026-10-04T08:06:04Z",
     "last": "2026-10-04T08:06:04Z",
+    "veg": false,
+    "source": "Feuerwehr Mülheim an der Ruhr",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Mülheim an der Ruhr",
@@ -13,11 +97,7 @@
         "lon": 6.8829192,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Mülheim an der Ruhr",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Wuppertal|kellerbrand in der schimmelsburg",
@@ -4865,72 +4945,6 @@
         "name": "Walldorf",
         "lat": 49.3032669,
         "lon": 8.6432056,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(gp) hohenstadt/a8 - auto in flammen / am donnerstag rückte die feuerwehr zu einem fahrzeugbrand auf der a8 bei hohenstadt aus.",
-    "status": "out",
-    "title": "(GP) Hohenstadt/A8 - Auto in Flammen / Am Donnerstag rückte die Feuerwehr zu einem Fahrzeugbrand auf der A8 bei Hohenstadt aus.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6345734",
-    "first": "2026-09-04T12:29:01Z",
-    "last": "2026-09-04T12:29:01Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Hohenstadt",
-        "lat": 48.544391,
-        "lon": 9.6635527,
-        "approx": false
-      },
-      {
-        "name": "zwischen Merklingen und Hohenstadt",
-        "lat": 48.52725,
-        "lon": 9.70966,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(gp) göppingen - feuer bei unkrautvernichtung / am donnerstag geriet bei göppingen eine holzwand in brand.",
-    "status": "out",
-    "title": "(GP) Göppingen - Feuer bei Unkrautvernichtung / Am Donnerstag geriet bei Göppingen eine Holzwand in Brand.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6345688",
-    "first": "2026-09-04T11:54:13Z",
-    "last": "2026-09-04T11:54:13Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Göppingen",
-        "lat": 48.7031377,
-        "lon": 9.6541116,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Heilbronn|hohenlohekreis: fahrzeugbrand",
-    "status": "active",
-    "title": "Hohenlohekreis: Fahrzeugbrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110971/6345527",
-    "first": "2026-09-04T09:59:40Z",
-    "last": "2026-09-04T09:59:40Z",
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Hohenlohekreis",
-        "lat": 49.2725125,
-        "lon": 9.6057331,
         "approx": false
       }
     ]
