@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/122045/6364487",
     "first": "2026-10-04T20:25:37Z",
     "last": "2026-10-04T20:25:37Z",
+    "veg": false,
+    "source": "Feuerwehr Neuss",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Neuss",
@@ -13,11 +17,7 @@
         "lon": 6.6916476,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Neuss",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Düsseldorf|rauchentwicklung in serverraum frühzeitig erkannt - feuerwehr verhinderte ausbreitung",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115876/6364486",
     "first": "2026-10-04T20:25:03Z",
     "last": "2026-10-04T20:25:03Z",
+    "veg": false,
+    "source": "Feuerwehr Düsseldorf",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Düsseldorf",
@@ -33,11 +37,7 @@
         "lon": 6.7763137,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Düsseldorf",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Detmold|rauchwarnmelder macht nachbarn auf angebranntes kochgut aufmerksam",
@@ -46,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/116239/6364485",
     "first": "2026-10-04T20:07:00Z",
     "last": "2026-10-04T20:07:00Z",
+    "veg": false,
+    "source": "Feuerwehr Detmold",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Detmold",
@@ -53,11 +57,7 @@
         "lon": 8.8791526,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Detmold",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Niederkrüchten|feuerwehr löscht dachstuhlbrand in niederkrüchten / brand beschädigt zwei haushälften, verletzt wurde niemand",
@@ -4845,26 +4845,6 @@
         "name": "Mannheim",
         "lat": 49.4892913,
         "lon": 8.4673098,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Mönchengladbach|gartenlaube in vollbrand",
-    "status": "out",
-    "title": "Gartenlaube in Vollbrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/115879/6346012",
-    "first": "2026-09-05T00:14:46Z",
-    "last": "2026-09-05T00:14:46Z",
-    "veg": false,
-    "source": "Feuerwehr Mönchengladbach",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Mönchengladbach",
-        "lat": 51.1947131,
-        "lon": 6.4353792,
         "approx": false
       }
     ]
