@@ -4830,26 +4830,6 @@
     ]
   },
   {
-    "base": "Polizeipräsidium Mannheim|mannheim: brand in wohnhaus - pm 2",
-    "status": "out",
-    "title": "Mannheim: Brand in Wohnhaus - PM 2",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6346021",
-    "first": "2026-09-05T01:21:15Z",
-    "last": "2026-09-05T01:21:15Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Mannheim",
-        "lat": 49.4892913,
-        "lon": 8.4673098,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Polizei Duisburg|wanheimerort: brand eines altkleidercontainers - zeugensuche",
     "status": "active",
     "title": "Wanheimerort: Brand eines Altkleidercontainers - Zeugensuche",
