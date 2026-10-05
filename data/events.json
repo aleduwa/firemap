@@ -1,5 +1,91 @@
 [
   {
+    "base": "Freiwillige Feuerwehr der Stadt Goch|feuerwehr goch: reihenhaus nach kellerbrand unbewohnbar",
+    "status": "active",
+    "title": "Feuerwehr Goch: Reihenhaus nach Kellerbrand unbewohnbar",
+    "link": "https://www.presseportal.de/blaulicht/pm/126714/6365348",
+    "first": "2026-10-05T16:08:00Z",
+    "last": "2026-10-05T16:08:00Z",
+    "places": [
+      {
+        "name": "Goch",
+        "lat": 51.6755765,
+        "lon": 6.1593045,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Freiwillige Feuerwehr der Stadt Goch",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Düsseldorf|brandmeldeanlage erkennt brand frühzeitig - feuer schnell gelöscht, aufwendige lüftungsmaßnahmen, keine verletzten",
+    "status": "out",
+    "title": "Brandmeldeanlage erkennt Brand frühzeitig - Feuer schnell gelöscht, aufwendige Lüftungsmaßnahmen, keine Verletzten",
+    "link": "https://www.presseportal.de/blaulicht/pm/115876/6365315",
+    "first": "2026-10-05T15:37:14Z",
+    "last": "2026-10-05T15:37:14Z",
+    "places": [
+      {
+        "name": "Düsseldorf",
+        "lat": 51.2254018,
+        "lon": 6.7763137,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Düsseldorf",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Pforzheim|(pf) pforzheim - brand in der pforzheimer innenstadt fordert einsatzkräfte",
+    "status": "active",
+    "title": "(PF) Pforzheim - Brand in der Pforzheimer Innenstadt fordert Einsatzkräfte",
+    "link": "https://www.presseportal.de/blaulicht/pm/137462/6365277",
+    "first": "2026-10-05T15:10:03Z",
+    "last": "2026-10-05T15:10:03Z",
+    "places": [
+      {
+        "name": "Pforzheim",
+        "lat": 48.890934,
+        "lon": 8.7025509,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Pforzheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Ludwigsburg|ditzingen - brand einer gartenhütte",
+    "status": "out",
+    "title": "Ditzingen - Brand einer Gartenhütte",
+    "link": "https://www.presseportal.de/blaulicht/pm/110974/6365255",
+    "first": "2026-10-05T14:55:51Z",
+    "last": "2026-10-05T14:55:51Z",
+    "places": [
+      {
+        "name": "Ditzingen",
+        "lat": 48.8263983,
+        "lon": 9.0658446,
+        "approx": false
+      },
+      {
+        "name": "zwischen Schöckingen und Hemmingen",
+        "lat": 48.85503,
+        "lon": 9.03159,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ludwigsburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Neuss|brennende phosphor-brandbombe am rheinufer | niedrigwasser sorgte für entzündung",
     "status": "active",
     "title": "Brennende Phosphor-Brandbombe am Rheinufer | Niedrigwasser sorgte für Entzündung",
@@ -4785,46 +4871,6 @@
         "name": "Konstanz",
         "lat": 47.659216,
         "lon": 9.1750718,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Kreispolizeibehörde Viersen|schwalmtal: unfall auf der go-kart-bahn - kind erleidet verbrennungen",
-    "status": "active",
-    "title": "Schwalmtal: Unfall auf der Go-Kart-Bahn - Kind erleidet Verbrennungen",
-    "link": "https://www.presseportal.de/blaulicht/pm/65857/6346127",
-    "first": "2026-09-05T14:36:46Z",
-    "last": "2026-09-05T14:36:46Z",
-    "veg": false,
-    "source": "Kreispolizeibehörde Viersen",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Schwalmtal",
-        "lat": 51.22727,
-        "lon": 6.270687,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Krefeld|wohnungsbrand in krefelder innenstadt",
-    "status": "active",
-    "title": "Wohnungsbrand in Krefelder Innenstadt",
-    "link": "https://www.presseportal.de/blaulicht/pm/115878/6346106",
-    "first": "2026-09-05T12:04:33Z",
-    "last": "2026-09-05T12:04:33Z",
-    "veg": false,
-    "source": "Feuerwehr Krefeld",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Krefeld",
-        "lat": 51.3331205,
-        "lon": 6.5623343,
         "approx": false
       }
     ]
