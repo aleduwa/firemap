@@ -1,51 +1,11 @@
 [
   {
-    "base": "Freiwillige Feuerwehr der Stadt Goch|feuerwehr goch: reihenhaus nach kellerbrand unbewohnbar",
-    "status": "active",
-    "title": "Feuerwehr Goch: Reihenhaus nach Kellerbrand unbewohnbar",
-    "link": "https://www.presseportal.de/blaulicht/pm/126714/6365348",
-    "first": "2026-10-05T16:08:00Z",
-    "last": "2026-10-05T16:08:00Z",
-    "places": [
-      {
-        "name": "Goch",
-        "lat": 51.6755765,
-        "lon": 6.1593045,
-        "approx": false
-      }
-    ],
-    "veg": false,
-    "source": "Freiwillige Feuerwehr der Stadt Goch",
-    "region": "NRW",
-    "updates": 0
-  },
-  {
-    "base": "Feuerwehr Düsseldorf|brandmeldeanlage erkennt brand frühzeitig - feuer schnell gelöscht, aufwendige lüftungsmaßnahmen, keine verletzten",
+    "base": "Feuerwehr Pforzheim|brand in verkaufsstätte",
     "status": "out",
-    "title": "Brandmeldeanlage erkennt Brand frühzeitig - Feuer schnell gelöscht, aufwendige Lüftungsmaßnahmen, keine Verletzten",
-    "link": "https://www.presseportal.de/blaulicht/pm/115876/6365315",
-    "first": "2026-10-05T15:37:14Z",
-    "last": "2026-10-05T15:37:14Z",
-    "places": [
-      {
-        "name": "Düsseldorf",
-        "lat": 51.2254018,
-        "lon": 6.7763137,
-        "approx": false
-      }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Düsseldorf",
-    "region": "NRW",
-    "updates": 0
-  },
-  {
-    "base": "Polizeipräsidium Pforzheim|(pf) pforzheim - brand in der pforzheimer innenstadt fordert einsatzkräfte",
-    "status": "active",
-    "title": "(PF) Pforzheim - Brand in der Pforzheimer Innenstadt fordert Einsatzkräfte",
-    "link": "https://www.presseportal.de/blaulicht/pm/137462/6365277",
-    "first": "2026-10-05T15:10:03Z",
-    "last": "2026-10-05T15:10:03Z",
+    "title": "Brand in Verkaufsstätte",
+    "link": "https://www.presseportal.de/blaulicht/pm/151867/6365368",
+    "first": "2026-10-05T17:04:49Z",
+    "last": "2026-10-05T17:04:49Z",
     "places": [
       {
         "name": "Pforzheim",
@@ -55,9 +15,69 @@
       }
     ],
     "veg": false,
-    "source": "Polizeipräsidium Pforzheim",
+    "source": "Feuerwehr Pforzheim",
     "region": "BW",
     "updates": 0
+  },
+  {
+    "base": "Freiwillige Feuerwehr der Stadt Goch|feuerwehr goch: reihenhaus nach kellerbrand unbewohnbar",
+    "status": "active",
+    "title": "Feuerwehr Goch: Reihenhaus nach Kellerbrand unbewohnbar",
+    "link": "https://www.presseportal.de/blaulicht/pm/126714/6365348",
+    "first": "2026-10-05T16:08:00Z",
+    "last": "2026-10-05T16:08:00Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr der Stadt Goch",
+    "updates": 0,
+    "region": "NRW",
+    "places": [
+      {
+        "name": "Goch",
+        "lat": 51.6755765,
+        "lon": 6.1593045,
+        "approx": false
+      }
+    ]
+  },
+  {
+    "base": "Feuerwehr Düsseldorf|brandmeldeanlage erkennt brand frühzeitig - feuer schnell gelöscht, aufwendige lüftungsmaßnahmen, keine verletzten",
+    "status": "out",
+    "title": "Brandmeldeanlage erkennt Brand frühzeitig - Feuer schnell gelöscht, aufwendige Lüftungsmaßnahmen, keine Verletzten",
+    "link": "https://www.presseportal.de/blaulicht/pm/115876/6365315",
+    "first": "2026-10-05T15:37:14Z",
+    "last": "2026-10-05T15:37:14Z",
+    "veg": false,
+    "source": "Feuerwehr Düsseldorf",
+    "updates": 0,
+    "region": "NRW",
+    "places": [
+      {
+        "name": "Düsseldorf",
+        "lat": 51.2254018,
+        "lon": 6.7763137,
+        "approx": false
+      }
+    ]
+  },
+  {
+    "base": "Polizeipräsidium Pforzheim|(pf) pforzheim - brand in der pforzheimer innenstadt fordert einsatzkräfte",
+    "status": "active",
+    "title": "(PF) Pforzheim - Brand in der Pforzheimer Innenstadt fordert Einsatzkräfte",
+    "link": "https://www.presseportal.de/blaulicht/pm/137462/6365277",
+    "first": "2026-10-05T15:10:03Z",
+    "last": "2026-10-05T15:10:03Z",
+    "veg": false,
+    "source": "Polizeipräsidium Pforzheim",
+    "updates": 0,
+    "region": "BW",
+    "places": [
+      {
+        "name": "Pforzheim",
+        "lat": 48.890934,
+        "lon": 8.7025509,
+        "approx": false
+      }
+    ]
   },
   {
     "base": "Polizeipräsidium Ludwigsburg|ditzingen - brand einer gartenhütte",
@@ -66,6 +86,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110974/6365255",
     "first": "2026-10-05T14:55:51Z",
     "last": "2026-10-05T14:55:51Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ludwigsburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ditzingen",
@@ -79,11 +103,7 @@
         "lon": 9.03159,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Neuss|brennende phosphor-brandbombe am rheinufer | niedrigwasser sorgte für entzündung",
@@ -4811,66 +4831,6 @@
         "name": "Mannheim",
         "lat": 49.4892913,
         "lon": 8.4673098,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|mannheim: brand in wohnhaus, pm 1",
-    "status": "active",
-    "title": "Mannheim: Brand in Wohnhaus, PM 1",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6346161",
-    "first": "2026-09-05T21:33:42Z",
-    "last": "2026-09-05T21:33:42Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Mannheim",
-        "lat": 49.4892913,
-        "lon": 8.4673098,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Düsseldorf|wohnungsbrand in unterbilk - feuerwehr verhindert brandausbreitung, ein mensch verstorben",
-    "status": "contained",
-    "title": "Wohnungsbrand in Unterbilk - Feuerwehr verhindert Brandausbreitung, ein Mensch verstorben",
-    "link": "https://www.presseportal.de/blaulicht/pm/115876/6346152",
-    "first": "2026-09-05T19:27:14Z",
-    "last": "2026-09-05T19:27:14Z",
-    "veg": false,
-    "source": "Feuerwehr Düsseldorf",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Düsseldorf",
-        "lat": 51.2254018,
-        "lon": 6.7763137,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Konstanz|brand einer lüftungsanlage in einem gastronomiebetrieb",
-    "status": "contained",
-    "title": "Brand einer Lüftungsanlage in einem Gastronomiebetrieb",
-    "link": "https://www.presseportal.de/blaulicht/pm/139089/6346131",
-    "first": "2026-09-05T15:30:01Z",
-    "last": "2026-09-05T15:30:01Z",
-    "veg": false,
-    "source": "Feuerwehr Konstanz",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Konstanz",
-        "lat": 47.659216,
-        "lon": 9.1750718,
         "approx": false
       }
     ]
