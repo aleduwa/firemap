@@ -1,5 +1,25 @@
 [
   {
+    "base": "Polizeipräsidium Offenburg|gaggenau - feueralarm missbräuchlich ausgelöst - hinweise erbeten",
+    "status": "active",
+    "title": "Gaggenau - Feueralarm missbräuchlich ausgelöst - Hinweise erbeten",
+    "link": "https://www.presseportal.de/blaulicht/pm/110975/6365653",
+    "first": "2026-10-06T10:23:09Z",
+    "last": "2026-10-06T10:23:09Z",
+    "places": [
+      {
+        "name": "Gaggenau",
+        "lat": 48.8030291,
+        "lon": 8.3201799,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Offenburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Pforzheim|brand in verkaufsstätte",
     "status": "out",
     "title": "Brand in Verkaufsstätte",
@@ -4791,46 +4811,6 @@
         "name": "Xanten",
         "lat": 51.661519,
         "lon": 6.4543203,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Mönchengladbach|kellerbrand mit starker rauchentwicklung - zwei personen gerettet",
-    "status": "out",
-    "title": "Kellerbrand mit starker Rauchentwicklung - zwei Personen gerettet",
-    "link": "https://www.presseportal.de/blaulicht/pm/115879/6346198",
-    "first": "2026-09-06T07:20:57Z",
-    "last": "2026-09-06T07:20:57Z",
-    "veg": false,
-    "source": "Feuerwehr Mönchengladbach",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Mönchengladbach",
-        "lat": 51.1947131,
-        "lon": 6.4353792,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|mannheim: brand in wohnhaus, pm 2",
-    "status": "active",
-    "title": "Mannheim: Brand in Wohnhaus, PM 2",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6346175",
-    "first": "2026-09-06T02:46:07Z",
-    "last": "2026-09-06T02:46:07Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Mannheim",
-        "lat": 49.4892913,
-        "lon": 8.4673098,
         "approx": false
       }
     ]
