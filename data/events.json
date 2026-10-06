@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/151867/6365368",
     "first": "2026-10-05T17:04:49Z",
     "last": "2026-10-05T17:04:49Z",
+    "veg": false,
+    "source": "Feuerwehr Pforzheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Pforzheim",
@@ -13,11 +17,7 @@
         "lon": 8.7025509,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Pforzheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr der Stadt Goch|feuerwehr goch: reihenhaus nach kellerbrand unbewohnbar",
