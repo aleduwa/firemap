@@ -1,31 +1,11 @@
 [
   {
-    "base": "Polizei Köln|261006-2-k/ac/bab aktueller einsatz - schwerer verkehrsunfall auf der bab 44 - richtungsfahrbahn lüttich ab aachen-brand gesperrt",
-    "status": "active",
-    "title": "261006-2-K/AC/BAB Aktueller Einsatz - Schwerer Verkehrsunfall auf der BAB 44 - Richtungsfahrbahn Lüttich ab Aachen-Brand gesperrt",
-    "link": "https://www.presseportal.de/blaulicht/pm/12415/6366177",
-    "first": "2026-10-06T17:32:22Z",
-    "last": "2026-10-06T17:32:22Z",
-    "places": [
-      {
-        "name": "AC",
-        "lat": 50.765826,
-        "lon": 6.147262,
-        "approx": false
-      }
-    ],
-    "veg": false,
-    "source": "Polizei Köln",
-    "region": "NRW",
-    "updates": 0
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|brühl/rhein-neckar-kreis: fahrzeugbrand - feuerwehr im einsatz - pressemeldung nr. 1",
-    "status": "active",
-    "title": "Brühl/Rhein-Neckar-Kreis: Fahrzeugbrand - Feuerwehr im Einsatz - Pressemeldung Nr. 1",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6366162",
-    "first": "2026-10-06T16:44:16Z",
-    "last": "2026-10-06T16:44:16Z",
+    "base": "Polizeipräsidium Mannheim|brühl/rhein-neckar-kreis: fahrzeugbrand - feuerwehr im einsatz - pressemeldung nr. 2",
+    "status": "out",
+    "title": "Brühl/Rhein-Neckar-Kreis: Fahrzeugbrand - Feuerwehr im Einsatz - Pressemeldung Nr. 2",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6366201",
+    "first": "2026-10-06T20:11:05Z",
+    "last": "2026-10-06T20:11:05Z",
     "places": [
       {
         "name": "Brühl",
@@ -46,12 +26,102 @@
     "updates": 0
   },
   {
+    "base": "Feuerwehr Witten|folgemeldung gebäudebrand crengeldanzstraße",
+    "status": "active",
+    "title": "Folgemeldung Gebäudebrand Crengeldanzstraße",
+    "link": "https://www.presseportal.de/blaulicht/pm/120429/6366198",
+    "first": "2026-10-06T19:46:48Z",
+    "last": "2026-10-06T19:46:48Z",
+    "places": [
+      {
+        "name": "Witten",
+        "lat": 51.4370171,
+        "lon": 7.335124,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Witten",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Witten|gebäudebrand an der crengeldanzstraße in witten",
+    "status": "active",
+    "title": "Gebäudebrand an der Crengeldanzstraße in Witten",
+    "link": "https://www.presseportal.de/blaulicht/pm/120429/6366183",
+    "first": "2026-10-06T17:59:53Z",
+    "last": "2026-10-06T17:59:53Z",
+    "places": [
+      {
+        "name": "Witten",
+        "lat": 51.4370171,
+        "lon": 7.335124,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Witten",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizei Köln|261006-2-k/ac/bab aktueller einsatz - schwerer verkehrsunfall auf der bab 44 - richtungsfahrbahn lüttich ab aachen-brand gesperrt",
+    "status": "active",
+    "title": "261006-2-K/AC/BAB Aktueller Einsatz - Schwerer Verkehrsunfall auf der BAB 44 - Richtungsfahrbahn Lüttich ab Aachen-Brand gesperrt",
+    "link": "https://www.presseportal.de/blaulicht/pm/12415/6366177",
+    "first": "2026-10-06T17:32:22Z",
+    "last": "2026-10-06T17:32:22Z",
+    "veg": false,
+    "source": "Polizei Köln",
+    "updates": 0,
+    "region": "NRW",
+    "places": [
+      {
+        "name": "AC",
+        "lat": 50.765826,
+        "lon": 6.147262,
+        "approx": false
+      }
+    ]
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|brühl/rhein-neckar-kreis: fahrzeugbrand - feuerwehr im einsatz - pressemeldung nr. 1",
+    "status": "active",
+    "title": "Brühl/Rhein-Neckar-Kreis: Fahrzeugbrand - Feuerwehr im Einsatz - Pressemeldung Nr. 1",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6366162",
+    "first": "2026-10-06T16:44:16Z",
+    "last": "2026-10-06T16:44:16Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
+    "places": [
+      {
+        "name": "Brühl",
+        "lat": 49.3953536,
+        "lon": 8.5340405,
+        "approx": false
+      },
+      {
+        "name": "Rhein-Neckar-Kreis",
+        "lat": 49.3684797,
+        "lon": 8.7352403,
+        "approx": false
+      }
+    ]
+  },
+  {
     "base": "Polizeipräsidium Mannheim|mannheim: mögliche brandstiftung - zeugenaufruf",
     "status": "active",
     "title": "Mannheim: Mögliche Brandstiftung - Zeugenaufruf",
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6366083",
     "first": "2026-10-06T15:02:43Z",
     "last": "2026-10-06T15:02:43Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Mannheim",
@@ -59,11 +129,7 @@
         "lon": 8.4673098,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Offenburg|gaggenau - feueralarm missbräuchlich ausgelöst - hinweise erbeten",
