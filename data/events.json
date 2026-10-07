@@ -1,5 +1,25 @@
 [
   {
+    "base": "Feuerwehr Ennepetal|brennende mülltonne",
+    "status": "out",
+    "title": "Brennende Mülltonne",
+    "link": "https://www.presseportal.de/blaulicht/pm/69780/6366229",
+    "first": "2026-10-07T06:20:19Z",
+    "last": "2026-10-07T06:20:19Z",
+    "places": [
+      {
+        "name": "Ennepetal",
+        "lat": 51.2967192,
+        "lon": 7.3693335,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Ennepetal",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Mannheim|brühl/rhein-neckar-kreis: fahrzeugbrand - feuerwehr im einsatz - pressemeldung nr. 2",
     "status": "out",
     "title": "Brühl/Rhein-Neckar-Kreis: Fahrzeugbrand - Feuerwehr im Einsatz - Pressemeldung Nr. 2",
@@ -4863,46 +4883,6 @@
         "name": "Mönchengladbach",
         "lat": 51.1947131,
         "lon": 6.4353792,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Heilbronn|landkreis heilbronn/schwaigern: heuballenbrand",
-    "status": "active",
-    "title": "Landkreis Heilbronn/Schwaigern: Heuballenbrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110971/6346472",
-    "first": "2026-09-07T04:12:31Z",
-    "last": "2026-09-07T04:12:31Z",
-    "veg": true,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Schwaigern",
-        "lat": 49.1414205,
-        "lon": 9.0571085,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr und Rettungsdienst Bonn|feuer in patientenzimmer der lvr-klinik bonn - feuerwehr verhindert ausbreitung des brandes",
-    "status": "contained",
-    "title": "Feuer in Patientenzimmer der LVR-Klinik Bonn - Feuerwehr verhindert Ausbreitung des Brandes",
-    "link": "https://www.presseportal.de/blaulicht/pm/115888/6346467",
-    "first": "2026-09-07T00:41:13Z",
-    "last": "2026-09-07T00:41:13Z",
-    "veg": false,
-    "source": "Feuerwehr und Rettungsdienst Bonn",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Bonn",
-        "lat": 50.7352621,
-        "lon": 7.1024635,
         "approx": false
       }
     ]
