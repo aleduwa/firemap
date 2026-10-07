@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-06T11:51:20.277Z",
+ "generated": "2026-10-07T11:43:13.550Z",
  "window": [
-  "2026-10-06",
-  "2027-01-04"
+  "2026-10-07",
+  "2027-01-05"
  ],
  "warnings": [
   "ZweiTälerLand tPortal (TOMAS): Ergebnisliste leer (Suche liefert serverseitig aktuell keine Treffer).",
@@ -10,10 +10,11 @@
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569506.8.-oktober-2026%2C-…: page.goto: Timeout 60000ms exceeded.",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569471.8.-oktober-2026-rei…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569471.8.-oktober-2026-reise-durch-das-reich-der-pilze-in-emmendingen---koestlichkeiten-aus-dem-unterholz---kochworkshop-am-landwirtschaftlichen-bildungszentrum-emmendingen-hochburg--.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569800.9.-oktober-2026-les…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569800.9.-oktober-2026-lesezeit-fuer-kinder-unterwegs-in-freiamt---team-der-glaesernen-buecherei-laedt-ein.html",
-  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568438.1.-voerstetter-ladi…: page.goto: Timeout 60000ms exceeded.",
+  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568438.1.-voerstetter-ladi…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.568438.1.-voerstetter-ladies-night-flohmarkt-am-freitag%2C-9.-oktober-2026-.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569122.10.-oktober-2026-wo…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569122.10.-oktober-2026-wollbasar-fuer-den-guten-zweck-in-riegel---gruppe-nadelwerkeln-in-der-spitalstrasse-38-laedt-ein-.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569450.10.-oktober-2026-so…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569450.10.-oktober-2026-so-bunt-wie-das-leben-in-denzlingen---hospizgruppe-oeffnet-am-welthospiztag-ihre-tueren---begegnungen%2C-mitmachaktionen-und-gemeinsamer-charta-unterzeichnung-der-buergermeister--.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569449.10.-oktober-2026-st…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569449.10.-oktober-2026-stiftung-bruecke-feiert-25-jaehriges-jubilaeum-in-emmendingen---hilfe-zur-selbsthilfe-auf-augenhoehe.html",
+  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569858.11.-oktober-2026-ex…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569858.11.-oktober-2026-exklusive-einblicke-in-die-zugleitstelle-in-endingen-und-in-einen-elektrobus---sweg-beteiligt-sich-an-der-gewerbeschau-endingen-zeigt-flagge.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568106.13.-oktober-2026--s…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.568106.13.-oktober-2026--sanierungssprint---energetisch-modernisieren-in-22-tagen--in-denzlingen---kostenfreies-info-event-fuer-hauseigentuemer-sowie-sanierungsinteressierte-.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569498.15.-oktober-2026-ta…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569498.15.-oktober-2026-tag-der-offenen-tuer-von-15-bis-17-uhr--waldorfkindergarten-rosenhag%2C-nelkenweg-11%2C-emmendingen.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569817.16.-oktober-2026-ak…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569817.16.-oktober-2026-aktionstag-schulterschluss---mit-power-in-den-alltag%2C-staerke-und-gemeinschaft-erleben-in-emmendingen---veranstaltung-im-jugendzentrum-.html",
@@ -34,8 +35,7 @@
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569825.24.-oktober-2026-be…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569825.24.-oktober-2026-belgische-biere-in-bad-krozingen---biertasting-im-einladenden-ambiente-des-vita-culinaria.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568170.27.-november-2026-k…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.568170.27.-november-2026-kulinarisches-weinerlebnis-im-weingut-fritz-wassmer-in-bad-krozingen-schlatt---genussvoller-auftakt-in-die-adventszeit.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568464.28.-november-2026-e…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.568464.28.-november-2026-erste-hilfe-bei-kindernotfaellen-in-ebringen--malteser-bieten-praxisnahen-kurs-fuer-eltern%2C-grosseltern-und-babysitter-an.html",
-  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/vorschau-anmeldungen/index.news.569814.html…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/vorschau-anmeldungen/index.news.569814.html",
-  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.569503.html…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.569503.html"
+  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/tipps-der-woche/index.news.569845.html…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/tipps-der-woche/index.news.569845.html"
  ],
  "events": [
   {
@@ -127,11 +127,27 @@
    "source": "RegioTrends"
   },
   {
+   "title": "Exklusive Einblicke in die Zugleitstelle in Endingen und in einen Elektrobus - SWEG beteiligt sich an der Gewerbeschau „Endingen zeigt Flagge“",
+   "start": "2026-10-11",
+   "place": "Endingen",
+   "address": "Endingen, Deutschland",
+   "url": "https://www.regiotrends.de/de/regiotermine/index.news.569858.11.-oktober-2026-exklusive-einblicke-in-die-zugleitstelle-in-endingen-und-in-einen-elektrobus---sweg-beteiligt-sich-an-der-gewerbeschau-endingen-zeigt-flagge.html",
+   "source": "RegioTrends"
+  },
+  {
    "title": "Herbstfest der Feuerwehr Herbolzheim am 11.10.2026 mit Tag der offenen Tür",
    "start": "2026-10-11T11:00",
    "place": "Herbolzheim",
    "address": "Herbolzheim, Deutschland",
    "url": "https://www.regiotrends.de/de/regiotermine/index.news.569364.herbstfest-der-feuerwehr-herbolzheim-am-11.10.2026-mit-tag-der-offenen-tuer.html",
+   "source": "RegioTrends"
+  },
+  {
+   "title": "Tanztreff mit Gottfried Schill in Riegel - Veranstaltung im Bürgerhaus (Hauptstraße 12)",
+   "start": "2026-10-13T17:00",
+   "place": "Riegel",
+   "address": "Riegel, Deutschland",
+   "url": "https://www.regiotrends.de/de/regiotermine/index.news.569868.13.-oktober-2026-tanztreff-mit-gottfried-schill-in-riegel---veranstaltung-im-buergerhaus-hauptstrasse-12-.html",
    "source": "RegioTrends"
   },
   {
@@ -335,6 +351,14 @@
    "source": "RegioTrends"
   },
   {
+   "title": "25. Vita Classica Jubiläumsball in Bad Krozingen - 115 Jahre Mineral-Thermalwasser - Die Kur und Bäder GmbH bittet zum Tanz!",
+   "start": "2026-10-24T20:00",
+   "place": "Hochschwarzwald - Bad Krozingen",
+   "address": "Hochschwarzwald - Bad Krozingen, Deutschland",
+   "url": "https://www.regiotrends.de/de/regiotermine/index.news.569857.24.-oktober-2026-25.-vita-classica-jubilaeumsball-in-bad-krozingen---115-jahre-mineral-thermalwasser---die-kur-und-baeder-gmbh-bittet-zum-tanz%21.html",
+   "source": "RegioTrends"
+  },
+  {
    "title": "„Belgische Biere“ in Bad Krozingen - Biertasting im einladenden Ambiente des Vita Culinaria",
    "start": "2026-10-24",
    "place": "Hochschwarzwald - Bad Krozingen",
@@ -359,6 +383,56 @@
    "source": "RegioTrends"
   },
   {
+   "title": "Räumugsverkauf wegen Wasserschaden vom 02. bis 13.10.2026 - StudioK in Elzach",
+   "start": "2026-10-13",
+   "place": "Trends - Aktionen",
+   "address": "Trends - Aktionen, Deutschland",
+   "url": "https://www.regiotrends.de/de/tipps-der-woche/index.news.569845.html",
+   "source": "RegioTrends"
+  },
+  {
+   "title": "18. Oktober bis 1. November 2026: „ArMut verstehen - Geschichten aus Waldkirch“ - Ausstellung in der evangelische Kirche",
+   "start": "2026-10-18",
+   "place": "Städte und Gemeinden",
+   "address": "Städte und Gemeinden, Deutschland",
+   "url": "https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.569911.html",
+   "source": "RegioTrends"
+  },
+  {
+   "title": "Einsteigen, staunen und mitmachen in Waldkirch - Bilderbuchkino in der Mediathek",
+   "start": "2026-10-20",
+   "place": "Städte und Gemeinden",
+   "address": "Städte und Gemeinden, Deutschland",
+   "url": "https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.569907.html",
+   "source": "RegioTrends",
+   "end": "2026-10-22"
+  },
+  {
+   "title": "Quartiersfonds „Rotes Haus“ in Waldkirch fördert wieder Projekte - Bewerbungen sind bis 15. Oktober 2026 möglich",
+   "start": "2026-10-15",
+   "place": "Städte und Gemeinden",
+   "address": "Städte und Gemeinden, Deutschland",
+   "url": "https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.569906.html",
+   "source": "RegioTrends"
+  },
+  {
+   "title": "\"Einfach klar werden, was zu mir passt\" in Waldkirch - Antworten auf diese und viele weiteren Fragen gibt es bei der Job-Start-Börse 2026 - Veranstaltung in der Stadthalle",
+   "start": "2026-10-15",
+   "place": "Städte und Gemeinden",
+   "address": "Städte und Gemeinden, Deutschland",
+   "url": "https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.569902.html",
+   "source": "RegioTrends",
+   "end": "2026-10-16"
+  },
+  {
+   "title": "Letzte Gelegenheit: „Kindheit im Elztal“ noch bis 11. Oktober 2026 erleben - Sonderausstellung im Elztalmuseum neigt sich dem Ende entgegen",
+   "start": "2026-10-11",
+   "place": "Städte und Gemeinden",
+   "address": "Städte und Gemeinden, Deutschland",
+   "url": "https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.569898.html",
+   "source": "RegioTrends"
+  },
+  {
    "title": "Herbstwartung im Hugenwaldtunnel bei Waldkirch - Nächtliche Sperrungen - Umleitung ist entsprechend ausgeschildert",
    "start": "2026-10-19",
    "place": "Regionales",
@@ -366,14 +440,6 @@
    "url": "https://www.regiotrends.de/de/vorschau-anmeldungen/index.news.569814.html",
    "source": "RegioTrends",
    "end": "2026-10-23"
-  },
-  {
-   "title": "Mediathek Waldkirch lädt zur Gründung des Freundeskreises ein - Freundeskreis soll Mediathek künftig auf vielfältige Weise unterstützen",
-   "start": "2026-10-06T18:30",
-   "place": "Städte und Gemeinden",
-   "address": "Städte und Gemeinden, Deutschland",
-   "url": "https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.569505.html",
-   "source": "RegioTrends"
   },
   {
    "title": "„Zusammensammeln“ in Waldkirch - Säcke sowie Müllgreifer gibt Stadtverwaltung am Empfang des Bürgerservice ab 5. Oktober 2026 aus",
@@ -384,19 +450,11 @@
    "source": "RegioTrends"
   },
   {
-   "title": "Quartiersfonds „Rotes Haus“ in Waldkirch fördert wieder Projekte - Bewerbungen sind bis 15. Oktober 2026 möglich",
-   "start": "2026-10-15",
-   "place": "Städte und Gemeinden",
-   "address": "Städte und Gemeinden, Deutschland",
-   "url": "https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.569187.html",
-   "source": "RegioTrends"
-  },
-  {
-   "title": "Freundeskreis der Mediathek Waldkirch wird gegründet - Veranstaltung am Dienstag, 6. Oktober 2026, um 18.30 Uhr - Anmeldung bis Mittwoch, 30. September, möglich",
-   "start": "2026-10-06T18:30",
-   "place": "Städte und Gemeinden",
-   "address": "Städte und Gemeinden, Deutschland",
-   "url": "https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.568826.html",
+   "title": "Tag der Seelischen Gesundheit 2026 - Zentrum für Psychiatrie Emmendingen setzt sich mit verschiedenen Veranstaltungen und Aktionen für mehr Offenheit, Akzeptanz und Entstigmatisierung von Menschen mit psychischen Erkrankungen ein",
+   "start": "2026-10-10",
+   "place": "Regionales",
+   "address": "Regionales, Deutschland",
+   "url": "https://www.regiotrends.de/de/vorschau-anmeldungen/index.news.569895.html",
    "source": "RegioTrends"
   },
   {
@@ -423,15 +481,6 @@
    "url": "https://www.regiotrends.de/de/weiterbildung/index.news.569472.html",
    "source": "RegioTrends",
    "end": "2026-10-10"
-  },
-  {
-   "title": "Ausstellung im Rathausfoyer in Emmendingen zeigt Entwürfe für Festplatzbebauung - Modelle von 22 Planungsteams aus städtebaulichem Wettbewerb werden präsentiert",
-   "start": "2026-10-06",
-   "place": "Städte und Gemeinden",
-   "address": "Städte und Gemeinden, Deutschland",
-   "url": "https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.569435.html",
-   "source": "RegioTrends",
-   "end": "2026-10-16"
   },
   {
    "title": "Einladung zum 31. Emmendinger Wirtschaftsbankett - Gastredner ist Götz E. Rehn (Gründer und Geschäftsführer der Alnatura Produktions- und Handels GmbH)",
