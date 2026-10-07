@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6366201",
     "first": "2026-10-06T20:11:05Z",
     "last": "2026-10-06T20:11:05Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Brühl",
@@ -19,11 +23,7 @@
         "lon": 8.7352403,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Witten|folgemeldung gebäudebrand crengeldanzstraße",
@@ -32,6 +32,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/120429/6366198",
     "first": "2026-10-06T19:46:48Z",
     "last": "2026-10-06T19:46:48Z",
+    "veg": false,
+    "source": "Feuerwehr Witten",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Witten",
@@ -39,11 +43,7 @@
         "lon": 7.335124,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Witten",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Witten|gebäudebrand an der crengeldanzstraße in witten",
@@ -52,6 +52,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/120429/6366183",
     "first": "2026-10-06T17:59:53Z",
     "last": "2026-10-06T17:59:53Z",
+    "veg": false,
+    "source": "Feuerwehr Witten",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Witten",
@@ -59,11 +63,7 @@
         "lon": 7.335124,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Witten",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizei Köln|261006-2-k/ac/bab aktueller einsatz - schwerer verkehrsunfall auf der bab 44 - richtungsfahrbahn lüttich ab aachen-brand gesperrt",
