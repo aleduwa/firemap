@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/120429/6366944",
     "first": "2026-10-07T17:44:01Z",
     "last": "2026-10-07T17:44:01Z",
+    "veg": false,
+    "source": "Feuerwehr Witten",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Witten",
@@ -13,11 +17,7 @@
         "lon": 7.335124,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Witten",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ludwigsburg|leonberg: starke rauchentwicklung nach fahrzeugbrand",
@@ -4803,26 +4803,6 @@
         "name": "Ennepetal",
         "lat": 51.2967192,
         "lon": 7.3693335,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Dinslaken|gartenlaube durch feuer zerstört",
-    "status": "out",
-    "title": "Gartenlaube durch Feuer zerstört",
-    "link": "https://www.presseportal.de/blaulicht/pm/116534/6347392",
-    "first": "2026-09-07T21:37:51Z",
-    "last": "2026-09-07T21:37:51Z",
-    "veg": false,
-    "source": "Feuerwehr Dinslaken",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Dinslaken",
-        "lat": 51.5623618,
-        "lon": 6.7345106,
         "approx": false
       }
     ]
