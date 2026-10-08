@@ -1,11 +1,101 @@
 [
   {
+    "base": "Feuerwehr Heiligenhaus|lkw-brand auf der a44 - feuerwehr löscht brennende fahrerkabine",
+    "status": "out",
+    "title": "Lkw-Brand auf der A44 - Feuerwehr löscht brennende Fahrerkabine",
+    "link": "https://www.presseportal.de/blaulicht/pm/116231/6367739",
+    "first": "2026-10-08T19:02:44Z",
+    "last": "2026-10-08T19:02:44Z",
+    "places": [
+      {
+        "name": "Heiligenhaus",
+        "lat": 51.32658,
+        "lon": 6.9710401,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Heiligenhaus",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Mönchengladbach|rauchentwicklung in der zwischendecke",
+    "status": "active",
+    "title": "Rauchentwicklung in der Zwischendecke",
+    "link": "https://www.presseportal.de/blaulicht/pm/115879/6367735",
+    "first": "2026-10-08T18:19:32Z",
+    "last": "2026-10-08T18:19:32Z",
+    "places": [
+      {
+        "name": "Mönchengladbach",
+        "lat": 51.1947131,
+        "lon": 6.4353792,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Greven|feuerwehr zu einem zimmerbrand und zwei verkehrsunfällen gerufen.",
+    "status": "active",
+    "title": "Feuerwehr zu einem Zimmerbrand und zwei Verkehrsunfällen gerufen.",
+    "link": "https://www.presseportal.de/blaulicht/pm/178564/6367674",
+    "first": "2026-10-08T16:00:01Z",
+    "last": "2026-10-08T16:00:01Z",
+    "places": [
+      {
+        "name": "Greven",
+        "lat": 52.0929254,
+        "lon": 7.6120326,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Greven",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|klettgau / bühl: fahrzeugbrand",
+    "status": "active",
+    "title": "Klettgau / Bühl: Fahrzeugbrand",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6367643",
+    "first": "2026-10-08T15:39:07Z",
+    "last": "2026-10-08T15:39:07Z",
+    "places": [
+      {
+        "name": "Klettgau",
+        "lat": 47.635682,
+        "lon": 8.4089759,
+        "approx": false
+      },
+      {
+        "name": "Bühl",
+        "lat": 48.6945066,
+        "lon": 8.134423,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Aalen|rems-murr-kreis: kellerbrand und widerstand",
     "status": "contained",
     "title": "Rems-Murr-Kreis: Kellerbrand und Widerstand",
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6367562",
     "first": "2026-10-08T14:25:58Z",
     "last": "2026-10-08T14:25:58Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Rems-Murr-Kreis",
@@ -13,11 +103,7 @@
         "lon": 9.5037124,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizei Duisburg|neuenkamp: papier brannte im zimmer eines übergangswohnheimes",
@@ -26,6 +112,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/50510/6367510",
     "first": "2026-10-08T14:00:09Z",
     "last": "2026-10-08T14:00:09Z",
+    "veg": false,
+    "source": "Polizei Duisburg",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Neuenkamp",
@@ -33,11 +123,7 @@
         "lon": 6.7248367,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizei Duisburg",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Aalen|rems-murr-kreis: einbruch, diebstahl, brand und sachbeschädigung",
@@ -4797,52 +4883,6 @@
         "name": "Main-Tauber-Kreis",
         "lat": 49.5713631,
         "lon": 9.6999301,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Offenburg|hausach - maschinenbrand",
-    "status": "active",
-    "title": "Hausach - Maschinenbrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110975/6348091",
-    "first": "2026-09-08T14:55:51Z",
-    "last": "2026-09-08T14:55:51Z",
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Hausach",
-        "lat": 48.2836305,
-        "lon": 8.174972,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|albbruck/ schachen: flächenbrand sorgt für großeinsatz der feuerwehr - zeugensuche",
-    "status": "contained",
-    "title": "Albbruck/ Schachen: Flächenbrand sorgt für Großeinsatz der Feuerwehr - Zeugensuche",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6348069",
-    "first": "2026-09-08T14:39:37Z",
-    "last": "2026-09-08T14:39:37Z",
-    "veg": true,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Albbruck",
-        "lat": 47.5943254,
-        "lon": 8.1336893,
-        "approx": false
-      },
-      {
-        "name": "Schachen",
-        "lat": 47.724534,
-        "lon": 9.9569534,
         "approx": false
       }
     ]
