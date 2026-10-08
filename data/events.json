@@ -1,5 +1,45 @@
 [
   {
+    "base": "Polizeipräsidium Aalen|rems-murr-kreis: einbruch, diebstahl, brand und sachbeschädigung",
+    "status": "out",
+    "title": "Rems-Murr-Kreis: Einbruch, Diebstahl, Brand und Sachbeschädigung",
+    "link": "https://www.presseportal.de/blaulicht/pm/110969/6367040",
+    "first": "2026-10-08T07:33:36Z",
+    "last": "2026-10-08T07:33:36Z",
+    "places": [
+      {
+        "name": "Rems-Murr-Kreis",
+        "lat": 48.8966799,
+        "lon": 9.5037124,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Dinslaken|garagenbrand auf der hauerstraße",
+    "status": "out",
+    "title": "Garagenbrand auf der Hauerstraße",
+    "link": "https://www.presseportal.de/blaulicht/pm/116534/6367034",
+    "first": "2026-10-08T07:17:45Z",
+    "last": "2026-10-08T07:17:45Z",
+    "places": [
+      {
+        "name": "Dinslaken",
+        "lat": 51.5623618,
+        "lon": 6.7345106,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Dinslaken",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Witten|brand in wohngebäude",
     "status": "active",
     "title": "Brand in Wohngebäude",
