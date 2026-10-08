@@ -1,11 +1,11 @@
 [
   {
-    "base": "Polizeipräsidium Aalen|rems-murr-kreis: einbruch, diebstahl, brand und sachbeschädigung",
-    "status": "out",
-    "title": "Rems-Murr-Kreis: Einbruch, Diebstahl, Brand und Sachbeschädigung",
-    "link": "https://www.presseportal.de/blaulicht/pm/110969/6367040",
-    "first": "2026-10-08T07:33:36Z",
-    "last": "2026-10-08T07:33:36Z",
+    "base": "Polizeipräsidium Aalen|rems-murr-kreis: kellerbrand und widerstand",
+    "status": "contained",
+    "title": "Rems-Murr-Kreis: Kellerbrand und Widerstand",
+    "link": "https://www.presseportal.de/blaulicht/pm/110969/6367562",
+    "first": "2026-10-08T14:25:58Z",
+    "last": "2026-10-08T14:25:58Z",
     "places": [
       {
         "name": "Rems-Murr-Kreis",
@@ -20,12 +20,56 @@
     "updates": 0
   },
   {
+    "base": "Polizei Duisburg|neuenkamp: papier brannte im zimmer eines übergangswohnheimes",
+    "status": "out",
+    "title": "Neuenkamp: Papier brannte im Zimmer eines Übergangswohnheimes",
+    "link": "https://www.presseportal.de/blaulicht/pm/50510/6367510",
+    "first": "2026-10-08T14:00:09Z",
+    "last": "2026-10-08T14:00:09Z",
+    "places": [
+      {
+        "name": "Neuenkamp",
+        "lat": 51.4348531,
+        "lon": 6.7248367,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizei Duisburg",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Aalen|rems-murr-kreis: einbruch, diebstahl, brand und sachbeschädigung",
+    "status": "out",
+    "title": "Rems-Murr-Kreis: Einbruch, Diebstahl, Brand und Sachbeschädigung",
+    "link": "https://www.presseportal.de/blaulicht/pm/110969/6367040",
+    "first": "2026-10-08T07:33:36Z",
+    "last": "2026-10-08T07:33:36Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
+    "region": "BW",
+    "places": [
+      {
+        "name": "Rems-Murr-Kreis",
+        "lat": 48.8966799,
+        "lon": 9.5037124,
+        "approx": false
+      }
+    ]
+  },
+  {
     "base": "Feuerwehr Dinslaken|garagenbrand auf der hauerstraße",
     "status": "out",
     "title": "Garagenbrand auf der Hauerstraße",
     "link": "https://www.presseportal.de/blaulicht/pm/116534/6367034",
     "first": "2026-10-08T07:17:45Z",
     "last": "2026-10-08T07:17:45Z",
+    "veg": false,
+    "source": "Feuerwehr Dinslaken",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Dinslaken",
@@ -33,11 +77,7 @@
         "lon": 6.7345106,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Dinslaken",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Witten|brand in wohngebäude",
@@ -4803,46 +4843,6 @@
         "name": "Schachen",
         "lat": 47.724534,
         "lon": 9.9569534,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Bochum|wohnungsbrand in einem mehrfamilienhaus",
-    "status": "out",
-    "title": "Wohnungsbrand in einem Mehrfamilienhaus",
-    "link": "https://www.presseportal.de/blaulicht/pm/115868/6347433",
-    "first": "2026-09-08T07:02:07Z",
-    "last": "2026-09-08T07:02:07Z",
-    "veg": false,
-    "source": "Feuerwehr Bochum",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Bochum",
-        "lat": 51.4818111,
-        "lon": 7.2196635,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Ennepetal|brandeinsatz und brandmeldeanlage",
-    "status": "out",
-    "title": "Brandeinsatz und Brandmeldeanlage",
-    "link": "https://www.presseportal.de/blaulicht/pm/69780/6347412",
-    "first": "2026-09-08T06:30:53Z",
-    "last": "2026-09-08T06:30:53Z",
-    "veg": false,
-    "source": "Feuerwehr Ennepetal",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Ennepetal",
-        "lat": 51.2967192,
-        "lon": 7.3693335,
         "approx": false
       }
     ]
