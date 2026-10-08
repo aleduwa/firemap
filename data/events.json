@@ -1,11 +1,55 @@
 [
   {
+    "base": "Feuerwehr Wuppertal|wohnungsbrand in der nützenberger straße - aufwendige nachlöscharbeiten fordern feuerwehr",
+    "status": "contained",
+    "title": "Wohnungsbrand in der Nützenberger Straße - Aufwendige Nachlöscharbeiten fordern Feuerwehr",
+    "link": "https://www.presseportal.de/blaulicht/pm/115885/6367758",
+    "first": "2026-10-08T22:28:42Z",
+    "last": "2026-10-08T22:28:42Z",
+    "places": [
+      {
+        "name": "Wuppertal",
+        "lat": 51.264018,
+        "lon": 7.1780374,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Wuppertal",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Wuppertal|kellerbrand in mehrfamilienhaus - krankenwagenbesatzung evakuiert bewohner",
+    "status": "active",
+    "title": "Kellerbrand in Mehrfamilienhaus - Krankenwagenbesatzung evakuiert Bewohner",
+    "link": "https://www.presseportal.de/blaulicht/pm/115885/6367757",
+    "first": "2026-10-08T22:22:20Z",
+    "last": "2026-10-08T22:22:20Z",
+    "places": [
+      {
+        "name": "Wuppertal",
+        "lat": 51.264018,
+        "lon": 7.1780374,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Wuppertal",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Heiligenhaus|lkw-brand auf der a44 - feuerwehr löscht brennende fahrerkabine",
     "status": "out",
     "title": "Lkw-Brand auf der A44 - Feuerwehr löscht brennende Fahrerkabine",
     "link": "https://www.presseportal.de/blaulicht/pm/116231/6367739",
     "first": "2026-10-08T19:02:44Z",
     "last": "2026-10-08T19:02:44Z",
+    "veg": false,
+    "source": "Feuerwehr Heiligenhaus",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Heiligenhaus",
@@ -13,11 +57,7 @@
         "lon": 6.9710401,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Heiligenhaus",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Mönchengladbach|rauchentwicklung in der zwischendecke",
@@ -26,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115879/6367735",
     "first": "2026-10-08T18:19:32Z",
     "last": "2026-10-08T18:19:32Z",
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Mönchengladbach",
@@ -33,11 +77,7 @@
         "lon": 6.4353792,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Mönchengladbach",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Greven|feuerwehr zu einem zimmerbrand und zwei verkehrsunfällen gerufen.",
@@ -46,6 +86,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/178564/6367674",
     "first": "2026-10-08T16:00:01Z",
     "last": "2026-10-08T16:00:01Z",
+    "veg": false,
+    "source": "Feuerwehr Greven",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Greven",
@@ -53,11 +97,7 @@
         "lon": 7.6120326,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Greven",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|klettgau / bühl: fahrzeugbrand",
@@ -66,6 +106,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6367643",
     "first": "2026-10-08T15:39:07Z",
     "last": "2026-10-08T15:39:07Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Klettgau",
@@ -79,11 +123,7 @@
         "lon": 8.134423,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Aalen|rems-murr-kreis: kellerbrand und widerstand",
@@ -4823,46 +4863,6 @@
         "name": "Paderborn",
         "lat": 51.7177044,
         "lon": 8.752653,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Kreisfeuerwehrverband Landkreis Karlsruhe|scheunenbrand beschädigt angrenzendes wohnhaus",
-    "status": "contained",
-    "title": "Scheunenbrand beschädigt angrenzendes Wohnhaus",
-    "link": "https://www.presseportal.de/blaulicht/pm/130685/6348223",
-    "first": "2026-09-08T23:44:18Z",
-    "last": "2026-09-08T23:44:18Z",
-    "veg": false,
-    "source": "Kreisfeuerwehrverband Landkreis Karlsruhe",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Landkreis Karlsruhe",
-        "lat": 49.0876163,
-        "lon": 8.6106867,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Oberhausen|brand einer gartenlaube in eisenheim - übergreifen auf weitere lauben verhindert",
-    "status": "contained",
-    "title": "Brand einer Gartenlaube in Eisenheim - Übergreifen auf weitere Lauben verhindert",
-    "link": "https://www.presseportal.de/blaulicht/pm/115881/6348206",
-    "first": "2026-09-08T19:50:52Z",
-    "last": "2026-09-08T19:50:52Z",
-    "veg": false,
-    "source": "Feuerwehr Oberhausen",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Oberhausen",
-        "lat": 51.4696137,
-        "lon": 6.8514435,
         "approx": false
       }
     ]
