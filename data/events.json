@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115885/6367758",
     "first": "2026-10-08T22:28:42Z",
     "last": "2026-10-08T22:28:42Z",
+    "veg": false,
+    "source": "Feuerwehr Wuppertal",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Wuppertal",
@@ -13,11 +17,7 @@
         "lon": 7.1780374,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Wuppertal",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Wuppertal|kellerbrand in mehrfamilienhaus - krankenwagenbesatzung evakuiert bewohner",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115885/6367757",
     "first": "2026-10-08T22:22:20Z",
     "last": "2026-10-08T22:22:20Z",
+    "veg": false,
+    "source": "Feuerwehr Wuppertal",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Wuppertal",
@@ -33,11 +37,7 @@
         "lon": 7.1780374,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Wuppertal",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Heiligenhaus|lkw-brand auf der a44 - feuerwehr löscht brennende fahrerkabine",
@@ -4843,26 +4843,6 @@
         "name": "Bonn",
         "lat": 50.7352621,
         "lon": 7.1024635,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Paderborn|dachstuhlbrand am rippinger weg",
-    "status": "out",
-    "title": "Dachstuhlbrand Am Rippinger Weg",
-    "link": "https://www.presseportal.de/blaulicht/pm/173646/6348237",
-    "first": "2026-09-09T04:48:05Z",
-    "last": "2026-09-09T04:48:05Z",
-    "veg": false,
-    "source": "Feuerwehr Paderborn",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Paderborn",
-        "lat": 51.7177044,
-        "lon": 8.752653,
         "approx": false
       }
     ]
