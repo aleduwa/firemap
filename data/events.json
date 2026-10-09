@@ -1,5 +1,85 @@
 [
   {
+    "base": "Feuerwehr Herdecke|zwei brandmeldealarme binnen weniger stunden ohne feststellung",
+    "status": "active",
+    "title": "Zwei Brandmeldealarme binnen weniger Stunden ohne Feststellung",
+    "link": "https://www.presseportal.de/blaulicht/pm/69790/6368436",
+    "first": "2026-10-09T16:55:00Z",
+    "last": "2026-10-09T16:55:00Z",
+    "places": [
+      {
+        "name": "Herdecke",
+        "lat": 51.4001119,
+        "lon": 7.4330062,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Herdecke",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Stuttgart|kellerbrand in mehrfamilienhaus/ - starke rauchentwicklung blockiert rettungsweg - feuerwehr löscht kellerbrand zügig - aufwendige nachlöscharbeiten",
+    "status": "active",
+    "title": "Kellerbrand in Mehrfamilienhaus/ - Starke Rauchentwicklung blockiert Rettungsweg - Feuerwehr löscht Kellerbrand zügig - Aufwendige Nachlöscharbeiten",
+    "link": "https://www.presseportal.de/blaulicht/pm/161590/6368433",
+    "first": "2026-10-09T16:32:25Z",
+    "last": "2026-10-09T16:32:25Z",
+    "places": [
+      {
+        "name": "Stuttgart",
+        "lat": 48.7784485,
+        "lon": 9.1800132,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Stuttgart",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Bocholt|fahrzeugbrand auf dem hemdener weg",
+    "status": "active",
+    "title": "Fahrzeugbrand auf dem Hemdener Weg",
+    "link": "https://www.presseportal.de/blaulicht/pm/146407/6368430",
+    "first": "2026-10-09T16:22:13Z",
+    "last": "2026-10-09T16:22:13Z",
+    "places": [
+      {
+        "name": "Bocholt",
+        "lat": 51.8382715,
+        "lon": 6.6148669,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Bocholt",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Karlsruhe|(ka) östringen - vorzelt eines wohnwagens in brand gesetzt - kriminalpolizei sucht zeugen",
+    "status": "active",
+    "title": "(KA) Östringen - Vorzelt eines Wohnwagens in Brand gesetzt - Kriminalpolizei sucht Zeugen",
+    "link": "https://www.presseportal.de/blaulicht/pm/110972/6368358",
+    "first": "2026-10-09T14:36:19Z",
+    "last": "2026-10-09T14:36:19Z",
+    "places": [
+      {
+        "name": "Östringen",
+        "lat": 49.2187372,
+        "lon": 8.7102268,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Karlsruhe",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Wuppertal|wohnungsbrand in der nützenberger straße - aufwendige nachlöscharbeiten fordern feuerwehr",
     "status": "contained",
     "title": "Wohnungsbrand in der Nützenberger Straße - Aufwendige Nachlöscharbeiten fordern Feuerwehr",
@@ -4743,106 +4823,6 @@
         "name": "Gladbeck",
         "lat": 51.5718665,
         "lon": 6.9877343,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Remscheid|brand in industriebetrieb - schnelles eingreifen verhindert schlimmeres",
-    "status": "out",
-    "title": "Brand in Industriebetrieb - Schnelles Eingreifen verhindert Schlimmeres",
-    "link": "https://www.presseportal.de/blaulicht/pm/115882/6349027",
-    "first": "2026-09-09T15:45:01Z",
-    "last": "2026-09-09T15:45:01Z",
-    "veg": false,
-    "source": "Feuerwehr Remscheid",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Remscheid",
-        "lat": 51.1798706,
-        "lon": 7.1943544,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Stuttgart|wohnungsbrand in mehrfamilienhaus in stuttgart-feuerbach - drei personen gerettet",
-    "status": "active",
-    "title": "Wohnungsbrand in Mehrfamilienhaus in Stuttgart-Feuerbach - drei Personen gerettet",
-    "link": "https://www.presseportal.de/blaulicht/pm/161590/6348987",
-    "first": "2026-09-09T15:05:10Z",
-    "last": "2026-09-09T15:05:10Z",
-    "veg": false,
-    "source": "Feuerwehr Stuttgart",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stuttgart",
-        "lat": 48.7784485,
-        "lon": 9.1800132,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Karlsruhe|(ka) stutensee - nach scheunenbrand bittet die polizei um zeugenhinweise",
-    "status": "active",
-    "title": "(KA) Stutensee - Nach Scheunenbrand bittet die Polizei um Zeugenhinweise",
-    "link": "https://www.presseportal.de/blaulicht/pm/110972/6348636",
-    "first": "2026-09-09T11:06:57Z",
-    "last": "2026-09-09T11:06:57Z",
-    "veg": false,
-    "source": "Polizeipräsidium Karlsruhe",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stutensee",
-        "lat": 49.0895249,
-        "lon": 8.4856806,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Kreisfeuerwehrverband Sigmaringen|gebäudebrand",
-    "status": "active",
-    "title": "Gebäudebrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/140932/6348248",
-    "first": "2026-09-09T07:10:42Z",
-    "last": "2026-09-09T07:10:42Z",
-    "veg": false,
-    "source": "Kreisfeuerwehrverband Sigmaringen",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Sigmaringen",
-        "lat": 48.0869139,
-        "lon": 9.2165039,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr und Rettungsdienst Bonn|pkw-brand greift auf geschäftshaus über - weitere pkw brände im verlauf der nacht",
-    "status": "contained",
-    "title": "PKW-Brand greift auf Geschäftshaus über - weitere PKW Brände im Verlauf der Nacht",
-    "link": "https://www.presseportal.de/blaulicht/pm/115888/6348240",
-    "first": "2026-09-09T06:34:11Z",
-    "last": "2026-09-09T06:34:11Z",
-    "veg": false,
-    "source": "Feuerwehr und Rettungsdienst Bonn",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Bonn",
-        "lat": 50.7352621,
-        "lon": 7.1024635,
         "approx": false
       }
     ]
