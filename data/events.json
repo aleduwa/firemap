@@ -4588,26 +4588,6 @@
     ]
   },
   {
-    "base": "Polizeipräsidium Freiburg|lörrach: brand in mehrfamilienhaus",
-    "status": "out",
-    "title": "Lörrach: Brand in Mehrfamilienhaus",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6349870",
-    "first": "2026-09-10T20:47:36Z",
-    "last": "2026-09-10T20:47:36Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Lörrach",
-        "lat": 47.6120896,
-        "lon": 7.6607218,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Polizeipräsidium Heilbronn|main-tauber-kreis: brand",
     "status": "contained",
     "title": "Main-Tauber-Kreis: Brand",
