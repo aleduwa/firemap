@@ -4668,46 +4668,6 @@
     ]
   },
   {
-    "base": "Feuerwehr Erkrath|tag der offenen tür in der feuer- und rettungswache in erkrath-hochdahl",
-    "status": "active",
-    "title": "Tag der offenen Tür in der Feuer- und Rettungswache in Erkrath-Hochdahl",
-    "link": "https://www.presseportal.de/blaulicht/pm/116243/6349671",
-    "first": "2026-09-10T13:39:41Z",
-    "last": "2026-09-10T13:39:41Z",
-    "veg": false,
-    "source": "Feuerwehr Erkrath",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Erkrath",
-        "lat": 51.2209866,
-        "lon": 6.9056079,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Karlsruhe|(ka) kronau - eine leichtverletzte person nach brand eines holzunterstands",
-    "status": "out",
-    "title": "(KA) Kronau - Eine leichtverletzte Person nach Brand eines Holzunterstands",
-    "link": "https://www.presseportal.de/blaulicht/pm/110972/6349518",
-    "first": "2026-09-10T11:42:41Z",
-    "last": "2026-09-10T11:42:41Z",
-    "veg": false,
-    "source": "Polizeipräsidium Karlsruhe",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Kronau",
-        "lat": 49.2190434,
-        "lon": 8.6328799,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Polizeipräsidium Heilbronn|main-tauber-kreis: brand",
     "status": "contained",
     "title": "Main-Tauber-Kreis: Brand",
