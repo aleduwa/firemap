@@ -4548,46 +4548,6 @@
     ]
   },
   {
-    "base": "Feuerwehr Remscheid|brand in industriebetrieb",
-    "status": "active",
-    "title": "Brand in Industriebetrieb",
-    "link": "https://www.presseportal.de/blaulicht/pm/115882/6349892",
-    "first": "2026-09-11T00:34:57Z",
-    "last": "2026-09-11T00:34:57Z",
-    "veg": false,
-    "source": "Feuerwehr Remscheid",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Remscheid",
-        "lat": 51.1798706,
-        "lon": 7.1943544,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Freiwillige Feuerwehr Hennef|b4 - dachstuhlbrand, sirenenalarm in hennef",
-    "status": "active",
-    "title": "B4 - Dachstuhlbrand, Sirenenalarm in Hennef",
-    "link": "https://www.presseportal.de/blaulicht/pm/135052/6349886",
-    "first": "2026-09-10T22:54:43Z",
-    "last": "2026-09-10T22:54:43Z",
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Hennef",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Hennef",
-        "lat": 50.7754417,
-        "lon": 7.2847945,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Polizeipräsidium Heilbronn|main-tauber-kreis: brand",
     "status": "contained",
     "title": "Main-Tauber-Kreis: Brand",
