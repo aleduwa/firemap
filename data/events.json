@@ -4408,66 +4408,6 @@
     ]
   },
   {
-    "base": "Feuerwehr Wuppertal|durch den einsatz der feuerwehr konnte das abbrennen einer gartenhütte und eines baumes verhindert werden.",
-    "status": "out",
-    "title": "Durch den Einsatz der Feuerwehr konnte das Abbrennen einer Gartenhütte und eines Baumes verhindert werden.",
-    "link": "https://www.presseportal.de/blaulicht/pm/115885/6350581",
-    "first": "2026-09-11T17:14:41Z",
-    "last": "2026-09-11T17:14:41Z",
-    "veg": false,
-    "source": "Feuerwehr Wuppertal",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Wuppertal",
-        "lat": 51.264018,
-        "lon": 7.1780374,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Düsseldorf|folgemeldung: feuer im gewerbebetrieb - zeitweise warnung vor geruchsbelästigung durch brandrauch",
-    "status": "active",
-    "title": "FOLGEMELDUNG: Feuer im Gewerbebetrieb - zeitweise Warnung vor Geruchsbelästigung durch Brandrauch",
-    "link": "https://www.presseportal.de/blaulicht/pm/115876/6350552",
-    "first": "2026-09-11T15:34:50Z",
-    "last": "2026-09-11T15:34:50Z",
-    "veg": false,
-    "source": "Feuerwehr Düsseldorf",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Düsseldorf",
-        "lat": 51.2254018,
-        "lon": 6.7763137,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Düsseldorf|erstmeldung: feuer im gewerbebetrieb - feuerwehr leitet löschmaßnahmen ein",
-    "status": "active",
-    "title": "ERSTMELDUNG: Feuer im Gewerbebetrieb - Feuerwehr leitet Löschmaßnahmen ein",
-    "link": "https://www.presseportal.de/blaulicht/pm/115876/6350520",
-    "first": "2026-09-11T14:40:45Z",
-    "last": "2026-09-11T14:40:45Z",
-    "veg": false,
-    "source": "Feuerwehr Düsseldorf",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Düsseldorf",
-        "lat": 51.2254018,
-        "lon": 6.7763137,
-        "approx": true
-      }
-    ]
-  },
-  {
     "base": "Polizeipräsidium Heilbronn|main-tauber-kreis: brand",
     "status": "contained",
     "title": "Main-Tauber-Kreis: Brand",
