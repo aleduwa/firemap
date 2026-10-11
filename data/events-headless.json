@@ -1,26 +1,22 @@
 {
- "generated": "2026-10-10T11:08:48.490Z",
+ "generated": "2026-10-11T11:19:23.757Z",
  "window": [
-  "2026-10-10",
-  "2027-01-08"
+  "2026-10-11",
+  "2027-01-09"
  ],
  "warnings": [
   "ZweiTälerLand tPortal (TOMAS): Ergebnisliste leer (Suche liefert serverseitig aktuell keine Treffer).",
-  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569122.10.-oktober-2026-wo…: page.goto: Timeout 60000ms exceeded.",
-  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569450.10.-oktober-2026-so…: page.goto: Timeout 60000ms exceeded.",
-  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569449.10.-oktober-2026-st…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569449.10.-oktober-2026-stiftung-bruecke-feiert-25-jaehriges-jubilaeum-in-emmendingen---hilfe-zur-selbsthilfe-auf-augenhoehe.html",
-  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569858.11.-oktober-2026-ex…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569858.11.-oktober-2026-exklusive-einblicke-in-die-zugleitstelle-in-endingen-und-in-einen-elektrobus---sweg-beteiligt-sich-an-der-gewerbeschau-endingen-zeigt-flagge.html",
+  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569858.11.-oktober-2026-ex…: page.goto: Timeout 60000ms exceeded.",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568106.13.-oktober-2026--s…: page.goto: Timeout 60000ms exceeded.",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569498.15.-oktober-2026-ta…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569498.15.-oktober-2026-tag-der-offenen-tuer-von-15-bis-17-uhr--waldorfkindergarten-rosenhag%2C-nelkenweg-11%2C-emmendingen.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569817.16.-oktober-2026-ak…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569817.16.-oktober-2026-aktionstag-schulterschluss---mit-power-in-den-alltag%2C-staerke-und-gemeinschaft-erleben-in-emmendingen---veranstaltung-im-jugendzentrum-.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569294.18.-oktober-2026-fu…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569294.18.-oktober-2026-fuehrung-durch-das-anwesen-leonhardt-in-emmendingen---veranstaltung-gibt-einblicke-in-das-leben-der-kuenstlerin-gertrud-leonhardt.html",
-  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569371.burgfuehrung-durch-…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569371.burgfuehrung-durch-die-burgruine-lichteneck-am-18.10.2026-mit-michael-moser.html",
+  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569371.burgfuehrung-durch-…: page.goto: Timeout 60000ms exceeded.",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569515.einkaufen%2C-bummel…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569515.einkaufen%2C-bummeln%2C-erleben%21--mittwoch%2C-21.-oktober-2026-kraemermarkt-in-emmendingen.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.570047.21.-oktober-2026-fo…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.570047.21.-oktober-2026-forensik-transparent-in-emmendingen-bietet-einblicke%2C-foerdert-den-dialog-und-schafft-transparenz---zentrum-fuer-psychiatrie-laedt-zu-informationsveranstaltung-ein-.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569991.23.-oktober-2026-ge…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569991.23.-oktober-2026-gesichter-der-stadt-zu-gast-im-siedlerstueble-in-emmendingen---geschichten%2C-die-man-nicht-jeden-tag-hoert.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569321.grosse-vogelausstel…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569321.grosse-vogelausstellung-mit-verbandsschau---am-31.10.und-01.11.2026-in-der-heinz-ritter-halle-in-voerstetten%2C.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569372.burgfuehrung-durch-…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569372.burgfuehrung-durch-die-burgruine-lichteneck-am-1.-november-2026.html",
-  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569237.10.-oktober-2026-in…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569237.10.-oktober-2026-infoveranstaltung-ueber-epilepsie-in-freiburg---vortraege-fuer-patienten-und-angehoerige---neue-entwicklungen-in-diagnostik-und-therapie---raum-fuer-fragen-und-austausch-.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569597.11.-oktober-2026-he…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569597.11.-oktober-2026-herbst--und-kuerbisfest-auf-dem-mundenhof-in-freiburg---spielen%2C-schnitzen%2C-mampfen.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569160.14.-oktober-2026--b…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569160.14.-oktober-2026--brancheneinblick-klimarelevantes-handwerk--in-freiburg---schuelerinnen-erhalten-einblicke-in-berufszweig-sanitaer%2C-heizung-und-klima---teil-des-projekts-klimaheldin-im-handwerk-.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.570067.15.-oktober-2026-ma…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.570067.15.-oktober-2026-maximilian-dortu-oder-nur-die-toten-kehren-nicht-zurueck-in-freiburg---filmvorfuehrung-im-stadtarchiv.html",
@@ -35,49 +31,13 @@
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.569825.24.-oktober-2026-be…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.569825.24.-oktober-2026-belgische-biere-in-bad-krozingen---biertasting-im-einladenden-ambiente-des-vita-culinaria.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568170.27.-november-2026-k…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.568170.27.-november-2026-kulinarisches-weinerlebnis-im-weingut-fritz-wassmer-in-bad-krozingen-schlatt---genussvoller-auftakt-in-die-adventszeit.html",
   "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/regiotermine/index.news.568464.28.-november-2026-e…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/regiotermine/index.news.568464.28.-november-2026-erste-hilfe-bei-kindernotfaellen-in-ebringen--malteser-bieten-praxisnahen-kurs-fuer-eltern%2C-grosseltern-und-babysitter-an.html",
-  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/tipps-der-woche/index.news.569845.html…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/tipps-der-woche/index.news.569845.html"
+  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/tipps-der-woche/index.news.569845.html…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/tipps-der-woche/index.news.569845.html",
+  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.569911.html…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.569911.html",
+  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.569907.html…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.569907.html",
+  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.569906.html…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.569906.html",
+  "RegioTrends RegioKalender: Detail https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.569902.html…: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.569902.html"
  ],
  "events": [
-  {
-   "title": "Wollbasar für den guten Zweck in Riegel - Gruppe „Nadelwerkeln“ in der Spitalstraße 38 lädt ein",
-   "start": "2026-10-10",
-   "place": "Riegel",
-   "address": "Riegel, Deutschland",
-   "url": "https://www.regiotrends.de/de/regiotermine/index.news.569122.10.-oktober-2026-wollbasar-fuer-den-guten-zweck-in-riegel---gruppe-nadelwerkeln-in-der-spitalstrasse-38-laedt-ein-.html",
-   "source": "RegioTrends"
-  },
-  {
-   "title": "„So bunt wie das Leben“ in Denzlingen - Hospizgruppe öffnet am Welthospiztag ihre Türen - Begegnungen, Mitmachaktionen und gemeinsamer Charta-Unterzeichnung der Bürgermeister",
-   "start": "2026-10-10",
-   "place": "Denzlingen",
-   "address": "Denzlingen, Deutschland",
-   "url": "https://www.regiotrends.de/de/regiotermine/index.news.569450.10.-oktober-2026-so-bunt-wie-das-leben-in-denzlingen---hospizgruppe-oeffnet-am-welthospiztag-ihre-tueren---begegnungen%2C-mitmachaktionen-und-gemeinsamer-charta-unterzeichnung-der-buergermeister--.html",
-   "source": "RegioTrends"
-  },
-  {
-   "title": "Stiftung Brücke feiert 25-jähriges Jubiläum in Emmendingen - Hilfe zur Selbsthilfe auf Augenhöhe",
-   "start": "2026-10-10",
-   "place": "Emmendingen",
-   "address": "Emmendingen, Deutschland",
-   "url": "https://www.regiotrends.de/de/regiotermine/index.news.569449.10.-oktober-2026-stiftung-bruecke-feiert-25-jaehriges-jubilaeum-in-emmendingen---hilfe-zur-selbsthilfe-auf-augenhoehe.html",
-   "source": "RegioTrends"
-  },
-  {
-   "title": "Square Dance Festival in Emmendingen-Wasser - Am Samstag, den 10.10.2026 ab 13:00 Uhr bis um 22:00 Uhr",
-   "start": "2026-10-10T13:00",
-   "place": "Emmendingen",
-   "address": "Emmendingen, Deutschland",
-   "url": "https://www.regiotrends.de/de/regiotermine/index.news.569385.square-dance-festival-in-emmendingen-wasser---am-samstag%2C-den-10.10.2026-ab-1300-uhr-bis-um-2200-uhr.html",
-   "source": "RegioTrends"
-  },
-  {
-   "title": "Offene Stadtführung in Emmendingen - Anette Matt nimmt Teilnehmende mit auf eine Tour durch die Geschichte der Stadt",
-   "start": "2026-10-11T11:00",
-   "place": "Emmendingen",
-   "address": "Emmendingen, Deutschland",
-   "url": "https://www.regiotrends.de/de/regiotermine/index.news.569296.11.-oktober-2026-offene-stadtfuehrung-in-emmendingen---anette-matt-nimmt-teilnehmende-mit-auf-eine-tour-durch-die-geschichte-der-stadt-.html",
-   "source": "RegioTrends"
-  },
   {
    "title": "Exklusive Einblicke in die Zugleitstelle in Endingen und in einen Elektrobus - SWEG beteiligt sich an der Gewerbeschau „Endingen zeigt Flagge“",
    "start": "2026-10-11",
@@ -236,14 +196,6 @@
    "place": "Kenzingen-Hecklingen",
    "address": "Kenzingen-Hecklingen, Deutschland",
    "url": "https://www.regiotrends.de/de/regiotermine/index.news.569372.burgfuehrung-durch-die-burgruine-lichteneck-am-1.-november-2026.html",
-   "source": "RegioTrends"
-  },
-  {
-   "title": "Infoveranstaltung über Epilepsie in Freiburg - Vorträge für Patienten und Angehörige - Neue Entwicklungen in Diagnostik und Therapie - Raum für Fragen und Austausch",
-   "start": "2026-10-10",
-   "place": "Freiburg",
-   "address": "Freiburg, Deutschland",
-   "url": "https://www.regiotrends.de/de/regiotermine/index.news.569237.10.-oktober-2026-infoveranstaltung-ueber-epilepsie-in-freiburg---vortraege-fuer-patienten-und-angehoerige---neue-entwicklungen-in-diagnostik-und-therapie---raum-fuer-fragen-und-austausch-.html",
    "source": "RegioTrends"
   },
   {
@@ -435,14 +387,6 @@
    "end": "2026-10-23"
   },
   {
-   "title": "„Zusammensammeln“ in Waldkirch - Säcke sowie Müllgreifer gibt Stadtverwaltung am Empfang des Bürgerservice ab 5. Oktober 2026 aus",
-   "start": "2026-10-10",
-   "place": "Städte und Gemeinden",
-   "address": "Städte und Gemeinden, Deutschland",
-   "url": "https://www.regiotrends.de/de/aus-vereinen-gruppen/index.news.569503.html",
-   "source": "RegioTrends"
-  },
-  {
    "title": "Bigband-Sound in Emmendingen – Kiwanis Emmendingen präsentiert am 24. Oktober das Benefizkonzert des Black Forest Ballroom Orchestra im Autohaus Schmolck",
    "start": "2026-10-24",
    "place": "> Schon gelesen?",
@@ -464,14 +408,6 @@
    "place": "> Schon gelesen?",
    "address": "> Schon gelesen?, Deutschland",
    "url": "https://www.regiotrends.de/de/passiert-notiert/index.news.570010.html",
-   "source": "RegioTrends"
-  },
-  {
-   "title": "Tag der Seelischen Gesundheit 2026 - Zentrum für Psychiatrie Emmendingen setzt sich mit verschiedenen Veranstaltungen und Aktionen für mehr Offenheit, Akzeptanz und Entstigmatisierung von Menschen mit psychischen Erkrankungen ein",
-   "start": "2026-10-10",
-   "place": "Regionales",
-   "address": "Regionales, Deutschland",
-   "url": "https://www.regiotrends.de/de/vorschau-anmeldungen/index.news.569895.html",
    "source": "RegioTrends"
   },
   {
