@@ -4322,26 +4322,6 @@
     ]
   },
   {
-    "base": "Feuerwehr Ennepetal|brandeinsatz und unterstützung rettungsdienst",
-    "status": "active",
-    "title": "Brandeinsatz und Unterstützung Rettungsdienst",
-    "link": "https://www.presseportal.de/blaulicht/pm/69780/6350642",
-    "first": "2026-09-12T06:36:09Z",
-    "last": "2026-09-12T06:36:09Z",
-    "veg": false,
-    "source": "Feuerwehr Ennepetal",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Ennepetal",
-        "lat": 51.2967192,
-        "lon": 7.3693335,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Polizeipräsidium Heilbronn|main-tauber-kreis: brand",
     "status": "contained",
     "title": "Main-Tauber-Kreis: Brand",
