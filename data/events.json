@@ -4302,26 +4302,6 @@
     ]
   },
   {
-    "base": "Polizeipräsidium Freiburg|freiburg-landwasser: balkonbrand in mehrfamilienhaus endet glimpflich",
-    "status": "out",
-    "title": "Freiburg-Landwasser: Balkonbrand in Mehrfamilienhaus endet glimpflich",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6350759",
-    "first": "2026-09-12T17:03:09Z",
-    "last": "2026-09-12T17:03:09Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Freiburg-Landwasser",
-        "lat": 48.0282353,
-        "lon": 7.8116358,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Polizeipräsidium Heilbronn|main-tauber-kreis: brand",
     "status": "contained",
     "title": "Main-Tauber-Kreis: Brand",
