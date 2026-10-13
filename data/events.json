@@ -4262,26 +4262,6 @@
     ]
   },
   {
-    "base": "Feuerwehr Neuss|containerbrand an der eichendorffstraße | feuer am nelly-sachs-gymnasium",
-    "status": "active",
-    "title": "Containerbrand an der Eichendorffstraße | Feuer am Nelly-Sachs-Gymnasium",
-    "link": "https://www.presseportal.de/blaulicht/pm/122045/6351004",
-    "first": "2026-09-13T13:35:11Z",
-    "last": "2026-09-13T13:35:11Z",
-    "veg": false,
-    "source": "Feuerwehr Neuss",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Neuss",
-        "lat": 51.1981778,
-        "lon": 6.6916476,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Polizeipräsidium Heilbronn|main-tauber-kreis: brand",
     "status": "contained",
     "title": "Main-Tauber-Kreis: Brand",
