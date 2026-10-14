@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/11530/6371243",
     "first": "2026-10-14T16:46:01Z",
     "last": "2026-10-14T16:46:01Z",
+    "veg": false,
+    "source": "Polizei Bochum",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Polizei Bochum",
@@ -13,11 +17,7 @@
         "lon": 7.3772125,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizei Bochum",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Kreisfeuerwehrverband Landkreis Karlsruhe|wohnhausbrand in malsch führt zu großeinsatz der feuerwehren",
