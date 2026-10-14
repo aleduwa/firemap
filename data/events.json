@@ -1,5 +1,51 @@
 [
   {
+    "base": "Kreisfeuerwehrverband Landkreis Karlsruhe|wohnhausbrand in malsch führt zu großeinsatz der feuerwehren",
+    "status": "active",
+    "title": "Wohnhausbrand in Malsch führt zu Großeinsatz der Feuerwehren",
+    "link": "https://www.presseportal.de/blaulicht/pm/130685/6371221",
+    "first": "2026-10-14T15:46:21Z",
+    "last": "2026-10-14T15:46:21Z",
+    "places": [
+      {
+        "name": "Landkreis Karlsruhe",
+        "lat": 49.0876163,
+        "lon": 8.6106867,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Kreisfeuerwehrverband Landkreis Karlsruhe",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Konstanz|(rottweil, deißlingen / landkreis rottweil) nachtragsmeldung: polizei fahndet nach brandstiftern - zwei jugendliche tatverdächtige identifiziert (14.10.2026)",
+    "status": "active",
+    "title": "(Rottweil, Deißlingen / Landkreis Rottweil) NACHTRAGSMELDUNG: Polizei fahndet nach Brandstiftern - zwei jugendliche Tatverdächtige identifiziert (14.10.2026)",
+    "link": "https://www.presseportal.de/blaulicht/pm/110973/6371114",
+    "first": "2026-10-14T14:05:49Z",
+    "last": "2026-10-14T14:05:49Z",
+    "places": [
+      {
+        "name": "Rottweil",
+        "lat": 48.1678244,
+        "lon": 8.626979,
+        "approx": false
+      },
+      {
+        "name": "Deißlingen",
+        "lat": 48.1121476,
+        "lon": 8.6048933,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Konstanz",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Herdecke|zwei brandmeldealarme binnen weniger stunden ohne feststellung",
     "status": "active",
     "title": "Zwei Brandmeldealarme binnen weniger Stunden ohne Feststellung",
@@ -4091,72 +4137,6 @@
         "name": "Todtnau",
         "lat": 47.8303378,
         "lon": 7.9452378,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Karlsruhe|(ka) pfinztal - kriminalpolizei sucht zeugen nach flächenbrand",
-    "status": "contained",
-    "title": "(KA) Pfinztal - Kriminalpolizei sucht Zeugen nach Flächenbrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110972/6351794",
-    "first": "2026-09-14T14:58:12Z",
-    "last": "2026-09-14T14:58:12Z",
-    "veg": true,
-    "source": "Polizeipräsidium Karlsruhe",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Pfinztal",
-        "lat": 48.9918661,
-        "lon": 8.5553158,
-        "approx": false
-      },
-      {
-        "name": "zwischen Wöschbach und Söllingen",
-        "lat": 48.99406,
-        "lon": 8.55481,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Weinheim|feuerwehr weinheim zu vermeindlichem zimmerbrand alarmiert",
-    "status": "out",
-    "title": "Feuerwehr Weinheim zu vermeindlichem Zimmerbrand alarmiert",
-    "link": "https://www.presseportal.de/blaulicht/pm/179375/6351676",
-    "first": "2026-09-14T13:42:50Z",
-    "last": "2026-09-14T13:42:50Z",
-    "veg": false,
-    "source": "Feuerwehr Weinheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Weinheim",
-        "lat": 49.5462349,
-        "lon": 8.6717458,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Herdecke|folgemeldung zum brand in der nierfeldstraße: feuerwehr herdecke weiterhin im großeinsatz",
-    "status": "active",
-    "title": "Folgemeldung zum Brand in der Nierfeldstraße: Feuerwehr Herdecke weiterhin im Großeinsatz",
-    "link": "https://www.presseportal.de/blaulicht/pm/69790/6351501",
-    "first": "2026-09-14T12:02:02Z",
-    "last": "2026-09-14T12:02:02Z",
-    "veg": false,
-    "source": "Feuerwehr Herdecke",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Herdecke",
-        "lat": 51.4001119,
-        "lon": 7.4330062,
         "approx": false
       }
     ]
