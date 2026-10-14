@@ -4162,26 +4162,6 @@
     ]
   },
   {
-    "base": "Polizeipräsidium Aalen|rems-murr-kreis: einbrüche - roller entwendet - widerstand - verkehrsunfälle - flächenbrand",
-    "status": "out",
-    "title": "Rems-Murr-Kreis: Einbrüche - Roller entwendet - Widerstand - Verkehrsunfälle - Flächenbrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110969/6351170",
-    "first": "2026-09-14T08:32:40Z",
-    "last": "2026-09-14T08:32:40Z",
-    "veg": true,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Rems-Murr-Kreis",
-        "lat": 48.8966799,
-        "lon": 9.5037124,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Polizeipräsidium Heilbronn|main-tauber-kreis: brand",
     "status": "contained",
     "title": "Main-Tauber-Kreis: Brand",
