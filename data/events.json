@@ -1,11 +1,75 @@
 [
   {
+    "base": "Polizeipräsidium Pforzheim|(enzkreis) engelsbrand - quadfahrer gerät in gegenverkehr und kollidiert mit pkw",
+    "status": "active",
+    "title": "(Enzkreis) Engelsbrand - Quadfahrer gerät in Gegenverkehr und kollidiert mit Pkw",
+    "link": "https://www.presseportal.de/blaulicht/pm/137462/6371742",
+    "first": "2026-10-15T11:24:19Z",
+    "last": "2026-10-15T11:24:19Z",
+    "places": [
+      {
+        "name": "Engelsbrand",
+        "lat": 48.8310442,
+        "lon": 8.6444312,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Pforzheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Ulm|(gp) gingen - auto brennt / wegen brandstiftung ermittelt seit mittwoch nun die polizei.",
+    "status": "out",
+    "title": "(GP) Gingen - Auto brennt / Wegen Brandstiftung ermittelt seit Mittwoch nun die Polizei.",
+    "link": "https://www.presseportal.de/blaulicht/pm/110979/6371683",
+    "first": "2026-10-15T10:59:13Z",
+    "last": "2026-10-15T10:59:13Z",
+    "places": [
+      {
+        "name": "Gingen",
+        "lat": 48.6606085,
+        "lon": 9.7881076,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Ulm|(bc) langenenslingen - brand in werkstatt / am mittwoch geriet in einem autohaus in langenenslingen ein fahrzeug in brand.",
+    "status": "active",
+    "title": "(BC) Langenenslingen - Brand in Werkstatt / Am Mittwoch geriet in einem Autohaus in Langenenslingen ein Fahrzeug in Brand.",
+    "link": "https://www.presseportal.de/blaulicht/pm/110979/6371682",
+    "first": "2026-10-15T10:58:17Z",
+    "last": "2026-10-15T10:58:17Z",
+    "places": [
+      {
+        "name": "Langenenslingen",
+        "lat": 48.1480101,
+        "lon": 9.3770185,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Mannheim|mannheim: brand in gaststätte-pm nr. 2",
     "status": "out",
     "title": "Mannheim: Brand in Gaststätte-PM Nr. 2",
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6371334",
     "first": "2026-10-15T06:32:40Z",
     "last": "2026-10-15T06:32:40Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Mannheim",
@@ -13,11 +77,7 @@
         "lon": 8.4673098,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Ennepetal|verkehrsunfall und brand am gebäude",
@@ -26,6 +86,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/69780/6371332",
     "first": "2026-10-15T06:24:12Z",
     "last": "2026-10-15T06:24:12Z",
+    "veg": false,
+    "source": "Feuerwehr Ennepetal",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Ennepetal",
@@ -33,11 +97,7 @@
         "lon": 7.3693335,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Ennepetal",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Krefeld|saunabrand in krefeld-hüls - übergreifen auf benachbarte gebäude verhindert",
@@ -46,6 +106,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115878/6371331",
     "first": "2026-10-15T06:15:01Z",
     "last": "2026-10-15T06:15:01Z",
+    "veg": false,
+    "source": "Feuerwehr Krefeld",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Krefeld",
@@ -53,11 +117,7 @@
         "lon": 6.5623343,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Krefeld",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|mannheim-innenstadt: brand in gaststätte pm 1",
@@ -66,6 +126,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6371309",
     "first": "2026-10-15T03:12:14Z",
     "last": "2026-10-15T03:12:14Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Mannheim-Innenstadt",
@@ -73,11 +137,7 @@
         "lon": 8.4571454,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Leverkusen|brand in einem müllheizkraftwerk",
@@ -4137,26 +4197,6 @@
         "name": "Wain",
         "lat": 48.1886532,
         "lon": 10.0182982,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Detmold|scheune bei nächtlichem brand vollständig zerstört - zwei feuerwehrleute im krankenhaus",
-    "status": "out",
-    "title": "Scheune bei nächtlichem Brand vollständig zerstört - zwei Feuerwehrleute im Krankenhaus",
-    "link": "https://www.presseportal.de/blaulicht/pm/116239/6352064",
-    "first": "2026-09-15T08:27:15Z",
-    "last": "2026-09-15T08:27:15Z",
-    "veg": false,
-    "source": "Feuerwehr Detmold",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Detmold",
-        "lat": 51.936284,
-        "lon": 8.8791526,
         "approx": false
       }
     ]
