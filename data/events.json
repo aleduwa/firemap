@@ -1,11 +1,115 @@
 [
   {
+    "base": "Polizeipräsidium Ludwigsburg|markgröningen: brand in dachgeschosswohnung",
+    "status": "active",
+    "title": "Markgröningen: Brand in Dachgeschosswohnung",
+    "link": "https://www.presseportal.de/blaulicht/pm/110974/6372054",
+    "first": "2026-10-15T15:52:36Z",
+    "last": "2026-10-15T15:52:36Z",
+    "places": [
+      {
+        "name": "Markgröningen",
+        "lat": 48.9050626,
+        "lon": 9.0808114,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ludwigsburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Kreispolizeibehörde Viersen|willich-wekeln: parkbank in brand - polizei sucht hinweise",
+    "status": "active",
+    "title": "Willich-Wekeln: Parkbank in Brand - Polizei sucht Hinweise",
+    "link": "https://www.presseportal.de/blaulicht/pm/65857/6372035",
+    "first": "2026-10-15T15:27:37Z",
+    "last": "2026-10-15T15:27:37Z",
+    "places": [
+      {
+        "name": "Willich-Wekeln",
+        "lat": 51.261434,
+        "lon": 6.5381327,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Kreispolizeibehörde Viersen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizei Düsseldorf|flingern süd - pkw gerät in brand - verdacht der vorsätzlichen brandstiftung - zeugen gesucht",
+    "status": "active",
+    "title": "Flingern Süd - Pkw gerät in Brand - Verdacht der vorsätzlichen Brandstiftung - Zeugen gesucht",
+    "link": "https://www.presseportal.de/blaulicht/pm/13248/6372027",
+    "first": "2026-10-15T15:14:51Z",
+    "last": "2026-10-15T15:14:51Z",
+    "places": [
+      {
+        "name": "Flingern Süd",
+        "lat": 51.2210094,
+        "lon": 6.8100603,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizei Düsseldorf",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|schopfheim: zwei baucontainer ausgebrannt - polizei sucht zeugen",
+    "status": "out",
+    "title": "Schopfheim: Zwei Baucontainer ausgebrannt - Polizei sucht Zeugen",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6372016",
+    "first": "2026-10-15T15:04:34Z",
+    "last": "2026-10-15T15:04:34Z",
+    "places": [
+      {
+        "name": "Schopfheim",
+        "lat": 47.6500525,
+        "lon": 7.8216997,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Freiwillige Feuerwehr Tönisvorst|kindergarten nach rauchentwicklung geräumt - kurz darauf weitere alarmierung durch gefahrenmeldeanlage",
+    "status": "out",
+    "title": "Kindergarten nach Rauchentwicklung geräumt - Kurz darauf weitere Alarmierung durch Gefahrenmeldeanlage",
+    "link": "https://www.presseportal.de/blaulicht/pm/128354/6371992",
+    "first": "2026-10-15T14:40:25Z",
+    "last": "2026-10-15T14:40:25Z",
+    "places": [
+      {
+        "name": "Tönisvorst",
+        "lat": 51.3167,
+        "lon": 6.45,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Tönisvorst",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Pforzheim|(enzkreis) engelsbrand - quadfahrer gerät in gegenverkehr und kollidiert mit pkw",
     "status": "active",
     "title": "(Enzkreis) Engelsbrand - Quadfahrer gerät in Gegenverkehr und kollidiert mit Pkw",
     "link": "https://www.presseportal.de/blaulicht/pm/137462/6371742",
     "first": "2026-10-15T11:24:19Z",
     "last": "2026-10-15T11:24:19Z",
+    "veg": false,
+    "source": "Polizeipräsidium Pforzheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Engelsbrand",
@@ -13,11 +117,7 @@
         "lon": 8.6444312,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Pforzheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(gp) gingen - auto brennt / wegen brandstiftung ermittelt seit mittwoch nun die polizei.",
@@ -26,6 +126,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6371683",
     "first": "2026-10-15T10:59:13Z",
     "last": "2026-10-15T10:59:13Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Gingen",
@@ -33,11 +137,7 @@
         "lon": 9.7881076,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(bc) langenenslingen - brand in werkstatt / am mittwoch geriet in einem autohaus in langenenslingen ein fahrzeug in brand.",
@@ -46,6 +146,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6371682",
     "first": "2026-10-15T10:58:17Z",
     "last": "2026-10-15T10:58:17Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Langenenslingen",
@@ -53,11 +157,7 @@
         "lon": 9.3770185,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|mannheim: brand in gaststätte-pm nr. 2",
@@ -4117,86 +4217,6 @@
         "name": "Kämpfelbach",
         "lat": 48.9387381,
         "lon": 8.6268392,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|eisenbach: wiesenfläche in brand",
-    "status": "out",
-    "title": "Eisenbach: Wiesenfläche in Brand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6352698",
-    "first": "2026-09-15T15:11:35Z",
-    "last": "2026-09-15T15:11:35Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Eisenbach",
-        "lat": 47.9624362,
-        "lon": 8.2710482,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Kreispolizeibehörde Viersen|viersen: pkw in flammen - wer kann hinweise geben?",
-    "status": "active",
-    "title": "Viersen: Pkw in Flammen - wer kann Hinweise geben?",
-    "link": "https://www.presseportal.de/blaulicht/pm/65857/6352691",
-    "first": "2026-09-15T15:02:32Z",
-    "last": "2026-09-15T15:02:32Z",
-    "veg": false,
-    "source": "Kreispolizeibehörde Viersen",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Viersen",
-        "lat": 51.2562118,
-        "lon": 6.3905476,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Kreispolizeibehörde Viersen|nettetal-lobberich: mülltonne brennt lichterloh - zeuginnen oder zeugen gesucht",
-    "status": "active",
-    "title": "Nettetal-Lobberich: Mülltonne brennt lichterloh - Zeuginnen oder Zeugen gesucht",
-    "link": "https://www.presseportal.de/blaulicht/pm/65857/6352683",
-    "first": "2026-09-15T14:58:58Z",
-    "last": "2026-09-15T14:58:58Z",
-    "veg": false,
-    "source": "Kreispolizeibehörde Viersen",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Nettetal-Lobberich",
-        "lat": 51.2857099,
-        "lon": 6.2707822,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(bc) wain - quad brennt aus / mehrere tausend euro schaden entstanden am montag bei einem brand bei wain.",
-    "status": "active",
-    "title": "(BC) Wain - Quad brennt aus / Mehrere tausend Euro Schaden entstanden am Montag bei einem Brand bei Wain.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6352354",
-    "first": "2026-09-15T11:17:43Z",
-    "last": "2026-09-15T11:17:43Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Wain",
-        "lat": 48.1886532,
-        "lon": 10.0182982,
         "approx": false
       }
     ]
