@@ -1,11 +1,95 @@
 [
   {
+    "base": "Polizeipräsidium Mannheim|mannheim: brand in gaststätte-pm nr. 2",
+    "status": "out",
+    "title": "Mannheim: Brand in Gaststätte-PM Nr. 2",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6371334",
+    "first": "2026-10-15T06:32:40Z",
+    "last": "2026-10-15T06:32:40Z",
+    "places": [
+      {
+        "name": "Mannheim",
+        "lat": 49.4892913,
+        "lon": 8.4673098,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Ennepetal|verkehrsunfall und brand am gebäude",
+    "status": "active",
+    "title": "Verkehrsunfall und Brand am Gebäude",
+    "link": "https://www.presseportal.de/blaulicht/pm/69780/6371332",
+    "first": "2026-10-15T06:24:12Z",
+    "last": "2026-10-15T06:24:12Z",
+    "places": [
+      {
+        "name": "Ennepetal",
+        "lat": 51.2967192,
+        "lon": 7.3693335,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Ennepetal",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Krefeld|saunabrand in krefeld-hüls - übergreifen auf benachbarte gebäude verhindert",
+    "status": "out",
+    "title": "Saunabrand in Krefeld-Hüls - Übergreifen auf benachbarte Gebäude verhindert",
+    "link": "https://www.presseportal.de/blaulicht/pm/115878/6371331",
+    "first": "2026-10-15T06:15:01Z",
+    "last": "2026-10-15T06:15:01Z",
+    "places": [
+      {
+        "name": "Krefeld",
+        "lat": 51.3331205,
+        "lon": 6.5623343,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Krefeld",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|mannheim-innenstadt: brand in gaststätte pm 1",
+    "status": "active",
+    "title": "Mannheim-Innenstadt: Brand in Gaststätte PM 1",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6371309",
+    "first": "2026-10-15T03:12:14Z",
+    "last": "2026-10-15T03:12:14Z",
+    "places": [
+      {
+        "name": "Mannheim-Innenstadt",
+        "lat": 49.4964081,
+        "lon": 8.4571454,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Leverkusen|brand in einem müllheizkraftwerk",
     "status": "out",
     "title": "Brand in einem Müllheizkraftwerk",
     "link": "https://www.presseportal.de/blaulicht/pm/115890/6371304",
     "first": "2026-10-15T01:43:22Z",
     "last": "2026-10-15T01:43:22Z",
+    "veg": false,
+    "source": "Feuerwehr Leverkusen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Leverkusen",
@@ -13,11 +97,7 @@
         "lon": 6.9881194,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Leverkusen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizei Bochum|2. gemeinsame folgemeldung von staatsanwaltschaft und polizei bochum: tatverdächtiger nach wohnhausbrand in untersuchungshaft",
