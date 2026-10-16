@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/70701/6372844",
     "first": "2026-10-16T18:09:40Z",
     "last": "2026-10-16T18:09:40Z",
+    "veg": false,
+    "source": "Feuerwehr Ratingen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Ratingen",
@@ -13,11 +17,7 @@
         "lon": 6.8493503,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Ratingen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|wehr: brand im keller eines mehrfamilienhauses",
