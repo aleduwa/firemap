@@ -1,11 +1,35 @@
 [
   {
+    "base": "Feuerwehr Ratingen|dachstuhlbrand in ratingen-tiefenbroich",
+    "status": "active",
+    "title": "Dachstuhlbrand in Ratingen-Tiefenbroich",
+    "link": "https://www.presseportal.de/blaulicht/pm/70701/6372844",
+    "first": "2026-10-16T18:09:40Z",
+    "last": "2026-10-16T18:09:40Z",
+    "places": [
+      {
+        "name": "Ratingen",
+        "lat": 51.2973261,
+        "lon": 6.8493503,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Ratingen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Freiburg|wehr: brand im keller eines mehrfamilienhauses",
     "status": "out",
     "title": "Wehr: Brand im Keller eines Mehrfamilienhauses",
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6372766",
     "first": "2026-10-16T14:59:29Z",
     "last": "2026-10-16T14:59:29Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Wehr",
@@ -13,11 +37,7 @@
         "lon": 7.9046417,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|stühlingen: schwelbrand in einer lagerstätte für hackschnitzel",
@@ -26,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6372749",
     "first": "2026-10-16T14:43:26Z",
     "last": "2026-10-16T14:43:26Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Stühlingen",
@@ -33,11 +57,7 @@
         "lon": 8.4474495,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(bc) biberach - brand in wohnung / am donnerstag erlitt eine 29-jährige bei einem brand in einem wohngebäude leichte verletzungen.",
@@ -4059,46 +4079,6 @@
         "name": "Wuppertal",
         "lat": 51.264018,
         "lon": 7.1780374,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Offenburg|ottersweier, a5 - sperrung nach fahrzeugbrand",
-    "status": "active",
-    "title": "Ottersweier, A5 - Sperrung nach Fahrzeugbrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110975/6353489",
-    "first": "2026-09-16T15:30:39Z",
-    "last": "2026-09-16T15:30:39Z",
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Ottersweier",
-        "lat": 48.6687192,
-        "lon": 8.110948,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|mannheim: 37-jähriger wegen verdacht auf schwere brandstiftung in untersuchungshaft",
-    "status": "active",
-    "title": "Mannheim: 37-Jähriger wegen Verdacht auf schwere Brandstiftung in Untersuchungshaft",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6353439",
-    "first": "2026-09-16T14:47:45Z",
-    "last": "2026-09-16T14:47:45Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Mannheim",
-        "lat": 49.4892913,
-        "lon": 8.4673098,
         "approx": false
       }
     ]
