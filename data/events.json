@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115876/6372128",
     "first": "2026-10-15T23:14:25Z",
     "last": "2026-10-15T23:14:25Z",
+    "veg": false,
+    "source": "Feuerwehr Düsseldorf",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Pflegeheim",
@@ -13,11 +17,7 @@
         "lon": 6.9602027,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Düsseldorf",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ludwigsburg|markgröningen: brand in dachgeschosswohnung",
