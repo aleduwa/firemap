@@ -1,11 +1,55 @@
 [
   {
+    "base": "Polizeipräsidium Freiburg|wehr: brand im keller eines mehrfamilienhauses",
+    "status": "out",
+    "title": "Wehr: Brand im Keller eines Mehrfamilienhauses",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6372766",
+    "first": "2026-10-16T14:59:29Z",
+    "last": "2026-10-16T14:59:29Z",
+    "places": [
+      {
+        "name": "Wehr",
+        "lat": 47.6286078,
+        "lon": 7.9046417,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|stühlingen: schwelbrand in einer lagerstätte für hackschnitzel",
+    "status": "active",
+    "title": "Stühlingen: Schwelbrand in einer Lagerstätte für Hackschnitzel",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6372749",
+    "first": "2026-10-16T14:43:26Z",
+    "last": "2026-10-16T14:43:26Z",
+    "places": [
+      {
+        "name": "Stühlingen",
+        "lat": 47.7470397,
+        "lon": 8.4474495,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Ulm|(bc) biberach - brand in wohnung / am donnerstag erlitt eine 29-jährige bei einem brand in einem wohngebäude leichte verletzungen.",
     "status": "contained",
     "title": "(BC) Biberach - Brand in Wohnung / Am Donnerstag erlitt eine 29-Jährige bei einem Brand in einem Wohngebäude leichte Verletzungen.",
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6372409",
     "first": "2026-10-16T10:29:37Z",
     "last": "2026-10-16T10:29:37Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Biberach",
@@ -13,11 +57,7 @@
         "lon": 8.0281354,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Düsseldorf|zimmerbrand im alten- und pflegeheim - feuerwehr verhindert durch das schnelle eingreifen eine brandausbreitung",
@@ -4060,64 +4100,6 @@
         "lat": 49.4892913,
         "lon": 8.4673098,
         "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|todtnau/ todtnauberg: brand eines holzunterstandes - zeugensuche",
-    "status": "contained",
-    "title": "Todtnau/ Todtnauberg: Brand eines Holzunterstandes - Zeugensuche",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6353346",
-    "first": "2026-09-16T13:32:51Z",
-    "last": "2026-09-16T13:32:51Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Todtnau",
-        "lat": 47.8303378,
-        "lon": 7.9452378,
-        "approx": false
-      },
-      {
-        "name": "Todtnauberg",
-        "lat": 47.8516814,
-        "lon": 7.9420935,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Offenburg|rastatt, niederbühl - fahrlässig in brand gesteckt?",
-    "status": "out",
-    "title": "Rastatt, Niederbühl - Fahrlässig in Brand gesteckt?",
-    "link": "https://www.presseportal.de/blaulicht/pm/110975/6353120",
-    "first": "2026-09-16T11:04:16Z",
-    "last": "2026-09-16T11:04:16Z",
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Rastatt",
-        "lat": 48.8584568,
-        "lon": 8.2040452,
-        "approx": false
-      },
-      {
-        "name": "Niederbühl",
-        "lat": 48.8412218,
-        "lon": 8.2176427,
-        "approx": false
-      },
-      {
-        "name": "L77 zwischen Rastatt-Niederbühl und Kuppenheim",
-        "lat": 48.83423,
-        "lon": 8.23611,
-        "approx": true
       }
     ]
   },
