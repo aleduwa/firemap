@@ -1,5 +1,25 @@
 [
   {
+    "base": "Feuerwehr Radolfzell|zimmerbrand",
+    "status": "out",
+    "title": "Zimmerbrand",
+    "link": "https://www.presseportal.de/blaulicht/pm/169982/6372869",
+    "first": "2026-10-17T00:24:21Z",
+    "last": "2026-10-17T00:24:21Z",
+    "places": [
+      {
+        "name": "Radolfzell",
+        "lat": 47.7372802,
+        "lon": 8.9702755,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Radolfzell",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Ratingen|dachstuhlbrand in ratingen-tiefenbroich",
     "status": "active",
     "title": "Dachstuhlbrand in Ratingen-Tiefenbroich",
@@ -4059,26 +4079,6 @@
         "name": "Ottersweier",
         "lat": 48.6687192,
         "lon": 8.110948,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Wuppertal|brand in vohwinkel",
-    "status": "out",
-    "title": "Brand in Vohwinkel",
-    "link": "https://www.presseportal.de/blaulicht/pm/115885/6353578",
-    "first": "2026-09-16T21:44:45Z",
-    "last": "2026-09-16T21:44:45Z",
-    "veg": false,
-    "source": "Feuerwehr Wuppertal",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Wuppertal",
-        "lat": 51.264018,
-        "lon": 7.1780374,
         "approx": false
       }
     ]
