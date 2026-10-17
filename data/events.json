@@ -1,11 +1,35 @@
 [
   {
+    "base": "Polizeipräsidium Mannheim|mannheim-seckenheim: fahrzeugbrand - feuerwehr im einsatz - pressemeldung nr. 1",
+    "status": "active",
+    "title": "Mannheim-Seckenheim: Fahrzeugbrand - Feuerwehr im Einsatz - Pressemeldung Nr. 1",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6372885",
+    "first": "2026-10-17T04:10:21Z",
+    "last": "2026-10-17T04:10:21Z",
+    "places": [
+      {
+        "name": "Mannheim-Seckenheim",
+        "lat": 49.4512622,
+        "lon": 8.5385288,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Radolfzell|zimmerbrand",
     "status": "out",
     "title": "Zimmerbrand",
     "link": "https://www.presseportal.de/blaulicht/pm/169982/6372869",
     "first": "2026-10-17T00:24:21Z",
     "last": "2026-10-17T00:24:21Z",
+    "veg": false,
+    "source": "Feuerwehr Radolfzell",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Radolfzell",
@@ -13,11 +37,7 @@
         "lon": 8.9702755,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Radolfzell",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Ratingen|dachstuhlbrand in ratingen-tiefenbroich",
