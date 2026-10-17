@@ -1,11 +1,35 @@
 [
   {
+    "base": "Feuerwehr Bochum|wohnhaus in bochum-harpen durch brand zerstört - feuerwehr verhindert ausbreitung auf nachbargebäude",
+    "status": "contained",
+    "title": "Wohnhaus in Bochum-Harpen durch Brand zerstört - Feuerwehr verhindert Ausbreitung auf Nachbargebäude",
+    "link": "https://www.presseportal.de/blaulicht/pm/115868/6373038",
+    "first": "2026-10-17T23:31:17Z",
+    "last": "2026-10-17T23:31:17Z",
+    "places": [
+      {
+        "name": "Bochum",
+        "lat": 51.4818111,
+        "lon": 7.2196635,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Bochum",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Wuppertal|fettbrand in imbiss am werth",
     "status": "active",
     "title": "Fettbrand in Imbiss am Werth",
     "link": "https://www.presseportal.de/blaulicht/pm/115885/6373025",
     "first": "2026-10-17T19:42:40Z",
     "last": "2026-10-17T19:42:40Z",
+    "veg": false,
+    "source": "Feuerwehr Wuppertal",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Wuppertal",
@@ -13,11 +37,7 @@
         "lon": 7.1780374,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Wuppertal",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Weinheim|meterhohe flammen am hammerweg, alarm im minutentakt. einsatzreiche nacht für weinheims feuerwehr",
