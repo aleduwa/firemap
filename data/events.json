@@ -1,11 +1,41 @@
 [
   {
+    "base": "Feuerwehr Weinheim|meterhohe flammen am hammerweg, alarm im minutentakt. einsatzreiche nacht für weinheims feuerwehr",
+    "status": "out",
+    "title": "Meterhohe Flammen am Hammerweg, Alarm im Minutentakt. Einsatzreiche Nacht für Weinheims Feuerwehr",
+    "link": "https://www.presseportal.de/blaulicht/pm/179375/6373016",
+    "first": "2026-10-17T18:10:37Z",
+    "last": "2026-10-17T18:10:37Z",
+    "places": [
+      {
+        "name": "Weinheim",
+        "lat": 49.5462349,
+        "lon": 8.6717458,
+        "approx": false
+      },
+      {
+        "name": "zwischen Ästen und Wurzelwerk",
+        "lat": 48.18476,
+        "lon": 9.20767,
+        "approx": true
+      }
+    ],
+    "veg": true,
+    "source": "Feuerwehr Weinheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr der Stadt Arnsberg|kellerbrand mit menschenleben in gefahr- einsatz am frühen samstagmorgen in arnsberg",
     "status": "out",
     "title": "Kellerbrand mit Menschenleben in Gefahr- Einsatz am frühen Samstagmorgen in Arnsberg",
     "link": "https://www.presseportal.de/blaulicht/pm/116297/6372994",
     "first": "2026-10-17T15:33:02Z",
     "last": "2026-10-17T15:33:02Z",
+    "veg": false,
+    "source": "Feuerwehr der Stadt Arnsberg",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Arnsberg",
@@ -13,11 +43,7 @@
         "lon": 8.0448507,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr der Stadt Arnsberg",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Sprockhövel|kaminbrand in obersprockhövel gemeldet",
@@ -26,6 +52,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/69788/6372991",
     "first": "2026-10-17T14:54:23Z",
     "last": "2026-10-17T14:54:23Z",
+    "veg": false,
+    "source": "Feuerwehr Sprockhövel",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Sprockhövel",
@@ -33,11 +63,7 @@
         "lon": 7.2485905,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Sprockhövel",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Neuss|feuer im alexius-krankenhaus an der augustinusstraße | acht personen verletzt",
@@ -46,6 +72,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/122045/6372990",
     "first": "2026-10-17T14:02:05Z",
     "last": "2026-10-17T14:02:05Z",
+    "veg": false,
+    "source": "Feuerwehr Neuss",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Neuss",
@@ -53,11 +83,7 @@
         "lon": 6.6916476,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Neuss",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Stuttgart|abschlussmeldung zum brandeinsatz in bad cannstatt",
@@ -4119,26 +4145,6 @@
         "name": "Grimmelshofen",
         "lat": 47.7861745,
         "lon": 8.497838,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Oberhausen|containerbrand auf der bab a3 - feuerwehr löscht brandgut bei containerdienst ab",
-    "status": "active",
-    "title": "Containerbrand auf der BAB A3 - Feuerwehr löscht Brandgut bei Containerdienst ab",
-    "link": "https://www.presseportal.de/blaulicht/pm/115881/6354254",
-    "first": "2026-09-17T15:53:29Z",
-    "last": "2026-09-17T15:53:29Z",
-    "veg": false,
-    "source": "Feuerwehr Oberhausen",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Oberhausen",
-        "lat": 51.4696137,
-        "lon": 6.8514435,
         "approx": false
       }
     ]
