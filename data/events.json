@@ -1,11 +1,35 @@
 [
   {
+    "base": "Feuerwehr Wuppertal|fettbrand in imbiss am werth",
+    "status": "active",
+    "title": "Fettbrand in Imbiss am Werth",
+    "link": "https://www.presseportal.de/blaulicht/pm/115885/6373025",
+    "first": "2026-10-17T19:42:40Z",
+    "last": "2026-10-17T19:42:40Z",
+    "places": [
+      {
+        "name": "Wuppertal",
+        "lat": 51.264018,
+        "lon": 7.1780374,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Wuppertal",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Weinheim|meterhohe flammen am hammerweg, alarm im minutentakt. einsatzreiche nacht für weinheims feuerwehr",
     "status": "out",
     "title": "Meterhohe Flammen am Hammerweg, Alarm im Minutentakt. Einsatzreiche Nacht für Weinheims Feuerwehr",
     "link": "https://www.presseportal.de/blaulicht/pm/179375/6373016",
     "first": "2026-10-17T18:10:37Z",
     "last": "2026-10-17T18:10:37Z",
+    "veg": true,
+    "source": "Feuerwehr Weinheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Weinheim",
@@ -19,11 +43,7 @@
         "lon": 9.20767,
         "approx": true
       }
-    ],
-    "veg": true,
-    "source": "Feuerwehr Weinheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr der Stadt Arnsberg|kellerbrand mit menschenleben in gefahr- einsatz am frühen samstagmorgen in arnsberg",
