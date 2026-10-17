@@ -1,5 +1,65 @@
 [
   {
+    "base": "Feuerwehr der Stadt Arnsberg|kellerbrand mit menschenleben in gefahr- einsatz am frühen samstagmorgen in arnsberg",
+    "status": "out",
+    "title": "Kellerbrand mit Menschenleben in Gefahr- Einsatz am frühen Samstagmorgen in Arnsberg",
+    "link": "https://www.presseportal.de/blaulicht/pm/116297/6372994",
+    "first": "2026-10-17T15:33:02Z",
+    "last": "2026-10-17T15:33:02Z",
+    "places": [
+      {
+        "name": "Arnsberg",
+        "lat": 51.423047,
+        "lon": 8.0448507,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr der Stadt Arnsberg",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Sprockhövel|kaminbrand in obersprockhövel gemeldet",
+    "status": "active",
+    "title": "Kaminbrand in Obersprockhövel gemeldet",
+    "link": "https://www.presseportal.de/blaulicht/pm/69788/6372991",
+    "first": "2026-10-17T14:54:23Z",
+    "last": "2026-10-17T14:54:23Z",
+    "places": [
+      {
+        "name": "Sprockhövel",
+        "lat": 51.3666572,
+        "lon": 7.2485905,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Sprockhövel",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Neuss|feuer im alexius-krankenhaus an der augustinusstraße | acht personen verletzt",
+    "status": "contained",
+    "title": "Feuer im Alexius-Krankenhaus an der Augustinusstraße | Acht Personen verletzt",
+    "link": "https://www.presseportal.de/blaulicht/pm/122045/6372990",
+    "first": "2026-10-17T14:02:05Z",
+    "last": "2026-10-17T14:02:05Z",
+    "places": [
+      {
+        "name": "Neuss",
+        "lat": 51.1981778,
+        "lon": 6.6916476,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Neuss",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Stuttgart|abschlussmeldung zum brandeinsatz in bad cannstatt",
     "status": "out",
     "title": "Abschlussmeldung zum Brandeinsatz in Bad Cannstatt",
@@ -4079,66 +4139,6 @@
         "name": "Oberhausen",
         "lat": 51.4696137,
         "lon": 6.8514435,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|lörrach: brand einer papiertonne - zeugensuche",
-    "status": "active",
-    "title": "Lörrach: Brand einer Papiertonne - Zeugensuche",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6354236",
-    "first": "2026-09-17T15:29:50Z",
-    "last": "2026-09-17T15:29:50Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Lörrach",
-        "lat": 47.6120896,
-        "lon": 7.6607218,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Detmold|gemeldeter brand im gebäude ( feuer 3 )",
-    "status": "active",
-    "title": "Gemeldeter Brand im Gebäude ( Feuer 3 )",
-    "link": "https://www.presseportal.de/blaulicht/pm/116239/6354234",
-    "first": "2026-09-17T15:28:40Z",
-    "last": "2026-09-17T15:28:40Z",
-    "veg": false,
-    "source": "Feuerwehr Detmold",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Detmold",
-        "lat": 51.936284,
-        "lon": 8.8791526,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Herdecke|sauna brannte im keller in der berliner straße - bewohner weist feuerwehr vorbildlich ein",
-    "status": "out",
-    "title": "Sauna brannte im Keller in der Berliner Straße - Bewohner weist Feuerwehr vorbildlich ein",
-    "link": "https://www.presseportal.de/blaulicht/pm/69790/6354190",
-    "first": "2026-09-17T14:52:06Z",
-    "last": "2026-09-17T14:52:06Z",
-    "veg": false,
-    "source": "Feuerwehr Herdecke",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Herdecke",
-        "lat": 51.4001119,
-        "lon": 7.4330062,
         "approx": false
       }
     ]
