@@ -1,11 +1,31 @@
 [
   {
-    "base": "Polizeipräsidium Mannheim|mannheim-seckenheim: fahrzeugbrand - feuerwehr im einsatz - pressemeldung nr. 1",
+    "base": "Feuerwehr Stuttgart|abschlussmeldung zum brandeinsatz in bad cannstatt",
+    "status": "out",
+    "title": "Abschlussmeldung zum Brandeinsatz in Bad Cannstatt",
+    "link": "https://www.presseportal.de/blaulicht/pm/161590/6372924",
+    "first": "2026-10-17T09:27:42Z",
+    "last": "2026-10-17T09:27:42Z",
+    "places": [
+      {
+        "name": "Stuttgart",
+        "lat": 48.7784485,
+        "lon": 9.1800132,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Stuttgart",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|mannheim-seckenheim: fahrzeugbrand - zeugenaufruf - pressemeldung nr. 2",
     "status": "active",
-    "title": "Mannheim-Seckenheim: Fahrzeugbrand - Feuerwehr im Einsatz - Pressemeldung Nr. 1",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6372885",
-    "first": "2026-10-17T04:10:21Z",
-    "last": "2026-10-17T04:10:21Z",
+    "title": "Mannheim-Seckenheim: Fahrzeugbrand - Zeugenaufruf - Pressemeldung Nr. 2",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6372915",
+    "first": "2026-10-17T08:46:57Z",
+    "last": "2026-10-17T08:46:57Z",
     "places": [
       {
         "name": "Mannheim-Seckenheim",
@@ -18,6 +38,66 @@
     "source": "Polizeipräsidium Mannheim",
     "region": "BW",
     "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|mannheim: kellerbrand in doppelhaushälfte",
+    "status": "active",
+    "title": "Mannheim: Kellerbrand in Doppelhaushälfte",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6372898",
+    "first": "2026-10-17T06:57:19Z",
+    "last": "2026-10-17T06:57:19Z",
+    "places": [
+      {
+        "name": "Mannheim",
+        "lat": 49.4892913,
+        "lon": 8.4673098,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Stuttgart|tiefgaragenbrand - mehrere wohngebäude geräumt",
+    "status": "out",
+    "title": "Tiefgaragenbrand - mehrere Wohngebäude geräumt",
+    "link": "https://www.presseportal.de/blaulicht/pm/161590/6372894",
+    "first": "2026-10-17T06:40:16Z",
+    "last": "2026-10-17T06:40:16Z",
+    "places": [
+      {
+        "name": "Stuttgart",
+        "lat": 48.7784485,
+        "lon": 9.1800132,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Stuttgart",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|mannheim-seckenheim: fahrzeugbrand - feuerwehr im einsatz - pressemeldung nr. 1",
+    "status": "active",
+    "title": "Mannheim-Seckenheim: Fahrzeugbrand - Feuerwehr im Einsatz - Pressemeldung Nr. 1",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6372885",
+    "first": "2026-10-17T04:10:21Z",
+    "last": "2026-10-17T04:10:21Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
+    "places": [
+      {
+        "name": "Mannheim-Seckenheim",
+        "lat": 49.4512622,
+        "lon": 8.5385288,
+        "approx": false
+      }
+    ]
   },
   {
     "base": "Feuerwehr Radolfzell|zimmerbrand",
