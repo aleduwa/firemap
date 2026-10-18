@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115868/6373038",
     "first": "2026-10-17T23:31:17Z",
     "last": "2026-10-17T23:31:17Z",
+    "veg": false,
+    "source": "Feuerwehr Bochum",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Bochum",
@@ -13,11 +17,7 @@
         "lon": 7.2196635,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Bochum",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Wuppertal|fettbrand in imbiss am werth",
@@ -4119,72 +4119,6 @@
         "name": "Stuttgart",
         "lat": 48.7784485,
         "lon": 9.1800132,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Düsseldorf|feuermeldung in düsseldorf-oberbilk - verpuffung in einer obdachlosenunterkunft",
-    "status": "out",
-    "title": "Feuermeldung in Düsseldorf-Oberbilk - Verpuffung in einer Obdachlosenunterkunft",
-    "link": "https://www.presseportal.de/blaulicht/pm/115876/6354326",
-    "first": "2026-09-18T00:03:31Z",
-    "last": "2026-09-18T00:03:31Z",
-    "veg": false,
-    "source": "Feuerwehr Düsseldorf",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Düsseldorf",
-        "lat": 51.2254018,
-        "lon": 6.7763137,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Wuppertal|ausgelöste brandmeldeanlage führt zu gefahrstoffeinsatz",
-    "status": "active",
-    "title": "Ausgelöste Brandmeldeanlage führt zu Gefahrstoffeinsatz",
-    "link": "https://www.presseportal.de/blaulicht/pm/115885/6354325",
-    "first": "2026-09-17T23:20:45Z",
-    "last": "2026-09-17T23:20:45Z",
-    "veg": false,
-    "source": "Feuerwehr Wuppertal",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Wuppertal",
-        "lat": 51.264018,
-        "lon": 7.1780374,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|stühlingen/ grimmelshofen: person bei brand verstorben",
-    "status": "active",
-    "title": "Stühlingen/ Grimmelshofen: Person bei Brand verstorben",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6354321",
-    "first": "2026-09-17T22:39:09Z",
-    "last": "2026-09-17T22:39:09Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stühlingen",
-        "lat": 47.7470397,
-        "lon": 8.4474495,
-        "approx": false
-      },
-      {
-        "name": "Grimmelshofen",
-        "lat": 47.7861745,
-        "lon": 8.497838,
         "approx": false
       }
     ]
