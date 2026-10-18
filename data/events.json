@@ -1,11 +1,11 @@
 [
   {
-    "base": "Feuerwehr Witten|wohnungsbrand in witten",
-    "status": "out",
-    "title": "Wohnungsbrand in Witten",
-    "link": "https://www.presseportal.de/blaulicht/pm/120429/6373274",
-    "first": "2026-10-18T13:37:59Z",
-    "last": "2026-10-18T13:37:59Z",
+    "base": "Feuerwehr Witten|folgemeldung wohnungsbrand in witten",
+    "status": "active",
+    "title": "Folgemeldung Wohnungsbrand in Witten",
+    "link": "https://www.presseportal.de/blaulicht/pm/120429/6373286",
+    "first": "2026-10-18T15:56:37Z",
+    "last": "2026-10-18T15:56:37Z",
     "places": [
       {
         "name": "Witten",
@@ -20,12 +20,36 @@
     "updates": 0
   },
   {
+    "base": "Feuerwehr Witten|wohnungsbrand in witten",
+    "status": "out",
+    "title": "Wohnungsbrand in Witten",
+    "link": "https://www.presseportal.de/blaulicht/pm/120429/6373274",
+    "first": "2026-10-18T13:37:59Z",
+    "last": "2026-10-18T13:37:59Z",
+    "veg": false,
+    "source": "Feuerwehr Witten",
+    "updates": 0,
+    "region": "NRW",
+    "places": [
+      {
+        "name": "Witten",
+        "lat": 51.4370171,
+        "lon": 7.335124,
+        "approx": false
+      }
+    ]
+  },
+  {
     "base": "Feuerwehr Solingen|entstehungsbrand in galvanikbetrieb",
     "status": "active",
     "title": "Entstehungsbrand in Galvanikbetrieb",
     "link": "https://www.presseportal.de/blaulicht/pm/115884/6373269",
     "first": "2026-10-18T13:07:35Z",
     "last": "2026-10-18T13:07:35Z",
+    "veg": false,
+    "source": "Feuerwehr Solingen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Solingen",
@@ -33,11 +57,7 @@
         "lon": 7.0845893,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Solingen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Herdecke|feuerwehr verhindert brandausbreitung in der innenstadt - keller verraucht - bäckerei sollte brennen",
@@ -46,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/69790/6373243",
     "first": "2026-10-18T11:58:36Z",
     "last": "2026-10-18T11:58:36Z",
+    "veg": false,
+    "source": "Feuerwehr Herdecke",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Herdecke",
@@ -53,11 +77,7 @@
         "lon": 7.4330062,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Herdecke",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Aalen|rems-murr-kreis: brand und verkehrsunfall (stand 10:00 uhr)",
@@ -4008,164 +4028,6 @@
         "lat": 47.6956373,
         "lon": 9.0592022,
         "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Düsseldorf|wohnungsbrand in derendorf - feuerwehr rettet bewohner, rettungshubschrauber im einsatz",
-    "status": "out",
-    "title": "Wohnungsbrand in Derendorf - Feuerwehr rettet Bewohner, Rettungshubschrauber im Einsatz",
-    "link": "https://www.presseportal.de/blaulicht/pm/115876/6354997",
-    "first": "2026-09-18T16:31:35Z",
-    "last": "2026-09-18T16:31:35Z",
-    "veg": false,
-    "source": "Feuerwehr Düsseldorf",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Düsseldorf",
-        "lat": 51.2254018,
-        "lon": 6.7763137,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Freiwillige Feuerwehr Gangelt|unterstützung bei brand in den niederlanden",
-    "status": "active",
-    "title": "Unterstützung bei Brand in den Niederlanden",
-    "link": "https://www.presseportal.de/blaulicht/pm/130424/6354986",
-    "first": "2026-09-18T16:02:15Z",
-    "last": "2026-09-18T16:02:15Z",
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Gangelt",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Gangelt",
-        "lat": 50.9928407,
-        "lon": 5.997057,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|wiesloch/rhein-neckar-kreis: feuerzeug räuberisch erpresst - zeugenaufruf",
-    "status": "active",
-    "title": "Wiesloch/Rhein-Neckar-Kreis: Feuerzeug räuberisch erpresst - Zeugenaufruf",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6354979",
-    "first": "2026-09-18T15:38:01Z",
-    "last": "2026-09-18T15:38:01Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Wiesloch",
-        "lat": 49.2942599,
-        "lon": 8.698707,
-        "approx": false
-      },
-      {
-        "name": "Rhein-Neckar-Kreis",
-        "lat": 49.3684797,
-        "lon": 8.7352403,
-        "approx": false
-      },
-      {
-        "name": "zwischen Wiesloch und Baiertal",
-        "lat": 49.29839,
-        "lon": 8.71819,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Weinheim|kellerbrand in steinklingen schnell gelöscht",
-    "status": "out",
-    "title": "Kellerbrand in Steinklingen schnell gelöscht",
-    "link": "https://www.presseportal.de/blaulicht/pm/179375/6354970",
-    "first": "2026-09-18T15:18:48Z",
-    "last": "2026-09-18T15:18:48Z",
-    "veg": false,
-    "source": "Feuerwehr Weinheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Weinheim",
-        "lat": 49.5462349,
-        "lon": 8.6717458,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Weinheim|brandmeldeanlage in pflegeheim ursache für feuerwehreinsatz",
-    "status": "active",
-    "title": "Brandmeldeanlage in Pflegeheim Ursache für Feuerwehreinsatz",
-    "link": "https://www.presseportal.de/blaulicht/pm/179375/6354998",
-    "first": "2026-09-18T14:45:01Z",
-    "last": "2026-09-18T16:45:01Z",
-    "veg": false,
-    "source": "Feuerwehr Weinheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Weinheim",
-        "lat": 49.5462349,
-        "lon": 8.6717458,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|weinheim/rhein-neckar-kreis: person bei kellerbrand leicht verletzt",
-    "status": "active",
-    "title": "Weinheim/Rhein-Neckar-Kreis: Person bei Kellerbrand leicht verletzt",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6354899",
-    "first": "2026-09-18T14:12:52Z",
-    "last": "2026-09-18T14:12:52Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Weinheim",
-        "lat": 49.5462349,
-        "lon": 8.6717458,
-        "approx": false
-      },
-      {
-        "name": "Rhein-Neckar-Kreis",
-        "lat": 49.3684797,
-        "lon": 8.7352403,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Aalen|rems-murr-kreis: zwei verletzte nach brand einer arbeitsmaschine & diebstahlsdelikte aus und von pkw - polizei gibt präventionshinweise",
-    "status": "out",
-    "title": "Rems-Murr-Kreis: Zwei Verletzte nach Brand einer Arbeitsmaschine & Diebstahlsdelikte aus und von Pkw - Polizei gibt Präventionshinweise",
-    "link": "https://www.presseportal.de/blaulicht/pm/110969/6354860",
-    "first": "2026-09-18T13:47:11Z",
-    "last": "2026-09-18T13:47:11Z",
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Rems-Murr-Kreis",
-        "lat": 48.8966799,
-        "lon": 9.5037124,
-        "approx": false
       }
     ]
   }
