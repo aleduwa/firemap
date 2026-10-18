@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115876/6373306",
     "first": "2026-10-18T19:49:51Z",
     "last": "2026-10-18T19:49:51Z",
+    "veg": false,
+    "source": "Feuerwehr Düsseldorf",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Düsseldorf",
@@ -13,11 +17,7 @@
         "lon": 6.7763137,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Düsseldorf",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Witten|folgemeldung wohnungsbrand in witten",
@@ -3967,26 +3967,6 @@
         "name": "Wuppertal",
         "lat": 51.264018,
         "lon": 7.1780374,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Mülheim an der Ruhr|brand in mehrfamilienhaus in mülheim an der ruhr - bewohner über steckleiter gerettet",
-    "status": "active",
-    "title": "Brand in Mehrfamilienhaus in Mülheim an der Ruhr - Bewohner über Steckleiter gerettet",
-    "link": "https://www.presseportal.de/blaulicht/pm/115880/6355033",
-    "first": "2026-09-18T19:58:31Z",
-    "last": "2026-09-18T19:58:31Z",
-    "veg": false,
-    "source": "Feuerwehr Mülheim an der Ruhr",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Mülheim an der Ruhr",
-        "lat": 51.4272925,
-        "lon": 6.8829192,
         "approx": false
       }
     ]
