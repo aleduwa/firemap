@@ -1,16 +1,36 @@
 [
   {
-    "base": "Polizeipräsidium Mannheim|reilingen / rhein-neckar-kreis: gebäudebrand in der hockenheimer straße - pm nr. 1",
+    "base": "Polizeipräsidium Aalen|rems-murr-kreis: brand und verkehrsunfall (stand 10:00 uhr)",
     "status": "active",
-    "title": "Reilingen / Rhein-Neckar-Kreis: Gebäudebrand in der Hockenheimer Straße - PM Nr. 1",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6373051",
-    "first": "2026-10-18T03:54:40Z",
-    "last": "2026-10-18T03:54:40Z",
+    "title": "Rems-Murr-Kreis: Brand und Verkehrsunfall (stand 10:00 Uhr)",
+    "link": "https://www.presseportal.de/blaulicht/pm/110969/6373195",
+    "first": "2026-10-18T10:48:42Z",
+    "last": "2026-10-18T10:48:42Z",
     "places": [
       {
-        "name": "Reilingen",
-        "lat": 49.2945507,
-        "lon": 8.5739147,
+        "name": "Rems-Murr-Kreis",
+        "lat": 48.8966799,
+        "lon": 9.5037124,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|eberbach, rhein-neckar-kreis: brennende mülltonne auf schulgelände verursacht hohen schaden- polizei sucht zeugen",
+    "status": "active",
+    "title": "Eberbach, Rhein-Neckar-Kreis: Brennende Mülltonne auf Schulgelände verursacht hohen Schaden- Polizei sucht Zeugen",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6373143",
+    "first": "2026-10-18T08:58:55Z",
+    "last": "2026-10-18T08:58:55Z",
+    "places": [
+      {
+        "name": "Eberbach",
+        "lat": 49.4635303,
+        "lon": 8.9855203,
         "approx": false
       },
       {
@@ -24,6 +44,52 @@
     "source": "Polizeipräsidium Mannheim",
     "region": "BW",
     "updates": 0
+  },
+  {
+    "base": "Feuerwehr Bochum|wohnhaus in bochum-harpen durch brand zerstört",
+    "status": "out",
+    "title": "Wohnhaus in Bochum-Harpen durch Brand zerstört - Abschlussmeldung",
+    "link": "https://www.presseportal.de/blaulicht/pm/115868/6373121",
+    "first": "2026-10-18T08:23:46Z",
+    "last": "2026-10-18T08:23:46Z",
+    "places": [
+      {
+        "name": "Bochum",
+        "lat": 51.4818111,
+        "lon": 7.2196635,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Bochum",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|reilingen / rhein-neckar-kreis: gebäudebrand in der hockenheimer straße - pm nr. 1",
+    "status": "active",
+    "title": "Reilingen / Rhein-Neckar-Kreis: Gebäudebrand in der Hockenheimer Straße - PM Nr. 1",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6373051",
+    "first": "2026-10-18T03:54:40Z",
+    "last": "2026-10-18T03:54:40Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
+    "places": [
+      {
+        "name": "Reilingen",
+        "lat": 49.2945507,
+        "lon": 8.5739147,
+        "approx": false
+      },
+      {
+        "name": "Rhein-Neckar-Kreis",
+        "lat": 49.3684797,
+        "lon": 8.7352403,
+        "approx": false
+      }
+    ]
   },
   {
     "base": "Feuerwehr Bochum|wohnhaus in bochum-harpen durch brand zerstört - feuerwehr verhindert ausbreitung auf nachbargebäude",
@@ -4125,26 +4191,6 @@
         "name": "Stadt-",
         "lat": 49.4093582,
         "lon": 8.694724,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Stuttgart|brand in gemeinschaftsunterkunft in stuttgart-bad cannstatt - zimmerbrand mit starker rauchentwicklung - 8 verletzte personen - mehrere atemschutztrupps im einsatz",
-    "status": "active",
-    "title": "Brand in Gemeinschaftsunterkunft in Stuttgart-Bad Cannstatt - Zimmerbrand mit starker Rauchentwicklung - 8 verletzte Personen - mehrere Atemschutztrupps im Einsatz",
-    "link": "https://www.presseportal.de/blaulicht/pm/161590/6354335",
-    "first": "2026-09-18T06:08:30Z",
-    "last": "2026-09-18T06:08:30Z",
-    "veg": false,
-    "source": "Feuerwehr Stuttgart",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stuttgart",
-        "lat": 48.7784485,
-        "lon": 9.1800132,
         "approx": false
       }
     ]
