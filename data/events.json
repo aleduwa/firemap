@@ -3950,25 +3950,5 @@
         "approx": false
       }
     ]
-  },
-  {
-    "base": "Feuerwehr Wuppertal|dachstuhlbrand und ein schwerer verkehrsunfall fordern die feuerwehr",
-    "status": "out",
-    "title": "Dachstuhlbrand und ein schwerer Verkehrsunfall fordern die Feuerwehr",
-    "link": "https://www.presseportal.de/blaulicht/pm/115885/6355048",
-    "first": "2026-09-18T22:45:06Z",
-    "last": "2026-09-18T22:45:06Z",
-    "veg": false,
-    "source": "Feuerwehr Wuppertal",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Wuppertal",
-        "lat": 51.264018,
-        "lon": 7.1780374,
-        "approx": false
-      }
-    ]
   }
 ]
