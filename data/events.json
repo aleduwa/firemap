@@ -1,11 +1,35 @@
 [
   {
+    "base": "Feuerwehr Düsseldorf|zimmerbrand in düsseldorf-rath - vier verletzte",
+    "status": "active",
+    "title": "Zimmerbrand in Düsseldorf-Rath - vier Verletzte",
+    "link": "https://www.presseportal.de/blaulicht/pm/115876/6373306",
+    "first": "2026-10-18T19:49:51Z",
+    "last": "2026-10-18T19:49:51Z",
+    "places": [
+      {
+        "name": "Düsseldorf",
+        "lat": 51.2254018,
+        "lon": 6.7763137,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Düsseldorf",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Witten|folgemeldung wohnungsbrand in witten",
     "status": "active",
     "title": "Folgemeldung Wohnungsbrand in Witten",
     "link": "https://www.presseportal.de/blaulicht/pm/120429/6373286",
     "first": "2026-10-18T15:56:37Z",
     "last": "2026-10-18T15:56:37Z",
+    "veg": false,
+    "source": "Feuerwehr Witten",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Witten",
@@ -13,11 +37,7 @@
         "lon": 7.335124,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Witten",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Witten|wohnungsbrand in witten",
@@ -3968,66 +3988,6 @@
         "lat": 51.4272925,
         "lon": 6.8829192,
         "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Ense|zugübung: brand in einem maschinenlager",
-    "status": "active",
-    "title": "Zugübung: Brand in einem Maschinenlager",
-    "link": "https://www.presseportal.de/blaulicht/pm/173619/6355023",
-    "first": "2026-09-18T18:37:44Z",
-    "last": "2026-09-18T18:37:44Z",
-    "veg": false,
-    "source": "Feuerwehr Ense",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Ense",
-        "lat": 51.502011,
-        "lon": 7.9722118,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Ratingen|küchenbrand in ratingen-ost",
-    "status": "active",
-    "title": "Küchenbrand in Ratingen-Ost",
-    "link": "https://www.presseportal.de/blaulicht/pm/70701/6355014",
-    "first": "2026-09-18T17:45:36Z",
-    "last": "2026-09-18T17:45:36Z",
-    "veg": false,
-    "source": "Feuerwehr Ratingen",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Ratingen",
-        "lat": 51.2973261,
-        "lon": 6.8493503,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Freiwillige Feuerwehr Reichenau|ausgelöste brandmeldeanlage - 17.09.2026",
-    "status": "active",
-    "title": "Ausgelöste Brandmeldeanlage - 17.09.2026",
-    "link": "https://www.presseportal.de/blaulicht/pm/163367/6355008",
-    "first": "2026-09-18T17:17:37Z",
-    "last": "2026-09-18T17:17:37Z",
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Reichenau",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Reichenau",
-        "lat": 47.6956373,
-        "lon": 9.0592022,
-        "approx": true
       }
     ]
   }
