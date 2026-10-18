@@ -1,11 +1,75 @@
 [
   {
+    "base": "Feuerwehr Witten|wohnungsbrand in witten",
+    "status": "out",
+    "title": "Wohnungsbrand in Witten",
+    "link": "https://www.presseportal.de/blaulicht/pm/120429/6373274",
+    "first": "2026-10-18T13:37:59Z",
+    "last": "2026-10-18T13:37:59Z",
+    "places": [
+      {
+        "name": "Witten",
+        "lat": 51.4370171,
+        "lon": 7.335124,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Witten",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Solingen|entstehungsbrand in galvanikbetrieb",
+    "status": "active",
+    "title": "Entstehungsbrand in Galvanikbetrieb",
+    "link": "https://www.presseportal.de/blaulicht/pm/115884/6373269",
+    "first": "2026-10-18T13:07:35Z",
+    "last": "2026-10-18T13:07:35Z",
+    "places": [
+      {
+        "name": "Solingen",
+        "lat": 51.1721629,
+        "lon": 7.0845893,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Solingen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Herdecke|feuerwehr verhindert brandausbreitung in der innenstadt - keller verraucht - bäckerei sollte brennen",
+    "status": "active",
+    "title": "Feuerwehr verhindert Brandausbreitung in der Innenstadt - Keller verraucht - Bäckerei sollte brennen",
+    "link": "https://www.presseportal.de/blaulicht/pm/69790/6373243",
+    "first": "2026-10-18T11:58:36Z",
+    "last": "2026-10-18T11:58:36Z",
+    "places": [
+      {
+        "name": "Herdecke",
+        "lat": 51.4001119,
+        "lon": 7.4330062,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Herdecke",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Aalen|rems-murr-kreis: brand und verkehrsunfall (stand 10:00 uhr)",
     "status": "active",
     "title": "Rems-Murr-Kreis: Brand und Verkehrsunfall (stand 10:00 Uhr)",
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6373195",
     "first": "2026-10-18T10:48:42Z",
     "last": "2026-10-18T10:48:42Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Rems-Murr-Kreis",
@@ -13,11 +77,7 @@
         "lon": 9.5037124,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|eberbach, rhein-neckar-kreis: brennende mülltonne auf schulgelände verursacht hohen schaden- polizei sucht zeugen",
@@ -26,6 +86,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6373143",
     "first": "2026-10-18T08:58:55Z",
     "last": "2026-10-18T08:58:55Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Eberbach",
@@ -39,11 +103,7 @@
         "lon": 8.7352403,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Bochum|wohnhaus in bochum-harpen durch brand zerstört",
@@ -52,6 +112,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115868/6373121",
     "first": "2026-10-18T08:23:46Z",
     "last": "2026-10-18T08:23:46Z",
+    "veg": false,
+    "source": "Feuerwehr Bochum",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Bochum",
@@ -59,11 +123,7 @@
         "lon": 7.2196635,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Bochum",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|reilingen / rhein-neckar-kreis: gebäudebrand in der hockenheimer straße - pm nr. 1",
@@ -4105,112 +4165,6 @@
         "name": "Rems-Murr-Kreis",
         "lat": 48.8966799,
         "lon": 9.5037124,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(ul) laichingen - zeugen zu brand gesucht / eine holzhütte und ein bauwagen brannten am donnerstagabend in laichingen.",
-    "status": "active",
-    "title": "(UL) Laichingen - Zeugen zu Brand gesucht / Eine Holzhütte und ein Bauwagen brannten am Donnerstagabend in Laichingen.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6354766",
-    "first": "2026-09-18T12:45:51Z",
-    "last": "2026-09-18T12:45:51Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Laichingen",
-        "lat": 48.4896773,
-        "lon": 9.6861474,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|leimen/rhein-neckar-kreis: e-scooter-kontrollen - manipulierter e-scooter festgestellt",
-    "status": "active",
-    "title": "Leimen/Rhein-Neckar-Kreis: E-Scooter-Kontrollen - manipulierter E-Scooter festgestellt",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6354884",
-    "first": "2026-09-18T12:03:30Z",
-    "last": "2026-09-18T12:03:30Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Leimen",
-        "lat": 49.3491417,
-        "lon": 8.6909951,
-        "approx": false
-      },
-      {
-        "name": "Rhein-Neckar-Kreis",
-        "lat": 49.3684797,
-        "lon": 8.7352403,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Dörentrup|strohballenbrand entwickelte sich rasant zu kräftezehrendem einsatz für die feuerwehr",
-    "status": "contained",
-    "title": "Strohballenbrand entwickelte sich rasant zu kräftezehrendem Einsatz für die Feuerwehr",
-    "link": "https://www.presseportal.de/blaulicht/pm/179920/6354602",
-    "first": "2026-09-18T11:03:37Z",
-    "last": "2026-09-18T11:03:37Z",
-    "veg": true,
-    "source": "Feuerwehr Dörentrup",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Dörentrup",
-        "lat": 52.0408142,
-        "lon": 9.0033681,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Heilbronn|stadt- und landkreis heilbronn: brand und unfall unter alkoholeinfluss",
-    "status": "out",
-    "title": "Stadt- und Landkreis Heilbronn: Brand und Unfall unter Alkoholeinfluss",
-    "link": "https://www.presseportal.de/blaulicht/pm/110971/6354523",
-    "first": "2026-09-18T10:09:40Z",
-    "last": "2026-09-18T10:09:40Z",
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stadt-",
-        "lat": 49.4093582,
-        "lon": 8.694724,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Heilbronn|main-tauber-kreis: brand",
-    "status": "contained",
-    "title": "Main-Tauber-Kreis: Brand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110971/6354822",
-    "first": "2026-09-08T16:08:11Z",
-    "last": "2026-09-18T13:20:47Z",
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 1,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Main-Tauber-Kreis",
-        "lat": 49.5713631,
-        "lon": 9.6999301,
         "approx": false
       }
     ]
