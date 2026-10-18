@@ -1,5 +1,31 @@
 [
   {
+    "base": "Polizeipräsidium Mannheim|reilingen / rhein-neckar-kreis: gebäudebrand in der hockenheimer straße - pm nr. 1",
+    "status": "active",
+    "title": "Reilingen / Rhein-Neckar-Kreis: Gebäudebrand in der Hockenheimer Straße - PM Nr. 1",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6373051",
+    "first": "2026-10-18T03:54:40Z",
+    "last": "2026-10-18T03:54:40Z",
+    "places": [
+      {
+        "name": "Reilingen",
+        "lat": 49.2945507,
+        "lon": 8.5739147,
+        "approx": false
+      },
+      {
+        "name": "Rhein-Neckar-Kreis",
+        "lat": 49.3684797,
+        "lon": 8.7352403,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Bochum|wohnhaus in bochum-harpen durch brand zerstört - feuerwehr verhindert ausbreitung auf nachbargebäude",
     "status": "contained",
     "title": "Wohnhaus in Bochum-Harpen durch Brand zerstört - Feuerwehr verhindert Ausbreitung auf Nachbargebäude",
