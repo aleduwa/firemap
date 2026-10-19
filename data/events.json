@@ -1,5 +1,71 @@
 [
   {
+    "base": "Polizeipräsidium Mannheim|mannheim-neckarstadt: fahrzeugbrand pm 1",
+    "status": "active",
+    "title": "Mannheim-Neckarstadt: Fahrzeugbrand PM 1",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6374199",
+    "first": "2026-10-19T19:14:39Z",
+    "last": "2026-10-19T19:14:39Z",
+    "places": [
+      {
+        "name": "Mannheim-Neckarstadt",
+        "lat": 49.5046094,
+        "lon": 8.4606257,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Lennestadt|lkw-brand auf der b55 - aufwendige löscharbeiten bei brennendem sattelzug",
+    "status": "out",
+    "title": "Lkw-Brand auf der B55 - aufwendige Löscharbeiten bei brennendem Sattelzug",
+    "link": "https://www.presseportal.de/blaulicht/pm/118009/6374183",
+    "first": "2026-10-19T17:02:47Z",
+    "last": "2026-10-19T17:02:47Z",
+    "places": [
+      {
+        "name": "Lennestadt",
+        "lat": 51.1245718,
+        "lon": 8.0568953,
+        "approx": false
+      },
+      {
+        "name": "B55 zwischen Bonzel und Bonzelerhammer",
+        "lat": 51.11456,
+        "lon": 8.02858,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Lennestadt",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Ludwigsburg|herrenberg: gartenhaus in kleingartenanlage in brand geraten - eine person schwer verletzt",
+    "status": "out",
+    "title": "Herrenberg: Gartenhaus in Kleingartenanlage in Brand geraten - eine Person schwer verletzt",
+    "link": "https://www.presseportal.de/blaulicht/pm/110974/6374180",
+    "first": "2026-10-19T16:59:04Z",
+    "last": "2026-10-19T16:59:04Z",
+    "places": [
+      {
+        "name": "Herrenberg",
+        "lat": 48.5963819,
+        "lon": 8.8702368,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ludwigsburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Aalen|rems-murr-kreis: unfälle, unfallflucht, brand auf terrasse, sachbeschädigung, einbrüche",
     "status": "out",
     "title": "Rems-Murr-Kreis: Unfälle, Unfallflucht, Brand auf Terrasse, Sachbeschädigung, Einbrüche",
@@ -3873,26 +3939,6 @@
         "name": "Hünxe",
         "lat": 51.6414581,
         "lon": 6.7660319,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Bochum|wohnungsbrand auf der hattinger straße: zwei personen aus brandwohnung gerettet",
-    "status": "contained",
-    "title": "Wohnungsbrand auf der Hattinger Straße: Zwei Personen aus Brandwohnung gerettet",
-    "link": "https://www.presseportal.de/blaulicht/pm/115868/6355201",
-    "first": "2026-09-19T17:50:38Z",
-    "last": "2026-09-19T17:50:38Z",
-    "veg": false,
-    "source": "Feuerwehr Bochum",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Bochum",
-        "lat": 51.4818111,
-        "lon": 7.2196635,
         "approx": false
       }
     ]
