@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6374199",
     "first": "2026-10-19T19:14:39Z",
     "last": "2026-10-19T19:14:39Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Mannheim-Neckarstadt",
@@ -13,11 +17,7 @@
         "lon": 8.4606257,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Lennestadt|lkw-brand auf der b55 - aufwendige löscharbeiten bei brennendem sattelzug",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/118009/6374183",
     "first": "2026-10-19T17:02:47Z",
     "last": "2026-10-19T17:02:47Z",
+    "veg": false,
+    "source": "Feuerwehr Lennestadt",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Lennestadt",
@@ -39,11 +43,7 @@
         "lon": 8.02858,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Lennestadt",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ludwigsburg|herrenberg: gartenhaus in kleingartenanlage in brand geraten - eine person schwer verletzt",
@@ -52,6 +52,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110974/6374180",
     "first": "2026-10-19T16:59:04Z",
     "last": "2026-10-19T16:59:04Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ludwigsburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Herrenberg",
@@ -59,11 +63,7 @@
         "lon": 8.8702368,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Aalen|rems-murr-kreis: unfälle, unfallflucht, brand auf terrasse, sachbeschädigung, einbrüche",
@@ -3919,26 +3919,6 @@
         "name": "Solingen",
         "lat": 51.1721629,
         "lon": 7.0845893,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Freiwillige Feuerwehr Hünxe|pkw-brand durch ersthelfer und polizei gelöscht",
-    "status": "out",
-    "title": "Pkw-Brand durch Ersthelfer und Polizei gelöscht",
-    "link": "https://www.presseportal.de/blaulicht/pm/133631/6355216",
-    "first": "2026-09-19T21:05:45Z",
-    "last": "2026-09-19T21:05:45Z",
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Hünxe",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Hünxe",
-        "lat": 51.6414581,
-        "lon": 6.7660319,
         "approx": false
       }
     ]
