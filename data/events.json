@@ -1,5 +1,51 @@
 [
   {
+    "base": "Polizeipräsidium Aalen|rems-murr-kreis: unfälle, unfallflucht, brand auf terrasse, sachbeschädigung, einbrüche",
+    "status": "out",
+    "title": "Rems-Murr-Kreis: Unfälle, Unfallflucht, Brand auf Terrasse, Sachbeschädigung, Einbrüche",
+    "link": "https://www.presseportal.de/blaulicht/pm/110969/6373403",
+    "first": "2026-10-19T08:31:51Z",
+    "last": "2026-10-19T08:31:51Z",
+    "places": [
+      {
+        "name": "Rems-Murr-Kreis",
+        "lat": 48.8966799,
+        "lon": 9.5037124,
+        "approx": false
+      },
+      {
+        "name": "zwischen Freitag und Samstag",
+        "lat": 48.97305,
+        "lon": 9.2198,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizei Steinfurt|steinfurt, pkw ausgebrannt - ursache noch unklar",
+    "status": "active",
+    "title": "Steinfurt, Pkw ausgebrannt - Ursache noch unklar",
+    "link": "https://www.presseportal.de/blaulicht/pm/43526/6373395",
+    "first": "2026-10-19T08:16:25Z",
+    "last": "2026-10-19T08:16:25Z",
+    "places": [
+      {
+        "name": "Steinfurt",
+        "lat": 52.1377509,
+        "lon": 7.3581404,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizei Steinfurt",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Düsseldorf|zimmerbrand in düsseldorf-rath - vier verletzte",
     "status": "active",
     "title": "Zimmerbrand in Düsseldorf-Rath - vier Verletzte",
@@ -3887,46 +3933,6 @@
         "name": "Mannheim-Wallstadt",
         "lat": 49.4996762,
         "lon": 8.5417395,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Düren|scheune in merken steht beim eintreffen in vollbrand.",
-    "status": "contained",
-    "title": "Scheune in Merken steht beim Eintreffen in Vollbrand.",
-    "link": "https://www.presseportal.de/blaulicht/pm/134173/6355075",
-    "first": "2026-09-19T06:29:28Z",
-    "last": "2026-09-19T06:29:28Z",
-    "veg": false,
-    "source": "Feuerwehr Düren",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Düren",
-        "lat": 50.8031684,
-        "lon": 6.4820806,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Gelsenkirchen|vollübung der feuerwehr gelsenkirchen: brand im u-bahnbereich realitätsnah geprobt",
-    "status": "active",
-    "title": "Vollübung der Feuerwehr Gelsenkirchen: Brand im U-Bahnbereich realitätsnah geprobt",
-    "link": "https://www.presseportal.de/blaulicht/pm/116260/6355071",
-    "first": "2026-09-19T05:57:12Z",
-    "last": "2026-09-19T05:57:12Z",
-    "veg": false,
-    "source": "Feuerwehr Gelsenkirchen",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Gelsenkirchen",
-        "lat": 51.5110321,
-        "lon": 7.0960124,
         "approx": false
       }
     ]
