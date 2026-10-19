@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6373403",
     "first": "2026-10-19T08:31:51Z",
     "last": "2026-10-19T08:31:51Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Rems-Murr-Kreis",
@@ -19,11 +23,7 @@
         "lon": 9.2198,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizei Steinfurt|steinfurt, pkw ausgebrannt - ursache noch unklar",
@@ -32,6 +32,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/43526/6373395",
     "first": "2026-10-19T08:16:25Z",
     "last": "2026-10-19T08:16:25Z",
+    "veg": false,
+    "source": "Polizei Steinfurt",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Steinfurt",
@@ -39,11 +43,7 @@
         "lon": 7.3581404,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizei Steinfurt",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Düsseldorf|zimmerbrand in düsseldorf-rath - vier verletzte",
@@ -3893,46 +3893,6 @@
         "name": "Bochum",
         "lat": 51.4818111,
         "lon": 7.2196635,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Freiwillige Feuerwehr Breckerfeld|brandmeldeanlage durch küchendämpfe ausgelöst",
-    "status": "out",
-    "title": "Brandmeldeanlage durch Küchendämpfe ausgelöst",
-    "link": "https://www.presseportal.de/blaulicht/pm/69791/6355151",
-    "first": "2026-09-19T12:06:17Z",
-    "last": "2026-09-19T12:06:17Z",
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Breckerfeld",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Breckerfeld",
-        "lat": 51.2603083,
-        "lon": 7.4667789,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|mannheim-wallstadt - pkw brennt vollständig aus - l597 zeitweise gesperrt",
-    "status": "active",
-    "title": "Mannheim-Wallstadt - Pkw brennt vollständig aus - L597 zeitweise gesperrt",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6355127",
-    "first": "2026-09-19T09:33:03Z",
-    "last": "2026-09-19T09:33:03Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Mannheim-Wallstadt",
-        "lat": 49.4996762,
-        "lon": 8.5417395,
         "approx": false
       }
     ]
