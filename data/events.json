@@ -3930,25 +3930,5 @@
         "approx": false
       }
     ]
-  },
-  {
-    "base": "Feuerwehr Paderborn|zimmerbrand in leerstehenden bürokomplex",
-    "status": "contained",
-    "title": "Zimmerbrand in leerstehenden Bürokomplex",
-    "link": "https://www.presseportal.de/blaulicht/pm/173646/6355056",
-    "first": "2026-09-19T01:11:36Z",
-    "last": "2026-09-19T01:11:36Z",
-    "veg": false,
-    "source": "Feuerwehr Paderborn",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Paderborn",
-        "lat": 51.7177044,
-        "lon": 8.752653,
-        "approx": false
-      }
-    ]
   }
 ]
