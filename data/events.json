@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/69788/6374902",
     "first": "2026-10-20T15:48:53Z",
     "last": "2026-10-20T15:48:53Z",
+    "veg": false,
+    "source": "Feuerwehr Sprockhövel",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Sprockhövel",
@@ -13,11 +17,7 @@
         "lon": 7.2485905,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Sprockhövel",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(gp) uhingen - feuer auf schultoilette / rechtzeitig konnte ein brand am montag in uhingen gelöscht werden.",
@@ -3899,66 +3899,6 @@
         "name": "Rems-Murr-Kreis",
         "lat": 48.8966799,
         "lon": 9.5037124,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Bochum|kellerbrand an der stiepeler straße: brennender wäschetrockner sorgt für starke verrauchung",
-    "status": "active",
-    "title": "Kellerbrand an der Stiepeler Straße: Brennender Wäschetrockner sorgt für starke Verrauchung",
-    "link": "https://www.presseportal.de/blaulicht/pm/115868/6355481",
-    "first": "2026-09-20T16:49:43Z",
-    "last": "2026-09-20T16:49:43Z",
-    "veg": false,
-    "source": "Feuerwehr Bochum",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Bochum",
-        "lat": 51.4818111,
-        "lon": 7.2196635,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Weinheim|ausgelöste brandwarnanlage in sozialer einrichtung in der innenstadt",
-    "status": "active",
-    "title": "Ausgelöste Brandwarnanlage in sozialer Einrichtung in der Innenstadt",
-    "link": "https://www.presseportal.de/blaulicht/pm/179375/6355460",
-    "first": "2026-09-20T14:49:53Z",
-    "last": "2026-09-20T14:49:53Z",
-    "veg": false,
-    "source": "Feuerwehr Weinheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Weinheim",
-        "lat": 49.5462349,
-        "lon": 8.6717458,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Weinheim|brandmeldeanlage ruft die feuerwehr weinhein am frühen samstagmorgen auf den plan",
-    "status": "active",
-    "title": "Brandmeldeanlage ruft die Feuerwehr Weinhein am frühen Samstagmorgen auf den Plan",
-    "link": "https://www.presseportal.de/blaulicht/pm/179375/6355456",
-    "first": "2026-09-20T14:31:58Z",
-    "last": "2026-09-20T14:31:58Z",
-    "veg": false,
-    "source": "Feuerwehr Weinheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Weinheim",
-        "lat": 49.5462349,
-        "lon": 8.6717458,
         "approx": false
       }
     ]
