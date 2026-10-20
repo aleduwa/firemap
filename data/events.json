@@ -1,5 +1,45 @@
 [
   {
+    "base": "Polizeipräsidium Ulm|(gp) uhingen - feuer auf schultoilette / rechtzeitig konnte ein brand am montag in uhingen gelöscht werden.",
+    "status": "out",
+    "title": "(GP) Uhingen - Feuer auf Schultoilette / Rechtzeitig konnte ein Brand am Montag in Uhingen gelöscht werden.",
+    "link": "https://www.presseportal.de/blaulicht/pm/110979/6374548",
+    "first": "2026-10-20T10:44:46Z",
+    "last": "2026-10-20T10:44:46Z",
+    "places": [
+      {
+        "name": "Uhingen",
+        "lat": 48.7042331,
+        "lon": 9.5856424,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Offenburg|rastatt - erneuter mülltonnenbrand in einer tiefgarage",
+    "status": "active",
+    "title": "Rastatt - erneuter Mülltonnenbrand in einer Tiefgarage",
+    "link": "https://www.presseportal.de/blaulicht/pm/110975/6374528",
+    "first": "2026-10-20T10:32:10Z",
+    "last": "2026-10-20T10:32:10Z",
+    "places": [
+      {
+        "name": "Rastatt",
+        "lat": 48.8584568,
+        "lon": 8.2040452,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Offenburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Mannheim|mannheim-neckarstadt: fahrzeugbrand pm 1",
     "status": "active",
     "title": "Mannheim-Neckarstadt: Fahrzeugbrand PM 1",
@@ -3899,26 +3939,6 @@
         "name": "Weinheim",
         "lat": 49.5462349,
         "lon": 8.6717458,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Solingen|rauchmelder führt feuerwehr zu schwelbrand in darüberliegender wohnung",
-    "status": "out",
-    "title": "Rauchmelder führt Feuerwehr zu Schwelbrand in darüberliegender Wohnung",
-    "link": "https://www.presseportal.de/blaulicht/pm/115884/6355243",
-    "first": "2026-09-20T06:26:19Z",
-    "last": "2026-09-20T06:26:19Z",
-    "veg": false,
-    "source": "Feuerwehr Solingen",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Solingen",
-        "lat": 51.1721629,
-        "lon": 7.0845893,
         "approx": false
       }
     ]
