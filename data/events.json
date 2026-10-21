@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6375562",
     "first": "2026-10-21T14:53:20Z",
     "last": "2026-10-21T14:53:20Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Rems-Murr-Kreis",
@@ -13,11 +17,7 @@
         "lon": 9.5037124,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|freiburg: dachgeschosswohnung in vollbrand - bewohnerin in klinik",
@@ -60,6 +60,46 @@
     ]
   },
   {
+    "base": "Polizeipräsidium Karlsruhe|(ka) bruchsal - hoher sachschaden nach wohnungsbrand",
+    "status": "active",
+    "title": "(KA) Bruchsal - Hoher Sachschaden nach Wohnungsbrand",
+    "link": "https://www.presseportal.de/blaulicht/pm/110972/6375056",
+    "first": "2026-10-21T08:13:29Z",
+    "last": "2026-10-21T08:13:29Z",
+    "places": [
+      {
+        "name": "Bruchsal",
+        "lat": 49.124118,
+        "lon": 8.5980244,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Karlsruhe",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Konstanz|dachstuhlbrand",
+    "status": "out",
+    "title": "Dachstuhlbrand",
+    "link": "https://www.presseportal.de/blaulicht/pm/139089/6375002",
+    "first": "2026-10-21T07:07:35Z",
+    "last": "2026-10-21T07:07:35Z",
+    "places": [
+      {
+        "name": "Konstanz",
+        "lat": 47.659216,
+        "lon": 9.1750718,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Konstanz",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Stuttgart|brand in leerstehender wohncontaineranlage - keine verletzten personen - feuer kann rasch gelöscht werden",
     "status": "out",
     "title": "Brand in leerstehender Wohncontaineranlage - Keine verletzten Personen - Feuer kann rasch gelöscht werden",
@@ -98,6 +138,46 @@
         "approx": false
       }
     ]
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|heidelberg: dachstuhlbrand; etwa 100.000 euro sachschaden",
+    "status": "out",
+    "title": "Heidelberg: Dachstuhlbrand; etwa 100.000 Euro Sachschaden",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6374774",
+    "first": "2026-10-20T14:03:42Z",
+    "last": "2026-10-20T14:03:42Z",
+    "places": [
+      {
+        "name": "Heidelberg",
+        "lat": 49.4093582,
+        "lon": 8.694724,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Ulm|(ul) heroldstatt - feuer auf komposthaufen / vermutlich noch nicht vollständig erkaltete asche sorgte für einen brand am montag in sontheim.",
+    "status": "out",
+    "title": "(UL) Heroldstatt - Feuer auf Komposthaufen / Vermutlich noch nicht vollständig erkaltete Asche sorgte für einen Brand am Montag in Sontheim.",
+    "link": "https://www.presseportal.de/blaulicht/pm/110979/6374586",
+    "first": "2026-10-20T11:07:25Z",
+    "last": "2026-10-20T11:07:25Z",
+    "places": [
+      {
+        "name": "Heroldstatt",
+        "lat": 48.4426749,
+        "lon": 9.6599683,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "region": "BW",
+    "updates": 0
   },
   {
     "base": "Polizeipräsidium Ulm|(gp) uhingen - feuer auf schultoilette / rechtzeitig konnte ein brand am montag in uhingen gelöscht werden.",
@@ -204,6 +284,106 @@
         "approx": false
       }
     ]
+  },
+  {
+    "base": "Feuerwehr Stuttgart|großflächiger wasserschaden in schule in stuttgart-feuerbach",
+    "status": "active",
+    "title": "Großflächiger Wasserschaden in Schule in Stuttgart-Feuerbach",
+    "link": "https://www.presseportal.de/blaulicht/pm/161590/6374051",
+    "first": "2026-10-19T14:38:35Z",
+    "last": "2026-10-19T14:38:35Z",
+    "places": [
+      {
+        "name": "Stuttgart",
+        "lat": 48.7784485,
+        "lon": 9.1800132,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Stuttgart",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Offenburg|oppenau - feuer zerstört wohnhaus -nachtragsmeldung-",
+    "status": "active",
+    "title": "Oppenau - Feuer zerstört Wohnhaus -Nachtragsmeldung-",
+    "link": "https://www.presseportal.de/blaulicht/pm/110975/6373842",
+    "first": "2026-10-19T12:25:59Z",
+    "last": "2026-10-19T12:25:59Z",
+    "places": [
+      {
+        "name": "Oppenau",
+        "lat": 48.4751652,
+        "lon": 8.1646682,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Offenburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Heilbronn|stadt- und landkreis heilbronn: einbrüche, fahrzeuge von posern beschlagnahmt, brand, radfahrer nach unfall verstorben",
+    "status": "out",
+    "title": "Stadt- und Landkreis Heilbronn: Einbrüche, Fahrzeuge von Posern beschlagnahmt, Brand, Radfahrer nach Unfall verstorben",
+    "link": "https://www.presseportal.de/blaulicht/pm/110971/6373704",
+    "first": "2026-10-19T11:18:53Z",
+    "last": "2026-10-19T11:18:53Z",
+    "places": [
+      {
+        "name": "Stadt-",
+        "lat": 49.4093582,
+        "lon": 8.694724,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Pforzheim|dachstuhlbrand in würm",
+    "status": "active",
+    "title": "Dachstuhlbrand in Würm",
+    "link": "https://www.presseportal.de/blaulicht/pm/151867/6373669",
+    "first": "2026-10-19T11:03:06Z",
+    "last": "2026-10-19T11:03:06Z",
+    "places": [
+      {
+        "name": "Pforzheim",
+        "lat": 48.890934,
+        "lon": 8.7025509,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Pforzheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Ulm|(bc) achstetten - holzschuppen in brand / mutmaßlich falsch entsorgte asche führte am samstag in achstetten-stetten zu einem einsatz der feuerwehr.",
+    "status": "contained",
+    "title": "(BC) Achstetten - Holzschuppen in Brand / Mutmaßlich falsch entsorgte Asche führte am Samstag in Achstetten-Stetten zu einem Einsatz der Feuerwehr.",
+    "link": "https://www.presseportal.de/blaulicht/pm/110979/6373633",
+    "first": "2026-10-19T10:47:53Z",
+    "last": "2026-10-19T10:47:53Z",
+    "places": [
+      {
+        "name": "Achstetten",
+        "lat": 48.2644924,
+        "lon": 9.9005979,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "region": "BW",
+    "updates": 0
   },
   {
     "base": "Polizeipräsidium Aalen|rems-murr-kreis: unfälle, unfallflucht, brand auf terrasse, sachbeschädigung, einbrüche",
@@ -416,6 +596,32 @@
         "approx": false
       }
     ]
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|reilingen / rhein-neckar-kreis: gebäudebrand in der hockenheimer straße - pm nr. 2",
+    "status": "out",
+    "title": "Reilingen / Rhein-Neckar-Kreis: Gebäudebrand in der Hockenheimer Straße - PM Nr. 2",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6373098",
+    "first": "2026-10-18T07:44:55Z",
+    "last": "2026-10-18T07:44:55Z",
+    "places": [
+      {
+        "name": "Reilingen",
+        "lat": 49.2945507,
+        "lon": 8.5739147,
+        "approx": false
+      },
+      {
+        "name": "Rhein-Neckar-Kreis",
+        "lat": 49.3684797,
+        "lon": 8.7352403,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
   },
   {
     "base": "Polizeipräsidium Mannheim|reilingen / rhein-neckar-kreis: gebäudebrand in der hockenheimer straße - pm nr. 1",
@@ -750,6 +956,46 @@
     ]
   },
   {
+    "base": "Polizeipräsidium Mannheim|mannheim: leblose frau nach brand in gaststätte aufgefunden - sonderkommission \"funke\" eingerichtet",
+    "status": "active",
+    "title": "Mannheim: Leblose Frau nach Brand in Gaststätte aufgefunden - Sonderkommission \"Funke\" eingerichtet",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6372650",
+    "first": "2026-10-16T13:25:49Z",
+    "last": "2026-10-16T13:25:49Z",
+    "places": [
+      {
+        "name": "Mannheim",
+        "lat": 49.4892913,
+        "lon": 8.4673098,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Offenburg|oppenau - feuer zerstört wohnhaus",
+    "status": "active",
+    "title": "Oppenau - Feuer zerstört Wohnhaus",
+    "link": "https://www.presseportal.de/blaulicht/pm/110975/6372601",
+    "first": "2026-10-16T12:42:45Z",
+    "last": "2026-10-16T12:42:45Z",
+    "places": [
+      {
+        "name": "Oppenau",
+        "lat": 48.4751652,
+        "lon": 8.1646682,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Offenburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Ulm|(bc) biberach - brand in wohnung / am donnerstag erlitt eine 29-jährige bei einem brand in einem wohngebäude leichte verletzungen.",
     "status": "contained",
     "title": "(BC) Biberach - Brand in Wohnung / Am Donnerstag erlitt eine 29-Jährige bei einem Brand in einem Wohngebäude leichte Verletzungen.",
@@ -888,6 +1134,26 @@
         "approx": false
       }
     ]
+  },
+  {
+    "base": "Polizeipräsidium Karlsruhe|(ka) malsch - hoher sachschaden nach brand in einem einfamilienhaus",
+    "status": "active",
+    "title": "(KA) Malsch - Hoher Sachschaden nach Brand in einem Einfamilienhaus",
+    "link": "https://www.presseportal.de/blaulicht/pm/110972/6371895",
+    "first": "2026-10-15T13:15:59Z",
+    "last": "2026-10-15T13:15:59Z",
+    "places": [
+      {
+        "name": "Malsch",
+        "lat": 49.2452537,
+        "lon": 8.6829484,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Karlsruhe",
+    "region": "BW",
+    "updates": 0
   },
   {
     "base": "Polizeipräsidium Pforzheim|(enzkreis) engelsbrand - quadfahrer gerät in gegenverkehr und kollidiert mit pkw",
@@ -1116,6 +1382,106 @@
     ]
   },
   {
+    "base": "Feuerwehr Stuttgart|verkehrsunfall mit beteiligung eines feuerwehrfahrzeugs in stuttgart-feuerbach",
+    "status": "active",
+    "title": "Verkehrsunfall mit Beteiligung eines Feuerwehrfahrzeugs in Stuttgart-Feuerbach",
+    "link": "https://www.presseportal.de/blaulicht/pm/161590/6371068",
+    "first": "2026-10-14T13:28:01Z",
+    "last": "2026-10-14T13:28:01Z",
+    "places": [
+      {
+        "name": "Stuttgart",
+        "lat": 48.7784485,
+        "lon": 9.1800132,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Stuttgart",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Stuttgart|brand in mehrfamilienhaus - brand im erdgeschoss - treppenraum komplett verraucht - bewohner befinden sich noch im gebäude und balkon",
+    "status": "out",
+    "title": "Brand in Mehrfamilienhaus - Brand im Erdgeschoss - Treppenraum komplett verraucht - Bewohner befinden sich noch im Gebäude und Balkon",
+    "link": "https://www.presseportal.de/blaulicht/pm/161590/6370579",
+    "first": "2026-10-14T03:48:24Z",
+    "last": "2026-10-14T03:48:24Z",
+    "places": [
+      {
+        "name": "Stuttgart",
+        "lat": 48.7784485,
+        "lon": 9.1800132,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Stuttgart",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Weil am Rhein|feuerwehr weil: abschließende pressemitteilung einsätze 13.10.2026 feuerwehr weil am rhein: brand in gebäude & gefahrguteinsatz",
+    "status": "out",
+    "title": "Feuerwehr Weil: Abschließende Pressemitteilung Einsätze 13.10.2026 Feuerwehr Weil am Rhein: Brand in Gebäude & Gefahrguteinsatz",
+    "link": "https://www.presseportal.de/blaulicht/pm/182024/6370564",
+    "first": "2026-10-13T21:09:36Z",
+    "last": "2026-10-13T21:09:36Z",
+    "places": [
+      {
+        "name": "Weil am Rhein",
+        "lat": 47.6056484,
+        "lon": 7.6120793,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Weil am Rhein",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Allensbach|bma1 interne brandmeldeanlage",
+    "status": "active",
+    "title": "BMA1 Interne Brandmeldeanlage",
+    "link": "https://www.presseportal.de/blaulicht/pm/175384/6369754",
+    "first": "2026-10-12T21:57:40Z",
+    "last": "2026-10-12T21:57:40Z",
+    "places": [
+      {
+        "name": "Allensbach",
+        "lat": 47.7168668,
+        "lon": 9.0687005,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Allensbach",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Heilbronn|stadt- und landkreis heilbronn: diebstahl, einbrüche, brand, falsche bankmitarbeiter, unfall unter alkoholeinfluss",
+    "status": "out",
+    "title": "Stadt- und Landkreis Heilbronn: Diebstahl, Einbrüche, Brand, Falsche Bankmitarbeiter, Unfall unter Alkoholeinfluss",
+    "link": "https://www.presseportal.de/blaulicht/pm/110971/6369046",
+    "first": "2026-10-12T10:05:42Z",
+    "last": "2026-10-12T10:05:42Z",
+    "places": [
+      {
+        "name": "Stadt-",
+        "lat": 49.4093582,
+        "lon": 8.694724,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Herdecke|zwei brandmeldealarme binnen weniger stunden ohne feststellung",
     "status": "active",
     "title": "Zwei Brandmeldealarme binnen weniger Stunden ohne Feststellung",
@@ -1194,6 +1560,26 @@
         "approx": false
       }
     ]
+  },
+  {
+    "base": "Polizeipräsidium Pforzheim|(cw) dobel - erneuter brand in rehabilitationsklinik",
+    "status": "out",
+    "title": "(CW) Dobel - Erneuter Brand in Rehabilitationsklinik",
+    "link": "https://www.presseportal.de/blaulicht/pm/137462/6368325",
+    "first": "2026-10-09T14:00:07Z",
+    "last": "2026-10-09T14:00:07Z",
+    "places": [
+      {
+        "name": "Dobel",
+        "lat": 48.7969905,
+        "lon": 8.4936307,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Pforzheim",
+    "region": "BW",
+    "updates": 0
   },
   {
     "base": "Feuerwehr Wuppertal|wohnungsbrand in der nützenberger straße - aufwendige nachlöscharbeiten fordern feuerwehr",
@@ -1758,6 +2144,26 @@
         "approx": true
       }
     ]
+  },
+  {
+    "base": "Polizeipräsidium Karlsruhe|(ka) karlsruhe - polizei sucht zeugen nach versuchter mutmaßlicher brandstiftung",
+    "status": "active",
+    "title": "(KA) Karlsruhe - Polizei sucht Zeugen nach versuchter mutmaßlicher Brandstiftung",
+    "link": "https://www.presseportal.de/blaulicht/pm/110972/6364779",
+    "first": "2026-10-05T10:45:46Z",
+    "last": "2026-10-05T10:45:46Z",
+    "places": [
+      {
+        "name": "Karlsruhe",
+        "lat": 49.0068705,
+        "lon": 8.4034195,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Karlsruhe",
+    "region": "BW",
+    "updates": 0
   },
   {
     "base": "Feuerwehr Neuss|brennende phosphor-brandbombe am rheinufer | niedrigwasser sorgte für entzündung",
@@ -2892,6 +3298,26 @@
     ]
   },
   {
+    "base": "FF Stockach|brennender lkw auf der autobahn a98",
+    "status": "out",
+    "title": "Brennender LKW auf der Autobahn A98",
+    "link": "https://www.presseportal.de/blaulicht/pm/134581/6359917",
+    "first": "2026-09-27T20:35:08Z",
+    "last": "2026-09-27T20:35:08Z",
+    "places": [
+      {
+        "name": "Stockach",
+        "lat": 47.8530941,
+        "lon": 9.0134524,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "FF Stockach",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Freiwillige Feuerwehr Stockach|brennender lkw auf der autobahn a98",
     "status": "out",
     "title": "Brennender LKW auf der Autobahn A98",
@@ -3833,72 +4259,6 @@
         "name": "Karlsruhe",
         "lat": 49.0068705,
         "lon": 8.4034195,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Kreispolizeibehörde Viersen|viersen-dülken: unkraut abgeflämmt, hecke in brand gesetzt, hausfassade beschädigt",
-    "status": "active",
-    "title": "Viersen-Dülken: Unkraut abgeflämmt, Hecke in Brand gesetzt, Hausfassade beschädigt",
-    "link": "https://www.presseportal.de/blaulicht/pm/65857/6356349",
-    "first": "2026-09-21T17:00:16Z",
-    "last": "2026-09-21T17:00:16Z",
-    "veg": false,
-    "source": "Kreispolizeibehörde Viersen",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Viersen-Dülken",
-        "lat": 51.2545389,
-        "lon": 6.3617567,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Karlsruhe|(ka) karlsruhe - zwei 15-jährige tatverdächtige nach versuchter brandstiftung festgenommen",
-    "status": "active",
-    "title": "(KA) Karlsruhe - Zwei 15-jährige Tatverdächtige nach versuchter Brandstiftung festgenommen",
-    "link": "https://www.presseportal.de/blaulicht/pm/110972/6356299",
-    "first": "2026-09-21T15:54:58Z",
-    "last": "2026-09-21T15:54:58Z",
-    "veg": false,
-    "source": "Polizeipräsidium Karlsruhe",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Karlsruhe",
-        "lat": 49.0068705,
-        "lon": 8.4034195,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|walldorf/rhein-neckar-kreis: feuerwehr löscht waldbrand - zeugenaufruf",
-    "status": "out",
-    "title": "Walldorf/Rhein-Neckar-Kreis: Feuerwehr löscht Waldbrand - Zeugenaufruf",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6356293",
-    "first": "2026-09-21T15:51:29Z",
-    "last": "2026-09-21T15:51:29Z",
-    "veg": true,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Walldorf",
-        "lat": 49.3032669,
-        "lon": 8.6432056,
-        "approx": false
-      },
-      {
-        "name": "Rhein-Neckar-Kreis",
-        "lat": 49.3684797,
-        "lon": 8.7352403,
         "approx": false
       }
     ]
