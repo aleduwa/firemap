@@ -1,11 +1,35 @@
 [
   {
+    "base": "Polizeipräsidium Aalen|rems-murr-kreis: unfallflucht, unfall, brand",
+    "status": "active",
+    "title": "Rems-Murr-Kreis: Unfallflucht, Unfall, Brand",
+    "link": "https://www.presseportal.de/blaulicht/pm/110969/6375562",
+    "first": "2026-10-21T14:53:20Z",
+    "last": "2026-10-21T14:53:20Z",
+    "places": [
+      {
+        "name": "Rems-Murr-Kreis",
+        "lat": 48.8966799,
+        "lon": 9.5037124,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Freiburg|freiburg: dachgeschosswohnung in vollbrand - bewohnerin in klinik",
     "status": "active",
     "title": "Freiburg: Dachgeschosswohnung in Vollbrand - Bewohnerin in Klinik",
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6375328",
     "first": "2026-10-21T11:36:04Z",
     "last": "2026-10-21T11:36:04Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Freiburg",
@@ -13,11 +37,7 @@
         "lon": 7.8494005,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Bedburg-Hau|gebäudebrand in hasselt: drei personen aus wohn- und geschäftshaus gerettet",
@@ -26,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/116244/6375311",
     "first": "2026-10-21T11:25:45Z",
     "last": "2026-10-21T11:25:45Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Bedburg-Hau",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Bedburg-Hau",
@@ -33,11 +57,7 @@
         "lon": 6.1932936,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Bedburg-Hau",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Stuttgart|brand in leerstehender wohncontaineranlage - keine verletzten personen - feuer kann rasch gelöscht werden",
@@ -3879,46 +3899,6 @@
         "name": "Rhein-Neckar-Kreis",
         "lat": 49.3684797,
         "lon": 8.7352403,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Ratingen|taxi im stadtteil west in brand geraten",
-    "status": "contained",
-    "title": "Taxi im Stadtteil West in Brand geraten",
-    "link": "https://www.presseportal.de/blaulicht/pm/70701/6356199",
-    "first": "2026-09-21T14:38:29Z",
-    "last": "2026-09-21T14:38:29Z",
-    "veg": false,
-    "source": "Feuerwehr Ratingen",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Ratingen",
-        "lat": 51.2973261,
-        "lon": 6.8493503,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Freiwillige Feuerwehr Kranenburg|eine person stirbt nach rauchentwicklung in wohnhaus",
-    "status": "active",
-    "title": "Eine Person stirbt nach Rauchentwicklung in Wohnhaus",
-    "link": "https://www.presseportal.de/blaulicht/pm/145404/6356159",
-    "first": "2026-09-21T14:13:36Z",
-    "last": "2026-09-21T14:13:36Z",
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Kranenburg",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Kranenburg",
-        "lat": 51.7895581,
-        "lon": 6.0074359,
         "approx": false
       }
     ]
