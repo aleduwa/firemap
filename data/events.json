@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/161590/6374977",
     "first": "2026-10-20T22:31:30Z",
     "last": "2026-10-20T22:31:30Z",
+    "veg": false,
+    "source": "Feuerwehr Stuttgart",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Stuttgart",
@@ -13,11 +17,7 @@
         "lon": 9.1800132,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Stuttgart",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Sprockhövel|brandmeldeanlage löst aus",
