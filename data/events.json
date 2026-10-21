@@ -1,5 +1,45 @@
 [
   {
+    "base": "Polizeipräsidium Freiburg|freiburg: dachgeschosswohnung in vollbrand - bewohnerin in klinik",
+    "status": "active",
+    "title": "Freiburg: Dachgeschosswohnung in Vollbrand - Bewohnerin in Klinik",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6375328",
+    "first": "2026-10-21T11:36:04Z",
+    "last": "2026-10-21T11:36:04Z",
+    "places": [
+      {
+        "name": "Freiburg",
+        "lat": 47.9960901,
+        "lon": 7.8494005,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Freiwillige Feuerwehr Bedburg-Hau|gebäudebrand in hasselt: drei personen aus wohn- und geschäftshaus gerettet",
+    "status": "out",
+    "title": "Gebäudebrand in Hasselt: Drei Personen aus Wohn- und Geschäftshaus gerettet",
+    "link": "https://www.presseportal.de/blaulicht/pm/116244/6375311",
+    "first": "2026-10-21T11:25:45Z",
+    "last": "2026-10-21T11:25:45Z",
+    "places": [
+      {
+        "name": "Bedburg-Hau",
+        "lat": 51.7624802,
+        "lon": 6.1932936,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Bedburg-Hau",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Stuttgart|brand in leerstehender wohncontaineranlage - keine verletzten personen - feuer kann rasch gelöscht werden",
     "status": "out",
     "title": "Brand in leerstehender Wohncontaineranlage - Keine verletzten Personen - Feuer kann rasch gelöscht werden",
@@ -3879,46 +3919,6 @@
         "name": "Kranenburg",
         "lat": 51.7895581,
         "lon": 6.0074359,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Ratingen|pkw-brand auf der bab 52",
-    "status": "active",
-    "title": "PKW-Brand auf der BAB 52",
-    "link": "https://www.presseportal.de/blaulicht/pm/70701/6355582",
-    "first": "2026-09-21T08:09:37Z",
-    "last": "2026-09-21T08:09:37Z",
-    "veg": false,
-    "source": "Feuerwehr Ratingen",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Ratingen",
-        "lat": 51.2973261,
-        "lon": 6.8493503,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Aalen|rems-murr-kreis: brand, einbruch",
-    "status": "active",
-    "title": "Rems-Murr-Kreis: Brand, Einbruch",
-    "link": "https://www.presseportal.de/blaulicht/pm/110969/6355566",
-    "first": "2026-09-21T07:49:43Z",
-    "last": "2026-09-21T07:49:43Z",
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Rems-Murr-Kreis",
-        "lat": 48.8966799,
-        "lon": 9.5037124,
         "approx": false
       }
     ]
