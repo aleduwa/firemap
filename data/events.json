@@ -1,11 +1,35 @@
 [
   {
+    "base": "Polizeipräsidium Ludwigsburg|tamm: fünf verletzte nach wohnhausbrand",
+    "status": "active",
+    "title": "Tamm: fünf Verletzte nach Wohnhausbrand",
+    "link": "https://www.presseportal.de/blaulicht/pm/110974/6375934",
+    "first": "2026-10-22T10:17:53Z",
+    "last": "2026-10-22T10:17:53Z",
+    "places": [
+      {
+        "name": "Tamm",
+        "lat": 48.9204307,
+        "lon": 9.1158361,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ludwigsburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Mönchengladbach|küchenbrand in mehrfamilienhaus - brandwohnung unbewohnbar",
     "status": "contained",
     "title": "Küchenbrand in Mehrfamilienhaus - Brandwohnung unbewohnbar",
     "link": "https://www.presseportal.de/blaulicht/pm/115879/6375718",
     "first": "2026-10-22T06:56:21Z",
     "last": "2026-10-22T06:56:21Z",
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Mönchengladbach",
@@ -13,11 +37,7 @@
         "lon": 6.4353792,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Mönchengladbach",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Aalen|rems-murr-kreis: unfallflucht, unfall, brand",
@@ -3318,14 +3338,14 @@
     ]
   },
   {
-    "base": "FF Stockach|brennender lkw auf der autobahn a98",
+    "base": "Freiwillige Feuerwehr Stockach|brennender lkw auf der autobahn a98",
     "status": "out",
     "title": "Brennender LKW auf der Autobahn A98",
     "link": "https://www.presseportal.de/blaulicht/pm/134581/6359917",
     "first": "2026-09-27T20:35:08Z",
     "last": "2026-09-27T20:35:08Z",
     "veg": false,
-    "source": "FF Stockach",
+    "source": "Freiwillige Feuerwehr Stockach",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -3338,14 +3358,14 @@
     ]
   },
   {
-    "base": "Freiwillige Feuerwehr Stockach|brennender lkw auf der autobahn a98",
+    "base": "FF Stockach|brennender lkw auf der autobahn a98",
     "status": "out",
     "title": "Brennender LKW auf der Autobahn A98",
     "link": "https://www.presseportal.de/blaulicht/pm/134581/6359917",
     "first": "2026-09-27T20:35:08Z",
     "last": "2026-09-27T20:35:08Z",
     "veg": false,
-    "source": "Freiwillige Feuerwehr Stockach",
+    "source": "FF Stockach",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -4239,26 +4259,6 @@
         "name": "VS-Villingen",
         "lat": 48.0596619,
         "lon": 8.4598995,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Bocholt|löschzug suderwick unterstützt bei großbrand in dinxperlo",
-    "status": "active",
-    "title": "Löschzug Suderwick unterstützt bei Großbrand in Dinxperlo",
-    "link": "https://www.presseportal.de/blaulicht/pm/146407/6356442",
-    "first": "2026-09-22T07:45:17Z",
-    "last": "2026-09-22T07:45:17Z",
-    "veg": false,
-    "source": "Feuerwehr Bocholt",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Bocholt",
-        "lat": 51.8382715,
-        "lon": 6.6148669,
         "approx": false
       }
     ]
