@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/116234/6376230",
     "first": "2026-10-22T17:05:01Z",
     "last": "2026-10-22T17:05:01Z",
+    "veg": false,
+    "source": "Feuerwehr Iserlohn",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Iserlohn",
@@ -13,11 +17,7 @@
         "lon": 7.6999713,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Iserlohn",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|rheinfelden: verdacht sachbeschädigung durch brandlegung - brand eines altpapier-container",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6376171",
     "first": "2026-10-22T16:17:02Z",
     "last": "2026-10-22T16:17:02Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Rheinfelden",
@@ -33,11 +37,7 @@
         "lon": 7.7861959,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|lörrach: feuerwehreinsatz wegen brandgeruch",
@@ -46,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6376154",
     "first": "2026-10-22T16:12:27Z",
     "last": "2026-10-22T16:12:27Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Lörrach",
@@ -53,11 +57,7 @@
         "lon": 7.6607218,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|bad säckingen: mülleimer brand in schule - zeugensuche",
@@ -66,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6376123",
     "first": "2026-10-22T15:56:36Z",
     "last": "2026-10-22T15:56:36Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Bad Säckingen",
@@ -73,11 +77,7 @@
         "lon": 7.9410556,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ludwigsburg|tamm: fünf verletzte nach wohnhausbrand",
@@ -4259,26 +4259,6 @@
         "name": "Essen",
         "lat": 51.4582235,
         "lon": 7.0158171,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|lörrach: balkonbrand",
-    "status": "out",
-    "title": "Lörrach: Balkonbrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6357109",
-    "first": "2026-09-22T16:06:24Z",
-    "last": "2026-09-22T16:06:24Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Lörrach",
-        "lat": 47.6120896,
-        "lon": 7.6607218,
         "approx": false
       }
     ]
