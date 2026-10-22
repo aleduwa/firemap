@@ -4242,25 +4242,5 @@
         "approx": false
       }
     ]
-  },
-  {
-    "base": "Feuerwehr Essen|ausgedehnter zimmerbrand in einem mehrfamilienhaus - zwei personen retten sich auf einen balkon",
-    "status": "contained",
-    "title": "Ausgedehnter Zimmerbrand in einem Mehrfamilienhaus - zwei Personen retten sich auf einen Balkon",
-    "link": "https://www.presseportal.de/blaulicht/pm/56893/6357167",
-    "first": "2026-09-22T21:15:44Z",
-    "last": "2026-09-22T21:15:44Z",
-    "veg": false,
-    "source": "Feuerwehr Essen",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Essen",
-        "lat": 51.4582235,
-        "lon": 7.0158171,
-        "approx": false
-      }
-    ]
   }
 ]
