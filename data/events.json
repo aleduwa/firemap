@@ -1,5 +1,25 @@
 [
   {
+    "base": "Feuerwehr Mönchengladbach|küchenbrand in mehrfamilienhaus - brandwohnung unbewohnbar",
+    "status": "contained",
+    "title": "Küchenbrand in Mehrfamilienhaus - Brandwohnung unbewohnbar",
+    "link": "https://www.presseportal.de/blaulicht/pm/115879/6375718",
+    "first": "2026-10-22T06:56:21Z",
+    "last": "2026-10-22T06:56:21Z",
+    "places": [
+      {
+        "name": "Mönchengladbach",
+        "lat": 51.1947131,
+        "lon": 6.4353792,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Aalen|rems-murr-kreis: unfallflucht, unfall, brand",
     "status": "active",
     "title": "Rems-Murr-Kreis: Unfallflucht, Unfall, Brand",
@@ -4239,26 +4259,6 @@
         "name": "Bocholt",
         "lat": 51.8382715,
         "lon": 6.6148669,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Karlsruhe|karlsruhe - drei verletzte nach brand in einem mehrfamilienhaus in der karlsruher südstadt",
-    "status": "out",
-    "title": "Karlsruhe - Drei Verletzte nach Brand in einem Mehrfamilienhaus in der Karlsruher Südstadt",
-    "link": "https://www.presseportal.de/blaulicht/pm/110972/6356397",
-    "first": "2026-09-22T02:06:36Z",
-    "last": "2026-09-22T02:06:36Z",
-    "veg": false,
-    "source": "Polizeipräsidium Karlsruhe",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Karlsruhe",
-        "lat": 49.0068705,
-        "lon": 8.4034195,
         "approx": false
       }
     ]
