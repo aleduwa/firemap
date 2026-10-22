@@ -1,11 +1,95 @@
 [
   {
+    "base": "Feuerwehr Iserlohn|wohnungsbrand in hennen - feuerwehr rettet bewohnerin über tragbare leiter",
+    "status": "active",
+    "title": "Wohnungsbrand in Hennen - Feuerwehr rettet Bewohnerin über tragbare Leiter",
+    "link": "https://www.presseportal.de/blaulicht/pm/116234/6376230",
+    "first": "2026-10-22T17:05:01Z",
+    "last": "2026-10-22T17:05:01Z",
+    "places": [
+      {
+        "name": "Iserlohn",
+        "lat": 51.3746778,
+        "lon": 7.6999713,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Iserlohn",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|rheinfelden: verdacht sachbeschädigung durch brandlegung - brand eines altpapier-container",
+    "status": "out",
+    "title": "Rheinfelden: Verdacht Sachbeschädigung durch Brandlegung - Brand eines Altpapier-Container",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6376171",
+    "first": "2026-10-22T16:17:02Z",
+    "last": "2026-10-22T16:17:02Z",
+    "places": [
+      {
+        "name": "Rheinfelden",
+        "lat": 47.5605924,
+        "lon": 7.7861959,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|lörrach: feuerwehreinsatz wegen brandgeruch",
+    "status": "active",
+    "title": "Lörrach: Feuerwehreinsatz wegen Brandgeruch",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6376154",
+    "first": "2026-10-22T16:12:27Z",
+    "last": "2026-10-22T16:12:27Z",
+    "places": [
+      {
+        "name": "Lörrach",
+        "lat": 47.6120896,
+        "lon": 7.6607218,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|bad säckingen: mülleimer brand in schule - zeugensuche",
+    "status": "active",
+    "title": "Bad Säckingen: Mülleimer Brand in Schule - Zeugensuche",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6376123",
+    "first": "2026-10-22T15:56:36Z",
+    "last": "2026-10-22T15:56:36Z",
+    "places": [
+      {
+        "name": "Bad Säckingen",
+        "lat": 47.5527459,
+        "lon": 7.9410556,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Ludwigsburg|tamm: fünf verletzte nach wohnhausbrand",
     "status": "active",
     "title": "Tamm: fünf Verletzte nach Wohnhausbrand",
     "link": "https://www.presseportal.de/blaulicht/pm/110974/6375934",
     "first": "2026-10-22T10:17:53Z",
     "last": "2026-10-22T10:17:53Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ludwigsburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Tamm",
@@ -13,11 +97,7 @@
         "lon": 9.1158361,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Mönchengladbach|küchenbrand in mehrfamilienhaus - brandwohnung unbewohnbar",
@@ -4199,66 +4279,6 @@
         "name": "Lörrach",
         "lat": 47.6120896,
         "lon": 7.6607218,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|mannheim: fahrlässige brandstiftung durch feuerwerkskörper - zeugenaufruf",
-    "status": "out",
-    "title": "Mannheim: Fahrlässige Brandstiftung durch Feuerwerkskörper - Zeugenaufruf",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6356919",
-    "first": "2026-09-22T13:19:30Z",
-    "last": "2026-09-22T13:19:30Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Mannheim",
-        "lat": 49.4892913,
-        "lon": 8.4673098,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Kreispolizeibehörde Kleve|nachtrag zu meldung vom 21.09.2026, 10:22 uhr: kranenburg - rauchentwicklung in wohnung / 47-jähriger bewohner leblos aufgefunden",
-    "status": "active",
-    "title": "Nachtrag zu Meldung vom 21.09.2026, 10:22 Uhr: Kranenburg - Rauchentwicklung in Wohnung / 47-jähriger Bewohner leblos aufgefunden",
-    "link": "https://www.presseportal.de/blaulicht/pm/65849/6356852",
-    "first": "2026-09-22T12:13:02Z",
-    "last": "2026-09-22T12:13:02Z",
-    "veg": false,
-    "source": "Kreispolizeibehörde Kleve",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "10",
-        "lat": 51.3592913,
-        "lon": 7.5129001,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Konstanz|(vs-villingen / schwarzwald baar kreis) baum brennt - zeugenaufruf (21.09.2026)",
-    "status": "active",
-    "title": "(VS-Villingen / Schwarzwald Baar Kreis) Baum brennt - Zeugenaufruf (21.09.2026)",
-    "link": "https://www.presseportal.de/blaulicht/pm/110973/6356819",
-    "first": "2026-09-22T12:00:04Z",
-    "last": "2026-09-22T12:00:04Z",
-    "veg": false,
-    "source": "Polizeipräsidium Konstanz",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "VS-Villingen",
-        "lat": 48.0596619,
-        "lon": 8.4598995,
         "approx": false
       }
     ]
