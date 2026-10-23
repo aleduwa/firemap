@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/116244/6376990",
     "first": "2026-10-23T21:06:50Z",
     "last": "2026-10-23T21:06:50Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Bedburg-Hau",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Bedburg-Hau",
@@ -13,11 +17,7 @@
         "lon": 6.1932936,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Bedburg-Hau",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Wetter (Ruhr)|brandmeldealarm am morgen und gasleckage im ortsteil wengern",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/69783/6376989",
     "first": "2026-10-23T21:05:23Z",
     "last": "2026-10-23T21:05:23Z",
+    "veg": false,
+    "source": "Feuerwehr Wetter (Ruhr)",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Wetter (Ruhr)",
@@ -33,11 +37,7 @@
         "lon": 7.3951553,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Wetter (Ruhr)",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Aalen|weinstadt/schnait: öffentlichkeitsfahndung nach versuchter schwerer brandstiftung",
