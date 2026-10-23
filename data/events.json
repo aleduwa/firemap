@@ -1,11 +1,55 @@
 [
   {
+    "base": "Polizeipräsidium Ulm|(hdh) heidenheim - brennende forstmaschine / mehrere hunderttausend euro schaden entstanden am donnerstag bei einem fahrzeugbrand.",
+    "status": "out",
+    "title": "(HDH) Heidenheim - Brennende Forstmaschine / Mehrere hunderttausend Euro Schaden entstanden am Donnerstag bei einem Fahrzeugbrand.",
+    "link": "https://www.presseportal.de/blaulicht/pm/110979/6376441",
+    "first": "2026-10-23T09:21:20Z",
+    "last": "2026-10-23T09:21:20Z",
+    "places": [
+      {
+        "name": "Heidenheim",
+        "lat": 48.6767637,
+        "lon": 10.152923,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Ulm|(ul) ulm - müll verbrannt / am donnerstag entfachte ein obdachloser ein feuer in ulm.",
+    "status": "active",
+    "title": "(UL) Ulm - Müll verbrannt / Am Donnerstag entfachte ein Obdachloser ein Feuer in Ulm.",
+    "link": "https://www.presseportal.de/blaulicht/pm/110979/6376439",
+    "first": "2026-10-23T09:20:40Z",
+    "last": "2026-10-23T09:20:40Z",
+    "places": [
+      {
+        "name": "Ulm",
+        "lat": 48.3984968,
+        "lon": 9.9912458,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Aalen|ostalbkreis: unfallflucht - sachbeschädigung - unfälle - brand - diebstahl",
     "status": "active",
     "title": "Ostalbkreis: Unfallflucht - Sachbeschädigung - Unfälle - Brand - Diebstahl",
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6376323",
     "first": "2026-10-23T07:56:06Z",
     "last": "2026-10-23T07:56:06Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ostalbkreis",
@@ -13,11 +57,7 @@
         "lon": 10.0337317,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Aalen|rems-murr-kreis: verkehrsunfälle, balkonbrand, einbruch",
@@ -26,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6376321",
     "first": "2026-10-23T07:54:36Z",
     "last": "2026-10-23T07:54:36Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Rems-Murr-Kreis",
@@ -33,11 +77,7 @@
         "lon": 9.5037124,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Ratingen|brand in fachklinik",
@@ -46,6 +86,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/70701/6376276",
     "first": "2026-10-23T06:47:33Z",
     "last": "2026-10-23T06:47:33Z",
+    "veg": false,
+    "source": "Feuerwehr Ratingen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Ratingen",
@@ -53,11 +97,7 @@
         "lon": 6.8493503,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Ratingen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Iserlohn|wohnungsbrand in hennen - feuerwehr rettet bewohnerin über tragbare leiter",
@@ -158,6 +198,26 @@
         "approx": false
       }
     ]
+  },
+  {
+    "base": "Feuerwehr Stuttgart|interimsfeuerwache 1 an der tübinger straße offiziell eingeweiht",
+    "status": "active",
+    "title": "Interimsfeuerwache 1 an der Tübinger Straße offiziell eingeweiht",
+    "link": "https://www.presseportal.de/blaulicht/pm/161590/6375724",
+    "first": "2026-10-22T07:31:34Z",
+    "last": "2026-10-22T07:31:34Z",
+    "places": [
+      {
+        "name": "Stuttgart",
+        "lat": 48.7784485,
+        "lon": 9.1800132,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Stuttgart",
+    "region": "BW",
+    "updates": 0
   },
   {
     "base": "Feuerwehr Mönchengladbach|küchenbrand in mehrfamilienhaus - brandwohnung unbewohnbar",
@@ -4239,66 +4299,6 @@
         "name": "Mannheim",
         "lat": 49.4892913,
         "lon": 8.4673098,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Konstanz|(tengen-talheim / lkr. konstanz) - radlader gerät in brand (22.09.2026)",
-    "status": "active",
-    "title": "(Tengen-Talheim / Lkr. Konstanz) - Radlader gerät in Brand (22.09.2026)",
-    "link": "https://www.presseportal.de/blaulicht/pm/110973/6357599",
-    "first": "2026-09-23T12:00:10Z",
-    "last": "2026-09-23T12:00:10Z",
-    "veg": false,
-    "source": "Polizeipräsidium Konstanz",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Tengen-Talheim",
-        "lat": 47.8164111,
-        "lon": 8.6388891,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Karlsruhe|(ka) karlsdorf-neuthard - zeugen nach mutmaßlicher brandstiftung an einem pkw gesucht",
-    "status": "active",
-    "title": "(KA) Karlsdorf-Neuthard - Zeugen nach mutmaßlicher Brandstiftung an einem Pkw gesucht",
-    "link": "https://www.presseportal.de/blaulicht/pm/110972/6357214",
-    "first": "2026-09-23T07:50:57Z",
-    "last": "2026-09-23T07:50:57Z",
-    "veg": false,
-    "source": "Polizeipräsidium Karlsruhe",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Karlsdorf-Neuthard",
-        "lat": 49.1353209,
-        "lon": 8.5304408,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Mönchengladbach|brand in dönerladen",
-    "status": "out",
-    "title": "Brand in Dönerladen",
-    "link": "https://www.presseportal.de/blaulicht/pm/115879/6357196",
-    "first": "2026-09-23T07:21:43Z",
-    "last": "2026-09-23T07:21:43Z",
-    "veg": false,
-    "source": "Feuerwehr Mönchengladbach",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Mönchengladbach",
-        "lat": 51.1947131,
-        "lon": 6.4353792,
         "approx": false
       }
     ]
