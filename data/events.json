@@ -1,5 +1,65 @@
 [
   {
+    "base": "Polizeipräsidium Aalen|ostalbkreis: unfallflucht - sachbeschädigung - unfälle - brand - diebstahl",
+    "status": "active",
+    "title": "Ostalbkreis: Unfallflucht - Sachbeschädigung - Unfälle - Brand - Diebstahl",
+    "link": "https://www.presseportal.de/blaulicht/pm/110969/6376323",
+    "first": "2026-10-23T07:56:06Z",
+    "last": "2026-10-23T07:56:06Z",
+    "places": [
+      {
+        "name": "Ostalbkreis",
+        "lat": 48.8777738,
+        "lon": 10.0337317,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Aalen|rems-murr-kreis: verkehrsunfälle, balkonbrand, einbruch",
+    "status": "active",
+    "title": "Rems-Murr-Kreis: Verkehrsunfälle, Balkonbrand, Einbruch",
+    "link": "https://www.presseportal.de/blaulicht/pm/110969/6376321",
+    "first": "2026-10-23T07:54:36Z",
+    "last": "2026-10-23T07:54:36Z",
+    "places": [
+      {
+        "name": "Rems-Murr-Kreis",
+        "lat": 48.8966799,
+        "lon": 9.5037124,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Ratingen|brand in fachklinik",
+    "status": "active",
+    "title": "Brand in Fachklinik",
+    "link": "https://www.presseportal.de/blaulicht/pm/70701/6376276",
+    "first": "2026-10-23T06:47:33Z",
+    "last": "2026-10-23T06:47:33Z",
+    "places": [
+      {
+        "name": "Ratingen",
+        "lat": 51.2973261,
+        "lon": 6.8493503,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Ratingen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Iserlohn|wohnungsbrand in hennen - feuerwehr rettet bewohnerin über tragbare leiter",
     "status": "active",
     "title": "Wohnungsbrand in Hennen - Feuerwehr rettet Bewohnerin über tragbare Leiter",
@@ -3418,14 +3478,14 @@
     ]
   },
   {
-    "base": "Freiwillige Feuerwehr Stockach|brennender lkw auf der autobahn a98",
+    "base": "FF Stockach|brennender lkw auf der autobahn a98",
     "status": "out",
     "title": "Brennender LKW auf der Autobahn A98",
     "link": "https://www.presseportal.de/blaulicht/pm/134581/6359917",
     "first": "2026-09-27T20:35:08Z",
     "last": "2026-09-27T20:35:08Z",
     "veg": false,
-    "source": "Freiwillige Feuerwehr Stockach",
+    "source": "FF Stockach",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -3438,14 +3498,14 @@
     ]
   },
   {
-    "base": "FF Stockach|brennender lkw auf der autobahn a98",
+    "base": "Freiwillige Feuerwehr Stockach|brennender lkw auf der autobahn a98",
     "status": "out",
     "title": "Brennender LKW auf der Autobahn A98",
     "link": "https://www.presseportal.de/blaulicht/pm/134581/6359917",
     "first": "2026-09-27T20:35:08Z",
     "last": "2026-09-27T20:35:08Z",
     "veg": false,
-    "source": "FF Stockach",
+    "source": "Freiwillige Feuerwehr Stockach",
     "updates": 0,
     "region": "BW",
     "places": [
