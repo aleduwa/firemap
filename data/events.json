@@ -1,11 +1,61 @@
 [
   {
+    "base": "Polizeipräsidium Aalen|weinstadt/schnait: öffentlichkeitsfahndung nach versuchter schwerer brandstiftung",
+    "status": "active",
+    "title": "Weinstadt/Schnait: Öffentlichkeitsfahndung nach versuchter schwerer Brandstiftung",
+    "link": "https://www.presseportal.de/blaulicht/pm/110969/6376928",
+    "first": "2026-10-23T15:09:27Z",
+    "last": "2026-10-23T15:09:27Z",
+    "places": [
+      {
+        "name": "Weinstadt",
+        "lat": 48.8085568,
+        "lon": 9.3774813,
+        "approx": false
+      },
+      {
+        "name": "Schnait",
+        "lat": 48.7906497,
+        "lon": 9.4043656,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizei Bonn|bonn-medinghoven: kriminalpolizei ermittelt nach brandserie - zeugen gesucht",
+    "status": "out",
+    "title": "Bonn-Medinghoven: Kriminalpolizei ermittelt nach Brandserie - Zeugen gesucht",
+    "link": "https://www.presseportal.de/blaulicht/pm/7304/6376864",
+    "first": "2026-10-23T14:03:22Z",
+    "last": "2026-10-23T14:03:22Z",
+    "places": [
+      {
+        "name": "Bonn-Medinghoven",
+        "lat": 50.7075138,
+        "lon": 7.0324267,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizei Bonn",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Ulm|(hdh) heidenheim - brennende forstmaschine / mehrere hunderttausend euro schaden entstanden am donnerstag bei einem fahrzeugbrand.",
     "status": "out",
     "title": "(HDH) Heidenheim - Brennende Forstmaschine / Mehrere hunderttausend Euro Schaden entstanden am Donnerstag bei einem Fahrzeugbrand.",
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6376441",
     "first": "2026-10-23T09:21:20Z",
     "last": "2026-10-23T09:21:20Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Heidenheim",
@@ -13,11 +63,7 @@
         "lon": 10.152923,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(ul) ulm - müll verbrannt / am donnerstag entfachte ein obdachloser ein feuer in ulm.",
@@ -26,6 +72,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6376439",
     "first": "2026-10-23T09:20:40Z",
     "last": "2026-10-23T09:20:40Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ulm",
@@ -33,11 +83,7 @@
         "lon": 9.9912458,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Aalen|ostalbkreis: unfallflucht - sachbeschädigung - unfälle - brand - diebstahl",
@@ -206,6 +252,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/161590/6375724",
     "first": "2026-10-22T07:31:34Z",
     "last": "2026-10-22T07:31:34Z",
+    "veg": false,
+    "source": "Feuerwehr Stuttgart",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Stuttgart",
@@ -213,11 +263,7 @@
         "lon": 9.1800132,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Stuttgart",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Mönchengladbach|küchenbrand in mehrfamilienhaus - brandwohnung unbewohnbar",
@@ -4259,46 +4305,6 @@
         "name": "Paderborn",
         "lat": 51.7177044,
         "lon": 8.752653,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Bocholt|brand in kellerraum eines mehrfamilienhauses - fünf personen ins krankenhaus gebracht",
-    "status": "out",
-    "title": "Brand in Kellerraum eines Mehrfamilienhauses - fünf Personen ins Krankenhaus gebracht",
-    "link": "https://www.presseportal.de/blaulicht/pm/146407/6357717",
-    "first": "2026-09-23T13:29:15Z",
-    "last": "2026-09-23T13:29:15Z",
-    "veg": false,
-    "source": "Feuerwehr Bocholt",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Bocholt",
-        "lat": 51.8382715,
-        "lon": 6.6148669,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|mannheim: kellerbrand im stadtteil schönau",
-    "status": "out",
-    "title": "Mannheim: Kellerbrand im Stadtteil Schönau",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6357689",
-    "first": "2026-09-23T13:01:00Z",
-    "last": "2026-09-23T13:01:00Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Mannheim",
-        "lat": 49.4892913,
-        "lon": 8.4673098,
         "approx": false
       }
     ]
