@@ -1,11 +1,55 @@
 [
   {
+    "base": "Freiwillige Feuerwehr Bedburg-Hau|brand einer jacke in pflegeeinrichtung in till-moyland",
+    "status": "active",
+    "title": "Brand einer Jacke in Pflegeeinrichtung in Till-Moyland",
+    "link": "https://www.presseportal.de/blaulicht/pm/116244/6376990",
+    "first": "2026-10-23T21:06:50Z",
+    "last": "2026-10-23T21:06:50Z",
+    "places": [
+      {
+        "name": "Bedburg-Hau",
+        "lat": 51.7624802,
+        "lon": 6.1932936,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Bedburg-Hau",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Wetter (Ruhr)|brandmeldealarm am morgen und gasleckage im ortsteil wengern",
+    "status": "active",
+    "title": "Brandmeldealarm am Morgen und Gasleckage im Ortsteil Wengern",
+    "link": "https://www.presseportal.de/blaulicht/pm/69783/6376989",
+    "first": "2026-10-23T21:05:23Z",
+    "last": "2026-10-23T21:05:23Z",
+    "places": [
+      {
+        "name": "Wetter (Ruhr)",
+        "lat": 51.3879463,
+        "lon": 7.3951553,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Wetter (Ruhr)",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Aalen|weinstadt/schnait: öffentlichkeitsfahndung nach versuchter schwerer brandstiftung",
     "status": "active",
     "title": "Weinstadt/Schnait: Öffentlichkeitsfahndung nach versuchter schwerer Brandstiftung",
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6376928",
     "first": "2026-10-23T15:09:27Z",
     "last": "2026-10-23T15:09:27Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Weinstadt",
@@ -19,11 +63,7 @@
         "lon": 9.4043656,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizei Bonn|bonn-medinghoven: kriminalpolizei ermittelt nach brandserie - zeugen gesucht",
@@ -32,6 +72,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/7304/6376864",
     "first": "2026-10-23T14:03:22Z",
     "last": "2026-10-23T14:03:22Z",
+    "veg": false,
+    "source": "Polizei Bonn",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Bonn-Medinghoven",
@@ -39,11 +83,7 @@
         "lon": 7.0324267,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizei Bonn",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(hdh) heidenheim - brennende forstmaschine / mehrere hunderttausend euro schaden entstanden am donnerstag bei einem fahrzeugbrand.",
@@ -4285,26 +4325,6 @@
         "name": "Karlsdorf-Neuthard",
         "lat": 49.1353209,
         "lon": 8.5304408,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Paderborn|gemeldeter dachstuhlbrand neuhäuser straße",
-    "status": "active",
-    "title": "Gemeldeter Dachstuhlbrand Neuhäuser Straße",
-    "link": "https://www.presseportal.de/blaulicht/pm/173646/6357894",
-    "first": "2026-09-23T17:21:50Z",
-    "last": "2026-09-23T17:21:50Z",
-    "veg": false,
-    "source": "Feuerwehr Paderborn",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Paderborn",
-        "lat": 51.7177044,
-        "lon": 8.752653,
         "approx": false
       }
     ]
