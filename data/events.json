@@ -1,11 +1,135 @@
 [
   {
+    "base": "Feuerwehr Herdecke|flammen schlagen aus fenster - brandeinsatz für die feuerwehr herdecke",
+    "status": "active",
+    "title": "Flammen schlagen aus Fenster - Brandeinsatz für die Feuerwehr Herdecke",
+    "link": "https://www.presseportal.de/blaulicht/pm/69790/6377124",
+    "first": "2026-10-24T12:45:04Z",
+    "last": "2026-10-24T12:45:04Z",
+    "places": [
+      {
+        "name": "Herdecke",
+        "lat": 51.4001119,
+        "lon": 7.4330062,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Herdecke",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Freiwillige Feuerwehr Bad Oeynhausen|wohnhausbrand - menschenleben in gefahr",
+    "status": "active",
+    "title": "Wohnhausbrand - Menschenleben in Gefahr",
+    "link": "https://www.presseportal.de/blaulicht/pm/182385/6377113",
+    "first": "2026-10-24T11:49:34Z",
+    "last": "2026-10-24T11:49:34Z",
+    "places": [
+      {
+        "name": "Bad Oeynhausen",
+        "lat": 52.2014399,
+        "lon": 8.7981244,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Bad Oeynhausen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|diehlheim/rhein-neckar-kreis: brennendes fahrzeug auf der k 4178, pm 1",
+    "status": "active",
+    "title": "Diehlheim/Rhein-Neckar-Kreis: Brennendes Fahrzeug auf der K 4178, PM 1",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6377112",
+    "first": "2026-10-24T11:45:55Z",
+    "last": "2026-10-24T11:45:55Z",
+    "places": [
+      {
+        "name": "Rhein-Neckar-Kreis",
+        "lat": 49.3684797,
+        "lon": 8.7352403,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Essen|fahrzeuge in flammen - feuerwehr löscht brand an der stauderstraße",
+    "status": "contained",
+    "title": "Fahrzeuge in Flammen - Feuerwehr löscht Brand an der Stauderstraße",
+    "link": "https://www.presseportal.de/blaulicht/pm/56893/6377077",
+    "first": "2026-10-24T09:48:03Z",
+    "last": "2026-10-24T09:48:03Z",
+    "places": [
+      {
+        "name": "Essen",
+        "lat": 51.4582235,
+        "lon": 7.0158171,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Essen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Dortmund|dortmund huckarde // brand an einem autotransporter",
+    "status": "active",
+    "title": "Dortmund Huckarde // Brand an einem Autotransporter",
+    "link": "https://www.presseportal.de/blaulicht/pm/115869/6377075",
+    "first": "2026-10-24T09:34:13Z",
+    "last": "2026-10-24T09:34:13Z",
+    "places": [
+      {
+        "name": "Dortmund",
+        "lat": 51.5142273,
+        "lon": 7.4652789,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Dortmund",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Mönchengladbach|kellerbrand in mehrfamilienhaus - feuer und rauch auf keller begrenzt",
+    "status": "active",
+    "title": "Kellerbrand in Mehrfamilienhaus - Feuer und Rauch auf Keller begrenzt",
+    "link": "https://www.presseportal.de/blaulicht/pm/115879/6377065",
+    "first": "2026-10-24T09:06:54Z",
+    "last": "2026-10-24T09:06:54Z",
+    "places": [
+      {
+        "name": "Mönchengladbach",
+        "lat": 51.1947131,
+        "lon": 6.4353792,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Wuppertal|viele sturmeinsätze und ein gartenlaubenbrand fordern die feuerwehr wuppertal",
     "status": "contained",
     "title": "Viele Sturmeinsätze und ein Gartenlaubenbrand fordern die Feuerwehr Wuppertal",
     "link": "https://www.presseportal.de/blaulicht/pm/115885/6377027",
     "first": "2026-10-24T06:54:02Z",
     "last": "2026-10-24T06:54:02Z",
+    "veg": false,
+    "source": "Feuerwehr Wuppertal",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Wuppertal",
@@ -13,11 +137,7 @@
         "lon": 7.1780374,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Wuppertal",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Bedburg-Hau|brand einer jacke in pflegeeinrichtung in till-moyland",
