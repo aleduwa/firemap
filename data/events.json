@@ -1,11 +1,35 @@
 [
   {
+    "base": "Feuerwehr Ratingen|brand in lagerhalle in ratingen-west",
+    "status": "active",
+    "title": "Brand in Lagerhalle in Ratingen-West",
+    "link": "https://www.presseportal.de/blaulicht/pm/70701/6377177",
+    "first": "2026-10-24T20:18:34Z",
+    "last": "2026-10-24T20:18:34Z",
+    "places": [
+      {
+        "name": "Ratingen",
+        "lat": 51.2973261,
+        "lon": 6.8493503,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Ratingen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Herdecke|unwetter und wohnungsbrand: arbeitsreicher freitag und samstag für die feuerwehr herdecke - 16 einsätze seit freitagmittag",
     "status": "active",
     "title": "Unwetter und Wohnungsbrand: Arbeitsreicher Freitag und Samstag für die Feuerwehr Herdecke - 16 Einsätze seit Freitagmittag",
     "link": "https://www.presseportal.de/blaulicht/pm/69790/6377165",
     "first": "2026-10-24T18:46:58Z",
     "last": "2026-10-24T18:46:58Z",
+    "veg": false,
+    "source": "Feuerwehr Herdecke",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Herdecke",
@@ -13,11 +37,7 @@
         "lon": 7.4330062,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Herdecke",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|heidelberg: zimmerbrand in der friedrich-ebert-anlage, einsatz von polizei und rettungsdiensten, pm 2",
@@ -26,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6377164",
     "first": "2026-10-24T18:14:40Z",
     "last": "2026-10-24T18:14:40Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Heidelberg",
@@ -33,11 +57,7 @@
         "lon": 8.694724,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|heidelberg: zimmerbrand in der ebert-anlage, einsatz von polizei und rettungsdiensten, pm 1",
@@ -4379,26 +4399,6 @@
         "name": "Rems-Murr-Kreis",
         "lat": 48.8966799,
         "lon": 9.5037124,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Freiwillige Feuerwehr Niederkrüchten|feuerwehr übt am ehemaligen hotel lenhsen in elmpt / löschzug elmpt trainiert brandbekämpfung und rettung von personen, verkehrsbehinderungen möglich",
-    "status": "active",
-    "title": "Feuerwehr übt am ehemaligen Hotel Lenhsen in Elmpt / Löschzug Elmpt trainiert Brandbekämpfung und Rettung von Personen, Verkehrsbehinderungen möglich",
-    "link": "https://www.presseportal.de/blaulicht/pm/183200/6358690",
-    "first": "2026-09-24T20:14:51Z",
-    "last": "2026-09-24T20:14:51Z",
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Niederkrüchten",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Niederkrüchten",
-        "lat": 51.2000398,
-        "lon": 6.2196622,
         "approx": false
       }
     ]
