@@ -1,56 +1,16 @@
 [
   {
-    "base": "Feuerwehr Herdecke|flammen schlagen aus fenster - brandeinsatz für die feuerwehr herdecke",
+    "base": "Polizeipräsidium Mannheim|heidelberg: zimmerbrand in der ebert-anlage, einsatz von polizei und rettungsdiensten, pm 1",
     "status": "active",
-    "title": "Flammen schlagen aus Fenster - Brandeinsatz für die Feuerwehr Herdecke",
-    "link": "https://www.presseportal.de/blaulicht/pm/69790/6377124",
-    "first": "2026-10-24T12:45:04Z",
-    "last": "2026-10-24T12:45:04Z",
+    "title": "Heidelberg: Zimmerbrand in der Ebert-Anlage, Einsatz von Polizei und Rettungsdiensten, PM 1",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6377157",
+    "first": "2026-10-24T17:00:12Z",
+    "last": "2026-10-24T17:00:12Z",
     "places": [
       {
-        "name": "Herdecke",
-        "lat": 51.4001119,
-        "lon": 7.4330062,
-        "approx": false
-      }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Herdecke",
-    "region": "NRW",
-    "updates": 0
-  },
-  {
-    "base": "Freiwillige Feuerwehr Bad Oeynhausen|wohnhausbrand - menschenleben in gefahr",
-    "status": "active",
-    "title": "Wohnhausbrand - Menschenleben in Gefahr",
-    "link": "https://www.presseportal.de/blaulicht/pm/182385/6377113",
-    "first": "2026-10-24T11:49:34Z",
-    "last": "2026-10-24T11:49:34Z",
-    "places": [
-      {
-        "name": "Bad Oeynhausen",
-        "lat": 52.2014399,
-        "lon": 8.7981244,
-        "approx": true
-      }
-    ],
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Bad Oeynhausen",
-    "region": "NRW",
-    "updates": 0
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|diehlheim/rhein-neckar-kreis: brennendes fahrzeug auf der k 4178, pm 1",
-    "status": "active",
-    "title": "Diehlheim/Rhein-Neckar-Kreis: Brennendes Fahrzeug auf der K 4178, PM 1",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6377112",
-    "first": "2026-10-24T11:45:55Z",
-    "last": "2026-10-24T11:45:55Z",
-    "places": [
-      {
-        "name": "Rhein-Neckar-Kreis",
-        "lat": 49.3684797,
-        "lon": 8.7352403,
+        "name": "Heidelberg",
+        "lat": 49.4093582,
+        "lon": 8.694724,
         "approx": false
       }
     ],
@@ -60,12 +20,96 @@
     "updates": 0
   },
   {
+    "base": "Feuerwehr Weil am Rhein|feuerwehr weil: gartenhüttenbrand in weil am rhein, ortsteil haltingen",
+    "status": "out",
+    "title": "Feuerwehr Weil: Gartenhüttenbrand in Weil am Rhein, Ortsteil Haltingen",
+    "link": "https://www.presseportal.de/blaulicht/pm/182024/6377151",
+    "first": "2026-10-24T16:01:54Z",
+    "last": "2026-10-24T16:01:54Z",
+    "places": [
+      {
+        "name": "Weil am Rhein",
+        "lat": 47.6056484,
+        "lon": 7.6120793,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Weil am Rhein",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Herdecke|flammen schlagen aus fenster - brandeinsatz für die feuerwehr herdecke",
+    "status": "active",
+    "title": "Flammen schlagen aus Fenster - Brandeinsatz für die Feuerwehr Herdecke",
+    "link": "https://www.presseportal.de/blaulicht/pm/69790/6377124",
+    "first": "2026-10-24T12:45:04Z",
+    "last": "2026-10-24T12:45:04Z",
+    "veg": false,
+    "source": "Feuerwehr Herdecke",
+    "updates": 0,
+    "region": "NRW",
+    "places": [
+      {
+        "name": "Herdecke",
+        "lat": 51.4001119,
+        "lon": 7.4330062,
+        "approx": false
+      }
+    ]
+  },
+  {
+    "base": "Freiwillige Feuerwehr Bad Oeynhausen|wohnhausbrand - menschenleben in gefahr",
+    "status": "active",
+    "title": "Wohnhausbrand - Menschenleben in Gefahr",
+    "link": "https://www.presseportal.de/blaulicht/pm/182385/6377113",
+    "first": "2026-10-24T11:49:34Z",
+    "last": "2026-10-24T11:49:34Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Bad Oeynhausen",
+    "updates": 0,
+    "region": "NRW",
+    "places": [
+      {
+        "name": "Bad Oeynhausen",
+        "lat": 52.2014399,
+        "lon": 8.7981244,
+        "approx": true
+      }
+    ]
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|diehlheim/rhein-neckar-kreis: brennendes fahrzeug auf der k 4178, pm 1",
+    "status": "active",
+    "title": "Diehlheim/Rhein-Neckar-Kreis: Brennendes Fahrzeug auf der K 4178, PM 1",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6377112",
+    "first": "2026-10-24T11:45:55Z",
+    "last": "2026-10-24T11:45:55Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
+    "places": [
+      {
+        "name": "Rhein-Neckar-Kreis",
+        "lat": 49.3684797,
+        "lon": 8.7352403,
+        "approx": false
+      }
+    ]
+  },
+  {
     "base": "Feuerwehr Essen|fahrzeuge in flammen - feuerwehr löscht brand an der stauderstraße",
     "status": "contained",
     "title": "Fahrzeuge in Flammen - Feuerwehr löscht Brand an der Stauderstraße",
     "link": "https://www.presseportal.de/blaulicht/pm/56893/6377077",
     "first": "2026-10-24T09:48:03Z",
     "last": "2026-10-24T09:48:03Z",
+    "veg": false,
+    "source": "Feuerwehr Essen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Essen",
@@ -73,11 +117,7 @@
         "lon": 7.0158171,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Essen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Dortmund|dortmund huckarde // brand an einem autotransporter",
@@ -86,6 +126,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115869/6377075",
     "first": "2026-10-24T09:34:13Z",
     "last": "2026-10-24T09:34:13Z",
+    "veg": false,
+    "source": "Feuerwehr Dortmund",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Dortmund",
@@ -93,11 +137,7 @@
         "lon": 7.4652789,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Dortmund",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Mönchengladbach|kellerbrand in mehrfamilienhaus - feuer und rauch auf keller begrenzt",
@@ -106,6 +146,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115879/6377065",
     "first": "2026-10-24T09:06:54Z",
     "last": "2026-10-24T09:06:54Z",
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Mönchengladbach",
@@ -113,11 +157,7 @@
         "lon": 6.4353792,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Mönchengladbach",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Wuppertal|viele sturmeinsätze und ein gartenlaubenbrand fordern die feuerwehr wuppertal",
@@ -3764,14 +3804,14 @@
     ]
   },
   {
-    "base": "FF Stockach|brennender lkw auf der autobahn a98",
+    "base": "Freiwillige Feuerwehr Stockach|brennender lkw auf der autobahn a98",
     "status": "out",
     "title": "Brennender LKW auf der Autobahn A98",
     "link": "https://www.presseportal.de/blaulicht/pm/134581/6359917",
     "first": "2026-09-27T20:35:08Z",
     "last": "2026-09-27T20:35:08Z",
     "veg": false,
-    "source": "FF Stockach",
+    "source": "Freiwillige Feuerwehr Stockach",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -3784,14 +3824,14 @@
     ]
   },
   {
-    "base": "Freiwillige Feuerwehr Stockach|brennender lkw auf der autobahn a98",
+    "base": "FF Stockach|brennender lkw auf der autobahn a98",
     "status": "out",
     "title": "Brennender LKW auf der Autobahn A98",
     "link": "https://www.presseportal.de/blaulicht/pm/134581/6359917",
     "first": "2026-09-27T20:35:08Z",
     "last": "2026-09-27T20:35:08Z",
     "veg": false,
-    "source": "Freiwillige Feuerwehr Stockach",
+    "source": "FF Stockach",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -4405,66 +4445,6 @@
         "name": "Erlenbach",
         "lat": 49.1703333,
         "lon": 9.2692171,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|lörrach-brombach: brand in der küche eines mehrfamilienhauses",
-    "status": "active",
-    "title": "Lörrach-Brombach: Brand in der Küche eines Mehrfamilienhauses",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6358627",
-    "first": "2026-09-24T15:43:31Z",
-    "last": "2026-09-24T15:43:31Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Lörrach-Brombach",
-        "lat": 47.6345643,
-        "lon": 7.6925159,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Heilbronn|stadt- und landkreis heilbronn: brand einer gartenhütte und rauchentwicklung in schule",
-    "status": "active",
-    "title": "Stadt- und Landkreis Heilbronn: Brand einer Gartenhütte und Rauchentwicklung in Schule",
-    "link": "https://www.presseportal.de/blaulicht/pm/110971/6358555",
-    "first": "2026-09-24T14:39:03Z",
-    "last": "2026-09-24T14:39:03Z",
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stadt-",
-        "lat": 49.4093582,
-        "lon": 8.694724,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Karlsruhe|(ka) karlsdorf-neuthard - polizei sucht zeugen nach mutmaßlicher brandstiftung an kfz",
-    "status": "out",
-    "title": "(KA) Karlsdorf-Neuthard - Polizei sucht Zeugen nach mutmaßlicher Brandstiftung an Kfz",
-    "link": "https://www.presseportal.de/blaulicht/pm/110972/6358544",
-    "first": "2026-09-24T14:29:56Z",
-    "last": "2026-09-24T14:29:56Z",
-    "veg": false,
-    "source": "Polizeipräsidium Karlsruhe",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Karlsdorf-Neuthard",
-        "lat": 49.1353209,
-        "lon": 8.5304408,
         "approx": false
       }
     ]
