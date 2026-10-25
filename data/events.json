@@ -1,5 +1,25 @@
 [
   {
+    "base": "Feuerwehr Detmold|rauchentwicklung an tankstelle",
+    "status": "active",
+    "title": "Rauchentwicklung an Tankstelle",
+    "link": "https://www.presseportal.de/blaulicht/pm/116239/6377464",
+    "first": "2026-10-25T22:07:05Z",
+    "last": "2026-10-25T22:07:05Z",
+    "places": [
+      {
+        "name": "Detmold",
+        "lat": 51.936284,
+        "lon": 8.8791526,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Detmold",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Pforzheim|(enzkreis) neuenbürg - dachgeschoss eines mehrfamilienhauses in brand geraten",
     "status": "out",
     "title": "(Enzkreis) Neuenbürg - Dachgeschoss eines Mehrfamilienhauses in Brand geraten",
