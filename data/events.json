@@ -1,11 +1,35 @@
 [
   {
+    "base": "Polizeipräsidium Pforzheim|(enzkreis) neuenbürg - dachgeschoss eines mehrfamilienhauses in brand geraten",
+    "status": "out",
+    "title": "(Enzkreis) Neuenbürg - Dachgeschoss eines Mehrfamilienhauses in Brand geraten",
+    "link": "https://www.presseportal.de/blaulicht/pm/137462/6377430",
+    "first": "2026-10-25T16:20:45Z",
+    "last": "2026-10-25T16:20:45Z",
+    "places": [
+      {
+        "name": "Neuenbürg",
+        "lat": 48.8464524,
+        "lon": 8.5886312,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Pforzheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Ulm|(bc) laupheim - auto in brand geraten",
     "status": "active",
     "title": "(BC) Laupheim - Auto in Brand geraten",
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6377363",
     "first": "2026-10-25T11:24:08Z",
     "last": "2026-10-25T11:24:08Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Laupheim",
@@ -13,11 +37,7 @@
         "lon": 9.8837005,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Aalen|rems-murr-kreis: einbrüche, verkehrsunfall und brand",
@@ -26,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6377291",
     "first": "2026-10-25T09:53:45Z",
     "last": "2026-10-25T09:53:45Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Rems-Murr-Kreis",
@@ -33,11 +57,7 @@
         "lon": 9.5037124,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Gladbeck|feuer in gladbeck: metallbrand in industriebetrieb",
@@ -3944,14 +3964,14 @@
     ]
   },
   {
-    "base": "FF Stockach|brennender lkw auf der autobahn a98",
+    "base": "Freiwillige Feuerwehr Stockach|brennender lkw auf der autobahn a98",
     "status": "out",
     "title": "Brennender LKW auf der Autobahn A98",
     "link": "https://www.presseportal.de/blaulicht/pm/134581/6359917",
     "first": "2026-09-27T20:35:08Z",
     "last": "2026-09-27T20:35:08Z",
     "veg": false,
-    "source": "FF Stockach",
+    "source": "Freiwillige Feuerwehr Stockach",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -3964,14 +3984,14 @@
     ]
   },
   {
-    "base": "Freiwillige Feuerwehr Stockach|brennender lkw auf der autobahn a98",
+    "base": "FF Stockach|brennender lkw auf der autobahn a98",
     "status": "out",
     "title": "Brennender LKW auf der Autobahn A98",
     "link": "https://www.presseportal.de/blaulicht/pm/134581/6359917",
     "first": "2026-09-27T20:35:08Z",
     "last": "2026-09-27T20:35:08Z",
     "veg": false,
-    "source": "Freiwillige Feuerwehr Stockach",
+    "source": "FF Stockach",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -4379,86 +4399,6 @@
         "name": "Ratingen",
         "lat": 51.2973261,
         "lon": 6.8493503,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Heilbronn|stadt- und landkreis heilbronn: einbruch, rauchentwicklung in schule und müllfahrzeug prallt gegen unterführung",
-    "status": "active",
-    "title": "Stadt- und Landkreis Heilbronn: Einbruch, Rauchentwicklung in Schule und Müllfahrzeug prallt gegen Unterführung",
-    "link": "https://www.presseportal.de/blaulicht/pm/110971/6359227",
-    "first": "2026-09-25T13:25:17Z",
-    "last": "2026-09-25T13:25:17Z",
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stadt-",
-        "lat": 49.4093582,
-        "lon": 8.694724,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Düsseldorf|rauchentwicklung aus wohnung - feuerwehr löscht brennenden papierkorb",
-    "status": "active",
-    "title": "Rauchentwicklung aus Wohnung - Feuerwehr löscht brennenden Papierkorb",
-    "link": "https://www.presseportal.de/blaulicht/pm/115876/6359222",
-    "first": "2026-09-25T13:20:19Z",
-    "last": "2026-09-25T13:20:19Z",
-    "veg": false,
-    "source": "Feuerwehr Düsseldorf",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Düsseldorf",
-        "lat": 51.2254018,
-        "lon": 6.7763137,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Offenburg|kehl - fahrzeugbrand, polizei sucht zeugen",
-    "status": "active",
-    "title": "Kehl - Fahrzeugbrand, Polizei sucht Zeugen",
-    "link": "https://www.presseportal.de/blaulicht/pm/110975/6359190",
-    "first": "2026-09-25T12:57:03Z",
-    "last": "2026-09-25T12:57:03Z",
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Kehl",
-        "lat": 48.5733977,
-        "lon": 7.8114002,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(ul) altheim (alb) - scheune in flammen / am freitagmorgen (25.09.2026) geriet ein landwirtschaftliches gebäude bei altheim in brand.",
-    "status": "out",
-    "title": "(UL) Altheim (Alb) - Scheune in Flammen / Am Freitagmorgen (25.09.2026) geriet ein landwirtschaftliches Gebäude bei Altheim in Brand.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6359146",
-    "first": "2026-09-25T12:20:05Z",
-    "last": "2026-09-25T12:20:05Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Altheim (Alb",
-        "lat": 48.5808015,
-        "lon": 10.0271338,
         "approx": false
       }
     ]
