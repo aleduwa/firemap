@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/137462/6377430",
     "first": "2026-10-25T16:20:45Z",
     "last": "2026-10-25T16:20:45Z",
+    "veg": false,
+    "source": "Polizeipräsidium Pforzheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Neuenbürg",
@@ -13,11 +17,7 @@
         "lon": 8.5886312,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Pforzheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(bc) laupheim - auto in brand geraten",
@@ -4379,26 +4379,6 @@
         "name": "Alpen",
         "lat": 51.5767474,
         "lon": 6.5128805,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Ratingen|zwei neue brandmeister für die feuerwehr ratingen",
-    "status": "active",
-    "title": "Zwei neue Brandmeister für die Feuerwehr Ratingen",
-    "link": "https://www.presseportal.de/blaulicht/pm/70701/6359391",
-    "first": "2026-09-25T17:52:03Z",
-    "last": "2026-09-25T17:52:03Z",
-    "veg": false,
-    "source": "Feuerwehr Ratingen",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Ratingen",
-        "lat": 51.2973261,
-        "lon": 6.8493503,
         "approx": false
       }
     ]
