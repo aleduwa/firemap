@@ -1,5 +1,25 @@
 [
   {
+    "base": "Feuerwehr Detmold|zimmerbrand in mehrparteienhaus - eine person schwer verletzt",
+    "status": "active",
+    "title": "Zimmerbrand in Mehrparteienhaus - eine Person schwer verletzt",
+    "link": "https://www.presseportal.de/blaulicht/pm/116239/6377192",
+    "first": "2026-10-25T01:56:57Z",
+    "last": "2026-10-25T01:56:57Z",
+    "places": [
+      {
+        "name": "Detmold",
+        "lat": 51.936284,
+        "lon": 8.8791526,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Detmold",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Ratingen|brand in lagerhalle in ratingen-west",
     "status": "active",
     "title": "Brand in Lagerhalle in Ratingen-West",
@@ -3864,14 +3884,14 @@
     ]
   },
   {
-    "base": "FF Stockach|brennender lkw auf der autobahn a98",
+    "base": "Freiwillige Feuerwehr Stockach|brennender lkw auf der autobahn a98",
     "status": "out",
     "title": "Brennender LKW auf der Autobahn A98",
     "link": "https://www.presseportal.de/blaulicht/pm/134581/6359917",
     "first": "2026-09-27T20:35:08Z",
     "last": "2026-09-27T20:35:08Z",
     "veg": false,
-    "source": "FF Stockach",
+    "source": "Freiwillige Feuerwehr Stockach",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -3884,14 +3904,14 @@
     ]
   },
   {
-    "base": "Freiwillige Feuerwehr Stockach|brennender lkw auf der autobahn a98",
+    "base": "FF Stockach|brennender lkw auf der autobahn a98",
     "status": "out",
     "title": "Brennender LKW auf der Autobahn A98",
     "link": "https://www.presseportal.de/blaulicht/pm/134581/6359917",
     "first": "2026-09-27T20:35:08Z",
     "last": "2026-09-27T20:35:08Z",
     "veg": false,
-    "source": "Freiwillige Feuerwehr Stockach",
+    "source": "FF Stockach",
     "updates": 0,
     "region": "BW",
     "places": [
