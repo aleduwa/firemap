@@ -1,11 +1,55 @@
 [
   {
+    "base": "Polizeipräsidium Ulm|(bc) laupheim - auto in brand geraten",
+    "status": "active",
+    "title": "(BC) Laupheim - Auto in Brand geraten",
+    "link": "https://www.presseportal.de/blaulicht/pm/110979/6377363",
+    "first": "2026-10-25T11:24:08Z",
+    "last": "2026-10-25T11:24:08Z",
+    "places": [
+      {
+        "name": "Laupheim",
+        "lat": 48.2300738,
+        "lon": 9.8837005,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Aalen|rems-murr-kreis: einbrüche, verkehrsunfall und brand",
+    "status": "out",
+    "title": "Rems-Murr-Kreis: Einbrüche, Verkehrsunfall und Brand",
+    "link": "https://www.presseportal.de/blaulicht/pm/110969/6377291",
+    "first": "2026-10-25T09:53:45Z",
+    "last": "2026-10-25T09:53:45Z",
+    "places": [
+      {
+        "name": "Rems-Murr-Kreis",
+        "lat": 48.8966799,
+        "lon": 9.5037124,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Gladbeck|feuer in gladbeck: metallbrand in industriebetrieb",
     "status": "out",
     "title": "Feuer in Gladbeck: Metallbrand in Industriebetrieb",
     "link": "https://www.presseportal.de/blaulicht/pm/117806/6377211",
     "first": "2026-10-25T06:59:39Z",
     "last": "2026-10-25T06:59:39Z",
+    "veg": false,
+    "source": "Feuerwehr Gladbeck",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Gladbeck",
@@ -13,11 +57,7 @@
         "lon": 6.9877343,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Gladbeck",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Detmold|zimmerbrand in mehrparteienhaus - eine person schwer verletzt",
@@ -4419,26 +4459,6 @@
         "name": "Altheim (Alb",
         "lat": 48.5808015,
         "lon": 10.0271338,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Aalen|rems-murr-kreis: brand - unfallflucht - rathausmitarbeiter angegriffen - diebstahl von e-scooter",
-    "status": "active",
-    "title": "Rems-Murr-Kreis: Brand - Unfallflucht - Rathausmitarbeiter angegriffen - Diebstahl von E-Scooter",
-    "link": "https://www.presseportal.de/blaulicht/pm/110969/6358757",
-    "first": "2026-09-25T07:48:46Z",
-    "last": "2026-09-25T07:48:46Z",
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Rems-Murr-Kreis",
-        "lat": 48.8966799,
-        "lon": 9.5037124,
         "approx": false
       }
     ]
