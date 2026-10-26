@@ -1,5 +1,77 @@
 [
   {
+    "base": "Polizei Coesfeld|senden, schulze-bremer-straße/ brand eines balkons einer leerstehenden wohnung - zeugen gesucht",
+    "status": "active",
+    "title": "Senden, Schulze-Bremer-Straße/ Brand eines Balkons einer leerstehenden Wohnung - Zeugen gesucht",
+    "link": "https://www.presseportal.de/blaulicht/pm/6006/6377715",
+    "first": "2026-10-26T10:18:54Z",
+    "last": "2026-10-26T10:18:54Z",
+    "places": [
+      {
+        "name": "Senden",
+        "lat": 51.8549598,
+        "lon": 7.4883046,
+        "approx": false
+      },
+      {
+        "name": "Schulze-Bremer-Straße",
+        "lat": 51.8564948,
+        "lon": 7.476057,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizei Coesfeld",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Ulm|(gp) hohenstadt - brand selbst gelöscht / am sonntag geriet ein mercedes auf der straße zwischen hohenstadt und wiesensteig in brand.",
+    "status": "out",
+    "title": "(GP) Hohenstadt - Brand selbst gelöscht / Am Sonntag geriet ein Mercedes auf der Straße zwischen Hohenstadt und Wiesensteig in Brand.",
+    "link": "https://www.presseportal.de/blaulicht/pm/110979/6377688",
+    "first": "2026-10-26T10:03:36Z",
+    "last": "2026-10-26T10:03:36Z",
+    "places": [
+      {
+        "name": "Hohenstadt",
+        "lat": 48.544391,
+        "lon": 9.6635527,
+        "approx": false
+      },
+      {
+        "name": "zwischen Hohenstadt und Wiesensteig",
+        "lat": 48.55324,
+        "lon": 9.64498,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Heilbronn|stadt- und landkreis heilbronn: einbrüche, brand, unfall",
+    "status": "out",
+    "title": "Stadt- und Landkreis Heilbronn: Einbrüche, Brand, Unfall",
+    "link": "https://www.presseportal.de/blaulicht/pm/110971/6377655",
+    "first": "2026-10-26T09:51:25Z",
+    "last": "2026-10-26T09:51:25Z",
+    "places": [
+      {
+        "name": "Stadt-",
+        "lat": 49.4093582,
+        "lon": 8.694724,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Detmold|rauchentwicklung an tankstelle",
     "status": "active",
     "title": "Rauchentwicklung an Tankstelle",
@@ -3984,14 +4056,14 @@
     ]
   },
   {
-    "base": "Freiwillige Feuerwehr Stockach|brennender lkw auf der autobahn a98",
+    "base": "FF Stockach|brennender lkw auf der autobahn a98",
     "status": "out",
     "title": "Brennender LKW auf der Autobahn A98",
     "link": "https://www.presseportal.de/blaulicht/pm/134581/6359917",
     "first": "2026-09-27T20:35:08Z",
     "last": "2026-09-27T20:35:08Z",
     "veg": false,
-    "source": "Freiwillige Feuerwehr Stockach",
+    "source": "FF Stockach",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -4004,14 +4076,14 @@
     ]
   },
   {
-    "base": "FF Stockach|brennender lkw auf der autobahn a98",
+    "base": "Freiwillige Feuerwehr Stockach|brennender lkw auf der autobahn a98",
     "status": "out",
     "title": "Brennender LKW auf der Autobahn A98",
     "link": "https://www.presseportal.de/blaulicht/pm/134581/6359917",
     "first": "2026-09-27T20:35:08Z",
     "last": "2026-09-27T20:35:08Z",
     "veg": false,
-    "source": "FF Stockach",
+    "source": "Freiwillige Feuerwehr Stockach",
     "updates": 0,
     "region": "BW",
     "places": [
@@ -4279,86 +4351,6 @@
         "name": "Willich",
         "lat": 51.2641433,
         "lon": 6.5446958,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Konstanz|kellerbrand",
-    "status": "out",
-    "title": "Kellerbrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/139089/6359517",
-    "first": "2026-09-26T10:01:15Z",
-    "last": "2026-09-26T10:01:15Z",
-    "veg": false,
-    "source": "Feuerwehr Konstanz",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Konstanz",
-        "lat": 47.659216,
-        "lon": 9.1750718,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Weinheim|angebranntes essen löst feuerwehreinsatz im 3-glocken-center aus",
-    "status": "out",
-    "title": "Angebranntes Essen löst Feuerwehreinsatz im 3-Glocken-Center aus",
-    "link": "https://www.presseportal.de/blaulicht/pm/179375/6359498",
-    "first": "2026-09-26T09:24:41Z",
-    "last": "2026-09-26T09:24:41Z",
-    "veg": false,
-    "source": "Feuerwehr Weinheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Weinheim",
-        "lat": 49.5462349,
-        "lon": 8.6717458,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Freiwillige Feuerwehr Alpen|brandmeldeanlage löste aus",
-    "status": "active",
-    "title": "Brandmeldeanlage löste aus",
-    "link": "https://www.presseportal.de/blaulicht/pm/131475/6359461",
-    "first": "2026-09-26T07:10:05Z",
-    "last": "2026-09-26T07:10:05Z",
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Alpen",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Alpen",
-        "lat": 51.5767474,
-        "lon": 6.5128805,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Iserlohn|pkw brannte auf der alexanderhöhe",
-    "status": "contained",
-    "title": "PKW brannte auf der Alexanderhöhe",
-    "link": "https://www.presseportal.de/blaulicht/pm/116234/6359449",
-    "first": "2026-09-26T06:44:23Z",
-    "last": "2026-09-26T06:44:23Z",
-    "veg": false,
-    "source": "Feuerwehr Iserlohn",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Iserlohn",
-        "lat": 51.3746778,
-        "lon": 7.6999713,
         "approx": false
       }
     ]
