@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115885/6378270",
     "first": "2026-10-26T16:26:15Z",
     "last": "2026-10-26T16:26:15Z",
+    "veg": false,
+    "source": "Feuerwehr Wuppertal",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Wuppertal",
@@ -13,11 +17,7 @@
         "lon": 7.1780374,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Wuppertal",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|weil am rhein: brand einer gartenhütte im entenschwumm",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6378226",
     "first": "2026-10-26T15:42:47Z",
     "last": "2026-10-26T15:42:47Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Weil am Rhein",
@@ -33,11 +37,7 @@
         "lon": 7.6120793,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|weinheim/rhein-neckar-kreis: kerze ursächlich für balkonbrand",
@@ -46,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6378178",
     "first": "2026-10-26T15:02:38Z",
     "last": "2026-10-26T15:02:38Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Weinheim",
@@ -59,11 +63,7 @@
         "lon": 8.7352403,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizei Coesfeld|senden, schulze-bremer-straße/ brand eines balkons einer leerstehenden wohnung - zeugen gesucht",
@@ -4282,46 +4282,6 @@
     ]
   },
   {
-    "base": "Feuerwehr Detmold|kaminbrand in pivitsheide",
-    "status": "out",
-    "title": "Kaminbrand in Pivitsheide",
-    "link": "https://www.presseportal.de/blaulicht/pm/116239/6359611",
-    "first": "2026-09-26T20:19:02Z",
-    "last": "2026-09-26T20:19:02Z",
-    "veg": false,
-    "source": "Feuerwehr Detmold",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Detmold",
-        "lat": 51.936284,
-        "lon": 8.8791526,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Freiwillige Feuerwehr Hünxe|vogel löst brandmeldeanlage aus",
-    "status": "active",
-    "title": "Vogel löst Brandmeldeanlage aus",
-    "link": "https://www.presseportal.de/blaulicht/pm/133631/6359607",
-    "first": "2026-09-26T19:36:52Z",
-    "last": "2026-09-26T19:36:52Z",
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Hünxe",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Hünxe",
-        "lat": 51.6414581,
-        "lon": 6.7660319,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Feuerwehr Witten|folgemeldung: dachstuhlbrand in witten",
     "status": "active",
     "title": "Folgemeldung: Dachstuhlbrand in Witten",
@@ -4338,26 +4298,6 @@
         "lat": 51.4370171,
         "lon": 7.335124,
         "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Witten|dachstuhlbrand in witten",
-    "status": "active",
-    "title": "Dachstuhlbrand in Witten",
-    "link": "https://www.presseportal.de/blaulicht/pm/120429/6359596",
-    "first": "2026-09-26T18:16:50Z",
-    "last": "2026-09-26T18:16:50Z",
-    "veg": false,
-    "source": "Feuerwehr Witten",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Witten",
-        "lat": 51.4370171,
-        "lon": 7.335124,
-        "approx": false
       }
     ]
   }
