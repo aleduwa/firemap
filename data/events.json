@@ -1,5 +1,45 @@
 [
   {
+    "base": "Polizeipräsidium Offenburg|ettenheim - elektroauto in garage in brand geraten",
+    "status": "active",
+    "title": "Ettenheim - Elektroauto in Garage in Brand geraten",
+    "link": "https://www.presseportal.de/blaulicht/pm/110975/6378615",
+    "first": "2026-10-27T10:32:39Z",
+    "last": "2026-10-27T10:32:39Z",
+    "places": [
+      {
+        "name": "Ettenheim",
+        "lat": 48.2487345,
+        "lon": 7.8539263,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Offenburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Kirchhundem |brennt hackschnitzelheizung - mehrere personen im gebäude",
+    "status": "active",
+    "title": "Brennt Hackschnitzelheizung - Mehrere Personen im Gebäude",
+    "link": "https://www.presseportal.de/blaulicht/pm/116945/6378610",
+    "first": "2026-10-27T10:30:00Z",
+    "last": "2026-10-27T10:30:00Z",
+    "places": [
+      {
+        "name": "Kirchhundem ",
+        "lat": 51.0865424,
+        "lon": 8.0894126,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Kirchhundem ",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Wuppertal|wohnhaus nach brand unbewohnbar",
     "status": "active",
     "title": "Wohnhaus nach Brand unbewohnbar",
@@ -4237,26 +4277,6 @@
         "name": "Wuppertal",
         "lat": 51.264018,
         "lon": 7.1780374,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Freiwillige Feuerwehr Bedburg-Hau|freiwillige feuerwehr bedburg-hau erreicht platz 6 bei den \"internationale brandweerwedstrijden\" in den niederlanden",
-    "status": "active",
-    "title": "Freiwillige Feuerwehr Bedburg-Hau erreicht Platz 6 bei den \"Internationale Brandweerwedstrijden\" in den Niederlanden",
-    "link": "https://www.presseportal.de/blaulicht/pm/116244/6359751",
-    "first": "2026-09-27T10:29:15Z",
-    "last": "2026-09-27T10:29:15Z",
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Bedburg-Hau",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Bedburg-Hau",
-        "lat": 51.7624802,
-        "lon": 6.1932936,
         "approx": false
       }
     ]
