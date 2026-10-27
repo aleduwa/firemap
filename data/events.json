@@ -1,31 +1,11 @@
 [
   {
-    "base": "Polizeipräsidium Freiburg|freiburg: gartenhütte durch brand vollständig zerstört",
-    "status": "active",
-    "title": "Freiburg: Gartenhütte durch Brand vollständig zerstört",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6379148",
-    "first": "2026-10-27T16:37:32Z",
-    "last": "2026-10-27T16:37:32Z",
-    "places": [
-      {
-        "name": "Freiburg",
-        "lat": 47.9960901,
-        "lon": 7.8494005,
-        "approx": false
-      }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "region": "BW",
-    "updates": 0
-  },
-  {
-    "base": "Feuerwehr Mülheim an der Ruhr|erstmeldung: brand im st. marien-hospital - zwei personen gerettet",
+    "base": "Feuerwehr Mülheim an der Ruhr|abschlussmeldung: brand im st. marien-hospital - mehrere personen gerettet, insgesamt 32 betroffene",
     "status": "out",
-    "title": "Erstmeldung: Brand im St. Marien-Hospital - zwei Personen gerettet",
-    "link": "https://www.presseportal.de/blaulicht/pm/115880/6379085",
-    "first": "2026-10-27T14:55:24Z",
-    "last": "2026-10-27T14:55:24Z",
+    "title": "Abschlussmeldung: Brand im St. Marien-Hospital - mehrere Personen gerettet, insgesamt 32 Betroffene",
+    "link": "https://www.presseportal.de/blaulicht/pm/115880/6379174",
+    "first": "2026-10-27T18:56:36Z",
+    "last": "2026-10-27T18:56:36Z",
     "places": [
       {
         "name": "Mülheim an der Ruhr",
@@ -40,12 +20,56 @@
     "updates": 0
   },
   {
+    "base": "Polizeipräsidium Freiburg|freiburg: gartenhütte durch brand vollständig zerstört",
+    "status": "active",
+    "title": "Freiburg: Gartenhütte durch Brand vollständig zerstört",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6379148",
+    "first": "2026-10-27T16:37:32Z",
+    "last": "2026-10-27T16:37:32Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "region": "BW",
+    "places": [
+      {
+        "name": "Freiburg",
+        "lat": 47.9960901,
+        "lon": 7.8494005,
+        "approx": false
+      }
+    ]
+  },
+  {
+    "base": "Feuerwehr Mülheim an der Ruhr|erstmeldung: brand im st. marien-hospital - zwei personen gerettet",
+    "status": "out",
+    "title": "Erstmeldung: Brand im St. Marien-Hospital - zwei Personen gerettet",
+    "link": "https://www.presseportal.de/blaulicht/pm/115880/6379085",
+    "first": "2026-10-27T14:55:24Z",
+    "last": "2026-10-27T14:55:24Z",
+    "veg": false,
+    "source": "Feuerwehr Mülheim an der Ruhr",
+    "updates": 0,
+    "region": "NRW",
+    "places": [
+      {
+        "name": "Mülheim an der Ruhr",
+        "lat": 51.4272925,
+        "lon": 6.8829192,
+        "approx": true
+      }
+    ]
+  },
+  {
     "base": "Kreispolizeibehörde Viersen|viersen: brennender sperrmüll beschädigt hauswand - wer hat etwas gesehen?",
     "status": "active",
     "title": "Viersen: Brennender Sperrmüll beschädigt Hauswand - wer hat etwas gesehen?",
     "link": "https://www.presseportal.de/blaulicht/pm/65857/6379068",
     "first": "2026-10-27T14:48:43Z",
     "last": "2026-10-27T14:48:43Z",
+    "veg": false,
+    "source": "Kreispolizeibehörde Viersen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Viersen",
@@ -53,11 +77,7 @@
         "lon": 6.3905476,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Kreispolizeibehörde Viersen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Mönchengladbach|größerer brand eines müllwagens durch mitarbeiter verhindert",
@@ -66,6 +86,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115879/6379011",
     "first": "2026-10-27T14:15:13Z",
     "last": "2026-10-27T14:15:13Z",
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Mönchengladbach",
@@ -73,11 +97,7 @@
         "lon": 6.4353792,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Mönchengladbach",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Offenburg|ettenheim - elektroauto in garage in brand geraten",
@@ -4218,126 +4238,6 @@
         "lat": 51.264018,
         "lon": 7.1780374,
         "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Weinheim|zwei einsätze am sonntagnachmittag in weinheim - betriebsstoffe ausgelaufen und mülleimer in brand",
-    "status": "out",
-    "title": "Zwei Einsätze am Sonntagnachmittag in Weinheim - Betriebsstoffe ausgelaufen und Mülleimer in Brand",
-    "link": "https://www.presseportal.de/blaulicht/pm/179375/6359918",
-    "first": "2026-09-27T20:38:12Z",
-    "last": "2026-09-27T20:38:12Z",
-    "veg": false,
-    "source": "Feuerwehr Weinheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Weinheim",
-        "lat": 49.5462349,
-        "lon": 8.6717458,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "FF Stockach|brennender lkw auf der autobahn a98",
-    "status": "out",
-    "title": "Brennender LKW auf der Autobahn A98",
-    "link": "https://www.presseportal.de/blaulicht/pm/134581/6359917",
-    "first": "2026-09-27T20:35:08Z",
-    "last": "2026-09-27T20:35:08Z",
-    "veg": false,
-    "source": "FF Stockach",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stockach",
-        "lat": 47.8530941,
-        "lon": 9.0134524,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Freiwillige Feuerwehr Stockach|brennender lkw auf der autobahn a98",
-    "status": "out",
-    "title": "Brennender LKW auf der Autobahn A98",
-    "link": "https://www.presseportal.de/blaulicht/pm/134581/6359917",
-    "first": "2026-09-27T20:35:08Z",
-    "last": "2026-09-27T20:35:08Z",
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Stockach",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stockach",
-        "lat": 47.8530941,
-        "lon": 9.0134524,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Freiwillige Feuerwehr Lage|flächenbrand im lagenser stadtwald",
-    "status": "active",
-    "title": "Flächenbrand im Lagenser Stadtwald",
-    "link": "https://www.presseportal.de/blaulicht/pm/117388/6359909",
-    "first": "2026-09-27T19:50:04Z",
-    "last": "2026-09-27T19:50:04Z",
-    "veg": true,
-    "source": "Freiwillige Feuerwehr Lage",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Lage",
-        "lat": 51.9914084,
-        "lon": 8.7919583,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Kreispolizeibehörde Heinsberg|hückelhoven-hilfarth - brand eines dachstuhls",
-    "status": "active",
-    "title": "Hückelhoven-Hilfarth - Brand eines Dachstuhls",
-    "link": "https://www.presseportal.de/blaulicht/pm/65845/6359903",
-    "first": "2026-09-27T18:59:09Z",
-    "last": "2026-09-27T18:59:09Z",
-    "veg": false,
-    "source": "Kreispolizeibehörde Heinsberg",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Hückelhoven-Hilfarth",
-        "lat": 51.0416873,
-        "lon": 6.2192468,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Witten|abschlussmeldung: dachstuhlbrand in witten",
-    "status": "out",
-    "title": "Abschlussmeldung: Dachstuhlbrand in Witten",
-    "link": "https://www.presseportal.de/blaulicht/pm/120429/6359886",
-    "first": "2026-09-27T17:25:41Z",
-    "last": "2026-09-27T17:25:41Z",
-    "veg": false,
-    "source": "Feuerwehr Witten",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Witten",
-        "lat": 51.4370171,
-        "lon": 7.335124,
-        "approx": true
       }
     ]
   }
