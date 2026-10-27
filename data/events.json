@@ -4260,25 +4260,5 @@
         "approx": false
       }
     ]
-  },
-  {
-    "base": "Feuerwehr Witten|folgemeldung: dachstuhlbrand in witten",
-    "status": "active",
-    "title": "Folgemeldung: Dachstuhlbrand in Witten",
-    "link": "https://www.presseportal.de/blaulicht/pm/120429/6359623",
-    "first": "2026-09-26T19:12:25Z",
-    "last": "2026-09-27T00:45:39Z",
-    "veg": false,
-    "source": "Feuerwehr Witten",
-    "updates": 2,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Witten",
-        "lat": 51.4370171,
-        "lon": 7.335124,
-        "approx": true
-      }
-    ]
   }
 ]
