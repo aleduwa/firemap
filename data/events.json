@@ -4262,26 +4262,6 @@
     ]
   },
   {
-    "base": "Kreisfeuerwehrverband Sigmaringen|brand mehrfamilienhaus",
-    "status": "active",
-    "title": "Brand Mehrfamilienhaus",
-    "link": "https://www.presseportal.de/blaulicht/pm/140932/6359622",
-    "first": "2026-09-27T00:40:20Z",
-    "last": "2026-09-27T00:40:20Z",
-    "veg": false,
-    "source": "Kreisfeuerwehrverband Sigmaringen",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Sigmaringen",
-        "lat": 48.0869139,
-        "lon": 9.2165039,
-        "approx": false
-      }
-    ]
-  },
-  {
     "base": "Feuerwehr Witten|folgemeldung: dachstuhlbrand in witten",
     "status": "active",
     "title": "Folgemeldung: Dachstuhlbrand in Witten",
