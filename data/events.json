@@ -1,11 +1,55 @@
 [
   {
+    "base": "Freiwillige Feuerwehr Überlingen|brand im freien / feuerschein bereits auf anfahrt sichtbar / feuer schnell gelöscht / übergreifen der flammen verhindert",
+    "status": "out",
+    "title": "Brand im Freien / Feuerschein bereits auf Anfahrt sichtbar / Feuer schnell gelöscht / Übergreifen der Flammen verhindert",
+    "link": "https://www.presseportal.de/blaulicht/pm/182292/6379220",
+    "first": "2026-10-28T06:15:00Z",
+    "last": "2026-10-28T06:15:00Z",
+    "places": [
+      {
+        "name": "Überlingen",
+        "lat": 47.7664456,
+        "lon": 9.1605106,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Überlingen",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Bocholt|baucontainer stehen in vollbrand und verdächtiger rauch gemeldet",
+    "status": "contained",
+    "title": "Baucontainer stehen in Vollbrand und verdächtiger Rauch gemeldet",
+    "link": "https://www.presseportal.de/blaulicht/pm/146407/6379197",
+    "first": "2026-10-28T02:25:46Z",
+    "last": "2026-10-28T02:25:46Z",
+    "places": [
+      {
+        "name": "Bocholt",
+        "lat": 51.8382715,
+        "lon": 6.6148669,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Bocholt",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Konstanz|wohnungsbrand in der konstanzer altstadt",
     "status": "active",
     "title": "Wohnungsbrand in der Konstanzer Altstadt",
     "link": "https://www.presseportal.de/blaulicht/pm/139089/6379188",
     "first": "2026-10-27T23:00:00Z",
     "last": "2026-10-27T23:00:00Z",
+    "veg": false,
+    "source": "Feuerwehr Konstanz",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Konstanz",
@@ -13,11 +57,7 @@
         "lon": 9.1750718,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Konstanz",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Mülheim an der Ruhr|abschlussmeldung: brand im st. marien-hospital - mehrere personen gerettet, insgesamt 32 betroffene",
@@ -4237,26 +4277,6 @@
         "name": "Rems-Murr-Kreis",
         "lat": 48.8966799,
         "lon": 9.5037124,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Wuppertal|brand in einer doppelhaushälfte - eine person verstorben",
-    "status": "out",
-    "title": "Brand in einer Doppelhaushälfte - eine Person verstorben",
-    "link": "https://www.presseportal.de/blaulicht/pm/115885/6359930",
-    "first": "2026-09-28T01:23:39Z",
-    "last": "2026-09-28T01:23:39Z",
-    "veg": false,
-    "source": "Feuerwehr Wuppertal",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Wuppertal",
-        "lat": 51.264018,
-        "lon": 7.1780374,
         "approx": false
       }
     ]
