@@ -1,11 +1,35 @@
 [
   {
+    "base": "Feuerwehr Bergheim|garagenbrand in quadrath-ichendorf - flammen drohen auf wohnhaus überzugreifen",
+    "status": "out",
+    "title": "Garagenbrand in Quadrath-Ichendorf - Flammen drohen auf Wohnhaus überzugreifen",
+    "link": "https://www.presseportal.de/blaulicht/pm/168361/6379864",
+    "first": "2026-10-28T20:56:27Z",
+    "last": "2026-10-28T20:56:27Z",
+    "places": [
+      {
+        "name": "Bergheim",
+        "lat": 50.9540457,
+        "lon": 6.6410004,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Bergheim",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Offenburg|wohnung in mehrfamilienhaus ausgebrannt",
     "status": "out",
     "title": "Wohnung in Mehrfamilienhaus ausgebrannt",
     "link": "https://www.presseportal.de/blaulicht/pm/128693/6379858",
     "first": "2026-10-28T19:05:18Z",
     "last": "2026-10-28T19:05:18Z",
+    "veg": false,
+    "source": "Feuerwehr Offenburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Offenburg",
@@ -13,11 +37,7 @@
         "lon": 7.9429235,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Offenburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Offenburg|offenburg - brand in mehrfamilienhaus",
@@ -26,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110975/6379824",
     "first": "2026-10-28T16:38:02Z",
     "last": "2026-10-28T16:38:02Z",
+    "veg": false,
+    "source": "Polizeipräsidium Offenburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Offenburg",
@@ -33,11 +57,7 @@
         "lon": 7.9429235,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Stuttgart|eine person bei ausgedehntem zimmerbrand gerettet",
@@ -46,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/161590/6379808",
     "first": "2026-10-28T15:54:05Z",
     "last": "2026-10-28T15:54:05Z",
+    "veg": false,
+    "source": "Feuerwehr Stuttgart",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Stuttgart",
@@ -53,11 +77,7 @@
         "lon": 9.1800132,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Stuttgart",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|denzlingen: brandserie offenbar aufgeklärt - polizei ermittelt gegen zwei tatverdächtige",
@@ -66,6 +86,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6379747",
     "first": "2026-10-28T14:44:45Z",
     "last": "2026-10-28T14:44:45Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Denzlingen",
@@ -73,11 +97,7 @@
         "lon": 7.8862704,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ludwigsburg|böblingen: eine verletzte person nach küchenbrand in der lange straße",
@@ -4253,26 +4273,6 @@
         "name": "Oberhausen",
         "lat": 51.4696137,
         "lon": 6.8514435,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Schwelm|feuerwehr schwelm löscht wohnungsbrand",
-    "status": "out",
-    "title": "Feuerwehr Schwelm löscht Wohnungsbrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/69781/6360872",
-    "first": "2026-09-28T19:11:49Z",
-    "last": "2026-09-28T19:11:49Z",
-    "veg": false,
-    "source": "Feuerwehr Schwelm",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Schwelm",
-        "lat": 51.2841166,
-        "lon": 7.2924712,
         "approx": false
       }
     ]
