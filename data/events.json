@@ -1,11 +1,101 @@
 [
   {
+    "base": "Polizeipräsidium Ludwigsburg|böblingen: eine verletzte person nach küchenbrand in der lange straße",
+    "status": "active",
+    "title": "Böblingen: Eine verletzte Person nach Küchenbrand in der Lange Straße",
+    "link": "https://www.presseportal.de/blaulicht/pm/110974/6379628",
+    "first": "2026-10-28T13:22:38Z",
+    "last": "2026-10-28T13:22:38Z",
+    "places": [
+      {
+        "name": "Böblingen",
+        "lat": 48.684969,
+        "lon": 9.0113444,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ludwigsburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Böblingen|wohnungsbrand in der langen straße",
+    "status": "out",
+    "title": "Wohnungsbrand in der Langen Straße",
+    "link": "https://www.presseportal.de/blaulicht/pm/164917/6379620",
+    "first": "2026-10-28T13:16:22Z",
+    "last": "2026-10-28T13:16:22Z",
+    "places": [
+      {
+        "name": "Böblingen",
+        "lat": 48.684969,
+        "lon": 9.0113444,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Böblingen",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Offenburg|appenweier - gartenhütte niedergebrannt",
+    "status": "active",
+    "title": "Appenweier - Gartenhütte niedergebrannt",
+    "link": "https://www.presseportal.de/blaulicht/pm/110975/6379569",
+    "first": "2026-10-28T12:22:09Z",
+    "last": "2026-10-28T12:22:09Z",
+    "places": [
+      {
+        "name": "Appenweier",
+        "lat": 48.5605374,
+        "lon": 7.9778001,
+        "approx": false
+      },
+      {
+        "name": "zwischen Appenweier und Nesselried",
+        "lat": 48.54002,
+        "lon": 7.99116,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Offenburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Dortmund|feuer im leerstehenden kindergarten in dortmund-brechten",
+    "status": "active",
+    "title": "Feuer im leerstehenden Kindergarten in Dortmund-Brechten",
+    "link": "https://www.presseportal.de/blaulicht/pm/115869/6379554",
+    "first": "2026-10-28T12:01:00Z",
+    "last": "2026-10-28T12:01:00Z",
+    "places": [
+      {
+        "name": "Dortmund",
+        "lat": 51.5142273,
+        "lon": 7.4652789,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Dortmund",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Freiwillige Feuerwehr Überlingen|brand im freien / feuerschein bereits auf anfahrt sichtbar / feuer schnell gelöscht / übergreifen der flammen verhindert",
     "status": "out",
     "title": "Brand im Freien / Feuerschein bereits auf Anfahrt sichtbar / Feuer schnell gelöscht / Übergreifen der Flammen verhindert",
     "link": "https://www.presseportal.de/blaulicht/pm/182292/6379220",
     "first": "2026-10-28T06:15:00Z",
     "last": "2026-10-28T06:15:00Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Überlingen",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Überlingen",
@@ -13,11 +103,7 @@
         "lon": 9.1605106,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Überlingen",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Bocholt|baucontainer stehen in vollbrand und verdächtiger rauch gemeldet",
@@ -26,6 +112,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/146407/6379197",
     "first": "2026-10-28T02:25:46Z",
     "last": "2026-10-28T02:25:46Z",
+    "veg": false,
+    "source": "Feuerwehr Bocholt",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Bocholt",
@@ -33,11 +123,7 @@
         "lon": 6.6148669,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Bocholt",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Konstanz|wohnungsbrand in der konstanzer altstadt",
@@ -4257,26 +4343,6 @@
         "name": "Jestetten",
         "lat": 47.65,
         "lon": 8.56667,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Aalen|rems-murr-kreis: diebstahl und einbrüche, unfall und unfallfluchten, brand",
-    "status": "out",
-    "title": "Rems-Murr-Kreis: Diebstahl und Einbrüche, Unfall und Unfallfluchten, Brand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110969/6359986",
-    "first": "2026-09-28T08:24:38Z",
-    "last": "2026-09-28T08:24:38Z",
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Rems-Murr-Kreis",
-        "lat": 48.8966799,
-        "lon": 9.5037124,
         "approx": false
       }
     ]
