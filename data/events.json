@@ -1,11 +1,115 @@
 [
   {
+    "base": "Feuerwehr Krefeld|passantin verhindert schlimmeres bei wohnungsbrand in mehrfamilienhaus",
+    "status": "contained",
+    "title": "Passantin verhindert Schlimmeres bei Wohnungsbrand in Mehrfamilienhaus",
+    "link": "https://www.presseportal.de/blaulicht/pm/115878/6380561",
+    "first": "2026-10-29T15:58:53Z",
+    "last": "2026-10-29T15:58:53Z",
+    "places": [
+      {
+        "name": "Krefeld",
+        "lat": 51.3331205,
+        "lon": 6.5623343,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Krefeld",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Stuttgart|staatsanwaltschaft und polizei stuttgart geben bekannt: 29-jähriger bei wohnungsbrand verstorben",
+    "status": "active",
+    "title": "Staatsanwaltschaft und Polizei Stuttgart geben bekannt: 29-Jähriger bei Wohnungsbrand verstorben",
+    "link": "https://www.presseportal.de/blaulicht/pm/110977/6380559",
+    "first": "2026-10-29T15:57:52Z",
+    "last": "2026-10-29T15:57:52Z",
+    "places": [
+      {
+        "name": "Staatsanwaltschaft",
+        "lat": 47.6618262,
+        "lon": 9.1719411,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Stuttgart",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|umkirch: erneuter brand am gutshof - zeugenaufruf",
+    "status": "active",
+    "title": "Umkirch: Erneuter Brand am Gutshof - Zeugenaufruf",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6380508",
+    "first": "2026-10-29T15:13:37Z",
+    "last": "2026-10-29T15:13:37Z",
+    "places": [
+      {
+        "name": "Umkirch",
+        "lat": 48.0335555,
+        "lon": 7.7649061,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizei Duisburg|alt-homberg: nach brand in lagerhalle - kriminalpolizei ermittelt",
+    "status": "active",
+    "title": "Alt-Homberg: Nach Brand in Lagerhalle - Kriminalpolizei ermittelt",
+    "link": "https://www.presseportal.de/blaulicht/pm/50510/6380494",
+    "first": "2026-10-29T15:06:26Z",
+    "last": "2026-10-29T15:06:26Z",
+    "places": [
+      {
+        "name": "Alt-Homberg",
+        "lat": 51.4520581,
+        "lon": 6.7114766,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizei Duisburg",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Wetter (Ruhr)|wetter - brand in förderanlage in industriebetrieb",
+    "status": "out",
+    "title": "Wetter - Brand in Förderanlage in Industriebetrieb",
+    "link": "https://www.presseportal.de/blaulicht/pm/69783/6380460",
+    "first": "2026-10-29T14:42:19Z",
+    "last": "2026-10-29T14:42:19Z",
+    "places": [
+      {
+        "name": "Wetter",
+        "lat": 51.3879463,
+        "lon": 7.3951553,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Wetter (Ruhr)",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Aalen|ostalbkreis: unfallfluchten - diebstähle - brennender pkw - sachbeschädigung - sonstiges",
     "status": "active",
     "title": "Ostalbkreis: Unfallfluchten - Diebstähle - Brennender PKW - Sachbeschädigung - Sonstiges",
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6379978",
     "first": "2026-10-29T08:37:53Z",
     "last": "2026-10-29T08:37:53Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ostalbkreis",
@@ -13,11 +117,7 @@
         "lon": 10.0337317,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Tönisvorst|wohnungsbrand in st. tönis fordert umfangreichen feuerwehreinsatz",
@@ -26,6 +126,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/128354/6379928",
     "first": "2026-10-29T08:00:17Z",
     "last": "2026-10-29T08:00:17Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Tönisvorst",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Tönisvorst",
@@ -33,11 +137,7 @@
         "lon": 6.45,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Tönisvorst",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Aalen|rems-murr-kreis: verkehrsunfälle - feuerwehreinsatz - brennender papiercontainer - einbrüche",
@@ -46,6 +146,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6379914",
     "first": "2026-10-29T07:43:19Z",
     "last": "2026-10-29T07:43:19Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Rems-Murr-Kreis",
@@ -53,11 +157,7 @@
         "lon": 9.5037124,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Bergheim|garagenbrand in quadrath-ichendorf - flammen drohen auf wohnhaus überzugreifen",
@@ -4101,178 +4201,6 @@
         "name": "Mönchengladbach",
         "lat": 51.1947131,
         "lon": 6.4353792,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|titisee-neustadt: pkw gerät in brand",
-    "status": "active",
-    "title": "Titisee-Neustadt: Pkw gerät in Brand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6361596",
-    "first": "2026-09-29T15:09:33Z",
-    "last": "2026-09-29T15:09:33Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Titisee-Neustadt",
-        "lat": 47.9173421,
-        "lon": 8.1735161,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|hockenheim/bab61/rhein-neckar-kreis: fahrzeugbrand - ausfahrten bab 61 bei hockenheim beidseitig gesperrt - sperrung teilweise aufgehoben, pm nr.2",
-    "status": "out",
-    "title": "Hockenheim/BAB61/Rhein-Neckar-Kreis: Fahrzeugbrand - Ausfahrten BAB 61 bei Hockenheim beidseitig gesperrt - Sperrung teilweise aufgehoben, PM Nr.2",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6361592",
-    "first": "2026-09-29T15:07:51Z",
-    "last": "2026-09-29T15:07:51Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Hockenheim",
-        "lat": 49.3188892,
-        "lon": 8.5475467,
-        "approx": false
-      },
-      {
-        "name": "Rhein-Neckar-Kreis",
-        "lat": 49.3684797,
-        "lon": 8.7352403,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ludwigsburg|staatsanwaltschaft stuttgart und polizeipräsidium ludwigsburg: zwei tatverdächtige wegen schwerer brandstiftung sowie versuchten mordes in untersuchungshaft",
-    "status": "active",
-    "title": "Staatsanwaltschaft Stuttgart und Polizeipräsidium Ludwigsburg: zwei Tatverdächtige wegen schwerer Brandstiftung sowie versuchten Mordes in Untersuchungshaft",
-    "link": "https://www.presseportal.de/blaulicht/pm/110974/6361577",
-    "first": "2026-09-29T14:57:17Z",
-    "last": "2026-09-29T14:57:17Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Staatsanwaltschaft Stuttgart",
-        "lat": 48.7894873,
-        "lon": 9.1940305,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|häusern: brand in altpapiercontainer",
-    "status": "contained",
-    "title": "Häusern: Brand in Altpapiercontainer",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6361549",
-    "first": "2026-09-29T14:22:45Z",
-    "last": "2026-09-29T14:22:45Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Häusern",
-        "lat": 47.7540444,
-        "lon": 8.1672955,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ludwigsburg|marbach am neckar: brand einer dachgeschosswohnung",
-    "status": "out",
-    "title": "Marbach am Neckar: Brand einer Dachgeschosswohnung",
-    "link": "https://www.presseportal.de/blaulicht/pm/110974/6361544",
-    "first": "2026-09-29T14:18:55Z",
-    "last": "2026-09-29T14:18:55Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Marbach am Neckar",
-        "lat": 48.9402085,
-        "lon": 9.256396,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizei Duisburg|wanheimerort: mülltonnen brannten - zeugensuche",
-    "status": "active",
-    "title": "Wanheimerort: Mülltonnen brannten - Zeugensuche",
-    "link": "https://www.presseportal.de/blaulicht/pm/50510/6361540",
-    "first": "2026-09-29T14:15:07Z",
-    "last": "2026-09-29T14:15:07Z",
-    "veg": false,
-    "source": "Polizei Duisburg",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Wanheimerort",
-        "lat": 51.4022807,
-        "lon": 6.7595258,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|hockenheim/bab61/rhein-neckar-kreis: fahrzeugbrand - ausfahrten bab 61 bei hockenheim beidseitig gesperrt, pm nr.1",
-    "status": "active",
-    "title": "Hockenheim/BAB61/Rhein-Neckar-Kreis: Fahrzeugbrand - Ausfahrten BAB 61 bei Hockenheim beidseitig gesperrt, PM Nr.1",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6361524",
-    "first": "2026-09-29T14:06:44Z",
-    "last": "2026-09-29T14:06:44Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Hockenheim",
-        "lat": 49.3188892,
-        "lon": 8.5475467,
-        "approx": false
-      },
-      {
-        "name": "Rhein-Neckar-Kreis",
-        "lat": 49.3684797,
-        "lon": 8.7352403,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Stuttgart|kellerbrand in einem mehrfamilienhaus",
-    "status": "out",
-    "title": "Kellerbrand in einem Mehrfamilienhaus",
-    "link": "https://www.presseportal.de/blaulicht/pm/161590/6361499",
-    "first": "2026-09-29T13:53:22Z",
-    "last": "2026-09-29T13:53:22Z",
-    "veg": false,
-    "source": "Feuerwehr Stuttgart",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stuttgart",
-        "lat": 48.7784485,
-        "lon": 9.1800132,
         "approx": false
       }
     ]
