@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/168361/6379864",
     "first": "2026-10-28T20:56:27Z",
     "last": "2026-10-28T20:56:27Z",
+    "veg": false,
+    "source": "Feuerwehr Bergheim",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Bergheim",
@@ -13,11 +17,7 @@
         "lon": 6.6410004,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Bergheim",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Offenburg|wohnung in mehrfamilienhaus ausgebrannt",
@@ -4233,46 +4233,6 @@
         "name": "Wuppertal",
         "lat": 51.264018,
         "lon": 7.1780374,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Remscheid|brand in einem industriebetrieb mit drei leicht verletzten",
-    "status": "out",
-    "title": "Brand in einem Industriebetrieb mit drei leicht Verletzten",
-    "link": "https://www.presseportal.de/blaulicht/pm/115882/6360894",
-    "first": "2026-09-29T01:56:36Z",
-    "last": "2026-09-29T01:56:36Z",
-    "veg": false,
-    "source": "Feuerwehr Remscheid",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Remscheid",
-        "lat": 51.1798706,
-        "lon": 7.1943544,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Oberhausen|brand in einem altenheim - eine person gerettet",
-    "status": "active",
-    "title": "Brand in einem Altenheim - eine Person gerettet",
-    "link": "https://www.presseportal.de/blaulicht/pm/115881/6360890",
-    "first": "2026-09-29T00:38:19Z",
-    "last": "2026-09-29T00:38:19Z",
-    "veg": false,
-    "source": "Feuerwehr Oberhausen",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Oberhausen",
-        "lat": 51.4696137,
-        "lon": 6.8514435,
         "approx": false
       }
     ]
