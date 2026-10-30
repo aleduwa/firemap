@@ -1,5 +1,25 @@
 [
   {
+    "base": "Feuerwehr Dortmund|brand in kfz-werkstatt in dortmund-lanstrop",
+    "status": "active",
+    "title": "Brand in Kfz-Werkstatt in Dortmund-Lanstrop",
+    "link": "https://www.presseportal.de/blaulicht/pm/115869/6381153",
+    "first": "2026-10-30T13:31:13Z",
+    "last": "2026-10-30T13:31:13Z",
+    "places": [
+      {
+        "name": "Dortmund",
+        "lat": 51.5142273,
+        "lon": 7.4652789,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Dortmund",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr und Rettungsdienst Bonn|rauchentwicklung aus mehrfamilienhaus - feuerwehr löscht zimmerbrand in beuel",
     "status": "active",
     "title": "Rauchentwicklung aus Mehrfamilienhaus - Feuerwehr löscht Zimmerbrand in Beuel",
@@ -4104,46 +4124,6 @@
         "lat": 51.1947131,
         "lon": 6.4353792,
         "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(gp) gingen a.d.fils - auto in flammen / am dienstag brannte in gingen ein vw aus.",
-    "status": "active",
-    "title": "(GP) Gingen a.d.Fils - Auto in Flammen / Am Dienstag brannte in Gingen ein VW aus.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6361869",
-    "first": "2026-09-30T09:31:32Z",
-    "last": "2026-09-30T09:31:32Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Gingen a.d.Fils",
-        "lat": 48.6590603,
-        "lon": 9.7825817,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Stuttgart|vollbrand eines pkw - rauchsäule weithin sichtbar",
-    "status": "active",
-    "title": "Vollbrand eines PKW - Rauchsäule weithin sichtbar",
-    "link": "https://www.presseportal.de/blaulicht/pm/161590/6361798",
-    "first": "2026-09-30T08:32:58Z",
-    "last": "2026-09-30T08:32:58Z",
-    "veg": false,
-    "source": "Feuerwehr Stuttgart",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stuttgart",
-        "lat": 48.7784485,
-        "lon": 9.1800132,
-        "approx": true
       }
     ]
   }
