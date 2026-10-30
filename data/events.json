@@ -4146,31 +4146,5 @@
         "approx": true
       }
     ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|wiesloch / rhein-neckar-kreis: brandgeschehen auf recyclinghof - pm nr.2",
-    "status": "out",
-    "title": "Wiesloch / Rhein-Neckar-Kreis: Brandgeschehen auf Recyclinghof - PM Nr.2",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6361702",
-    "first": "2026-09-30T03:30:04Z",
-    "last": "2026-09-30T03:30:04Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Wiesloch",
-        "lat": 49.2942599,
-        "lon": 8.698707,
-        "approx": false
-      },
-      {
-        "name": "Rhein-Neckar-Kreis",
-        "lat": 49.3684797,
-        "lon": 8.7352403,
-        "approx": false
-      }
-    ]
   }
 ]
