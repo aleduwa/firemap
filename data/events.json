@@ -1,16 +1,36 @@
 [
   {
-    "base": "Polizeipräsidium Mannheim|heidelberg: brand im dachbereich",
-    "status": "out",
-    "title": "Heidelberg: Brand im Dachbereich",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6381292",
-    "first": "2026-10-30T16:34:50Z",
-    "last": "2026-10-30T16:34:50Z",
+    "base": "Feuerwehr Mönchengladbach|brand auf balkon, bewohnerin kommt mit schrecken davon",
+    "status": "active",
+    "title": "Brand auf Balkon, Bewohnerin kommt mit Schrecken davon",
+    "link": "https://www.presseportal.de/blaulicht/pm/115879/6381329",
+    "first": "2026-10-30T21:50:38Z",
+    "last": "2026-10-30T21:50:38Z",
     "places": [
       {
-        "name": "Heidelberg",
-        "lat": 49.4093582,
-        "lon": 8.694724,
+        "name": "Mönchengladbach",
+        "lat": 51.1947131,
+        "lon": 6.4353792,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|mannheim-wallstadt: gebäudebrand am frisch renovierten haus",
+    "status": "active",
+    "title": "Mannheim-Wallstadt: Gebäudebrand am frisch renovierten Haus",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6381320",
+    "first": "2026-10-30T19:58:30Z",
+    "last": "2026-10-30T19:58:30Z",
+    "places": [
+      {
+        "name": "Mannheim-Wallstadt",
+        "lat": 49.4996762,
+        "lon": 8.5417395,
         "approx": false
       }
     ],
@@ -20,12 +40,56 @@
     "updates": 0
   },
   {
+    "base": "Feuerwehr Wuppertal|pkw-brand in tiefgarage",
+    "status": "contained",
+    "title": "PKW-Brand in Tiefgarage",
+    "link": "https://www.presseportal.de/blaulicht/pm/115885/6381314",
+    "first": "2026-10-30T19:23:33Z",
+    "last": "2026-10-30T19:23:33Z",
+    "places": [
+      {
+        "name": "Wuppertal",
+        "lat": 51.264018,
+        "lon": 7.1780374,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Wuppertal",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|heidelberg: brand im dachbereich",
+    "status": "out",
+    "title": "Heidelberg: Brand im Dachbereich",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6381292",
+    "first": "2026-10-30T16:34:50Z",
+    "last": "2026-10-30T16:34:50Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
+    "places": [
+      {
+        "name": "Heidelberg",
+        "lat": 49.4093582,
+        "lon": 8.694724,
+        "approx": false
+      }
+    ]
+  },
+  {
     "base": "Polizeipräsidium Ulm|(gp) eislingen - brand in einfamilienhaus / am freitagmorgen rückte die feuerwehr zu einem brand in eislingen aus.",
     "status": "active",
     "title": "(GP) Eislingen - Brand in Einfamilienhaus / Am Freitagmorgen rückte die Feuerwehr zu einem Brand in Eislingen aus.",
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6381248",
     "first": "2026-10-30T14:57:29Z",
     "last": "2026-10-30T14:57:29Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Eislingen",
@@ -33,11 +97,7 @@
         "lon": 9.7037748,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Dortmund|brand in kfz-werkstatt in dortmund-lanstrop",
@@ -4123,46 +4183,6 @@
         "name": "Gladbeck",
         "lat": 51.5718665,
         "lon": 6.9877343,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Wetter (Ruhr)|wetter - brand an gebäude",
-    "status": "out",
-    "title": "Wetter - Brand an Gebäude",
-    "link": "https://www.presseportal.de/blaulicht/pm/69783/6362484",
-    "first": "2026-09-30T22:25:49Z",
-    "last": "2026-09-30T22:25:49Z",
-    "veg": false,
-    "source": "Feuerwehr Wetter (Ruhr)",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Wetter",
-        "lat": 51.3879463,
-        "lon": 7.3951553,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Mönchengladbach|angebranntes essen löst feuerwehreinsatz aus",
-    "status": "active",
-    "title": "Angebranntes Essen löst Feuerwehreinsatz aus",
-    "link": "https://www.presseportal.de/blaulicht/pm/115879/6362483",
-    "first": "2026-09-30T22:14:40Z",
-    "last": "2026-09-30T22:14:40Z",
-    "veg": false,
-    "source": "Feuerwehr Mönchengladbach",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Mönchengladbach",
-        "lat": 51.1947131,
-        "lon": 6.4353792,
         "approx": false
       }
     ]
