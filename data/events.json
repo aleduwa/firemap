@@ -1,5 +1,45 @@
 [
   {
+    "base": "Freiwillige Feuerwehr Lage|brennender mülleimer am sportplatz in lage-müssen",
+    "status": "active",
+    "title": "Brennender Mülleimer am Sportplatz in Lage-Müssen",
+    "link": "https://www.presseportal.de/blaulicht/pm/117388/6381532",
+    "first": "2026-10-31T22:31:01Z",
+    "last": "2026-10-31T22:31:01Z",
+    "places": [
+      {
+        "name": "Lage",
+        "lat": 51.9914084,
+        "lon": 8.7919583,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Lage",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Bad Säckingen|zimmerbrand in wohnhaus in wallbach - gesamtalarm für die feuerwehr bad säckingen",
+    "status": "active",
+    "title": "Zimmerbrand in Wohnhaus in Wallbach - Gesamtalarm für die Feuerwehr Bad Säckingen",
+    "link": "https://www.presseportal.de/blaulicht/pm/140463/6381529",
+    "first": "2026-10-31T21:46:02Z",
+    "last": "2026-10-31T21:46:02Z",
+    "places": [
+      {
+        "name": "Bad Säckingen",
+        "lat": 47.5527459,
+        "lon": 7.9410556,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Bad Säckingen",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Freiwillige Feuerwehr Stadt Nideggen|gebäudebrand - brandausbreitung auf dachstuhl verhindert",
     "status": "out",
     "title": "Gebäudebrand - Brandausbreitung auf Dachstuhl verhindert",
