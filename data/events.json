@@ -1,11 +1,35 @@
 [
   {
+    "base": "Freiwillige Feuerwehr Stadt Nideggen|gebäudebrand - brandausbreitung auf dachstuhl verhindert",
+    "status": "out",
+    "title": "Gebäudebrand - Brandausbreitung auf Dachstuhl verhindert",
+    "link": "https://www.presseportal.de/blaulicht/pm/134198/6381422",
+    "first": "2026-10-31T10:06:12Z",
+    "last": "2026-10-31T10:06:12Z",
+    "places": [
+      {
+        "name": "Nideggen",
+        "lat": 50.6913559,
+        "lon": 6.482614,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Stadt Nideggen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Mannheim|wiesloch/ rhein-neckar-kreis: brandgeschehen in der rotenberger straße",
     "status": "out",
     "title": "Wiesloch/ Rhein-Neckar-Kreis: Brandgeschehen in der Rotenberger Straße",
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6381400",
     "first": "2026-10-31T08:57:05Z",
     "last": "2026-10-31T08:57:05Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Wiesloch",
@@ -19,11 +43,7 @@
         "lon": 8.7352403,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ludwigsburg|pleidelsheim: brand eines im bau befindlichen kindergartens",
@@ -32,6 +52,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110974/6381359",
     "first": "2026-10-31T06:53:48Z",
     "last": "2026-10-31T06:53:48Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ludwigsburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Pleidelsheim",
@@ -39,11 +63,7 @@
         "lon": 9.2045813,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|mannheim-wallstadt: gebäudebrand am frisch renovierten haus, pm 2",
