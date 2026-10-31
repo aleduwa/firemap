@@ -1,31 +1,11 @@
 [
   {
-    "base": "Feuerwehr Mönchengladbach|brand auf balkon, bewohnerin kommt mit schrecken davon",
-    "status": "active",
-    "title": "Brand auf Balkon, Bewohnerin kommt mit Schrecken davon",
-    "link": "https://www.presseportal.de/blaulicht/pm/115879/6381329",
-    "first": "2026-10-30T21:50:38Z",
-    "last": "2026-10-30T21:50:38Z",
-    "places": [
-      {
-        "name": "Mönchengladbach",
-        "lat": 51.1947131,
-        "lon": 6.4353792,
-        "approx": false
-      }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Mönchengladbach",
-    "region": "NRW",
-    "updates": 0
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|mannheim-wallstadt: gebäudebrand am frisch renovierten haus",
-    "status": "active",
-    "title": "Mannheim-Wallstadt: Gebäudebrand am frisch renovierten Haus",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6381320",
-    "first": "2026-10-30T19:58:30Z",
-    "last": "2026-10-30T19:58:30Z",
+    "base": "Polizeipräsidium Mannheim|mannheim-wallstadt: gebäudebrand am frisch renovierten haus, pm 2",
+    "status": "contained",
+    "title": "Mannheim-Wallstadt: Gebäudebrand am frisch renovierten Haus, PM 2",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6381339",
+    "first": "2026-10-31T00:19:00Z",
+    "last": "2026-10-31T00:19:00Z",
     "places": [
       {
         "name": "Mannheim-Wallstadt",
@@ -40,12 +20,56 @@
     "updates": 0
   },
   {
+    "base": "Feuerwehr Mönchengladbach|brand auf balkon, bewohnerin kommt mit schrecken davon",
+    "status": "active",
+    "title": "Brand auf Balkon, Bewohnerin kommt mit Schrecken davon",
+    "link": "https://www.presseportal.de/blaulicht/pm/115879/6381329",
+    "first": "2026-10-30T21:50:38Z",
+    "last": "2026-10-30T21:50:38Z",
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "updates": 0,
+    "region": "NRW",
+    "places": [
+      {
+        "name": "Mönchengladbach",
+        "lat": 51.1947131,
+        "lon": 6.4353792,
+        "approx": false
+      }
+    ]
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|mannheim-wallstadt: gebäudebrand am frisch renovierten haus",
+    "status": "active",
+    "title": "Mannheim-Wallstadt: Gebäudebrand am frisch renovierten Haus",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6381320",
+    "first": "2026-10-30T19:58:30Z",
+    "last": "2026-10-30T19:58:30Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
+    "places": [
+      {
+        "name": "Mannheim-Wallstadt",
+        "lat": 49.4996762,
+        "lon": 8.5417395,
+        "approx": false
+      }
+    ]
+  },
+  {
     "base": "Feuerwehr Wuppertal|pkw-brand in tiefgarage",
     "status": "contained",
     "title": "PKW-Brand in Tiefgarage",
     "link": "https://www.presseportal.de/blaulicht/pm/115885/6381314",
     "first": "2026-10-30T19:23:33Z",
     "last": "2026-10-30T19:23:33Z",
+    "veg": false,
+    "source": "Feuerwehr Wuppertal",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Wuppertal",
@@ -53,11 +77,7 @@
         "lon": 7.1780374,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Wuppertal",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|heidelberg: brand im dachbereich",
@@ -4163,26 +4183,6 @@
         "name": "Recklinghausen",
         "lat": 51.6143815,
         "lon": 7.1978546,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Gladbeck|wohnungsbrand in der hagelkreuzstraße - eine person leicht verletzt",
-    "status": "out",
-    "title": "Wohnungsbrand in der Hagelkreuzstraße - eine Person leicht verletzt",
-    "link": "https://www.presseportal.de/blaulicht/pm/117806/6362494",
-    "first": "2026-10-01T00:20:32Z",
-    "last": "2026-10-01T00:20:32Z",
-    "veg": false,
-    "source": "Feuerwehr Gladbeck",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Gladbeck",
-        "lat": 51.5718665,
-        "lon": 6.9877343,
         "approx": false
       }
     ]
