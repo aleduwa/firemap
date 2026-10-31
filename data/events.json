@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/134198/6381422",
     "first": "2026-10-31T10:06:12Z",
     "last": "2026-10-31T10:06:12Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Stadt Nideggen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Nideggen",
@@ -13,11 +17,7 @@
         "lon": 6.482614,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Stadt Nideggen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|wiesloch/ rhein-neckar-kreis: brandgeschehen in der rotenberger straße",
@@ -4149,66 +4149,6 @@
         "name": "Gelsenkirchen",
         "lat": 51.5110321,
         "lon": 7.0960124,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Recklinghausen|wohnungsbrand mit zwei verletzten personen in recklinghausen-grullbad",
-    "status": "out",
-    "title": "Wohnungsbrand mit zwei verletzten Personen in Recklinghausen-Grullbad",
-    "link": "https://www.presseportal.de/blaulicht/pm/119285/6363326",
-    "first": "2026-10-01T17:15:01Z",
-    "last": "2026-10-01T17:15:01Z",
-    "veg": false,
-    "source": "Feuerwehr Recklinghausen",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Recklinghausen",
-        "lat": 51.6143815,
-        "lon": 7.1978546,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizei Köln|261001-3-k/rek zeugenaufruf nach mutmaßlicher brandstiftung unter hochspannungsleitung in bergheim-niederaußem - staatsschutz ermittelt",
-    "status": "out",
-    "title": "261001-3-K/REK Zeugenaufruf nach mutmaßlicher Brandstiftung unter Hochspannungsleitung in Bergheim-Niederaußem - Staatsschutz ermittelt",
-    "link": "https://www.presseportal.de/blaulicht/pm/12415/6363268",
-    "first": "2026-10-01T15:36:55Z",
-    "last": "2026-10-01T15:36:55Z",
-    "veg": false,
-    "source": "Polizei Köln",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "261001-3-K",
-        "lat": 50.9120864,
-        "lon": 6.8913957,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Neuss|feuerwehr neuss startet im zwei-wachen-system | erste 24-stunden-schicht auf der neuen feuerwache süd",
-    "status": "active",
-    "title": "Feuerwehr Neuss startet im Zwei-Wachen-System | Erste 24-Stunden-Schicht auf der neuen Feuerwache Süd",
-    "link": "https://www.presseportal.de/blaulicht/pm/122045/6363253",
-    "first": "2026-10-01T15:24:51Z",
-    "last": "2026-10-01T15:24:51Z",
-    "veg": false,
-    "source": "Feuerwehr Neuss",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Neuss",
-        "lat": 51.1981778,
-        "lon": 6.6916476,
         "approx": false
       }
     ]
