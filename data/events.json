@@ -1,11 +1,55 @@
 [
   {
+    "base": "Polizeipräsidium Mannheim|mannheim-käfertal: fahrzeugbrand, brand gelöscht, pressemitteilung nr. 2",
+    "status": "out",
+    "title": "Mannheim-Käfertal: Fahrzeugbrand, Brand gelöscht, Pressemitteilung Nr. 2",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6381548",
+    "first": "2026-11-01T00:36:55Z",
+    "last": "2026-11-01T00:36:55Z",
+    "places": [
+      {
+        "name": "Mannheim-Käfertal",
+        "lat": 49.5014671,
+        "lon": 8.5038114,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|mannheim-käfertal: fahrzeugbrand, pressemitteilung nr. 1",
+    "status": "active",
+    "title": "Mannheim-Käfertal: Fahrzeugbrand, Pressemitteilung Nr. 1",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6381541",
+    "first": "2026-10-31T23:49:35Z",
+    "last": "2026-10-31T23:49:35Z",
+    "places": [
+      {
+        "name": "Mannheim-Käfertal",
+        "lat": 49.5014671,
+        "lon": 8.5038114,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Freiwillige Feuerwehr Lage|brennender mülleimer am sportplatz in lage-müssen",
     "status": "active",
     "title": "Brennender Mülleimer am Sportplatz in Lage-Müssen",
     "link": "https://www.presseportal.de/blaulicht/pm/117388/6381532",
     "first": "2026-10-31T22:31:01Z",
     "last": "2026-10-31T22:31:01Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Lage",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Lage",
@@ -13,11 +57,7 @@
         "lon": 8.7919583,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Lage",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Bad Säckingen|zimmerbrand in wohnhaus in wallbach - gesamtalarm für die feuerwehr bad säckingen",
@@ -26,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/140463/6381529",
     "first": "2026-10-31T21:46:02Z",
     "last": "2026-10-31T21:46:02Z",
+    "veg": false,
+    "source": "Feuerwehr Bad Säckingen",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Bad Säckingen",
@@ -33,11 +77,7 @@
         "lon": 7.9410556,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Bad Säckingen",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Stadt Nideggen|gebäudebrand - brandausbreitung auf dachstuhl verhindert",
