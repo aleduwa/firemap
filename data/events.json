@@ -1,11 +1,35 @@
 [
   {
+    "base": "Feuerwehr Kirchhundem |industriebrand feuer bei forst und landmaschinen betrieb",
+    "status": "active",
+    "title": "Industriebrand Feuer bei Forst und Landmaschinen Betrieb",
+    "link": "https://www.presseportal.de/blaulicht/pm/116945/6381900",
+    "first": "2026-11-01T20:17:02Z",
+    "last": "2026-11-01T20:17:02Z",
+    "places": [
+      {
+        "name": "Kirchhundem ",
+        "lat": 51.0865424,
+        "lon": 8.0894126,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Kirchhundem ",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Grevenbroich|schreck an halloween: balkone an wohnhaus über vier etagen in flammen / feuerwehr grevenbroich verhinder ausbreitung - wohnungen unbewohnbar",
     "status": "active",
     "title": "Schreck an Halloween: Balkone an Wohnhaus über vier Etagen in Flammen / Feuerwehr Grevenbroich verhinder Ausbreitung - Wohnungen unbewohnbar",
     "link": "https://www.presseportal.de/blaulicht/pm/134498/6381891",
     "first": "2026-11-01T18:10:55Z",
     "last": "2026-11-01T18:10:55Z",
+    "veg": false,
+    "source": "Feuerwehr Grevenbroich",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Grevenbroich",
@@ -13,11 +37,7 @@
         "lon": 6.5848937,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Grevenbroich",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Xanten|küchenbrand zügig unter kontrolle",
