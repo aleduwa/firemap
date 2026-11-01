@@ -1,11 +1,55 @@
 [
   {
+    "base": "Feuerwehr Xanten|küchenbrand zügig unter kontrolle",
+    "status": "contained",
+    "title": "Küchenbrand zügig unter Kontrolle",
+    "link": "https://www.presseportal.de/blaulicht/pm/122220/6381817",
+    "first": "2026-11-01T12:52:32Z",
+    "last": "2026-11-01T12:52:32Z",
+    "places": [
+      {
+        "name": "Xanten",
+        "lat": 51.661519,
+        "lon": 6.4543203,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Xanten",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Herdecke|brandmeldung in arztpraxis",
+    "status": "active",
+    "title": "Brandmeldung in Arztpraxis",
+    "link": "https://www.presseportal.de/blaulicht/pm/69790/6381761",
+    "first": "2026-11-01T11:07:25Z",
+    "last": "2026-11-01T11:07:25Z",
+    "places": [
+      {
+        "name": "Herdecke",
+        "lat": 51.4001119,
+        "lon": 7.4330062,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Herdecke",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Ludwigsburg|ludwigsburg - wohnhaus nach brand unbewohnbar, mehrere verletzte",
     "status": "out",
     "title": "Ludwigsburg - Wohnhaus nach Brand unbewohnbar, mehrere Verletzte",
     "link": "https://www.presseportal.de/blaulicht/pm/110974/6381596",
     "first": "2026-11-01T07:34:41Z",
     "last": "2026-11-01T07:34:41Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ludwigsburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ludwigsburg",
@@ -13,11 +57,7 @@
         "lon": 9.1895147,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Remscheid|garagenbrand in remscheid güldenwerth",
@@ -26,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115882/6381563",
     "first": "2026-11-01T04:26:36Z",
     "last": "2026-11-01T04:26:36Z",
+    "veg": false,
+    "source": "Feuerwehr Remscheid",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Remscheid",
@@ -33,11 +77,7 @@
         "lon": 7.1943544,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Remscheid",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|mannheim-käfertal: fahrzeugbrand, brand gelöscht, pressemitteilung nr. 2",
@@ -4177,52 +4217,6 @@
         "name": "Rottweil",
         "lat": 48.1678244,
         "lon": 8.626979,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Aalen|rems-murr-kreis: gebäudebrand, unfallflucht, sachbeschädigung",
-    "status": "out",
-    "title": "Rems-Murr-Kreis: Gebäudebrand, Unfallflucht, Sachbeschädigung",
-    "link": "https://www.presseportal.de/blaulicht/pm/110969/6363887",
-    "first": "2026-10-02T13:30:33Z",
-    "last": "2026-10-02T13:30:33Z",
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Rems-Murr-Kreis",
-        "lat": 48.8966799,
-        "lon": 9.5037124,
-        "approx": false
-      },
-      {
-        "name": "L1119 zwischen Sechselberg und Vorderwestermurr",
-        "lat": 48.9491,
-        "lon": 9.56871,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Iserlohn|großbrand bei müllverwerter",
-    "status": "out",
-    "title": "Großbrand bei Müllverwerter",
-    "link": "https://www.presseportal.de/blaulicht/pm/116234/6363466",
-    "first": "2026-10-02T08:06:24Z",
-    "last": "2026-10-02T08:06:24Z",
-    "veg": false,
-    "source": "Feuerwehr Iserlohn",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Iserlohn",
-        "lat": 51.3746778,
-        "lon": 7.6999713,
         "approx": false
       }
     ]
