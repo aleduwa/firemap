@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/116945/6381900",
     "first": "2026-11-01T20:17:02Z",
     "last": "2026-11-01T20:17:02Z",
+    "veg": false,
+    "source": "Feuerwehr Kirchhundem ",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Kirchhundem ",
@@ -13,11 +17,7 @@
         "lon": 8.0894126,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Kirchhundem ",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Grevenbroich|schreck an halloween: balkone an wohnhaus über vier etagen in flammen / feuerwehr grevenbroich verhinder ausbreitung - wohnungen unbewohnbar",
