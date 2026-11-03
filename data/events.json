@@ -1,11 +1,35 @@
 [
   {
+    "base": "Polizeipräsidium Offenburg|baden- baden - brand einer gaslaterne",
+    "status": "contained",
+    "title": "Baden- Baden - Brand einer Gaslaterne",
+    "link": "https://www.presseportal.de/blaulicht/pm/110975/6383051",
+    "first": "2026-11-03T09:18:55Z",
+    "last": "2026-11-03T09:18:55Z",
+    "places": [
+      {
+        "name": "Baden- Baden",
+        "lat": 48.757452,
+        "lon": 8.2437384,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Offenburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Altena|brand im gebäude einer kfz-werkstatt - rund 120 kräfte im einsatz",
     "status": "out",
     "title": "Brand im Gebäude einer Kfz-Werkstatt - Rund 120 Kräfte im Einsatz",
     "link": "https://www.presseportal.de/blaulicht/pm/183084/6382879",
     "first": "2026-11-03T01:21:21Z",
     "last": "2026-11-03T01:21:21Z",
+    "veg": false,
+    "source": "Feuerwehr Altena",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Altena",
@@ -13,11 +37,7 @@
         "lon": 7.6734841,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Altena",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Wuppertal|brennende gartenhütte in ronsdorf",
@@ -4324,26 +4344,6 @@
         "lat": 48.8777738,
         "lon": 10.0337317,
         "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Mülheim an der Ruhr|rauchmelder und feuerschein in speldorf - feuerwehr löscht zimmerbrand",
-    "status": "out",
-    "title": "Rauchmelder und Feuerschein in Speldorf - Feuerwehr löscht Zimmerbrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/115880/6364272",
-    "first": "2026-10-04T08:06:04Z",
-    "last": "2026-10-04T08:06:04Z",
-    "veg": false,
-    "source": "Feuerwehr Mülheim an der Ruhr",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Mülheim an der Ruhr",
-        "lat": 51.4272925,
-        "lon": 6.8829192,
-        "approx": true
       }
     ]
   }
