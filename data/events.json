@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/65845/6383641",
     "first": "2026-11-03T17:26:37Z",
     "last": "2026-11-03T17:26:37Z",
+    "veg": false,
+    "source": "Kreispolizeibehörde Heinsberg",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Übach-Palenberg",
@@ -13,11 +17,7 @@
         "lon": 6.1128698,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Kreispolizeibehörde Heinsberg",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Aalen|schwäbisch hall/sulzdorf: gebäudebrand",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6383637",
     "first": "2026-11-03T17:00:50Z",
     "last": "2026-11-03T17:00:50Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Schwäbisch Hall",
@@ -39,11 +43,7 @@
         "lon": 9.8390007,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Landeskriminalamt Baden-Württemberg|lka-bw: weitere festnahme im zusammenhang mit brandanschlag auf terminal eines satelliteninternetdienstes in polen - gemeinsame medieninformation der generalstaatsanwaltschaft stuttgart und des lka bw",
@@ -52,6 +52,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110980/6383631",
     "first": "2026-11-03T16:52:07Z",
     "last": "2026-11-03T16:52:07Z",
+    "veg": false,
+    "source": "Landeskriminalamt Baden-Württemberg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "LKA-BW",
@@ -59,11 +63,7 @@
         "lon": 9.2517713,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Landeskriminalamt Baden-Württemberg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Offenburg|baden- baden - brand einer gaslaterne",
@@ -4269,66 +4269,6 @@
         "name": "Karlsruhe",
         "lat": 49.0068705,
         "lon": 8.4034195,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Neuss|brennende phosphor-brandbombe am rheinufer | niedrigwasser sorgte für entzündung",
-    "status": "active",
-    "title": "Brennende Phosphor-Brandbombe am Rheinufer | Niedrigwasser sorgte für Entzündung",
-    "link": "https://www.presseportal.de/blaulicht/pm/122045/6364487",
-    "first": "2026-10-04T20:25:37Z",
-    "last": "2026-10-04T20:25:37Z",
-    "veg": false,
-    "source": "Feuerwehr Neuss",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Neuss",
-        "lat": 51.1981778,
-        "lon": 6.6916476,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Düsseldorf|rauchentwicklung in serverraum frühzeitig erkannt - feuerwehr verhinderte ausbreitung",
-    "status": "out",
-    "title": "Rauchentwicklung in Serverraum frühzeitig erkannt - Feuerwehr verhinderte Ausbreitung",
-    "link": "https://www.presseportal.de/blaulicht/pm/115876/6364486",
-    "first": "2026-10-04T20:25:03Z",
-    "last": "2026-10-04T20:25:03Z",
-    "veg": false,
-    "source": "Feuerwehr Düsseldorf",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Düsseldorf",
-        "lat": 51.2254018,
-        "lon": 6.7763137,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Detmold|rauchwarnmelder macht nachbarn auf angebranntes kochgut aufmerksam",
-    "status": "active",
-    "title": "Rauchwarnmelder macht Nachbarn auf angebranntes Kochgut aufmerksam",
-    "link": "https://www.presseportal.de/blaulicht/pm/116239/6364485",
-    "first": "2026-10-04T20:07:00Z",
-    "last": "2026-10-04T20:07:00Z",
-    "veg": false,
-    "source": "Feuerwehr Detmold",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Detmold",
-        "lat": 51.936284,
-        "lon": 8.8791526,
         "approx": false
       }
     ]
