@@ -1,11 +1,81 @@
 [
   {
+    "base": "Kreispolizeibehörde Heinsberg|übach-palenberg - brand eines wohnhauses",
+    "status": "out",
+    "title": "Übach-Palenberg - Brand eines Wohnhauses",
+    "link": "https://www.presseportal.de/blaulicht/pm/65845/6383641",
+    "first": "2026-11-03T17:26:37Z",
+    "last": "2026-11-03T17:26:37Z",
+    "places": [
+      {
+        "name": "Übach-Palenberg",
+        "lat": 50.9213799,
+        "lon": 6.1128698,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Kreispolizeibehörde Heinsberg",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Aalen|schwäbisch hall/sulzdorf: gebäudebrand",
+    "status": "active",
+    "title": "Schwäbisch Hall/Sulzdorf: Gebäudebrand",
+    "link": "https://www.presseportal.de/blaulicht/pm/110969/6383637",
+    "first": "2026-11-03T17:00:50Z",
+    "last": "2026-11-03T17:00:50Z",
+    "places": [
+      {
+        "name": "Schwäbisch Hall",
+        "lat": 49.1124305,
+        "lon": 9.7371246,
+        "approx": false
+      },
+      {
+        "name": "Sulzdorf",
+        "lat": 49.1029786,
+        "lon": 9.8390007,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Landeskriminalamt Baden-Württemberg|lka-bw: weitere festnahme im zusammenhang mit brandanschlag auf terminal eines satelliteninternetdienstes in polen - gemeinsame medieninformation der generalstaatsanwaltschaft stuttgart und des lka bw",
+    "status": "active",
+    "title": "LKA-BW: Weitere Festnahme im Zusammenhang mit Brandanschlag auf Terminal eines Satelliteninternetdienstes in Polen - Gemeinsame Medieninformation der Generalstaatsanwaltschaft Stuttgart und des LKA BW",
+    "link": "https://www.presseportal.de/blaulicht/pm/110980/6383631",
+    "first": "2026-11-03T16:52:07Z",
+    "last": "2026-11-03T16:52:07Z",
+    "places": [
+      {
+        "name": "LKA-BW",
+        "lat": 48.7672836,
+        "lon": 9.2517713,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Landeskriminalamt Baden-Württemberg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Offenburg|baden- baden - brand einer gaslaterne",
     "status": "contained",
     "title": "Baden- Baden - Brand einer Gaslaterne",
     "link": "https://www.presseportal.de/blaulicht/pm/110975/6383051",
     "first": "2026-11-03T09:18:55Z",
     "last": "2026-11-03T09:18:55Z",
+    "veg": false,
+    "source": "Polizeipräsidium Offenburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Baden- Baden",
@@ -13,11 +83,7 @@
         "lon": 8.2437384,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Altena|brand im gebäude einer kfz-werkstatt - rund 120 kräfte im einsatz",
@@ -4263,86 +4329,6 @@
         "name": "Detmold",
         "lat": 51.936284,
         "lon": 8.8791526,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Freiwillige Feuerwehr Niederkrüchten|feuerwehr löscht dachstuhlbrand in niederkrüchten / brand beschädigt zwei haushälften, verletzt wurde niemand",
-    "status": "active",
-    "title": "Feuerwehr löscht Dachstuhlbrand in Niederkrüchten / Brand beschädigt zwei Haushälften, verletzt wurde niemand",
-    "link": "https://www.presseportal.de/blaulicht/pm/183200/6364453",
-    "first": "2026-10-04T15:21:09Z",
-    "last": "2026-10-04T15:21:09Z",
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Niederkrüchten",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Niederkrüchten",
-        "lat": 51.2000398,
-        "lon": 6.2196622,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Kreispolizeibehörde Viersen|niederkrüchten: kaminbrand weitet sich aus und macht haus unbewohnbar",
-    "status": "out",
-    "title": "Niederkrüchten: Kaminbrand weitet sich aus und macht Haus unbewohnbar",
-    "link": "https://www.presseportal.de/blaulicht/pm/65857/6364438",
-    "first": "2026-10-04T13:04:31Z",
-    "last": "2026-10-04T13:04:31Z",
-    "veg": false,
-    "source": "Kreispolizeibehörde Viersen",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Niederkrüchten",
-        "lat": 51.2000398,
-        "lon": 6.2196622,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Detmold|kleinbrand an einer gartenhütte",
-    "status": "out",
-    "title": "Kleinbrand an einer Gartenhütte",
-    "link": "https://www.presseportal.de/blaulicht/pm/116239/6364426",
-    "first": "2026-10-04T12:37:04Z",
-    "last": "2026-10-04T12:37:04Z",
-    "veg": false,
-    "source": "Feuerwehr Detmold",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Detmold",
-        "lat": 51.936284,
-        "lon": 8.8791526,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Aalen|ostalbkreis: fahrzeugbrand",
-    "status": "out",
-    "title": "Ostalbkreis: Fahrzeugbrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110969/6364353",
-    "first": "2026-10-04T10:40:30Z",
-    "last": "2026-10-04T10:40:30Z",
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Ostalbkreis",
-        "lat": 48.8777738,
-        "lon": 10.0337317,
         "approx": false
       }
     ]
