@@ -1,11 +1,35 @@
 [
   {
+    "base": "Feuerwehr Altena|brand im gebäude einer kfz-werkstatt - rund 120 kräfte im einsatz",
+    "status": "out",
+    "title": "Brand im Gebäude einer Kfz-Werkstatt - Rund 120 Kräfte im Einsatz",
+    "link": "https://www.presseportal.de/blaulicht/pm/183084/6382879",
+    "first": "2026-11-03T01:21:21Z",
+    "last": "2026-11-03T01:21:21Z",
+    "places": [
+      {
+        "name": "Altena",
+        "lat": 51.2990263,
+        "lon": 7.6734841,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Altena",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Wuppertal|brennende gartenhütte in ronsdorf",
     "status": "out",
     "title": "Brennende Gartenhütte in Ronsdorf",
     "link": "https://www.presseportal.de/blaulicht/pm/115885/6382863",
     "first": "2026-11-02T20:03:54Z",
     "last": "2026-11-02T20:03:54Z",
+    "veg": false,
+    "source": "Feuerwehr Wuppertal",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Wuppertal",
@@ -13,11 +37,7 @@
         "lon": 7.1780374,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Wuppertal",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Remscheid|brand in einer diskothek auf der nordstraße",
@@ -26,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115882/6382851",
     "first": "2026-11-02T18:15:00Z",
     "last": "2026-11-02T18:15:00Z",
+    "veg": false,
+    "source": "Feuerwehr Remscheid",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Remscheid",
@@ -33,11 +57,7 @@
         "lon": 7.1943544,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Remscheid",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Aalen|ostalbkreis: wohnungsbrand - garage beschmiert - unfälle",
@@ -46,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6382788",
     "first": "2026-11-02T15:49:57Z",
     "last": "2026-11-02T15:49:57Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ostalbkreis",
@@ -53,11 +77,7 @@
         "lon": 10.0337317,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(gp) göppingen - zwei autos, ein raub der flammen / die polizei ermittelt seit sonntag nach einem brand zweier fahrzeuge in göppingen.",
@@ -66,6 +86,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6382783",
     "first": "2026-11-02T15:45:00Z",
     "last": "2026-11-02T15:45:00Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Göppingen",
@@ -73,11 +97,7 @@
         "lon": 9.6541116,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Kreispolizeibehörde Viersen|viersen-süchteln: brand in einer scheune - polizei sucht zeuginnen und zeugen",
@@ -86,6 +106,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/65857/6382779",
     "first": "2026-11-02T15:43:35Z",
     "last": "2026-11-02T15:43:35Z",
+    "veg": false,
+    "source": "Kreispolizeibehörde Viersen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Viersen-Süchteln",
@@ -93,11 +117,7 @@
         "lon": 6.3527784,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Kreispolizeibehörde Viersen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizei Coesfeld|senden, schliekhege/garage in brand gesetzt - polizei ermittelt",
@@ -106,6 +126,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/6006/6382775",
     "first": "2026-11-02T15:40:38Z",
     "last": "2026-11-02T15:40:38Z",
+    "veg": false,
+    "source": "Polizei Coesfeld",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Senden",
@@ -119,11 +143,7 @@
         "lon": 7.4705286,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizei Coesfeld",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Hamm|mülltonne und altkleidercontainer in brand gesetzt - zeugen gesucht",
