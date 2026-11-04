@@ -1,5 +1,25 @@
 [
   {
+    "base": "Feuerwehr Stuttgart|brand eines müllfahrzeugs auf der bab8",
+    "status": "out",
+    "title": "Brand eines Müllfahrzeugs auf der BAB8",
+    "link": "https://www.presseportal.de/blaulicht/pm/161590/6383672",
+    "first": "2026-11-03T23:43:44Z",
+    "last": "2026-11-03T23:43:44Z",
+    "places": [
+      {
+        "name": "Stuttgart",
+        "lat": 48.7784485,
+        "lon": 9.1800132,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Stuttgart",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Kreispolizeibehörde Heinsberg|übach-palenberg - brand eines wohnhauses",
     "status": "out",
     "title": "Übach-Palenberg - Brand eines Wohnhauses",
