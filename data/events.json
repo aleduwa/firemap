@@ -1,11 +1,115 @@
 [
   {
+    "base": "Polizeipräsidium Mannheim|mannheim-almenhof: brandgeschehen am reihenhaus, pm 1",
+    "status": "active",
+    "title": "Mannheim-Almenhof: Brandgeschehen am Reihenhaus, PM 1",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6384394",
+    "first": "2026-11-04T22:54:21Z",
+    "last": "2026-11-04T22:54:21Z",
+    "places": [
+      {
+        "name": "Mannheim-Almenhof",
+        "lat": 49.4675925,
+        "lon": 8.4868101,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Paderborn|gemeldeter wohnungsbrand in paderborn elsen",
+    "status": "active",
+    "title": "Gemeldeter Wohnungsbrand in Paderborn Elsen",
+    "link": "https://www.presseportal.de/blaulicht/pm/173646/6384392",
+    "first": "2026-11-04T22:21:23Z",
+    "last": "2026-11-04T22:21:23Z",
+    "places": [
+      {
+        "name": "Paderborn",
+        "lat": 51.7177044,
+        "lon": 8.752653,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Paderborn",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Attendorn|wohnhaus im vollbrand",
+    "status": "out",
+    "title": "Wohnhaus im Vollbrand",
+    "link": "https://www.presseportal.de/blaulicht/pm/116323/6384391",
+    "first": "2026-11-04T22:07:16Z",
+    "last": "2026-11-04T22:07:16Z",
+    "places": [
+      {
+        "name": "Attendorn",
+        "lat": 51.1250541,
+        "lon": 7.9010992,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Attendorn",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Krefeld|großbrand in gewerbebetrieb in krefeld-inrath - umfangreiche löscharbeiten bis in die abendstunden",
+    "status": "out",
+    "title": "Großbrand in Gewerbebetrieb in Krefeld-Inrath - Umfangreiche Löscharbeiten bis in die Abendstunden",
+    "link": "https://www.presseportal.de/blaulicht/pm/115878/6384387",
+    "first": "2026-11-04T21:22:29Z",
+    "last": "2026-11-04T21:22:29Z",
+    "places": [
+      {
+        "name": "Krefeld",
+        "lat": 51.3331205,
+        "lon": 6.5623343,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Krefeld",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Dortmund|wohnungsbrand in dortmund-bodelschwingh",
+    "status": "active",
+    "title": "Wohnungsbrand in Dortmund-Bodelschwingh",
+    "link": "https://www.presseportal.de/blaulicht/pm/115869/6384383",
+    "first": "2026-11-04T20:26:38Z",
+    "last": "2026-11-04T20:26:38Z",
+    "places": [
+      {
+        "name": "Dortmund",
+        "lat": 51.5142273,
+        "lon": 7.4652789,
+        "approx": false
+      }
+    ],
+    "veg": true,
+    "source": "Feuerwehr Dortmund",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Heilbronn|hohenlohekreis: traktor in brand geraten",
     "status": "active",
     "title": "Hohenlohekreis: Traktor in Brand geraten",
     "link": "https://www.presseportal.de/blaulicht/pm/110971/6384351",
     "first": "2026-11-04T17:05:29Z",
     "last": "2026-11-04T17:05:29Z",
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Hohenlohekreis",
@@ -13,11 +117,7 @@
         "lon": 9.6057331,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Düsseldorf|kellerbrand in mehrfamilienhaus in pempelfort - umfangreiche lüftungsmaßnahmen",
@@ -26,6 +126,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115876/6384253",
     "first": "2026-11-04T14:48:18Z",
     "last": "2026-11-04T14:48:18Z",
+    "veg": false,
+    "source": "Feuerwehr Düsseldorf",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Düsseldorf",
@@ -33,11 +137,7 @@
         "lon": 6.7763137,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Düsseldorf",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ludwigsburg|sindelfingen: feuer auf balkon greift auf wohnung über",
