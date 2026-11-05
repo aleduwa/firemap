@@ -1,11 +1,95 @@
 [
   {
+    "base": "Feuerwehr Mönchengladbach|brand im dachbereich eines supermarktes",
+    "status": "active",
+    "title": "Brand im Dachbereich eines Supermarktes",
+    "link": "https://www.presseportal.de/blaulicht/pm/115879/6385078",
+    "first": "2026-11-05T15:17:10Z",
+    "last": "2026-11-05T15:17:10Z",
+    "places": [
+      {
+        "name": "Mönchengladbach",
+        "lat": 51.1947131,
+        "lon": 6.4353792,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|schopfheim: verdacht der brandstiftung bei autohaus - polizei sucht zeugen",
+    "status": "out",
+    "title": "Schopfheim: Verdacht der Brandstiftung bei Autohaus - Polizei sucht Zeugen",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6385059",
+    "first": "2026-11-05T15:00:48Z",
+    "last": "2026-11-05T15:00:48Z",
+    "places": [
+      {
+        "name": "Schopfheim",
+        "lat": 47.6500525,
+        "lon": 7.8216997,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|rheinfelden: brand an einer heizungsanlage in adelhausen",
+    "status": "out",
+    "title": "Rheinfelden: Brand an einer Heizungsanlage in Adelhausen",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6385055",
+    "first": "2026-11-05T14:57:24Z",
+    "last": "2026-11-05T14:57:24Z",
+    "places": [
+      {
+        "name": "Rheinfelden",
+        "lat": 47.5605924,
+        "lon": 7.7861959,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|lörrach: brand in küche in brombach",
+    "status": "out",
+    "title": "Lörrach: Brand in Küche in Brombach",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6385049",
+    "first": "2026-11-05T14:52:55Z",
+    "last": "2026-11-05T14:52:55Z",
+    "places": [
+      {
+        "name": "Lörrach",
+        "lat": 47.6120896,
+        "lon": 7.6607218,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Wetter (Ruhr)|verkehrsunfall am mittwochabend und brandmeldealarm am folgenden vormittag",
     "status": "active",
     "title": "Verkehrsunfall am Mittwochabend und Brandmeldealarm am folgenden Vormittag",
     "link": "https://www.presseportal.de/blaulicht/pm/69783/6384799",
     "first": "2026-11-05T11:38:01Z",
     "last": "2026-11-05T11:38:01Z",
+    "veg": false,
+    "source": "Feuerwehr Wetter (Ruhr)",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Wetter (Ruhr)",
@@ -13,11 +97,7 @@
         "lon": 7.3951553,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Wetter (Ruhr)",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Kreispolizeibehörde Unna|selm - brand in einem mehrfamilienhaus mit zwei leicht verletzten",
@@ -26,6 +106,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/65856/6384786",
     "first": "2026-11-05T11:27:03Z",
     "last": "2026-11-05T11:27:03Z",
+    "veg": false,
+    "source": "Kreispolizeibehörde Unna",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Selm",
@@ -33,11 +117,7 @@
         "lon": 7.468614,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Kreispolizeibehörde Unna",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|mannheim: kellerbrand in mehrfamilienhaus",
@@ -46,6 +126,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6384771",
     "first": "2026-11-05T11:16:39Z",
     "last": "2026-11-05T11:16:39Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Mannheim",
@@ -53,11 +137,7 @@
         "lon": 8.4673098,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Karlsruhe|(ka) stutensee - zeugen nach brand von drei pferdeanhängern gesucht",
@@ -66,6 +146,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110972/6384736",
     "first": "2026-11-05T11:02:04Z",
     "last": "2026-11-05T11:02:04Z",
+    "veg": false,
+    "source": "Polizeipräsidium Karlsruhe",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Stutensee",
@@ -73,11 +157,7 @@
         "lon": 8.4856806,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Karlsruhe",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(hdh) heidenheim - dachstuhl brennt / am donnerstag entstand bei einem brand in einem wohnhaus in heidenheim a.d. brenz sachschaden. zwei personen kamen mit rauchgasvergiftung ins krankenhaus.",
@@ -86,6 +166,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6384711",
     "first": "2026-11-05T10:48:15Z",
     "last": "2026-11-05T10:48:15Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Heidenheim",
@@ -93,11 +177,7 @@
         "lon": 10.152923,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Kreispolizeibehörde Viersen|willich-anrath: eine leichtverletzte person nach brand in einem haftraum der jva willich ii (frauenhaus - offener vollzug)",
@@ -4357,92 +4437,6 @@
         "name": "Witten",
         "lat": 51.4370171,
         "lon": 7.335124,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Witten|gebäudebrand an der crengeldanzstraße in witten",
-    "status": "active",
-    "title": "Gebäudebrand an der Crengeldanzstraße in Witten",
-    "link": "https://www.presseportal.de/blaulicht/pm/120429/6366183",
-    "first": "2026-10-06T17:59:53Z",
-    "last": "2026-10-06T17:59:53Z",
-    "veg": false,
-    "source": "Feuerwehr Witten",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Witten",
-        "lat": 51.4370171,
-        "lon": 7.335124,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizei Köln|261006-2-k/ac/bab aktueller einsatz - schwerer verkehrsunfall auf der bab 44 - richtungsfahrbahn lüttich ab aachen-brand gesperrt",
-    "status": "active",
-    "title": "261006-2-K/AC/BAB Aktueller Einsatz - Schwerer Verkehrsunfall auf der BAB 44 - Richtungsfahrbahn Lüttich ab Aachen-Brand gesperrt",
-    "link": "https://www.presseportal.de/blaulicht/pm/12415/6366177",
-    "first": "2026-10-06T17:32:22Z",
-    "last": "2026-10-06T17:32:22Z",
-    "veg": false,
-    "source": "Polizei Köln",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "AC",
-        "lat": 50.765826,
-        "lon": 6.147262,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|brühl/rhein-neckar-kreis: fahrzeugbrand - feuerwehr im einsatz - pressemeldung nr. 1",
-    "status": "active",
-    "title": "Brühl/Rhein-Neckar-Kreis: Fahrzeugbrand - Feuerwehr im Einsatz - Pressemeldung Nr. 1",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6366162",
-    "first": "2026-10-06T16:44:16Z",
-    "last": "2026-10-06T16:44:16Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Brühl",
-        "lat": 49.3953536,
-        "lon": 8.5340405,
-        "approx": false
-      },
-      {
-        "name": "Rhein-Neckar-Kreis",
-        "lat": 49.3684797,
-        "lon": 8.7352403,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|mannheim: mögliche brandstiftung - zeugenaufruf",
-    "status": "active",
-    "title": "Mannheim: Mögliche Brandstiftung - Zeugenaufruf",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6366083",
-    "first": "2026-10-06T15:02:43Z",
-    "last": "2026-10-06T15:02:43Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Mannheim",
-        "lat": 49.4892913,
-        "lon": 8.4673098,
         "approx": false
       }
     ]
