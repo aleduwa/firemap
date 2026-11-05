@@ -1,11 +1,35 @@
 [
   {
+    "base": "Kreispolizeibehörde Viersen|willich-anrath: eine leichtverletzte person nach brand in einem haftraum der jva willich ii (frauenhaus - offener vollzug)",
+    "status": "active",
+    "title": "Willich-Anrath: Eine leichtverletzte Person nach Brand in einem Haftraum der JVA Willich II (Frauenhaus - offener Vollzug)",
+    "link": "https://www.presseportal.de/blaulicht/pm/65857/6384401",
+    "first": "2026-11-05T01:13:23Z",
+    "last": "2026-11-05T01:13:23Z",
+    "places": [
+      {
+        "name": "Willich-Anrath",
+        "lat": 51.2793478,
+        "lon": 6.4664034,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Kreispolizeibehörde Viersen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Mannheim|mannheim-almenhof: brandgeschehen am reihenhaus, pm 1",
     "status": "active",
     "title": "Mannheim-Almenhof: Brandgeschehen am Reihenhaus, PM 1",
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6384394",
     "first": "2026-11-04T22:54:21Z",
     "last": "2026-11-04T22:54:21Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Mannheim-Almenhof",
@@ -13,11 +37,7 @@
         "lon": 8.4868101,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Paderborn|gemeldeter wohnungsbrand in paderborn elsen",
@@ -26,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/173646/6384392",
     "first": "2026-11-04T22:21:23Z",
     "last": "2026-11-04T22:21:23Z",
+    "veg": false,
+    "source": "Feuerwehr Paderborn",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Paderborn",
@@ -33,11 +57,7 @@
         "lon": 8.752653,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Paderborn",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Attendorn|wohnhaus im vollbrand",
@@ -46,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/116323/6384391",
     "first": "2026-11-04T22:07:16Z",
     "last": "2026-11-04T22:07:16Z",
+    "veg": false,
+    "source": "Feuerwehr Attendorn",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Attendorn",
@@ -53,11 +77,7 @@
         "lon": 7.9010992,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Attendorn",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Krefeld|großbrand in gewerbebetrieb in krefeld-inrath - umfangreiche löscharbeiten bis in die abendstunden",
@@ -66,6 +86,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115878/6384387",
     "first": "2026-11-04T21:22:29Z",
     "last": "2026-11-04T21:22:29Z",
+    "veg": false,
+    "source": "Feuerwehr Krefeld",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Krefeld",
@@ -73,11 +97,7 @@
         "lon": 6.5623343,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Krefeld",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Dortmund|wohnungsbrand in dortmund-bodelschwingh",
@@ -86,6 +106,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115869/6384383",
     "first": "2026-11-04T20:26:38Z",
     "last": "2026-11-04T20:26:38Z",
+    "veg": true,
+    "source": "Feuerwehr Dortmund",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Dortmund",
@@ -93,11 +117,7 @@
         "lon": 7.4652789,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Feuerwehr Dortmund",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Heilbronn|hohenlohekreis: traktor in brand geraten",
