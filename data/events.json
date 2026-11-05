@@ -1,11 +1,115 @@
 [
   {
+    "base": "Feuerwehr Wetter (Ruhr)|verkehrsunfall am mittwochabend und brandmeldealarm am folgenden vormittag",
+    "status": "active",
+    "title": "Verkehrsunfall am Mittwochabend und Brandmeldealarm am folgenden Vormittag",
+    "link": "https://www.presseportal.de/blaulicht/pm/69783/6384799",
+    "first": "2026-11-05T11:38:01Z",
+    "last": "2026-11-05T11:38:01Z",
+    "places": [
+      {
+        "name": "Wetter (Ruhr)",
+        "lat": 51.3879463,
+        "lon": 7.3951553,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Wetter (Ruhr)",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Kreispolizeibehörde Unna|selm - brand in einem mehrfamilienhaus mit zwei leicht verletzten",
+    "status": "out",
+    "title": "Selm - Brand in einem Mehrfamilienhaus mit zwei leicht Verletzten",
+    "link": "https://www.presseportal.de/blaulicht/pm/65856/6384786",
+    "first": "2026-11-05T11:27:03Z",
+    "last": "2026-11-05T11:27:03Z",
+    "places": [
+      {
+        "name": "Selm",
+        "lat": 51.7005549,
+        "lon": 7.468614,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Kreispolizeibehörde Unna",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|mannheim: kellerbrand in mehrfamilienhaus",
+    "status": "active",
+    "title": "Mannheim: Kellerbrand in Mehrfamilienhaus",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6384771",
+    "first": "2026-11-05T11:16:39Z",
+    "last": "2026-11-05T11:16:39Z",
+    "places": [
+      {
+        "name": "Mannheim",
+        "lat": 49.4892913,
+        "lon": 8.4673098,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Karlsruhe|(ka) stutensee - zeugen nach brand von drei pferdeanhängern gesucht",
+    "status": "active",
+    "title": "(KA) Stutensee - Zeugen nach Brand von drei Pferdeanhängern gesucht",
+    "link": "https://www.presseportal.de/blaulicht/pm/110972/6384736",
+    "first": "2026-11-05T11:02:04Z",
+    "last": "2026-11-05T11:02:04Z",
+    "places": [
+      {
+        "name": "Stutensee",
+        "lat": 49.0895249,
+        "lon": 8.4856806,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Karlsruhe",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Ulm|(hdh) heidenheim - dachstuhl brennt / am donnerstag entstand bei einem brand in einem wohnhaus in heidenheim a.d. brenz sachschaden. zwei personen kamen mit rauchgasvergiftung ins krankenhaus.",
+    "status": "active",
+    "title": "(HDH) Heidenheim - Dachstuhl brennt / Am Donnerstag entstand bei einem Brand in einem Wohnhaus in Heidenheim a.d. Brenz Sachschaden. Zwei Personen kamen mit Rauchgasvergiftung ins Krankenhaus.",
+    "link": "https://www.presseportal.de/blaulicht/pm/110979/6384711",
+    "first": "2026-11-05T10:48:15Z",
+    "last": "2026-11-05T10:48:15Z",
+    "places": [
+      {
+        "name": "Heidenheim",
+        "lat": 48.6767637,
+        "lon": 10.152923,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Kreispolizeibehörde Viersen|willich-anrath: eine leichtverletzte person nach brand in einem haftraum der jva willich ii (frauenhaus - offener vollzug)",
     "status": "active",
     "title": "Willich-Anrath: Eine leichtverletzte Person nach Brand in einem Haftraum der JVA Willich II (Frauenhaus - offener Vollzug)",
     "link": "https://www.presseportal.de/blaulicht/pm/65857/6384401",
     "first": "2026-11-05T01:13:23Z",
     "last": "2026-11-05T01:13:23Z",
+    "veg": false,
+    "source": "Kreispolizeibehörde Viersen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Willich-Anrath",
@@ -13,11 +117,7 @@
         "lon": 6.4664034,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Kreispolizeibehörde Viersen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|mannheim-almenhof: brandgeschehen am reihenhaus, pm 1",
@@ -4343,26 +4443,6 @@
         "name": "Mannheim",
         "lat": 49.4892913,
         "lon": 8.4673098,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Offenburg|gaggenau - feueralarm missbräuchlich ausgelöst - hinweise erbeten",
-    "status": "active",
-    "title": "Gaggenau - Feueralarm missbräuchlich ausgelöst - Hinweise erbeten",
-    "link": "https://www.presseportal.de/blaulicht/pm/110975/6365653",
-    "first": "2026-10-06T10:23:09Z",
-    "last": "2026-10-06T10:23:09Z",
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Gaggenau",
-        "lat": 48.8030291,
-        "lon": 8.3201799,
         "approx": false
       }
     ]
