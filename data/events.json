@@ -1,5 +1,51 @@
 [
   {
+    "base": "Polizeipräsidium Freiburg|rheinfelden/ herten: kaminbrand löst feuerwehreinsatz aus",
+    "status": "out",
+    "title": "Rheinfelden/ Herten: Kaminbrand löst Feuerwehreinsatz aus",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6385737",
+    "first": "2026-11-06T13:46:54Z",
+    "last": "2026-11-06T13:46:54Z",
+    "places": [
+      {
+        "name": "Rheinfelden",
+        "lat": 47.5605924,
+        "lon": 7.7861959,
+        "approx": false
+      },
+      {
+        "name": "Herten",
+        "lat": 47.556031,
+        "lon": 7.7347234,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Wuppertal|wohnung nach brand nicht mehr bewohnbar",
+    "status": "out",
+    "title": "Wohnung nach Brand nicht mehr bewohnbar",
+    "link": "https://www.presseportal.de/blaulicht/pm/115885/6385714",
+    "first": "2026-11-06T13:29:13Z",
+    "last": "2026-11-06T13:29:13Z",
+    "places": [
+      {
+        "name": "Wuppertal",
+        "lat": 51.264018,
+        "lon": 7.1780374,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Wuppertal",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Mönchengladbach|verkehrsunfall vor der feuer- und rettungswache ii",
     "status": "active",
     "title": "Verkehrsunfall vor der Feuer- und Rettungswache II",
@@ -4351,46 +4397,6 @@
         "name": "Leonberg",
         "lat": 48.8012983,
         "lon": 9.0150026,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Kreispolizeibehörde Viersen|viersen-ummer: mülltonne in brand - zeuginnen und zeugen gesucht",
-    "status": "out",
-    "title": "Viersen-Ummer: Mülltonne in Brand - Zeuginnen und Zeugen gesucht",
-    "link": "https://www.presseportal.de/blaulicht/pm/65857/6366805",
-    "first": "2026-10-07T14:36:55Z",
-    "last": "2026-10-07T14:36:55Z",
-    "veg": false,
-    "source": "Kreispolizeibehörde Viersen",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Viersen-Ummer",
-        "lat": 51.2464413,
-        "lon": 6.4149812,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|lörrach: verdacht brandstiftung an kfz - tatverdächtiger in haft - polizei sucht geschädigten",
-    "status": "out",
-    "title": "Lörrach: Verdacht Brandstiftung an Kfz - Tatverdächtiger in Haft - Polizei sucht Geschädigten",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6366791",
-    "first": "2026-10-07T14:21:57Z",
-    "last": "2026-10-07T14:21:57Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Lörrach",
-        "lat": 47.6120896,
-        "lon": 7.6607218,
         "approx": false
       }
     ]
