@@ -1,11 +1,11 @@
 [
   {
-    "base": "Feuerwehr Mönchengladbach|brand im dachbereich eines supermarktes",
+    "base": "Feuerwehr Mönchengladbach|verkehrsunfall vor der feuer- und rettungswache ii",
     "status": "active",
-    "title": "Brand im Dachbereich eines Supermarktes",
-    "link": "https://www.presseportal.de/blaulicht/pm/115879/6385078",
-    "first": "2026-11-05T15:17:10Z",
-    "last": "2026-11-05T15:17:10Z",
+    "title": "Verkehrsunfall vor der Feuer- und Rettungswache II",
+    "link": "https://www.presseportal.de/blaulicht/pm/115879/6385189",
+    "first": "2026-11-05T22:12:09Z",
+    "last": "2026-11-05T22:12:09Z",
     "places": [
       {
         "name": "Mönchengladbach",
@@ -20,12 +20,36 @@
     "updates": 0
   },
   {
+    "base": "Feuerwehr Mönchengladbach|brand im dachbereich eines supermarktes",
+    "status": "active",
+    "title": "Brand im Dachbereich eines Supermarktes",
+    "link": "https://www.presseportal.de/blaulicht/pm/115879/6385078",
+    "first": "2026-11-05T15:17:10Z",
+    "last": "2026-11-05T15:17:10Z",
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "updates": 0,
+    "region": "NRW",
+    "places": [
+      {
+        "name": "Mönchengladbach",
+        "lat": 51.1947131,
+        "lon": 6.4353792,
+        "approx": false
+      }
+    ]
+  },
+  {
     "base": "Polizeipräsidium Freiburg|schopfheim: verdacht der brandstiftung bei autohaus - polizei sucht zeugen",
     "status": "out",
     "title": "Schopfheim: Verdacht der Brandstiftung bei Autohaus - Polizei sucht Zeugen",
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6385059",
     "first": "2026-11-05T15:00:48Z",
     "last": "2026-11-05T15:00:48Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Schopfheim",
@@ -33,11 +57,7 @@
         "lon": 7.8216997,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|rheinfelden: brand an einer heizungsanlage in adelhausen",
@@ -46,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6385055",
     "first": "2026-11-05T14:57:24Z",
     "last": "2026-11-05T14:57:24Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Rheinfelden",
@@ -53,11 +77,7 @@
         "lon": 7.7861959,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|lörrach: brand in küche in brombach",
@@ -66,6 +86,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6385049",
     "first": "2026-11-05T14:52:55Z",
     "last": "2026-11-05T14:52:55Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Lörrach",
@@ -73,11 +97,7 @@
         "lon": 7.6607218,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Wetter (Ruhr)|verkehrsunfall am mittwochabend und brandmeldealarm am folgenden vormittag",
@@ -4391,52 +4411,6 @@
         "name": "Ennepetal",
         "lat": 51.2967192,
         "lon": 7.3693335,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|brühl/rhein-neckar-kreis: fahrzeugbrand - feuerwehr im einsatz - pressemeldung nr. 2",
-    "status": "out",
-    "title": "Brühl/Rhein-Neckar-Kreis: Fahrzeugbrand - Feuerwehr im Einsatz - Pressemeldung Nr. 2",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6366201",
-    "first": "2026-10-06T20:11:05Z",
-    "last": "2026-10-06T20:11:05Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Brühl",
-        "lat": 49.3953536,
-        "lon": 8.5340405,
-        "approx": false
-      },
-      {
-        "name": "Rhein-Neckar-Kreis",
-        "lat": 49.3684797,
-        "lon": 8.7352403,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Witten|folgemeldung gebäudebrand crengeldanzstraße",
-    "status": "active",
-    "title": "Folgemeldung Gebäudebrand Crengeldanzstraße",
-    "link": "https://www.presseportal.de/blaulicht/pm/120429/6366198",
-    "first": "2026-10-06T19:46:48Z",
-    "last": "2026-10-06T19:46:48Z",
-    "veg": false,
-    "source": "Feuerwehr Witten",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Witten",
-        "lat": 51.4370171,
-        "lon": 7.335124,
         "approx": false
       }
     ]
