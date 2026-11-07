@@ -1,5 +1,45 @@
 [
   {
+    "base": "Feuerwehr Düsseldorf|zimmerbrand in mehrfamilienhaus in pempelfort - mehrere personen über drehleiter gerettet",
+    "status": "active",
+    "title": "Zimmerbrand in Mehrfamilienhaus in Pempelfort - Mehrere Personen über Drehleiter gerettet",
+    "link": "https://www.presseportal.de/blaulicht/pm/115876/6385941",
+    "first": "2026-11-07T08:28:57Z",
+    "last": "2026-11-07T08:28:57Z",
+    "places": [
+      {
+        "name": "Düsseldorf",
+        "lat": 51.2254018,
+        "lon": 6.7763137,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Düsseldorf",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Bochum|zwei pkw brennen in garageninnenhof in bochum-hamme",
+    "status": "out",
+    "title": "Zwei Pkw brennen in Garageninnenhof in Bochum-Hamme",
+    "link": "https://www.presseportal.de/blaulicht/pm/115868/6385937",
+    "first": "2026-11-07T08:12:34Z",
+    "last": "2026-11-07T08:12:34Z",
+    "places": [
+      {
+        "name": "Bochum",
+        "lat": 51.4818111,
+        "lon": 7.2196635,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Bochum",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Offenburg|zwei brandmeldungen in kurzer folge in offenburg - zwei personen ins freie geführt.",
     "status": "active",
     "title": "Zwei Brandmeldungen in kurzer Folge in Offenburg - Zwei Personen ins Freie geführt.",
@@ -4377,46 +4417,6 @@
         "name": "Neuenkamp",
         "lat": 51.4348531,
         "lon": 6.7248367,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Aalen|rems-murr-kreis: einbruch, diebstahl, brand und sachbeschädigung",
-    "status": "out",
-    "title": "Rems-Murr-Kreis: Einbruch, Diebstahl, Brand und Sachbeschädigung",
-    "link": "https://www.presseportal.de/blaulicht/pm/110969/6367040",
-    "first": "2026-10-08T07:33:36Z",
-    "last": "2026-10-08T07:33:36Z",
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Rems-Murr-Kreis",
-        "lat": 48.8966799,
-        "lon": 9.5037124,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Dinslaken|garagenbrand auf der hauerstraße",
-    "status": "out",
-    "title": "Garagenbrand auf der Hauerstraße",
-    "link": "https://www.presseportal.de/blaulicht/pm/116534/6367034",
-    "first": "2026-10-08T07:17:45Z",
-    "last": "2026-10-08T07:17:45Z",
-    "veg": false,
-    "source": "Feuerwehr Dinslaken",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Dinslaken",
-        "lat": 51.5623618,
-        "lon": 6.7345106,
         "approx": false
       }
     ]
