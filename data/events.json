@@ -1,11 +1,55 @@
 [
   {
+    "base": "Freiwillige Feuerwehr Kamen|gebäudebrand an der konrad-zuse-straße - aufwändige nachlöscharbeiten am dach",
+    "status": "contained",
+    "title": "Gebäudebrand an der Konrad-Zuse-Straße - aufwändige Nachlöscharbeiten am Dach",
+    "link": "https://www.presseportal.de/blaulicht/pm/139081/6386060",
+    "first": "2026-11-07T22:19:02Z",
+    "last": "2026-11-07T22:19:02Z",
+    "places": [
+      {
+        "name": "Kamen",
+        "lat": 51.5918019,
+        "lon": 7.6616804,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Kamen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Pulheim|kellerbrand ging glimpflich aus",
+    "status": "active",
+    "title": "Kellerbrand ging glimpflich aus",
+    "link": "https://www.presseportal.de/blaulicht/pm/156611/6386054",
+    "first": "2026-11-07T21:52:49Z",
+    "last": "2026-11-07T21:52:49Z",
+    "places": [
+      {
+        "name": "Pulheim",
+        "lat": 50.9979888,
+        "lon": 6.8025409,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Pulheim",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Freiwillige Feuerwehr Kalkar|feuerwehr kalkar: brandmeistersitzung in appeldorn: modernste drohnentechnik, 2.000 stunden ausbildung und ausblick auf 2027",
     "status": "active",
     "title": "Feuerwehr Kalkar: Brandmeistersitzung in Appeldorn: Modernste Drohnentechnik, 2.000 Stunden Ausbildung und Ausblick auf 2027",
     "link": "https://www.presseportal.de/blaulicht/pm/126309/6386028",
     "first": "2026-11-07T17:18:31Z",
     "last": "2026-11-07T17:18:31Z",
+    "veg": true,
+    "source": "Freiwillige Feuerwehr Kalkar",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Kalkar",
@@ -13,11 +57,7 @@
         "lon": 6.2927546,
         "approx": false
       }
-    ],
-    "veg": true,
-    "source": "Freiwillige Feuerwehr Kalkar",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Plettenberg|ortsteil stadtmitte - kaminverkleidung brennt in voller ausdehnung",
@@ -26,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/116600/6386012",
     "first": "2026-11-07T14:43:13Z",
     "last": "2026-11-07T14:43:13Z",
+    "veg": false,
+    "source": "Feuerwehr Plettenberg",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Plettenberg",
@@ -33,11 +77,7 @@
         "lon": 7.8745627,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Plettenberg",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Kleve|pkw in vollbrand - feuerwehr verhindert übergreifen der flammen",
@@ -46,6 +86,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/126799/6386005",
     "first": "2026-11-07T14:03:52Z",
     "last": "2026-11-07T14:03:52Z",
+    "veg": false,
+    "source": "Feuerwehr Kleve",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Kleve",
@@ -53,11 +97,7 @@
         "lon": 6.1376008,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Kleve",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Düsseldorf|zimmerbrand in mehrfamilienhaus in pempelfort - mehrere personen über drehleiter gerettet",
@@ -4352,46 +4392,6 @@
         "lat": 51.264018,
         "lon": 7.1780374,
         "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Heiligenhaus|lkw-brand auf der a44 - feuerwehr löscht brennende fahrerkabine",
-    "status": "out",
-    "title": "Lkw-Brand auf der A44 - Feuerwehr löscht brennende Fahrerkabine",
-    "link": "https://www.presseportal.de/blaulicht/pm/116231/6367739",
-    "first": "2026-10-08T19:02:44Z",
-    "last": "2026-10-08T19:02:44Z",
-    "veg": false,
-    "source": "Feuerwehr Heiligenhaus",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Heiligenhaus",
-        "lat": 51.32658,
-        "lon": 6.9710401,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Mönchengladbach|rauchentwicklung in der zwischendecke",
-    "status": "active",
-    "title": "Rauchentwicklung in der Zwischendecke",
-    "link": "https://www.presseportal.de/blaulicht/pm/115879/6367735",
-    "first": "2026-10-08T18:19:32Z",
-    "last": "2026-10-08T18:19:32Z",
-    "veg": false,
-    "source": "Feuerwehr Mönchengladbach",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Mönchengladbach",
-        "lat": 51.1947131,
-        "lon": 6.4353792,
-        "approx": false
       }
     ]
   }
