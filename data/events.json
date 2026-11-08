@@ -1,11 +1,11 @@
 [
   {
-    "base": "Feuerwehr Wuppertal|brand eines fahrrad akku führt zu feuerwehr einsatz",
-    "status": "active",
-    "title": "Brand eines Fahrrad Akku führt zu Feuerwehr Einsatz",
-    "link": "https://www.presseportal.de/blaulicht/pm/115885/6386079",
-    "first": "2026-11-08T06:55:08Z",
-    "last": "2026-11-08T06:55:08Z",
+    "base": "Feuerwehr Wuppertal|zwei verletzte nach brand in wuppertal - nachbar greift rechtzeitig ein.",
+    "status": "out",
+    "title": "Zwei Verletzte nach Brand in Wuppertal - Nachbar greift rechtzeitig ein.",
+    "link": "https://www.presseportal.de/blaulicht/pm/115885/6386284",
+    "first": "2026-11-08T14:38:59Z",
+    "last": "2026-11-08T14:38:59Z",
     "places": [
       {
         "name": "Wuppertal",
@@ -18,6 +18,26 @@
     "source": "Feuerwehr Wuppertal",
     "region": "NRW",
     "updates": 0
+  },
+  {
+    "base": "Feuerwehr Wuppertal|brand eines fahrrad akku führt zu feuerwehr einsatz",
+    "status": "active",
+    "title": "Brand eines Fahrrad Akku führt zu Feuerwehr Einsatz",
+    "link": "https://www.presseportal.de/blaulicht/pm/115885/6386079",
+    "first": "2026-11-08T06:55:08Z",
+    "last": "2026-11-08T06:55:08Z",
+    "veg": false,
+    "source": "Feuerwehr Wuppertal",
+    "updates": 0,
+    "region": "NRW",
+    "places": [
+      {
+        "name": "Wuppertal",
+        "lat": 51.264018,
+        "lon": 7.1780374,
+        "approx": false
+      }
+    ]
   },
   {
     "base": "Feuerwehr Erkelenz|kaminbrand erfordert einsatz der feuerwehr",
@@ -4371,26 +4391,6 @@
         "name": "Östringen",
         "lat": 49.2187372,
         "lon": 8.7102268,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Pforzheim|(cw) dobel - erneuter brand in rehabilitationsklinik",
-    "status": "out",
-    "title": "(CW) Dobel - Erneuter Brand in Rehabilitationsklinik",
-    "link": "https://www.presseportal.de/blaulicht/pm/137462/6368325",
-    "first": "2026-10-09T14:00:07Z",
-    "last": "2026-10-09T14:00:07Z",
-    "veg": false,
-    "source": "Polizeipräsidium Pforzheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Dobel",
-        "lat": 48.7969905,
-        "lon": 8.4936307,
         "approx": false
       }
     ]
