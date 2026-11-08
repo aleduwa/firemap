@@ -1,11 +1,35 @@
 [
   {
+    "base": "Feuerwehr Erkelenz|kaminbrand erfordert einsatz der feuerwehr",
+    "status": "active",
+    "title": "Kaminbrand erfordert Einsatz der Feuerwehr",
+    "link": "https://www.presseportal.de/blaulicht/pm/182714/6386062",
+    "first": "2026-11-07T23:00:58Z",
+    "last": "2026-11-07T23:00:58Z",
+    "places": [
+      {
+        "name": "Erkelenz",
+        "lat": 51.080992,
+        "lon": 6.3160684,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Erkelenz",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Freiwillige Feuerwehr Kamen|gebäudebrand an der konrad-zuse-straße - aufwändige nachlöscharbeiten am dach",
     "status": "contained",
     "title": "Gebäudebrand an der Konrad-Zuse-Straße - aufwändige Nachlöscharbeiten am Dach",
     "link": "https://www.presseportal.de/blaulicht/pm/139081/6386060",
     "first": "2026-11-07T22:19:02Z",
     "last": "2026-11-07T22:19:02Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Kamen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Kamen",
@@ -13,11 +37,7 @@
         "lon": 7.6616804,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Kamen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Pulheim|kellerbrand ging glimpflich aus",
@@ -26,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/156611/6386054",
     "first": "2026-11-07T21:52:49Z",
     "last": "2026-11-07T21:52:49Z",
+    "veg": false,
+    "source": "Feuerwehr Pulheim",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Pulheim",
@@ -33,11 +57,7 @@
         "lon": 6.8025409,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Pulheim",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Kalkar|feuerwehr kalkar: brandmeistersitzung in appeldorn: modernste drohnentechnik, 2.000 stunden ausbildung und ausblick auf 2027",
@@ -4352,46 +4372,6 @@
         "lat": 48.7969905,
         "lon": 8.4936307,
         "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Wuppertal|wohnungsbrand in der nützenberger straße - aufwendige nachlöscharbeiten fordern feuerwehr",
-    "status": "contained",
-    "title": "Wohnungsbrand in der Nützenberger Straße - Aufwendige Nachlöscharbeiten fordern Feuerwehr",
-    "link": "https://www.presseportal.de/blaulicht/pm/115885/6367758",
-    "first": "2026-10-08T22:28:42Z",
-    "last": "2026-10-08T22:28:42Z",
-    "veg": false,
-    "source": "Feuerwehr Wuppertal",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Wuppertal",
-        "lat": 51.264018,
-        "lon": 7.1780374,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Wuppertal|kellerbrand in mehrfamilienhaus - krankenwagenbesatzung evakuiert bewohner",
-    "status": "active",
-    "title": "Kellerbrand in Mehrfamilienhaus - Krankenwagenbesatzung evakuiert Bewohner",
-    "link": "https://www.presseportal.de/blaulicht/pm/115885/6367757",
-    "first": "2026-10-08T22:22:20Z",
-    "last": "2026-10-08T22:22:20Z",
-    "veg": false,
-    "source": "Feuerwehr Wuppertal",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Wuppertal",
-        "lat": 51.264018,
-        "lon": 7.1780374,
-        "approx": true
       }
     ]
   }
