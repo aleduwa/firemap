@@ -1,11 +1,35 @@
 [
   {
+    "base": "Feuerwehr Wuppertal|brand eines fahrrad akku führt zu feuerwehr einsatz",
+    "status": "active",
+    "title": "Brand eines Fahrrad Akku führt zu Feuerwehr Einsatz",
+    "link": "https://www.presseportal.de/blaulicht/pm/115885/6386079",
+    "first": "2026-11-08T06:55:08Z",
+    "last": "2026-11-08T06:55:08Z",
+    "places": [
+      {
+        "name": "Wuppertal",
+        "lat": 51.264018,
+        "lon": 7.1780374,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Wuppertal",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Erkelenz|kaminbrand erfordert einsatz der feuerwehr",
     "status": "active",
     "title": "Kaminbrand erfordert Einsatz der Feuerwehr",
     "link": "https://www.presseportal.de/blaulicht/pm/182714/6386062",
     "first": "2026-11-07T23:00:58Z",
     "last": "2026-11-07T23:00:58Z",
+    "veg": false,
+    "source": "Feuerwehr Erkelenz",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Erkelenz",
@@ -13,11 +37,7 @@
         "lon": 6.3160684,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Erkelenz",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Kamen|gebäudebrand an der konrad-zuse-straße - aufwändige nachlöscharbeiten am dach",
