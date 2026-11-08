@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/119855/6386311",
     "first": "2026-11-08T17:11:52Z",
     "last": "2026-11-08T17:11:52Z",
+    "veg": false,
+    "source": "Feuerwehr Ahlen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Ahlen",
@@ -13,11 +17,7 @@
         "lon": 7.8909086,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Ahlen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Schermbeck|müllbrand an der schienebergstege",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/118232/6386300",
     "first": "2026-11-08T16:14:42Z",
     "last": "2026-11-08T16:14:42Z",
+    "veg": false,
+    "source": "Feuerwehr Schermbeck",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Schermbeck",
@@ -33,11 +37,7 @@
         "lon": 6.8391929,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Schermbeck",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Wuppertal|zwei verletzte nach brand in wuppertal - nachbar greift rechtzeitig ein.",
