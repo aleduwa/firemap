@@ -1,5 +1,25 @@
 [
   {
+    "base": "Polizeipräsidium Ulm|(bc) riedlingen - alte möbel und holz verbrannt / am samstag kam es zu einem polizeieinsatz wegen einer illegalen müllverbrennung in riedlingen.",
+    "status": "active",
+    "title": "(BC) Riedlingen - Alte Möbel und Holz verbrannt / Am Samstag kam es zu einem Polizeieinsatz wegen einer illegalen Müllverbrennung in Riedlingen.",
+    "link": "https://www.presseportal.de/blaulicht/pm/110979/6386538",
+    "first": "2026-11-09T10:00:59Z",
+    "last": "2026-11-09T10:00:59Z",
+    "places": [
+      {
+        "name": "Riedlingen",
+        "lat": 48.1534412,
+        "lon": 9.4748796,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Ahlen|brand in leerstehendem gebäude schnell unter kontrolle",
     "status": "contained",
     "title": "Brand in leerstehendem Gebäude schnell unter Kontrolle",
