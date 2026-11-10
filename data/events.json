@@ -1,11 +1,81 @@
 [
   {
+    "base": "Polizeipräsidium Heilbronn|--- update ---main-tauber-kreis/creglingen: nach vollbrand 400 schweine verendet",
+    "status": "out",
+    "title": "--- UPDATE ---Main-Tauber-Kreis/Creglingen: nach Vollbrand 400 Schweine verendet",
+    "link": "https://www.presseportal.de/blaulicht/pm/110971/6388037",
+    "first": "2026-11-10T21:26:25Z",
+    "last": "2026-11-10T21:26:25Z",
+    "places": [
+      {
+        "name": "Creglingen",
+        "lat": 49.4688744,
+        "lon": 10.0298459,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Heilbronn|main-tauber-kreis/creglingen: nach vollbrand 400 schweine verendet",
+    "status": "out",
+    "title": "Main-Tauber-Kreis/Creglingen: nach Vollbrand 400 Schweine verendet",
+    "link": "https://www.presseportal.de/blaulicht/pm/110971/6388036",
+    "first": "2026-11-10T20:54:32Z",
+    "last": "2026-11-10T20:54:32Z",
+    "places": [
+      {
+        "name": "Main-Tauber-Kreis",
+        "lat": 49.5713631,
+        "lon": 9.6999301,
+        "approx": false
+      },
+      {
+        "name": "Creglingen",
+        "lat": 49.4688744,
+        "lon": 10.0298459,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Mönchengladbach|elektrofahrzeug an ladesäule in brand geraten - feuerwehr verhindert übergreifen der flammen auf gebäude",
+    "status": "contained",
+    "title": "Elektrofahrzeug an Ladesäule in Brand geraten - Feuerwehr verhindert Übergreifen der Flammen auf Gebäude",
+    "link": "https://www.presseportal.de/blaulicht/pm/115879/6388028",
+    "first": "2026-11-10T19:55:20Z",
+    "last": "2026-11-10T19:55:20Z",
+    "places": [
+      {
+        "name": "Mönchengladbach",
+        "lat": 51.1947131,
+        "lon": 6.4353792,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Pforzheim|(pf) pforzheim - brand einer werkstatt",
     "status": "out",
     "title": "(PF) Pforzheim - Brand einer Werkstatt",
     "link": "https://www.presseportal.de/blaulicht/pm/137462/6388019",
     "first": "2026-11-10T17:11:30Z",
     "last": "2026-11-10T17:11:30Z",
+    "veg": false,
+    "source": "Polizeipräsidium Pforzheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Pforzheim",
@@ -13,11 +83,7 @@
         "lon": 8.7025509,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Pforzheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Weil am Rhein|feuerwehr weil: brand in der tiefgarage einkauf insel weil am rhein",
@@ -26,6 +92,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/182024/6387977",
     "first": "2026-11-10T15:58:39Z",
     "last": "2026-11-10T15:58:39Z",
+    "veg": false,
+    "source": "Feuerwehr Weil am Rhein",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Weil am Rhein",
@@ -33,11 +103,7 @@
         "lon": 7.6120793,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Weil am Rhein",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizei Duisburg|hochheide: unbekannte legen feuer - hausfassade beschädigt",
