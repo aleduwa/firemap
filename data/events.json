@@ -1,11 +1,55 @@
 [
   {
+    "base": "Polizeipräsidium Mannheim|heidelberg: aktuell brandgeschehen in der konstanzer straße, pm 2",
+    "status": "active",
+    "title": "Heidelberg: Aktuell Brandgeschehen in der Konstanzer Straße, PM 2",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6387246",
+    "first": "2026-11-10T02:16:54Z",
+    "last": "2026-11-10T02:16:54Z",
+    "places": [
+      {
+        "name": "Heidelberg",
+        "lat": 49.4093582,
+        "lon": 8.694724,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|heidelberg: aktuell brandgeschehen in der konstanzer straße, pm 1",
+    "status": "active",
+    "title": "Heidelberg: Aktuell Brandgeschehen in der Konstanzer Straße, PM 1",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6387244",
+    "first": "2026-11-10T01:13:52Z",
+    "last": "2026-11-10T01:13:52Z",
+    "places": [
+      {
+        "name": "Heidelberg",
+        "lat": 49.4093582,
+        "lon": 8.694724,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Düren|brand in reihenhaus in düren merken: zwei menschen verletzt",
     "status": "active",
     "title": "Brand in Reihenhaus in Düren Merken: Zwei Menschen verletzt",
     "link": "https://www.presseportal.de/blaulicht/pm/134173/6387223",
     "first": "2026-11-09T20:40:26Z",
     "last": "2026-11-09T20:40:26Z",
+    "veg": false,
+    "source": "Feuerwehr Düren",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Düren",
@@ -13,11 +57,7 @@
         "lon": 6.4820806,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Düren",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|dogern: brand in kellerwohnung - tatverdächtiger in haft",
@@ -26,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6387177",
     "first": "2026-11-09T16:02:01Z",
     "last": "2026-11-09T16:02:01Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Dogern",
@@ -33,11 +77,7 @@
         "lon": 8.1691168,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizei Duisburg|hochfeld: brand in mehrfamilienhaus - brandursache ermittelt",
@@ -46,6 +86,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/50510/6387130",
     "first": "2026-11-09T15:25:37Z",
     "last": "2026-11-09T15:25:37Z",
+    "veg": false,
+    "source": "Polizei Duisburg",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Hochfeld",
@@ -53,11 +97,7 @@
         "lon": 6.7550194,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizei Duisburg",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(bc) riedlingen - alte möbel und holz verbrannt / am samstag kam es zu einem polizeieinsatz wegen einer illegalen müllverbrennung in riedlingen.",
