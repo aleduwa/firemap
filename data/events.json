@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110971/6388037",
     "first": "2026-11-10T21:26:25Z",
     "last": "2026-11-10T21:26:25Z",
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Creglingen",
@@ -13,11 +17,7 @@
         "lon": 10.0298459,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Heilbronn|main-tauber-kreis/creglingen: nach vollbrand 400 schweine verendet",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110971/6388036",
     "first": "2026-11-10T20:54:32Z",
     "last": "2026-11-10T20:54:32Z",
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Main-Tauber-Kreis",
@@ -39,11 +43,7 @@
         "lon": 10.0298459,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Mönchengladbach|elektrofahrzeug an ladesäule in brand geraten - feuerwehr verhindert übergreifen der flammen auf gebäude",
@@ -52,6 +52,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115879/6388028",
     "first": "2026-11-10T19:55:20Z",
     "last": "2026-11-10T19:55:20Z",
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Mönchengladbach",
@@ -59,11 +63,7 @@
         "lon": 6.4353792,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Mönchengladbach",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Pforzheim|(pf) pforzheim - brand einer werkstatt",
