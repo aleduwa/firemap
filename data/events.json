@@ -4600,25 +4600,5 @@
         "approx": false
       }
     ]
-  },
-  {
-    "base": "Polizeipräsidium Heilbronn|stadt- und landkreis heilbronn: diebstahl, einbrüche, brand, falsche bankmitarbeiter, unfall unter alkoholeinfluss",
-    "status": "out",
-    "title": "Stadt- und Landkreis Heilbronn: Diebstahl, Einbrüche, Brand, Falsche Bankmitarbeiter, Unfall unter Alkoholeinfluss",
-    "link": "https://www.presseportal.de/blaulicht/pm/110971/6369046",
-    "first": "2026-10-12T10:05:42Z",
-    "last": "2026-10-12T10:05:42Z",
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stadt-",
-        "lat": 49.4093582,
-        "lon": 8.694724,
-        "approx": false
-      }
-    ]
   }
 ]
