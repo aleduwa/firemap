@@ -1,5 +1,145 @@
 [
   {
+    "base": "Feuerwehr Wenden|jahresabschlussübung 2026: industriebrand und menschenrettung in ottfingen",
+    "status": "active",
+    "title": "Jahresabschlussübung 2026: Industriebrand und Menschenrettung in Ottfingen",
+    "link": "https://www.presseportal.de/blaulicht/pm/128090/6388820",
+    "first": "2026-11-11T18:00:00Z",
+    "last": "2026-11-11T18:00:00Z",
+    "places": [
+      {
+        "name": "Wenden",
+        "lat": 50.9691051,
+        "lon": 7.8733251,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Wenden",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Mönchengladbach|ausgedehnter dachstuhlbrand fordert feuerwehr erneut",
+    "status": "active",
+    "title": "Ausgedehnter Dachstuhlbrand fordert Feuerwehr erneut",
+    "link": "https://www.presseportal.de/blaulicht/pm/115879/6388809",
+    "first": "2026-11-11T16:48:19Z",
+    "last": "2026-11-11T16:48:19Z",
+    "places": [
+      {
+        "name": "Mönchengladbach",
+        "lat": 51.1947131,
+        "lon": 6.4353792,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|rheinfelden: verdacht sachbeschädigung durch brandlegung - brand von drei abfallcontainer",
+    "status": "out",
+    "title": "Rheinfelden: Verdacht Sachbeschädigung durch Brandlegung - Brand von drei Abfallcontainer",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6388771",
+    "first": "2026-11-11T15:46:57Z",
+    "last": "2026-11-11T15:46:57Z",
+    "places": [
+      {
+        "name": "Rheinfelden",
+        "lat": 47.5605924,
+        "lon": 7.7861959,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|lörrach: brand einer schubkarre auf terrasse",
+    "status": "out",
+    "title": "Lörrach: Brand einer Schubkarre auf Terrasse",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6388756",
+    "first": "2026-11-11T15:33:17Z",
+    "last": "2026-11-11T15:33:17Z",
+    "places": [
+      {
+        "name": "Lörrach",
+        "lat": 47.6120896,
+        "lon": 7.6607218,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|weil am rhein: mehrere brennende fahrzeuge in tiefgarage",
+    "status": "out",
+    "title": "Weil am Rhein: Mehrere brennende Fahrzeuge in Tiefgarage",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6388745",
+    "first": "2026-11-11T15:29:36Z",
+    "last": "2026-11-11T15:29:36Z",
+    "places": [
+      {
+        "name": "Weil am Rhein",
+        "lat": 47.6056484,
+        "lon": 7.6120793,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Kreispolizeibehörde Viersen|viersen: brand in einem rohbau - zeuginnen und zeugen gesucht",
+    "status": "active",
+    "title": "Viersen: Brand in einem Rohbau - Zeuginnen und Zeugen gesucht",
+    "link": "https://www.presseportal.de/blaulicht/pm/65857/6388741",
+    "first": "2026-11-11T15:25:25Z",
+    "last": "2026-11-11T15:25:25Z",
+    "places": [
+      {
+        "name": "Viersen",
+        "lat": 51.2562118,
+        "lon": 6.3905476,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Kreispolizeibehörde Viersen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Kreispolizeibehörde Viersen|viersen: topf mit öl auf dem herd löst brand aus",
+    "status": "out",
+    "title": "Viersen: Topf mit Öl auf dem Herd löst Brand aus",
+    "link": "https://www.presseportal.de/blaulicht/pm/65857/6388739",
+    "first": "2026-11-11T15:25:04Z",
+    "last": "2026-11-11T15:25:04Z",
+    "places": [
+      {
+        "name": "Viersen",
+        "lat": 51.2562118,
+        "lon": 6.3905476,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Kreispolizeibehörde Viersen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Heilbronn|--- update ---main-tauber-kreis/creglingen: nach vollbrand 400 schweine verendet",
     "status": "out",
     "title": "--- UPDATE ---Main-Tauber-Kreis/Creglingen: nach Vollbrand 400 Schweine verendet",
