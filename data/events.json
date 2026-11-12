@@ -1,11 +1,95 @@
 [
   {
+    "base": "Freiwillige Feuerwehr Alpen|gemeldeter pkw brand",
+    "status": "active",
+    "title": "Gemeldeter Pkw Brand",
+    "link": "https://www.presseportal.de/blaulicht/pm/131475/6389620",
+    "first": "2026-11-12T17:19:54Z",
+    "last": "2026-11-12T17:19:54Z",
+    "places": [
+      {
+        "name": "Alpen",
+        "lat": 51.5767474,
+        "lon": 6.5128805,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Alpen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Freiwillige Feuerwehr Alpen|ausgelöste brandmeldeanlage in schule",
+    "status": "active",
+    "title": "Ausgelöste Brandmeldeanlage in Schule",
+    "link": "https://www.presseportal.de/blaulicht/pm/131475/6389606",
+    "first": "2026-11-12T17:05:23Z",
+    "last": "2026-11-12T17:05:23Z",
+    "places": [
+      {
+        "name": "Alpen",
+        "lat": 51.5767474,
+        "lon": 6.5128805,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Alpen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Oberhausen|feuerwehr oberhausen löscht brand in fahrzeughalle auf evo-werksgelände",
+    "status": "out",
+    "title": "Feuerwehr Oberhausen löscht Brand in Fahrzeughalle auf evo-Werksgelände",
+    "link": "https://www.presseportal.de/blaulicht/pm/115881/6389581",
+    "first": "2026-11-12T16:23:33Z",
+    "last": "2026-11-12T16:23:33Z",
+    "places": [
+      {
+        "name": "Oberhausen",
+        "lat": 51.4696137,
+        "lon": 6.8514435,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Oberhausen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Neuss|pkw auf der a57 in vollbrand | insassen bleiben unverletzt",
+    "status": "active",
+    "title": "Pkw auf der A57 in Vollbrand | Insassen bleiben unverletzt",
+    "link": "https://www.presseportal.de/blaulicht/pm/122045/6389529",
+    "first": "2026-11-12T15:06:04Z",
+    "last": "2026-11-12T15:06:04Z",
+    "places": [
+      {
+        "name": "Neuss",
+        "lat": 51.1981778,
+        "lon": 6.6916476,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Neuss",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Ulm|(ul) dornstadt - feuer in küchenzeile / etwa 20.000 euro schaden entstand bei einem brand am mittwoch in dornstadt.",
     "status": "active",
     "title": "(UL) Dornstadt - Feuer in Küchenzeile / Etwa 20.000 Euro Schaden entstand bei einem Brand am Mittwoch in Dornstadt.",
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6389069",
     "first": "2026-11-12T09:46:12Z",
     "last": "2026-11-12T09:46:12Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Dornstadt",
@@ -13,11 +97,7 @@
         "lon": 9.9431286,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Wuppertal|schwierige entrauchungsarbeiten nach brand",
@@ -26,6 +106,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115885/6388980",
     "first": "2026-11-12T08:47:18Z",
     "last": "2026-11-12T08:47:18Z",
+    "veg": false,
+    "source": "Feuerwehr Wuppertal",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Wuppertal",
@@ -33,11 +117,7 @@
         "lon": 7.1780374,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Wuppertal",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Aalen|ostalbkreis: schockanruf - brand - diebstahl - unfallflucht - sachbeschädigung",
@@ -46,6 +126,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6388976",
     "first": "2026-11-12T08:42:21Z",
     "last": "2026-11-12T08:42:21Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ostalbkreis",
@@ -53,11 +137,7 @@
         "lon": 10.0337317,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(ul) schelklingen - brand in steinbruch / am mittwoch rückte ein großaufgebot an einsatzkräften zu einem brand in schelklingen aus.",
@@ -66,6 +146,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6388943",
     "first": "2026-11-12T08:18:43Z",
     "last": "2026-11-12T08:18:43Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Schelklingen",
@@ -79,11 +163,7 @@
         "lon": 9.41791,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|ladenburg/rhein-neckar-kreis: fahrzeugbrand auf firmengelände - pressemeldung nr. 2",
