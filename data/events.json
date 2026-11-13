@@ -1,5 +1,65 @@
 [
   {
+    "base": "Freiwillige Feuerwehr der Stadt Goch|feuerwehr goch: technischer defekt: bmw völlig ausgebrannt",
+    "status": "out",
+    "title": "Feuerwehr Goch: Technischer Defekt: BMW völlig ausgebrannt",
+    "link": "https://www.presseportal.de/blaulicht/pm/126714/6390044",
+    "first": "2026-11-13T11:34:29Z",
+    "last": "2026-11-13T11:34:29Z",
+    "places": [
+      {
+        "name": "Goch",
+        "lat": 51.6755765,
+        "lon": 6.1593045,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Freiwillige Feuerwehr der Stadt Goch",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Ulm|(ul) ulm - brand in kellerabteil / mit einem großaufgebot waren einsatzkräfte am donnerstag in ulm vor ort und konnten ein kleines feuer schnell löschen.",
+    "status": "contained",
+    "title": "(UL) Ulm - Brand in Kellerabteil / Mit einem Großaufgebot waren Einsatzkräfte am Donnerstag in Ulm vor Ort und konnten ein kleines Feuer schnell löschen.",
+    "link": "https://www.presseportal.de/blaulicht/pm/110979/6390030",
+    "first": "2026-11-13T11:17:28Z",
+    "last": "2026-11-13T11:17:28Z",
+    "places": [
+      {
+        "name": "Ulm",
+        "lat": 48.3984968,
+        "lon": 9.9912458,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizei Duisburg|rumeln-kaldenhausen: altkleidercontainer in brand gesetzt - zeugen gesucht",
+    "status": "active",
+    "title": "Rumeln-Kaldenhausen: Altkleidercontainer in Brand gesetzt - Zeugen gesucht",
+    "link": "https://www.presseportal.de/blaulicht/pm/50510/6389979",
+    "first": "2026-11-13T10:49:11Z",
+    "last": "2026-11-13T10:49:11Z",
+    "places": [
+      {
+        "name": "Rumeln-Kaldenhausen",
+        "lat": 51.3950527,
+        "lon": 6.6606934,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizei Duisburg",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Freiwillige Feuerwehr Alpen|gemeldeter pkw brand",
     "status": "active",
     "title": "Gemeldeter Pkw Brand",
@@ -4896,26 +4956,6 @@
         "lat": 48.7784485,
         "lon": 9.1800132,
         "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Stuttgart|brand in mehrfamilienhaus - brand im erdgeschoss - treppenraum komplett verraucht - bewohner befinden sich noch im gebäude und balkon",
-    "status": "out",
-    "title": "Brand in Mehrfamilienhaus - Brand im Erdgeschoss - Treppenraum komplett verraucht - Bewohner befinden sich noch im Gebäude und Balkon",
-    "link": "https://www.presseportal.de/blaulicht/pm/161590/6370579",
-    "first": "2026-10-14T03:48:24Z",
-    "last": "2026-10-14T03:48:24Z",
-    "veg": false,
-    "source": "Feuerwehr Stuttgart",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stuttgart",
-        "lat": 48.7784485,
-        "lon": 9.1800132,
-        "approx": true
       }
     ]
   }
