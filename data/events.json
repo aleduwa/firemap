@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115879/6390370",
     "first": "2026-11-13T18:21:37Z",
     "last": "2026-11-13T18:21:37Z",
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Mönchengladbach",
@@ -13,11 +17,7 @@
         "lon": 6.4353792,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Mönchengladbach",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr der Stadt Arnsberg|feuer in einer produktionsanlage führt zu verrauchung mehrerer produktionshallen",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/116297/6390368",
     "first": "2026-11-13T18:08:35Z",
     "last": "2026-11-13T18:08:35Z",
+    "veg": false,
+    "source": "Feuerwehr der Stadt Arnsberg",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Arnsberg",
@@ -33,11 +37,7 @@
         "lon": 8.0448507,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr der Stadt Arnsberg",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr der Stadt Goch|feuerwehr goch: technischer defekt: bmw völlig ausgebrannt",
