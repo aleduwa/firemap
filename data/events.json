@@ -1,11 +1,55 @@
 [
   {
+    "base": "Feuerwehr Mönchengladbach|rauchentwicklung in einer küche - feuerwehr löscht schwelbrand",
+    "status": "out",
+    "title": "Rauchentwicklung in einer Küche - Feuerwehr löscht Schwelbrand",
+    "link": "https://www.presseportal.de/blaulicht/pm/115879/6390370",
+    "first": "2026-11-13T18:21:37Z",
+    "last": "2026-11-13T18:21:37Z",
+    "places": [
+      {
+        "name": "Mönchengladbach",
+        "lat": 51.1947131,
+        "lon": 6.4353792,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr der Stadt Arnsberg|feuer in einer produktionsanlage führt zu verrauchung mehrerer produktionshallen",
+    "status": "contained",
+    "title": "Feuer in einer Produktionsanlage führt zu Verrauchung mehrerer Produktionshallen",
+    "link": "https://www.presseportal.de/blaulicht/pm/116297/6390368",
+    "first": "2026-11-13T18:08:35Z",
+    "last": "2026-11-13T18:08:35Z",
+    "places": [
+      {
+        "name": "Arnsberg",
+        "lat": 51.423047,
+        "lon": 8.0448507,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr der Stadt Arnsberg",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Freiwillige Feuerwehr der Stadt Goch|feuerwehr goch: technischer defekt: bmw völlig ausgebrannt",
     "status": "out",
     "title": "Feuerwehr Goch: Technischer Defekt: BMW völlig ausgebrannt",
     "link": "https://www.presseportal.de/blaulicht/pm/126714/6390044",
     "first": "2026-11-13T11:34:29Z",
     "last": "2026-11-13T11:34:29Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr der Stadt Goch",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Goch",
@@ -13,11 +57,7 @@
         "lon": 6.1593045,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Freiwillige Feuerwehr der Stadt Goch",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(ul) ulm - brand in kellerabteil / mit einem großaufgebot waren einsatzkräfte am donnerstag in ulm vor ort und konnten ein kleines feuer schnell löschen.",
@@ -26,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6390030",
     "first": "2026-11-13T11:17:28Z",
     "last": "2026-11-13T11:17:28Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ulm",
@@ -33,11 +77,7 @@
         "lon": 9.9912458,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizei Duisburg|rumeln-kaldenhausen: altkleidercontainer in brand gesetzt - zeugen gesucht",
@@ -46,6 +86,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/50510/6389979",
     "first": "2026-11-13T10:49:11Z",
     "last": "2026-11-13T10:49:11Z",
+    "veg": false,
+    "source": "Polizei Duisburg",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Rumeln-Kaldenhausen",
@@ -53,11 +97,7 @@
         "lon": 6.6606934,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizei Duisburg",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Alpen|gemeldeter pkw brand",
@@ -4869,92 +4909,6 @@
         "name": "Leverkusen",
         "lat": 51.0324743,
         "lon": 6.9881194,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizei Bochum|2. gemeinsame folgemeldung von staatsanwaltschaft und polizei bochum: tatverdächtiger nach wohnhausbrand in untersuchungshaft",
-    "status": "active",
-    "title": "2. gemeinsame Folgemeldung von Staatsanwaltschaft und Polizei Bochum: Tatverdächtiger nach Wohnhausbrand in Untersuchungshaft",
-    "link": "https://www.presseportal.de/blaulicht/pm/11530/6371243",
-    "first": "2026-10-14T16:46:01Z",
-    "last": "2026-10-14T16:46:01Z",
-    "veg": false,
-    "source": "Polizei Bochum",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Polizei Bochum",
-        "lat": 51.4467627,
-        "lon": 7.3772125,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Kreisfeuerwehrverband Landkreis Karlsruhe|wohnhausbrand in malsch führt zu großeinsatz der feuerwehren",
-    "status": "active",
-    "title": "Wohnhausbrand in Malsch führt zu Großeinsatz der Feuerwehren",
-    "link": "https://www.presseportal.de/blaulicht/pm/130685/6371221",
-    "first": "2026-10-14T15:46:21Z",
-    "last": "2026-10-14T15:46:21Z",
-    "veg": false,
-    "source": "Kreisfeuerwehrverband Landkreis Karlsruhe",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Landkreis Karlsruhe",
-        "lat": 49.0876163,
-        "lon": 8.6106867,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Konstanz|(rottweil, deißlingen / landkreis rottweil) nachtragsmeldung: polizei fahndet nach brandstiftern - zwei jugendliche tatverdächtige identifiziert (14.10.2026)",
-    "status": "active",
-    "title": "(Rottweil, Deißlingen / Landkreis Rottweil) NACHTRAGSMELDUNG: Polizei fahndet nach Brandstiftern - zwei jugendliche Tatverdächtige identifiziert (14.10.2026)",
-    "link": "https://www.presseportal.de/blaulicht/pm/110973/6371114",
-    "first": "2026-10-14T14:05:49Z",
-    "last": "2026-10-14T14:05:49Z",
-    "veg": false,
-    "source": "Polizeipräsidium Konstanz",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Rottweil",
-        "lat": 48.1678244,
-        "lon": 8.626979,
-        "approx": false
-      },
-      {
-        "name": "Deißlingen",
-        "lat": 48.1121476,
-        "lon": 8.6048933,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Stuttgart|verkehrsunfall mit beteiligung eines feuerwehrfahrzeugs in stuttgart-feuerbach",
-    "status": "active",
-    "title": "Verkehrsunfall mit Beteiligung eines Feuerwehrfahrzeugs in Stuttgart-Feuerbach",
-    "link": "https://www.presseportal.de/blaulicht/pm/161590/6371068",
-    "first": "2026-10-14T13:28:01Z",
-    "last": "2026-10-14T13:28:01Z",
-    "veg": false,
-    "source": "Feuerwehr Stuttgart",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stuttgart",
-        "lat": 48.7784485,
-        "lon": 9.1800132,
         "approx": false
       }
     ]
