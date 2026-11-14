@@ -1,5 +1,77 @@
 [
   {
+    "base": "Feuerwehr Düsseldorf|samstag, 14. november 2026, 17:19 uhr, alt-heerdt, herdt feuer im alten- und pflegeheim - betreuer verhindert durch das schnelle eingreifen eine brandausbreitung, 2 verletzte",
+    "status": "active",
+    "title": "Samstag, 14. November 2026, 17:19 Uhr, Alt-Heerdt, Herdt Feuer im Alten- und Pflegeheim - Betreuer verhindert durch das schnelle Eingreifen eine Brandausbreitung, 2 Verletzte",
+    "link": "https://www.presseportal.de/blaulicht/pm/115876/6390548",
+    "first": "2026-11-14T18:51:18Z",
+    "last": "2026-11-14T18:51:18Z",
+    "places": [
+      {
+        "name": "Samstag",
+        "lat": 51.3355938,
+        "lon": 6.6431742,
+        "approx": false
+      },
+      {
+        "name": "14. November 2026",
+        "lat": 50.8746173,
+        "lon": 7.1586813,
+        "approx": false
+      },
+      {
+        "name": "17",
+        "lat": 51.4259831,
+        "lon": 8.0253344,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Düsseldorf",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Mönchengladbach|feuerwehr löscht balkonbrand und verhindert ausbreitung",
+    "status": "contained",
+    "title": "Feuerwehr löscht Balkonbrand und verhindert Ausbreitung",
+    "link": "https://www.presseportal.de/blaulicht/pm/115879/6390532",
+    "first": "2026-11-14T16:58:21Z",
+    "last": "2026-11-14T16:58:21Z",
+    "places": [
+      {
+        "name": "Mönchengladbach",
+        "lat": 51.1947131,
+        "lon": 6.4353792,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Wuppertal|brand eines elektrokleingerätes in wuppertal-langenfeld",
+    "status": "active",
+    "title": "Brand eines Elektrokleingerätes in Wuppertal-Langenfeld",
+    "link": "https://www.presseportal.de/blaulicht/pm/115885/6390523",
+    "first": "2026-11-14T14:47:51Z",
+    "last": "2026-11-14T14:47:51Z",
+    "places": [
+      {
+        "name": "Wuppertal",
+        "lat": 51.264018,
+        "lon": 7.1780374,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Wuppertal",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Mönchengladbach|rauchentwicklung in einer küche - feuerwehr löscht schwelbrand",
     "status": "out",
     "title": "Rauchentwicklung in einer Küche - Feuerwehr löscht Schwelbrand",
@@ -4629,126 +4701,6 @@
         "name": "Pflegeheim",
         "lat": 51.4536278,
         "lon": 6.9602027,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ludwigsburg|markgröningen: brand in dachgeschosswohnung",
-    "status": "active",
-    "title": "Markgröningen: Brand in Dachgeschosswohnung",
-    "link": "https://www.presseportal.de/blaulicht/pm/110974/6372054",
-    "first": "2026-10-15T15:52:36Z",
-    "last": "2026-10-15T15:52:36Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Markgröningen",
-        "lat": 48.9050626,
-        "lon": 9.0808114,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Kreispolizeibehörde Viersen|willich-wekeln: parkbank in brand - polizei sucht hinweise",
-    "status": "active",
-    "title": "Willich-Wekeln: Parkbank in Brand - Polizei sucht Hinweise",
-    "link": "https://www.presseportal.de/blaulicht/pm/65857/6372035",
-    "first": "2026-10-15T15:27:37Z",
-    "last": "2026-10-15T15:27:37Z",
-    "veg": false,
-    "source": "Kreispolizeibehörde Viersen",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Willich-Wekeln",
-        "lat": 51.261434,
-        "lon": 6.5381327,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizei Düsseldorf|flingern süd - pkw gerät in brand - verdacht der vorsätzlichen brandstiftung - zeugen gesucht",
-    "status": "active",
-    "title": "Flingern Süd - Pkw gerät in Brand - Verdacht der vorsätzlichen Brandstiftung - Zeugen gesucht",
-    "link": "https://www.presseportal.de/blaulicht/pm/13248/6372027",
-    "first": "2026-10-15T15:14:51Z",
-    "last": "2026-10-15T15:14:51Z",
-    "veg": false,
-    "source": "Polizei Düsseldorf",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Flingern Süd",
-        "lat": 51.2210094,
-        "lon": 6.8100603,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|schopfheim: zwei baucontainer ausgebrannt - polizei sucht zeugen",
-    "status": "out",
-    "title": "Schopfheim: Zwei Baucontainer ausgebrannt - Polizei sucht Zeugen",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6372016",
-    "first": "2026-10-15T15:04:34Z",
-    "last": "2026-10-15T15:04:34Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Schopfheim",
-        "lat": 47.6500525,
-        "lon": 7.8216997,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Freiwillige Feuerwehr Tönisvorst|kindergarten nach rauchentwicklung geräumt - kurz darauf weitere alarmierung durch gefahrenmeldeanlage",
-    "status": "out",
-    "title": "Kindergarten nach Rauchentwicklung geräumt - Kurz darauf weitere Alarmierung durch Gefahrenmeldeanlage",
-    "link": "https://www.presseportal.de/blaulicht/pm/128354/6371992",
-    "first": "2026-10-15T14:40:25Z",
-    "last": "2026-10-15T14:40:25Z",
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Tönisvorst",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Tönisvorst",
-        "lat": 51.3167,
-        "lon": 6.45,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Karlsruhe|(ka) malsch - hoher sachschaden nach brand in einem einfamilienhaus",
-    "status": "active",
-    "title": "(KA) Malsch - Hoher Sachschaden nach Brand in einem Einfamilienhaus",
-    "link": "https://www.presseportal.de/blaulicht/pm/110972/6371895",
-    "first": "2026-10-15T13:15:59Z",
-    "last": "2026-10-15T13:15:59Z",
-    "veg": false,
-    "source": "Polizeipräsidium Karlsruhe",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Malsch",
-        "lat": 49.2452537,
-        "lon": 8.6829484,
         "approx": false
       }
     ]
