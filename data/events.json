@@ -4872,45 +4872,5 @@
         "approx": true
       }
     ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|mannheim-innenstadt: brand in gaststätte pm 1",
-    "status": "active",
-    "title": "Mannheim-Innenstadt: Brand in Gaststätte PM 1",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6371309",
-    "first": "2026-10-15T03:12:14Z",
-    "last": "2026-10-15T03:12:14Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Mannheim-Innenstadt",
-        "lat": 49.4964081,
-        "lon": 8.4571454,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Leverkusen|brand in einem müllheizkraftwerk",
-    "status": "out",
-    "title": "Brand in einem Müllheizkraftwerk",
-    "link": "https://www.presseportal.de/blaulicht/pm/115890/6371304",
-    "first": "2026-10-15T01:43:22Z",
-    "last": "2026-10-15T01:43:22Z",
-    "veg": false,
-    "source": "Feuerwehr Leverkusen",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Leverkusen",
-        "lat": 51.0324743,
-        "lon": 6.9881194,
-        "approx": false
-      }
-    ]
   }
 ]
