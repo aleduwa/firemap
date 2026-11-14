@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115876/6390548",
     "first": "2026-11-14T18:51:18Z",
     "last": "2026-11-14T18:51:18Z",
+    "veg": false,
+    "source": "Feuerwehr Düsseldorf",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Samstag",
@@ -25,11 +29,7 @@
         "lon": 8.0253344,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Düsseldorf",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Mönchengladbach|feuerwehr löscht balkonbrand und verhindert ausbreitung",
@@ -38,6 +38,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115879/6390532",
     "first": "2026-11-14T16:58:21Z",
     "last": "2026-11-14T16:58:21Z",
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Mönchengladbach",
@@ -45,11 +49,7 @@
         "lon": 6.4353792,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Mönchengladbach",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Wuppertal|brand eines elektrokleingerätes in wuppertal-langenfeld",
@@ -58,6 +58,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115885/6390523",
     "first": "2026-11-14T14:47:51Z",
     "last": "2026-11-14T14:47:51Z",
+    "veg": false,
+    "source": "Feuerwehr Wuppertal",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Wuppertal",
@@ -65,11 +69,7 @@
         "lon": 7.1780374,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Wuppertal",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Mönchengladbach|rauchentwicklung in einer küche - feuerwehr löscht schwelbrand",
