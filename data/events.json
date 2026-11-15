@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6390661",
     "first": "2026-11-15T08:58:48Z",
     "last": "2026-11-15T08:58:48Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Blaustein-Herrlingen",
@@ -19,11 +23,7 @@
         "lon": 9.93169,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Oberhausen|küchenbrand schnell gelöscht",
@@ -32,6 +32,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115881/6390598",
     "first": "2026-11-15T06:45:00Z",
     "last": "2026-11-15T06:45:00Z",
+    "veg": false,
+    "source": "Feuerwehr Oberhausen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Oberhausen",
@@ -39,11 +43,7 @@
         "lon": 6.8514435,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Oberhausen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Düsseldorf|samstag, 14. november 2026, 17:19 uhr, alt-heerdt, herdt feuer im alten- und pflegeheim - betreuer verhindert durch das schnelle eingreifen eine brandausbreitung, 2 verletzte",
@@ -4627,106 +4627,6 @@
         "name": "Ratingen",
         "lat": 51.2973261,
         "lon": 6.8493503,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|wehr: brand im keller eines mehrfamilienhauses",
-    "status": "out",
-    "title": "Wehr: Brand im Keller eines Mehrfamilienhauses",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6372766",
-    "first": "2026-10-16T14:59:29Z",
-    "last": "2026-10-16T14:59:29Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Wehr",
-        "lat": 47.6286078,
-        "lon": 7.9046417,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|stühlingen: schwelbrand in einer lagerstätte für hackschnitzel",
-    "status": "active",
-    "title": "Stühlingen: Schwelbrand in einer Lagerstätte für Hackschnitzel",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6372749",
-    "first": "2026-10-16T14:43:26Z",
-    "last": "2026-10-16T14:43:26Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stühlingen",
-        "lat": 47.7470397,
-        "lon": 8.4474495,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|mannheim: leblose frau nach brand in gaststätte aufgefunden - sonderkommission \"funke\" eingerichtet",
-    "status": "active",
-    "title": "Mannheim: Leblose Frau nach Brand in Gaststätte aufgefunden - Sonderkommission \"Funke\" eingerichtet",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6372650",
-    "first": "2026-10-16T13:25:49Z",
-    "last": "2026-10-16T13:25:49Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Mannheim",
-        "lat": 49.4892913,
-        "lon": 8.4673098,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Offenburg|oppenau - feuer zerstört wohnhaus",
-    "status": "active",
-    "title": "Oppenau - Feuer zerstört Wohnhaus",
-    "link": "https://www.presseportal.de/blaulicht/pm/110975/6372601",
-    "first": "2026-10-16T12:42:45Z",
-    "last": "2026-10-16T12:42:45Z",
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Oppenau",
-        "lat": 48.4751652,
-        "lon": 8.1646682,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(bc) biberach - brand in wohnung / am donnerstag erlitt eine 29-jährige bei einem brand in einem wohngebäude leichte verletzungen.",
-    "status": "contained",
-    "title": "(BC) Biberach - Brand in Wohnung / Am Donnerstag erlitt eine 29-Jährige bei einem Brand in einem Wohngebäude leichte Verletzungen.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6372409",
-    "first": "2026-10-16T10:29:37Z",
-    "last": "2026-10-16T10:29:37Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Biberach",
-        "lat": 48.3388818,
-        "lon": 8.0281354,
         "approx": false
       }
     ]
