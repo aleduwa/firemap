@@ -1,5 +1,51 @@
 [
   {
+    "base": "Polizeipräsidium Ulm|(ul) blaustein-herrlingen - fahrzeugbrand nach unfall/ bei einem verkehrsunfall zwischen lautern und herrlingen kam es zu zwei schwerverletzten.",
+    "status": "contained",
+    "title": "(UL) Blaustein-Herrlingen - Fahrzeugbrand nach Unfall/ Bei einem Verkehrsunfall zwischen Lautern und Herrlingen kam es zu zwei Schwerverletzten.",
+    "link": "https://www.presseportal.de/blaulicht/pm/110979/6390661",
+    "first": "2026-11-15T08:58:48Z",
+    "last": "2026-11-15T08:58:48Z",
+    "places": [
+      {
+        "name": "Blaustein-Herrlingen",
+        "lat": 48.4141023,
+        "lon": 9.9201796,
+        "approx": false
+      },
+      {
+        "name": "zwischen Lautern und Herrlingen",
+        "lat": 48.61901,
+        "lon": 9.93169,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Oberhausen|küchenbrand schnell gelöscht",
+    "status": "out",
+    "title": "Küchenbrand schnell gelöscht",
+    "link": "https://www.presseportal.de/blaulicht/pm/115881/6390598",
+    "first": "2026-11-15T06:45:00Z",
+    "last": "2026-11-15T06:45:00Z",
+    "places": [
+      {
+        "name": "Oberhausen",
+        "lat": 51.4696137,
+        "lon": 6.8514435,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Oberhausen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Düsseldorf|samstag, 14. november 2026, 17:19 uhr, alt-heerdt, herdt feuer im alten- und pflegeheim - betreuer verhindert durch das schnelle eingreifen eine brandausbreitung, 2 verletzte",
     "status": "active",
     "title": "Samstag, 14. November 2026, 17:19 Uhr, Alt-Heerdt, Herdt Feuer im Alten- und Pflegeheim - Betreuer verhindert durch das schnelle Eingreifen eine Brandausbreitung, 2 Verletzte",
