@@ -1,5 +1,65 @@
 [
   {
+    "base": "Feuerwehr Dortmund|wohnungsbrand in eving",
+    "status": "out",
+    "title": "Wohnungsbrand in Eving",
+    "link": "https://www.presseportal.de/blaulicht/pm/115869/6390859",
+    "first": "2026-11-15T20:01:14Z",
+    "last": "2026-11-15T20:01:14Z",
+    "places": [
+      {
+        "name": "Dortmund",
+        "lat": 51.5142273,
+        "lon": 7.4652789,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Dortmund",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Altena|brand in der filteranlage eines metallverarbeitenden unternehmens",
+    "status": "out",
+    "title": "Brand in der Filteranlage eines metallverarbeitenden Unternehmens",
+    "link": "https://www.presseportal.de/blaulicht/pm/183084/6390853",
+    "first": "2026-11-15T18:31:17Z",
+    "last": "2026-11-15T18:31:17Z",
+    "places": [
+      {
+        "name": "Altena",
+        "lat": 51.2990263,
+        "lon": 7.6734841,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Altena",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Wuppertal|brand in mehrfamilienhaus in der zwergstraße",
+    "status": "out",
+    "title": "Brand in Mehrfamilienhaus in der Zwergstraße",
+    "link": "https://www.presseportal.de/blaulicht/pm/115885/6390850",
+    "first": "2026-11-15T17:48:59Z",
+    "last": "2026-11-15T17:48:59Z",
+    "places": [
+      {
+        "name": "Wuppertal",
+        "lat": 51.264018,
+        "lon": 7.1780374,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Wuppertal",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Ulm|(ul) blaustein-herrlingen - fahrzeugbrand nach unfall/ bei einem verkehrsunfall zwischen lautern und herrlingen kam es zu zwei schwerverletzten.",
     "status": "contained",
     "title": "(UL) Blaustein-Herrlingen - Fahrzeugbrand nach Unfall/ Bei einem Verkehrsunfall zwischen Lautern und Herrlingen kam es zu zwei Schwerverletzten.",
@@ -4607,26 +4667,6 @@
         "name": "Radolfzell",
         "lat": 47.7372802,
         "lon": 8.9702755,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Ratingen|dachstuhlbrand in ratingen-tiefenbroich",
-    "status": "active",
-    "title": "Dachstuhlbrand in Ratingen-Tiefenbroich",
-    "link": "https://www.presseportal.de/blaulicht/pm/70701/6372844",
-    "first": "2026-10-16T18:09:40Z",
-    "last": "2026-10-16T18:09:40Z",
-    "veg": false,
-    "source": "Feuerwehr Ratingen",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Ratingen",
-        "lat": 51.2973261,
-        "lon": 6.8493503,
         "approx": false
       }
     ]
