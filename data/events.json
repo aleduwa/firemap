@@ -4684,25 +4684,5 @@
         "approx": false
       }
     ]
-  },
-  {
-    "base": "Feuerwehr Düsseldorf|zimmerbrand im alten- und pflegeheim - feuerwehr verhindert durch das schnelle eingreifen eine brandausbreitung",
-    "status": "active",
-    "title": "Zimmerbrand im Alten- und Pflegeheim - Feuerwehr verhindert durch das schnelle Eingreifen eine Brandausbreitung",
-    "link": "https://www.presseportal.de/blaulicht/pm/115876/6372128",
-    "first": "2026-10-15T23:14:25Z",
-    "last": "2026-10-15T23:14:25Z",
-    "veg": false,
-    "source": "Feuerwehr Düsseldorf",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Pflegeheim",
-        "lat": 51.4536278,
-        "lon": 6.9602027,
-        "approx": false
-      }
-    ]
   }
 ]
