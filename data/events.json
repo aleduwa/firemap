@@ -1,11 +1,55 @@
 [
   {
+    "base": "Feuerwehr Düsseldorf|brand in sicherungskasten - nächtlicher einsatz in derendorf, zwei bewohner leicht verletzt",
+    "status": "out",
+    "title": "Brand in Sicherungskasten - Nächtlicher Einsatz in Derendorf, zwei Bewohner leicht verletzt",
+    "link": "https://www.presseportal.de/blaulicht/pm/115876/6390949",
+    "first": "2026-11-16T08:18:50Z",
+    "last": "2026-11-16T08:18:50Z",
+    "places": [
+      {
+        "name": "Düsseldorf",
+        "lat": 51.2254018,
+        "lon": 6.7763137,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Düsseldorf",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Mönchengladbach|feuerwehr verhindert ausbreitung eines brandes auf veranstaltungsgebäude",
+    "status": "out",
+    "title": "Feuerwehr verhindert Ausbreitung eines Brandes auf Veranstaltungsgebäude",
+    "link": "https://www.presseportal.de/blaulicht/pm/115879/6390904",
+    "first": "2026-11-16T07:11:11Z",
+    "last": "2026-11-16T07:11:11Z",
+    "places": [
+      {
+        "name": "Mönchengladbach",
+        "lat": 51.1947131,
+        "lon": 6.4353792,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Stuttgart|brand in einer trafostation",
     "status": "out",
     "title": "Brand in einer Trafostation",
     "link": "https://www.presseportal.de/blaulicht/pm/161590/6390864",
     "first": "2026-11-15T22:03:54Z",
     "last": "2026-11-15T22:03:54Z",
+    "veg": false,
+    "source": "Feuerwehr Stuttgart",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Stuttgart",
@@ -13,11 +57,7 @@
         "lon": 9.1800132,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Stuttgart",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Dortmund|wohnungsbrand in eving",
@@ -4598,66 +4638,6 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6372915",
     "first": "2026-10-17T08:46:57Z",
     "last": "2026-10-17T08:46:57Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Mannheim-Seckenheim",
-        "lat": 49.4512622,
-        "lon": 8.5385288,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|mannheim: kellerbrand in doppelhaushälfte",
-    "status": "active",
-    "title": "Mannheim: Kellerbrand in Doppelhaushälfte",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6372898",
-    "first": "2026-10-17T06:57:19Z",
-    "last": "2026-10-17T06:57:19Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Mannheim",
-        "lat": 49.4892913,
-        "lon": 8.4673098,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Stuttgart|tiefgaragenbrand - mehrere wohngebäude geräumt",
-    "status": "out",
-    "title": "Tiefgaragenbrand - mehrere Wohngebäude geräumt",
-    "link": "https://www.presseportal.de/blaulicht/pm/161590/6372894",
-    "first": "2026-10-17T06:40:16Z",
-    "last": "2026-10-17T06:40:16Z",
-    "veg": false,
-    "source": "Feuerwehr Stuttgart",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stuttgart",
-        "lat": 48.7784485,
-        "lon": 9.1800132,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|mannheim-seckenheim: fahrzeugbrand - feuerwehr im einsatz - pressemeldung nr. 1",
-    "status": "active",
-    "title": "Mannheim-Seckenheim: Fahrzeugbrand - Feuerwehr im Einsatz - Pressemeldung Nr. 1",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6372885",
-    "first": "2026-10-17T04:10:21Z",
-    "last": "2026-10-17T04:10:21Z",
     "veg": false,
     "source": "Polizeipräsidium Mannheim",
     "updates": 0,
