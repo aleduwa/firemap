@@ -1,11 +1,35 @@
 [
   {
+    "base": "Feuerwehr und Rettungsdienst Bonn|feuer auf einem balkon in limperich und gasaustritt in lannesdorf",
+    "status": "out",
+    "title": "Feuer auf einem Balkon in Limperich und Gasaustritt in Lannesdorf",
+    "link": "https://www.presseportal.de/blaulicht/pm/115888/6391817",
+    "first": "2026-11-16T19:15:51Z",
+    "last": "2026-11-16T19:15:51Z",
+    "places": [
+      {
+        "name": "Bonn",
+        "lat": 50.7352621,
+        "lon": 7.1024635,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr und Rettungsdienst Bonn",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Düsseldorf|brand in sicherungskasten - nächtlicher einsatz in derendorf, zwei bewohner leicht verletzt",
     "status": "out",
     "title": "Brand in Sicherungskasten - Nächtlicher Einsatz in Derendorf, zwei Bewohner leicht verletzt",
     "link": "https://www.presseportal.de/blaulicht/pm/115876/6390949",
     "first": "2026-11-16T08:18:50Z",
     "last": "2026-11-16T08:18:50Z",
+    "veg": false,
+    "source": "Feuerwehr Düsseldorf",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Düsseldorf",
@@ -13,11 +37,7 @@
         "lon": 6.7763137,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Düsseldorf",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Mönchengladbach|feuerwehr verhindert ausbreitung eines brandes auf veranstaltungsgebäude",
@@ -26,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115879/6390904",
     "first": "2026-11-16T07:11:11Z",
     "last": "2026-11-16T07:11:11Z",
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Mönchengladbach",
@@ -33,11 +57,7 @@
         "lon": 6.4353792,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Mönchengladbach",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Stuttgart|brand in einer trafostation",
@@ -4521,132 +4541,6 @@
         "name": "Wuppertal",
         "lat": 51.264018,
         "lon": 7.1780374,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Weinheim|meterhohe flammen am hammerweg, alarm im minutentakt. einsatzreiche nacht für weinheims feuerwehr",
-    "status": "out",
-    "title": "Meterhohe Flammen am Hammerweg, Alarm im Minutentakt. Einsatzreiche Nacht für Weinheims Feuerwehr",
-    "link": "https://www.presseportal.de/blaulicht/pm/179375/6373016",
-    "first": "2026-10-17T18:10:37Z",
-    "last": "2026-10-17T18:10:37Z",
-    "veg": true,
-    "source": "Feuerwehr Weinheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Weinheim",
-        "lat": 49.5462349,
-        "lon": 8.6717458,
-        "approx": false
-      },
-      {
-        "name": "zwischen Ästen und Wurzelwerk",
-        "lat": 48.18476,
-        "lon": 9.20767,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr der Stadt Arnsberg|kellerbrand mit menschenleben in gefahr- einsatz am frühen samstagmorgen in arnsberg",
-    "status": "out",
-    "title": "Kellerbrand mit Menschenleben in Gefahr- Einsatz am frühen Samstagmorgen in Arnsberg",
-    "link": "https://www.presseportal.de/blaulicht/pm/116297/6372994",
-    "first": "2026-10-17T15:33:02Z",
-    "last": "2026-10-17T15:33:02Z",
-    "veg": false,
-    "source": "Feuerwehr der Stadt Arnsberg",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Arnsberg",
-        "lat": 51.423047,
-        "lon": 8.0448507,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Sprockhövel|kaminbrand in obersprockhövel gemeldet",
-    "status": "active",
-    "title": "Kaminbrand in Obersprockhövel gemeldet",
-    "link": "https://www.presseportal.de/blaulicht/pm/69788/6372991",
-    "first": "2026-10-17T14:54:23Z",
-    "last": "2026-10-17T14:54:23Z",
-    "veg": false,
-    "source": "Feuerwehr Sprockhövel",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Sprockhövel",
-        "lat": 51.3666572,
-        "lon": 7.2485905,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Neuss|feuer im alexius-krankenhaus an der augustinusstraße | acht personen verletzt",
-    "status": "contained",
-    "title": "Feuer im Alexius-Krankenhaus an der Augustinusstraße | Acht Personen verletzt",
-    "link": "https://www.presseportal.de/blaulicht/pm/122045/6372990",
-    "first": "2026-10-17T14:02:05Z",
-    "last": "2026-10-17T14:02:05Z",
-    "veg": false,
-    "source": "Feuerwehr Neuss",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Neuss",
-        "lat": 51.1981778,
-        "lon": 6.6916476,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Stuttgart|abschlussmeldung zum brandeinsatz in bad cannstatt",
-    "status": "out",
-    "title": "Abschlussmeldung zum Brandeinsatz in Bad Cannstatt",
-    "link": "https://www.presseportal.de/blaulicht/pm/161590/6372924",
-    "first": "2026-10-17T09:27:42Z",
-    "last": "2026-10-17T09:27:42Z",
-    "veg": false,
-    "source": "Feuerwehr Stuttgart",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stuttgart",
-        "lat": 48.7784485,
-        "lon": 9.1800132,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|mannheim-seckenheim: fahrzeugbrand - zeugenaufruf - pressemeldung nr. 2",
-    "status": "active",
-    "title": "Mannheim-Seckenheim: Fahrzeugbrand - Zeugenaufruf - Pressemeldung Nr. 2",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6372915",
-    "first": "2026-10-17T08:46:57Z",
-    "last": "2026-10-17T08:46:57Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Mannheim-Seckenheim",
-        "lat": 49.4512622,
-        "lon": 8.5385288,
         "approx": false
       }
     ]
