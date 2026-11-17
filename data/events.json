@@ -1,11 +1,55 @@
 [
   {
+    "base": "Feuerwehr der Stadt Arnsberg|brennender toaster in hüstener kellerwohnung: zwei bewohner mit verdacht auf rauchgasvergiftung im krankenhaus",
+    "status": "active",
+    "title": "Brennender Toaster in Hüstener Kellerwohnung: Zwei Bewohner mit Verdacht auf Rauchgasvergiftung im Krankenhaus",
+    "link": "https://www.presseportal.de/blaulicht/pm/116297/6391832",
+    "first": "2026-11-17T00:00:17Z",
+    "last": "2026-11-17T00:00:17Z",
+    "places": [
+      {
+        "name": "Arnsberg",
+        "lat": 51.423047,
+        "lon": 8.0448507,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr der Stadt Arnsberg",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Detmold|kaminbrand in der lageschen straße - paralleleinsatz für den löschzug mitte",
+    "status": "active",
+    "title": "Kaminbrand in der Lageschen Straße - Paralleleinsatz für den Löschzug Mitte",
+    "link": "https://www.presseportal.de/blaulicht/pm/116239/6391822",
+    "first": "2026-11-16T20:38:00Z",
+    "last": "2026-11-16T20:38:00Z",
+    "places": [
+      {
+        "name": "Detmold",
+        "lat": 51.936284,
+        "lon": 8.8791526,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Detmold",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr und Rettungsdienst Bonn|feuer auf einem balkon in limperich und gasaustritt in lannesdorf",
     "status": "out",
     "title": "Feuer auf einem Balkon in Limperich und Gasaustritt in Lannesdorf",
     "link": "https://www.presseportal.de/blaulicht/pm/115888/6391817",
     "first": "2026-11-16T19:15:51Z",
     "last": "2026-11-16T19:15:51Z",
+    "veg": false,
+    "source": "Feuerwehr und Rettungsdienst Bonn",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Bonn",
@@ -13,11 +57,7 @@
         "lon": 7.1024635,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr und Rettungsdienst Bonn",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Düsseldorf|brand in sicherungskasten - nächtlicher einsatz in derendorf, zwei bewohner leicht verletzt",
@@ -4501,46 +4541,6 @@
         "name": "Rhein-Neckar-Kreis",
         "lat": 49.3684797,
         "lon": 8.7352403,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Bochum|wohnhaus in bochum-harpen durch brand zerstört - feuerwehr verhindert ausbreitung auf nachbargebäude",
-    "status": "contained",
-    "title": "Wohnhaus in Bochum-Harpen durch Brand zerstört - Feuerwehr verhindert Ausbreitung auf Nachbargebäude",
-    "link": "https://www.presseportal.de/blaulicht/pm/115868/6373038",
-    "first": "2026-10-17T23:31:17Z",
-    "last": "2026-10-17T23:31:17Z",
-    "veg": false,
-    "source": "Feuerwehr Bochum",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Bochum",
-        "lat": 51.4818111,
-        "lon": 7.2196635,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Wuppertal|fettbrand in imbiss am werth",
-    "status": "active",
-    "title": "Fettbrand in Imbiss am Werth",
-    "link": "https://www.presseportal.de/blaulicht/pm/115885/6373025",
-    "first": "2026-10-17T19:42:40Z",
-    "last": "2026-10-17T19:42:40Z",
-    "veg": false,
-    "source": "Feuerwehr Wuppertal",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Wuppertal",
-        "lat": 51.264018,
-        "lon": 7.1780374,
         "approx": false
       }
     ]
