@@ -1,5 +1,103 @@
 [
   {
+    "base": "Polizeipräsidium Offenburg|haslach, mühlenbach - holzschopf in brand",
+    "status": "active",
+    "title": "Haslach, Mühlenbach - Holzschopf in Brand",
+    "link": "https://www.presseportal.de/blaulicht/pm/110975/6392577",
+    "first": "2026-11-17T15:59:05Z",
+    "last": "2026-11-17T15:59:05Z",
+    "places": [
+      {
+        "name": "Haslach",
+        "lat": 48.2769011,
+        "lon": 8.0871643,
+        "approx": false
+      },
+      {
+        "name": "Mühlenbach",
+        "lat": 48.2540384,
+        "lon": 8.1105827,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Offenburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|neckarbischofsheim/rhein-neckar-kreis: mehrere brennende gegenstände - zeugenaufruf",
+    "status": "out",
+    "title": "Neckarbischofsheim/Rhein-Neckar-Kreis: Mehrere brennende Gegenstände - Zeugenaufruf",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6392574",
+    "first": "2026-11-17T15:54:40Z",
+    "last": "2026-11-17T15:54:40Z",
+    "places": [
+      {
+        "name": "Neckarbischofsheim",
+        "lat": 49.2924547,
+        "lon": 8.9609366,
+        "approx": false
+      },
+      {
+        "name": "Rhein-Neckar-Kreis",
+        "lat": 49.3684797,
+        "lon": 8.7352403,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Stuttgart|fahrzeugbrand auf der wildparkstraße - eine person schwer verletzt",
+    "status": "out",
+    "title": "Fahrzeugbrand auf der Wildparkstraße - Eine Person schwer verletzt",
+    "link": "https://www.presseportal.de/blaulicht/pm/161590/6392564",
+    "first": "2026-11-17T15:37:26Z",
+    "last": "2026-11-17T15:37:26Z",
+    "places": [
+      {
+        "name": "Stuttgart",
+        "lat": 48.7784485,
+        "lon": 9.1800132,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Stuttgart",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizei Coesfeld|dülmen, elsa-brandström-straße/jugendlicher e-scooter-fahrer lässt sich zum spaß mehrfach blitzen - und wird von der polizei ermittelt",
+    "status": "active",
+    "title": "Dülmen, Elsa-Brandström-Straße/Jugendlicher E-Scooter-Fahrer lässt sich zum Spaß mehrfach blitzen - und wird von der Polizei ermittelt",
+    "link": "https://www.presseportal.de/blaulicht/pm/6006/6392503",
+    "first": "2026-11-17T14:47:48Z",
+    "last": "2026-11-17T14:47:48Z",
+    "places": [
+      {
+        "name": "Dülmen",
+        "lat": 51.8283677,
+        "lon": 7.2791406,
+        "approx": false
+      },
+      {
+        "name": "Elsa-Brandström-Straße",
+        "lat": 51.497719,
+        "lon": 7.1260535,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizei Coesfeld",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr der Stadt Arnsberg|brennender toaster in hüstener kellerwohnung: zwei bewohner mit verdacht auf rauchgasvergiftung im krankenhaus",
     "status": "active",
     "title": "Brennender Toaster in Hüstener Kellerwohnung: Zwei Bewohner mit Verdacht auf Rauchgasvergiftung im Krankenhaus",
@@ -4344,86 +4442,6 @@
         "lat": 51.2254018,
         "lon": 6.7763137,
         "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Witten|folgemeldung wohnungsbrand in witten",
-    "status": "active",
-    "title": "Folgemeldung Wohnungsbrand in Witten",
-    "link": "https://www.presseportal.de/blaulicht/pm/120429/6373286",
-    "first": "2026-10-18T15:56:37Z",
-    "last": "2026-10-18T15:56:37Z",
-    "veg": false,
-    "source": "Feuerwehr Witten",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Witten",
-        "lat": 51.4370171,
-        "lon": 7.335124,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Witten|wohnungsbrand in witten",
-    "status": "out",
-    "title": "Wohnungsbrand in Witten",
-    "link": "https://www.presseportal.de/blaulicht/pm/120429/6373274",
-    "first": "2026-10-18T13:37:59Z",
-    "last": "2026-10-18T13:37:59Z",
-    "veg": false,
-    "source": "Feuerwehr Witten",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Witten",
-        "lat": 51.4370171,
-        "lon": 7.335124,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Solingen|entstehungsbrand in galvanikbetrieb",
-    "status": "active",
-    "title": "Entstehungsbrand in Galvanikbetrieb",
-    "link": "https://www.presseportal.de/blaulicht/pm/115884/6373269",
-    "first": "2026-10-18T13:07:35Z",
-    "last": "2026-10-18T13:07:35Z",
-    "veg": false,
-    "source": "Feuerwehr Solingen",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Solingen",
-        "lat": 51.1721629,
-        "lon": 7.0845893,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Herdecke|feuerwehr verhindert brandausbreitung in der innenstadt - keller verraucht - bäckerei sollte brennen",
-    "status": "active",
-    "title": "Feuerwehr verhindert Brandausbreitung in der Innenstadt - Keller verraucht - Bäckerei sollte brennen",
-    "link": "https://www.presseportal.de/blaulicht/pm/69790/6373243",
-    "first": "2026-10-18T11:58:36Z",
-    "last": "2026-10-18T11:58:36Z",
-    "veg": false,
-    "source": "Feuerwehr Herdecke",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Herdecke",
-        "lat": 51.4001119,
-        "lon": 7.4330062,
-        "approx": false
       }
     ]
   }
