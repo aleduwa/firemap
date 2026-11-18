@@ -1,11 +1,35 @@
 [
   {
+    "base": "Kreispolizeibehörde Borken|bocholt - mülltonne in brand gesetzt - polizei sucht zeugen",
+    "status": "active",
+    "title": "Bocholt - Mülltonne in Brand gesetzt - Polizei sucht Zeugen",
+    "link": "https://www.presseportal.de/blaulicht/pm/24843/6392861",
+    "first": "2026-11-18T09:59:44Z",
+    "last": "2026-11-18T09:59:44Z",
+    "places": [
+      {
+        "name": "Bocholt",
+        "lat": 51.8382715,
+        "lon": 6.6148669,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Kreispolizeibehörde Borken",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Konstanz|(stockach, lkr. konstanz) garagenbrand - feuerwehr verhindert ein übergreifen auf wohnhaus (17.11.2026)",
     "status": "active",
     "title": "(Stockach, Lkr. Konstanz) Garagenbrand - Feuerwehr verhindert ein Übergreifen auf Wohnhaus (17.11.2026)",
     "link": "https://www.presseportal.de/blaulicht/pm/110973/6392650",
     "first": "2026-11-18T01:48:05Z",
     "last": "2026-11-18T01:48:05Z",
+    "veg": false,
+    "source": "Polizeipräsidium Konstanz",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Stockach",
@@ -13,11 +37,7 @@
         "lon": 9.0134524,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Konstanz",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Offenburg|haslach, mühlenbach - holzschopf in brand",
@@ -4395,52 +4415,6 @@
         "name": "Achstetten",
         "lat": 48.2644924,
         "lon": 9.9005979,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Aalen|rems-murr-kreis: unfälle, unfallflucht, brand auf terrasse, sachbeschädigung, einbrüche",
-    "status": "out",
-    "title": "Rems-Murr-Kreis: Unfälle, Unfallflucht, Brand auf Terrasse, Sachbeschädigung, Einbrüche",
-    "link": "https://www.presseportal.de/blaulicht/pm/110969/6373403",
-    "first": "2026-10-19T08:31:51Z",
-    "last": "2026-10-19T08:31:51Z",
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Rems-Murr-Kreis",
-        "lat": 48.8966799,
-        "lon": 9.5037124,
-        "approx": false
-      },
-      {
-        "name": "zwischen Freitag und Samstag",
-        "lat": 48.97305,
-        "lon": 9.2198,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Polizei Steinfurt|steinfurt, pkw ausgebrannt - ursache noch unklar",
-    "status": "active",
-    "title": "Steinfurt, Pkw ausgebrannt - Ursache noch unklar",
-    "link": "https://www.presseportal.de/blaulicht/pm/43526/6373395",
-    "first": "2026-10-19T08:16:25Z",
-    "last": "2026-10-19T08:16:25Z",
-    "veg": false,
-    "source": "Polizei Steinfurt",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Steinfurt",
-        "lat": 52.1377509,
-        "lon": 7.3581404,
         "approx": false
       }
     ]
