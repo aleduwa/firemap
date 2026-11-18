@@ -1,11 +1,35 @@
 [
   {
+    "base": "Polizeipräsidium Konstanz|(stockach, lkr. konstanz) garagenbrand - feuerwehr verhindert ein übergreifen auf wohnhaus (17.11.2026)",
+    "status": "active",
+    "title": "(Stockach, Lkr. Konstanz) Garagenbrand - Feuerwehr verhindert ein Übergreifen auf Wohnhaus (17.11.2026)",
+    "link": "https://www.presseportal.de/blaulicht/pm/110973/6392650",
+    "first": "2026-11-18T01:48:05Z",
+    "last": "2026-11-18T01:48:05Z",
+    "places": [
+      {
+        "name": "Stockach",
+        "lat": 47.8530941,
+        "lon": 9.0134524,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Konstanz",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Offenburg|haslach, mühlenbach - holzschopf in brand",
     "status": "active",
     "title": "Haslach, Mühlenbach - Holzschopf in Brand",
     "link": "https://www.presseportal.de/blaulicht/pm/110975/6392577",
     "first": "2026-11-17T15:59:05Z",
     "last": "2026-11-17T15:59:05Z",
+    "veg": false,
+    "source": "Polizeipräsidium Offenburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Haslach",
@@ -19,11 +43,7 @@
         "lon": 8.1105827,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|neckarbischofsheim/rhein-neckar-kreis: mehrere brennende gegenstände - zeugenaufruf",
@@ -32,6 +52,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6392574",
     "first": "2026-11-17T15:54:40Z",
     "last": "2026-11-17T15:54:40Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Neckarbischofsheim",
@@ -45,11 +69,7 @@
         "lon": 8.7352403,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Stuttgart|fahrzeugbrand auf der wildparkstraße - eine person schwer verletzt",
@@ -58,6 +78,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/161590/6392564",
     "first": "2026-11-17T15:37:26Z",
     "last": "2026-11-17T15:37:26Z",
+    "veg": false,
+    "source": "Feuerwehr Stuttgart",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Stuttgart",
@@ -65,11 +89,7 @@
         "lon": 9.1800132,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Stuttgart",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizei Coesfeld|dülmen, elsa-brandström-straße/jugendlicher e-scooter-fahrer lässt sich zum spaß mehrfach blitzen - und wird von der polizei ermittelt",
@@ -78,6 +98,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/6006/6392503",
     "first": "2026-11-17T14:47:48Z",
     "last": "2026-11-17T14:47:48Z",
+    "veg": false,
+    "source": "Polizei Coesfeld",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Dülmen",
@@ -91,11 +115,7 @@
         "lon": 7.1260535,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizei Coesfeld",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr der Stadt Arnsberg|brennender toaster in hüstener kellerwohnung: zwei bewohner mit verdacht auf rauchgasvergiftung im krankenhaus",
@@ -4422,26 +4442,6 @@
         "lat": 52.1377509,
         "lon": 7.3581404,
         "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Düsseldorf|zimmerbrand in düsseldorf-rath - vier verletzte",
-    "status": "active",
-    "title": "Zimmerbrand in Düsseldorf-Rath - vier Verletzte",
-    "link": "https://www.presseportal.de/blaulicht/pm/115876/6373306",
-    "first": "2026-10-18T19:49:51Z",
-    "last": "2026-10-18T19:49:51Z",
-    "veg": false,
-    "source": "Feuerwehr Düsseldorf",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Düsseldorf",
-        "lat": 51.2254018,
-        "lon": 6.7763137,
-        "approx": true
       }
     ]
   }
