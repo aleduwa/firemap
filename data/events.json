@@ -1,11 +1,55 @@
 [
   {
+    "base": "Feuerwehr Detmold|gemeldeter kellerbrand in der lilienthalstraße",
+    "status": "active",
+    "title": "Gemeldeter Kellerbrand in der Lilienthalstraße",
+    "link": "https://www.presseportal.de/blaulicht/pm/116239/6394256",
+    "first": "2026-11-19T22:43:47Z",
+    "last": "2026-11-19T22:43:47Z",
+    "places": [
+      {
+        "name": "Detmold",
+        "lat": 51.936284,
+        "lon": 8.8791526,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Detmold",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Freiwillige Feuerwehr Hünxe|ausgelöste brandmeldeanlage in schermbeck",
+    "status": "active",
+    "title": "Ausgelöste Brandmeldeanlage in Schermbeck",
+    "link": "https://www.presseportal.de/blaulicht/pm/133631/6394236",
+    "first": "2026-11-19T18:26:09Z",
+    "last": "2026-11-19T18:26:09Z",
+    "places": [
+      {
+        "name": "Hünxe",
+        "lat": 51.6414581,
+        "lon": 6.7660319,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Hünxe",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Weinheim|kleinbrand in wohnung sorgt für starke rauchentwicklung",
     "status": "out",
     "title": "Kleinbrand in Wohnung sorgt für starke Rauchentwicklung",
     "link": "https://www.presseportal.de/blaulicht/pm/179375/6394170",
     "first": "2026-11-19T15:14:16Z",
     "last": "2026-11-19T15:14:16Z",
+    "veg": false,
+    "source": "Feuerwehr Weinheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Weinheim",
@@ -13,11 +57,7 @@
         "lon": 8.6717458,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Weinheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Konstanz|(stockach / lkr. konstanz) unbekannte werfen mutmaßlich feuerwerkskörper auf carport und lösen brand aus: polizei bittet um hinweise (14.11.2026)",
@@ -26,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110973/6394124",
     "first": "2026-11-19T14:33:22Z",
     "last": "2026-11-19T14:33:22Z",
+    "veg": false,
+    "source": "Polizeipräsidium Konstanz",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Stockach",
@@ -33,11 +77,7 @@
         "lon": 9.0134524,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Konstanz",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Kreispolizeibehörde Viersen|nettetal-breyell: wohnungsbrand durch technischen defekt - bewohnerin verletzt",
@@ -4209,26 +4249,6 @@
         "name": "Konstanz",
         "lat": 47.659216,
         "lon": 9.1750718,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Stuttgart|brand in leerstehender wohncontaineranlage - keine verletzten personen - feuer kann rasch gelöscht werden",
-    "status": "out",
-    "title": "Brand in leerstehender Wohncontaineranlage - Keine verletzten Personen - Feuer kann rasch gelöscht werden",
-    "link": "https://www.presseportal.de/blaulicht/pm/161590/6374977",
-    "first": "2026-10-20T22:31:30Z",
-    "last": "2026-10-20T22:31:30Z",
-    "veg": false,
-    "source": "Feuerwehr Stuttgart",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stuttgart",
-        "lat": 48.7784485,
-        "lon": 9.1800132,
         "approx": false
       }
     ]
