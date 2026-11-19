@@ -1,5 +1,45 @@
 [
   {
+    "base": "Kreispolizeibehörde Viersen|nettetal-breyell: wohnungsbrand durch technischen defekt - bewohnerin verletzt",
+    "status": "active",
+    "title": "Nettetal-Breyell: Wohnungsbrand durch technischen Defekt - Bewohnerin verletzt",
+    "link": "https://www.presseportal.de/blaulicht/pm/65857/6393552",
+    "first": "2026-11-19T07:54:10Z",
+    "last": "2026-11-19T07:54:10Z",
+    "places": [
+      {
+        "name": "Nettetal-Breyell",
+        "lat": 51.2857099,
+        "lon": 6.2707822,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Kreispolizeibehörde Viersen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Wuppertal|wohnungsbrand mit verletzter person",
+    "status": "active",
+    "title": "Wohnungsbrand mit verletzter Person",
+    "link": "https://www.presseportal.de/blaulicht/pm/115885/6393505",
+    "first": "2026-11-19T03:29:43Z",
+    "last": "2026-11-19T03:29:43Z",
+    "places": [
+      {
+        "name": "Wuppertal",
+        "lat": 51.264018,
+        "lon": 7.1780374,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Wuppertal",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Kreispolizeibehörde Borken|bocholt - mülltonne in brand gesetzt - polizei sucht zeugen",
     "status": "active",
     "title": "Bocholt - Mülltonne in Brand gesetzt - Polizei sucht Zeugen",
