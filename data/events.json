@@ -1,11 +1,55 @@
 [
   {
+    "base": "Feuerwehr Weinheim|kleinbrand in wohnung sorgt für starke rauchentwicklung",
+    "status": "out",
+    "title": "Kleinbrand in Wohnung sorgt für starke Rauchentwicklung",
+    "link": "https://www.presseportal.de/blaulicht/pm/179375/6394170",
+    "first": "2026-11-19T15:14:16Z",
+    "last": "2026-11-19T15:14:16Z",
+    "places": [
+      {
+        "name": "Weinheim",
+        "lat": 49.5462349,
+        "lon": 8.6717458,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Weinheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Konstanz|(stockach / lkr. konstanz) unbekannte werfen mutmaßlich feuerwerkskörper auf carport und lösen brand aus: polizei bittet um hinweise (14.11.2026)",
+    "status": "out",
+    "title": "(Stockach / Lkr. Konstanz) Unbekannte werfen mutmaßlich Feuerwerkskörper auf Carport und lösen Brand aus: Polizei bittet um Hinweise (14.11.2026)",
+    "link": "https://www.presseportal.de/blaulicht/pm/110973/6394124",
+    "first": "2026-11-19T14:33:22Z",
+    "last": "2026-11-19T14:33:22Z",
+    "places": [
+      {
+        "name": "Stockach",
+        "lat": 47.8530941,
+        "lon": 9.0134524,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Konstanz",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Kreispolizeibehörde Viersen|nettetal-breyell: wohnungsbrand durch technischen defekt - bewohnerin verletzt",
     "status": "active",
     "title": "Nettetal-Breyell: Wohnungsbrand durch technischen Defekt - Bewohnerin verletzt",
     "link": "https://www.presseportal.de/blaulicht/pm/65857/6393552",
     "first": "2026-11-19T07:54:10Z",
     "last": "2026-11-19T07:54:10Z",
+    "veg": false,
+    "source": "Kreispolizeibehörde Viersen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Nettetal-Breyell",
@@ -13,11 +57,7 @@
         "lon": 6.2707822,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Kreispolizeibehörde Viersen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Wuppertal|wohnungsbrand mit verletzter person",
@@ -26,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115885/6393505",
     "first": "2026-11-19T03:29:43Z",
     "last": "2026-11-19T03:29:43Z",
+    "veg": false,
+    "source": "Feuerwehr Wuppertal",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Wuppertal",
@@ -33,11 +77,7 @@
         "lon": 7.1780374,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Wuppertal",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Kreispolizeibehörde Borken|bocholt - mülltonne in brand gesetzt - polizei sucht zeugen",
@@ -4189,106 +4229,6 @@
         "name": "Stuttgart",
         "lat": 48.7784485,
         "lon": 9.1800132,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Sprockhövel|brandmeldeanlage löst aus",
-    "status": "active",
-    "title": "Brandmeldeanlage löst aus",
-    "link": "https://www.presseportal.de/blaulicht/pm/69788/6374902",
-    "first": "2026-10-20T15:48:53Z",
-    "last": "2026-10-20T15:48:53Z",
-    "veg": false,
-    "source": "Feuerwehr Sprockhövel",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Sprockhövel",
-        "lat": 51.3666572,
-        "lon": 7.2485905,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|heidelberg: dachstuhlbrand; etwa 100.000 euro sachschaden",
-    "status": "out",
-    "title": "Heidelberg: Dachstuhlbrand; etwa 100.000 Euro Sachschaden",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6374774",
-    "first": "2026-10-20T14:03:42Z",
-    "last": "2026-10-20T14:03:42Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Heidelberg",
-        "lat": 49.4093582,
-        "lon": 8.694724,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(ul) heroldstatt - feuer auf komposthaufen / vermutlich noch nicht vollständig erkaltete asche sorgte für einen brand am montag in sontheim.",
-    "status": "out",
-    "title": "(UL) Heroldstatt - Feuer auf Komposthaufen / Vermutlich noch nicht vollständig erkaltete Asche sorgte für einen Brand am Montag in Sontheim.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6374586",
-    "first": "2026-10-20T11:07:25Z",
-    "last": "2026-10-20T11:07:25Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Heroldstatt",
-        "lat": 48.4426749,
-        "lon": 9.6599683,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(gp) uhingen - feuer auf schultoilette / rechtzeitig konnte ein brand am montag in uhingen gelöscht werden.",
-    "status": "out",
-    "title": "(GP) Uhingen - Feuer auf Schultoilette / Rechtzeitig konnte ein Brand am Montag in Uhingen gelöscht werden.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6374548",
-    "first": "2026-10-20T10:44:46Z",
-    "last": "2026-10-20T10:44:46Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Uhingen",
-        "lat": 48.7042331,
-        "lon": 9.5856424,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Offenburg|rastatt - erneuter mülltonnenbrand in einer tiefgarage",
-    "status": "active",
-    "title": "Rastatt - erneuter Mülltonnenbrand in einer Tiefgarage",
-    "link": "https://www.presseportal.de/blaulicht/pm/110975/6374528",
-    "first": "2026-10-20T10:32:10Z",
-    "last": "2026-10-20T10:32:10Z",
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Rastatt",
-        "lat": 48.8584568,
-        "lon": 8.2040452,
         "approx": false
       }
     ]
