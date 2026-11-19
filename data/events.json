@@ -4252,25 +4252,5 @@
         "approx": false
       }
     ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|mannheim-neckarstadt: fahrzeugbrand pm 1",
-    "status": "active",
-    "title": "Mannheim-Neckarstadt: Fahrzeugbrand PM 1",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6374199",
-    "first": "2026-10-19T19:14:39Z",
-    "last": "2026-10-19T19:14:39Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Mannheim-Neckarstadt",
-        "lat": 49.5046094,
-        "lon": 8.4606257,
-        "approx": false
-      }
-    ]
   }
 ]
