@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/116239/6394256",
     "first": "2026-11-19T22:43:47Z",
     "last": "2026-11-19T22:43:47Z",
+    "veg": false,
+    "source": "Feuerwehr Detmold",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Detmold",
@@ -13,11 +17,7 @@
         "lon": 8.8791526,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Detmold",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Hünxe|ausgelöste brandmeldeanlage in schermbeck",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/133631/6394236",
     "first": "2026-11-19T18:26:09Z",
     "last": "2026-11-19T18:26:09Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Hünxe",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Hünxe",
@@ -33,11 +37,7 @@
         "lon": 6.7660319,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Hünxe",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Weinheim|kleinbrand in wohnung sorgt für starke rauchentwicklung",
