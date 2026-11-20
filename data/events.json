@@ -1,5 +1,65 @@
 [
   {
+    "base": "Feuerwehr Mönchengladbach|brennender wäschetrockner sorgt für feuerwehreinsatz",
+    "status": "active",
+    "title": "Brennender Wäschetrockner sorgt für Feuerwehreinsatz",
+    "link": "https://www.presseportal.de/blaulicht/pm/115879/6395025",
+    "first": "2026-11-20T16:07:29Z",
+    "last": "2026-11-20T16:07:29Z",
+    "places": [
+      {
+        "name": "Mönchengladbach",
+        "lat": 51.1947131,
+        "lon": 6.4353792,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Herdecke|zwei blinde alarme im krankenhaus und blockierte zufahrt an der feuerwache",
+    "status": "active",
+    "title": "Zwei blinde Alarme im Krankenhaus und blockierte Zufahrt an der Feuerwache",
+    "link": "https://www.presseportal.de/blaulicht/pm/69790/6394999",
+    "first": "2026-11-20T15:13:34Z",
+    "last": "2026-11-20T15:13:34Z",
+    "places": [
+      {
+        "name": "Herdecke",
+        "lat": 51.4001119,
+        "lon": 7.4330062,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Herdecke",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|weil am rhein: feuerwehreinsatz - brand eines blumenkübels auf balkon",
+    "status": "active",
+    "title": "Weil am Rhein: Feuerwehreinsatz - Brand eines Blumenkübels auf Balkon",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6394983",
+    "first": "2026-11-20T14:51:04Z",
+    "last": "2026-11-20T14:51:04Z",
+    "places": [
+      {
+        "name": "Weil am Rhein",
+        "lat": 47.6056484,
+        "lon": 7.6120793,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Detmold|gemeldeter kellerbrand in der lilienthalstraße",
     "status": "active",
     "title": "Gemeldeter Kellerbrand in der Lilienthalstraße",
@@ -4150,106 +4210,6 @@
         "lat": 51.1947131,
         "lon": 6.4353792,
         "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Aalen|rems-murr-kreis: unfallflucht, unfall, brand",
-    "status": "active",
-    "title": "Rems-Murr-Kreis: Unfallflucht, Unfall, Brand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110969/6375562",
-    "first": "2026-10-21T14:53:20Z",
-    "last": "2026-10-21T14:53:20Z",
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Rems-Murr-Kreis",
-        "lat": 48.8966799,
-        "lon": 9.5037124,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|freiburg: dachgeschosswohnung in vollbrand - bewohnerin in klinik",
-    "status": "active",
-    "title": "Freiburg: Dachgeschosswohnung in Vollbrand - Bewohnerin in Klinik",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6375328",
-    "first": "2026-10-21T11:36:04Z",
-    "last": "2026-10-21T11:36:04Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Freiburg",
-        "lat": 47.9960901,
-        "lon": 7.8494005,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Freiwillige Feuerwehr Bedburg-Hau|gebäudebrand in hasselt: drei personen aus wohn- und geschäftshaus gerettet",
-    "status": "out",
-    "title": "Gebäudebrand in Hasselt: Drei Personen aus Wohn- und Geschäftshaus gerettet",
-    "link": "https://www.presseportal.de/blaulicht/pm/116244/6375311",
-    "first": "2026-10-21T11:25:45Z",
-    "last": "2026-10-21T11:25:45Z",
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Bedburg-Hau",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Bedburg-Hau",
-        "lat": 51.7624802,
-        "lon": 6.1932936,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Karlsruhe|(ka) bruchsal - hoher sachschaden nach wohnungsbrand",
-    "status": "active",
-    "title": "(KA) Bruchsal - Hoher Sachschaden nach Wohnungsbrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110972/6375056",
-    "first": "2026-10-21T08:13:29Z",
-    "last": "2026-10-21T08:13:29Z",
-    "veg": false,
-    "source": "Polizeipräsidium Karlsruhe",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Bruchsal",
-        "lat": 49.124118,
-        "lon": 8.5980244,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Konstanz|dachstuhlbrand",
-    "status": "out",
-    "title": "Dachstuhlbrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/139089/6375002",
-    "first": "2026-10-21T07:07:35Z",
-    "last": "2026-10-21T07:07:35Z",
-    "veg": false,
-    "source": "Feuerwehr Konstanz",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Konstanz",
-        "lat": 47.659216,
-        "lon": 9.1750718,
-        "approx": false
       }
     ]
   }
