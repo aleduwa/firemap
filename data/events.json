@@ -1,11 +1,35 @@
 [
   {
+    "base": "Feuerwehr Neuss|kellerbrand in einem einfamilienreihenhaus | keine verletzten",
+    "status": "active",
+    "title": "Kellerbrand in einem Einfamilienreihenhaus | Keine Verletzten",
+    "link": "https://www.presseportal.de/blaulicht/pm/122045/6395062",
+    "first": "2026-11-20T18:14:55Z",
+    "last": "2026-11-20T18:14:55Z",
+    "places": [
+      {
+        "name": "Neuss",
+        "lat": 51.1981778,
+        "lon": 6.6916476,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Neuss",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Mönchengladbach|brennender wäschetrockner sorgt für feuerwehreinsatz",
     "status": "active",
     "title": "Brennender Wäschetrockner sorgt für Feuerwehreinsatz",
     "link": "https://www.presseportal.de/blaulicht/pm/115879/6395025",
     "first": "2026-11-20T16:07:29Z",
     "last": "2026-11-20T16:07:29Z",
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Mönchengladbach",
@@ -13,11 +37,7 @@
         "lon": 6.4353792,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Mönchengladbach",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Herdecke|zwei blinde alarme im krankenhaus und blockierte zufahrt an der feuerwache",
@@ -26,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/69790/6394999",
     "first": "2026-11-20T15:13:34Z",
     "last": "2026-11-20T15:13:34Z",
+    "veg": false,
+    "source": "Feuerwehr Herdecke",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Herdecke",
@@ -33,11 +57,7 @@
         "lon": 7.4330062,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Herdecke",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|weil am rhein: feuerwehreinsatz - brand eines blumenkübels auf balkon",
@@ -46,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6394983",
     "first": "2026-11-20T14:51:04Z",
     "last": "2026-11-20T14:51:04Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Weil am Rhein",
@@ -53,11 +77,7 @@
         "lon": 7.6120793,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Detmold|gemeldeter kellerbrand in der lilienthalstraße",
