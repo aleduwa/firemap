@@ -1,5 +1,31 @@
 [
   {
+    "base": "Polizeipräsidium Mannheim|ketsch/rhein-neckar-kreis: scheunenbrand erfolgreich bekämpft",
+    "status": "active",
+    "title": "Ketsch/Rhein-Neckar-Kreis: Scheunenbrand erfolgreich bekämpft",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6395125",
+    "first": "2026-11-21T06:29:26Z",
+    "last": "2026-11-21T06:29:26Z",
+    "places": [
+      {
+        "name": "Ketsch",
+        "lat": 49.3675019,
+        "lon": 8.5237267,
+        "approx": false
+      },
+      {
+        "name": "Rhein-Neckar-Kreis",
+        "lat": 49.3684797,
+        "lon": 8.7352403,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Neuss|kellerbrand in einem einfamilienreihenhaus | keine verletzten",
     "status": "active",
     "title": "Kellerbrand in einem Einfamilienreihenhaus | Keine Verletzten",
@@ -4170,66 +4196,6 @@
         "lat": 47.5527459,
         "lon": 7.9410556,
         "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ludwigsburg|tamm: fünf verletzte nach wohnhausbrand",
-    "status": "active",
-    "title": "Tamm: fünf Verletzte nach Wohnhausbrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/110974/6375934",
-    "first": "2026-10-22T10:17:53Z",
-    "last": "2026-10-22T10:17:53Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Tamm",
-        "lat": 48.9204307,
-        "lon": 9.1158361,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Stuttgart|interimsfeuerwache 1 an der tübinger straße offiziell eingeweiht",
-    "status": "active",
-    "title": "Interimsfeuerwache 1 an der Tübinger Straße offiziell eingeweiht",
-    "link": "https://www.presseportal.de/blaulicht/pm/161590/6375724",
-    "first": "2026-10-22T07:31:34Z",
-    "last": "2026-10-22T07:31:34Z",
-    "veg": false,
-    "source": "Feuerwehr Stuttgart",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stuttgart",
-        "lat": 48.7784485,
-        "lon": 9.1800132,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Mönchengladbach|küchenbrand in mehrfamilienhaus - brandwohnung unbewohnbar",
-    "status": "contained",
-    "title": "Küchenbrand in Mehrfamilienhaus - Brandwohnung unbewohnbar",
-    "link": "https://www.presseportal.de/blaulicht/pm/115879/6375718",
-    "first": "2026-10-22T06:56:21Z",
-    "last": "2026-10-22T06:56:21Z",
-    "veg": false,
-    "source": "Feuerwehr Mönchengladbach",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Mönchengladbach",
-        "lat": 51.1947131,
-        "lon": 6.4353792,
-        "approx": true
       }
     ]
   }
