@@ -1,11 +1,75 @@
 [
   {
+    "base": "Feuerwehr Detmold|kellerbrand in bentrup-loßbruch - fünf personen durch rettungsdienst untersucht",
+    "status": "active",
+    "title": "Kellerbrand in Bentrup-Loßbruch - Fünf Personen durch Rettungsdienst untersucht",
+    "link": "https://www.presseportal.de/blaulicht/pm/116239/6395245",
+    "first": "2026-11-21T16:45:47Z",
+    "last": "2026-11-21T16:45:47Z",
+    "places": [
+      {
+        "name": "Detmold",
+        "lat": 51.936284,
+        "lon": 8.8791526,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Detmold",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Düsseldorf|vermuteter unglücksfall entpuppt sich als entstehungsbrand - feuerwehr rettet bewohner.",
+    "status": "out",
+    "title": "Vermuteter Unglücksfall entpuppt sich als Entstehungsbrand - Feuerwehr rettet Bewohner.",
+    "link": "https://www.presseportal.de/blaulicht/pm/115876/6395215",
+    "first": "2026-11-21T12:46:01Z",
+    "last": "2026-11-21T12:46:01Z",
+    "places": [
+      {
+        "name": "Düsseldorf",
+        "lat": 51.2254018,
+        "lon": 6.7763137,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Düsseldorf",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Aalen|rems-murr-kreis: verkehrsunfälle, fahrzeugbrand, einbrüche",
+    "status": "contained",
+    "title": "Rems-Murr-Kreis: Verkehrsunfälle, Fahrzeugbrand, Einbrüche",
+    "link": "https://www.presseportal.de/blaulicht/pm/110969/6395213",
+    "first": "2026-11-21T12:39:43Z",
+    "last": "2026-11-21T12:39:43Z",
+    "places": [
+      {
+        "name": "Rems-Murr-Kreis",
+        "lat": 48.8966799,
+        "lon": 9.5037124,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Mannheim|ketsch/rhein-neckar-kreis: scheunenbrand erfolgreich bekämpft",
     "status": "active",
     "title": "Ketsch/Rhein-Neckar-Kreis: Scheunenbrand erfolgreich bekämpft",
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6395125",
     "first": "2026-11-21T06:29:26Z",
     "last": "2026-11-21T06:29:26Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ketsch",
@@ -19,11 +83,7 @@
         "lon": 8.7352403,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Neuss|kellerbrand in einem einfamilienreihenhaus | keine verletzten",
@@ -4115,86 +4175,6 @@
         "name": "Ratingen",
         "lat": 51.2973261,
         "lon": 6.8493503,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Iserlohn|wohnungsbrand in hennen - feuerwehr rettet bewohnerin über tragbare leiter",
-    "status": "active",
-    "title": "Wohnungsbrand in Hennen - Feuerwehr rettet Bewohnerin über tragbare Leiter",
-    "link": "https://www.presseportal.de/blaulicht/pm/116234/6376230",
-    "first": "2026-10-22T17:05:01Z",
-    "last": "2026-10-22T17:05:01Z",
-    "veg": false,
-    "source": "Feuerwehr Iserlohn",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Iserlohn",
-        "lat": 51.3746778,
-        "lon": 7.6999713,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|rheinfelden: verdacht sachbeschädigung durch brandlegung - brand eines altpapier-container",
-    "status": "out",
-    "title": "Rheinfelden: Verdacht Sachbeschädigung durch Brandlegung - Brand eines Altpapier-Container",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6376171",
-    "first": "2026-10-22T16:17:02Z",
-    "last": "2026-10-22T16:17:02Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Rheinfelden",
-        "lat": 47.5605924,
-        "lon": 7.7861959,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|lörrach: feuerwehreinsatz wegen brandgeruch",
-    "status": "active",
-    "title": "Lörrach: Feuerwehreinsatz wegen Brandgeruch",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6376154",
-    "first": "2026-10-22T16:12:27Z",
-    "last": "2026-10-22T16:12:27Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Lörrach",
-        "lat": 47.6120896,
-        "lon": 7.6607218,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|bad säckingen: mülleimer brand in schule - zeugensuche",
-    "status": "active",
-    "title": "Bad Säckingen: Mülleimer Brand in Schule - Zeugensuche",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6376123",
-    "first": "2026-10-22T15:56:36Z",
-    "last": "2026-10-22T15:56:36Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Bad Säckingen",
-        "lat": 47.5527459,
-        "lon": 7.9410556,
         "approx": false
       }
     ]
