@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/116239/6395245",
     "first": "2026-11-21T16:45:47Z",
     "last": "2026-11-21T16:45:47Z",
+    "veg": false,
+    "source": "Feuerwehr Detmold",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Detmold",
@@ -13,11 +17,7 @@
         "lon": 8.8791526,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Detmold",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Düsseldorf|vermuteter unglücksfall entpuppt sich als entstehungsbrand - feuerwehr rettet bewohner.",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115876/6395215",
     "first": "2026-11-21T12:46:01Z",
     "last": "2026-11-21T12:46:01Z",
+    "veg": false,
+    "source": "Feuerwehr Düsseldorf",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Düsseldorf",
@@ -33,11 +37,7 @@
         "lon": 6.7763137,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Düsseldorf",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Aalen|rems-murr-kreis: verkehrsunfälle, fahrzeugbrand, einbrüche",
@@ -46,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6395213",
     "first": "2026-11-21T12:39:43Z",
     "last": "2026-11-21T12:39:43Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Rems-Murr-Kreis",
@@ -53,11 +57,7 @@
         "lon": 9.5037124,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|ketsch/rhein-neckar-kreis: scheunenbrand erfolgreich bekämpft",
