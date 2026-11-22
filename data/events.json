@@ -1,11 +1,55 @@
 [
   {
+    "base": "Feuerwehr Mönchengladbach|unklare rauchentwicklung auf ehemaligem betriebsgelände",
+    "status": "out",
+    "title": "Unklare Rauchentwicklung auf ehemaligem Betriebsgelände",
+    "link": "https://www.presseportal.de/blaulicht/pm/115879/6395551",
+    "first": "2026-11-22T19:31:03Z",
+    "last": "2026-11-22T19:31:03Z",
+    "places": [
+      {
+        "name": "Mönchengladbach",
+        "lat": 51.1947131,
+        "lon": 6.4353792,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Freiwillige Feuerwehr Bad Oeynhausen|feuer im ehemaligen hotel königshof",
+    "status": "out",
+    "title": "Feuer im ehemaligen Hotel Königshof",
+    "link": "https://www.presseportal.de/blaulicht/pm/182385/6395550",
+    "first": "2026-11-22T19:20:32Z",
+    "last": "2026-11-22T19:20:32Z",
+    "places": [
+      {
+        "name": "Bad Oeynhausen",
+        "lat": 52.2014399,
+        "lon": 8.7981244,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Bad Oeynhausen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Polizei Lippe|oerlinghausen - brand in leerstehender wohnung",
     "status": "active",
     "title": "Oerlinghausen - Brand in leerstehender Wohnung",
     "link": "https://www.presseportal.de/blaulicht/pm/12727/6395434",
     "first": "2026-11-22T10:56:01Z",
     "last": "2026-11-22T10:56:01Z",
+    "veg": false,
+    "source": "Polizei Lippe",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Oerlinghausen",
@@ -13,11 +57,7 @@
         "lon": 8.673579,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizei Lippe",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Heilbronn|main-tauber-kreis: scheunen- und gebäudebrand",
@@ -26,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110971/6395383",
     "first": "2026-11-22T08:50:53Z",
     "last": "2026-11-22T08:50:53Z",
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Main-Tauber-Kreis",
@@ -33,11 +77,7 @@
         "lon": 9.6999301,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Detmold|brand in wohn- und geschäftshaus in der detmolder innenstadt",
@@ -46,6 +86,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/116239/6395382",
     "first": "2026-11-22T08:50:14Z",
     "last": "2026-11-22T08:50:14Z",
+    "veg": false,
+    "source": "Feuerwehr Detmold",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Detmold",
@@ -53,11 +97,7 @@
         "lon": 8.8791526,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Detmold",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Kreispolizeibehörde Borken|bocholt - containerbrand entfacht",
@@ -66,6 +106,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/24843/6395373",
     "first": "2026-11-22T08:35:26Z",
     "last": "2026-11-22T08:35:26Z",
+    "veg": false,
+    "source": "Kreispolizeibehörde Borken",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Bocholt",
@@ -73,11 +117,7 @@
         "lon": 6.6148669,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Kreispolizeibehörde Borken",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|eppelheim: starke rauchentwicklung im hochhaus, pm 1",
@@ -4129,52 +4169,6 @@
         "name": "Wetter (Ruhr)",
         "lat": 51.3879463,
         "lon": 7.3951553,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Aalen|weinstadt/schnait: öffentlichkeitsfahndung nach versuchter schwerer brandstiftung",
-    "status": "active",
-    "title": "Weinstadt/Schnait: Öffentlichkeitsfahndung nach versuchter schwerer Brandstiftung",
-    "link": "https://www.presseportal.de/blaulicht/pm/110969/6376928",
-    "first": "2026-10-23T15:09:27Z",
-    "last": "2026-10-23T15:09:27Z",
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Weinstadt",
-        "lat": 48.8085568,
-        "lon": 9.3774813,
-        "approx": false
-      },
-      {
-        "name": "Schnait",
-        "lat": 48.7906497,
-        "lon": 9.4043656,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizei Bonn|bonn-medinghoven: kriminalpolizei ermittelt nach brandserie - zeugen gesucht",
-    "status": "out",
-    "title": "Bonn-Medinghoven: Kriminalpolizei ermittelt nach Brandserie - Zeugen gesucht",
-    "link": "https://www.presseportal.de/blaulicht/pm/7304/6376864",
-    "first": "2026-10-23T14:03:22Z",
-    "last": "2026-10-23T14:03:22Z",
-    "veg": false,
-    "source": "Polizei Bonn",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Bonn-Medinghoven",
-        "lat": 50.7075138,
-        "lon": 7.0324267,
         "approx": false
       }
     ]
