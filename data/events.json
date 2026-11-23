@@ -1,11 +1,35 @@
 [
   {
+    "base": "Feuerwehr Stuttgart|kellerbrand in mehrfamilienhaus",
+    "status": "out",
+    "title": "Kellerbrand in Mehrfamilienhaus",
+    "link": "https://www.presseportal.de/blaulicht/pm/161590/6395559",
+    "first": "2026-11-22T20:37:04Z",
+    "last": "2026-11-22T20:37:04Z",
+    "places": [
+      {
+        "name": "Stuttgart",
+        "lat": 48.7784485,
+        "lon": 9.1800132,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Stuttgart",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Mönchengladbach|unklare rauchentwicklung auf ehemaligem betriebsgelände",
     "status": "out",
     "title": "Unklare Rauchentwicklung auf ehemaligem Betriebsgelände",
     "link": "https://www.presseportal.de/blaulicht/pm/115879/6395551",
     "first": "2026-11-22T19:31:03Z",
     "last": "2026-11-22T19:31:03Z",
+    "veg": false,
+    "source": "Feuerwehr Mönchengladbach",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Mönchengladbach",
@@ -13,11 +37,7 @@
         "lon": 6.4353792,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Mönchengladbach",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Freiwillige Feuerwehr Bad Oeynhausen|feuer im ehemaligen hotel königshof",
@@ -26,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/182385/6395550",
     "first": "2026-11-22T19:20:32Z",
     "last": "2026-11-22T19:20:32Z",
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Bad Oeynhausen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Bad Oeynhausen",
@@ -33,11 +57,7 @@
         "lon": 8.7981244,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Bad Oeynhausen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizei Lippe|oerlinghausen - brand in leerstehender wohnung",
@@ -4129,46 +4149,6 @@
         "name": "Wuppertal",
         "lat": 51.264018,
         "lon": 7.1780374,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Freiwillige Feuerwehr Bedburg-Hau|brand einer jacke in pflegeeinrichtung in till-moyland",
-    "status": "active",
-    "title": "Brand einer Jacke in Pflegeeinrichtung in Till-Moyland",
-    "link": "https://www.presseportal.de/blaulicht/pm/116244/6376990",
-    "first": "2026-10-23T21:06:50Z",
-    "last": "2026-10-23T21:06:50Z",
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Bedburg-Hau",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Bedburg-Hau",
-        "lat": 51.7624802,
-        "lon": 6.1932936,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Wetter (Ruhr)|brandmeldealarm am morgen und gasleckage im ortsteil wengern",
-    "status": "active",
-    "title": "Brandmeldealarm am Morgen und Gasleckage im Ortsteil Wengern",
-    "link": "https://www.presseportal.de/blaulicht/pm/69783/6376989",
-    "first": "2026-10-23T21:05:23Z",
-    "last": "2026-10-23T21:05:23Z",
-    "veg": false,
-    "source": "Feuerwehr Wetter (Ruhr)",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Wetter (Ruhr)",
-        "lat": 51.3879463,
-        "lon": 7.3951553,
         "approx": false
       }
     ]
