@@ -1,11 +1,95 @@
 [
   {
+    "base": "Feuerwehr Greven|feuerwehr zu einem brandereignis und zwei verkehrsunfällen gerufen.",
+    "status": "active",
+    "title": "Feuerwehr zu einem Brandereignis und zwei Verkehrsunfällen gerufen.",
+    "link": "https://www.presseportal.de/blaulicht/pm/178564/6396447",
+    "first": "2026-11-23T17:00:00Z",
+    "last": "2026-11-23T17:00:00Z",
+    "places": [
+      {
+        "name": "Greven",
+        "lat": 52.0929254,
+        "lon": 7.6120326,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Greven",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Wuppertal|sechs brandherde in mehrfamilienhaus",
+    "status": "out",
+    "title": "Sechs Brandherde in Mehrfamilienhaus",
+    "link": "https://www.presseportal.de/blaulicht/pm/115885/6396424",
+    "first": "2026-11-23T16:09:08Z",
+    "last": "2026-11-23T16:09:08Z",
+    "places": [
+      {
+        "name": "Wuppertal",
+        "lat": 51.264018,
+        "lon": 7.1780374,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Wuppertal",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|rheinfelden: brand in wohnung - zwei leichtverletzte",
+    "status": "active",
+    "title": "Rheinfelden: Brand in Wohnung - zwei Leichtverletzte",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6396394",
+    "first": "2026-11-23T15:41:27Z",
+    "last": "2026-11-23T15:41:27Z",
+    "places": [
+      {
+        "name": "Rheinfelden",
+        "lat": 47.5605924,
+        "lon": 7.7861959,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|löffingen-reiselfingen: fahrzeughalle in brand, gesamtschaden rund 130.000 eur",
+    "status": "contained",
+    "title": "Löffingen-Reiselfingen: Fahrzeughalle in Brand, Gesamtschaden rund 130.000 EUR",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6396368",
+    "first": "2026-11-23T15:28:46Z",
+    "last": "2026-11-23T15:28:46Z",
+    "places": [
+      {
+        "name": "Löffingen-Reiselfingen",
+        "lat": 47.8557214,
+        "lon": 8.3520741,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Aalen|rems-murr-kreis: unfälle, brand und feuerwehreinsatz, farbschmiererei",
     "status": "active",
     "title": "Rems-Murr-Kreis: Unfälle, Brand und Feuerwehreinsatz, Farbschmiererei",
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6395603",
     "first": "2026-11-23T08:03:08Z",
     "last": "2026-11-23T08:03:08Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Rems-Murr-Kreis",
@@ -13,11 +97,7 @@
         "lon": 9.5037124,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Essen|brand in pizzeria - feuerwehr räumt mehrfamilienhaus - zwei personen vom rettungsdienst untersucht",
@@ -26,6 +106,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/56893/6395593",
     "first": "2026-11-23T07:34:27Z",
     "last": "2026-11-23T07:34:27Z",
+    "veg": false,
+    "source": "Feuerwehr Essen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Essen",
@@ -33,11 +117,7 @@
         "lon": 7.0158171,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Essen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Sprockhövel|brandgeruch in der steinklippe",
@@ -46,6 +126,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/69788/6395583",
     "first": "2026-11-23T06:43:16Z",
     "last": "2026-11-23T06:43:16Z",
+    "veg": false,
+    "source": "Feuerwehr Sprockhövel",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Sprockhövel",
@@ -53,11 +137,7 @@
         "lon": 7.2485905,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Sprockhövel",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Stuttgart|kellerbrand in mehrfamilienhaus",
@@ -3990,206 +4070,6 @@
         "lat": 51.2973261,
         "lon": 6.8493503,
         "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Herdecke|unwetter und wohnungsbrand: arbeitsreicher freitag und samstag für die feuerwehr herdecke - 16 einsätze seit freitagmittag",
-    "status": "active",
-    "title": "Unwetter und Wohnungsbrand: Arbeitsreicher Freitag und Samstag für die Feuerwehr Herdecke - 16 Einsätze seit Freitagmittag",
-    "link": "https://www.presseportal.de/blaulicht/pm/69790/6377165",
-    "first": "2026-10-24T18:46:58Z",
-    "last": "2026-10-24T18:46:58Z",
-    "veg": false,
-    "source": "Feuerwehr Herdecke",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Herdecke",
-        "lat": 51.4001119,
-        "lon": 7.4330062,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|heidelberg: zimmerbrand in der friedrich-ebert-anlage, einsatz von polizei und rettungsdiensten, pm 2",
-    "status": "active",
-    "title": "Heidelberg: Zimmerbrand in der Friedrich-Ebert-Anlage, Einsatz von Polizei und Rettungsdiensten, PM 2",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6377164",
-    "first": "2026-10-24T18:14:40Z",
-    "last": "2026-10-24T18:14:40Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Heidelberg",
-        "lat": 49.4093582,
-        "lon": 8.694724,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|heidelberg: zimmerbrand in der ebert-anlage, einsatz von polizei und rettungsdiensten, pm 1",
-    "status": "active",
-    "title": "Heidelberg: Zimmerbrand in der Ebert-Anlage, Einsatz von Polizei und Rettungsdiensten, PM 1",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6377157",
-    "first": "2026-10-24T17:00:12Z",
-    "last": "2026-10-24T17:00:12Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Heidelberg",
-        "lat": 49.4093582,
-        "lon": 8.694724,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Weil am Rhein|feuerwehr weil: gartenhüttenbrand in weil am rhein, ortsteil haltingen",
-    "status": "out",
-    "title": "Feuerwehr Weil: Gartenhüttenbrand in Weil am Rhein, Ortsteil Haltingen",
-    "link": "https://www.presseportal.de/blaulicht/pm/182024/6377151",
-    "first": "2026-10-24T16:01:54Z",
-    "last": "2026-10-24T16:01:54Z",
-    "veg": false,
-    "source": "Feuerwehr Weil am Rhein",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Weil am Rhein",
-        "lat": 47.6056484,
-        "lon": 7.6120793,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Herdecke|flammen schlagen aus fenster - brandeinsatz für die feuerwehr herdecke",
-    "status": "active",
-    "title": "Flammen schlagen aus Fenster - Brandeinsatz für die Feuerwehr Herdecke",
-    "link": "https://www.presseportal.de/blaulicht/pm/69790/6377124",
-    "first": "2026-10-24T12:45:04Z",
-    "last": "2026-10-24T12:45:04Z",
-    "veg": false,
-    "source": "Feuerwehr Herdecke",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Herdecke",
-        "lat": 51.4001119,
-        "lon": 7.4330062,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Freiwillige Feuerwehr Bad Oeynhausen|wohnhausbrand - menschenleben in gefahr",
-    "status": "active",
-    "title": "Wohnhausbrand - Menschenleben in Gefahr",
-    "link": "https://www.presseportal.de/blaulicht/pm/182385/6377113",
-    "first": "2026-10-24T11:49:34Z",
-    "last": "2026-10-24T11:49:34Z",
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Bad Oeynhausen",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Bad Oeynhausen",
-        "lat": 52.2014399,
-        "lon": 8.7981244,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|diehlheim/rhein-neckar-kreis: brennendes fahrzeug auf der k 4178, pm 1",
-    "status": "active",
-    "title": "Diehlheim/Rhein-Neckar-Kreis: Brennendes Fahrzeug auf der K 4178, PM 1",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6377112",
-    "first": "2026-10-24T11:45:55Z",
-    "last": "2026-10-24T11:45:55Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Rhein-Neckar-Kreis",
-        "lat": 49.3684797,
-        "lon": 8.7352403,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Essen|fahrzeuge in flammen - feuerwehr löscht brand an der stauderstraße",
-    "status": "contained",
-    "title": "Fahrzeuge in Flammen - Feuerwehr löscht Brand an der Stauderstraße",
-    "link": "https://www.presseportal.de/blaulicht/pm/56893/6377077",
-    "first": "2026-10-24T09:48:03Z",
-    "last": "2026-10-24T09:48:03Z",
-    "veg": false,
-    "source": "Feuerwehr Essen",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Essen",
-        "lat": 51.4582235,
-        "lon": 7.0158171,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Dortmund|dortmund huckarde // brand an einem autotransporter",
-    "status": "active",
-    "title": "Dortmund Huckarde // Brand an einem Autotransporter",
-    "link": "https://www.presseportal.de/blaulicht/pm/115869/6377075",
-    "first": "2026-10-24T09:34:13Z",
-    "last": "2026-10-24T09:34:13Z",
-    "veg": false,
-    "source": "Feuerwehr Dortmund",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Dortmund",
-        "lat": 51.5142273,
-        "lon": 7.4652789,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Mönchengladbach|kellerbrand in mehrfamilienhaus - feuer und rauch auf keller begrenzt",
-    "status": "active",
-    "title": "Kellerbrand in Mehrfamilienhaus - Feuer und Rauch auf Keller begrenzt",
-    "link": "https://www.presseportal.de/blaulicht/pm/115879/6377065",
-    "first": "2026-10-24T09:06:54Z",
-    "last": "2026-10-24T09:06:54Z",
-    "veg": false,
-    "source": "Feuerwehr Mönchengladbach",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Mönchengladbach",
-        "lat": 51.1947131,
-        "lon": 6.4353792,
-        "approx": true
       }
     ]
   }
