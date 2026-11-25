@@ -1,36 +1,36 @@
 [
   {
-    "base": "Polizeipräsidium Ulm|(ul) dornstadt - brand in wohnhaus / am dienstag rettete ein zeuge eine bewohnerin in temmenhausen aus dem haus.",
-    "status": "out",
-    "title": "(UL) Dornstadt - Brand in Wohnhaus / Am Dienstag rettete ein Zeuge eine Bewohnerin in Temmenhausen aus dem Haus.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6397416",
-    "first": "2026-11-25T08:34:14Z",
-    "last": "2026-11-25T08:34:14Z",
+    "base": "Kreispolizeibehörde Viersen|viersen-dülken: mülltonnenbrand - hinweise bitte an die polizei",
+    "status": "active",
+    "title": "Viersen-Dülken: Mülltonnenbrand - Hinweise bitte an die Polizei",
+    "link": "https://www.presseportal.de/blaulicht/pm/65857/6397977",
+    "first": "2026-11-25T15:21:54Z",
+    "last": "2026-11-25T15:21:54Z",
     "places": [
       {
-        "name": "Dornstadt",
-        "lat": 48.4656356,
-        "lon": 9.9431286,
+        "name": "Viersen-Dülken",
+        "lat": 51.2545389,
+        "lon": 6.3617567,
         "approx": false
       }
     ],
     "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "region": "BW",
+    "source": "Kreispolizeibehörde Viersen",
+    "region": "NRW",
     "updates": 0
   },
   {
-    "base": "Polizeipräsidium Mannheim|eberbach/rhein-neckar-kreis: warnung vor unfachmännischen überprüfungen von feuerlöschern - zeugenaufruf",
+    "base": "Polizeipräsidium Mannheim|eppelheim/rhein-neckar-kreis: starke rauchentwicklung im hochhaus, pm nr. 3",
     "status": "active",
-    "title": "Eberbach/Rhein-Neckar-Kreis: Warnung vor unfachmännischen Überprüfungen von Feuerlöschern - Zeugenaufruf",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6397399",
-    "first": "2026-11-25T08:20:51Z",
-    "last": "2026-11-25T08:20:51Z",
+    "title": "Eppelheim/Rhein-Neckar-Kreis: Starke Rauchentwicklung im Hochhaus, PM Nr. 3",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6397966",
+    "first": "2026-11-25T15:05:53Z",
+    "last": "2026-11-25T15:05:53Z",
     "places": [
       {
-        "name": "Eberbach",
-        "lat": 49.4635303,
-        "lon": 8.9855203,
+        "name": "Eppelheim",
+        "lat": 49.4018961,
+        "lon": 8.6284171,
         "approx": false
       },
       {
@@ -44,6 +44,92 @@
     "source": "Polizeipräsidium Mannheim",
     "region": "BW",
     "updates": 0
+  },
+  {
+    "base": "Feuerwehr Dortmund|brand in einem parkhaus an der leopoldstraße",
+    "status": "contained",
+    "title": "Brand in einem Parkhaus an der Leopoldstraße",
+    "link": "https://www.presseportal.de/blaulicht/pm/115869/6397964",
+    "first": "2026-11-25T15:04:14Z",
+    "last": "2026-11-25T15:04:14Z",
+    "places": [
+      {
+        "name": "Dortmund",
+        "lat": 51.5142273,
+        "lon": 7.4652789,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Dortmund",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|wittnau: carportbrand verursacht hohen sachschaden",
+    "status": "active",
+    "title": "Wittnau: Carportbrand verursacht hohen Sachschaden",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6397928",
+    "first": "2026-11-25T14:29:31Z",
+    "last": "2026-11-25T14:29:31Z",
+    "places": [
+      {
+        "name": "Wittnau",
+        "lat": 47.9462735,
+        "lon": 7.814375,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Ulm|(ul) dornstadt - brand in wohnhaus / am dienstag rettete ein zeuge eine bewohnerin in temmenhausen aus dem haus.",
+    "status": "out",
+    "title": "(UL) Dornstadt - Brand in Wohnhaus / Am Dienstag rettete ein Zeuge eine Bewohnerin in Temmenhausen aus dem Haus.",
+    "link": "https://www.presseportal.de/blaulicht/pm/110979/6397416",
+    "first": "2026-11-25T08:34:14Z",
+    "last": "2026-11-25T08:34:14Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
+    "region": "BW",
+    "places": [
+      {
+        "name": "Dornstadt",
+        "lat": 48.4656356,
+        "lon": 9.9431286,
+        "approx": false
+      }
+    ]
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|eberbach/rhein-neckar-kreis: warnung vor unfachmännischen überprüfungen von feuerlöschern - zeugenaufruf",
+    "status": "active",
+    "title": "Eberbach/Rhein-Neckar-Kreis: Warnung vor unfachmännischen Überprüfungen von Feuerlöschern - Zeugenaufruf",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6397399",
+    "first": "2026-11-25T08:20:51Z",
+    "last": "2026-11-25T08:20:51Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
+    "places": [
+      {
+        "name": "Eberbach",
+        "lat": 49.4635303,
+        "lon": 8.9855203,
+        "approx": false
+      },
+      {
+        "name": "Rhein-Neckar-Kreis",
+        "lat": 49.3684797,
+        "lon": 8.7352403,
+        "approx": false
+      }
+    ]
   },
   {
     "base": "Feuerwehr Xanten|pkw brennt auf parkplatz",
@@ -3958,144 +4044,6 @@
         "lat": 51.0865424,
         "lon": 8.0894126,
         "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Wuppertal|wohnhaus nach brand unbewohnbar",
-    "status": "active",
-    "title": "Wohnhaus nach Brand unbewohnbar",
-    "link": "https://www.presseportal.de/blaulicht/pm/115885/6378270",
-    "first": "2026-10-26T16:26:15Z",
-    "last": "2026-10-26T16:26:15Z",
-    "veg": false,
-    "source": "Feuerwehr Wuppertal",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Wuppertal",
-        "lat": 51.264018,
-        "lon": 7.1780374,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|weil am rhein: brand einer gartenhütte im entenschwumm",
-    "status": "out",
-    "title": "Weil am Rhein: Brand einer Gartenhütte im Entenschwumm",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6378226",
-    "first": "2026-10-26T15:42:47Z",
-    "last": "2026-10-26T15:42:47Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Weil am Rhein",
-        "lat": 47.6056484,
-        "lon": 7.6120793,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Mannheim|weinheim/rhein-neckar-kreis: kerze ursächlich für balkonbrand",
-    "status": "out",
-    "title": "Weinheim/Rhein-Neckar-Kreis: Kerze ursächlich für Balkonbrand",
-    "link": "https://www.presseportal.de/blaulicht/pm/14915/6378178",
-    "first": "2026-10-26T15:02:38Z",
-    "last": "2026-10-26T15:02:38Z",
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Weinheim",
-        "lat": 49.5462349,
-        "lon": 8.6717458,
-        "approx": false
-      },
-      {
-        "name": "Rhein-Neckar-Kreis",
-        "lat": 49.3684797,
-        "lon": 8.7352403,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizei Coesfeld|senden, schulze-bremer-straße/ brand eines balkons einer leerstehenden wohnung - zeugen gesucht",
-    "status": "active",
-    "title": "Senden, Schulze-Bremer-Straße/ Brand eines Balkons einer leerstehenden Wohnung - Zeugen gesucht",
-    "link": "https://www.presseportal.de/blaulicht/pm/6006/6377715",
-    "first": "2026-10-26T10:18:54Z",
-    "last": "2026-10-26T10:18:54Z",
-    "veg": false,
-    "source": "Polizei Coesfeld",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Senden",
-        "lat": 51.8549598,
-        "lon": 7.4883046,
-        "approx": false
-      },
-      {
-        "name": "Schulze-Bremer-Straße",
-        "lat": 51.8564948,
-        "lon": 7.476057,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ulm|(gp) hohenstadt - brand selbst gelöscht / am sonntag geriet ein mercedes auf der straße zwischen hohenstadt und wiesensteig in brand.",
-    "status": "out",
-    "title": "(GP) Hohenstadt - Brand selbst gelöscht / Am Sonntag geriet ein Mercedes auf der Straße zwischen Hohenstadt und Wiesensteig in Brand.",
-    "link": "https://www.presseportal.de/blaulicht/pm/110979/6377688",
-    "first": "2026-10-26T10:03:36Z",
-    "last": "2026-10-26T10:03:36Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Hohenstadt",
-        "lat": 48.544391,
-        "lon": 9.6635527,
-        "approx": false
-      },
-      {
-        "name": "zwischen Hohenstadt und Wiesensteig",
-        "lat": 48.55324,
-        "lon": 9.64498,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Heilbronn|stadt- und landkreis heilbronn: einbrüche, brand, unfall",
-    "status": "out",
-    "title": "Stadt- und Landkreis Heilbronn: Einbrüche, Brand, Unfall",
-    "link": "https://www.presseportal.de/blaulicht/pm/110971/6377655",
-    "first": "2026-10-26T09:51:25Z",
-    "last": "2026-10-26T09:51:25Z",
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stadt-",
-        "lat": 49.4093582,
-        "lon": 8.694724,
-        "approx": false
       }
     ]
   }
