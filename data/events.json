@@ -1,11 +1,55 @@
 [
   {
+    "base": "Feuerwehr Xanten|pkw brennt auf parkplatz",
+    "status": "active",
+    "title": "PKW brennt auf Parkplatz",
+    "link": "https://www.presseportal.de/blaulicht/pm/122220/6397301",
+    "first": "2026-11-25T00:21:50Z",
+    "last": "2026-11-25T00:21:50Z",
+    "places": [
+      {
+        "name": "Xanten",
+        "lat": 51.661519,
+        "lon": 6.4543203,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Xanten",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Lennestadt|brand einer zimmerdecke in kirchveischede",
+    "status": "out",
+    "title": "Brand einer Zimmerdecke in Kirchveischede",
+    "link": "https://www.presseportal.de/blaulicht/pm/118009/6397285",
+    "first": "2026-11-24T20:37:52Z",
+    "last": "2026-11-24T20:37:52Z",
+    "places": [
+      {
+        "name": "Lennestadt",
+        "lat": 51.1245718,
+        "lon": 8.0568953,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Lennestadt",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr und Rettungsdienst Bonn|brand nach verpuffung in labor der universität bonn - drei leichtverletzte",
     "status": "active",
     "title": "Brand nach Verpuffung in Labor der Universität Bonn - drei Leichtverletzte",
     "link": "https://www.presseportal.de/blaulicht/pm/115888/6397205",
     "first": "2026-11-24T14:57:30Z",
     "last": "2026-11-24T14:57:30Z",
+    "veg": false,
+    "source": "Feuerwehr und Rettungsdienst Bonn",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Bonn",
@@ -13,11 +57,7 @@
         "lon": 7.1024635,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr und Rettungsdienst Bonn",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Aalen|rems-murr-kreis: zeugen nach hundebiss gesucht - fahrzeugbrand - einbruch - unfall",
@@ -26,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110969/6397191",
     "first": "2026-11-24T14:43:32Z",
     "last": "2026-11-24T14:43:32Z",
+    "veg": false,
+    "source": "Polizeipräsidium Aalen",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Rems-Murr-Kreis",
@@ -33,11 +77,7 @@
         "lon": 9.5037124,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|mannheim: rauchentwicklung im wohngebäude, pm nr.2",
@@ -46,6 +86,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6397176",
     "first": "2026-11-24T14:31:57Z",
     "last": "2026-11-24T14:31:57Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Mannheim",
@@ -53,11 +97,7 @@
         "lon": 8.4673098,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Remscheid|wohnungsbrand in wohn- und geschäftsgebäude bewohner verhindern größere brandausbreitung",
@@ -4009,46 +4049,6 @@
         "name": "Stadt-",
         "lat": 49.4093582,
         "lon": 8.694724,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Detmold|rauchentwicklung an tankstelle",
-    "status": "active",
-    "title": "Rauchentwicklung an Tankstelle",
-    "link": "https://www.presseportal.de/blaulicht/pm/116239/6377464",
-    "first": "2026-10-25T22:07:05Z",
-    "last": "2026-10-25T22:07:05Z",
-    "veg": false,
-    "source": "Feuerwehr Detmold",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Detmold",
-        "lat": 51.936284,
-        "lon": 8.8791526,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Pforzheim|(enzkreis) neuenbürg - dachgeschoss eines mehrfamilienhauses in brand geraten",
-    "status": "out",
-    "title": "(Enzkreis) Neuenbürg - Dachgeschoss eines Mehrfamilienhauses in Brand geraten",
-    "link": "https://www.presseportal.de/blaulicht/pm/137462/6377430",
-    "first": "2026-10-25T16:20:45Z",
-    "last": "2026-10-25T16:20:45Z",
-    "veg": false,
-    "source": "Polizeipräsidium Pforzheim",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Neuenbürg",
-        "lat": 48.8464524,
-        "lon": 8.5886312,
         "approx": false
       }
     ]
