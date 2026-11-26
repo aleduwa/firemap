@@ -1,11 +1,141 @@
 [
   {
+    "base": "Feuerwehr Mülheim an der Ruhr|küchenbrand in mülheim-styrum",
+    "status": "active",
+    "title": "Küchenbrand in Mülheim-Styrum",
+    "link": "https://www.presseportal.de/blaulicht/pm/115880/6398823",
+    "first": "2026-11-26T20:02:45Z",
+    "last": "2026-11-26T20:02:45Z",
+    "places": [
+      {
+        "name": "Mülheim an der Ruhr",
+        "lat": 51.4272925,
+        "lon": 6.8829192,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Mülheim an der Ruhr",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Iserlohn|pkw-brand in der letmather innenstadt",
+    "status": "contained",
+    "title": "PKW-Brand in der Letmather Innenstadt",
+    "link": "https://www.presseportal.de/blaulicht/pm/116234/6398821",
+    "first": "2026-11-26T19:27:58Z",
+    "last": "2026-11-26T19:27:58Z",
+    "places": [
+      {
+        "name": "Iserlohn",
+        "lat": 51.3746778,
+        "lon": 7.6999713,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Iserlohn",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Iserlohn|kaminbrand auf der grürmannsheide",
+    "status": "active",
+    "title": "Kaminbrand auf der Grürmannsheide",
+    "link": "https://www.presseportal.de/blaulicht/pm/116234/6398817",
+    "first": "2026-11-26T19:10:12Z",
+    "last": "2026-11-26T19:10:12Z",
+    "places": [
+      {
+        "name": "Iserlohn",
+        "lat": 51.3746778,
+        "lon": 7.6999713,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Iserlohn",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Konstanz|(markelfingen, lkr. konstanz)brand in der gnadenseestraße - feuer greift von schuppen auf garage und wohnhaus über (25.11.2026)",
+    "status": "active",
+    "title": "(Markelfingen, Lkr. Konstanz)Brand in der Gnadenseestraße - Feuer greift von Schuppen auf Garage und Wohnhaus über (25.11.2026)",
+    "link": "https://www.presseportal.de/blaulicht/pm/110973/6398775",
+    "first": "2026-11-26T15:45:00Z",
+    "last": "2026-11-26T15:45:00Z",
+    "places": [
+      {
+        "name": "Markelfingen",
+        "lat": 47.7392613,
+        "lon": 9.0029389,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Konstanz",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|freiburg-weingarten: mutmaßliche brandstiftung an pkw - zeugen gesucht",
+    "status": "out",
+    "title": "Freiburg-Weingarten: Mutmaßliche Brandstiftung an Pkw - Zeugen gesucht",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6398773",
+    "first": "2026-11-26T15:41:53Z",
+    "last": "2026-11-26T15:41:53Z",
+    "places": [
+      {
+        "name": "Freiburg-Weingarten",
+        "lat": 48.0027942,
+        "lon": 7.8082054,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|waldshut-tiengen/ waldshut: brand in gaststätte",
+    "status": "contained",
+    "title": "Waldshut-Tiengen/ Waldshut: Brand in Gaststätte",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6398756",
+    "first": "2026-11-26T15:25:09Z",
+    "last": "2026-11-26T15:25:09Z",
+    "places": [
+      {
+        "name": "Waldshut-Tiengen",
+        "lat": 47.6281754,
+        "lon": 8.2408579,
+        "approx": false
+      },
+      {
+        "name": "Waldshut",
+        "lat": 47.6246179,
+        "lon": 8.2120605,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Essen|umgestürzte kerze verursacht wohnungsbrand - keine verletzten",
     "status": "out",
     "title": "Umgestürzte Kerze verursacht Wohnungsbrand - keine Verletzten",
     "link": "https://www.presseportal.de/blaulicht/pm/56893/6398316",
     "first": "2026-11-26T10:02:32Z",
     "last": "2026-11-26T10:02:32Z",
+    "veg": false,
+    "source": "Feuerwehr Essen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Essen",
@@ -13,11 +143,7 @@
         "lon": 7.0158171,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Essen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Radolfzell|schuppenbrand greift auf wohnhaus über",
@@ -3983,106 +4109,6 @@
         "name": "Konstanz",
         "lat": 47.659216,
         "lon": 9.1750718,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Mülheim an der Ruhr|abschlussmeldung: brand im st. marien-hospital - mehrere personen gerettet, insgesamt 32 betroffene",
-    "status": "out",
-    "title": "Abschlussmeldung: Brand im St. Marien-Hospital - mehrere Personen gerettet, insgesamt 32 Betroffene",
-    "link": "https://www.presseportal.de/blaulicht/pm/115880/6379174",
-    "first": "2026-10-27T18:56:36Z",
-    "last": "2026-10-27T18:56:36Z",
-    "veg": false,
-    "source": "Feuerwehr Mülheim an der Ruhr",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Mülheim an der Ruhr",
-        "lat": 51.4272925,
-        "lon": 6.8829192,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|freiburg: gartenhütte durch brand vollständig zerstört",
-    "status": "active",
-    "title": "Freiburg: Gartenhütte durch Brand vollständig zerstört",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6379148",
-    "first": "2026-10-27T16:37:32Z",
-    "last": "2026-10-27T16:37:32Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Freiburg",
-        "lat": 47.9960901,
-        "lon": 7.8494005,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Mülheim an der Ruhr|erstmeldung: brand im st. marien-hospital - zwei personen gerettet",
-    "status": "out",
-    "title": "Erstmeldung: Brand im St. Marien-Hospital - zwei Personen gerettet",
-    "link": "https://www.presseportal.de/blaulicht/pm/115880/6379085",
-    "first": "2026-10-27T14:55:24Z",
-    "last": "2026-10-27T14:55:24Z",
-    "veg": false,
-    "source": "Feuerwehr Mülheim an der Ruhr",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Mülheim an der Ruhr",
-        "lat": 51.4272925,
-        "lon": 6.8829192,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Kreispolizeibehörde Viersen|viersen: brennender sperrmüll beschädigt hauswand - wer hat etwas gesehen?",
-    "status": "active",
-    "title": "Viersen: Brennender Sperrmüll beschädigt Hauswand - wer hat etwas gesehen?",
-    "link": "https://www.presseportal.de/blaulicht/pm/65857/6379068",
-    "first": "2026-10-27T14:48:43Z",
-    "last": "2026-10-27T14:48:43Z",
-    "veg": false,
-    "source": "Kreispolizeibehörde Viersen",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Viersen",
-        "lat": 51.2562118,
-        "lon": 6.3905476,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Mönchengladbach|größerer brand eines müllwagens durch mitarbeiter verhindert",
-    "status": "out",
-    "title": "Größerer Brand eines Müllwagens durch Mitarbeiter verhindert",
-    "link": "https://www.presseportal.de/blaulicht/pm/115879/6379011",
-    "first": "2026-10-27T14:15:13Z",
-    "last": "2026-10-27T14:15:13Z",
-    "veg": false,
-    "source": "Feuerwehr Mönchengladbach",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Mönchengladbach",
-        "lat": 51.1947131,
-        "lon": 6.4353792,
         "approx": false
       }
     ]
