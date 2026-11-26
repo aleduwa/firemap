@@ -1,11 +1,75 @@
 [
   {
+    "base": "Feuerwehr Radolfzell|schuppenbrand greift auf wohnhaus über",
+    "status": "out",
+    "title": "Schuppenbrand greift auf Wohnhaus über",
+    "link": "https://www.presseportal.de/blaulicht/pm/169982/6398071",
+    "first": "2026-11-25T23:08:12Z",
+    "last": "2026-11-25T23:08:12Z",
+    "places": [
+      {
+        "name": "Radolfzell",
+        "lat": 47.7372802,
+        "lon": 8.9702755,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Radolfzell",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr der Stadt Arnsberg|brand in mehrfamilienhaus sorgt für feuerwehreinsatz in arnsberg",
+    "status": "contained",
+    "title": "Brand in Mehrfamilienhaus sorgt für Feuerwehreinsatz in Arnsberg",
+    "link": "https://www.presseportal.de/blaulicht/pm/116297/6398068",
+    "first": "2026-11-25T22:46:57Z",
+    "last": "2026-11-25T22:46:57Z",
+    "places": [
+      {
+        "name": "Arnsberg",
+        "lat": 51.423047,
+        "lon": 8.0448507,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr der Stadt Arnsberg",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Allensbach|b3i feuer am gebäude",
+    "status": "active",
+    "title": "B3i Feuer am Gebäude",
+    "link": "https://www.presseportal.de/blaulicht/pm/175384/6398063",
+    "first": "2026-11-25T21:30:00Z",
+    "last": "2026-11-25T21:30:00Z",
+    "places": [
+      {
+        "name": "Allensbach",
+        "lat": 47.7168668,
+        "lon": 9.0687005,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Allensbach",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Kreispolizeibehörde Viersen|viersen-dülken: mülltonnenbrand - hinweise bitte an die polizei",
     "status": "active",
     "title": "Viersen-Dülken: Mülltonnenbrand - Hinweise bitte an die Polizei",
     "link": "https://www.presseportal.de/blaulicht/pm/65857/6397977",
     "first": "2026-11-25T15:21:54Z",
     "last": "2026-11-25T15:21:54Z",
+    "veg": false,
+    "source": "Kreispolizeibehörde Viersen",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Viersen-Dülken",
@@ -13,11 +77,7 @@
         "lon": 6.3617567,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Kreispolizeibehörde Viersen",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|eppelheim/rhein-neckar-kreis: starke rauchentwicklung im hochhaus, pm nr. 3",
@@ -26,6 +86,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6397966",
     "first": "2026-11-25T15:05:53Z",
     "last": "2026-11-25T15:05:53Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Eppelheim",
@@ -39,11 +103,7 @@
         "lon": 8.7352403,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Dortmund|brand in einem parkhaus an der leopoldstraße",
@@ -52,6 +112,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115869/6397964",
     "first": "2026-11-25T15:04:14Z",
     "last": "2026-11-25T15:04:14Z",
+    "veg": false,
+    "source": "Feuerwehr Dortmund",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Dortmund",
@@ -59,11 +123,7 @@
         "lon": 7.4652789,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Dortmund",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|wittnau: carportbrand verursacht hohen sachschaden",
@@ -72,6 +132,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6397928",
     "first": "2026-11-25T14:29:31Z",
     "last": "2026-11-25T14:29:31Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Wittnau",
@@ -79,11 +143,7 @@
         "lon": 7.814375,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(ul) dornstadt - brand in wohnhaus / am dienstag rettete ein zeuge eine bewohnerin in temmenhausen aus dem haus.",
