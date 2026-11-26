@@ -1,11 +1,35 @@
 [
   {
+    "base": "Feuerwehr Essen|umgestürzte kerze verursacht wohnungsbrand - keine verletzten",
+    "status": "out",
+    "title": "Umgestürzte Kerze verursacht Wohnungsbrand - keine Verletzten",
+    "link": "https://www.presseportal.de/blaulicht/pm/56893/6398316",
+    "first": "2026-11-26T10:02:32Z",
+    "last": "2026-11-26T10:02:32Z",
+    "places": [
+      {
+        "name": "Essen",
+        "lat": 51.4582235,
+        "lon": 7.0158171,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Essen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Radolfzell|schuppenbrand greift auf wohnhaus über",
     "status": "out",
     "title": "Schuppenbrand greift auf Wohnhaus über",
     "link": "https://www.presseportal.de/blaulicht/pm/169982/6398071",
     "first": "2026-11-25T23:08:12Z",
     "last": "2026-11-25T23:08:12Z",
+    "veg": false,
+    "source": "Feuerwehr Radolfzell",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Radolfzell",
@@ -13,11 +37,7 @@
         "lon": 8.9702755,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Radolfzell",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr der Stadt Arnsberg|brand in mehrfamilienhaus sorgt für feuerwehreinsatz in arnsberg",
@@ -26,6 +46,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/116297/6398068",
     "first": "2026-11-25T22:46:57Z",
     "last": "2026-11-25T22:46:57Z",
+    "veg": false,
+    "source": "Feuerwehr der Stadt Arnsberg",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Arnsberg",
@@ -33,11 +57,7 @@
         "lon": 8.0448507,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr der Stadt Arnsberg",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Allensbach|b3i feuer am gebäude",
@@ -46,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/175384/6398063",
     "first": "2026-11-25T21:30:00Z",
     "last": "2026-11-25T21:30:00Z",
+    "veg": false,
+    "source": "Feuerwehr Allensbach",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Allensbach",
@@ -53,11 +77,7 @@
         "lon": 9.0687005,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Allensbach",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Kreispolizeibehörde Viersen|viersen-dülken: mülltonnenbrand - hinweise bitte an die polizei",
@@ -4064,46 +4084,6 @@
         "lat": 51.1947131,
         "lon": 6.4353792,
         "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Offenburg|ettenheim - elektroauto in garage in brand geraten",
-    "status": "active",
-    "title": "Ettenheim - Elektroauto in Garage in Brand geraten",
-    "link": "https://www.presseportal.de/blaulicht/pm/110975/6378615",
-    "first": "2026-10-27T10:32:39Z",
-    "last": "2026-10-27T10:32:39Z",
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Ettenheim",
-        "lat": 48.2487345,
-        "lon": 7.8539263,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Kirchhundem |brennt hackschnitzelheizung - mehrere personen im gebäude",
-    "status": "active",
-    "title": "Brennt Hackschnitzelheizung - Mehrere Personen im Gebäude",
-    "link": "https://www.presseportal.de/blaulicht/pm/116945/6378610",
-    "first": "2026-10-27T10:30:00Z",
-    "last": "2026-10-27T10:30:00Z",
-    "veg": false,
-    "source": "Feuerwehr Kirchhundem ",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Kirchhundem ",
-        "lat": 51.0865424,
-        "lon": 8.0894126,
-        "approx": true
       }
     ]
   }
