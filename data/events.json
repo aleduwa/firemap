@@ -1,11 +1,55 @@
 [
   {
+    "base": "Feuerwehr Remscheid|kellerbrand in stadtteil kremenholl",
+    "status": "active",
+    "title": "Kellerbrand in Stadtteil Kremenholl",
+    "link": "https://www.presseportal.de/blaulicht/pm/115882/6398838",
+    "first": "2026-11-27T00:31:03Z",
+    "last": "2026-11-27T00:31:03Z",
+    "places": [
+      {
+        "name": "Remscheid",
+        "lat": 51.1798706,
+        "lon": 7.1943544,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Remscheid",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Gladbeck|wohnungsbrand in der goethestraße - eine person verletzt feuerwehr gladbeck im einsatz: bewohnerin mit rauchgasvergiftung ins krankenhaus gebracht",
+    "status": "out",
+    "title": "Wohnungsbrand in der Goethestraße - eine Person verletzt Feuerwehr Gladbeck im Einsatz: Bewohnerin mit Rauchgasvergiftung ins Krankenhaus gebracht",
+    "link": "https://www.presseportal.de/blaulicht/pm/117806/6398832",
+    "first": "2026-11-26T22:20:42Z",
+    "last": "2026-11-26T22:20:42Z",
+    "places": [
+      {
+        "name": "Gladbeck",
+        "lat": 51.5718665,
+        "lon": 6.9877343,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Gladbeck",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Mülheim an der Ruhr|küchenbrand in mülheim-styrum",
     "status": "active",
     "title": "Küchenbrand in Mülheim-Styrum",
     "link": "https://www.presseportal.de/blaulicht/pm/115880/6398823",
     "first": "2026-11-26T20:02:45Z",
     "last": "2026-11-26T20:02:45Z",
+    "veg": false,
+    "source": "Feuerwehr Mülheim an der Ruhr",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Mülheim an der Ruhr",
@@ -13,11 +57,7 @@
         "lon": 6.8829192,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Mülheim an der Ruhr",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Iserlohn|pkw-brand in der letmather innenstadt",
@@ -26,6 +66,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/116234/6398821",
     "first": "2026-11-26T19:27:58Z",
     "last": "2026-11-26T19:27:58Z",
+    "veg": false,
+    "source": "Feuerwehr Iserlohn",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Iserlohn",
@@ -33,11 +77,7 @@
         "lon": 7.6999713,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Iserlohn",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Iserlohn|kaminbrand auf der grürmannsheide",
@@ -46,6 +86,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/116234/6398817",
     "first": "2026-11-26T19:10:12Z",
     "last": "2026-11-26T19:10:12Z",
+    "veg": false,
+    "source": "Feuerwehr Iserlohn",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Iserlohn",
@@ -53,11 +97,7 @@
         "lon": 7.6999713,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Iserlohn",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Konstanz|(markelfingen, lkr. konstanz)brand in der gnadenseestraße - feuer greift von schuppen auf garage und wohnhaus über (25.11.2026)",
@@ -66,6 +106,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110973/6398775",
     "first": "2026-11-26T15:45:00Z",
     "last": "2026-11-26T15:45:00Z",
+    "veg": false,
+    "source": "Polizeipräsidium Konstanz",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Markelfingen",
@@ -73,11 +117,7 @@
         "lon": 9.0029389,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Konstanz",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|freiburg-weingarten: mutmaßliche brandstiftung an pkw - zeugen gesucht",
@@ -86,6 +126,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6398773",
     "first": "2026-11-26T15:41:53Z",
     "last": "2026-11-26T15:41:53Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Freiburg-Weingarten",
@@ -93,11 +137,7 @@
         "lon": 7.8082054,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|waldshut-tiengen/ waldshut: brand in gaststätte",
@@ -106,6 +146,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6398756",
     "first": "2026-11-26T15:25:09Z",
     "last": "2026-11-26T15:25:09Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Waldshut-Tiengen",
@@ -119,11 +163,7 @@
         "lon": 8.2120605,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Essen|umgestürzte kerze verursacht wohnungsbrand - keine verletzten",
@@ -4069,46 +4109,6 @@
         "name": "Überlingen",
         "lat": 47.7664456,
         "lon": 9.1605106,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Bocholt|baucontainer stehen in vollbrand und verdächtiger rauch gemeldet",
-    "status": "contained",
-    "title": "Baucontainer stehen in Vollbrand und verdächtiger Rauch gemeldet",
-    "link": "https://www.presseportal.de/blaulicht/pm/146407/6379197",
-    "first": "2026-10-28T02:25:46Z",
-    "last": "2026-10-28T02:25:46Z",
-    "veg": false,
-    "source": "Feuerwehr Bocholt",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Bocholt",
-        "lat": 51.8382715,
-        "lon": 6.6148669,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Konstanz|wohnungsbrand in der konstanzer altstadt",
-    "status": "active",
-    "title": "Wohnungsbrand in der Konstanzer Altstadt",
-    "link": "https://www.presseportal.de/blaulicht/pm/139089/6379188",
-    "first": "2026-10-27T23:00:00Z",
-    "last": "2026-10-27T23:00:00Z",
-    "veg": false,
-    "source": "Feuerwehr Konstanz",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Konstanz",
-        "lat": 47.659216,
-        "lon": 9.1750718,
         "approx": false
       }
     ]
