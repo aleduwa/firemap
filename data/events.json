@@ -1,11 +1,231 @@
 [
   {
+    "base": "Feuerwehr Dortmund|ausgedehnter dachstuhlbrand in fachwerkhaus am asselner hellweg",
+    "status": "active",
+    "title": "Ausgedehnter Dachstuhlbrand in Fachwerkhaus am Asselner Hellweg",
+    "link": "https://www.presseportal.de/blaulicht/pm/115869/6399575",
+    "first": "2026-11-27T18:52:38Z",
+    "last": "2026-11-27T18:52:38Z",
+    "places": [
+      {
+        "name": "Dortmund",
+        "lat": 51.5142273,
+        "lon": 7.4652789,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Dortmund",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|walldorf/bab 5/rhein-neckar-kreis: brennendes fahrzeug auf dem standstreifen - pm nr. 2",
+    "status": "out",
+    "title": "Walldorf/BAB 5/Rhein-Neckar-Kreis: Brennendes Fahrzeug auf dem Standstreifen - PM Nr. 2",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6399558",
+    "first": "2026-11-27T16:52:37Z",
+    "last": "2026-11-27T16:52:37Z",
+    "places": [
+      {
+        "name": "Walldorf",
+        "lat": 49.3032669,
+        "lon": 8.6432056,
+        "approx": false
+      },
+      {
+        "name": "BAB 5",
+        "lat": 48.0640897,
+        "lon": 10.1396324,
+        "approx": false
+      },
+      {
+        "name": "Rhein-Neckar-Kreis",
+        "lat": 49.3684797,
+        "lon": 8.7352403,
+        "approx": false
+      },
+      {
+        "name": "A 5 zwischen Waldorf und Wiesloch",
+        "lat": 48.72863,
+        "lon": 8.67931,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Offenburg|sechs einsätze in wenigen stunden - katze aus brandwohnung gerettet",
+    "status": "contained",
+    "title": "Sechs Einsätze in wenigen Stunden - Katze aus Brandwohnung gerettet",
+    "link": "https://www.presseportal.de/blaulicht/pm/128693/6399548",
+    "first": "2026-11-27T16:29:09Z",
+    "last": "2026-11-27T16:29:09Z",
+    "places": [
+      {
+        "name": "Offenburg",
+        "lat": 48.4695984,
+        "lon": 7.9429235,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Offenburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|walldorf/bab 5/rhein-neckar-kreis: brennendes fahrzeug auf dem standstreifen - pm nr. 1",
+    "status": "active",
+    "title": "Walldorf/BAB 5/Rhein-Neckar-Kreis: Brennendes Fahrzeug auf dem Standstreifen - PM Nr. 1",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6399530",
+    "first": "2026-11-27T15:48:52Z",
+    "last": "2026-11-27T15:48:52Z",
+    "places": [
+      {
+        "name": "Walldorf",
+        "lat": 49.3032669,
+        "lon": 8.6432056,
+        "approx": false
+      },
+      {
+        "name": "BAB 5",
+        "lat": 48.0640897,
+        "lon": 10.1396324,
+        "approx": false
+      },
+      {
+        "name": "Rhein-Neckar-Kreis",
+        "lat": 49.3684797,
+        "lon": 8.7352403,
+        "approx": false
+      },
+      {
+        "name": "A 5 zwischen Walldorf und Wiesloch",
+        "lat": 49.29876,
+        "lon": 8.67096,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Ulm|(ul) ulm - unbekannter wirft brandsatz / von mittwoch auf donnerstag hatte es ein unbekannter auf ein vereinsheim im ulmer donautal abgesehen.",
+    "status": "out",
+    "title": "(UL) Ulm - Unbekannter wirft Brandsatz / Von Mittwoch auf Donnerstag hatte es ein Unbekannter auf ein Vereinsheim im Ulmer Donautal abgesehen.",
+    "link": "https://www.presseportal.de/blaulicht/pm/110979/6399520",
+    "first": "2026-11-27T15:25:00Z",
+    "last": "2026-11-27T15:25:00Z",
+    "places": [
+      {
+        "name": "Ulm",
+        "lat": 48.3984968,
+        "lon": 9.9912458,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Freiburg|zell im wiesental: brand in kellerabteil eines mehrfamilienhauses",
+    "status": "out",
+    "title": "Zell im Wiesental: Brand in Kellerabteil eines Mehrfamilienhauses",
+    "link": "https://www.presseportal.de/blaulicht/pm/110970/6399500",
+    "first": "2026-11-27T15:01:53Z",
+    "last": "2026-11-27T15:01:53Z",
+    "places": [
+      {
+        "name": "Zell im Wiesental",
+        "lat": 47.7080155,
+        "lon": 7.8522798,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|heidelberg: verlassene gartenhütte abgebrannt - zeugenaufruf",
+    "status": "out",
+    "title": "Heidelberg: Verlassene Gartenhütte abgebrannt - Zeugenaufruf",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6399485",
+    "first": "2026-11-27T14:43:03Z",
+    "last": "2026-11-27T14:43:03Z",
+    "places": [
+      {
+        "name": "Heidelberg",
+        "lat": 49.4093582,
+        "lon": 8.694724,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Offenburg|offenburg - brand in mehrfamilienhaus, katze gerettet",
+    "status": "contained",
+    "title": "Offenburg - Brand in Mehrfamilienhaus, Katze gerettet",
+    "link": "https://www.presseportal.de/blaulicht/pm/110975/6399480",
+    "first": "2026-11-27T14:36:43Z",
+    "last": "2026-11-27T14:36:43Z",
+    "places": [
+      {
+        "name": "Offenburg",
+        "lat": 48.4695984,
+        "lon": 7.9429235,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Offenburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Ludwigsburg|herrenberg: brand in einer garage in der anton-bruckner-straße",
+    "status": "active",
+    "title": "Herrenberg: Brand in einer Garage in der Anton-Bruckner-Straße",
+    "link": "https://www.presseportal.de/blaulicht/pm/110974/6399474",
+    "first": "2026-11-27T14:29:45Z",
+    "last": "2026-11-27T14:29:45Z",
+    "places": [
+      {
+        "name": "Herrenberg",
+        "lat": 48.5963819,
+        "lon": 8.8702368,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Ludwigsburg",
+    "region": "BW",
+    "updates": 0
+  },
+  {
     "base": "Polizeipräsidium Heilbronn|neckar-odenwald-kreis: feuerwehreinsatz wegen rauchentwicklung",
     "status": "active",
     "title": "Neckar-Odenwald-Kreis: Feuerwehreinsatz wegen Rauchentwicklung",
     "link": "https://www.presseportal.de/blaulicht/pm/110971/6399186",
     "first": "2026-11-27T11:14:13Z",
     "last": "2026-11-27T11:14:13Z",
+    "veg": false,
+    "source": "Polizeipräsidium Heilbronn",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Neckar-Odenwald-Kreis",
@@ -13,11 +233,7 @@
         "lon": 9.2709386,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Heilbronn",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Remscheid|kellerbrand in stadtteil kremenholl",
@@ -3944,172 +4160,6 @@
         "lat": 50.9540457,
         "lon": 6.6410004,
         "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Offenburg|wohnung in mehrfamilienhaus ausgebrannt",
-    "status": "out",
-    "title": "Wohnung in Mehrfamilienhaus ausgebrannt",
-    "link": "https://www.presseportal.de/blaulicht/pm/128693/6379858",
-    "first": "2026-10-28T19:05:18Z",
-    "last": "2026-10-28T19:05:18Z",
-    "veg": false,
-    "source": "Feuerwehr Offenburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Offenburg",
-        "lat": 48.4695984,
-        "lon": 7.9429235,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Offenburg|offenburg - brand in mehrfamilienhaus",
-    "status": "active",
-    "title": "Offenburg - Brand in Mehrfamilienhaus",
-    "link": "https://www.presseportal.de/blaulicht/pm/110975/6379824",
-    "first": "2026-10-28T16:38:02Z",
-    "last": "2026-10-28T16:38:02Z",
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Offenburg",
-        "lat": 48.4695984,
-        "lon": 7.9429235,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Stuttgart|eine person bei ausgedehntem zimmerbrand gerettet",
-    "status": "out",
-    "title": "Eine Person bei ausgedehntem Zimmerbrand gerettet",
-    "link": "https://www.presseportal.de/blaulicht/pm/161590/6379808",
-    "first": "2026-10-28T15:54:05Z",
-    "last": "2026-10-28T15:54:05Z",
-    "veg": false,
-    "source": "Feuerwehr Stuttgart",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Stuttgart",
-        "lat": 48.7784485,
-        "lon": 9.1800132,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Freiburg|denzlingen: brandserie offenbar aufgeklärt - polizei ermittelt gegen zwei tatverdächtige",
-    "status": "active",
-    "title": "Denzlingen: Brandserie offenbar aufgeklärt - Polizei ermittelt gegen zwei Tatverdächtige",
-    "link": "https://www.presseportal.de/blaulicht/pm/110970/6379747",
-    "first": "2026-10-28T14:44:45Z",
-    "last": "2026-10-28T14:44:45Z",
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Denzlingen",
-        "lat": 48.0669167,
-        "lon": 7.8862704,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Ludwigsburg|böblingen: eine verletzte person nach küchenbrand in der lange straße",
-    "status": "active",
-    "title": "Böblingen: Eine verletzte Person nach Küchenbrand in der Lange Straße",
-    "link": "https://www.presseportal.de/blaulicht/pm/110974/6379628",
-    "first": "2026-10-28T13:22:38Z",
-    "last": "2026-10-28T13:22:38Z",
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Böblingen",
-        "lat": 48.684969,
-        "lon": 9.0113444,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Böblingen|wohnungsbrand in der langen straße",
-    "status": "out",
-    "title": "Wohnungsbrand in der Langen Straße",
-    "link": "https://www.presseportal.de/blaulicht/pm/164917/6379620",
-    "first": "2026-10-28T13:16:22Z",
-    "last": "2026-10-28T13:16:22Z",
-    "veg": false,
-    "source": "Feuerwehr Böblingen",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Böblingen",
-        "lat": 48.684969,
-        "lon": 9.0113444,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Offenburg|appenweier - gartenhütte niedergebrannt",
-    "status": "active",
-    "title": "Appenweier - Gartenhütte niedergebrannt",
-    "link": "https://www.presseportal.de/blaulicht/pm/110975/6379569",
-    "first": "2026-10-28T12:22:09Z",
-    "last": "2026-10-28T12:22:09Z",
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Appenweier",
-        "lat": 48.5605374,
-        "lon": 7.9778001,
-        "approx": false
-      },
-      {
-        "name": "zwischen Appenweier und Nesselried",
-        "lat": 48.54002,
-        "lon": 7.99116,
-        "approx": true
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Dortmund|feuer im leerstehenden kindergarten in dortmund-brechten",
-    "status": "active",
-    "title": "Feuer im leerstehenden Kindergarten in Dortmund-Brechten",
-    "link": "https://www.presseportal.de/blaulicht/pm/115869/6379554",
-    "first": "2026-10-28T12:01:00Z",
-    "last": "2026-10-28T12:01:00Z",
-    "veg": false,
-    "source": "Feuerwehr Dortmund",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Dortmund",
-        "lat": 51.5142273,
-        "lon": 7.4652789,
-        "approx": false
       }
     ]
   }
