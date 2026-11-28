@@ -6,6 +6,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/115869/6399575",
     "first": "2026-11-27T18:52:38Z",
     "last": "2026-11-27T18:52:38Z",
+    "veg": false,
+    "source": "Feuerwehr Dortmund",
+    "updates": 0,
+    "region": "NRW",
     "places": [
       {
         "name": "Dortmund",
@@ -13,11 +17,7 @@
         "lon": 7.4652789,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Dortmund",
-    "region": "NRW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|walldorf/bab 5/rhein-neckar-kreis: brennendes fahrzeug auf dem standstreifen - pm nr. 2",
@@ -26,6 +26,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6399558",
     "first": "2026-11-27T16:52:37Z",
     "last": "2026-11-27T16:52:37Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Walldorf",
@@ -51,11 +55,7 @@
         "lon": 8.67931,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Feuerwehr Offenburg|sechs einsätze in wenigen stunden - katze aus brandwohnung gerettet",
@@ -64,6 +64,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/128693/6399548",
     "first": "2026-11-27T16:29:09Z",
     "last": "2026-11-27T16:29:09Z",
+    "veg": false,
+    "source": "Feuerwehr Offenburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Offenburg",
@@ -71,11 +75,7 @@
         "lon": 7.9429235,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Feuerwehr Offenburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|walldorf/bab 5/rhein-neckar-kreis: brennendes fahrzeug auf dem standstreifen - pm nr. 1",
@@ -84,6 +84,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6399530",
     "first": "2026-11-27T15:48:52Z",
     "last": "2026-11-27T15:48:52Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Walldorf",
@@ -109,11 +113,7 @@
         "lon": 8.67096,
         "approx": true
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ulm|(ul) ulm - unbekannter wirft brandsatz / von mittwoch auf donnerstag hatte es ein unbekannter auf ein vereinsheim im ulmer donautal abgesehen.",
@@ -122,6 +122,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110979/6399520",
     "first": "2026-11-27T15:25:00Z",
     "last": "2026-11-27T15:25:00Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ulm",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Ulm",
@@ -129,11 +133,7 @@
         "lon": 9.9912458,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ulm",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Freiburg|zell im wiesental: brand in kellerabteil eines mehrfamilienhauses",
@@ -142,6 +142,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110970/6399500",
     "first": "2026-11-27T15:01:53Z",
     "last": "2026-11-27T15:01:53Z",
+    "veg": false,
+    "source": "Polizeipräsidium Freiburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Zell im Wiesental",
@@ -149,11 +153,7 @@
         "lon": 7.8522798,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Freiburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Mannheim|heidelberg: verlassene gartenhütte abgebrannt - zeugenaufruf",
@@ -162,6 +162,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/14915/6399485",
     "first": "2026-11-27T14:43:03Z",
     "last": "2026-11-27T14:43:03Z",
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Heidelberg",
@@ -169,11 +173,7 @@
         "lon": 8.694724,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Mannheim",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Offenburg|offenburg - brand in mehrfamilienhaus, katze gerettet",
@@ -182,6 +182,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110975/6399480",
     "first": "2026-11-27T14:36:43Z",
     "last": "2026-11-27T14:36:43Z",
+    "veg": false,
+    "source": "Polizeipräsidium Offenburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Offenburg",
@@ -189,11 +193,7 @@
         "lon": 7.9429235,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Offenburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Ludwigsburg|herrenberg: brand in einer garage in der anton-bruckner-straße",
@@ -202,6 +202,10 @@
     "link": "https://www.presseportal.de/blaulicht/pm/110974/6399474",
     "first": "2026-11-27T14:29:45Z",
     "last": "2026-11-27T14:29:45Z",
+    "veg": false,
+    "source": "Polizeipräsidium Ludwigsburg",
+    "updates": 0,
+    "region": "BW",
     "places": [
       {
         "name": "Herrenberg",
@@ -209,11 +213,7 @@
         "lon": 8.8702368,
         "approx": false
       }
-    ],
-    "veg": false,
-    "source": "Polizeipräsidium Ludwigsburg",
-    "region": "BW",
-    "updates": 0
+    ]
   },
   {
     "base": "Polizeipräsidium Heilbronn|neckar-odenwald-kreis: feuerwehreinsatz wegen rauchentwicklung",
@@ -4140,26 +4140,6 @@
         "lat": 48.8966799,
         "lon": 9.5037124,
         "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Feuerwehr Bergheim|garagenbrand in quadrath-ichendorf - flammen drohen auf wohnhaus überzugreifen",
-    "status": "out",
-    "title": "Garagenbrand in Quadrath-Ichendorf - Flammen drohen auf Wohnhaus überzugreifen",
-    "link": "https://www.presseportal.de/blaulicht/pm/168361/6379864",
-    "first": "2026-10-28T20:56:27Z",
-    "last": "2026-10-28T20:56:27Z",
-    "veg": false,
-    "source": "Feuerwehr Bergheim",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Bergheim",
-        "lat": 50.9540457,
-        "lon": 6.6410004,
-        "approx": true
       }
     ]
   }
