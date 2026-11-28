@@ -1,5 +1,85 @@
 [
   {
+    "base": "Feuerwehr Iserlohn|glück im unglück - ersthelfer löscht brennenden pkw (2 verkehrsunfälle an einem abend)",
+    "status": "active",
+    "title": "Glück im Unglück - Ersthelfer löscht brennenden PKW (2 Verkehrsunfälle an einem Abend)",
+    "link": "https://www.presseportal.de/blaulicht/pm/116234/6399696",
+    "first": "2026-11-28T11:46:39Z",
+    "last": "2026-11-28T11:46:39Z",
+    "places": [
+      {
+        "name": "Iserlohn",
+        "lat": 51.3746778,
+        "lon": 7.6999713,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Iserlohn",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Polizeipräsidium Mannheim|mannheim-friedrichsfeld: kellerbrand in mehrparteienhaus",
+    "status": "contained",
+    "title": "Mannheim-Friedrichsfeld: Kellerbrand in Mehrparteienhaus",
+    "link": "https://www.presseportal.de/blaulicht/pm/14915/6399638",
+    "first": "2026-11-28T08:21:30Z",
+    "last": "2026-11-28T08:21:30Z",
+    "places": [
+      {
+        "name": "Mannheim-Friedrichsfeld",
+        "lat": 49.4405969,
+        "lon": 8.5760427,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Polizeipräsidium Mannheim",
+    "region": "BW",
+    "updates": 0
+  },
+  {
+    "base": "Feuerwehr Dortmund|wohnungsbrand mit todesfolge",
+    "status": "contained",
+    "title": "Wohnungsbrand mit Todesfolge",
+    "link": "https://www.presseportal.de/blaulicht/pm/115869/6399635",
+    "first": "2026-11-28T08:17:15Z",
+    "last": "2026-11-28T08:17:15Z",
+    "places": [
+      {
+        "name": "Dortmund",
+        "lat": 51.5142273,
+        "lon": 7.4652789,
+        "approx": false
+      }
+    ],
+    "veg": false,
+    "source": "Feuerwehr Dortmund",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
+    "base": "Freiwillige Feuerwehr Stadt Kempen|brand eines gartenhauses - feuerwehr verhindert weitere brandausbreitung",
+    "status": "out",
+    "title": "Brand eines Gartenhauses - Feuerwehr verhindert weitere Brandausbreitung",
+    "link": "https://www.presseportal.de/blaulicht/pm/175781/6399634",
+    "first": "2026-11-28T08:13:46Z",
+    "last": "2026-11-28T08:13:46Z",
+    "places": [
+      {
+        "name": "Kempen",
+        "lat": 51.3642126,
+        "lon": 6.4195011,
+        "approx": true
+      }
+    ],
+    "veg": false,
+    "source": "Freiwillige Feuerwehr Stadt Kempen",
+    "region": "NRW",
+    "updates": 0
+  },
+  {
     "base": "Feuerwehr Dortmund|ausgedehnter dachstuhlbrand in fachwerkhaus am asselner hellweg",
     "status": "active",
     "title": "Ausgedehnter Dachstuhlbrand in Fachwerkhaus am Asselner Hellweg",
@@ -4079,66 +4159,6 @@
         "name": "Wetter",
         "lat": 51.3879463,
         "lon": 7.3951553,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Aalen|ostalbkreis: unfallfluchten - diebstähle - brennender pkw - sachbeschädigung - sonstiges",
-    "status": "active",
-    "title": "Ostalbkreis: Unfallfluchten - Diebstähle - Brennender PKW - Sachbeschädigung - Sonstiges",
-    "link": "https://www.presseportal.de/blaulicht/pm/110969/6379978",
-    "first": "2026-10-29T08:37:53Z",
-    "last": "2026-10-29T08:37:53Z",
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Ostalbkreis",
-        "lat": 48.8777738,
-        "lon": 10.0337317,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Freiwillige Feuerwehr Tönisvorst|wohnungsbrand in st. tönis fordert umfangreichen feuerwehreinsatz",
-    "status": "out",
-    "title": "Wohnungsbrand in St. Tönis fordert umfangreichen Feuerwehreinsatz",
-    "link": "https://www.presseportal.de/blaulicht/pm/128354/6379928",
-    "first": "2026-10-29T08:00:17Z",
-    "last": "2026-10-29T08:00:17Z",
-    "veg": false,
-    "source": "Freiwillige Feuerwehr Tönisvorst",
-    "updates": 0,
-    "region": "NRW",
-    "places": [
-      {
-        "name": "Tönisvorst",
-        "lat": 51.3167,
-        "lon": 6.45,
-        "approx": false
-      }
-    ]
-  },
-  {
-    "base": "Polizeipräsidium Aalen|rems-murr-kreis: verkehrsunfälle - feuerwehreinsatz - brennender papiercontainer - einbrüche",
-    "status": "active",
-    "title": "Rems-Murr-Kreis: Verkehrsunfälle - Feuerwehreinsatz - Brennender Papiercontainer - Einbrüche",
-    "link": "https://www.presseportal.de/blaulicht/pm/110969/6379914",
-    "first": "2026-10-29T07:43:19Z",
-    "last": "2026-10-29T07:43:19Z",
-    "veg": false,
-    "source": "Polizeipräsidium Aalen",
-    "updates": 0,
-    "region": "BW",
-    "places": [
-      {
-        "name": "Rems-Murr-Kreis",
-        "lat": 48.8966799,
-        "lon": 9.5037124,
         "approx": false
       }
     ]
